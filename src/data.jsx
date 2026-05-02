@@ -106,6 +106,21 @@ const RESTAURANTS = [
     img: ['#7F1D1D', '#450A0A'],
     accentHue: 350,
   },
+  {
+    id: 'bakis-schnitzelparadies',
+    name: "Baki's Schnitzelparadies",
+    district: 12,
+    districtName: 'Meidling',
+    status: 'unknown',
+    categories: ['Restaurant'],
+    tags: ['Schnitzel', 'Grill', 'Österreichisch', 'Lieferung', 'Take-away'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    x: 38, y: 65,
+    img: ['#78350F', '#451a03'],
+    accentHue: 38,
+  },
 ];
 
 const COPY = {

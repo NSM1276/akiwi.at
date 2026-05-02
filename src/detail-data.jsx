@@ -415,6 +415,85 @@ const VENUES = {
     x: 36, y: 68,
   },
 
+  // ── BAKI'S SCHNITZELPARADIES 1120 ─────────────────────────────────────────────
+  'bakis-schnitzelparadies': {
+    id: 'bakis-schnitzelparadies',
+    name: "Baki's Schnitzelparadies",
+    tagline_de: 'Schnitzel, Grillhuhn & österreichische Klassiker',
+    tagline_en: 'Schnitzel, grilled chicken & Austrian classics',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Meidlinger Hauptstraße 49/G2, 1120 Wien',
+    phone: '+43 664 1563446',
+    website: 'foodora.at',
+    status: 'unknown',
+    categories: ['Restaurant'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 38, a: '#78350F', b: '#451a03' },
+      { hue: 50, a: '#713F12', b: '#422006' },
+      { hue: 28, a: '#92400E', b: '#451A03' },
+    ],
+    tags: ['Schnitzel', 'Grill', 'Österreichisch', 'Lieferung', 'Take-away', 'Cordon Bleu'],
+    hours: [
+      { day: 0, open: '11:00', close: '19:30' },
+      { day: 1, open: '11:00', close: '19:30' },
+      { day: 2, open: '11:00', close: '19:30' },
+      { day: 3, open: '11:00', close: '19:30' },
+      { day: 4, open: '11:00', close: '19:30' },
+      { day: 5, open: '11:00', close: '19:30' },
+      { day: 6, open: null,    close: null    },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Menüs (inkl. 0,33l Getränk)', cat_en: 'Menus (incl. 0.33l drink)', items: [
+        { name_de: 'Semmel Menü (Schnitzelsemmel + Pommes)', name_en: 'Sandwich menu (schnitzel sandwich + fries)', price: '10,50' },
+        { name_de: 'Schnitzel Menü (Hühnerschnitzel + Beilage)', name_en: 'Schnitzel menu (chicken + side)', price: '13,50' },
+        { name_de: 'Hendl Menü (½ Grillhendl + Beilage)', name_en: 'Chicken menu (½ grilled chicken + side)', price: '11,50' },
+        { name_de: 'Fischmenü (Gebackener Kabeljau + Beilage)', name_en: 'Fish menu (fried cod + side)', price: '15,50' },
+      ]},
+      { cat_de: 'Suppen & Semmeln', cat_en: 'Soups & sandwiches', items: [
+        { name_de: 'Hühnersuppe (mit Semmel)', name_en: 'Chicken soup (with bread roll)', price: '5,00' },
+        { name_de: 'Linsensuppe (mit Semmel)', name_en: 'Lentil soup (with bread roll)', price: '5,00', tag: 'V' },
+        { name_de: 'Schnitzelsemmel', name_en: 'Schnitzel sandwich', price: '5,90' },
+        { name_de: 'Cordon Bleu Semmel', name_en: 'Cordon bleu sandwich', price: '5,90' },
+        { name_de: 'Schnitzel Wrap', name_en: 'Schnitzel wrap', price: '6,90' },
+        { name_de: 'Emmentaler Semmel', name_en: 'Emmental sandwich', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Hauptgerichte', cat_en: 'Main courses', items: [
+        { name_de: 'Hühnerschnitzel (ohne Beilage)', name_en: 'Chicken schnitzel (no side)', price: '10,00' },
+        { name_de: 'Hühnerschnitzel mit Beilage', name_en: 'Chicken schnitzel with side', price: '12,50' },
+        { name_de: 'Cordon Bleu mit Beilage', name_en: 'Cordon bleu with side', price: '13,90' },
+        { name_de: '½ Grillhuhn (ohne Beilage)', name_en: '½ grilled chicken (no side)', price: '6,90' },
+        { name_de: 'Ganzes Grillhuhn (ohne Beilage)', name_en: 'Whole grilled chicken (no side)', price: '11,50' },
+        { name_de: 'Gebackener Schafskäse mit Beilage', name_en: 'Fried sheep cheese with side', price: '11,50', tag: 'V' },
+        { name_de: 'Gebackene Champignons mit Sauce Tartare', name_en: 'Fried mushrooms with tartar sauce', price: '8,90', tag: 'V' },
+        { name_de: 'Schnitzel Box (mit Salat, Tomaten, Zwiebeln)', name_en: 'Schnitzel box (with salad, tomatoes, onions)', price: '7,50' },
+      ]},
+      { cat_de: 'Nachspeisen', cat_en: 'Desserts', items: [
+        { name_de: 'Tiramisu', name_en: 'Tiramisu', price: '4,50' },
+        { name_de: 'Milchreis', name_en: 'Rice pudding', price: '4,50' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Cola / Fanta / Sprite / Almdudler / Eistee / Ayran (0,33l)', name_en: 'Soft drinks / Ayran (0.33l)', price: '2,20' },
+        { name_de: 'Mineralwasser (0,5l)', name_en: 'Mineral water (0.5l)', price: '2,00' },
+        { name_de: 'Red Bull (0,25l)', name_en: 'Red Bull (0.25l)', price: '3,50' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'damla',         name: 'Damla Cafe-Konditorei-Bäckerei', district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 0.6, rating: 4.0, hue: 350 },
+      { id: 'antep-evi',     name: 'Antep Evi Grillhaus',           district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 1.8, rating: 4.0, hue: 130 },
+      { id: 'alaturka-1120', name: 'Alaturka Am Schöpfwerk',        district: 12, status: 'unknown', cat: 'Kebab',      distance_km: 2.5, rating: 4.0, hue: 28 },
+    ],
+    x: 38, y: 65,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
