@@ -226,6 +226,21 @@ const RESTAURANTS = [
     img: ['#5C1A1A', '#2D0A0A'],
     accentHue: 350,
   },
+  {
+    id: 'motelli-1120',
+    name: 'Motelli Restaurant',
+    district: 12,
+    districtName: 'Meidling',
+    status: 'self',
+    categories: ['Restaurant', 'Italienisch'],
+    tags: ['Mediterran', 'Pizza', 'Pasta', 'Schanigarten', 'WLAN', 'Mittagstisch'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    x: 40, y: 67,
+    img: ['#C85A17', '#6B3410'],
+    accentHue: 25,
+  },
 ];
 
 const COPY = {

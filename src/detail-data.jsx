@@ -1062,6 +1062,101 @@ const VENUES = {
     x: 40, y: 67,
   },
 
+  // ── MOTELLI RESTAURANT 1120 ───────────────────────────────────────────────────
+  'motelli-1120': {
+    id: 'motelli-1120',
+    name: 'Motelli Restaurant',
+    tagline_de: 'Mediterrane & italienische Küche mit hausgemachter Pizza und Pasta',
+    tagline_en: 'Mediterranean & Italian cuisine with homemade pizza and pasta',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Meidlinger Hauptstraße 10, 1120 Wien',
+    phone: '+43 1 810 5773',
+    website: 'motelli-restaurant.eatbu.com',
+    status: 'self',
+    categories: ['Restaurant', 'Italienisch'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 25, a: '#C85A17', b: '#6B3410' },
+      { hue: 25, a: '#C85A17', b: '#6B3410' },
+      { hue: 25, a: '#C85A17', b: '#6B3410' },
+    ],
+    tags: ['Mediterran', 'Pizza', 'Pasta', 'Schanigarten', 'WLAN', 'Wöchentlicher Mittagstisch'],
+    hours: [
+      { day: 0, open: '10:00', close: '23:00' },
+      { day: 1, open: '10:00', close: '23:00' },
+      { day: 2, open: '10:00', close: '23:00' },
+      { day: 3, open: '10:00', close: '23:00' },
+      { day: 4, open: '10:00', close: '23:00' },
+      { day: 5, open: '10:00', close: '23:00' },
+      { day: 6, open: '10:00', close: '23:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: false, outdoor: true, wifi: true },
+    menu: [
+      { cat_de: 'Frühstück (Vormittagsangebot)', cat_en: 'Breakfast (morning offer)', items: [
+        { name_de: 'Wiener Frühstück', name_en: 'Viennese breakfast (coffee/tea, pastry, butter, jam)', price: '7,90', tag: 'V' },
+        { name_de: 'Motelli Frühstück', name_en: 'Motelli breakfast (eggs, ham, cheese, vegetables, pastry)', price: '11,50' },
+        { name_de: 'Omelett Natur', name_en: 'Plain omelet', price: '6,90', tag: 'V' },
+        { name_de: 'Ham and Eggs (3 Eier)', name_en: 'Ham and eggs (3)', price: '7,50' },
+      ]},
+      { cat_de: 'Pizza (Hausgemacht)', cat_en: 'Pizza (Homemade)', items: [
+        { name_de: 'Pizza Margherita', name_en: 'Pizza Margherita', price: '8,90', tag: 'V' },
+        { name_de: 'Pizza Cardinale (Schinken)', name_en: 'Pizza Cardinale (ham)', price: '10,50' },
+        { name_de: 'Pizza Salami', name_en: 'Pizza Salami', price: '10,50' },
+        { name_de: 'Pizza Tonno (Thunfisch, Zwiebeln)', name_en: 'Pizza Tonno (tuna, onions)', price: '11,20' },
+        { name_de: 'Pizza Quattro Formaggi (4 Käsesorten)', name_en: 'Pizza Quattro Formaggi (4 cheeses)', price: '11,90', tag: 'V' },
+        { name_de: 'Pizza Motelli (Spezialität des Hauses)', name_en: 'Pizza Motelli (house specialty)', price: '12,90' },
+        { name_de: 'Pizza Vegetariana', name_en: 'Pizza Vegetariana', price: '10,90', tag: 'V' },
+      ]},
+      { cat_de: 'Pasta (Nudelgerichte)', cat_en: 'Pasta (Noodle dishes)', items: [
+        { name_de: 'Spaghetti Carbonara', name_en: 'Spaghetti Carbonara', price: '10,90' },
+        { name_de: 'Spaghetti Bolognese', name_en: 'Spaghetti Bolognese', price: '10,50' },
+        { name_de: 'Penne Arrabiata (Scharf)', name_en: 'Penne Arrabiata (spicy)', price: '9,90', tag: 'V' },
+        { name_de: 'Lasagne al Forno', name_en: 'Lasagne al Forno', price: '11,20' },
+      ]},
+      { cat_de: 'Hauptspeisen & Fleischgerichte', cat_en: 'Main courses & Meat dishes', items: [
+        { name_de: 'Wiener Schnitzel (Vom Huhn oder Pute) mit Beilage', name_en: 'Wiener schnitzel (chicken or turkey) with side', price: '12,90' },
+        { name_de: 'Cordon Bleu mit Beilage', name_en: 'Cordon bleu with side', price: '14,50' },
+        { name_de: 'Gegrillte Hühnerbrust mit Gemüse', name_en: 'Grilled chicken breast with vegetables', price: '13,90' },
+        { name_de: 'Burger Classic (Rindfleisch, Pommes)', name_en: 'Classic burger (beef, fries)', price: '11,90' },
+        { name_de: 'Cheeseburger (Rindfleisch, Käse, Pommes)', name_en: 'Cheeseburger (beef, cheese, fries)', price: '12,50' },
+      ]},
+      { cat_de: 'Fischgerichte', cat_en: 'Fish dishes', items: [
+        { name_de: 'Zanderfilet gegrillt mit Petersilienkartoffeln', name_en: 'Grilled pike-perch fillet with parsley potatoes', price: '16,90' },
+        { name_de: 'Lachsfilet mit Spinat und Kartoffeln', name_en: 'Salmon fillet with spinach and potatoes', price: '18,50' },
+      ]},
+      { cat_de: 'Salate', cat_en: 'Salads', items: [
+        { name_de: 'Gemischter Salat', name_en: 'Mixed salad', price: '4,90', tag: 'V' },
+        { name_de: 'Backhendlsalat', name_en: 'Fried chicken salad', price: '11,50' },
+        { name_de: 'Griechischer Salat (mit Schafskäse)', name_en: 'Greek salad (with feta cheese)', price: '10,20', tag: 'V' },
+        { name_de: 'Thunfischsalat', name_en: 'Tuna salad', price: '10,50' },
+      ]},
+      { cat_de: 'Desserts', cat_en: 'Desserts', items: [
+        { name_de: 'Hausgemachter Apfelstrudel', name_en: 'Homemade apple strudel', price: '4,90', tag: 'V' },
+        { name_de: 'Palatschinken (2 Stück, Marille oder Schoko)', name_en: 'Palatschinken (2 pcs, apricot or chocolate)', price: '5,50', tag: 'V' },
+        { name_de: 'Tiramisu', name_en: 'Tiramisu', price: '5,90', tag: 'V' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Beverages', items: [
+        { name_de: 'Espresso', name_en: 'Espresso', price: '2,80', tag: 'V' },
+        { name_de: 'Verlängerter', name_en: 'Lungo', price: '3,50', tag: 'V' },
+        { name_de: 'Softdrinks (0,33l)', name_en: 'Soft drinks (0.33l)', price: '3,20', tag: 'V' },
+        { name_de: 'Bier (0,5l)', name_en: 'Beer (0.5l)', price: '4,50' },
+        { name_de: 'Hauswein (1/8l)', name_en: 'House wine (1/8l)', price: '3,80' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+    ],
+    similar: [
+      { id: 'ava-persisch-1120', name: 'AVA Persisches Restaurant', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.0, rating: 4.0, hue: 350 },
+      { id: 'liwan-1120', name: 'Liwan Restaurant Meidling', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 160 },
+    ],
+    x: 40, y: 67,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
