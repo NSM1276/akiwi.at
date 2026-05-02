@@ -37,26 +37,32 @@ const RestaurantCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId })
         background: `linear-gradient(135deg, ${r.img[0]} 0%, ${r.img[1]} 100%)`,
         overflow: 'hidden',
       }}>
-        {/* Abstract food-ish pattern */}
+        {/* Soft accent glow */}
         <div aria-hidden style={{
           position: 'absolute', inset: 0,
-          backgroundImage: `
-            radial-gradient(circle at 30% 40%, hsla(${r.accentHue}, 60%, 55%, 0.35) 0%, transparent 45%),
-            radial-gradient(circle at 70% 70%, hsla(${r.accentHue + 20}, 70%, 45%, 0.3) 0%, transparent 40%),
-            radial-gradient(circle at 50% 20%, hsla(${r.accentHue - 10}, 50%, 60%, 0.2) 0%, transparent 50%)
-          `,
+          backgroundImage: `radial-gradient(ellipse at 50% 50%, hsla(${r.accentHue}, 60%, 55%, 0.18) 0%, transparent 70%)`,
         }} />
-        {/* placeholder-restaurant icon for consistency */}
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style={{
-          position: 'absolute', bottom: 16, right: 16,
-          opacity: 0.25, color: '#fff',
-        }} stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2l1.5 4.5L18 8l-3.5 3 .9 5-3.4-2.4L8.6 16l.9-5L6 8l4.5-1.5z"/>
-        </svg>
+        {/* Restaurant name as typographic placeholder */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          padding: '40px 24px',
+          textAlign: 'center',
+        }}>
+          <span style={{
+            fontSize: tall ? 32 : wide ? 26 : 22,
+            fontWeight: 700,
+            letterSpacing: '-0.02em',
+            lineHeight: 1.1,
+            color: 'rgba(255,255,255,0.92)',
+            textShadow: '0 2px 12px rgba(0,0,0,0.35)',
+            fontFamily: 'inherit',
+          }}>{r.name}</span>
+        </div>
         {/* bottom fade */}
         <div aria-hidden style={{
-          position: 'absolute', inset: 'auto 0 0 0', height: '50%',
-          background: 'linear-gradient(to top, rgba(0,0,0,0.55), transparent)',
+          position: 'absolute', inset: 'auto 0 0 0', height: '40%',
+          background: 'linear-gradient(to top, rgba(0,0,0,0.45), transparent)',
         }} />
         {/* Status badge top-left */}
         <div style={{ position: 'absolute', top: 12, left: 12 }}>

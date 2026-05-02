@@ -30,16 +30,20 @@ const SearchResultCard = ({ r, lang, onHover, hovered, dense }) => {
       }}>
         <div aria-hidden style={{
           position: 'absolute', inset: 0,
-          backgroundImage: `
-            radial-gradient(circle at 30% 40%, hsla(${r.accentHue}, 60%, 55%, 0.35) 0%, transparent 45%),
-            radial-gradient(circle at 70% 70%, hsla(${r.accentHue + 20}, 70%, 45%, 0.3) 0%, transparent 40%)
-          `,
+          backgroundImage: `radial-gradient(ellipse at 50% 50%, hsla(${r.accentHue}, 60%, 55%, 0.18) 0%, transparent 70%)`,
         }} />
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style={{
-          position: 'absolute', bottom: 8, right: 8, opacity: 0.3, color: '#fff',
-        }} stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2l1.5 4.5L18 8l-3.5 3 .9 5-3.4-2.4L8.6 16l.9-5L6 8l4.5-1.5z"/>
-        </svg>
+        <div style={{
+          position: 'absolute', inset: 0,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <span style={{
+            fontSize: dense ? 36 : 48,
+            fontWeight: 700,
+            letterSpacing: '-0.04em',
+            color: 'rgba(255,255,255,0.85)',
+            textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          }}>{r.name.charAt(0)}</span>
+        </div>
         {r.featured && (
           <div style={{
             position: 'absolute', top: 6, left: 6,
