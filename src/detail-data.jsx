@@ -583,25 +583,40 @@ const VENUES = {
     ],
     amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
     menu: [
-      { cat_de: 'Burger', cat_en: 'Burgers', items: [
-        { name_de: 'Classic Burger (Rindfleisch, Salat, Tomaten, Zwiebeln)', name_en: 'Classic burger (beef, lettuce, tomato, onion)' },
-        { name_de: 'Cheeseburger (extra Cheddar)', name_en: 'Cheeseburger (extra cheddar)' },
-        { name_de: 'BBQ Burger (Speck, Röstzwiebeln, BBQ-Sauce)', name_en: 'BBQ burger (bacon, fried onions, BBQ sauce)' },
-        { name_de: 'Chili Burger (mit Jalapeños)', name_en: 'Chili burger (with jalapeños)' },
-        { name_de: 'Chicken Burger (knuspriges Hühnerfilet)', name_en: 'Chicken burger (crispy chicken)' },
-        { name_de: 'Veggie / Vegan Burger', name_en: 'Veggie / Vegan burger', tag: 'V' },
+      { cat_de: 'Burger (Rindfleisch 140g, Medium Well)', cat_en: 'Burgers (beef 140g, medium well)', items: [
+        { name_de: 'Classic Burger (Salat, Tomaten, Zwiebeln, Gewürzgurken, Ketchup, Mayo)', name_en: 'Classic burger (lettuce, tomato, onion, pickles, ketchup, mayo)', price: '8,90' },
+        { name_de: 'Cheeseburger (Classic + Cheddar)', name_en: 'Cheeseburger (classic + cheddar)', price: '9,90' },
+        { name_de: 'Double Burger (2× Rindfleisch, Haus-Sauce)', name_en: 'Double burger (2× beef, house sauce)', price: '13,50' },
+        { name_de: 'BBQ Burger (Speck, Röstzwiebeln, BBQ-Sauce, Cheddar)', name_en: 'BBQ burger (bacon, fried onions, BBQ sauce, cheddar)', price: '10,90' },
+        { name_de: 'Chili Cheese Burger (Jalapeños, scharfe Sauce, Cheddar)', name_en: 'Chili cheese burger (jalapeños, spicy sauce, cheddar)', price: '10,90' },
+        { name_de: 'Mushroom Burger (Champignons, Zwiebeln, Spezialsauce)', name_en: 'Mushroom burger (mushrooms, onions, special sauce)', price: '10,50' },
       ]},
-      { cat_de: 'Beilagen & Snacks', cat_en: 'Sides & Snacks', items: [
-        { name_de: 'Pommes / Süßkartoffelpommes', name_en: 'Fries / sweet potato fries', tag: 'V' },
-        { name_de: 'Onion Rings', name_en: 'Onion rings', tag: 'V' },
-        { name_de: 'Chicken Nuggets / Wings', name_en: 'Chicken nuggets / wings' },
-        { name_de: 'Mozzarella Sticks (mit Dip)', name_en: 'Mozzarella sticks (with dip)', tag: 'V' },
+      { cat_de: 'Chicken Burger (100% Hühnerbrust)', cat_en: 'Chicken burgers (100% chicken breast)', items: [
+        { name_de: 'Crispy Chicken (paniert, Salat, Mayo)', name_en: 'Crispy chicken (breaded, lettuce, mayo)', price: '8,50' },
+        { name_de: 'Grilled Chicken (gegrillt, Tomaten, Haussauce)', name_en: 'Grilled chicken (grilled, tomato, house sauce)', price: '8,90' },
       ]},
-      { cat_de: 'Saucen', cat_en: 'Sauces', items: [
-        { name_de: 'Burgallio Haussauce', name_en: 'Burgallio house sauce' },
-        { name_de: 'Knoblauchsauce', name_en: 'Garlic sauce' },
-        { name_de: 'Curry-Sauce', name_en: 'Curry sauce' },
-        { name_de: 'Guacamole', name_en: 'Guacamole', tag: 'V' },
+      { cat_de: 'Veggie & Vegan', cat_en: 'Veggie & Vegan', items: [
+        { name_de: 'Veggie Burger (Gemüse-Patty, Salat, Haussauce)', name_en: 'Veggie burger (veggie patty, lettuce, house sauce)', price: '8,50', tag: 'V' },
+        { name_de: 'Halloumi Burger (Halloumi, Rucola, Tomaten)', name_en: 'Halloumi burger (halloumi, arugula, tomato)', price: '9,50', tag: 'V' },
+        { name_de: 'Vegan Burger (pflanzliches Patty, vegane Mayo)', name_en: 'Vegan burger (plant patty, vegan mayo)', price: '9,90', tag: 'V' },
+      ]},
+      { cat_de: 'Beilagen (Fries & Snacks)', cat_en: 'Sides (Fries & Snacks)', items: [
+        { name_de: 'Pommes (Klein)', name_en: 'Fries (small)', price: '3,50', tag: 'V' },
+        { name_de: 'Pommes (Groß)', name_en: 'Fries (large)', price: '4,90', tag: 'V' },
+        { name_de: 'Süßkartoffelpommes', name_en: 'Sweet potato fries', price: '5,50', tag: 'V' },
+        { name_de: 'Onion Rings (8 Stk.)', name_en: 'Onion rings (8 pcs)', price: '4,50', tag: 'V' },
+        { name_de: 'Chili Cheese Nuggets (6 Stk.)', name_en: 'Chili cheese nuggets (6 pcs)', price: '5,50' },
+        { name_de: 'Mozzarella Sticks (5 Stk.)', name_en: 'Mozzarella sticks (5 pcs)', price: '5,50', tag: 'V' },
+      ]},
+      { cat_de: 'Saucen (Extra)', cat_en: 'Sauces (extra)', items: [
+        { name_de: 'Ketchup / Mayo', name_en: 'Ketchup / Mayo', price: '0,70' },
+        { name_de: 'Burgallio Haus-Sauce', name_en: 'Burgallio house sauce', price: '1,00' },
+        { name_de: 'BBQ / Knoblauch / Chili-Sauce', name_en: 'BBQ / Garlic / Chili sauce', price: '1,00' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Dosen 0,33l (Cola, Fanta, Sprite, Mezzo Mix)', name_en: 'Cans 0.33l (Cola, Fanta, Sprite, Mezzo Mix)', price: '2,20' },
+        { name_de: 'Eistee / Ayran', name_en: 'Iced tea / Ayran', price: '2,50' },
+        { name_de: 'Mineralwasser (0,5l)', name_en: 'Mineral water (0.5l)', price: '2,00' },
       ]},
     ],
     reviews_list: [],
