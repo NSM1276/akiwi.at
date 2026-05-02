@@ -91,6 +91,21 @@ const RESTAURANTS = [
     img: ['#1E3A1E', '#052e16'],
     accentHue: 130,
   },
+  {
+    id: 'damla',
+    name: 'Damla Cafe-Konditorei-Bäckerei',
+    district: 12,
+    districtName: 'Meidling',
+    status: 'unknown',
+    categories: ['Restaurant', 'Cafe', 'Pizza'],
+    tags: ['Türkisch', 'Konditorei', 'Bäckerei', 'Lieferung', 'Baklava'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    x: 36, y: 68,
+    img: ['#7F1D1D', '#450A0A'],
+    accentHue: 350,
+  },
 ];
 
 const COPY = {

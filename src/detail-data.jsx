@@ -348,6 +348,73 @@ const VENUES = {
     x: 36, y: 66,
   },
 
+  // ── DAMLA CAFE-KONDITOREI-BÄCKEREI 1120 ───────────────────────────────────────
+  'damla': {
+    id: 'damla',
+    name: 'Damla Cafe-Konditorei-Bäckerei',
+    tagline_de: 'Restaurant, Konditorei & Bäckerei unter einem Dach',
+    tagline_en: 'Restaurant, pastry shop & bakery under one roof',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Wilhelmstraße 53, 1120 Wien (Bahnhof Meidling)',
+    phone: '+43 1 810 3519',
+    website: 'damla.at',
+    status: 'unknown',
+    categories: ['Restaurant', 'Cafe', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 350, a: '#7F1D1D', b: '#450A0A' },
+      { hue: 38,  a: '#713F12', b: '#422006' },
+      { hue: 18,  a: '#7C2D12', b: '#431407' },
+    ],
+    tags: ['Türkisch', 'Konditorei', 'Bäckerei', 'Lieferung', 'Mittagsmenü', 'Baklava'],
+    hours: [
+      // Lieferzeiten lt. Webseite — Lokalöffnungszeiten ggf. abweichend
+      { day: 0, open: '11:00', close: '22:00' },
+      { day: 1, open: '11:00', close: '22:00' },
+      { day: 2, open: '11:00', close: '22:00' },
+      { day: 3, open: '11:00', close: '22:00' },
+      { day: 4, open: '11:00', close: '22:00' },
+      { day: 5, open: '11:00', close: '22:00' },
+      { day: 6, open: '11:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Pizza', cat_en: 'Pizza', items: [
+        { name_de: 'Single Pizza (Abholung)', name_en: 'Single pizza (pickup)', price: '6,90' },
+        { name_de: 'Single Pizza + 0,33l Getränk (Abholung)', name_en: 'Single pizza + 0.33l drink (pickup)', price: '6,50' },
+      ]},
+      { cat_de: 'Kebap & Türkische Speisen', cat_en: 'Kebap & Turkish dishes', items: [
+        { name_de: 'Döner Kebap', name_en: 'Döner kebab' },
+        { name_de: 'Türkische warme Spezialitäten', name_en: 'Turkish warm specialties' },
+      ]},
+      { cat_de: 'Klassiker', cat_en: 'Classics', items: [
+        { name_de: 'Wiener Schnitzel', name_en: 'Wiener schnitzel' },
+        { name_de: 'Burger', name_en: 'Burger' },
+        { name_de: 'Pasta', name_en: 'Pasta' },
+      ]},
+      { cat_de: 'Konditorei & Bäckerei', cat_en: 'Pastry & bakery', items: [
+        { name_de: 'Hausgemachte Torten & Kuchen', name_en: 'Homemade cakes' },
+        { name_de: 'Türkische Baklava', name_en: 'Turkish baklava' },
+        { name_de: 'Frisches Brot & Kleingebäck', name_en: 'Fresh bread & pastries' },
+      ]},
+      { cat_de: 'Mittagsmenü', cat_en: 'Lunch menu', items: [
+        { name_de: 'Wechselnde Mittagsangebote', name_en: 'Rotating lunch specials' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'antep-evi',     name: 'Antep Evi Grillhaus',     district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 1.5, rating: 4.0, hue: 130 },
+      { id: 'alaturka-1120', name: 'Alaturka Am Schöpfwerk', district: 12, status: 'unknown', cat: 'Kebab',      distance_km: 2.8, rating: 4.0, hue: 28 },
+    ],
+    x: 36, y: 68,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
