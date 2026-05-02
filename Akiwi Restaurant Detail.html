@@ -76,8 +76,14 @@
 <script type="text/babel" src="src/atoms.jsx"></script>
 <script type="text/babel" src="src/Header.jsx"></script>
 <script type="text/babel" src="src/detail-data.jsx"></script>
-<script>
-// Venue selector — reads ?id= param or subdomain, sets window.VENUE
+<script type="text/babel" src="src/Gallery.jsx"></script>
+<script type="text/babel" src="src/Hours.jsx"></script>
+<script type="text/babel" src="src/detail-sections.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect } = React;
+
+// Venue selector — runs after detail-data.jsx is loaded by Babel
 (function () {
   var params = new URLSearchParams(window.location.search);
   var urlId = params.get('id');
@@ -93,13 +99,6 @@
   window.DETAIL_COPY.en.breadcrumb = ['Home', 'District ' + v.district, v.name];
   document.title = v.name + ' — Akiwi.at';
 })();
-</script>
-<script type="text/babel" src="src/Gallery.jsx"></script>
-<script type="text/babel" src="src/Hours.jsx"></script>
-<script type="text/babel" src="src/detail-sections.jsx"></script>
-
-<script type="text/babel" data-presets="env,react">
-const { useState, useEffect } = React;
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "defaultLang": "de"
