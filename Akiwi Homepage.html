@@ -176,7 +176,7 @@ function App() {
               <window.RestaurantCard
                 key={r.id} r={r} lang={lang} span={r.span}
                 hoveredId={hoveredId} onHoverId={setHoveredId}
-                onClick={() => {}}
+                onClick={() => { window.location.href = 'Akiwi Restaurant Detail.html?id=' + r.id; }}
               />
             ))}
           </div>
