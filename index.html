@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akiwi.at</title>
+<script>
+  // Smart router: main domain → homepage, restaurant subdomain → detail page
+  var h = window.location.hostname.toLowerCase();
+  var parts = h.split('.');
+  var isLocalhost = h === 'localhost' || h.startsWith('127.') || h === '';
+  var isVercel = h.endsWith('.vercel.app');
+  var isRestaurantSubdomain = !isLocalhost && !isVercel && parts.length >= 3 && parts[0] !== 'www';
+
+  if (isRestaurantSubdomain) {
+    // e.g. al-nour.akiwi.at → show Al-Nour detail page
+    window.location.replace('Akiwi Restaurant Detail.html?id=' + parts[0]);
+  } else {
+    window.location.replace('Akiwi Homepage.html');
+  }
+</script>
+</head>
+<body>
+</body>
+</html>

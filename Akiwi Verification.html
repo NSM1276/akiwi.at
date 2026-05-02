@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wie Verifizierung funktioniert — Akiwi.at</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--background); min-height: 100vh; }
+  a { color: inherit; }
+  button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  ::selection { background: var(--accent); color: var(--text-on-accent); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--background); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+  @media (max-width: 760px) {
+    .ak-nav-desktop { display: none !important; }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="src/atoms.jsx"></script>
+<script type="text/babel" src="src/Header.jsx"></script>
+<script type="text/babel" src="src/data.jsx"></script>
+<script type="text/babel" src="src/verification-data.jsx"></script>
+<script type="text/babel" src="src/verification-sections.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect } = React;
+
+function VerificationPage() {
+  const [lang, setLang] = useState(() => localStorage.getItem('akiwi.lang') || 'de');
+  useEffect(() => { localStorage.setItem('akiwi.lang', lang); }, [lang]);
+  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
+
+  return (
+    <>
+      <window.Header lang={lang} setLang={setLang} />
+      <window.VHero lang={lang} />
+      <window.VStats lang={lang} />
+      <window.VStatuses lang={lang} />
+      <window.VCriteria lang={lang} />
+      <window.VProcess lang={lang} />
+      <window.VMethodology lang={lang} />
+      <window.VOwner lang={lang} />
+      <window.VFAQ lang={lang} />
+      <window.VBottom lang={lang} />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<VerificationPage />);
+</script>
+</body>
+</html>

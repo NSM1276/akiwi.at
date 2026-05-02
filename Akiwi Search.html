@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurants in Wien — Akiwi.at</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--background); min-height: 100vh; }
+  a { color: inherit; }
+  button:focus-visible, a:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  ::selection { background: var(--accent); color: var(--text-on-accent); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--background); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+
+  .ak-search-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .ak-search-grid.split {
+    grid-template-columns: 240px minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+  .ak-search-grid.map-only {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+  @media (max-width: 1100px) {
+    .ak-search-grid, .ak-search-grid.split, .ak-search-grid.map-only {
+      grid-template-columns: 1fr;
+    }
+    .ak-search-aside-filter { display: none; }
+    .ak-search-map-col { display: none; }
+  }
+  .ak-nav-desktop { }
+  @media (max-width: 720px) {
+    .ak-nav-desktop { display: none !important; }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="src/atoms.jsx"></script>
+<script type="text/babel" src="src/Header.jsx"></script>
+<script type="text/babel" src="src/data.jsx"></script>
+<script type="text/babel" src="src/search-data.jsx"></script>
+<script type="text/babel" src="src/SearchFilters.jsx"></script>
+<script type="text/babel" src="src/SearchResultCard.jsx"></script>
+<script type="text/babel" src="src/SearchMap.jsx"></script>
+<script type="text/babel" src="src/search-sections.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect, useMemo } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "defaultLang": "de",
+  "defaultView": "split",
+  "denseCards": false,
+  "showEmptyState": false,
+  "stickyFilters": true
+}/*EDITMODE-END*/;
+
+function Search() {
+  const [tweaks, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+
+  const [lang, setLang] = useState(() => localStorage.getItem('akiwi.lang') || tweaks.defaultLang || 'de');
+  useEffect(() => { localStorage.setItem('akiwi.lang', lang); }, [lang]);
+  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
+
+  const [query, setQuery] = useState('');
+  const [where, setWhere] = useState('');
+  const [filters, setFilters] = useState({});
+  const [sort, setSort] = useState('relevance');
+  const [view, setView] = useState(tweaks.defaultView || 'split');
+  const [dense, setDense] = useState(!!tweaks.denseCards);
+  const [hoveredId, setHoveredId] = useState(null);
+
+  // Sync some tweaks → state when toggled live
+  useEffect(() => { setView(tweaks.defaultView); }, [tweaks.defaultView]);
+  useEffect(() => { setDense(!!tweaks.denseCards); }, [tweaks.denseCards]);
+
+  const c = window.SEARCH_COPY[lang];
+  const ALL = window.SEARCH_RESTAURANTS;
+
+  const filtered = useMemo(() => {
+    let out = ALL.slice();
+    if (tweaks.showEmptyState) return [];
+    const q = query.trim().toLowerCase();
+    if (q) {
+      out = out.filter((r) =>
+        r.name.toLowerCase().includes(q) ||
+        r.cuisine.toLowerCase().includes(q) ||
+        r.categories.join(' ').toLowerCase().includes(q) ||
+        r.tags.join(' ').toLowerCase().includes(q)
+      );
+    }
+    const w = where.trim().toLowerCase();
+    if (w) {
+      out = out.filter((r) =>
+        r.districtName.toLowerCase().includes(w) ||
+        ('' + (1000 + r.district * 10)).includes(w) ||
+        ('bezirk ' + r.district).includes(w)
+      );
+    }
+    if (filters.halal && filters.halal.length) out = out.filter((r) => filters.halal.includes(r.status));
+    if (filters.cuisine && filters.cuisine.length) out = out.filter((r) => filters.cuisine.includes(r.cuisine));
+    if (filters.district && filters.district.length) out = out.filter((r) => filters.district.includes(r.district));
+    if (filters.price && filters.price.length) out = out.filter((r) => filters.price.includes(r.price));
+    if (filters.services && filters.services.length) out = out.filter((r) => filters.services.some((s) => r.services.includes(s)));
+    if (filters.dietary && filters.dietary.length) out = out.filter((r) => filters.dietary.every((d) => r.dietary.includes(d)));
+    if (filters.openNow) out = out.filter((r) => r.openNow);
+    if (filters.family) out = out.filter((r) => r.family);
+    if (filters.rating) out = out.filter((r) => r.rating >= filters.rating);
+
+    // Sort
+    const cmp = {
+      relevance: (a, b) => (b.featured?1:0) - (a.featured?1:0) || b.rating - a.rating,
+      rating: (a, b) => b.rating - a.rating,
+      distance: (a, b) => a.distance - b.distance,
+      verified: (a, b) => (a.lastVerifiedDays ?? 9999) - (b.lastVerifiedDays ?? 9999),
+      newest: (a, b) => a.addedDaysAgo - b.addedDaysAgo,
+      alpha: (a, b) => a.name.localeCompare(b.name),
+    }[sort];
+    out.sort(cmp);
+    return out;
+  }, [ALL, query, where, filters, sort, tweaks.showEmptyState]);
+
+  const showList = view !== 'map';
+  const showMap = view !== 'list';
+
+  const gridClass = view === 'split' ? 'ak-search-grid split'
+    : view === 'map' ? 'ak-search-grid map-only'
+    : 'ak-search-grid';
+
+  return (
+    <>
+      <window.Header lang={lang} setLang={setLang} />
+
+      <window.SearchHero
+        lang={lang} query={query} setQuery={setQuery}
+        where={where} setWhere={setWhere}
+      />
+
+      <main style={{ maxWidth: 1280, margin: '0 auto', padding: '8px 24px 64px' }}>
+        <div className={gridClass}>
+          {/* Filters column */}
+          <div className="ak-search-aside-filter">
+            <window.SearchFilters
+              lang={lang}
+              filters={filters} setFilters={setFilters}
+              totalCount={ALL.length}
+              visibleCount={filtered.length}
+            />
+          </div>
+
+          {/* Results column */}
+          {showList && (
+            <div style={{ minWidth: 0 }}>
+              <window.ResultsHeader
+                lang={lang}
+                count={filtered.length} total={ALL.length}
+                sort={sort} setSort={setSort}
+                view={view} setView={setView}
+                dense={dense} setDense={setDense}
+              />
+              <window.ActiveFilterChips lang={lang} filters={filters} setFilters={setFilters} />
+
+              {filtered.length === 0 ? (
+                <window.EmptyState lang={lang} onReset={() => { setFilters({}); setQuery(''); setWhere(''); setTweak({ showEmptyState: false }); }} />
+              ) : (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {filtered.map((r) => (
+                    <window.SearchResultCard
+                      key={r.id} r={r} lang={lang}
+                      hovered={hoveredId === r.id}
+                      onHover={setHoveredId}
+                      dense={dense}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Map column */}
+          {showMap && (
+            <div className="ak-search-map-col" style={{ minWidth: 0 }}>
+              {!showList && (
+                <div style={{ marginBottom: 12 }}>
+                  <window.ResultsHeader
+                    lang={lang}
+                    count={filtered.length} total={ALL.length}
+                    sort={sort} setSort={setSort}
+                    view={view} setView={setView}
+                    dense={dense} setDense={setDense}
+                  />
+                </div>
+              )}
+              <window.SearchMap
+                lang={lang}
+                restaurants={filtered}
+                hoveredId={hoveredId}
+                setHoveredId={setHoveredId}
+              />
+            </div>
+          )}
+        </div>
+      </main>
+
+      {/* Tweaks panel */}
+      <window.TweaksPanel title="Tweaks">
+        <window.TweakSection label={lang === 'de' ? 'Sprache' : 'Language'} />
+        <window.TweakRadio
+          label={lang === 'de' ? 'Sprache' : 'Language'}
+          value={lang}
+          onChange={setLang}
+          options={['de', 'en']}
+        />
+
+        <window.TweakSection label={lang === 'de' ? 'Layout' : 'Layout'} />
+        <window.TweakRadio
+          label={lang === 'de' ? 'Ansicht' : 'View'}
+          value={view}
+          onChange={(v) => { setView(v); setTweak('defaultView', v); }}
+          options={['list', 'split', 'map']}
+        />
+        <window.TweakToggle
+          label={lang === 'de' ? 'Kompakte Karten' : 'Compact cards'}
+          value={dense}
+          onChange={(v) => { setDense(v); setTweak('denseCards', v); }}
+        />
+
+        <window.TweakSection label={lang === 'de' ? 'Zustände' : 'States'} />
+        <window.TweakToggle
+          label={lang === 'de' ? 'Leerzustand' : 'Empty state'}
+          value={!!tweaks.showEmptyState}
+          onChange={(v) => setTweak('showEmptyState', v)}
+        />
+      </window.TweaksPanel>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Search />);
+</script>
+</body>
+</html>

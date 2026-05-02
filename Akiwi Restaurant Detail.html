@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al-Nour Restaurant — Akiwi.at</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--background); min-height: 100vh; padding-bottom: 96px; }
+  a { color: inherit; }
+  button:focus-visible, a:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  ::selection { background: var(--accent); color: var(--text-on-accent); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--background); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+
+  .ak-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 48px;
+    align-items: start;
+  }
+  .ak-detail-aside {
+    position: sticky;
+    top: 88px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  @media (max-width: 900px) {
+    .ak-detail-grid { grid-template-columns: 1fr; gap: 24px; }
+    .ak-detail-aside { position: static; top: auto; }
+    .ak-gallery { height: 280px !important; grid-template-columns: 2fr 1fr !important; grid-template-rows: 1fr 1fr !important; }
+    .ak-gallery > button:nth-child(n+4) { display: none !important; }
+    .ak-nav-desktop { display: none !important; }
+  }
+
+  .ak-section { padding: 36px 0; border-top: 1px solid var(--border); }
+  .ak-section:first-of-type { border-top: none; padding-top: 24px; }
+  .ak-section-h {
+    font-size: 22px; font-weight: 700; letter-spacing: -0.01em;
+    margin: 0 0 18px;
+  }
+
+  .ak-anchor-nav {
+    position: sticky; top: 60px; z-index: 10;
+    background: rgba(31,41,55,0.85);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .ak-anchor-nav-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none;
+  }
+  .ak-anchor-nav-inner::-webkit-scrollbar { display: none; }
+  .ak-anchor-nav a {
+    padding: 14px 14px; white-space: nowrap;
+    color: var(--text-secondary); text-decoration: none;
+    font-size: 13px; font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: color 150ms, border-color 150ms;
+  }
+  .ak-anchor-nav a:hover { color: var(--text-primary); }
+  .ak-anchor-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="src/atoms.jsx"></script>
+<script type="text/babel" src="src/Header.jsx"></script>
+<script type="text/babel" src="src/detail-data.jsx"></script>
+<script>
+// Venue selector — reads ?id= param or subdomain, sets window.VENUE
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var urlId = params.get('id');
+  var parts = window.location.hostname.split('.');
+  var isSubdomain = parts.length >= 3 && parts[0] !== 'www'
+    && !window.location.hostname.endsWith('.vercel.app')
+    && window.location.hostname !== 'localhost';
+  var subId = isSubdomain ? parts[0] : null;
+  var id = urlId || subId || 'al-nour';
+  var v = window.VENUES[id] || window.VENUES['al-nour'];
+  window.VENUE = v;
+  window.DETAIL_COPY.de.breadcrumb = ['Home', 'Bezirk ' + v.district, v.name];
+  window.DETAIL_COPY.en.breadcrumb = ['Home', 'District ' + v.district, v.name];
+  document.title = v.name + ' — Akiwi.at';
+})();
+</script>
+<script type="text/babel" src="src/Gallery.jsx"></script>
+<script type="text/babel" src="src/Hours.jsx"></script>
+<script type="text/babel" src="src/detail-sections.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "defaultLang": "de"
+}/*EDITMODE-END*/;
+
+function Detail() {
+  const [lang, setLang] = useState(() => localStorage.getItem('akiwi.lang') || TWEAK_DEFAULTS.defaultLang || 'de');
+  const v = window.VENUE;
+  const c = window.DETAIL_COPY[lang];
+
+  useEffect(() => { localStorage.setItem('akiwi.lang', lang); }, [lang]);
+  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
+
+  const [active, setActive] = useState('overview');
+
+  const sections = [
+    ['overview',     c.sections.info],
+    ['hours',        c.sections.hours],
+    ['menu',         c.sections.menu],
+    ['reviews',      c.sections.reviews],
+    ['verification', c.sections.verification],
+    ['similar',      c.sections.similar],
+  ];
+
+  return (
+    <>
+      <window.Header lang={lang} setLang={setLang} />
+
+      {/* Anchor nav */}
+      <div className="ak-anchor-nav">
+        <div className="ak-anchor-nav-inner">
+          {sections.map(([id, label]) => (
+            <a key={id} href={`#${id}`} className={active === id ? 'active' : ''}
+               onClick={() => setActive(id)}>
+              {label}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <main style={{ maxWidth: 1200, margin: '0 auto', padding: '24px 24px 0' }}>
+        {/* Breadcrumb */}
+        <nav style={{ fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 16, display: 'flex', gap: 6 }}>
+          {c.breadcrumb.map((b, i) => {
+            const href = i === 0 ? 'Akiwi Homepage.html' : i === 1 ? 'Akiwi Search.html' : '#';
+            return (
+              <React.Fragment key={i}>
+                {i > 0 && <span>›</span>}
+                <a href={href} style={{
+                  color: i === c.breadcrumb.length - 1 ? 'var(--text-primary)' : 'var(--text-tertiary)',
+                  textDecoration: 'none', fontWeight: i === c.breadcrumb.length - 1 ? 600 : 400,
+                }}>{b}</a>
+              </React.Fragment>
+            );
+          })}
+        </nav>
+
+        {/* Title block */}
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap', marginBottom: 20 }}>
+          <div style={{ flex: 1, minWidth: 280 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
+              <window.StatusBadge status={v.status} lang={lang} />
+              <span style={{
+                padding: '4px 10px', background: 'rgba(75,85,99,0.3)',
+                border: '1px solid var(--border)', borderRadius: 999,
+                fontSize: 12, fontWeight: 600, color: 'var(--text-secondary)',
+              }}>{v.price}</span>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 4,
+                color: 'var(--accent)', fontSize: 13, fontWeight: 700,
+              }}>
+                <window.Icon.star size={12} /> {v.rating.toFixed(1)}
+                <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginLeft: 4 }}>
+                  ({v.reviews})
+                </span>
+              </span>
+            </div>
+            <h1 style={{
+              margin: 0, fontSize: 'clamp(32px, 4.5vw, 48px)', fontWeight: 700,
+              letterSpacing: '-0.025em', lineHeight: 1.05,
+            }}>{v.name}</h1>
+            <p style={{ margin: '10px 0 0', fontSize: 16, color: 'var(--text-secondary)', maxWidth: 560 }}>
+              {lang === 'de' ? v.tagline_de : v.tagline_en}
+            </p>
+            <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {v.tags.map((t) => (
+                <span key={t} style={{
+                  padding: '4px 10px', borderRadius: 999,
+                  background: 'rgba(75,85,99,0.3)', border: '1px solid var(--border)',
+                  fontSize: 12, color: 'var(--text-secondary)', fontWeight: 500,
+                }}>{t}</span>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button style={btn('accent')}>
+              <window.Icon.pin size={14} /> {c.actions.directions}
+            </button>
+            <button style={btn('ghost')}>📞 {c.actions.call}</button>
+            <button style={btn('ghost')} aria-label={c.actions.share}>↗</button>
+          </div>
+        </div>
+
+        {/* Gallery */}
+        <window.Gallery venue={v} lang={lang} />
+
+        {/* Two-col grid */}
+        <div className="ak-detail-grid" style={{ marginTop: 32 }}>
+          <div>
+            <section id="overview" className="ak-section">
+              <h2 className="ak-section-h">{c.sections.info}</h2>
+              <p style={{ margin: 0, fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
+                {lang === 'de'
+                  ? 'Familiengeführtes Lokal mit echtem Holzkohle-Grill. Halal-Fleisch von einem zertifizierten Wiener Lieferanten. Tische auch für Gruppen, Lieferung über die eigene Hotline.'
+                  : 'Family-run venue with a proper charcoal grill. Halal meat from a certified Vienna supplier. Tables for groups; delivery via their own hotline.'}
+              </p>
+              <div style={{ marginTop: 24 }}>
+                <h3 style={{
+                  margin: '0 0 10px', fontSize: 12, fontWeight: 700,
+                  letterSpacing: '0.08em', textTransform: 'uppercase',
+                  color: 'var(--text-tertiary)',
+                }}>{c.sections.amenities}</h3>
+                <window.Amenities venue={v} lang={lang} />
+              </div>
+            </section>
+
+            <section id="hours" className="ak-section">
+              <h2 className="ak-section-h">{c.sections.hours}</h2>
+              <window.Hours venue={v} lang={lang} />
+            </section>
+
+            <section id="menu" className="ak-section">
+              <h2 className="ak-section-h">{c.sections.menu}</h2>
+              <window.Menu venue={v} lang={lang} />
+            </section>
+
+            <section id="reviews" className="ak-section">
+              <h2 className="ak-section-h">{c.sections.reviews}</h2>
+              <window.Reviews venue={v} lang={lang} />
+            </section>
+
+            <section id="verification" className="ak-section">
+              <h2 className="ak-section-h">{c.verifiedHistory}</h2>
+              <window.Verification venue={v} lang={lang} />
+            </section>
+
+            <section id="similar" className="ak-section">
+              <h2 className="ak-section-h">{c.sections.similar}</h2>
+              <window.SimilarList venue={v} lang={lang} />
+            </section>
+
+            <button style={{
+              marginTop: 24, marginBottom: 8,
+              background: 'transparent', border: '1px solid var(--border)',
+              color: 'var(--text-secondary)', padding: '10px 16px',
+              borderRadius: 999, fontFamily: 'inherit', fontSize: 13, cursor: 'pointer',
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+            }}>⚠ {c.reportIssue}</button>
+          </div>
+
+          {/* Aside */}
+          <aside className="ak-detail-aside">
+            {/* Address card */}
+            <div style={asideCard}>
+              <h3 style={asideH}>{c.sections.address}</h3>
+              <window.MiniMap venue={v} />
+              <div style={{ padding: '12px 0', fontSize: 14, fontWeight: 600 }}>
+                {v.address}
+              </div>
+              <a href="#" style={{
+                fontSize: 13, color: 'var(--accent)', fontWeight: 600,
+                textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6,
+              }}>
+                {c.minDirections} →
+              </a>
+            </div>
+
+            {/* Contact card */}
+            <div style={asideCard}>
+              <h3 style={asideH}>{lang === 'de' ? 'Kontakt' : 'Contact'}</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                <a href={`tel:${v.phone}`} style={contactRow}>
+                  <span style={{ color: 'var(--text-tertiary)', width: 16 }}>📞</span>
+                  <span>{v.phone}</span>
+                </a>
+                <a href={`https://${v.website}`} style={contactRow}>
+                  <span style={{ color: 'var(--text-tertiary)', width: 16 }}>↗</span>
+                  <span>{v.website}</span>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      {/* Sticky CTA bar */}
+      <div style={{
+        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 30,
+        background: 'rgba(31,41,55,0.95)',
+        backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
+        borderTop: '1px solid var(--border)',
+        padding: '12px 16px',
+        display: 'flex', alignItems: 'center', gap: 10,
+      }}>
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 10 }}>
+          <window.StatusDot status={v.status} size={10} />
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{v.name}</div>
+            <div style={{ fontSize: 11, color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              {v.address}
+            </div>
+          </div>
+        </div>
+        <button style={btn('ghost', 'sm')}>📞 {c.actions.call}</button>
+        <button style={btn('accent', 'sm')}>
+          <window.Icon.pin size={12} /> {c.actions.directions}
+        </button>
+      </div>
+    </>
+  );
+}
+
+function btn(variant, size) {
+  const padding = size === 'sm' ? '8px 12px' : '10px 16px';
+  const fs = size === 'sm' ? 12 : 13;
+  if (variant === 'accent') {
+    return {
+      padding, fontSize: fs, fontWeight: 700,
+      background: 'var(--accent)', color: 'var(--text-on-accent)',
+      border: 'none', borderRadius: 999, cursor: 'pointer',
+      display: 'inline-flex', alignItems: 'center', gap: 6,
+      fontFamily: 'inherit', whiteSpace: 'nowrap',
+    };
+  }
+  return {
+    padding, fontSize: fs, fontWeight: 600,
+    background: 'var(--card)', color: 'var(--text-primary)',
+    border: '1px solid var(--border)', borderRadius: 999, cursor: 'pointer',
+    display: 'inline-flex', alignItems: 'center', gap: 6,
+    fontFamily: 'inherit', whiteSpace: 'nowrap',
+  };
+}
+
+const asideCard = {
+  background: 'var(--card)', border: '1px solid var(--border)',
+  borderRadius: 'var(--radius-card)', padding: 16,
+};
+const asideH = {
+  margin: '0 0 12px', fontSize: 12, fontWeight: 700,
+  letterSpacing: '0.08em', textTransform: 'uppercase',
+  color: 'var(--text-tertiary)',
+};
+const contactRow = {
+  display: 'flex', alignItems: 'center', gap: 10,
+  textDecoration: 'none', color: 'var(--text-primary)', fontSize: 14, fontWeight: 500,
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Detail />);
+</script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akiwi.at — Halal-freundliche Restaurants in Wien</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--background); min-height: 100vh; }
+  a { color: inherit; }
+  button:focus-visible, a:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  ::selection { background: var(--accent); color: var(--text-on-accent); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--background); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-strong); }
+
+  /* Bento grid */
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(320px, auto);
+    gap: 16px;
+  }
+  @media (max-width: 960px) {
+    .bento { grid-template-columns: repeat(2, 1fr); }
+    .bento > article { grid-column: auto !important; grid-row: auto !important; }
+  }
+  @media (max-width: 600px) {
+    .bento { grid-template-columns: 1fr; }
+    .ak-nav-desktop { display: none !important; }
+    .ak-footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  }
+
+  /* Fade-in on load */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .bento > article { animation: fadeUp 400ms var(--ease-out) both; }
+  .bento > article:nth-child(1) { animation-delay: 0ms; }
+  .bento > article:nth-child(2) { animation-delay: 40ms; }
+  .bento > article:nth-child(3) { animation-delay: 80ms; }
+  .bento > article:nth-child(4) { animation-delay: 120ms; }
+  .bento > article:nth-child(5) { animation-delay: 160ms; }
+  .bento > article:nth-child(6) { animation-delay: 200ms; }
+  .bento > article:nth-child(7) { animation-delay: 240ms; }
+  .bento > article:nth-child(8) { animation-delay: 280ms; }
+  .bento > article:nth-child(9) { animation-delay: 320ms; }
+
+  /* =========== PRINT =========== */
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  @media print {
+    :root {
+      --background: #1F2937;
+    }
+    html, body {
+      background: #1F2937 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      animation: none !important;
+      transition: none !important;
+    }
+    /* Kill sticky so things flow naturally */
+    header, [style*="position: sticky"], [style*="position:sticky"] {
+      position: static !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      background: #1F2937 !important;
+    }
+    /* Reveal grid animation */
+    .bento > article { animation: none !important; opacity: 1 !important; transform: none !important; }
+
+    /* Page breaks */
+    .bento { break-inside: avoid-page; }
+    .bento > article { break-inside: avoid; }
+    footer { break-before: auto; }
+    section { break-inside: avoid-page; }
+
+    /* Shrink big hero slightly for paper */
+    .ak-hero-title { font-size: 64px !important; }
+
+    /* Hide tweaks panel + scroll chrome */
+    [data-tweaks-panel] { display: none !important; }
+
+    /* Keep hover borders neutral */
+    article { border-color: #4B5563 !important; box-shadow: none !important; transform: none !important; }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="src/data.jsx"></script>
+<script type="text/babel" src="src/atoms.jsx"></script>
+<script type="text/babel" src="src/Header.jsx"></script>
+<script type="text/babel" src="src/Hero.jsx"></script>
+<script type="text/babel" src="src/FilterBar.jsx"></script>
+<script type="text/babel" src="src/RestaurantCard.jsx"></script>
+<script type="text/babel" src="src/Map.jsx"></script>
+<script type="text/babel" src="src/Footer.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { useState, useMemo, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "heroStyle": "centered",
+  "bentoVariety": true,
+  "defaultLang": "de",
+  "showFeatured": true
+}/*EDITMODE-END*/;
+
+function App() {
+  const [tweaks, setTweaks] = useState(TWEAK_DEFAULTS);
+  const [tweaksOpen, setTweaksOpen] = useState(false);
+  const [lang, setLang] = useState(() => localStorage.getItem('akiwi.lang') || TWEAK_DEFAULTS.defaultLang || 'de');
+  const [query, setQuery] = useState('');
+  const [filters, setFilters] = useState({
+    verifiedOnly: false,
+    district: null,
+    categories: [],
+  });
+  const [hoveredId, setHoveredId] = useState(null);
+
+  useEffect(() => { localStorage.setItem('akiwi.lang', lang); }, [lang]);
+  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
+
+  // Tweaks host protocol
+  useEffect(() => {
+    const onMsg = (e) => {
+      const d = e.data || {};
+      if (d.type === '__activate_edit_mode') setTweaksOpen(true);
+      else if (d.type === '__deactivate_edit_mode') setTweaksOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const setTweak = (k, v) => {
+    const next = { ...tweaks, [k]: v };
+    setTweaks(next);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [k]: v } }, '*');
+  };
+
+  const filtered = useMemo(() => {
+    return window.RESTAURANTS.filter((r) => {
+      if (filters.verifiedOnly && r.status !== 'verified') return false;
+      if (filters.district && r.district !== filters.district) return false;
+      if (filters.categories.length && !r.categories.some((c) => filters.categories.includes(c))) return false;
+      if (query) {
+        const q = query.toLowerCase();
+        const hay = `${r.name} ${r.districtName} ${r.categories.join(' ')} ${r.tags.join(' ')} ${r.district}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }, [filters, query]);
+
+  // Bento size assignment — featured first, then varied pattern
+  const sized = useMemo(() => {
+    if (!tweaks.bentoVariety) return filtered.map((r) => ({ ...r, span: 'sm' }));
+    return filtered.map((r, i) => {
+      if (r.featured && tweaks.showFeatured && i === 0) return { ...r, span: 'lg' };
+      if (i === 3) return { ...r, span: 'md' };
+      return { ...r, span: 'sm' };
+    });
+  }, [filtered, tweaks.bentoVariety, tweaks.showFeatured]);
+
+  const resetFilters = () => {
+    setFilters({ verifiedOnly: false, district: null, categories: [] });
+    setQuery('');
+  };
+
+  const c = window.COPY[lang];
+
+  return (
+    <>
+      <window.Header lang={lang} setLang={setLang} />
+      <window.Hero lang={lang} query={query} setQuery={setQuery} tweaks={tweaks} />
+      <window.FilterBar lang={lang} filters={filters} setFilters={setFilters} resultCount={filtered.length} />
+
+      <section style={{ maxWidth: 1280, margin: '0 auto', padding: '40px 24px 0' }}>
+        {filtered.length === 0 ? (
+          <div style={{
+            padding: '80px 24px', textAlign: 'center',
+            border: '1px dashed var(--border)', borderRadius: 16,
+            color: 'var(--text-secondary)',
+          }}>
+            <div style={{ fontSize: 20, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 8 }}>
+              {c.emptyTitle}
+            </div>
+            <div style={{ fontSize: 14, marginBottom: 16 }}>{c.emptyBody}</div>
+            <button onClick={resetFilters} style={{
+              background: 'var(--accent)', color: 'var(--text-on-accent)',
+              border: 'none', borderRadius: 999,
+              padding: '10px 20px', fontWeight: 600, fontSize: 14,
+              cursor: 'pointer', fontFamily: 'inherit',
+            }}>{c.reset}</button>
+          </div>
+        ) : (
+          <div className="bento">
+            {sized.map((r) => (
+              <window.RestaurantCard
+                key={r.id} r={r} lang={lang} span={r.span}
+                hoveredId={hoveredId} onHoverId={setHoveredId}
+                onClick={() => {}}
+              />
+            ))}
+          </div>
+        )}
+      </section>
+
+      <window.ViennaMap
+        lang={lang}
+        restaurants={filtered}
+        filters={filters}
+        hoveredId={hoveredId}
+        setHoveredId={setHoveredId}
+      />
+
+      <window.Footer lang={lang} />
+
+      {tweaksOpen && (
+        <div style={{
+          position: 'fixed', bottom: 20, right: 20, zIndex: 100,
+          width: 280,
+          background: 'var(--card)',
+          border: '1px solid var(--accent)',
+          borderRadius: 14,
+          boxShadow: '0 20px 48px rgba(0,0,0,0.5)',
+          padding: 16,
+          color: 'var(--text-primary)',
+          fontFamily: 'var(--font-sans)',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ color: 'var(--accent)', display: 'flex' }}><window.Icon.sliders /></span>
+              <h3 style={{ margin: 0, fontSize: 14, fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase' }}>Tweaks</h3>
+            </div>
+            <button onClick={() => setTweaksOpen(false)} style={{
+              background: 'transparent', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer',
+              padding: 4, display: 'flex',
+            }}><window.Icon.close /></button>
+          </div>
+
+          <TweakRow label="Bento variety" hint="Mix card sizes">
+            <Toggle on={tweaks.bentoVariety} onChange={(v) => setTweak('bentoVariety', v)} />
+          </TweakRow>
+          <TweakRow label="Featured card" hint="Highlight first venue">
+            <Toggle on={tweaks.showFeatured} onChange={(v) => setTweak('showFeatured', v)} />
+          </TweakRow>
+          <TweakRow label="Default language">
+            <Segmented value={tweaks.defaultLang} options={['de','en']}
+              onChange={(v) => { setTweak('defaultLang', v); setLang(v); }} />
+          </TweakRow>
+        </div>
+      )}
+    </>
+  );
+}
+
+function TweakRow({ label, hint, children }) {
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      gap: 12, padding: '10px 0',
+      borderBottom: '1px solid var(--border)',
+    }}>
+      <div>
+        <div style={{ fontSize: 13, fontWeight: 600 }}>{label}</div>
+        {hint && <div style={{ fontSize: 11, color: 'var(--text-tertiary)' }}>{hint}</div>}
+      </div>
+      {children}
+    </div>
+  );
+}
+function Toggle({ on, onChange }) {
+  return (
+    <button onClick={() => onChange(!on)} style={{
+      width: 36, height: 20, borderRadius: 999,
+      background: on ? 'var(--accent)' : 'var(--border)',
+      border: 'none', position: 'relative', cursor: 'pointer',
+      transition: 'background 150ms',
+    }}>
+      <span style={{
+        position: 'absolute', top: 2, left: on ? 18 : 2,
+        width: 16, height: 16, borderRadius: 999, background: '#fff',
+        transition: 'left 150ms',
+      }} />
+    </button>
+  );
+}
+function Segmented({ value, options, onChange }) {
+  return (
+    <div style={{
+      display: 'inline-flex', background: 'var(--background)',
+      border: '1px solid var(--border)', borderRadius: 999, padding: 2,
+    }}>
+      {options.map((o) => {
+        const on = value === o;
+        return (
+          <button key={o} onClick={() => onChange(o)} style={{
+            padding: '4px 10px', border: 'none',
+            background: on ? 'var(--primary)' : 'transparent',
+            color: on ? 'var(--accent)' : 'var(--text-secondary)',
+            borderRadius: 999, fontFamily: 'inherit', fontSize: 11, fontWeight: 700,
+            letterSpacing: '0.04em', textTransform: 'uppercase', cursor: 'pointer',
+          }}>{o}</button>
+        );
+      })}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+// Auto-print once fonts + render + babel are settled
+(async () => {
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch (e) {}
+  await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  setTimeout(() => window.print(), 800);
+})();
+</script>
+</body>
+</html>
