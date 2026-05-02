@@ -289,6 +289,277 @@ const VENUES = {
     x: 48, y: 24,
   },
 
+  // ── ALATURKA ERDBERGSTRAßE 1030 ───────────────────────────────────────────────
+  'alaturka-1030': {
+    id: 'alaturka-1030',
+    name: 'Alaturka Erdbergstraße',
+    tagline_de: 'Türkische Spezialitäten — Döner, Pide, Pizza',
+    tagline_en: 'Turkish specialties — Döner, Pide, Pizza',
+    district: 3,
+    districtName: 'Landstraße',
+    address: 'Erdbergstraße 93, 1030 Wien',
+    phone: '+43 699 10327337',
+    website: 'alaturka-doener.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 18,  a: '#7C2D12', b: '#431407' },
+      { hue: 32,  a: '#92400E', b: '#451A03' },
+      { hue: 8,   a: '#7F1D1D', b: '#450A0A' },
+    ],
+    tags: ['Take-away', 'Schnell', 'Türkisch', 'Catering'],
+    hours: [
+      { day: 0, open: '10:00', close: '22:00' },
+      { day: 1, open: '10:00', close: '22:00' },
+      { day: 2, open: '10:00', close: '22:00' },
+      { day: 3, open: '10:00', close: '22:00' },
+      { day: 4, open: '10:00', close: '22:00' },
+      { day: 5, open: '11:00', close: '22:00' },
+      { day: 6, open: '11:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner & Dürüm', cat_en: 'Döner & Dürüm', items: [
+        { name_de: 'Döner Sandwich (Kalb)', name_en: 'Döner sandwich (veal)', price: '6,50' },
+        { name_de: 'Döner Sandwich (Huhn)', name_en: 'Döner sandwich (chicken)', price: '6,50' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap', price: '7,90' },
+        { name_de: 'Vegetarischer Döner', name_en: 'Vegetarian döner', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Pide & Pizza', cat_en: 'Pide & Pizza', items: [
+        { name_de: 'Lahmacun', name_en: 'Lahmacun', price: '4,50' },
+        { name_de: 'Pide (Käse)', name_en: 'Pide (cheese)', price: '8,90' },
+        { name_de: 'Pizza Margherita', name_en: 'Pizza Margherita', price: '8,90' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'alaturka-1120', name: 'Alaturka Am Schöpfwerk', district: 12, status: 'unknown', cat: 'Kebab', distance_km: 5.2, rating: 4.0, hue: 28 },
+      { id: 'alaturka-1150', name: 'Alaturka MaHü',         district: 15, status: 'unknown', cat: 'Kebab', distance_km: 4.8, rating: 4.0, hue: 8 },
+    ],
+    x: 60, y: 52,
+  },
+
+  // ── ALATURKA AM SCHÖPFWERK 1120 ───────────────────────────────────────────────
+  'alaturka-1120': {
+    id: 'alaturka-1120',
+    name: 'Alaturka Am Schöpfwerk',
+    tagline_de: 'Türkische Spezialitäten bei der U6 Schöpfwerk',
+    tagline_en: 'Turkish specialties at U6 Schöpfwerk',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Am Schöpfwerk 68, 1120 Wien',
+    phone: '+43 681 10359266',
+    website: 'alaturka-doener.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 28, a: '#92400E', b: '#451A03' },
+      { hue: 18, a: '#7C2D12', b: '#431407' },
+      { hue: 38, a: '#713F12', b: '#422006' },
+    ],
+    tags: ['Take-away', 'Schnell', 'Türkisch', 'U-Bahn-Nähe'],
+    hours: [
+      { day: 0, open: '09:00', close: '21:00' },
+      { day: 1, open: '09:00', close: '21:00' },
+      { day: 2, open: '09:00', close: '21:00' },
+      { day: 3, open: '09:00', close: '21:00' },
+      { day: 4, open: '09:00', close: '21:00' },
+      { day: 5, open: '10:00', close: '21:00' },
+      { day: 6, open: '10:00', close: '21:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner & Dürüm', cat_en: 'Döner & Dürüm', items: [
+        { name_de: 'Döner Sandwich (Kalb)', name_en: 'Döner sandwich (veal)', price: '6,50' },
+        { name_de: 'Döner Sandwich (Huhn)', name_en: 'Döner sandwich (chicken)', price: '6,50' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap', price: '7,90' },
+      ]},
+      { cat_de: 'Pide & Pizza', cat_en: 'Pide & Pizza', items: [
+        { name_de: 'Lahmacun', name_en: 'Lahmacun', price: '4,50' },
+        { name_de: 'Pide gemischt', name_en: 'Mixed pide', price: '9,50' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'alaturka-1230', name: 'Alaturka Alterlaa', district: 23, status: 'unknown', cat: 'Kebab', distance_km: 3.4, rating: 4.0, hue: 38 },
+      { id: 'alaturka-1150', name: 'Alaturka MaHü',    district: 15, status: 'unknown', cat: 'Kebab', distance_km: 4.0, rating: 4.0, hue: 8 },
+    ],
+    x: 38, y: 70,
+  },
+
+  // ── ALATURKA MAHÜ 1150 ────────────────────────────────────────────────────────
+  'alaturka-1150': {
+    id: 'alaturka-1150',
+    name: 'Alaturka MaHü',
+    tagline_de: 'Türkisch & Italienisch nahe Westbahnhof',
+    tagline_en: 'Turkish & Italian near Westbahnhof',
+    district: 15,
+    districtName: 'Rudolfsheim-Fünfhaus',
+    address: 'Mariahilfer Straße 134, 1150 Wien',
+    phone: '+43 678 1314354',
+    website: 'alaturka-doener.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 8,  a: '#7F1D1D', b: '#450A0A' },
+      { hue: 18, a: '#7C2D12', b: '#431407' },
+      { hue: 28, a: '#92400E', b: '#451A03' },
+    ],
+    tags: ['Take-away', 'Schnell', 'Türkisch', 'Westbahnhof'],
+    hours: [
+      { day: 0, open: '10:00', close: '22:00' },
+      { day: 1, open: '10:00', close: '22:00' },
+      { day: 2, open: '10:00', close: '22:00' },
+      { day: 3, open: '10:00', close: '22:00' },
+      { day: 4, open: '10:00', close: '22:00' },
+      { day: 5, open: '10:00', close: '22:00' },
+      { day: 6, open: '11:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner & Dürüm', cat_en: 'Döner & Dürüm', items: [
+        { name_de: 'Döner Sandwich (Kalb)', name_en: 'Döner sandwich (veal)', price: '6,50' },
+        { name_de: 'Döner Sandwich (Huhn)', name_en: 'Döner sandwich (chicken)', price: '6,50' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap', price: '7,90' },
+      ]},
+      { cat_de: 'Pide & Pizza', cat_en: 'Pide & Pizza', items: [
+        { name_de: 'Lahmacun', name_en: 'Lahmacun', price: '4,50' },
+        { name_de: 'Pizza Salami', name_en: 'Pizza Salami', price: '9,50' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'alaturka-1030', name: 'Alaturka Erdbergstraße', district: 3,  status: 'unknown', cat: 'Kebab', distance_km: 4.8, rating: 4.0, hue: 18 },
+      { id: 'alaturka-1230', name: 'Alaturka Alterlaa',      district: 23, status: 'unknown', cat: 'Kebab', distance_km: 6.1, rating: 4.0, hue: 38 },
+    ],
+    x: 32, y: 52,
+  },
+
+  // ── ALATURKA ALTERLAA 1230 ────────────────────────────────────────────────────
+  'alaturka-1230': {
+    id: 'alaturka-1230',
+    name: 'Alaturka Alterlaa',
+    tagline_de: 'Erste Alaturka-Filiale seit 2004 — bei der U6 Alterlaa',
+    tagline_en: 'First Alaturka location since 2004 — at U6 Alterlaa',
+    district: 23,
+    districtName: 'Liesing',
+    address: 'Anton-Baumgartner-Straße 121, 1230 Wien',
+    phone: '+43 699 19671499',
+    website: 'alaturka-doener.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 38, a: '#713F12', b: '#422006' },
+      { hue: 18, a: '#7C2D12', b: '#431407' },
+      { hue: 28, a: '#92400E', b: '#451A03' },
+    ],
+    tags: ['Take-away', 'Schnell', 'Türkisch', 'Seit 2004'],
+    hours: [
+      { day: 0, open: '10:00', close: '22:00' },
+      { day: 1, open: '10:00', close: '22:00' },
+      { day: 2, open: '10:00', close: '22:00' },
+      { day: 3, open: '10:00', close: '22:00' },
+      { day: 4, open: '10:00', close: '22:00' },
+      { day: 5, open: '10:00', close: '22:00' },
+      { day: 6, open: '11:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner & Dürüm', cat_en: 'Döner & Dürüm', items: [
+        { name_de: 'Döner Sandwich (Kalb)', name_en: 'Döner sandwich (veal)', price: '6,50' },
+        { name_de: 'Döner Sandwich (Huhn)', name_en: 'Döner sandwich (chicken)', price: '6,50' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap', price: '7,90' },
+      ]},
+      { cat_de: 'Pide & Pizza', cat_en: 'Pide & Pizza', items: [
+        { name_de: 'Lahmacun', name_en: 'Lahmacun', price: '4,50' },
+        { name_de: 'Pide Spinat', name_en: 'Spinach pide', price: '8,90', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'alaturka-1120', name: 'Alaturka Am Schöpfwerk', district: 12, status: 'unknown', cat: 'Kebab', distance_km: 3.4, rating: 4.0, hue: 28 },
+      { id: 'alaturka-1030', name: 'Alaturka Erdbergstraße', district: 3,  status: 'unknown', cat: 'Kebab', distance_km: 8.6, rating: 4.0, hue: 18 },
+    ],
+    x: 38, y: 88,
+  },
+
+  // ── ALATURKA WIENER NEUSTADT 2700 ─────────────────────────────────────────────
+  'alaturka-2700': {
+    id: 'alaturka-2700',
+    name: 'Alaturka Wiener Neustadt',
+    tagline_de: 'Türkische Spezialitäten in Niederösterreich',
+    tagline_en: 'Turkish specialties in Lower Austria',
+    district: 0,
+    districtName: 'Wiener Neustadt',
+    address: 'Stadionstraße 5, 2700 Wiener Neustadt',
+    phone: '+43 2622 83542',
+    website: 'alaturka-doener.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 22, a: '#78350F', b: '#451a03' },
+      { hue: 18, a: '#7C2D12', b: '#431407' },
+      { hue: 38, a: '#713F12', b: '#422006' },
+    ],
+    tags: ['Take-away', 'Schnell', 'Türkisch', 'Niederösterreich'],
+    hours: [
+      { day: 0, open: '10:00', close: '22:00' },
+      { day: 1, open: '10:00', close: '22:00' },
+      { day: 2, open: '10:00', close: '22:00' },
+      { day: 3, open: '10:00', close: '22:00' },
+      { day: 4, open: '10:00', close: '22:00' },
+      { day: 5, open: '10:00', close: '22:00' },
+      { day: 6, open: '10:00', close: '21:00' },
+    ],
+    amenities: { parking: true, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner & Dürüm', cat_en: 'Döner & Dürüm', items: [
+        { name_de: 'Döner Sandwich (Kalb)', name_en: 'Döner sandwich (veal)', price: '6,50' },
+        { name_de: 'Döner Sandwich (Huhn)', name_en: 'Döner sandwich (chicken)', price: '6,50' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap', price: '7,90' },
+      ]},
+      { cat_de: 'Pide & Pizza', cat_en: 'Pide & Pizza', items: [
+        { name_de: 'Lahmacun', name_en: 'Lahmacun', price: '4,50' },
+        { name_de: 'Pide gemischt', name_en: 'Mixed pide', price: '9,50' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'alaturka-1230', name: 'Alaturka Alterlaa', district: 23, status: 'unknown', cat: 'Kebab', distance_km: 42, rating: 4.0, hue: 38 },
+    ],
+    x: 78, y: 95,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────

@@ -22,7 +22,7 @@ const Hero = ({ lang, query, setQuery, tweaks }) => {
         letterSpacing: '0.02em',
       }}>
         <window.StatusDot status="verified" size={6} />
-        {lang === 'de' ? '142 Lokale verifiziert · Stand April 2026' : '142 venues verified · as of April 2026'}
+        {lang === 'de' ? 'Halal-Guide für Österreich · Live seit 2026' : 'Halal guide for Austria · Live since 2026'}
       </div>
 
       <h1 className="ak-hero-title" style={{
