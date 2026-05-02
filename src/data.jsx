@@ -241,6 +241,21 @@ const RESTAURANTS = [
     img: ['#C85A17', '#6B3410'],
     accentHue: 25,
   },
+  {
+    id: 'ardak-1120',
+    name: 'Restaurant Ardak',
+    district: 12,
+    districtName: 'Meidling',
+    status: 'self',
+    categories: ['Restaurant', 'Persisch'],
+    tags: ['Persisch', 'Orientalisch', 'Grill', 'Halal', 'Safran-Reis', 'Lieferung'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    x: 41, y: 67,
+    img: ['#8B4513', '#CD853F'],
+    accentHue: 35,
+  },
 ];
 
 const COPY = {

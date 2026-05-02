@@ -1157,6 +1157,91 @@ const VENUES = {
     x: 40, y: 67,
   },
 
+  // ── RESTAURANT ARDAK 1120 ─────────────────────────────────────────────────────
+  'ardak-1120': {
+    id: 'ardak-1120',
+    name: 'Restaurant Ardak',
+    tagline_de: 'Authentische persische Grill-Spezialitäten & traditionelle Khoresht',
+    tagline_en: 'Authentic Persian grill specialties & traditional stews',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Meidlinger Hauptstraße 14, 1120 Wien',
+    phone: '+43 1 8104445',
+    website: 'wolt.com',
+    status: 'self',
+    categories: ['Restaurant', 'Persisch'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 35, a: '#8B4513', b: '#CD853F' },
+      { hue: 35, a: '#8B4513', b: '#CD853F' },
+      { hue: 35, a: '#8B4513', b: '#CD853F' },
+    ],
+    tags: ['Persisch', 'Orientalisch', 'Grill-Spezialitäten', 'Halal', 'Safran-Reis', 'Lieferung'],
+    hours: [
+      { day: 0, open: '11:00', close: '22:30' },
+      { day: 1, open: '11:00', close: '22:30' },
+      { day: 2, open: '11:00', close: '22:30' },
+      { day: 3, open: '11:00', close: '22:30' },
+      { day: 4, open: '11:00', close: '22:30' },
+      { day: 5, open: '11:00', close: '22:30' },
+      { day: 6, open: '11:00', close: '22:30' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Vorspeisen & Dips (Mezza)', cat_en: 'Starters & Dips (Mezze)', items: [
+        { name_de: 'Hummus', name_en: 'Hummus', price: '5,90', tag: 'V' },
+        { name_de: 'Kashke Bademjan', name_en: 'Kashke Bademjan (eggplant)', price: '7,90', tag: 'V' },
+        { name_de: 'Mirza Ghasemi', name_en: 'Mirza Ghasemi (smoked eggplant)', price: '7,90', tag: 'V' },
+        { name_de: 'Mast-o-Khiar', name_en: 'Mast-o-Khiar (yogurt & cucumber)', price: '5,50', tag: 'V' },
+        { name_de: 'Mast-o-Musir', name_en: 'Mast-o-Musir (yogurt & wild garlic)', price: '5,90', tag: 'V' },
+        { name_de: 'Vorspeisenteller (Gemischt)', name_en: 'Assorted starter platter', price: '14,90', tag: 'V' },
+      ]},
+      { cat_de: 'Suppen & Salate', cat_en: 'Soups & Salads', items: [
+        { name_de: 'Asche Reshteh', name_en: 'Asche Reshteh (herb noodle soup)', price: '6,90', tag: 'V' },
+        { name_de: 'Salat Shirazi', name_en: 'Shirazi salad (cucumber, tomato, onion)', price: '5,50', tag: 'V' },
+        { name_de: 'Salat Fasl', name_en: 'Seasonal salad', price: '5,90', tag: 'V' },
+      ]},
+      { cat_de: 'Hauptspeisen vom Grill (mit Safranreis)', cat_en: 'Main courses from grill (with saffron rice)', items: [
+        { name_de: 'Kabab Koobideh', name_en: 'Kabab Koobideh (ground meat skewers)', price: '14,90' },
+        { name_de: 'Joojeh Kabab (ohne Knochen)', name_en: 'Joojeh Kabab (boneless chicken)', price: '15,90' },
+        { name_de: 'Kabab Barg', name_en: 'Kabab Barg (lamb fillet)', price: '20,90' },
+        { name_de: 'Kabab Soltani', name_en: 'Kabab Soltani (combo platter)', price: '24,90' },
+        { name_de: 'Joojeh Soltani', name_en: 'Joojeh Soltani (chicken combo)', price: '21,90' },
+        { name_de: 'Chenjeh Kabab', name_en: 'Chenjeh Kabab (grilled lamb chunks)', price: '19,90' },
+        { name_de: 'Ardak Spezial Platte (für 2 Personen)', name_en: 'Ardak special platter (2 persons)', price: '46,00' },
+      ]},
+      { cat_de: 'Traditionelle Schmorgerichte (Khoresht)', cat_en: 'Traditional Stews (Khoresht)', items: [
+        { name_de: 'Ghormeh Sabzi', name_en: 'Ghormeh Sabzi (herb & kidney bean stew)', price: '14,50' },
+        { name_de: 'Gheimeh Bademjan', name_en: 'Gheimeh Bademjan (lentil & eggplant stew)', price: '14,50' },
+        { name_de: 'Fesenjan', name_en: 'Fesenjan (walnut & pomegranate sauce)', price: '16,50' },
+      ]},
+      { cat_de: 'Fischgerichte', cat_en: 'Fish Dishes', items: [
+        { name_de: 'Mahi Tscha (Lachs oder Wolfsbarsch)', name_en: 'Mahi Tscha (salmon or sea bass)', price: '21,50' },
+      ]},
+      { cat_de: 'Desserts & Getränke', cat_en: 'Desserts & Beverages', items: [
+        { name_de: 'Baklava (3 Stück)', name_en: 'Baklava (3 pcs)', price: '5,50', tag: 'V' },
+        { name_de: 'Bastani Sonnati', name_en: 'Bastani Sonnati (saffron ice cream)', price: '5,90', tag: 'V' },
+        { name_de: 'Faloodeh', name_en: 'Faloodeh (noodle ice)', price: '5,90', tag: 'V' },
+        { name_de: 'Doogh (0,5l)', name_en: 'Doogh (yogurt drink)', price: '4,50', tag: 'V' },
+        { name_de: 'Softdrinks (0,33l)', name_en: 'Soft drinks (0.33l)', price: '2,90', tag: 'V' },
+        { name_de: 'Tee', name_en: 'Tea', price: '2,50', tag: 'V' },
+        { name_de: 'Kaffee (Espresso)', name_en: 'Coffee (Espresso)', price: '2,80', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+    ],
+    similar: [
+      { id: 'ava-persisch-1120', name: 'AVA Persisches Restaurant', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 350 },
+      { id: 'motelli-1120', name: 'Motelli Restaurant', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.0, rating: 4.0, hue: 25 },
+      { id: 'liwan-1120', name: 'Liwan Restaurant Meidling', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 160 },
+    ],
+    x: 41, y: 67,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
