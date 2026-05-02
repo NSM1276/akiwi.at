@@ -93,8 +93,8 @@ const { useState, useEffect } = React;
     && !window.location.hostname.endsWith('.vercel.app')
     && window.location.hostname !== 'localhost';
   var subId = isSubdomain ? parts[0] : null;
-  var id = urlId || subId || 'al-nour';
-  var v = window.VENUES[id] || window.VENUES['al-nour'];
+  var id = urlId || subId || 'alaturka-1030';
+  var v = window.VENUES[id] || window.VENUES['alaturka-1030'];
   window.VENUE = v;
   window.DETAIL_COPY.de.breadcrumb = ['Home', 'Bezirk ' + v.district, v.name];
   window.DETAIL_COPY.en.breadcrumb = ['Home', 'District ' + v.district, v.name];
