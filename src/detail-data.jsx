@@ -975,6 +975,93 @@ const VENUES = {
     x: 52, y: 42,
   },
 
+  // ── AVA PERSISCHES RESTAURANT 1120 ────────────────────────────────────────────
+  'ava-persisch-1120': {
+    id: 'ava-persisch-1120',
+    name: 'AVA Persisches Restaurant',
+    tagline_de: 'Authentische persische Küche mit Safran-Reis und Grill-Spezialitäten',
+    tagline_en: 'Authentic Persian cuisine with saffron rice and grill specialties',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Meidlinger Hauptstraße 10, 1120 Wien',
+    phone: '+43 1 810 5773',
+    website: 'avapersischesrestaurantwien.at',
+    status: 'self',
+    categories: ['Restaurant', 'Persisch'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 350, a: '#5C1A1A', b: '#2D0A0A' },
+      { hue: 350, a: '#5C1A1A', b: '#2D0A0A' },
+      { hue: 350, a: '#5C1A1A', b: '#2D0A0A' },
+    ],
+    tags: ['Iranisch', 'Safran-Reis', 'Kebab', 'Gehobenes Ambiente', 'Reservierung empfohlen'],
+    hours: [
+      { day: 0, open: '11:00', close: '23:00' },
+      { day: 1, open: '11:00', close: '23:00' },
+      { day: 2, open: '11:00', close: '23:00' },
+      { day: 3, open: '11:00', close: '23:00' },
+      { day: 4, open: '11:00', close: '23:00' },
+      { day: 5, open: '11:00', close: '23:00' },
+      { day: 6, open: '11:00', close: '23:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: false, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Suppen & Vorspeisen', cat_en: 'Soups & Appetizers', items: [
+        { name_de: 'Asche Reshteh', name_en: 'Asche Reshteh (herb soup)', price: '7,50', tag: 'V' },
+        { name_de: 'Soup e Jo', name_en: 'Soup e Jo (barley & chicken soup)', price: '6,50' },
+        { name_de: 'Hummus', name_en: 'Hummus', price: '6,50', tag: 'V' },
+        { name_de: 'Mirza Ghasemi', name_en: 'Mirza Ghasemi (eggplant, tomato, garlic, egg)', price: '8,90', tag: 'V' },
+        { name_de: 'Kashke Bademjan', name_en: 'Kashke Bademjan (eggplant, yogurt, walnuts)', price: '8,90', tag: 'V' },
+        { name_de: 'Borani Esfanaj', name_en: 'Borani Esfanaj (spinach yogurt dip)', price: '6,50', tag: 'V' },
+        { name_de: 'Mast-o-Khiar', name_en: 'Mast-o-Khiar (yogurt with cucumber & mint)', price: '5,90', tag: 'V' },
+        { name_de: 'Mast-o-Musir', name_en: 'Mast-o-Musir (yogurt with wild garlic)', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Salate', cat_en: 'Salads', items: [
+        { name_de: 'Salat Shirazi', name_en: 'Salat Shirazi (cucumbers, tomatoes, onions)', price: '5,90', tag: 'V' },
+        { name_de: 'Salat Fasl', name_en: 'Salat Fasl (seasonal salad)', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Hauptspeisen vom Grill (Kabab)', cat_en: 'Grilled Main Courses (Kebabs)', items: [
+        { name_de: 'Kabab Koobideh', name_en: 'Kabab Koobideh (minced lamb & beef)', price: '15,90' },
+        { name_de: 'Kabab Barg', name_en: 'Kabab Barg (marinated lamb loin)', price: '21,90' },
+        { name_de: 'Kabab Soltani', name_en: 'Kabab Soltani (Barg + Koobideh combo)', price: '26,90' },
+        { name_de: 'Joojeh Kabab (mit Knochen)', name_en: 'Joojeh Kabab with bone (chicken)', price: '16,90' },
+        { name_de: 'Joojeh Kabab (ohne Knochen)', name_en: 'Joojeh Kabab boneless (chicken fillet)', price: '16,90' },
+        { name_de: 'Joojeh Soltani', name_en: 'Joojeh Soltani (chicken fillet + Koobideh)', price: '24,90' },
+        { name_de: 'Chenjeh', name_en: 'Chenjeh (grilled lamb chunks)', price: '21,90' },
+        { name_de: 'AVA Spezial Platte (für 2 Personen)', name_en: 'AVA Special Platter (for 2)', price: '49,00' },
+      ]},
+      { cat_de: 'Traditionelle Schmorgerichte (Khoresht)', cat_en: 'Traditional Stews (Khoresht)', items: [
+        { name_de: 'Ghormeh Sabzi', name_en: 'Ghormeh Sabzi (herb stew with lamb)', price: '15,90' },
+        { name_de: 'Gheimeh Bademjan', name_en: 'Gheimeh Bademjan (lamb & lentil stew)', price: '15,90' },
+        { name_de: 'Fesenjan', name_en: 'Fesenjan (chicken in walnut-pomegranate sauce)', price: '17,90', tag: 'V' },
+      ]},
+      { cat_de: 'Fischgerichte', cat_en: 'Fish Dishes', items: [
+        { name_de: 'Mahi Tscha', name_en: 'Mahi Tscha (grilled sea bass or salmon)', price: '22,90' },
+      ]},
+      { cat_de: 'Desserts', cat_en: 'Desserts', items: [
+        { name_de: 'Bastani Sonnati', name_en: 'Bastani Sonnati (saffron & pistachio ice cream)', price: '6,50', tag: 'V' },
+        { name_de: 'Faloodeh', name_en: 'Faloodeh (glass noodle ice with rose water)', price: '6,50', tag: 'V' },
+        { name_de: 'Baklava', name_en: 'Baklava', price: '5,50', tag: 'V' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Beverages', items: [
+        { name_de: 'Doogh (Hausgemacht, 0,25l)', name_en: 'Doogh homemade yogurt drink (0.25l)', price: '3,50', tag: 'V' },
+        { name_de: 'Doogh (Hausgemacht, 0,5l)', name_en: 'Doogh homemade yogurt drink (0.5l)', price: '5,50', tag: 'V' },
+        { name_de: 'Softdrinks (0,33l)', name_en: 'Soft drinks (0.33l)', price: '3,20', tag: 'V' },
+        { name_de: 'Persischer Tee (Kanne)', name_en: 'Persian tea (pot)', price: '4,90', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+    ],
+    similar: [
+      { id: 'liwan-1120', name: 'Liwan Restaurant Meidling', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 160 },
+    ],
+    x: 40, y: 67,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────

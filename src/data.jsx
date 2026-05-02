@@ -211,6 +211,21 @@ const RESTAURANTS = [
     img: ['#1E5C4A', '#0B3D2C'],
     accentHue: 160,
   },
+  {
+    id: 'ava-persisch-1120',
+    name: 'AVA Persisches Restaurant',
+    district: 12,
+    districtName: 'Meidling',
+    status: 'self',
+    categories: ['Restaurant', 'Persisch'],
+    tags: ['Iranisch', 'Grill', 'Safran-Reis', 'Gehobenes Ambiente', 'Reservierung'],
+    price: '€€',
+    rating: 4.0,
+    reviews: 0,
+    x: 40, y: 67,
+    img: ['#5C1A1A', '#2D0A0A'],
+    accentHue: 350,
+  },
 ];
 
 const COPY = {
