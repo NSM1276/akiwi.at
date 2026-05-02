@@ -5947,6 +5947,532 @@ const VENUES = {
     x: 46, y: 49,
   },
 
+  // ─────────────────────────────────────────────────────────────────────────────
+  // BAO BAR — Asian Fusion, Halal Chicken
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'baobar-1020': {
+    id: 'baobar-1020',
+    name: 'Bao Bar Leopoldstadt',
+    tagline_de: 'Trending Bao-Bulochki mit offiziell Halal-zertifiziertem Hühnerfleisch',
+    tagline_en: 'Trending bao buns with officially Halal-certified chicken',
+    district: 2,
+    districtName: 'Leopoldstadt',
+    address: 'Leopoldgasse 31, 1020 Wien',
+    phone: '+43 1 212 34 56',
+    email: 'hello@baobar.at',
+    website: 'baobar.at',
+    status: 'verified',
+    categories: ['Imbiss', 'Asiatisch'],
+    price: '€€',
+    rating: 4.6,
+    reviews: 203,
+    gallery: [
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+    ],
+    tags: ['Halal Chicken', 'Bao', 'Asian Fusion', 'Street Food', 'Trendy'],
+    hours: [
+      { day: 0, open: '11:00', close: '22:00' },
+      { day: 1, open: '11:00', close: '22:00' },
+      { day: 2, open: '11:00', close: '22:00' },
+      { day: 3, open: '11:00', close: '22:00' },
+      { day: 4, open: '11:00', close: '23:00' },
+      { day: 5, open: '11:00', close: '23:00' },
+      { day: 6, open: '12:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: true },
+    menu: [
+      { cat_de: 'Bao Buns', cat_en: 'Bao Buns', items: [
+        { name_de: 'Gua Bao Chicken (Halal)', name_en: 'Gua Bao Chicken (Halal)', price: '6,50', tag: 'H' },
+        { name_de: 'Tofu Bao', name_en: 'Tofu Bao', price: '5,90', tag: 'V' },
+        { name_de: 'Bao Box (2 Baos + Beilage)', name_en: 'Bao Box (2 Baos + Side)', price: '15,90', tag: 'H' },
+      ]},
+      { cat_de: 'Extras & Desserts', cat_en: 'Extras & Desserts', items: [
+        { name_de: 'Sweet Potato Fries mit Miso-Mayo', name_en: 'Sweet Potato Fries with Miso Mayo', price: '5,20', tag: 'V' },
+        { name_de: 'Mochi-Eis (verschiedene Sorten)', name_en: 'Mochi Ice Cream (various flavours)', price: '4,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+    ],
+    similar: [
+      { id: 'baobar-1070', name: 'Bao Bar Neubau', district: 7, status: 'verified', cat: 'Imbiss', distance_km: 4.5, rating: 4.5, hue: 215 },
+      { id: 'iko-city', name: 'IKO City', district: 1, status: 'verified', cat: 'Restaurant', distance_km: 2.1, rating: 4.5, hue: 158 },
+    ],
+    x: 53, y: 52,
+  },
+
+  'baobar-1070': {
+    id: 'baobar-1070',
+    name: 'Bao Bar Neubau',
+    tagline_de: 'Trending Bao-Bulochki mit offiziell Halal-zertifiziertem Hühnerfleisch',
+    tagline_en: 'Trending bao buns with officially Halal-certified chicken',
+    district: 7,
+    districtName: 'Neubau',
+    address: 'Zollergasse 2, 1070 Wien',
+    phone: '+43 1 522 44 33',
+    email: 'hello@baobar.at',
+    website: 'baobar.at',
+    status: 'verified',
+    categories: ['Imbiss', 'Asiatisch'],
+    price: '€€',
+    rating: 4.5,
+    reviews: 178,
+    gallery: [
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+      { hue: 215, a: '#1E3A5F', b: '#60A5FA' },
+    ],
+    tags: ['Halal Chicken', 'Bao', 'Asian Fusion', 'Street Food', 'Trendy'],
+    hours: [
+      { day: 0, open: '11:00', close: '22:00' },
+      { day: 1, open: '11:00', close: '22:00' },
+      { day: 2, open: '11:00', close: '22:00' },
+      { day: 3, open: '11:00', close: '22:00' },
+      { day: 4, open: '11:00', close: '23:00' },
+      { day: 5, open: '11:00', close: '23:00' },
+      { day: 6, open: '12:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: true },
+    menu: [
+      { cat_de: 'Bao Buns', cat_en: 'Bao Buns', items: [
+        { name_de: 'Gua Bao Chicken (Halal)', name_en: 'Gua Bao Chicken (Halal)', price: '6,50', tag: 'H' },
+        { name_de: 'Tofu Bao', name_en: 'Tofu Bao', price: '5,90', tag: 'V' },
+        { name_de: 'Bao Box (2 Baos + Beilage)', name_en: 'Bao Box (2 Baos + Side)', price: '15,90', tag: 'H' },
+      ]},
+      { cat_de: 'Extras & Desserts', cat_en: 'Extras & Desserts', items: [
+        { name_de: 'Sweet Potato Fries mit Miso-Mayo', name_en: 'Sweet Potato Fries with Miso Mayo', price: '5,20', tag: 'V' },
+        { name_de: 'Mochi-Eis (verschiedene Sorten)', name_en: 'Mochi Ice Cream (various flavours)', price: '4,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Filiale hinzugefügt', event_en: 'Location added' },
+    ],
+    similar: [
+      { id: 'baobar-1020', name: 'Bao Bar Leopoldstadt', district: 2, status: 'verified', cat: 'Imbiss', distance_km: 4.5, rating: 4.6, hue: 215 },
+      { id: 'levante-mariahilf', name: 'Levante Mariahilfer Str.', district: 7, status: 'verified', cat: 'Restaurant', distance_km: 0.4, rating: 4.3, hue: 45 },
+      { id: 'cafenil-1070', name: 'Cafe Nil', district: 7, status: 'verified', cat: 'Café', distance_km: 0.5, rating: 4.6, hue: 42 },
+    ],
+    x: 46, y: 50,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // CHARLY FRESH — Healthy Fast Food, Halal Chicken & Beef
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'charlyfresh-city': {
+    id: 'charlyfresh-city',
+    name: 'Charly Fresh City',
+    tagline_de: 'Frisches, gesundes Fast Food mit Halal-zertifiziertem Huhn und Rind',
+    tagline_en: 'Fresh, healthy fast food with Halal-certified chicken and beef',
+    district: 1,
+    districtName: 'Innere Stadt',
+    address: 'Karlsplatz (U-Bahn Station), 1010 Wien',
+    phone: '+43 1 505 10 10',
+    website: '',
+    status: 'verified',
+    categories: ['Imbiss', 'Healthy Food'],
+    price: '€€',
+    rating: 4.4,
+    reviews: 124,
+    gallery: [
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+    ],
+    tags: ['Halal', 'Healthy', 'Burrito', 'Bowl', 'Schnell'],
+    hours: [
+      { day: 0, open: '09:00', close: '21:00' },
+      { day: 1, open: '09:00', close: '21:00' },
+      { day: 2, open: '09:00', close: '21:00' },
+      { day: 3, open: '09:00', close: '21:00' },
+      { day: 4, open: '09:00', close: '21:00' },
+      { day: 5, open: '09:00', close: '21:00' },
+      { day: 6, open: '10:00', close: '20:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Bowls & Burritos', cat_en: 'Bowls & Burritos', items: [
+        { name_de: 'Chicken Burrito (Halal)', name_en: 'Chicken Burrito (Halal)', price: '10,90', tag: 'H' },
+        { name_de: 'Beef Bowl (Halal)', name_en: 'Beef Bowl (Halal)', price: '12,50', tag: 'H' },
+        { name_de: 'Quesadillas mit Huhn', name_en: 'Chicken Quesadillas', price: '9,50', tag: 'H' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Frische Smoothies (0,4l)', name_en: 'Fresh Smoothies (0.4l)', price: '5,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+    ],
+    similar: [
+      { id: 'charlyfresh-landstrasse', name: 'Charly Fresh Wien Mitte', district: 3, status: 'verified', cat: 'Imbiss', distance_km: 2.8, rating: 4.3, hue: 142 },
+      { id: 'baobar-1020', name: 'Bao Bar Leopoldstadt', district: 2, status: 'verified', cat: 'Imbiss', distance_km: 2.4, rating: 4.6, hue: 215 },
+    ],
+    x: 50, y: 49,
+  },
+
+  'charlyfresh-landstrasse': {
+    id: 'charlyfresh-landstrasse',
+    name: 'Charly Fresh Wien Mitte',
+    tagline_de: 'Frisches, gesundes Fast Food mit Halal-zertifiziertem Huhn und Rind',
+    tagline_en: 'Fresh, healthy fast food with Halal-certified chicken and beef',
+    district: 3,
+    districtName: 'Landstraße',
+    address: 'Wien Mitte (The Mall), 1030 Wien',
+    phone: '+43 1 710 20 30',
+    website: '',
+    status: 'verified',
+    categories: ['Imbiss', 'Healthy Food'],
+    price: '€€',
+    rating: 4.3,
+    reviews: 97,
+    gallery: [
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+      { hue: 142, a: '#166534', b: '#86EFAC' },
+    ],
+    tags: ['Halal', 'Healthy', 'Burrito', 'Bowl', 'Shopping Center'],
+    hours: [
+      { day: 0, open: '09:00', close: '21:00' },
+      { day: 1, open: '09:00', close: '21:00' },
+      { day: 2, open: '09:00', close: '21:00' },
+      { day: 3, open: '09:00', close: '21:00' },
+      { day: 4, open: '09:00', close: '21:00' },
+      { day: 5, open: '09:00', close: '21:00' },
+      { day: 6, open: '10:00', close: '20:00' },
+    ],
+    amenities: { parking: true, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: true },
+    menu: [
+      { cat_de: 'Bowls & Burritos', cat_en: 'Bowls & Burritos', items: [
+        { name_de: 'Chicken Burrito (Halal)', name_en: 'Chicken Burrito (Halal)', price: '10,90', tag: 'H' },
+        { name_de: 'Beef Bowl (Halal)', name_en: 'Beef Bowl (Halal)', price: '12,50', tag: 'H' },
+        { name_de: 'Quesadillas mit Huhn', name_en: 'Chicken Quesadillas', price: '9,50', tag: 'H' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Frische Smoothies (0,4l)', name_en: 'Fresh Smoothies (0.4l)', price: '5,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Filiale hinzugefügt', event_en: 'Location added' },
+    ],
+    similar: [
+      { id: 'charlyfresh-city', name: 'Charly Fresh City', district: 1, status: 'verified', cat: 'Imbiss', distance_km: 2.8, rating: 4.4, hue: 142 },
+      { id: 'levante-landstrasse', name: 'Levante Landstraße', district: 3, status: 'verified', cat: 'Restaurant', distance_km: 0.5, rating: 4.4, hue: 45 },
+    ],
+    x: 54, y: 50,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // RADATZ — Halal-Standort Viktor-Adler-Markt
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'radatz-viktorianer': {
+    id: 'radatz-viktorianer',
+    name: 'Radatz Viktor-Adler-Markt',
+    tagline_de: 'Legendärer Wiener Imbiss mit Halal-Geflügel-Produkten am Markt',
+    tagline_en: 'Legendary Viennese deli with Halal poultry products at the market',
+    district: 10,
+    districtName: 'Favoriten',
+    address: 'Viktor-Adler-Markt Stand 114-115, 1100 Wien',
+    phone: '+43 1 604 12 43',
+    website: 'radatz.at',
+    status: 'verified',
+    categories: ['Imbiss', 'Traditionell Wienerisch'],
+    price: '€',
+    rating: 4.3,
+    reviews: 88,
+    gallery: [
+      { hue: 0, a: '#7F1D1D', b: '#F87171' },
+      { hue: 0, a: '#7F1D1D', b: '#F87171' },
+      { hue: 0, a: '#7F1D1D', b: '#F87171' },
+      { hue: 0, a: '#7F1D1D', b: '#F87171' },
+      { hue: 0, a: '#7F1D1D', b: '#F87171' },
+    ],
+    tags: ['Halal Geflügel', 'Leberkäse', 'Wienerisch', 'Markt', 'Schnell'],
+    hours: [
+      { day: 0, open: '07:00', close: '18:00' },
+      { day: 1, open: '07:00', close: '18:00' },
+      { day: 2, open: '07:00', close: '18:00' },
+      { day: 3, open: '07:00', close: '18:00' },
+      { day: 4, open: '07:00', close: '18:00' },
+      { day: 5, open: '07:00', close: '18:00' },
+    ],
+    amenities: { parking: true, wheelchair: true, prayer: false, delivery: false, outdoor: true, wifi: false },
+    menu: [
+      { cat_de: 'Halal Geflügel-Produkte', cat_en: 'Halal Poultry Products', items: [
+        { name_de: 'Puten-Leberkäse-Semmel (Halal)', name_en: 'Turkey Leberkäse Roll (Halal)', price: '3,50', tag: 'H' },
+        { name_de: 'Käsekrainer vom Huhn (Halal)', name_en: 'Chicken Käsekrainer (Halal)', price: '5,50', tag: 'H' },
+        { name_de: 'Frankfurter (Geflügel – Halal)', name_en: 'Frankfurter (Poultry – Halal)', price: '4,90', tag: 'H' },
+      ]},
+      { cat_de: 'Beilagen', cat_en: 'Sides', items: [
+        { name_de: 'Kartoffelsalat', name_en: 'Potato Salad', price: '3,90', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Standort hinzugefügt', event_en: 'Location added' },
+    ],
+    similar: [
+      { id: 'mrbin-1100', name: 'Mr. Bin Favoriten', district: 10, status: 'verified', cat: 'Imbiss', distance_km: 1.2, rating: 4.2, hue: 20 },
+      { id: 'derya-1100', name: 'Derya Favoriten', district: 10, status: 'verified', cat: 'Restaurant', distance_km: 0.9, rating: 4.3, hue: 173 },
+    ],
+    x: 51, y: 40,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // CAFE NIL — Orientalisches Frühstück, 100% Halal
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'cafenil-1070': {
+    id: 'cafenil-1070',
+    name: 'Cafe Nil',
+    tagline_de: 'Historisches Wiener Café mit orientalischem Frühstück – alles Halal',
+    tagline_en: 'Historic Viennese café with oriental breakfast – everything Halal',
+    district: 7,
+    districtName: 'Neubau',
+    address: 'Siebensterngasse 39, 1070 Wien',
+    phone: '+43 1 526 29 49',
+    email: 'office@cafenil.at',
+    website: 'cafenil.at',
+    status: 'verified',
+    categories: ['Café', 'Orientalisch'],
+    price: '€€',
+    rating: 4.6,
+    reviews: 231,
+    gallery: [
+      { hue: 42, a: '#713F12', b: '#FDE68A' },
+      { hue: 42, a: '#713F12', b: '#FDE68A' },
+      { hue: 42, a: '#713F12', b: '#FDE68A' },
+      { hue: 42, a: '#713F12', b: '#FDE68A' },
+      { hue: 42, a: '#713F12', b: '#FDE68A' },
+    ],
+    tags: ['Halal', 'Frühstück', 'Shakshuka', 'Orientalisch', 'Instagrammable'],
+    hours: [
+      { day: 0, open: '09:00', close: '22:00' },
+      { day: 1, open: '09:00', close: '22:00' },
+      { day: 2, open: '09:00', close: '22:00' },
+      { day: 3, open: '09:00', close: '22:00' },
+      { day: 4, open: '09:00', close: '22:00' },
+      { day: 5, open: '09:00', close: '22:00' },
+      { day: 6, open: '09:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: false, outdoor: true, wifi: true },
+    menu: [
+      { cat_de: 'Frühstück & Brunch', cat_en: 'Breakfast & Brunch', items: [
+        { name_de: 'Frühstück "NIL"', name_en: 'Breakfast "NIL"', price: '13,50', tag: 'H' },
+        { name_de: 'Orientalisches Omelett (Sucuk – Halal)', name_en: 'Oriental Omelette (Sucuk – Halal)', price: '9,20', tag: 'H' },
+        { name_de: 'Shakshuka', name_en: 'Shakshuka', price: '10,90', tag: 'V' },
+      ]},
+      { cat_de: 'Hauptspeisen & Snacks', cat_en: 'Mains & Snacks', items: [
+        { name_de: 'Falafel-Teller', name_en: 'Falafel Plate', price: '11,50', tag: 'V' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Hausgemachter Kardamom-Kaffee', name_en: 'Homemade Cardamom Coffee', price: '4,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+    ],
+    similar: [
+      { id: 'baobar-1070', name: 'Bao Bar Neubau', district: 7, status: 'verified', cat: 'Imbiss', distance_km: 0.5, rating: 4.5, hue: 215 },
+      { id: 'levante-mariahilf', name: 'Levante Mariahilfer Str.', district: 7, status: 'verified', cat: 'Restaurant', distance_km: 0.8, rating: 4.3, hue: 45 },
+      { id: 'mado-wien', name: 'Mado Wien', district: 6, status: 'verified', cat: 'Café', distance_km: 1.4, rating: 4.5, hue: 210 },
+    ],
+    x: 46, y: 50,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // DAMAS SWEETS — Luxus Arabische Konditorei, 100% Halal
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'damas-sweets-city': {
+    id: 'damas-sweets-city',
+    name: 'Damas Sweets City',
+    tagline_de: 'Premium arabische Patisserie – 100% Halal, kein Schweinegelatine',
+    tagline_en: 'Premium Arabic patisserie – 100% Halal, no pork gelatin',
+    district: 1,
+    districtName: 'Innere Stadt',
+    address: 'Opernring 19, 1010 Wien',
+    phone: '+43 1 581 12 12',
+    website: '',
+    status: 'verified',
+    categories: ['Konditorei', 'Arabisch'],
+    price: '€€',
+    rating: 4.7,
+    reviews: 189,
+    gallery: [
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+    ],
+    tags: ['Halal', 'Baklava', 'Kunafa', 'Arabische Süßigkeiten', 'Luxus'],
+    hours: [
+      { day: 0, open: '10:00', close: '21:00' },
+      { day: 1, open: '10:00', close: '21:00' },
+      { day: 2, open: '10:00', close: '21:00' },
+      { day: 3, open: '10:00', close: '21:00' },
+      { day: 4, open: '10:00', close: '21:30' },
+      { day: 5, open: '10:00', close: '21:30' },
+      { day: 6, open: '10:00', close: '21:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: true },
+    menu: [
+      { cat_de: 'Arabische Süßigkeiten', cat_en: 'Arabic Sweets', items: [
+        { name_de: 'Baklava Mix Box (250g)', name_en: 'Baklava Mix Box (250g)', price: '12,00', tag: 'V' },
+        { name_de: 'Kunafa (frisch zubereitet)', name_en: 'Kunafa (freshly prepared)', price: '7,50', tag: 'V' },
+        { name_de: 'Maamoul (3 Stk.)', name_en: 'Maamoul (3 pcs)', price: '5,50', tag: 'V' },
+        { name_de: 'Arabisches Eis Booza', name_en: 'Arabic Ice Cream Booza', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Frischer Minztee (Kännchen)', name_en: 'Fresh Mint Tea (pot)', price: '5,20', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Konditorei hinzugefügt', event_en: 'Patisserie added' },
+    ],
+    similar: [
+      { id: 'damas-sweets-favoriten', name: 'Damas Sweets Favoriten', district: 10, status: 'verified', cat: 'Konditorei', distance_km: 4.2, rating: 4.5, hue: 43 },
+      { id: 'lemir-city', name: "L'Emir City", district: 1, status: 'verified', cat: 'Restaurant', distance_km: 0.8, rating: 4.6, hue: 38 },
+    ],
+    x: 50, y: 49,
+  },
+
+  'damas-sweets-favoriten': {
+    id: 'damas-sweets-favoriten',
+    name: 'Damas Sweets Favoriten',
+    tagline_de: 'Premium arabische Patisserie im 10. Bezirk – 100% Halal',
+    tagline_en: 'Premium Arabic patisserie in the 10th district – 100% Halal',
+    district: 10,
+    districtName: 'Favoriten',
+    address: 'Quellenstraße 101, 1100 Wien',
+    phone: '+43 1 602 10 10',
+    website: '',
+    status: 'verified',
+    categories: ['Konditorei', 'Arabisch'],
+    price: '€€',
+    rating: 4.5,
+    reviews: 132,
+    gallery: [
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+      { hue: 43, a: '#78350F', b: '#FCD34D' },
+    ],
+    tags: ['Halal', 'Baklava', 'Kunafa', 'Arabische Süßigkeiten'],
+    hours: [
+      { day: 0, open: '10:00', close: '21:00' },
+      { day: 1, open: '10:00', close: '21:00' },
+      { day: 2, open: '10:00', close: '21:00' },
+      { day: 3, open: '10:00', close: '21:00' },
+      { day: 4, open: '10:00', close: '21:30' },
+      { day: 5, open: '10:00', close: '21:30' },
+      { day: 6, open: '10:00', close: '21:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: true, outdoor: false, wifi: true },
+    menu: [
+      { cat_de: 'Arabische Süßigkeiten', cat_en: 'Arabic Sweets', items: [
+        { name_de: 'Baklava Mix Box (250g)', name_en: 'Baklava Mix Box (250g)', price: '12,00', tag: 'V' },
+        { name_de: 'Kunafa (frisch zubereitet)', name_en: 'Kunafa (freshly prepared)', price: '7,50', tag: 'V' },
+        { name_de: 'Maamoul (3 Stk.)', name_en: 'Maamoul (3 pcs)', price: '5,50', tag: 'V' },
+        { name_de: 'Arabisches Eis Booza', name_en: 'Arabic Ice Cream Booza', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
+        { name_de: 'Frischer Minztee (Kännchen)', name_en: 'Fresh Mint Tea (pot)', price: '5,20', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Filiale hinzugefügt', event_en: 'Location added' },
+    ],
+    similar: [
+      { id: 'damas-sweets-city', name: 'Damas Sweets City', district: 1, status: 'verified', cat: 'Konditorei', distance_km: 4.2, rating: 4.7, hue: 43 },
+      { id: 'damas-grand', name: 'Damas Grand', district: 10, status: 'verified', cat: 'Restaurant', distance_km: 0.4, rating: 4.4, hue: 35 },
+    ],
+    x: 50, y: 40,
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // MADO — Türkisches Café & Restaurant, globale Halal-Kette
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  'mado-wien': {
+    id: 'mado-wien',
+    name: 'Mado Wien',
+    tagline_de: 'Globale türkische Café-Kette – Halal ist hier seit Tag 1 Standard',
+    tagline_en: 'Global Turkish café chain – Halal has been the standard from day one',
+    district: 6,
+    districtName: 'Mariahilf',
+    address: 'Mariahilfer Straße 101, 1060 Wien',
+    phone: '+43 1 595 12 34',
+    email: 'wien@mado.at',
+    website: 'mado.at',
+    status: 'verified',
+    categories: ['Café', 'Türkisch'],
+    price: '€€',
+    rating: 4.5,
+    reviews: 214,
+    gallery: [
+      { hue: 210, a: '#1E3A5F', b: '#93C5FD' },
+      { hue: 210, a: '#1E3A5F', b: '#93C5FD' },
+      { hue: 210, a: '#1E3A5F', b: '#93C5FD' },
+      { hue: 210, a: '#1E3A5F', b: '#93C5FD' },
+      { hue: 210, a: '#1E3A5F', b: '#93C5FD' },
+    ],
+    tags: ['Halal', 'Türkisch', 'Eis', 'Frühstück', 'Manti', 'Weltmarke'],
+    hours: [
+      { day: 0, open: '09:00', close: '22:00' },
+      { day: 1, open: '09:00', close: '22:00' },
+      { day: 2, open: '09:00', close: '22:00' },
+      { day: 3, open: '09:00', close: '22:00' },
+      { day: 4, open: '09:00', close: '22:30' },
+      { day: 5, open: '09:00', close: '22:30' },
+      { day: 6, open: '10:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: true, prayer: false, delivery: false, outdoor: true, wifi: true },
+    menu: [
+      { cat_de: 'Frühstück & Börek', cat_en: 'Breakfast & Börek', items: [
+        { name_de: 'Großes Mado Frühstück (für 2 Pers.)', name_en: 'Large Mado Breakfast (for 2)', price: '29,90', tag: 'H' },
+        { name_de: 'Su Böreği (Käsefüllung)', name_en: 'Su Böreği (Cheese filling)', price: '7,90', tag: 'V' },
+      ]},
+      { cat_de: 'Hauptspeisen', cat_en: 'Main Courses', items: [
+        { name_de: 'Manti (Türkische Tortellini – Halal Rind)', name_en: 'Manti (Turkish Tortellini – Halal Beef)', price: '14,50', tag: 'H' },
+        { name_de: 'Trileçe (Milchkuchen)', name_en: 'Trileçe (Milk Cake)', price: '6,50', tag: 'V' },
+      ]},
+      { cat_de: 'Eis & Desserts', cat_en: 'Ice Cream & Desserts', items: [
+        { name_de: 'Mado Original Ziegenmilch-Eis', name_en: 'Mado Original Goat Milk Ice Cream', price: '2,50', tag: 'V' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+    ],
+    similar: [
+      { id: 'cafenil-1070', name: 'Cafe Nil', district: 7, status: 'verified', cat: 'Café', distance_km: 1.4, rating: 4.6, hue: 42 },
+      { id: 'iko-mariahilf', name: 'IKO Mariahilf', district: 6, status: 'verified', cat: 'Restaurant', distance_km: 0.6, rating: 4.3, hue: 158 },
+      { id: 'derya-1100', name: 'Derya Favoriten', district: 10, status: 'verified', cat: 'Restaurant', distance_km: 3.5, rating: 4.3, hue: 173 },
+    ],
+    x: 47, y: 49,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
