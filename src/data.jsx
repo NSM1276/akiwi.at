@@ -121,6 +121,21 @@ const RESTAURANTS = [
     img: ['#78350F', '#451a03'],
     accentHue: 38,
   },
+  {
+    id: 'le-doener',
+    name: 'Le Döner',
+    district: 12,
+    districtName: 'Meidling',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    tags: ['Bio', 'Türkisch', 'Hawaiian', 'Lieferung', 'Take-away', 'Ohne Zusatzstoffe'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    x: 39, y: 65,
+    img: ['#1E3A8A', '#0c1e42'],
+    accentHue: 200,
+  },
 ];
 
 const COPY = {

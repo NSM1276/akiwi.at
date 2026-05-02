@@ -494,6 +494,62 @@ const VENUES = {
     x: 38, y: 65,
   },
 
+  // ── LE DÖNER 1120 ─────────────────────────────────────────────────────────────
+  'le-doener': {
+    id: 'le-doener',
+    name: 'Le Döner',
+    tagline_de: 'Bio-Döner & Pizza mit Hawaiian Flavours',
+    tagline_en: 'Organic döner & pizza with Hawaiian flavours',
+    district: 12,
+    districtName: 'Meidling',
+    address: 'Meidlinger Hauptstraße 43, 1120 Wien',
+    phone: '+43 660 6941900',
+    website: 'xn--ledner-jua.at',
+    status: 'unknown',
+    categories: ['Kebab', 'Pizza'],
+    price: '€',
+    rating: 4.0,
+    reviews: 0,
+    gallery: [
+      { hue: 200, a: '#1E3A8A', b: '#0c1e42' },
+      { hue: 18,  a: '#7C2D12', b: '#431407' },
+      { hue: 130, a: '#1E3A1E', b: '#052e16' },
+    ],
+    tags: ['Bio', 'Türkisch', 'Hawaiian', 'Ohne Zusatzstoffe', 'Lieferung', 'Take-away'],
+    hours: [
+      { day: 0, open: '10:00', close: '21:00' },
+      { day: 1, open: '10:00', close: '21:00' },
+      { day: 2, open: '10:00', close: '21:00' },
+      { day: 3, open: '10:00', close: '21:00' },
+      { day: 4, open: '10:00', close: '21:00' },
+      { day: 5, open: '10:00', close: '21:00' },
+      { day: 6, open: '11:00', close: '21:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Döner Spezialitäten', cat_en: 'Döner specialties', items: [
+        { name_de: 'Klassischer Döner (Bio-Fleisch)', name_en: 'Classic döner (organic meat)' },
+        { name_de: 'Vegetarischer Döner', name_en: 'Vegetarian döner', tag: 'V' },
+        { name_de: 'Dürüm Wrap', name_en: 'Dürüm wrap' },
+        { name_de: 'Döner Box (mit Salat oder Pommes)', name_en: 'Döner box (with salad or fries)' },
+      ]},
+      { cat_de: 'Pizza & Imbiss', cat_en: 'Pizza & Snacks', items: [
+        { name_de: 'Pizza (italienischer Stil)', name_en: 'Pizza (Italian style)' },
+        { name_de: 'Hawaiian Style Spezialitäten', name_en: 'Hawaiian style specialties' },
+      ]},
+    ],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+    ],
+    similar: [
+      { id: 'bakis-schnitzelparadies', name: "Baki's Schnitzelparadies",        district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 38  },
+      { id: 'damla',                   name: 'Damla Cafe-Konditorei-Bäckerei', district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 0.5, rating: 4.0, hue: 350 },
+      { id: 'antep-evi',               name: 'Antep Evi Grillhaus',           district: 12, status: 'unknown', cat: 'Restaurant', distance_km: 1.7, rating: 4.0, hue: 130 },
+    ],
+    x: 39, y: 65,
+  },
+
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
