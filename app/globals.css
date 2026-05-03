@@ -241,3 +241,55 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 .bento > article:nth-child(7) { animation-delay: 240ms; }
 .bento > article:nth-child(8) { animation-delay: 280ms; }
 .bento > article:nth-child(9) { animation-delay: 320ms; }
+
+/* =========================================================
+   Restaurant detail page
+   ========================================================= */
+.ak-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+  align-items: start;
+}
+.ak-detail-aside {
+  position: sticky;
+  top: 88px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+@media (max-width: 900px) {
+  .ak-detail-grid { grid-template-columns: 1fr; gap: 24px; }
+  .ak-detail-aside { position: static; top: auto; }
+  .ak-gallery { height: 280px !important; grid-template-columns: 2fr 1fr !important; grid-template-rows: 1fr 1fr !important; }
+  .ak-gallery > button:nth-child(n+4) { display: none !important; }
+}
+
+.ak-section { padding: 36px 0; border-top: 1px solid var(--border); }
+.ak-section:first-of-type { border-top: none; padding-top: 24px; }
+.ak-section-h {
+  font-size: 22px; font-weight: 700; letter-spacing: -0.01em;
+  margin: 0 0 18px;
+}
+
+.ak-anchor-nav {
+  position: sticky; top: 60px; z-index: 10;
+  background: rgba(31,41,55,0.85);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.ak-anchor-nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none;
+}
+.ak-anchor-nav-inner::-webkit-scrollbar { display: none; }
+.ak-anchor-nav a {
+  padding: 14px 14px; white-space: nowrap;
+  color: var(--text-secondary); text-decoration: none;
+  font-size: 13px; font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: color 150ms, border-color 150ms;
+}
+.ak-anchor-nav a:hover { color: var(--text-primary); }
+.ak-anchor-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+body { padding-bottom: 0; }
+body:has(.ak-detail-grid) { padding-bottom: 96px; }
