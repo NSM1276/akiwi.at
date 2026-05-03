@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
 
 import { SEARCH_RESTAURANTS, SEARCH_COPY } from '@/data/search-data';
 import Header from '@/components/Header';
@@ -86,8 +85,8 @@ function SearchPage() {
     try { localStorage.setItem('akiwi_lang', l); } catch {}
   };
 
-  // Search query from URL
-  const [query, setQuery] = useState(() => searchParams.get('q') || '');
+  // Search query from URL — safe null guard for SSR
+  const [query, setQuery] = useState('');
   const [where, setWhere] = useState('');
 
   // Filters / sort / view
@@ -98,9 +97,9 @@ function SearchPage() {
   const [hoveredId, setHoveredId] = useState(null);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
-  // Sync URL → query state
+  // Sync URL → query state (runs client-side only)
   useEffect(() => {
-    const q = searchParams.get('q') || '';
+    const q = searchParams?.get('q') || '';
     setQuery(q);
   }, [searchParams]);
 
