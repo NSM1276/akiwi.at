@@ -293,3 +293,72 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 
 body { padding-bottom: 0; }
 body:has(.ak-detail-grid) { padding-bottom: 96px; }
+/* =========================================================
+   Hero animations — ADD this block to app/globals.css
+   (paste at the end of the file, after the existing keyframes)
+   ========================================================= */
+
+/* Pulsing green dot next to the live counter */
+@keyframes heroDotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45); }
+  50%      { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+.hero-pulse-dot {
+  animation: heroDotPulse 2.2s ease-in-out infinite;
+}
+
+/* Marquee ticker strips with restaurant names */
+@keyframes tickerLeft {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes tickerRight {
+  from { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(0, 0, 0); }
+}
+.hero-ticker {
+  position: absolute;
+  left: 0; right: 0;
+  height: 28px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.hero-ticker-top    { top: 14px; }
+.hero-ticker-bottom { bottom: 14px; }
+.hero-ticker-track {
+  display: inline-flex; align-items: center; gap: 28px;
+  white-space: nowrap; will-change: transform;
+  animation: tickerLeft 90s linear infinite;
+}
+.hero-ticker-rtl .hero-ticker-track {
+  animation-name: tickerRight;
+  animation-duration: 110s;
+}
+.hero-ticker-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 500; letter-spacing: 0.01em;
+  color: var(--text-tertiary);
+}
+.hero-ticker-dot {
+  width: 6px; height: 6px; border-radius: 999px; flex-shrink: 0;
+}
+.hero-ticker-sep {
+  width: 4px; height: 4px; border-radius: 999px;
+  background: var(--border);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-pulse-dot   { animation: none; }
+  .hero-ticker-track { animation: none; }
+}
+
+/* Hide ticker on small screens (it competes with the headline) */
+@media (max-width: 600px) {
+  .hero-ticker { display: none; }
+}
