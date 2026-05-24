@@ -89,7 +89,7 @@ export default function HomePage() {
               <RestaurantCard
                 key={r.id} r={r} lang={lang} span={r.span}
                 hoveredId={hoveredId} onHoverId={setHoveredId}
-                onClick={() => router.push('/r/' + r.id)}
+                onClick={() => router.push(r.type === 'chain' ? '/chain/' + r.id : '/r/' + r.id)}
               />
             ))}
           </div>

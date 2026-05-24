@@ -14,7 +14,9 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
   const wide = span === 'md';
   const imgHeight = tall ? 260 : wide ? 180 : 160;
 
-  const handleClick = onClick || (() => { router.push('/r/' + r.id); });
+  const handleClick = onClick || (() => {
+    router.push(r.type === 'chain' ? '/chain/' + r.id : '/r/' + r.id);
+  });
 
   return (
     <article
@@ -71,15 +73,36 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
         </div>
         <div style={{
           position: 'absolute', top: 12, right: 12,
-          background: 'rgba(0,0,0,0.55)',
-          backdropFilter: 'blur(4px)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          padding: '4px 10px',
-          borderRadius: 999,
-          fontSize: 12, fontWeight: 700,
-          color: 'var(--text-primary)',
-          letterSpacing: '0.04em',
-        }}>{r.price}</div>
+          display: 'flex', gap: 6, alignItems: 'center',
+        }}>
+          {r.type === 'chain' && (
+            <div style={{
+              background: 'var(--accent)',
+              color: 'var(--text-on-accent)',
+              padding: '4px 10px',
+              borderRadius: 999,
+              fontSize: 11, fontWeight: 700,
+              letterSpacing: '0.04em',
+              display: 'flex', alignItems: 'center', gap: 4,
+            }}>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+              </svg>
+              {r.locationCount} Fil.
+            </div>
+          )}
+          <div style={{
+            background: 'rgba(0,0,0,0.55)',
+            backdropFilter: 'blur(4px)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            padding: '4px 10px',
+            borderRadius: 999,
+            fontSize: 12, fontWeight: 700,
+            color: 'var(--text-primary)',
+            letterSpacing: '0.04em',
+          }}>{r.price}</div>
+        </div>
 
         {r.featured && (
           <div style={{
