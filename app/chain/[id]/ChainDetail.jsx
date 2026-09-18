@@ -1,10 +1,12 @@
 'use client';
-import { useState, useEffect } from 'react';
+
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { StatusBadge, Icon } from '@/components/atoms';
 import { COPY } from '@/data/data';
+import { useLang } from '@/components/LangProvider';
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -119,21 +121,20 @@ function LocationCard({ venue, lang }) {
           </a>
         )}
 
-        <button
-          onClick={() => window.location.href = '/r/' + venue.id}
+        <Link
+          href={`/r/${venue.id}`}
           style={{
             display: 'inline-flex', alignItems: 'center', gap: 6,
             background: 'transparent',
             border: '1px solid var(--border)',
             color: 'var(--text-secondary)',
             padding: '8px 14px', borderRadius: 999,
-            fontSize: 13, fontWeight: 600, cursor: 'pointer',
-            fontFamily: 'inherit',
+            fontSize: 13, fontWeight: 600, textDecoration: 'none',
           }}
         >
-          {lang === 'de' ? 'Details' : 'Details'}
+          Details
           <Icon.arrow size={12} />
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -143,21 +144,12 @@ function LocationCard({ venue, lang }) {
 
 export default function ChainDetail({ chain, venues }) {
   const router = useRouter();
-  const [lang, setLang] = useState('de');
+  const [lang, setLang] = useLang();
   const c = COPY[lang];
 
-  useEffect(() => {
-    const stored = typeof window !== 'undefined' ? localStorage.getItem('akiwi.lang') : null;
-    if (stored && (stored === 'de' || stored === 'en')) setLang(stored);
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') localStorage.setItem('akiwi.lang', lang);
-    document.documentElement.lang = lang;
-  }, [lang]);
 
   const totalReviews = venues.reduce((s, v) => s + (v.reviews || 0), 0);
-  const bestRating = venues.reduce((best, v) => Math.max(best, v.rating || 0), 0);
+  const bestRating = venues.reduce((best, v) => (v.reviews > 0 ? Math.max(best, v.rating || 0) : best), 0);
   const tagline = lang === 'de' ? chain.tagline_de : chain.tagline_en;
 
   return (
@@ -265,35 +257,6 @@ export default function ChainDetail({ chain, venues }) {
           {venues.map((venue) => (
             <LocationCard key={venue.id} venue={venue} lang={lang} />
           ))}
-        </div>
-
-        {/* Owner CTA */}
-        <div style={{
-          marginTop: 56, padding: '28px 32px',
-          background: 'var(--card)',
-          border: '1px dashed var(--border)',
-          borderRadius: 'var(--radius-card)',
-          textAlign: 'center',
-        }}>
-          <div style={{ fontSize: 20, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>
-            {lang === 'de' ? 'Bist du der Betreiber?' : 'Are you the owner?'}
-          </div>
-          <div style={{ fontSize: 14, color: 'var(--text-secondary)', marginBottom: 20 }}>
-            {lang === 'de'
-              ? 'Übernimm dein Profil, aktualisiere Öffnungszeiten, Fotos und Halal-Status.'
-              : 'Claim your profile, update opening hours, photos, and halal status.'}
-          </div>
-          <button
-            onClick={() => router.push('/for-owners')}
-            style={{
-              background: 'var(--accent)', color: 'var(--text-on-accent)',
-              border: 'none', borderRadius: 999,
-              padding: '12px 24px', fontWeight: 700, fontSize: 14,
-              cursor: 'pointer', fontFamily: 'inherit',
-            }}
-          >
-            {lang === 'de' ? 'Eintrag beanspruchen →' : 'Claim listing →'}
-          </button>
         </div>
       </main>
 

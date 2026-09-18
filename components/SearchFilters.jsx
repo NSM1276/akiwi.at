@@ -1,12 +1,11 @@
 'use client';
 // SearchFilters — left-side filter panel for the catalog page.
-// Sections collapse; values are controlled via filters object.
+// Every group is backed by real data; the options come from getFacets().
 
-import { SEARCH_COPY, CUISINES, PRICE_LEVELS } from '@/data/search-data';
-import { DISTRICTS } from '@/data/data';
+import { SEARCH_COPY } from '@/data/search-data';
 import { Icon, StatusDot } from '@/components/atoms';
 
-export default function SearchFilters({ lang, filters, setFilters, totalCount, visibleCount }) {
+export default function SearchFilters({ lang, filters, setFilters, facets, totalCount, visibleCount }) {
   const c = SEARCH_COPY[lang];
 
   const toggle = (key, value) => {
@@ -14,23 +13,16 @@ export default function SearchFilters({ lang, filters, setFilters, totalCount, v
     const next = cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value];
     setFilters({ ...filters, [key]: next });
   };
-  const setOne = (key, value) => setFilters({ ...filters, [key]: filters[key] === value ? null : value });
   const setBool = (key) => setFilters({ ...filters, [key]: !filters[key] });
 
-  const isFiltered =
-    (filters.halal||[]).length || (filters.cuisine||[]).length || (filters.district||[]).length ||
-    (filters.price||[]).length || (filters.services||[]).length || (filters.dietary||[]).length ||
-    filters.openNow || filters.family || filters.rating;
+  const isFiltered = Object.values(filters).some((v) => (Array.isArray(v) ? v.length : !!v));
+
+  // The Vienna district grid is noise when the user has narrowed to other cities.
+  const cityPick = filters.city || [];
+  const showDistricts = !cityPick.length || cityPick.includes('Wien');
 
   return (
-    <aside style={{
-      position: 'sticky', top: 76,
-      alignSelf: 'start',
-      width: '100%',
-      maxHeight: 'calc(100vh - 100px)',
-      overflowY: 'auto',
-      paddingRight: 8,
-    }}>
+    <aside className="search-filters">
       <div style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         marginBottom: 18,
@@ -54,8 +46,8 @@ export default function SearchFilters({ lang, filters, setFilters, totalCount, v
 
       <FilterGroup title={c.filters.halal}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {['verified','self','unknown'].map((s) => (
-            <CheckRow key={s} on={(filters.halal||[]).includes(s)} onClick={() => toggle('halal', s)}>
+          {['verified', 'self', 'unknown'].map((s) => (
+            <CheckRow key={s} on={(filters.halal || []).includes(s)} onClick={() => toggle('halal', s)}>
               <StatusDot status={s} size={8} />
               <span>{c.halalLabels[s]}</span>
             </CheckRow>
@@ -64,61 +56,69 @@ export default function SearchFilters({ lang, filters, setFilters, totalCount, v
       </FilterGroup>
 
       <FilterGroup title={c.filters.openNow}>
-        <SwitchRow on={!!filters.openNow} onClick={() => setBool('openNow')} label={lang === 'de' ? 'Nur jetzt geöffnet' : 'Only open right now'} />
+        <SwitchRow on={!!filters.openNow} onClick={() => setBool('openNow')} label={c.openNowOnly} />
       </FilterGroup>
 
-      <FilterGroup title={c.filters.cuisine}>
+      <FilterGroup title={c.filters.category}>
         <ChipRow>
-          {CUISINES.map((cu) => (
-            <Chip key={cu} on={(filters.cuisine||[]).includes(cu)} onClick={() => toggle('cuisine', cu)}>{cu}</Chip>
-          ))}
-        </ChipRow>
-      </FilterGroup>
-
-      <FilterGroup title={c.filters.district}>
-        <DistrictGrid lang={lang} value={filters.district||[]} onToggle={(d) => toggle('district', d)} />
-      </FilterGroup>
-
-      <FilterGroup title={c.filters.price}>
-        <ChipRow>
-          {PRICE_LEVELS.map((p) => (
-            <Chip key={p} on={(filters.price||[]).includes(p)} onClick={() => toggle('price', p)} bold>{p}</Chip>
-          ))}
-        </ChipRow>
-      </FilterGroup>
-
-      <FilterGroup title={c.filters.rating}>
-        <ChipRow>
-          {[4, 4.5].map((r) => (
-            <Chip key={r} on={filters.rating === r} onClick={() => setOne('rating', r)}>
-              <Icon.star size={11} /> <span style={{ marginLeft: 4 }}>{c.ratingLabels[r]}</span>
+          {facets.categories.map((cat) => (
+            <Chip key={cat} on={(filters.category || []).includes(cat)} onClick={() => toggle('category', cat)}>
+              {cat}
             </Chip>
           ))}
         </ChipRow>
       </FilterGroup>
 
-      <FilterGroup title={c.filters.services}>
+      <FilterGroup title={c.filters.city}>
+        <ChipRow>
+          {facets.cities.map((city) => (
+            <Chip key={city} on={(filters.city || []).includes(city)} onClick={() => toggle('city', city)}>
+              {city}
+            </Chip>
+          ))}
+        </ChipRow>
+      </FilterGroup>
+
+      {showDistricts && (
+        <FilterGroup title={c.filters.district}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 4 }}>
+            {facets.districts.map((d) => {
+              const on = (filters.district || []).includes(d);
+              return (
+                <button key={d} onClick={() => toggle('district', d)} style={{
+                  padding: '6px 0',
+                  background: on ? 'var(--primary)' : 'var(--card)',
+                  border: `1px solid ${on ? 'var(--primary)' : 'var(--border)'}`,
+                  borderRadius: 6,
+                  color: on ? 'var(--accent)' : 'var(--text-secondary)',
+                  fontFamily: 'inherit', fontSize: 11, fontWeight: 700,
+                  cursor: 'pointer', textAlign: 'center',
+                  transition: 'all var(--dur-fast) var(--ease-out)',
+                }} title={`${1000 + d * 10}`}>{d}</button>
+              );
+            })}
+          </div>
+        </FilterGroup>
+      )}
+
+      <FilterGroup title={c.filters.price}>
+        <ChipRow>
+          {facets.prices.map((p) => (
+            <Chip key={p} on={(filters.price || []).includes(p)} onClick={() => toggle('price', p)} bold>
+              {p}
+            </Chip>
+          ))}
+        </ChipRow>
+      </FilterGroup>
+
+      <FilterGroup title={c.filters.amenities} last>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {['delivery','takeout','dinein'].map((s) => (
-            <CheckRow key={s} on={(filters.services||[]).includes(s)} onClick={() => toggle('services', s)}>
-              <span>{c.serviceLabels[s]}</span>
+          {facets.amenities.map((a) => (
+            <CheckRow key={a} on={(filters.amenities || []).includes(a)} onClick={() => toggle('amenities', a)}>
+              <span>{c.amenityLabels[a]}</span>
             </CheckRow>
           ))}
         </div>
-      </FilterGroup>
-
-      <FilterGroup title={c.filters.dietary}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {['vegetarian','vegan'].map((d) => (
-            <CheckRow key={d} on={(filters.dietary||[]).includes(d)} onClick={() => toggle('dietary', d)}>
-              <span>{c.dietaryLabels[d]}</span>
-            </CheckRow>
-          ))}
-        </div>
-      </FilterGroup>
-
-      <FilterGroup title={c.filters.family} last>
-        <SwitchRow on={!!filters.family} onClick={() => setBool('family')} label={c.family} />
       </FilterGroup>
 
       <div style={{
@@ -202,10 +202,10 @@ function SwitchRow({ on, onClick, label }) {
   return (
     <button onClick={onClick} style={{
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      width: '100%', padding: '4px 0',
+      width: '100%', padding: '4px 0', gap: 12,
       background: 'transparent', border: 'none', cursor: 'pointer',
       color: 'var(--text-primary)',
-      fontFamily: 'inherit', fontSize: 13, fontWeight: 500,
+      fontFamily: 'inherit', fontSize: 13, fontWeight: 500, textAlign: 'left',
     }}>
       <span>{label}</span>
       <span style={{
@@ -221,27 +221,5 @@ function SwitchRow({ on, onClick, label }) {
         }} />
       </span>
     </button>
-  );
-}
-
-function DistrictGrid({ lang, value, onToggle }) {
-  return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 4 }}>
-      {DISTRICTS.map((d) => {
-        const on = value.includes(d);
-        return (
-          <button key={d} onClick={() => onToggle(d)} style={{
-            padding: '6px 0',
-            background: on ? 'var(--primary)' : 'var(--card)',
-            border: `1px solid ${on ? 'var(--primary)' : 'var(--border)'}`,
-            borderRadius: 6,
-            color: on ? 'var(--accent)' : 'var(--text-secondary)',
-            fontFamily: 'inherit', fontSize: 11, fontWeight: 700,
-            cursor: 'pointer', textAlign: 'center',
-            transition: 'all var(--dur-fast) var(--ease-out)',
-          }} title={`${1000 + d * 10}`}>{d}</button>
-        );
-      })}
-    </div>
   );
 }

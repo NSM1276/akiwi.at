@@ -1,10 +1,11 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import { COPY, DISTRICTS, CATEGORIES } from '@/data/data';
+import { COPY } from '@/data/data';
 import { Icon } from './atoms';
 
-export default function FilterBar({ lang, filters, setFilters, resultCount }) {
+export default function FilterBar({ lang, filters, setFilters, resultCount, facets }) {
   const c = COPY[lang];
+  const { districts, categories } = facets;
   const [districtOpen, setDistrictOpen] = useState(false);
   const dropRef = useRef(null);
 
@@ -101,7 +102,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount }) {
                 {c.allDistricts}
               </button>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
-                {DISTRICTS.map((d) => (
+                {districts.map((d) => (
                   <button key={d} onClick={() => { setFilters({ ...filters, district: d }); setDistrictOpen(false); }}
                     style={dropItemStyle(filters.district === d)}>
                     <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginRight: 6 }}>
@@ -118,7 +119,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount }) {
         <div style={{ width: 1, height: 24, background: 'var(--border)' }} />
 
         <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-          {CATEGORIES.map((cat) => {
+          {categories.map((cat) => {
             const on = filters.categories.includes(cat);
             return (
               <button key={cat} onClick={() => toggleCat(cat)} style={{

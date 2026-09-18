@@ -1,5 +1,5 @@
 'use client';
-import { DETAIL_COPY } from '@/data/venues';
+import { DETAIL_COPY } from '@/data/detail-copy';
 import { Icon, StatusBadge } from './atoms';
 
 export function Menu({ venue, lang }) {
@@ -56,6 +56,15 @@ export function Menu({ venue, lang }) {
 
 export function Reviews({ venue, lang }) {
   const c = DETAIL_COPY[lang];
+
+  if (!venue.reviews || venue.reviews === 0) {
+    return (
+      <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: 14 }}>
+        {lang === 'de' ? 'Noch keine Bewertungen.' : 'No reviews yet.'}
+      </p>
+    );
+  }
+
   return (
     <div>
       <div style={{
@@ -78,23 +87,6 @@ export function Reviews({ venue, lang }) {
           <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
             {c.reviewsCount(venue.reviews)}
           </span>
-        </div>
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {[5,4,3,2,1].map((stars, i) => {
-            const widths = [78, 16, 4, 1, 1];
-            return (
-              <div key={stars} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12 }}>
-                <span style={{ width: 12, color: 'var(--text-secondary)' }}>{stars}</span>
-                <Icon.star size={10} />
-                <span style={{ flex: 1, height: 6, background: 'rgba(75,85,99,0.4)', borderRadius: 999, overflow: 'hidden' }}>
-                  <span style={{ display: 'block', height: '100%', width: `${widths[i]}%`, background: 'var(--accent)' }} />
-                </span>
-                <span style={{ width: 32, textAlign: 'right', color: 'var(--text-tertiary)', fontVariantNumeric: 'tabular-nums' }}>
-                  {Math.round(venue.reviews * widths[i] / 100)}
-                </span>
-              </div>
-            );
-          })}
         </div>
       </div>
 
@@ -130,14 +122,6 @@ export function Reviews({ venue, lang }) {
           </li>
         ))}
       </ul>
-
-      <button style={{
-        marginTop: 16,
-        background: 'transparent', border: '1px solid var(--border)',
-        color: 'var(--text-primary)', padding: '10px 18px',
-        borderRadius: 999, fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
-        cursor: 'pointer',
-      }}>{c.writeReview}</button>
     </div>
   );
 }
@@ -147,7 +131,9 @@ export function Verification({ venue, lang }) {
   return (
     <div>
       <p style={{ margin: '0 0 18px', color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.55 }}>
-        {c.statusBlurbVerified}
+        {venue.status === 'verified' ? c.statusBlurbVerified :
+         venue.status === 'self' ? c.statusBlurbSelf :
+         c.statusBlurbUnknown}
       </p>
       <ol style={{ listStyle: 'none', margin: 0, padding: 0, position: 'relative' }}>
         <span style={{
@@ -202,10 +188,6 @@ export function SimilarList({ venue, lang }) {
             <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)' }}>{s.name}</div>
             <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginTop: 3, display: 'flex', alignItems: 'center', gap: 6 }}>
               <span>{lang === 'de' ? 'Bezirk' : 'District'} {s.district}</span>
-              <span>·</span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3, color: 'var(--accent)' }}>
-                <Icon.star size={10} /> {s.rating}
-              </span>
               <span style={{ marginLeft: 'auto', color: 'var(--text-tertiary)', fontSize: 11 }}>
                 {s.distance_km} km
               </span>

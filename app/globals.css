@@ -29,7 +29,7 @@
   --color-status-red: #EF4444;
 
   /* ---------- Typography: family ---------- */
-  --font-sans: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* ---------- Motion ---------- */
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -65,7 +65,7 @@
   --status-yellow-bg: rgba(245, 158, 11, 0.12);
   --status-red-bg: rgba(239, 68, 68, 0.12);
 
-  --font-sans: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -111,20 +111,6 @@
   --focus-ring: 0 0 0 2px var(--background), 0 0 0 4px var(--accent);
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
 
 html, body {
   background: var(--background);
@@ -219,11 +205,10 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 @media (max-width: 960px) {
   .bento { grid-template-columns: repeat(2, 1fr); }
-  .bento > article { grid-column: auto !important; grid-row: auto !important; }
+  .bento > .bento-card { grid-column: auto !important; grid-row: auto !important; }
 }
 @media (max-width: 600px) {
   .bento { grid-template-columns: 1fr; }
-  .ak-nav-desktop { display: none !important; }
   .ak-footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
 }
 
@@ -231,16 +216,16 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.bento > article { animation: fadeUp 400ms var(--ease-out) both; }
-.bento > article:nth-child(1) { animation-delay: 0ms; }
-.bento > article:nth-child(2) { animation-delay: 40ms; }
-.bento > article:nth-child(3) { animation-delay: 80ms; }
-.bento > article:nth-child(4) { animation-delay: 120ms; }
-.bento > article:nth-child(5) { animation-delay: 160ms; }
-.bento > article:nth-child(6) { animation-delay: 200ms; }
-.bento > article:nth-child(7) { animation-delay: 240ms; }
-.bento > article:nth-child(8) { animation-delay: 280ms; }
-.bento > article:nth-child(9) { animation-delay: 320ms; }
+.bento > .bento-card { animation: fadeUp 400ms var(--ease-out) both; }
+.bento > .bento-card:nth-child(1) { animation-delay: 0ms; }
+.bento > .bento-card:nth-child(2) { animation-delay: 40ms; }
+.bento > .bento-card:nth-child(3) { animation-delay: 80ms; }
+.bento > .bento-card:nth-child(4) { animation-delay: 120ms; }
+.bento > .bento-card:nth-child(5) { animation-delay: 160ms; }
+.bento > .bento-card:nth-child(6) { animation-delay: 200ms; }
+.bento > .bento-card:nth-child(7) { animation-delay: 240ms; }
+.bento > .bento-card:nth-child(8) { animation-delay: 280ms; }
+.bento > .bento-card:nth-child(9) { animation-delay: 320ms; }
 
 /* =========================================================
    Restaurant detail page
@@ -361,4 +346,63 @@ body:has(.ak-detail-grid) { padding-bottom: 96px; }
 /* Hide ticker on small screens (it competes with the headline) */
 @media (max-width: 600px) {
   .hero-ticker { display: none; }
+}
+
+/* =========================================================
+   Header navigation — burger below 720px
+   ========================================================= */
+.ak-nav-burger { display: none; }
+@media (max-width: 720px) {
+  .ak-nav-desktop { display: none !important; }
+  .ak-nav-burger { display: inline-flex !important; }
+}
+.ak-nav-mobile {
+  background: rgba(31,41,55,0.98);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   Search page layout
+   ========================================================= */
+.search-filters {
+  position: sticky; top: 76px;
+  align-self: start;
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: 8px;
+}
+.search-mobile-toggle {
+  display: none;
+  max-width: 1280px; margin: 0 auto; padding: 0 24px 12px;
+}
+
+@media (max-width: 900px) {
+  .search-layout { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .search-mobile-toggle { display: block; }
+  .search-sidebar { display: none; }
+  .search-sidebar.open { display: block; }
+  .search-filters {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 16px;
+    background: var(--card);
+  }
+  .search-split { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 600px) {
+  .search-hero-fields {
+    flex-direction: column;
+    border-radius: var(--radius-card) !important;
+    padding: 10px !important;
+  }
+  .search-hero-divider { width: 100% !important; height: 1px; margin: 4px 0 !important; }
+  .search-hero-fields > button { width: 100%; }
+  .search-view-toggle { flex: 1; }
+  .search-density { display: none !important; }
 }

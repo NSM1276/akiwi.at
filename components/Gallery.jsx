@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { DETAIL_COPY } from '@/data/venues';
+import { DETAIL_COPY } from '@/data/detail-copy';
 import { Icon } from './atoms';
 
 export default function Gallery({ venue, lang }) {

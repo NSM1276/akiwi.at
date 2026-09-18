@@ -1,375 +1,14 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// AKIWI — Homepage listing data
-//
-// type: 'chain'  → links to /chain/[id], shows locationCount badge
-// type: 'venue'  → links to /r/[id]   (default, can be omitted)
+// AKIWI — UI copy (DE/EN) and filter constants.
+// The card list for the homepage/search is built in listing.js.
 // ─────────────────────────────────────────────────────────────────────────────
-
-export const RESTAURANTS = [
-
-  // ── CHAINS (19) ──────────────────────────────────────────────────────────
-
-  {
-    id: 'turkis', type: 'chain', locationCount: 9,
-    name: 'Türkis',
-    district: 0, districtName: 'Wien · Linz · Vösendorf',
-    status: 'verified',
-    categories: ['Restaurant', 'Kebab'],
-    tags: ['Orientalisch', 'Grill', 'Halal', 'Lieferung', 'Catering'],
-    price: '€–€€', rating: 4.2, reviews: 103,
-    x: 55, y: 50,
-    img: ['#0D9488', '#14B8A6'], accentHue: 190,
-  },
-
-  {
-    id: 'vapiano', type: 'chain', locationCount: 12,
-    name: 'Vapiano',
-    district: 0, districtName: 'Österreichweit',
-    status: 'verified',
-    categories: ['Restaurant', 'Italienisch'],
-    tags: ['Halal', 'Pasta', 'Pizza', 'Open Kitchen', 'Modern'],
-    price: '€€', rating: 4.4, reviews: 823,
-    x: 32, y: 48,
-    img: ['#15803D', '#4ADE80'], accentHue: 120,
-    featured: true,
-  },
-
-  {
-    id: 'pizza-mann', type: 'chain', locationCount: 12,
-    name: 'Pizza Mann',
-    district: 0, districtName: 'Österreichweit',
-    status: 'verified',
-    categories: ['Restaurant', 'Pizza'],
-    tags: ['Pizza', 'Halal', 'Lieferung', 'Schnell'],
-    price: '€€', rating: 4.2, reviews: 638,
-    x: 55, y: 30,
-    img: ['#B45309', '#FBBF24'], accentHue: 15,
-  },
-
-  {
-    id: 'habibi', type: 'chain', locationCount: 3,
-    name: 'Habibi & Hawara',
-    district: 0, districtName: 'Wien (3 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Orientalisch'],
-    tags: ['Halal', 'Fine Dining', 'Fusion', 'Orientalisch'],
-    price: '€€€', rating: 4.5, reviews: 274,
-    x: 32, y: 42,
-    img: ['#78350F', '#D97706'], accentHue: 34,
-  },
-
-  {
-    id: 'lemir', type: 'chain', locationCount: 2,
-    name: "L'Emir",
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Libanesisch'],
-    tags: ['Halal', 'Libanesisch', 'Mezze', 'Fine Dining'],
-    price: '€€€', rating: 4.6, reviews: 232,
-    x: 50, y: 52,
-    img: ['#B45309', '#F59E0B'], accentHue: 38,
-  },
-
-  {
-    id: 'pars', type: 'chain', locationCount: 2,
-    name: 'Pars',
-    district: 8, districtName: 'Josefstadt',
-    status: 'verified',
-    categories: ['Restaurant', 'Persisch'],
-    tags: ['Halal', 'Persisch', 'Kabab', 'Safranreis'],
-    price: '€€', rating: 4.5, reviews: 276,
-    x: 44, y: 50,
-    img: ['#7C3AED', '#A78BFA'], accentHue: 262,
-  },
-
-  {
-    id: 'levante', type: 'chain', locationCount: 3,
-    name: 'Levante',
-    district: 0, districtName: 'Wien (3 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Orientalisch'],
-    tags: ['Halal', 'Mezze', 'Falafel', 'Orientalisch'],
-    price: '€€', rating: 4.4, reviews: 381,
-    x: 50, y: 51,
-    img: ['#78350F', '#FCD34D'], accentHue: 45,
-  },
-
-  {
-    id: 'iko', type: 'chain', locationCount: 2,
-    name: 'IKO',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Asiatisch'],
-    tags: ['Halal', 'Indonesisch', 'Nasi Goreng', 'Rendang'],
-    price: '€€', rating: 4.5, reviews: 265,
-    x: 50, y: 52,
-    img: ['#065F46', '#34D399'], accentHue: 158,
-  },
-
-  {
-    id: 'bao-bar', type: 'chain', locationCount: 2,
-    name: 'Bao Bar',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Imbiss', 'Asiatisch'],
-    tags: ['Halal Chicken', 'Bao', 'Asian Fusion', 'Street Food'],
-    price: '€€', rating: 4.6, reviews: 381,
-    x: 53, y: 52,
-    img: ['#1E3A5F', '#60A5FA'], accentHue: 215,
-  },
-
-  {
-    id: 'damas-sweets', type: 'chain', locationCount: 2,
-    name: 'Damas Sweets',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Konditorei', 'Arabisch'],
-    tags: ['Halal', 'Baklava', 'Kunafa', 'Arabisch'],
-    price: '€€', rating: 4.7, reviews: 321,
-    x: 50, y: 49,
-    img: ['#78350F', '#FCD34D'], accentHue: 43,
-  },
-
-  {
-    id: 'damas-restaurant', type: 'chain', locationCount: 2,
-    name: 'Damas Restaurant',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Syrisch'],
-    tags: ['Halal', 'Syrisch', 'Mezze', 'Grill', 'Arabisch'],
-    price: '€€', rating: 4.5, reviews: 221,
-    x: 51, y: 47,
-    img: ['#92400E', '#D97706'], accentHue: 35,
-  },
-
-  {
-    id: 'akakiko', type: 'chain', locationCount: 6,
-    name: 'Akakiko',
-    district: 0, districtName: 'Wien (6 Filialen)',
-    status: 'self',
-    categories: ['Restaurant', 'Asiatisch'],
-    tags: ['Japanisch', 'Sushi', 'Halal', 'Lieferung', 'Schnell'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 55, y: 50,
-    img: ['#B91C1C', '#DC2626'], accentHue: 0,
-  },
-
-  {
-    id: 'derya', type: 'chain', locationCount: 2,
-    name: 'Derya',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Restaurant', 'Türkisch'],
-    tags: ['Halal', 'Pide', 'Grill', 'Lahmacun', 'Bäckerei'],
-    price: '€€', rating: 4.4, reviews: 201,
-    x: 51, y: 44,
-    img: ['#0F766E', '#2DD4BF'], accentHue: 173,
-  },
-
-  {
-    id: 'charly-fresh', type: 'chain', locationCount: 2,
-    name: 'Charly Fresh',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Imbiss', 'Healthy Food'],
-    tags: ['Halal', 'Healthy', 'Bowl', 'Burrito'],
-    price: '€€', rating: 4.4, reviews: 221,
-    x: 50, y: 49,
-    img: ['#166534', '#86EFAC'], accentHue: 142,
-  },
-
-  {
-    id: 'mrbin', type: 'chain', locationCount: 2,
-    name: 'Mr. Bin',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'verified',
-    categories: ['Imbiss', 'Orientalisch'],
-    tags: ['Halal', 'Rice Box', 'Wrap', 'Schnell'],
-    price: '€', rating: 4.2, reviews: 106,
-    x: 50, y: 40,
-    img: ['#C2410C', '#FB923C'], accentHue: 20,
-  },
-
-  {
-    id: 'kent', type: 'chain', locationCount: 4,
-    name: 'Kent',
-    district: 0, districtName: 'Wien (4 Filialen)',
-    status: 'self',
-    categories: ['Restaurant', 'Türkisch'],
-    tags: ['Türkisch', 'Halal', 'Bäckerei', 'Frühstück', 'Grill'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 35, y: 50,
-    img: ['#A0522D', '#CD853F'], accentHue: 15,
-  },
-
-  {
-    id: 'alaturka', type: 'chain', locationCount: 5,
-    name: 'Alaturka',
-    district: 0, districtName: 'Wien & Niederösterreich',
-    status: 'unknown',
-    categories: ['Kebab', 'Pizza'],
-    tags: ['Take-away', 'Türkisch', 'Döner', 'Catering'],
-    price: '€', rating: 4.0, reviews: 0,
-    x: 60, y: 52,
-    img: ['#7C2D12', '#431407'], accentHue: 18,
-  },
-
-  {
-    id: 'burgallio', type: 'chain', locationCount: 3,
-    name: 'Burgallio',
-    district: 0, districtName: 'Wien (3 Filialen)',
-    status: 'unknown',
-    categories: ['Restaurant', 'Burger'],
-    tags: ['Burger', 'Vegan', 'Snacks', 'Lieferung'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 39, y: 66,
-    img: ['#7C2D12', '#431407'], accentHue: 12,
-  },
-
-  {
-    id: 'liwan', type: 'chain', locationCount: 2,
-    name: 'Liwan Restaurant',
-    district: 0, districtName: 'Wien (2 Filialen)',
-    status: 'self',
-    categories: ['Restaurant', 'Libanesisch'],
-    tags: ['Syrisch', 'Arabisch', 'Halal', 'Vegan', 'Grill'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 40, y: 68,
-    img: ['#1E5C4A', '#0B3D2C'], accentHue: 160,
-  },
-
-  // ── SOLO VENUES (10) ─────────────────────────────────────────────────────
-
-  {
-    id: 'antep-evi',
-    name: 'Antep Evi Grillhaus',
-    district: 12, districtName: 'Meidling',
-    status: 'unknown',
-    categories: ['Restaurant', 'Kebab'],
-    tags: ['Türkisch', 'Gaziantep', 'Pide', 'Lahmacun'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 36, y: 66,
-    img: ['#1E3A1E', '#052e16'], accentHue: 130,
-  },
-
-  {
-    id: 'damla',
-    name: 'Damla Cafe-Konditorei-Bäckerei',
-    district: 12, districtName: 'Meidling',
-    status: 'unknown',
-    categories: ['Restaurant', 'Cafe', 'Pizza'],
-    tags: ['Türkisch', 'Konditorei', 'Bäckerei', 'Lieferung', 'Baklava'],
-    price: '€', rating: 4.0, reviews: 0,
-    x: 36, y: 68,
-    img: ['#7F1D1D', '#450A0A'], accentHue: 350,
-  },
-
-  {
-    id: 'bakis-schnitzelparadies',
-    name: "Baki's Schnitzelparadies",
-    district: 12, districtName: 'Meidling',
-    status: 'unknown',
-    categories: ['Restaurant'],
-    tags: ['Schnitzel', 'Grill', 'Österreichisch', 'Lieferung', 'Take-away'],
-    price: '€', rating: 4.0, reviews: 0,
-    x: 38, y: 65,
-    img: ['#78350F', '#451a03'], accentHue: 38,
-  },
-
-  {
-    id: 'le-doener',
-    name: 'Le Döner',
-    district: 12, districtName: 'Meidling',
-    status: 'unknown',
-    categories: ['Kebab', 'Pizza'],
-    tags: ['Bio', 'Türkisch', 'Lieferung', 'Take-away', 'Ohne Zusatzstoffe'],
-    price: '€', rating: 4.0, reviews: 0,
-    x: 39, y: 65,
-    img: ['#1E3A8A', '#0c1e42'], accentHue: 200,
-  },
-
-  {
-    id: 'ava-persisch-1120',
-    name: 'AVA Persisches Restaurant',
-    district: 12, districtName: 'Meidling',
-    status: 'self',
-    categories: ['Restaurant', 'Persisch'],
-    tags: ['Iranisch', 'Grill', 'Safran-Reis', 'Gehobenes Ambiente'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 40, y: 67,
-    img: ['#5C1A1A', '#2D0A0A'], accentHue: 350,
-  },
-
-  {
-    id: 'motelli-1120',
-    name: 'Motelli Restaurant',
-    district: 12, districtName: 'Meidling',
-    status: 'self',
-    categories: ['Restaurant', 'Italienisch'],
-    tags: ['Mediterran', 'Pizza', 'Pasta', 'Schanigarten', 'WLAN'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 40, y: 67,
-    img: ['#C85A17', '#6B3410'], accentHue: 25,
-  },
-
-  {
-    id: 'cardak-1120',
-    name: 'Restaurant Čardak',
-    district: 12, districtName: 'Meidling',
-    status: 'self',
-    categories: ['Restaurant', 'Balkanisch'],
-    tags: ['Makedonisch', 'Balkan', 'Grill', 'Halal', 'Tontopfgerichte'],
-    price: '€€', rating: 4.0, reviews: 0,
-    x: 41, y: 67,
-    img: ['#8B3A1D', '#C85A17'], accentHue: 28,
-  },
-
-  {
-    id: 'radatz-viktorianer',
-    name: 'Radatz Viktor-Adler-Markt',
-    district: 10, districtName: 'Favoriten',
-    status: 'verified',
-    categories: ['Imbiss', 'Traditionell Wienerisch'],
-    tags: ['Halal Geflügel', 'Leberkäse', 'Wienerisch', 'Markt', 'Schnell'],
-    price: '€', rating: 4.3, reviews: 88,
-    x: 51, y: 40,
-    img: ['#7F1D1D', '#F87171'], accentHue: 0,
-  },
-
-  {
-    id: 'cafenil-1070',
-    name: 'Cafe Nil',
-    district: 7, districtName: 'Neubau',
-    status: 'verified',
-    categories: ['Café', 'Orientalisch'],
-    tags: ['Halal', 'Frühstück', 'Shakshuka', 'Orientalisch', 'Instagrammable'],
-    price: '€€', rating: 4.6, reviews: 231,
-    x: 46, y: 50,
-    img: ['#713F12', '#FDE68A'], accentHue: 42,
-  },
-
-  {
-    id: 'mado-wien',
-    name: 'Mado Wien',
-    district: 6, districtName: 'Mariahilf',
-    status: 'verified',
-    categories: ['Café', 'Türkisch'],
-    tags: ['Halal', 'Türkisch', 'Eis', 'Frühstück', 'Manti', 'Weltmarke'],
-    price: '€€', rating: 4.5, reviews: 214,
-    x: 47, y: 49,
-    img: ['#1E3A5F', '#93C5FD'], accentHue: 210,
-  },
-
-];
 
 export const COPY = {
   de: {
     // Header
     navHome: 'Home',
-    navSubmit: 'Eintragen',
-    navImprint: 'Impressum',
+    navSearch: 'Suche',
     // Hero
-    heroTagline: 'Halal-freundliche Restaurants in Österreich entdecken',
     searchPlaceholder: 'Restaurant, Küche oder Bezirk suchen…',
     // Filter
     verifiedOnly: 'Nur verifiziert',
@@ -386,40 +25,26 @@ export const COPY = {
     reset: 'Filter zurücksetzen',
     featured: 'Empfohlen',
     reviewsSuffix: (n) => `${n} Bewertungen`,
-    // Chain
-    chainLocations: (n) => `${n} Filialen`,
-    chainViewAll: 'Alle Standorte →',
     // Map
     mapHeading: 'Karte',
     mapSub: 'Alle Lokale auf einen Blick — gefiltert nach deinen Kriterien.',
-    districtLabel: (n, name) => `${1000 + n * 10} ${name}`,
     // Footer
     footerBlurb: 'Der ehrliche halal-freundliche Guide für Österreich. Verifiziert, transparent, werbefrei.',
+    // Rechtliches (Impressum, Datenschutz) und Eintragen kommen dazu, sobald die Seiten existieren.
     footerSections: {
-      product: ['Home', 'Eintragen', 'Karte', 'Bezirke'],
-      company: ['Über uns', 'Impressum', 'Datenschutz', 'Kontakt'],
+      product: ['Home', 'Suche'],
     },
-    footerSectionTitles: { product: 'Produkt', company: 'Rechtliches' },
+    footerSectionTitles: { product: 'Navigation' },
     footerLinks: {
       'Home': '/',
-      'Eintragen': '/for-owners',
-      'Karte': '/search',
-      'Bezirke': '/search',
-      'Über uns': '/about',
-      'Impressum': '/impressum',
-      'Datenschutz': '/datenschutz',
-      'Kontakt': '/about',
+      'Suche': '/search',
     },
     footerMadeWith: 'Gemacht mit ❤️ für Österreich',
-    newsletter: 'Neue Lokale per E-Mail',
-    newsletterCta: 'Anmelden',
     copyright: '© 2026 Akiwi.at — Alle Rechte vorbehalten.',
   },
   en: {
     navHome: 'Home',
-    navSubmit: 'Submit',
-    navImprint: 'Imprint',
-    heroTagline: 'Discover halal-friendly restaurants across Austria',
+    navSearch: 'Search',
     searchPlaceholder: 'Search restaurants, cuisines, or districts…',
     verifiedOnly: 'Verified only',
     district: 'District',
@@ -433,33 +58,18 @@ export const COPY = {
     reset: 'Reset filters',
     featured: 'Featured',
     reviewsSuffix: (n) => `${n} reviews`,
-    chainLocations: (n) => `${n} locations`,
-    chainViewAll: 'All locations →',
     mapHeading: 'Map',
     mapSub: 'Every venue at a glance — filtered to match your picks.',
-    districtLabel: (n, name) => `${1000 + n * 10} ${name}`,
     footerBlurb: 'The honest halal-friendly guide to Austria. Verified, transparent, ad-free.',
     footerSections: {
-      product: ['Home', 'Submit', 'Map', 'Districts'],
-      company: ['About', 'Imprint', 'Privacy', 'Contact'],
+      product: ['Home', 'Search'],
     },
-    footerSectionTitles: { product: 'Product', company: 'Legal' },
+    footerSectionTitles: { product: 'Navigation' },
     footerLinks: {
       'Home': '/',
-      'Submit': '/for-owners',
-      'Map': '/search',
-      'Districts': '/search',
-      'About': '/about',
-      'Imprint': '/impressum',
-      'Privacy': '/datenschutz',
-      'Contact': '/about',
+      'Search': '/search',
     },
     footerMadeWith: 'Made with ❤️ for Austria',
-    newsletter: 'New venues by email',
-    newsletterCta: 'Subscribe',
     copyright: '© 2026 Akiwi.at — All rights reserved.',
   },
 };
-
-export const CATEGORIES = ['Restaurant', 'Kebab', 'Pizza', 'Cafe', 'Imbiss', 'Konditorei'];
-export const DISTRICTS = Array.from({ length: 23 }, (_, i) => i + 1);

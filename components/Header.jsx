@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { COPY } from '@/data/data';
@@ -6,11 +7,13 @@ import { COPY } from '@/data/data';
 export default function Header({ lang, setLang }) {
   const c = COPY[lang];
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const nav = [
     { key: 'home', label: c.navHome, href: '/', active: pathname === '/' },
-    { key: 'submit', label: c.navSubmit, href: '/for-owners', active: pathname === '/for-owners' },
-    { key: 'imprint', label: c.navImprint, href: '/impressum', active: pathname === '/impressum' },
+    { key: 'search', label: c.navSearch, href: '/search', active: pathname === '/search' },
   ];
+
   return (
     <header style={{
       position: 'sticky', top: 0, zIndex: 20,
@@ -22,11 +25,13 @@ export default function Header({ lang, setLang }) {
       <div style={{
         maxWidth: 1280, margin: '0 auto',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '16px 24px',
+        padding: '16px 24px', gap: 12,
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element -- fixed-size SVG logo, nothing for next/image to optimise */}
           <img src="/assets/logo.svg" height="28" alt="Akiwi.at" />
         </Link>
+
         <nav className="ak-nav-desktop" style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
           {nav.map((item) => (
             <Link key={item.key} href={item.href} style={{
@@ -39,7 +44,8 @@ export default function Header({ lang, setLang }) {
             }}>{item.label}</Link>
           ))}
         </nav>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div role="group" aria-label="Sprache" style={{
             display: 'inline-flex', alignItems: 'center',
             background: 'var(--card)', border: '1px solid var(--border)',
@@ -60,8 +66,45 @@ export default function Header({ lang, setLang }) {
               );
             })}
           </div>
+
+          <button
+            className="ak-nav-burger"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
+            aria-expanded={menuOpen}
+            style={{
+              width: 38, height: 38, borderRadius: 999,
+              background: 'var(--card)', border: '1px solid var(--border)',
+              color: 'var(--text-primary)', cursor: 'pointer',
+              alignItems: 'center', justifyContent: 'center',
+            }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              {menuOpen
+                ? <><line x1="5" y1="5" x2="19" y2="19" /><line x1="19" y1="5" x2="5" y2="19" /></>
+                : <><line x1="3" y1="7" x2="21" y2="7" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="17" x2="21" y2="17" /></>}
+            </svg>
+          </button>
         </div>
       </div>
+
+      {menuOpen && (
+        <nav className="ak-nav-mobile">
+          {nav.map((item) => (
+            <Link
+              key={item.key}
+              href={item.href}
+              onClick={() => setMenuOpen(false)}
+              style={{
+                display: 'block', padding: '12px 24px',
+                color: item.active ? 'var(--accent)' : 'var(--text-primary)',
+                textDecoration: 'none', fontSize: 15, fontWeight: 600,
+                borderTop: '1px solid var(--border)',
+              }}
+            >{item.label}</Link>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }

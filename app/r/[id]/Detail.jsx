@@ -1,7 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { DETAIL_COPY } from '@/data/venues';
+import { useState } from 'react';
+import { DETAIL_COPY } from '@/data/detail-copy';
+import { useLang } from '@/components/LangProvider';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import Gallery from '@/components/Gallery';
 import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
@@ -9,18 +11,9 @@ import { StatusBadge, StatusDot, Icon } from '@/components/atoms';
 
 export default function Detail({ venue }) {
   const v = venue;
-  const [lang, setLang] = useState('de');
+  const [lang, setLang] = useLang();
   const [active, setActive] = useState('overview');
 
-  useEffect(() => {
-    const stored = typeof window !== 'undefined' ? localStorage.getItem('akiwi.lang') : null;
-    if (stored && (stored === 'de' || stored === 'en')) setLang(stored);
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') localStorage.setItem('akiwi.lang', lang);
-    document.documentElement.lang = lang;
-  }, [lang]);
 
   const c = DETAIL_COPY[lang];
   const breadcrumb = [
@@ -78,15 +71,17 @@ export default function Detail({ venue }) {
                 border: '1px solid var(--border)', borderRadius: 999,
                 fontSize: 12, fontWeight: 600, color: 'var(--text-secondary)',
               }}>{v.price}</span>
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', gap: 4,
-                color: 'var(--accent)', fontSize: 13, fontWeight: 700,
-              }}>
-                <Icon.star size={12} /> {v.rating.toFixed(1)}
-                <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginLeft: 4 }}>
-                  ({v.reviews})
+              {v.reviews > 0 && (
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 4,
+                  color: 'var(--accent)', fontSize: 13, fontWeight: 700,
+                }}>
+                  <Icon.star size={12} /> {v.rating.toFixed(1)}
+                  <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginLeft: 4 }}>
+                    ({v.reviews})
+                  </span>
                 </span>
-              </span>
+              )}
             </div>
             <h1 style={{
               margin: 0, fontSize: 'clamp(32px, 4.5vw, 48px)', fontWeight: 700,
@@ -121,12 +116,12 @@ export default function Detail({ venue }) {
           <div>
             <section id="overview" className="ak-section">
               <h2 className="ak-section-h">{c.sections.info}</h2>
-              <p style={{ margin: 0, fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
-                {lang === 'de'
-                  ? 'Familiengeführtes Lokal mit echtem Holzkohle-Grill. Halal-Fleisch von einem zertifizierten Wiener Lieferanten. Tische auch für Gruppen, Lieferung über die eigene Hotline.'
-                  : 'Family-run venue with a proper charcoal grill. Halal meat from a certified Vienna supplier. Tables for groups; delivery via their own hotline.'}
-              </p>
-              <div style={{ marginTop: 24 }}>
+              {(lang === 'de' ? v.description_de : v.description_en) && (
+                <p style={{ margin: '0 0 24px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
+                  {lang === 'de' ? v.description_de : v.description_en}
+                </p>
+              )}
+              <div>
                 <h3 style={{
                   margin: '0 0 10px', fontSize: 12, fontWeight: 700,
                   letterSpacing: '0.08em', textTransform: 'uppercase',
@@ -161,13 +156,6 @@ export default function Detail({ venue }) {
               <SimilarList venue={v} lang={lang} />
             </section>
 
-            <button style={{
-              marginTop: 24, marginBottom: 8,
-              background: 'transparent', border: '1px solid var(--border)',
-              color: 'var(--text-secondary)', padding: '10px 16px',
-              borderRadius: 999, fontFamily: 'inherit', fontSize: 13, cursor: 'pointer',
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-            }}>⚠ {c.reportIssue}</button>
           </div>
 
           <aside className="ak-detail-aside">
@@ -207,6 +195,8 @@ export default function Detail({ venue }) {
           </aside>
         </div>
       </main>
+
+      <Footer lang={lang} />
 
       <div style={{
         position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 30,

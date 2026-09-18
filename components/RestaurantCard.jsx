@@ -1,12 +1,11 @@
 'use client';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { COPY } from '@/data/data';
 import { StatusBadge, Icon } from './atoms';
 
-export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) {
+export default function RestaurantCard({ r, lang, span = 'sm', onHoverId, hoveredId }) {
   const c = COPY[lang];
-  const router = useRouter();
   const [hover, setHover] = useState(false);
   const isHovered = hoveredId === r.id || hover;
 
@@ -14,16 +13,16 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
   const wide = span === 'md';
   const imgHeight = tall ? 260 : wide ? 180 : 160;
 
-  const handleClick = onClick || (() => {
-    router.push(r.type === 'chain' ? '/chain/' + r.id : '/r/' + r.id);
-  });
+  const href = r.type === 'chain' ? '/chain/' + r.id : '/r/' + r.id;
 
   return (
-    <article
+    <Link
+      href={href}
+      className="bento-card"
       onMouseEnter={() => { setHover(true); onHoverId && onHoverId(r.id); }}
       onMouseLeave={() => { setHover(false); onHoverId && onHoverId(null); }}
-      onClick={handleClick}
       style={{
+        textDecoration: 'none', color: 'inherit',
         gridColumn: wide ? 'span 2' : undefined,
         gridRow: tall ? 'span 2' : undefined,
         background: 'var(--card)',
@@ -135,15 +134,17 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
             lineHeight: 1.2,
             color: 'var(--text-primary)',
           }}>{r.name}</h3>
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: 4,
-            color: 'var(--accent)',
-            fontSize: 13, fontWeight: 700,
-            flexShrink: 0,
-          }}>
-            <Icon.star size={12} />
-            {r.rating.toFixed(1)}
-          </div>
+          {r.reviews > 0 && (
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 4,
+              color: 'var(--accent)',
+              fontSize: 13, fontWeight: 700,
+              flexShrink: 0,
+            }}>
+              <Icon.star size={12} />
+              {r.rating.toFixed(1)}
+            </div>
+          )}
         </div>
 
         <div style={{
@@ -178,7 +179,7 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
             fontSize: 12, color: 'var(--text-secondary)',
           }}>
-            <span>{c.reviewsSuffix(r.reviews)}</span>
+            <span>{r.reviews > 0 ? c.reviewsSuffix(r.reviews) : (lang === 'de' ? 'Noch keine Bewertungen' : 'No reviews yet')}</span>
             <span style={{
               display: 'inline-flex', alignItems: 'center', gap: 4,
               color: isHovered ? 'var(--accent)' : 'var(--text-secondary)',
@@ -191,6 +192,6 @@ export default function RestaurantCard({ r, lang, span = 'sm', onClick, onHoverI
           </div>
         )}
       </div>
-    </article>
+    </Link>
   );
 }

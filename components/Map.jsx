@@ -188,22 +188,6 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
           );
         })}
 
-        <div style={{
-          position: 'absolute', top: 16, right: 16,
-          display: 'flex', flexDirection: 'column',
-          background: 'var(--card)',
-          border: '1px solid var(--border)',
-          borderRadius: 10, overflow: 'hidden',
-        }}>
-          {['+', '−'].map((s) => (
-            <button key={s} style={{
-              width: 36, height: 36, border: 'none', background: 'transparent',
-              color: 'var(--text-primary)', cursor: 'pointer',
-              fontSize: 18, fontWeight: 600, fontFamily: 'inherit',
-              borderBottom: s === '+' ? '1px solid var(--border)' : 'none',
-            }}>{s}</button>
-          ))}
-        </div>
 
         <div style={{
           position: 'absolute', bottom: 10, right: 14,

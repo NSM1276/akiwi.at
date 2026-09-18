@@ -134,7 +134,7 @@ export default function SearchMap({ lang, restaurants, hoveredId, setHoveredId }
                   display: 'flex', alignItems: 'center', gap: 6,
                 }}>
                   <StatusDot status={r.status} size={6} />
-                  {r.cuisine} · {r.price}
+                  {r.categories[0]} · {r.price}
                 </div>
               </div>
             )}

@@ -1,14 +1,20 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// AKIWI — Restaurant registry
+// AKIWI — Venue registry (single source of truth)
 //
-// HOW TO ADD A NEW CLIENT:
-//   1. Copy the template block at the very bottom of this file
-//   2. Paste it as a new entry in VENUES (before the closing }; )
-//   3. Fill in all fields — see comments for what each field means
-//   4. Create folder:  restaurants/[id]/  and add compressed photos
-//   5. Add the restaurant to src/data.jsx (homepage + search listing)
-//   6. git add . && git commit -m "Add [Restaurant Name]" && git push
-//      → live on [id].akiwi.at within ~30 seconds
+// HOW TO ADD A VENUE:
+//   1. Copy the template block at the bottom of this file, paste it into
+//      VENUES (before the closing }; ) and fill in the fields.
+//   2. If the venue belongs to a chain, add its id to that chain's venueIds
+//      in chains.js (or create the chain there). Otherwise nothing else:
+//      the homepage and the search page pick it up automatically.
+//   3. git add . && git commit -m "Add <name>" && git push → live in ~1 min.
+//
+// HOW TO CHANGE A VERIFICATION STATUS:
+//   Edit the `status` field of the venue: 'verified' | 'self' | 'unknown'.
+//   A chain's status is derived from its branches (lowest status wins).
+//
+// Rating/reviews: only shown when reviews > 0. Leave rating: 0, reviews: 0
+// for a new venue.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const VENUES = {
@@ -360,7 +366,7 @@ export const VENUES = {
     phone: '+43 1 810 3519',
     website: 'damla.at',
     status: 'unknown',
-    categories: ['Restaurant', 'Cafe', 'Pizza'],
+    categories: ['Restaurant', 'Café', 'Pizza'],
     price: '€',
     rating: 4.0,
     reviews: 0,
@@ -6475,6 +6481,9 @@ export const VENUES = {
 
 };
 
+// Number of venues — used for the live counter on the homepage.
+export const VENUE_COUNT = Object.keys(VENUES).length;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // ── ADD NEW RESTAURANT HERE ──────────────────────────────────────────────────
 //
@@ -6487,6 +6496,8 @@ export const VENUES = {
 //   name: 'Mein Restaurant',          // ← full display name
 //   tagline_de: 'Beschreibung auf Deutsch',
 //   tagline_en: 'Description in English',
+//   description_de: '',                // ← optional: 2–4 Sätze über das Lokal (leer = Absatz wird nicht angezeigt)
+//   description_en: '',                // ← optional: 2–4 sentences about the venue
 //   district: 7,                      // ← Bezirk 1–23
 //   districtName: 'Neubau',
 //   address: 'Straße 1, 1070 Wien',
@@ -6551,109 +6562,3 @@ export const VENUES = {
 // },
 //
 // ─────────────────────────────────────────────────────────────────────────────
-
-export const DETAIL_COPY = {
-  de: {
-    back: 'Zurück',
-    breadcrumb: ['Home', 'Wien', ''],   // overwritten at runtime by venue selector
-    navHome: 'Home', navSubmit: 'Eintragen', navImprint: 'Impressum',
-    statusVerified: 'Verifiziert',
-    statusSelf: 'Selbstauskunft',
-    statusUnknown: 'Unbekannt',
-    statusBlurbVerified: 'Vor Ort vom Akiwi-Team geprüft. Halal-Zertifikat gesichtet, Foto im Verlauf.',
-    statusBlurbSelf: 'Vom Inhaber selbst angegeben. Noch keine Vor-Ort-Prüfung durch Akiwi.',
-    statusBlurbUnknown: 'Status unklar — bitte prüfe direkt im Lokal.',
-    actions: { directions: 'Route', call: 'Anrufen', share: 'Teilen', save: 'Speichern' },
-    sections: {
-      gallery: 'Galerie',
-      info: 'Info',
-      hours: 'Öffnungszeiten',
-      menu: 'Karte',
-      reviews: 'Bewertungen',
-      verification: 'Verifizierung',
-      similar: 'Ähnliche Lokale in der Nähe',
-      address: 'Adresse',
-      amenities: 'Ausstattung',
-    },
-    openNow: 'Jetzt geöffnet',
-    closedNow: 'Geschlossen',
-    closesAt: (t) => `Schließt um ${t}`,
-    opensAt: (t) => `Öffnet um ${t}`,
-    days: ['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'],
-    daysShort: ['Mo','Di','Mi','Do','Fr','Sa','So'],
-    today: 'Heute',
-    veg: 'Vegetarisch',
-    halalTag: 'Halal',
-    reviewsCount: (n) => `${n} Bewertungen`,
-    writeReview: 'Bewertung schreiben',
-    addedBy: 'durch',
-    sourceTrust: 'Quelle: Akiwi-Vor-Ort-Besuch',
-    photoCount: (n) => `${n} Fotos`,
-    seeAllPhotos: 'Alle Fotos',
-    reportIssue: 'Ungenauigkeit melden',
-    minDirections: 'Route in Google Maps',
-    distance: (km) => `${km} km entfernt`,
-    amenityLabels: {
-      parking: 'Parkplatz',
-      wheelchair: 'Rollstuhlgerecht',
-      prayer: 'Gebetsraum',
-      delivery: 'Lieferung',
-      outdoor: 'Terrasse',
-      wifi: 'WLAN',
-    },
-    similarSub: (n, name) => `Mehr in ${name}`,
-    verifiedHistory: 'Verlauf der Verifizierung',
-  },
-  en: {
-    back: 'Back',
-    breadcrumb: ['Home', 'Vienna', ''],  // overwritten at runtime by venue selector
-    navHome: 'Home', navSubmit: 'Submit', navImprint: 'Imprint',
-    statusVerified: 'Verified',
-    statusSelf: 'Self-declared',
-    statusUnknown: 'Unknown',
-    statusBlurbVerified: 'Checked on-site by the Akiwi team. Halal certificate sighted, photo in the log.',
-    statusBlurbSelf: 'Declared by the owner. No on-site check by Akiwi yet.',
-    statusBlurbUnknown: 'Status unclear — please check directly at the venue.',
-    actions: { directions: 'Directions', call: 'Call', share: 'Share', save: 'Save' },
-    sections: {
-      gallery: 'Gallery',
-      info: 'Info',
-      hours: 'Hours',
-      menu: 'Menu',
-      reviews: 'Reviews',
-      verification: 'Verification',
-      similar: 'Similar nearby',
-      address: 'Address',
-      amenities: 'Amenities',
-    },
-    openNow: 'Open now',
-    closedNow: 'Closed',
-    closesAt: (t) => `Closes at ${t}`,
-    opensAt: (t) => `Opens at ${t}`,
-    days: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
-    daysShort: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
-    today: 'Today',
-    veg: 'Vegetarian',
-    halalTag: 'Halal',
-    reviewsCount: (n) => `${n} reviews`,
-    writeReview: 'Write a review',
-    addedBy: 'by',
-    sourceTrust: 'Source: Akiwi on-site visit',
-    photoCount: (n) => `${n} photos`,
-    seeAllPhotos: 'See all photos',
-    reportIssue: 'Report an issue',
-    minDirections: 'Open in Google Maps',
-    distance: (km) => `${km} km away`,
-    amenityLabels: {
-      parking: 'Parking',
-      wheelchair: 'Wheelchair access',
-      prayer: 'Prayer room',
-      delivery: 'Delivery',
-      outdoor: 'Outdoor seating',
-      wifi: 'Wi-Fi',
-    },
-    similarSub: (n, name) => `More in ${name}`,
-    verifiedHistory: 'Verification log',
-  },
-};
-

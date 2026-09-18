@@ -14,11 +14,10 @@ const tagStyle = {
   letterSpacing: '0.02em',
 };
 
-export default function SearchResultCard({ r, lang, onHover, hovered, dense }) {
+export default function SearchResultCard({ r, lang, onHover, hovered, dense, openNow }) {
   const c = SEARCH_COPY[lang];
   const isHovered = hovered;
   const imgSize = dense ? 96 : 132;
-  const serviceLabels = c.serviceLabels;
 
   return (
     <article
@@ -75,24 +74,28 @@ export default function SearchResultCard({ r, lang, onHover, hovered, dense }) {
           <div style={{ minWidth: 0, flex: 1 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
               <StatusBadge status={r.status} lang={lang} compact />
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', gap: 3,
-                color: 'var(--accent)', fontSize: 12, fontWeight: 700,
-              }}>
-                <Icon.star size={11} />
-                {r.rating.toFixed(1)}
-                <span style={{ color: 'var(--text-tertiary)', fontWeight: 500, marginLeft: 2 }}>
-                  ({r.reviews})
+              {r.reviews > 0 && (
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 3,
+                  color: 'var(--accent)', fontSize: 12, fontWeight: 700,
+                }}>
+                  <Icon.star size={11} />
+                  {r.rating.toFixed(1)}
+                  <span style={{ color: 'var(--text-tertiary)', fontWeight: 500, marginLeft: 2 }}>
+                    ({r.reviews})
+                  </span>
                 </span>
-              </span>
-              <span style={{
-                fontSize: 11, color: r.openNow ? 'var(--status-green)' : 'var(--status-red)',
-                fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 4,
-              }}>
-                <span style={{ width: 6, height: 6, borderRadius: 999, background: 'currentColor' }} />
-                {r.openNow ? c.open : c.closed}
-                <span style={{ color: 'var(--text-tertiary)', fontWeight: 500, marginLeft: 2 }}>· {r.hours}</span>
-              </span>
+              )}
+              {/* openNow is null until the clock is available on the client */}
+              {openNow !== null && openNow !== undefined && (
+                <span style={{
+                  fontSize: 11, color: openNow ? 'var(--status-green)' : 'var(--status-red)',
+                  fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 4,
+                }}>
+                  <span style={{ width: 6, height: 6, borderRadius: 999, background: 'currentColor' }} />
+                  {openNow ? c.open : c.closed}
+                </span>
+              )}
             </div>
             <h3 style={{
               margin: 0, fontSize: dense ? 16 : 18, fontWeight: 700,
@@ -113,37 +116,33 @@ export default function SearchResultCard({ r, lang, onHover, hovered, dense }) {
           display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap',
           fontSize: 12, color: 'var(--text-secondary)',
         }}>
-          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{r.cuisine}</span>
+          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{r.categories.join(', ')}</span>
           <span style={{ color: 'var(--text-tertiary)' }}>·</span>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
             <Icon.pin size={11} />
-            {1000 + r.district * 10} {r.districtName}
+            {r.districtName}
           </span>
-          {r.distance != null && (
+          {r.type === 'chain' && (
             <>
               <span style={{ color: 'var(--text-tertiary)' }}>·</span>
-              <span>{c.distanceFromCenter(r.distance)}</span>
+              <span style={{ color: 'var(--accent)', fontWeight: 600 }}>{c.locations(r.locationCount)}</span>
             </>
           )}
         </div>
 
-        {/* Service + dietary tags */}
-        {!dense && r.services && (
+        {/* Amenities */}
+        {!dense && r.amenities.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginTop: 'auto' }}>
-            {(r.services || []).map((s) => (
-              <span key={s} style={tagStyle}>{serviceLabels[s]}</span>
-            ))}
-            {(r.dietary || []).map((d) => (
-              <span key={d} style={{ ...tagStyle, color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.3)' }}>
-                {c.dietaryLabels[d]}
+            {r.amenities.map((a) => (
+              <span
+                key={a}
+                style={a === 'prayer'
+                  ? { ...tagStyle, color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.35)' }
+                  : tagStyle}
+              >
+                {c.amenityLabels[a]}
               </span>
             ))}
-            {r.family && <span style={tagStyle}>{c.family}</span>}
-            {r.lastVerifiedDays != null && r.lastVerifiedDays < 30 && (
-              <span style={{ ...tagStyle, color: 'var(--status-green)', borderColor: 'rgba(16,185,129,0.3)' }}>
-                ✓ {c.verifiedAgo(r.lastVerifiedDays)}
-              </span>
-            )}
           </div>
         )}
       </div>

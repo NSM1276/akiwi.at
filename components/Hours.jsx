@@ -1,17 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { DETAIL_COPY } from '@/data/venues';
+import { DETAIL_COPY } from '@/data/detail-copy';
+import { useNow } from './useNow';
 import { StatusDot } from './atoms';
 
 export default function Hours({ venue, lang }) {
   const c = DETAIL_COPY[lang];
-  const [now, setNow] = useState(null);
-
-  useEffect(() => {
-    setNow(new Date());
-    const id = setInterval(() => setNow(new Date()), 60000);
-    return () => clearInterval(id);
-  }, []);
+  const now = useNow();
 
   const todayIdx = now ? (now.getDay() + 6) % 7 : 0;
   const minutesNow = now ? now.getHours() * 60 + now.getMinutes() : 0;

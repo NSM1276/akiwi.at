@@ -3,14 +3,13 @@
 import { useState, useEffect, useRef, memo } from 'react';
 import { useRouter } from 'next/navigation';
 import { COPY } from '@/data/data';
-import { SEARCH_RESTAURANTS } from '@/data/search-data';
 import { Icon, StatusDot } from './atoms';
 
 // =========================================================
 // Ticker — running strip with restaurant names and statuses
 // =========================================================
-const HeroTicker = memo(function HeroTicker({ rtl = false }) {
-  const data = SEARCH_RESTAURANTS || [];
+const HeroTicker = memo(function HeroTicker({ rtl = false, restaurants }) {
+  const data = restaurants || [];
   if (!data.length) return null;
   // Duplicate so the marquee loops seamlessly
   const items = [...data, ...data];
@@ -32,7 +31,7 @@ const HeroTicker = memo(function HeroTicker({ rtl = false }) {
                 <span>{r.name}</span>
                 <span style={{
                   color: 'var(--text-tertiary)', fontWeight: 500, fontSize: 12, marginLeft: 4,
-                }}>· {1000 + r.district * 10}</span>
+                }}>· {r.districtName}</span>
               </span>
               <span className="hero-ticker-sep" />
             </span>
@@ -99,9 +98,12 @@ const AnimatedCount = memo(function AnimatedCount({ to, durationMs = 1400 }) {
     const reduce = typeof window !== 'undefined'
       && window.matchMedia
       && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) { setN(to); return; }
-    const start = performance.now();
     let raf;
+    if (reduce) {
+      raf = requestAnimationFrame(() => setN(to));
+      return () => cancelAnimationFrame(raf);
+    }
+    const start = performance.now();
     const tick = (now) => {
       const t = Math.min(1, (now - start) / durationMs);
       const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
@@ -117,7 +119,7 @@ const AnimatedCount = memo(function AnimatedCount({ to, durationMs = 1400 }) {
 // =========================================================
 // Hero
 // =========================================================
-export default function Hero({ lang, query, setQuery }) {
+export default function Hero({ lang, query, setQuery, restaurants, venueCount }) {
   const c = COPY[lang];
   const router = useRouter();
   const [focused, setFocused] = useState(false);
@@ -137,8 +139,8 @@ export default function Hero({ lang, query, setQuery }) {
         minHeight: 560,
       }}
     >
-      <HeroTicker />
-      <HeroTicker rtl />
+      <HeroTicker restaurants={restaurants} />
+      <HeroTicker rtl restaurants={restaurants} />
 
       <div
         style={{
@@ -176,9 +178,9 @@ export default function Hero({ lang, query, setQuery }) {
           />
           <span>
             <b style={{ color: 'var(--text-primary)', fontWeight: 700, marginRight: 2 }}>
-              <AnimatedCount to={142} />
+              <AnimatedCount to={venueCount} />
             </b>
-            {lang === 'de' ? ' Lokale verifiziert · Stand Mai 2026' : ' venues verified · as of May 2026'}
+            {lang === 'de' ? ' Lokale in Österreich' : ' venues across Austria'}
           </span>
         </div>
 
@@ -208,9 +210,9 @@ export default function Hero({ lang, query, setQuery }) {
           }}
         >
           {lang === 'de' ? (
-            <>Halal-freundliche <WordMorph words={morphWords} /> in Wien entdecken</>
+            <>Halal-freundliche <WordMorph words={morphWords} /> in Österreich entdecken</>
           ) : (
-            <>Discover halal-friendly <WordMorph words={morphWords} /> across Vienna</>
+            <>Discover halal-friendly <WordMorph words={morphWords} /> across Austria</>
           )}
         </p>
 

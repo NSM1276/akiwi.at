@@ -24,40 +24,35 @@ export function SearchHero({ lang, query, setQuery, where, setWhere }) {
         </p>
       </div>
 
-      <div style={{
+      <div className="search-hero-fields" style={{
         display: 'flex', gap: 0, alignItems: 'stretch',
         background: 'var(--card)', border: '1px solid var(--border)',
         borderRadius: 999, padding: 6,
         boxShadow: 'var(--shadow-elev)',
-        flexWrap: 'wrap',
       }}>
         <SearchField
           icon={<Icon.search size={16} />}
           label={c.searchWhat} placeholder={c.searchWhatPh}
           value={query} onChange={setQuery}
         />
-        <div style={{ width: 1, background: 'var(--border)', alignSelf: 'stretch', margin: '6px 0' }} />
+        <div className="search-hero-divider" style={{ width: 1, background: 'var(--border)', alignSelf: 'stretch', margin: '6px 0' }} />
         <SearchField
           icon={<Icon.pin size={16} />}
           label={c.searchWhere} placeholder={c.searchWherePh}
           value={where} onChange={setWhere}
-          right={
-            <button onClick={() => setWhere(c.nearMe)} style={{
-              background: 'transparent', border: 'none', color: 'var(--accent)',
-              fontFamily: 'inherit', fontSize: 12, fontWeight: 600,
-              cursor: 'pointer', padding: '4px 8px', whiteSpace: 'nowrap',
-            }}>📍 {c.nearMe}</button>
-          }
         />
-        <button style={{
-          padding: '0 22px',
-          background: 'var(--accent)', border: 'none', color: 'var(--text-on-accent)',
-          fontFamily: 'inherit', fontWeight: 700, fontSize: 14,
-          borderRadius: 999, cursor: 'pointer',
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          minHeight: 52,
-          letterSpacing: '0.01em',
-        }}>
+        <button
+          onClick={(e) => e.currentTarget.closest('section').querySelector('input')?.focus()}
+          style={{
+            padding: '0 22px',
+            background: 'var(--accent)', border: 'none', color: 'var(--text-on-accent)',
+            fontFamily: 'inherit', fontWeight: 700, fontSize: 14,
+            borderRadius: 999, cursor: 'pointer',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+            minHeight: 52,
+            letterSpacing: '0.01em',
+          }}
+        >
           <Icon.search size={14} /> {c.searchCta}
         </button>
       </div>
@@ -65,10 +60,10 @@ export function SearchHero({ lang, query, setQuery, where, setWhere }) {
   );
 }
 
-function SearchField({ icon, label, placeholder, value, onChange, right }) {
+function SearchField({ icon, label, placeholder, value, onChange }) {
   return (
     <div style={{
-      flex: 1, minWidth: 200,
+      flex: 1, minWidth: 0,
       display: 'flex', alignItems: 'center', gap: 12,
       padding: '6px 18px',
     }}>
@@ -90,7 +85,6 @@ function SearchField({ icon, label, placeholder, value, onChange, right }) {
           }}
         />
       </div>
-      {right}
     </div>
   );
 }
@@ -123,7 +117,7 @@ export function ResultsHeader({ lang, count, total, sort, setSort, view, setView
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
         {/* View toggle */}
-        <div style={{
+        <div className="search-view-toggle" style={{
           display: 'inline-flex', background: 'var(--card)', border: '1px solid var(--border)',
           borderRadius: 999, padding: 3, gap: 2,
         }}>
@@ -147,7 +141,7 @@ export function ResultsHeader({ lang, count, total, sort, setSort, view, setView
         </div>
 
         {/* Density */}
-        <button onClick={() => setDense(!dense)} title="Density" style={{
+        <button onClick={() => setDense(!dense)} title="Density" className="search-density" style={{
           padding: '8px 12px',
           background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 999,
           color: dense ? 'var(--accent)' : 'var(--text-secondary)',
@@ -203,15 +197,24 @@ export function ActiveFilterChips({ lang, filters, setFilters }) {
   const c = SEARCH_COPY[lang];
   const chips = [];
 
-  (filters.halal||[]).forEach((s) => chips.push({ k: 'halal:' + s, label: c.halalLabels[s], rm: () => setFilters({ ...filters, halal: filters.halal.filter((x) => x !== s) }) }));
-  (filters.cuisine||[]).forEach((s) => chips.push({ k: 'c:' + s, label: s, rm: () => setFilters({ ...filters, cuisine: filters.cuisine.filter((x) => x !== s) }) }));
-  (filters.district||[]).forEach((s) => chips.push({ k: 'd:' + s, label: `${1000 + s * 10}`, rm: () => setFilters({ ...filters, district: filters.district.filter((x) => x !== s) }) }));
-  (filters.price||[]).forEach((s) => chips.push({ k: 'p:' + s, label: s, rm: () => setFilters({ ...filters, price: filters.price.filter((x) => x !== s) }) }));
-  (filters.services||[]).forEach((s) => chips.push({ k: 's:' + s, label: c.serviceLabels[s], rm: () => setFilters({ ...filters, services: filters.services.filter((x) => x !== s) }) }));
-  (filters.dietary||[]).forEach((s) => chips.push({ k: 'di:' + s, label: c.dietaryLabels[s], rm: () => setFilters({ ...filters, dietary: filters.dietary.filter((x) => x !== s) }) }));
-  if (filters.openNow) chips.push({ k: 'on', label: c.filters.openNow, rm: () => setFilters({ ...filters, openNow: false }) });
-  if (filters.family) chips.push({ k: 'fa', label: c.family, rm: () => setFilters({ ...filters, family: false }) });
-  if (filters.rating) chips.push({ k: 'ra', label: '★ ' + c.ratingLabels[filters.rating], rm: () => setFilters({ ...filters, rating: null }) });
+  const dropFrom = (key, value) =>
+    setFilters({ ...filters, [key]: filters[key].filter((x) => x !== value) });
+
+  (filters.halal || []).forEach((s) =>
+    chips.push({ k: 'halal:' + s, label: c.halalLabels[s], rm: () => dropFrom('halal', s) }));
+  (filters.category || []).forEach((s) =>
+    chips.push({ k: 'cat:' + s, label: s, rm: () => dropFrom('category', s) }));
+  (filters.city || []).forEach((s) =>
+    chips.push({ k: 'city:' + s, label: s, rm: () => dropFrom('city', s) }));
+  (filters.district || []).forEach((s) =>
+    chips.push({ k: 'd:' + s, label: `${1000 + s * 10}`, rm: () => dropFrom('district', s) }));
+  (filters.price || []).forEach((s) =>
+    chips.push({ k: 'p:' + s, label: s, rm: () => dropFrom('price', s) }));
+  (filters.amenities || []).forEach((s) =>
+    chips.push({ k: 'a:' + s, label: c.amenityLabels[s], rm: () => dropFrom('amenities', s) }));
+  if (filters.openNow) {
+    chips.push({ k: 'on', label: c.filters.openNow, rm: () => setFilters({ ...filters, openNow: false }) });
+  }
 
   if (!chips.length) return null;
   return (
