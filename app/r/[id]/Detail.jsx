@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { DETAIL_COPY } from '@/data/detail-copy';
 import { useLang } from '@/components/LangProvider';
 import Header from '@/components/Header';
@@ -9,18 +10,13 @@ import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
 import { StatusBadge, StatusDot, Icon } from '@/components/atoms';
 
-export default function Detail({ venue }) {
+export default function Detail({ venue, breadcrumb }) {
   const v = venue;
   const [lang, setLang] = useLang();
   const [active, setActive] = useState('overview');
 
 
   const c = DETAIL_COPY[lang];
-  const breadcrumb = [
-    lang === 'de' ? 'Home' : 'Home',
-    `${lang === 'de' ? 'Bezirk' : 'District'} ${v.district}`,
-    v.name,
-  ];
 
   const sections = [
     ['overview',     c.sections.info],
@@ -47,19 +43,14 @@ export default function Detail({ venue }) {
       </div>
 
       <main style={{ maxWidth: 1200, margin: '0 auto', padding: '24px 24px 0' }}>
-        <nav style={{ fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 16, display: 'flex', gap: 6 }}>
-          {breadcrumb.map((b, i) => {
-            const href = i === 0 ? '/' : i === 1 ? '/search' : '#';
-            return (
-              <span key={i} style={{ display: 'inline-flex', gap: 6 }}>
-                {i > 0 && <span>›</span>}
-                <a href={href} style={{
-                  color: i === breadcrumb.length - 1 ? 'var(--text-primary)' : 'var(--text-tertiary)',
-                  textDecoration: 'none', fontWeight: i === breadcrumb.length - 1 ? 600 : 400,
-                }}>{b}</a>
-              </span>
-            );
-          })}
+        <nav aria-label="Breadcrumb" style={{ fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          {breadcrumb.map((b) => (
+            <span key={b.href} style={{ display: 'inline-flex', gap: 6 }}>
+              <Link href={b.href} style={{ color: 'var(--text-tertiary)', textDecoration: 'none' }}>{b.label}</Link>
+              <span aria-hidden>›</span>
+            </span>
+          ))}
+          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{v.name}</span>
         </nav>
 
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap', marginBottom: 20 }}>

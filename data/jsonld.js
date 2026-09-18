@@ -78,3 +78,33 @@ export function chainJsonLd(chain, venues) {
     })),
   };
 }
+
+/** Home › Wien › 1120 Meidling — trail items are { href, label }, last one is the page itself. */
+export function breadcrumbJsonLd(trail) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.label,
+      item: `${BASE}${item.href}`,
+    })),
+  };
+}
+
+/** The venues shown on a landing page, in the order they are rendered. */
+export function itemListJsonLd(name, venues) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    numberOfItems: venues.length,
+    itemListElement: venues.map((v, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${BASE}/r/${v.id}`,
+      name: v.name,
+    })),
+  };
+}

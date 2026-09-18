@@ -7,9 +7,10 @@ import Hero from '@/components/Hero';
 import FilterBar from '@/components/FilterBar';
 import RestaurantCard from '@/components/RestaurantCard';
 import ViennaMap from '@/components/Map';
+import BrowseLinks from '@/components/BrowseLinks';
 import Footer from '@/components/Footer';
 
-export default function HomeClient({ restaurants, venueCount, facets }) {
+export default function HomeClient({ restaurants, venueCount, facets, browse }) {
   const [lang, setLang] = useLang();
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState({
@@ -85,6 +86,8 @@ export default function HomeClient({ restaurants, venueCount, facets }) {
           </div>
         )}
       </section>
+
+      <BrowseLinks cities={browse.cities} districts={browse.districts} categories={browse.categories} />
 
       <ViennaMap
         lang={lang}

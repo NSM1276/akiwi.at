@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { VENUES } from '@/data/venues';
-import { venueJsonLd } from '@/data/jsonld';
+import { venueJsonLd, breadcrumbJsonLd } from '@/data/jsonld';
+import { breadcrumbFor } from '@/data/landing';
 import Detail from './Detail';
 
 export function generateStaticParams() {
@@ -39,13 +40,21 @@ export default async function RestaurantDetailPage({ params }) {
     })
     .filter(Boolean);
 
+  const breadcrumb = breadcrumbFor(venue);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(venueJsonLd(venue)) }}
       />
-      <Detail venue={{ ...venue, similar }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd([...breadcrumb, { href: `/r/${id}`, label: venue.name }])),
+        }}
+      />
+      <Detail venue={{ ...venue, similar }} breadcrumb={breadcrumb} />
     </>
   );
 }

@@ -1,0 +1,70 @@
+# Этап 6 — Посадочные страницы по городам, районам и категориям
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Под запросы «halal wien 1120», «halal restaurant graz», «halal kebab» появляются страницы, которых сейчас нет. Заодно каждая из 87 страниц заведений получает внутренние ссылки с тематических страниц, а не только со страницы своей сети.
+
+**Architecture:** Страницы генерируются из `data/venues.js`, новых данных не требуется. Список заведений на них — настоящие заведения с адресами, а не карточки сетей: в Граце человек ищет «Pizza Mann Graz Zentrum», а не сеть из двенадцати филиалов. Серверные роуты считают данные и отдают их одному клиентскому компоненту `components/Landing.jsx`, который рисует страницу на двух языках.
+
+**Что создаётся**
+
+| Тип | Адрес | Сколько |
+|---|---|---|
+| Город | `/wien`, `/graz`, `/linz` … | 10 |
+| Венский район | `/wien/1120-meidling` … | 17 |
+| Категория | `/kategorie/kebab` … | 15 |
+
+Категории с одним заведением (Burger, Balkanisch, Traditionell Wienerisch) страницы не получают: пустая страница ничего не даёт ни человеку, ни поиску. Комбинации «город + категория» не делаем: для Вены они почти повторяют страницу города, для остальных городов в них по одному-два заведения. Вернёмся к ним, если Search Console покажет спрос.
+
+**Tech Stack:** Next.js 15 App Router, статическая генерация, без новых зависимостей.
+
+---
+
+### Task 1: Слуги и сборка данных
+
+**Files:** Create `data/slugs.js`, `data/landing.js`
+
+- [x] **Step 1: slugs.js** — `slugify()` с немецкой транслитерацией (`ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, снятие диакритики для `č`), плюс готовые карты слугов для городов, районов и категорий, выведенные из `VENUES`.
+- [x] **Step 2: landing.js** — серверные сборщики:
+  - `getCitySlugs()`, `getDistrictSlugs()`, `getCategorySlugs()` для `generateStaticParams`
+  - `getCityPage(slug)` → `{ name, venues, stats, related }`, где `related` — районы Вены или другие города
+  - `getDistrictPage(citySlug, districtSlug)` → то же плюс соседние районы
+  - `getCategoryPage(slug)` → заведения, сгруппированные по городам, плюс другие категории
+  - `venueSummary(v)` → компактная запись для списка: `id`, `name`, `address`, `districtName`, `city`, `status`, `categories`, `price`, `hue`, `chain` (id и имя сети, если заведение входит в сеть)
+  - `stats` → `{ total, verified, self, unknown, topCategories }`
+
+### Task 2: Компонент страницы
+
+**Files:** Create `components/Landing.jsx`
+
+- [x] **Step 1:** Клиентский компонент, берёт язык через `useLang()`. Принимает `kind`, `name`, `venues`, `stats`, `related`, `breadcrumb`, `searchHref`.
+- [x] **Step 2:** Рисует хлебные крошки, `<h1>`, вводный абзац из `stats` (сколько заведений, сколько проверено, какие категории преобладают), список заведений ссылками на `/r/[id]`, блок связанных страниц, короткое объяснение трёх статусов верификации и ссылку на каталог с нужным фильтром.
+- [x] **Step 3:** Заведение в списке показывает: бейдж статуса, название, адрес, категории, цену и, если это филиал сети, ссылку на страницу сети.
+
+### Task 3: Роуты
+
+**Files:** Create `app/[city]/page.jsx`, `app/[city]/[district]/page.jsx`, `app/kategorie/[slug]/page.jsx`
+
+- [x] **Step 1: город.** `generateStaticParams` по десяти городам; `generateMetadata` с title вида «Halal-Restaurants in Wien — 70 Lokale», description и canonical; `notFound()` для неизвестного слуга.
+- [x] **Step 2: район.** Существует только для Вены, для других городов `notFound()`.
+- [x] **Step 3: категория.** Заголовок вида «Halal Kebab in Österreich».
+- [x] **Step 4:** На каждой странице JSON-LD: `BreadcrumbList` и `ItemList` со ссылками на заведения.
+- [x] **Step 5:** Проверить, что статические сегменты `search`, `r`, `chain`, `kategorie` не перехватываются динамическим `[city]`.
+
+### Task 4: Ссылки на новые страницы
+
+**Files:** Modify `app/HomeClient.jsx`, `components/Footer.jsx`, `app/sitemap.js`, `app/r/[id]/Detail.jsx`
+
+- [x] **Step 1: главная** — блок перед картой: города со счётчиками, венские районы, категории. Без него страницы останутся сиротами.
+- [x] **Step 2: подвал** — ссылки на крупнейшие города.
+- [x] **Step 3: sitemap** — добавить все 42 адреса.
+- [x] **Step 4: страница заведения** — хлебные крошки сейчас ведут на `/` и `/search`; заменить на город и район, то есть на новые страницы.
+
+### Task 5: Проверка
+
+- [x] **Step 1:** `npm run build` — успех, страниц стало 111 + 42.
+- [x] **Step 2:** `npm run lint` — чисто.
+- [x] **Step 3:** Скрипт: у каждого из 87 заведений есть хотя бы одна ссылка с посадочной страницы; сумма по районам Вены равна числу венских заведений; ни одна страница не пуста.
+- [x] **Step 4:** Собранный HTML: `/wien` содержит 70 ссылок на заведения и 17 ссылок на районы; `/wien/1120-meidling` содержит 12 заведений; `/kategorie/kebab` содержит 14; на всех есть canonical и `BreadcrumbList`.
+- [x] **Step 5:** Sitemap содержит 150 адресов.
+- [x] **Step 6:** Браузер: переход с главной в город, из города в район, из района на заведение; на телефоне список читается без горизонтальной прокрутки.
