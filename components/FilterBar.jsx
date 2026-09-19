@@ -32,9 +32,8 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
       WebkitBackdropFilter: 'blur(10px)',
       borderBottom: '1px solid var(--border)',
     }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '14px 24px' }}>
       <div style={{
-        maxWidth: 1280, margin: '0 auto',
-        padding: '14px 24px',
         display: 'flex', alignItems: 'center', gap: 12,
         flexWrap: 'wrap',
       }}>
@@ -116,9 +115,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
           )}
         </div>
 
-        <div style={{ width: 1, height: 24, background: 'var(--border)' }} />
-
-        <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+        <div className="ak-filterbar-cats-desktop" style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
           {categories.map((cat) => {
             const on = filters.categories.includes(cat);
             return (
@@ -136,7 +133,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
           })}
         </div>
 
-        <div style={{ flex: 1 }} />
+        <div style={{ flex: 1 }} className="ak-filterbar-spacer" />
 
         <div style={{
           color: 'var(--text-secondary)', fontSize: 13, fontWeight: 500,
@@ -145,6 +142,25 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
           <b style={{ color: 'var(--accent)', fontWeight: 700 }}>{resultCount}</b>{' '}
           {c.resultsCount(resultCount).replace(/^\d+\s*/, '')}
         </div>
+      </div>
+
+      <div className="ak-filterbar-cats-mobile">
+        {categories.map((cat) => {
+          const on = filters.categories.includes(cat);
+          return (
+            <button key={cat} onClick={() => toggleCat(cat)} style={{
+              padding: '7px 14px',
+              background: on ? 'var(--accent)' : 'transparent',
+              border: `1px solid ${on ? 'var(--accent)' : 'var(--border)'}`,
+              borderRadius: 999,
+              color: on ? 'var(--text-on-accent)' : 'var(--text-secondary)',
+              fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
+              cursor: 'pointer', flexShrink: 0,
+              transition: 'all var(--dur-fast) var(--ease-out)',
+            }}>{cat}</button>
+          );
+        })}
+      </div>
       </div>
     </div>
   );

@@ -362,6 +362,30 @@ body:has(.ak-detail-grid) { padding-bottom: 96px; }
 }
 
 /* =========================================================
+   Homepage filter bar — categories scroll horizontally on
+   mobile instead of wrapping, so the sticky bar stays short.
+   ========================================================= */
+.ak-filterbar-cats-mobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  .ak-filterbar-cats-desktop,
+  .ak-filterbar-spacer {
+    display: none !important;
+  }
+  .ak-filterbar-cats-mobile {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 10px;
+    padding-bottom: 2px;
+  }
+  .ak-filterbar-cats-mobile::-webkit-scrollbar { display: none; }
+}
+
+/* =========================================================
    Search page layout
    ========================================================= */
 .search-filters {
