@@ -13,6 +13,7 @@ export default function sitemap() {
   return [
     page('/', 1, 'weekly'),
     page('/search', 0.8, 'weekly'),
+    page('/impressum', 0.3, 'yearly'),
     // Landing pages — the entry points for "halal <city>" and "halal <category>"
     ...listCities().map((c) => page(c.href, 0.9, 'weekly')),
     ...listDistricts().map((d) => page(d.href, 0.8, 'weekly')),

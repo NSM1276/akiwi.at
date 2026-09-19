@@ -30,14 +30,16 @@ export const COPY = {
     mapSub: 'Alle Lokale auf einen Blick — gefiltert nach deinen Kriterien.',
     // Footer
     footerBlurb: 'Der ehrliche halal-freundliche Guide für Österreich. Verifiziert, transparent, werbefrei.',
-    // Rechtliches (Impressum, Datenschutz) und Eintragen kommen dazu, sobald die Seiten existieren.
+    // Datenschutz und Eintragen kommen dazu, sobald diese Seiten existieren.
     footerSections: {
       product: ['Home', 'Suche'],
+      legal: ['Impressum'],
     },
-    footerSectionTitles: { product: 'Navigation' },
+    footerSectionTitles: { product: 'Navigation', legal: 'Rechtliches' },
     footerLinks: {
       'Home': '/',
       'Suche': '/search',
+      'Impressum': '/impressum',
     },
     footerMadeWith: 'Gemacht mit ❤️ für Österreich',
     copyright: '© 2026 Akiwi.at — Alle Rechte vorbehalten.',
@@ -63,11 +65,13 @@ export const COPY = {
     footerBlurb: 'The honest halal-friendly guide to Austria. Verified, transparent, ad-free.',
     footerSections: {
       product: ['Home', 'Search'],
+      legal: ['Imprint'],
     },
-    footerSectionTitles: { product: 'Navigation' },
+    footerSectionTitles: { product: 'Navigation', legal: 'Legal' },
     footerLinks: {
       'Home': '/',
       'Search': '/search',
+      'Imprint': '/impressum',
     },
     footerMadeWith: 'Made with ❤️ for Austria',
     copyright: '© 2026 Akiwi.at — All rights reserved.',

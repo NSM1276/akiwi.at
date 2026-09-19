@@ -13,7 +13,7 @@ export default function Footer({ lang }) {
         maxWidth: 1280, margin: '0 auto',
         padding: '48px 24px 24px',
         display: 'grid',
-        gridTemplateColumns: 'minmax(240px, 1.6fr) minmax(140px, 1fr)',
+        gridTemplateColumns: 'minmax(240px, 1.4fr) minmax(110px, 1fr) minmax(110px, 1fr)',
         gap: 48,
       }} className="ak-footer-grid">
         <div>
