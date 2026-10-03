@@ -77,6 +77,7 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
 
       <div style={{
         position: 'relative',
+        width: '100%',
         background: 'var(--card)',
         border: '1px solid var(--border)',
         borderRadius: 20,
