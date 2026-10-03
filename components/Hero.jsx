@@ -70,7 +70,9 @@ const WordMorph = memo(function WordMorph({ words, interval = 2400 }) {
 
   return (
     <span style={{ display: 'inline-block', position: 'relative', verticalAlign: 'baseline' }}>
-      <span aria-hidden style={{ visibility: 'hidden', whiteSpace: 'nowrap' }}>{longest}</span>
+      {/* Width reserved through CSS content, so the spacer word is not page text. */}
+      <span aria-hidden className="ak-morph-spacer" data-word={longest} />
+
       <span
         key={word}
         style={{
@@ -184,8 +186,8 @@ export default function Hero({ lang, query, setQuery, restaurants, venueCount })
           </span>
         </div>
 
-        {/* Big wordmark */}
-        <h1
+        {/* Big wordmark — the h1 is the tagline below, which says what the site is. */}
+        <div
           className="ak-hero-title"
           style={{
             fontSize: 'clamp(44px, 7vw, 88px)',
@@ -197,24 +199,25 @@ export default function Hero({ lang, query, setQuery, restaurants, venueCount })
           }}
         >
           akiwi<span style={{ color: 'var(--text-primary)' }}>.at</span>
-        </h1>
+        </div>
 
         {/* Tagline with word morph */}
-        <p
+        <h1
           style={{
             marginTop: 20, marginBottom: 0,
             fontSize: 'clamp(16px, 1.6vw, 20px)',
+            fontWeight: 400,
             color: 'var(--text-secondary)',
             maxWidth: 720,
             lineHeight: 1.5,
           }}
         >
           {lang === 'de' ? (
-            <>Halal-freundliche <WordMorph words={morphWords} /> in Österreich entdecken</>
+            <>Halal-freundliche <WordMorph words={morphWords} /> in Wien &amp; Österreich entdecken</>
           ) : (
-            <>Discover halal-friendly <WordMorph words={morphWords} /> across Austria</>
+            <>Discover halal-friendly <WordMorph words={morphWords} /> in Vienna &amp; across Austria</>
           )}
-        </p>
+        </h1>
 
         {/* Search */}
         <form

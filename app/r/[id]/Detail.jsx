@@ -10,7 +10,7 @@ import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
 import { StatusBadge, StatusDot, Icon } from '@/components/atoms';
 
-export default function Detail({ venue, breadcrumb }) {
+export default function Detail({ venue, breadcrumb, about, faq, dishes, chain }) {
   const v = venue;
   const [lang, setLang] = useLang();
   const [active, setActive] = useState('overview');
@@ -22,6 +22,7 @@ export default function Detail({ venue, breadcrumb }) {
     ['overview',     c.sections.info],
     ['hours',        c.sections.hours],
     ['menu',         c.sections.menu],
+    ['faq',          c.sections.faq],
     ['reviews',      c.sections.reviews],
     ['verification', c.sections.verification],
     ['similar',      c.sections.similar],
@@ -108,9 +109,27 @@ export default function Detail({ venue, breadcrumb }) {
             <section id="overview" className="ak-section">
               <h2 className="ak-section-h">{c.sections.info}</h2>
               {(lang === 'de' ? v.description_de : v.description_en) && (
-                <p style={{ margin: '0 0 24px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
+                <p style={{ margin: '0 0 16px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
                   {lang === 'de' ? v.description_de : v.description_en}
                 </p>
+              )}
+              <h3 style={subH}>{lang === 'de' ? `Über ${v.name}` : `About ${v.name}`}</h3>
+              <p style={{ margin: '0 0 20px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.65, maxWidth: 680 }}>
+                {lang === 'de' ? about.de : about.en}
+              </p>
+              {(dishes.length > 0 || chain) && (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, margin: '0 0 24px' }}>
+                  {chain && (
+                    <Link href={chain.href} style={{ ...chip, color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.35)' }}>
+                      {lang === 'de' ? `Alle ${chain.count} Filialen von ${chain.name}` : `All ${chain.count} ${chain.name} branches`}
+                    </Link>
+                  )}
+                  {dishes.map((d) => (
+                    <Link key={d.href} href={d.href} style={chip}>
+                      {lang === 'de' ? `Halal ${d.name}: alle ${d.count} Lokale` : `Halal ${d.name}: all ${d.count} venues`}
+                    </Link>
+                  ))}
+                </div>
               )}
               <div>
                 <h3 style={{
@@ -130,6 +149,24 @@ export default function Detail({ venue, breadcrumb }) {
             <section id="menu" className="ak-section">
               <h2 className="ak-section-h">{c.sections.menu}</h2>
               <Menu venue={v} lang={lang} />
+            </section>
+
+            <section id="faq" className="ak-section">
+              <h2 className="ak-section-h">
+                {lang === 'de' ? `Häufige Fragen zu ${v.name}` : `FAQ about ${v.name}`}
+              </h2>
+              <dl style={{ margin: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
+                {faq.map((f) => (
+                  <div key={f.q_de}>
+                    <dt style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>
+                      {lang === 'de' ? f.q_de : f.q_en}
+                    </dt>
+                    <dd style={{ margin: 0, fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                      {lang === 'de' ? f.a_de : f.a_en}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </section>
 
             <section id="reviews" className="ak-section">
@@ -237,6 +274,17 @@ function btn(variant, size) {
   };
 }
 
+const subH = {
+  margin: '0 0 8px', fontSize: 12, fontWeight: 700,
+  letterSpacing: '0.08em', textTransform: 'uppercase',
+  color: 'var(--text-tertiary)',
+};
+const chip = {
+  display: 'inline-flex', alignItems: 'center',
+  padding: '6px 12px', borderRadius: 999,
+  background: 'var(--card)', border: '1px solid var(--border)',
+  color: 'var(--text-secondary)', fontSize: 13, fontWeight: 600, textDecoration: 'none',
+};
 const asideCard = {
   background: 'var(--card)', border: '1px solid var(--border)',
   borderRadius: 'var(--radius-card)', padding: 16,

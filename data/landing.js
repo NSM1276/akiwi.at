@@ -13,8 +13,9 @@ import { CHAINS } from './chains';
 import { cityOf } from './listing';
 import {
   CITY_SLUGS, CATEGORY_SLUGS, DISTRICT_SLUGS, DISTRICT_NAMES,
-  slugify, districtSlug, postalCode, cityHref, districtHref, categoryHref,
+  slugify, districtSlug, postalCode, cityHref, districtHref, categoryHref, dishHref,
 } from './slugs';
+import { DISHES, MIN_DISH_VENUES, dishItems, parsePrice } from './dishes';
 
 // A category needs at least this many venues to earn its own page.
 const MIN_CATEGORY_VENUES = 2;
@@ -199,6 +200,97 @@ export function getCategoryPage(slug) {
   };
 }
 
+// ─── Dishes ──────────────────────────────────────────────────────────────────
+
+/** dish name → [{ venue, items }] for every venue whose menu has that dish */
+const DISH_INDEX = (() => {
+  const index = {};
+  for (const dish of DISHES) {
+    index[dish.name] = venues
+      .map((v) => ({ venue: v, items: dishItems(v, dish) }))
+      .filter((m) => m.items.length > 0);
+  }
+  return index;
+})();
+
+/** Dishes that clear the minimum, most venues first. */
+export function listDishes() {
+  return DISHES
+    .map((d) => ({ name: d.name, count: DISH_INDEX[d.name].length, href: dishHref(d.name) }))
+    .filter((d) => d.count >= MIN_DISH_VENUES)
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'de'));
+}
+
+export function getDishSlugs() {
+  return listDishes().map((d) => slugify(d.name));
+}
+
+export function getDishPage(slug) {
+  const dish = DISHES.find((d) => slugify(d.name) === slug);
+  if (!dish) return null;
+  const matches = DISH_INDEX[dish.name];
+  if (matches.length < MIN_DISH_VENUES) return null;
+
+  const list = matches
+    .map(({ venue, items }) => ({ ...venueSummary(venue), items: items.slice(0, 4), itemCount: items.length }))
+    .sort(byName);
+
+  const prices = matches
+    .flatMap((m) => m.items)
+    .map((i) => parsePrice(i.price))
+    .filter((n) => n != null);
+
+  const cities = {};
+  for (const v of list) cities[v.city] = (cities[v.city] || 0) + 1;
+
+  return {
+    kind: 'dish',
+    name: dish.name,
+    nameEn: dish.en,
+    venues: list,
+    stats: statsOf(list),
+    priceMin: prices.length ? Math.min(...prices) : null,
+    priceMax: prices.length ? Math.max(...prices) : null,
+    cities: Object.entries(cities)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'de'))
+      .map(([city, count]) => ({ label: city, count, href: cityHref(city) })),
+    related: listDishes()
+      .filter((d) => d.name !== dish.name)
+      .map((d) => ({ href: d.href, label: d.name, count: d.count })),
+    relatedKind: 'dishes',
+  };
+}
+
+/** Dish pages a venue appears on, for the links on its own page. */
+export function dishesOf(venue) {
+  return listDishes().filter((d) => DISH_INDEX[d.name].some((m) => m.venue.id === venue.id));
+}
+
+/** Up to `k` names for a snippet, one per chain: "Burgallio, Liwan, Damla" rather than three Burgallios. */
+export function sampleNames(list, k = 3) {
+  const seen = new Set();
+  const names = [];
+  for (const v of list) {
+    const key = v.chain ? v.chain.id : v.id;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    names.push(v.chain ? v.chain.name : v.name);
+    if (names.length === k) break;
+  }
+  return names;
+}
+
+/**
+ * Where a list of venues is, for titles: a single city, "Wien & Österreich"
+ * when most are in Vienna, otherwise "Österreich".
+ */
+export function placeOf(cities, total) {
+  if (cities.length === 1) return { de: cities[0].label, en: cities[0].label === 'Wien' ? 'Vienna' : cities[0].label };
+  const vienna = cities.find((c) => c.label === 'Wien');
+  if (vienna && vienna.count / total >= 0.6) return { de: 'Wien & Österreich', en: 'Vienna & Austria' };
+  return { de: 'Österreich', en: 'Austria' };
+}
+
 // ─── Breadcrumbs shared with the venue pages ─────────────────────────────────
 
 /** Home › Wien › 1120 Meidling — used on landing pages and venue pages alike. */
@@ -211,4 +303,4 @@ export function breadcrumbFor(venue) {
   return trail;
 }
 
-export { slugify, districtSlug, cityHref, districtHref, categoryHref };
+export { slugify, districtSlug, cityHref, districtHref, categoryHref, dishHref };

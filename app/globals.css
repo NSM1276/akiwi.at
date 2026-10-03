@@ -337,6 +337,10 @@ body:has(.ak-detail-grid) { padding-bottom: 96px; }
   transform: rotate(45deg);
 }
 
+/* Reserves the width of the longest morph word without adding it to the page text */
+.ak-morph-spacer { visibility: hidden; white-space: nowrap; }
+.ak-morph-spacer::before { content: attr(data-word); }
+
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   .hero-pulse-dot   { animation: none; }

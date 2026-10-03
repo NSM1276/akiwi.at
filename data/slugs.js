@@ -64,3 +64,4 @@ export const DISTRICT_SLUGS = (() => {
 export const cityHref = (city) => `/${slugify(city)}`;
 export const districtHref = (district) => `/wien/${districtSlug(district)}`;
 export const categoryHref = (category) => `/kategorie/${slugify(category)}`;
+export const dishHref = (dish) => `/gericht/${slugify(dish)}`;

@@ -142,7 +142,7 @@ function LocationCard({ venue, lang }) {
 
 // ── main component ────────────────────────────────────────────────────────────
 
-export default function ChainDetail({ chain, venues }) {
+export default function ChainDetail({ chain, venues, about }) {
   const router = useRouter();
   const [lang, setLang] = useLang();
   const c = COPY[lang];
@@ -236,6 +236,10 @@ export default function ChainDetail({ chain, venues }) {
 
       {/* ── Locations list ── */}
       <main style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px 80px' }}>
+        <p style={{
+          margin: '0 0 36px', fontSize: 15, lineHeight: 1.65,
+          color: 'var(--text-secondary)', maxWidth: 720,
+        }}>{lang === 'de' ? about.de : about.en}</p>
         <h2 style={{
           margin: '0 0 28px',
           fontSize: 'clamp(22px, 3vw, 30px)',

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getCitySlugs, getCityPage } from '@/data/landing';
+import { getCitySlugs, getCityPage, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
 
@@ -12,10 +12,15 @@ export async function generateMetadata({ params }) {
   const page = getCityPage(city);
   if (!page) return { title: 'Nicht gefunden' };
 
-  const title = `Halal-Restaurants in ${page.name} — ${page.stats.total} Lokale`;
+  const n = page.stats.total;
+  const title = page.districtCount > 1
+    ? `Halal Restaurants in ${page.name} – ${n} Lokale in ${page.districtCount} Bezirken`
+    : `Halal Restaurants in ${page.name} – ${n} ${n === 1 ? 'Lokal' : 'Lokale'}`;
+  const kinds = page.stats.topCategories.slice(0, 4).map((c) => c.name).join(', ');
+  const names = sampleNames(page.venues).join(', ');
   const description = page.districtCount > 1
-    ? `${page.stats.total} halal-freundliche Restaurants, Imbisse und Cafés in ${page.name}, verteilt auf ${page.districtCount} Bezirke — mit Adresse, Öffnungszeiten und Halal-Status.`
-    : `${page.stats.total} halal-freundliche Lokale in ${page.name} — mit Adresse, Öffnungszeiten und Halal-Status auf Akiwi.at.`;
+    ? `${n} halal-freundliche Restaurants, Imbisse und Cafés in ${page.name}: ${kinds}. Nach Bezirk, mit Speisekarte, Öffnungszeiten und Halal-Status.`
+    : `Halal-freundliche Lokale in ${page.name}: ${names}. Mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
 
   return {
     title,

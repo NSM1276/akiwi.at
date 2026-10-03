@@ -28,14 +28,16 @@ npm run dev
 
 ```
 app/            роуты: / (главная), /search, /r/[id] (заведение), /chain/[id] (сеть),
-                /[city], /wien/[district], /kategorie/[slug] — посадочные страницы
-                плюс sitemap.js, robots.js, icon.svg, opengraph-image.jsx
+                /[city], /wien/[district], /kategorie/[slug], /gericht/[slug] — посадочные
+                страницы, /impressum, плюс sitemap.js, robots.js, icon.svg, opengraph-image.jsx
 components/     компоненты интерфейса
 data/
   venues.js     ← все заведения. Единственный источник правды
   chains.js     ← состав сетей
   listing.js    ← собирает карточки для главной и поиска из venues + chains
-  landing.js    ← данные посадочных страниц по городам, районам и категориям
+  landing.js    ← данные посадочных страниц по городам, районам, категориям и блюдам
+  dishes.js     ← словарь блюд для страниц /gericht (сами блюда и цены — из меню)
+  seo.js        ← заголовки и описания для Google, абзац «Über …», вопросы-ответы
   slugs.js      ← адреса этих страниц
   jsonld.js     ← разметка schema.org
   data.js       ← тексты DE/EN, общие

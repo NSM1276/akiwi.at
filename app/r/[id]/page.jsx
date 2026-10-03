@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation';
 import { VENUES } from '@/data/venues';
-import { venueJsonLd, breadcrumbJsonLd } from '@/data/jsonld';
-import { breadcrumbFor } from '@/data/landing';
+import { venueJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/data/jsonld';
+import { breadcrumbFor, dishesOf } from '@/data/landing';
+import { venueMeta, venueAbout, venueFaq } from '@/data/seo';
+import { CHAINS } from '@/data/chains';
 import Detail from './Detail';
 
 export function generateStaticParams() {
@@ -12,14 +14,22 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const venue = VENUES[id];
   if (!venue) return { title: 'Nicht gefunden' };
-  const title = `${venue.name} — ${venue.districtName}`;
-  const description = `${venue.tagline_de} · ${venue.address}`;
+  const { title, description } = venueMeta(venue);
   return {
-    title,
+    // The title already names the place; the " | Akiwi.at" suffix would push
+    // "Öffnungszeiten" out of the visible part of the search result.
+    title: { absolute: title },
     description,
     alternates: { canonical: `/r/${id}` },
-    openGraph: { title: `${title} | Akiwi.at`, description },
+    openGraph: { title, description },
   };
+}
+
+function chainOf(id) {
+  const chain = Object.values(CHAINS).find((c) => c.venueIds.includes(id));
+  if (!chain) return null;
+  const count = chain.venueIds.filter((vid) => VENUES[vid]).length;
+  return count > 1 ? { href: `/chain/${chain.id}`, name: chain.name, count } : null;
 }
 
 export default async function RestaurantDetailPage({ params }) {
@@ -41,12 +51,15 @@ export default async function RestaurantDetailPage({ params }) {
     .filter(Boolean);
 
   const breadcrumb = breadcrumbFor(venue);
+  const dishes = dishesOf(venue);
+  const about = venueAbout(venue, dishes);
+  const faq = venueFaq(venue);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(venueJsonLd(venue)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(venueJsonLd(venue, about.de)) }}
       />
       <script
         type="application/ld+json"
@@ -54,7 +67,18 @@ export default async function RestaurantDetailPage({ params }) {
           __html: JSON.stringify(breadcrumbJsonLd([...breadcrumb, { href: `/r/${id}`, label: venue.name }])),
         }}
       />
-      <Detail venue={{ ...venue, similar }} breadcrumb={breadcrumb} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faq)) }}
+      />
+      <Detail
+        venue={{ ...venue, similar }}
+        breadcrumb={breadcrumb}
+        about={about}
+        faq={faq}
+        dishes={dishes}
+        chain={chainOf(id)}
+      />
     </>
   );
 }

@@ -34,30 +34,71 @@ function externalUrl(website) {
   return website.startsWith('http') ? website : `https://${website}`;
 }
 
-export function venueJsonLd(venue) {
-  const ld = {
+// Categories that describe the kind of place rather than the food.
+const VENUE_TYPES = { Imbiss: 'FastFoodRestaurant', 'Café': 'CafeOrCoffeeShop', Konditorei: 'Bakery' };
+const NOT_CUISINE = new Set(['Restaurant', 'Imbiss', 'Café', 'Konditorei', 'Healthy Food']);
+
+function schemaType(categories) {
+  for (const c of categories) if (VENUE_TYPES[c]) return VENUE_TYPES[c];
+  return 'Restaurant';
+}
+
+// No aggregateRating: the review counts in venues.js were not collected on
+// Akiwi, and Google's review-snippet rules forbid marking up ratings from
+// elsewhere. The rating stays visible on the page, just not in the markup.
+export function venueJsonLd(venue, description) {
+  const cuisines = venue.categories.filter((c) => !NOT_CUISINE.has(c));
+  return {
     '@context': 'https://schema.org',
-    '@type': 'Restaurant',
+    '@type': schemaType(venue.categories),
     '@id': `${BASE}/r/${venue.id}`,
     name: venue.name,
     url: `${BASE}/r/${venue.id}`,
-    description: venue.description_de || venue.tagline_de,
+    description: description || venue.description_de || venue.tagline_de,
     address: postalAddress(venue.address),
     telephone: venue.phone || undefined,
     sameAs: externalUrl(venue.website),
-    servesCuisine: venue.categories,
+    servesCuisine: cuisines.length ? cuisines : undefined,
     priceRange: venue.price,
+    hasMenu: venue.menu?.length ? `${BASE}/r/${venue.id}#menu` : undefined,
     openingHoursSpecification: openingHours(venue.hours),
   };
-  if (venue.reviews > 0) {
-    ld.aggregateRating = {
-      '@type': 'AggregateRating',
-      ratingValue: venue.rating,
-      reviewCount: venue.reviews,
-      bestRating: 5,
-    };
-  }
-  return ld;
+}
+
+/** Questions and answers shown on the page, in the same words. */
+export function faqJsonLd(faq) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q_de,
+      acceptedAnswer: { '@type': 'Answer', text: f.a_de },
+    })),
+  };
+}
+
+/** Site name for the search result header, and the organisation behind it. */
+export function siteJsonLd() {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${BASE}/#website`,
+      name: 'Akiwi.at',
+      alternateName: 'Akiwi',
+      url: `${BASE}/`,
+      inLanguage: 'de-AT',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      '@id': `${BASE}/#organization`,
+      name: 'Akiwi.at',
+      url: `${BASE}/`,
+      logo: `${BASE}/assets/logo.svg`,
+    },
+  ];
 }
 
 export function chainJsonLd(chain, venues) {

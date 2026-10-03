@@ -15,7 +15,12 @@ export async function generateMetadata({ params }) {
   if (!page) return { title: 'Nicht gefunden' };
 
   const title = `Halal in ${page.postal} Wien-${page.districtName} — ${page.stats.total} Lokale`;
-  const description = `Halal-freundliche Restaurants, Imbisse und Cafés in ${page.postal} Wien-${page.districtName} — mit Adresse, Öffnungszeiten und Halal-Status auf Akiwi.at.`;
+  // Venue names in the snippet: most searches are "<venue> <postal code>".
+  // Within one district a chain has one branch, so full venue names stay.
+  const shown = page.venues.slice(0, 3).map((v) => v.name);
+  const rest = page.venues.length - shown.length;
+  const names = rest > 0 ? `${shown.join(', ')} und ${rest} weitere` : shown.join(', ');
+  const description = `Halal-freundliche Lokale in ${page.postal} Wien-${page.districtName}: ${names} — mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
 
   return {
     title,

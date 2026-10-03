@@ -87,7 +87,10 @@ export default function HomeClient({ restaurants, venueCount, facets, browse }) 
         )}
       </section>
 
-      <BrowseLinks cities={browse.cities} districts={browse.districts} categories={browse.categories} />
+      <BrowseLinks
+        cities={browse.cities} districts={browse.districts}
+        categories={browse.categories} dishes={browse.dishes}
+      />
 
       <ViennaMap
         lang={lang}

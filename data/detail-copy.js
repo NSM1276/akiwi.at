@@ -12,7 +12,8 @@ export const DETAIL_COPY = {
     sections: {
       info: 'Info',
       hours: 'Öffnungszeiten',
-      menu: 'Karte',
+      menu: 'Speisekarte',
+      faq: 'Fragen',
       reviews: 'Bewertungen',
       verification: 'Verifizierung',
       similar: 'Ähnliche Lokale in der Nähe',
@@ -52,6 +53,7 @@ export const DETAIL_COPY = {
       info: 'Info',
       hours: 'Hours',
       menu: 'Menu',
+      faq: 'FAQ',
       reviews: 'Reviews',
       verification: 'Verification',
       similar: 'Similar nearby',

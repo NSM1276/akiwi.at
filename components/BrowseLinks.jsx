@@ -5,7 +5,7 @@
 import Link from 'next/link';
 import { useLang } from '@/components/LangProvider';
 
-export default function BrowseLinks({ cities, districts, categories }) {
+export default function BrowseLinks({ cities, districts, categories, dishes = [] }) {
   const [lang] = useLang();
   const de = lang === 'de';
 
@@ -13,7 +13,8 @@ export default function BrowseLinks({ cities, districts, categories }) {
     { key: 'cities', title: de ? 'Nach Stadt' : 'By city', items: cities.map((c) => ({ ...c, label: c.name })) },
     { key: 'districts', title: de ? 'Nach Wiener Bezirk' : 'By Vienna district', items: districts },
     { key: 'categories', title: de ? 'Nach Kategorie' : 'By category', items: categories.map((c) => ({ ...c, label: c.name })) },
-  ];
+    { key: 'dishes', title: de ? 'Nach Gericht' : 'By dish', items: dishes.map((d) => ({ ...d, label: d.name })) },
+  ].filter((g) => g.items.length > 0);
 
   return (
     <section style={{ maxWidth: 1280, margin: '0 auto', padding: '56px 24px 0' }}>
@@ -22,8 +23,8 @@ export default function BrowseLinks({ cities, districts, categories }) {
       </h2>
       <p style={{ margin: '8px 0 24px', color: 'var(--text-secondary)', fontSize: 15 }}>
         {de
-          ? 'Alle Lokale nach Ort und Kategorie — jede Seite listet die Adressen.'
-          : 'Every venue by place and category — each page lists the addresses.'}
+          ? 'Alle Lokale nach Ort, Kategorie und Gericht — jede Seite listet die Adressen.'
+          : 'Every venue by place, category and dish — each page lists the addresses.'}
       </p>
 
       <div style={{

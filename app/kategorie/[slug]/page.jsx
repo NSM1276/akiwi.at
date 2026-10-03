@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getCategorySlugs, getCategoryPage } from '@/data/landing';
+import { getCategorySlugs, getCategoryPage, placeOf, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
 
@@ -12,8 +12,10 @@ export async function generateMetadata({ params }) {
   const page = getCategoryPage(slug);
   if (!page) return { title: 'Nicht gefunden' };
 
-  const title = `Halal ${page.name} in Österreich — ${page.stats.total} Lokale`;
-  const description = `${page.stats.total} halal-freundliche Lokale der Kategorie ${page.name} in ${page.cities.length === 1 ? page.cities[0].label : `${page.cities.length} Städten`} — mit Adresse, Öffnungszeiten und Halal-Status.`;
+  const place = placeOf(page.cities, page.stats.total);
+  const title = `Halal ${page.name} in ${place.de} – ${page.stats.total} Lokale`;
+  const names = sampleNames(page.venues).join(', ');
+  const description = `${page.stats.total} halal-freundliche Lokale der Kategorie ${page.name}, u. a. ${names} — mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
 
   return {
     title,
@@ -41,7 +43,7 @@ export default async function CategoryPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(itemListJsonLd(`Halal ${page.name} in Österreich`, page.venues)),
+          __html: JSON.stringify(itemListJsonLd(`Halal ${page.name} in ${placeOf(page.cities, page.stats.total).de}`, page.venues)),
         }}
       />
       <Landing
@@ -52,6 +54,7 @@ export default async function CategoryPage({ params }) {
         related={page.related}
         relatedKind={page.relatedKind}
         cities={page.cities}
+        place={placeOf(page.cities, page.stats.total)}
         breadcrumb={breadcrumb}
         searchHref={`/search?q=${encodeURIComponent(page.name)}`}
       />

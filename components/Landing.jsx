@@ -1,5 +1,5 @@
 'use client';
-// Landing.jsx — shared page body for the city, district and category pages.
+// Landing.jsx — shared page body for the city, district, category and dish pages.
 // Everything it shows comes from data/landing.js; no copy is invented here.
 
 import Link from 'next/link';
@@ -7,18 +7,29 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLang } from '@/components/LangProvider';
 import { StatusBadge, Icon } from '@/components/atoms';
+import { formatEuro, parsePrice } from '@/data/dishes';
 
-function intro(kind, name, stats, districtCount, cityCount, lang) {
+const AUSTRIA = { de: 'Österreich', en: 'Austria' };
+
+function intro(kind, name, stats, districtCount, cityCount, lang, place, prices) {
   const de = lang === 'de';
   const n = stats.total;
   const where =
-    kind === 'category'
-      ? (de ? 'in Österreich' : 'across Austria')
+    kind === 'category' || kind === 'dish'
+      ? (de ? `in ${place.de}` : `in ${place.en}`)
       : (de ? `in ${name}` : `in ${name}`);
 
-  const what = kind === 'category'
-    ? (de ? `${n} halal-freundliche Lokale mit ${name}` : `${n} halal-friendly venues serving ${name}`)
-    : (de ? `${n} halal-freundliche Lokale` : `${n} halal-friendly venues`);
+  const what = kind === 'dish'
+    ? (de ? `${n} halal-freundliche Lokale mit ${name} auf der Speisekarte` : `${n} halal-friendly venues with ${name} on the menu`)
+    : kind === 'category'
+      ? (de ? `${n} halal-freundliche Lokale mit ${name}` : `${n} halal-friendly venues serving ${name}`)
+      : (de ? `${n} halal-freundliche Lokale` : `${n} halal-friendly venues`);
+
+  const priceText = prices && prices.min != null
+    ? (prices.min === prices.max
+      ? (de ? ` Preis laut Karte: ${formatEuro(prices.min)}.` : ` Price on the menu: ${formatEuro(prices.min)}.`)
+      : (de ? ` Preise laut Karte: ${formatEuro(prices.min)} bis ${formatEuro(prices.max)}.` : ` Menu prices: ${formatEuro(prices.min)} to ${formatEuro(prices.max)}.`))
+    : '';
 
   const spread =
     districtCount > 1 ? (de ? `, verteilt auf ${districtCount} Bezirke` : `, across ${districtCount} districts`)
@@ -37,19 +48,20 @@ function intro(kind, name, stats, districtCount, cityCount, lang) {
     ? (de ? ` Davon ${parts.join(', ')}.` : ` Of those, ${parts.join(', ')}.`)
     : '';
 
-  return first + second;
+  return first + priceText + second;
 }
 
-function heading(kind, name, lang) {
+function heading(kind, name, lang, place) {
   const de = lang === 'de';
   if (kind === 'city') return de ? `Halal-freundliche Restaurants in ${name}` : `Halal-friendly restaurants in ${name}`;
   if (kind === 'district') return de ? `Halal-freundliche Lokale in ${name}` : `Halal-friendly venues in ${name}`;
-  return de ? `Halal ${name} in Österreich` : `Halal ${name} in Austria`;
+  return de ? `Halal ${name} in ${place.de}` : `Halal ${name} in ${place.en}`;
 }
 
 export default function Landing({
   kind, name, venues, stats, related, relatedKind,
   cities = [], districtCount = 0, breadcrumb, searchHref,
+  place = AUSTRIA, prices = null,
 }) {
   const [lang, setLang] = useLang();
   const de = lang === 'de';
@@ -57,6 +69,7 @@ export default function Landing({
   const relatedTitle =
     relatedKind === 'districts' ? (de ? 'Nach Bezirk' : 'By district')
     : relatedKind === 'cities' ? (de ? 'Andere Städte' : 'Other cities')
+    : relatedKind === 'dishes' ? (de ? 'Andere Gerichte' : 'Other dishes')
     : (de ? 'Andere Kategorien' : 'Other categories');
 
   return (
@@ -83,12 +96,12 @@ export default function Landing({
         <h1 style={{
           margin: 0, fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700,
           letterSpacing: '-0.025em', lineHeight: 1.08,
-        }}>{heading(kind, name, lang)}</h1>
+        }}>{heading(kind, name, lang, place)}</h1>
 
         <p style={{
           margin: '14px 0 0', fontSize: 16, lineHeight: 1.6,
           color: 'var(--text-secondary)', maxWidth: 680,
-        }}>{intro(kind, name, stats, districtCount, cities.length, lang)}</p>
+        }}>{intro(kind, name, stats, districtCount, cities.length, lang, place, prices)}</p>
 
         {stats.topCategories.length > 1 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 16 }}>
@@ -162,6 +175,28 @@ export default function Landing({
                         </>
                       )}
                     </span>
+                    {v.items && (
+                      <span style={{ display: 'flex', flexDirection: 'column', gap: 2, marginTop: 8 }}>
+                        {v.items.map((it) => (
+                          <span key={it.name_de} style={{
+                            display: 'flex', gap: 10, justifyContent: 'space-between',
+                            fontSize: 13, color: 'var(--text-secondary)',
+                          }}>
+                            <span>{de ? it.name_de : it.name_en}</span>
+                            {parsePrice(it.price) != null && (
+                              <span style={{ color: 'var(--accent)', fontWeight: 700, whiteSpace: 'nowrap' }}>
+                                {formatEuro(parsePrice(it.price))}
+                              </span>
+                            )}
+                          </span>
+                        ))}
+                        {v.itemCount > v.items.length && (
+                          <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>
+                            {de ? `+ ${v.itemCount - v.items.length} weitere auf der Speisekarte` : `+ ${v.itemCount - v.items.length} more on the menu`}
+                          </span>
+                        )}
+                      </span>
+                    )}
                   </span>
                 </Link>
               </li>
