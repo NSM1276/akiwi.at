@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     title: { absolute: title },
     description,
     alternates: { canonical: `/gericht/${slug}` },
-    openGraph: { title, description },
+    openGraph: { title, description, images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 

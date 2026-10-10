@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
     title,
     description,
     alternates: { canonical: `/${city}` },
-    openGraph: { title: `${title} | Akiwi.at`, description },
+    openGraph: { title: `${title} | Akiwi.at`, description, images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 

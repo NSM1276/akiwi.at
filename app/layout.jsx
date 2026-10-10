@@ -34,6 +34,7 @@ export const metadata = {
     locale: 'de_AT',
     type: 'website',
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 export const viewport = {

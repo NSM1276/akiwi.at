@@ -15,7 +15,7 @@ export function generateMetadata() {
     title: { absolute: title },
     description,
     alternates: { canonical: '/' },
-    openGraph: { title, description },
+    openGraph: { title, description, url: '/', images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 

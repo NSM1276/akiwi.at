@@ -354,3 +354,13 @@ export function chainAbout(chain, venues) {
     en: `${chain.name} has ${venues.length} ${venues.length === 1 ? 'branch' : 'branches'} on Akiwi: ${listEn(labels)}. Halal status of the branches: ${partsEn.join(', ')}. Each branch has its own page with address, opening hours and menu.`,
   };
 }
+
+// ─── Share preview (Open Graph image) ────────────────────────────────────────
+
+/** Short place line for the share card: "1120 Wien · Meidling" or "Graz". */
+export function shareWhere(v) {
+  return isVienna(v) ? `${placeLabel(v)} · ${v.districtName}` : cityOf(v);
+}
+
+/** Status wording on the card; same words as the meta description. */
+export const shareHalal = halalShort;
