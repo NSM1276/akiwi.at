@@ -1,62 +1,68 @@
 'use client';
+import Link from 'next/link';
 import { COPY } from '@/data/data';
 
-export const StatusDot = ({ status, size = 8 }) => {
-  const color =
-    status === 'verified' ? 'var(--status-green)' :
-    status === 'self' ? 'var(--status-yellow)' :
-    'var(--status-red)';
+// Eight-point star (khatam): two overlapping squares. Filled = verified,
+// outlined = self-declared or unknown. The only "halal" motif on the site.
+export function Star({ size = 12, filled = true, color = 'currentColor', hole = false }) {
+  const sw = filled ? 0 : 4;
   return (
-    <span style={{
-      display: 'inline-block',
-      width: size, height: size, borderRadius: 999,
-      background: color,
-      boxShadow: `0 0 0 3px ${color}33`,
-      flexShrink: 0,
-    }} />
+    <svg width={size} height={size} viewBox="0 0 40 40" aria-hidden="true" style={{ flexShrink: 0 }}>
+      <rect x="9" y="9" width="22" height="22" fill={filled ? color : 'none'} stroke={color} strokeWidth={sw} />
+      <rect x="9" y="9" width="22" height="22" fill={filled ? color : 'none'} stroke={color} strokeWidth={sw} transform="rotate(45 20 20)" />
+      {hole && <rect x="16.5" y="16.5" width="7" height="7" fill="var(--ink)" />}
+    </svg>
   );
+}
+
+const STATUS_COLOR = {
+  verified: 'var(--green)',
+  self: 'var(--saffron)',
+  unknown: 'var(--pomegranate)',
 };
 
-export const StatusBadge = ({ status, lang, compact = false }) => {
-  const c = COPY[lang];
-  const label =
-    status === 'verified' ? c.statusVerified :
-    status === 'self' ? c.statusSelf :
-    c.statusUnknown;
-  const color =
-    status === 'verified' ? 'var(--status-green)' :
-    status === 'self' ? 'var(--status-yellow)' :
-    'var(--status-red)';
-  const bg =
-    status === 'verified' ? 'var(--status-green-bg)' :
-    status === 'self' ? 'var(--status-yellow-bg)' :
-    'var(--status-red-bg)';
-  const glyph =
-    status === 'verified'
-      ? <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1.5 5.2 L4 7.5 L8.5 2.5" stroke={color} strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/></svg>
-      : status === 'self'
-      ? <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3.5" fill="none" stroke={color} strokeWidth="1.5"/><path d="M5 1.5 A3.5 3.5 0 0 1 5 8.5 Z" fill={color}/></svg>
-      : <svg width="10" height="10" viewBox="0 0 10 10"><text x="5" y="7.5" textAnchor="middle" fontSize="8" fontWeight="700" fill={color}>?</text></svg>;
+/** Small star for maps and lists. */
+export const StatusDot = ({ status, size = 10 }) => (
+  <Star size={size} filled={status === 'verified'} color={STATUS_COLOR[status] || STATUS_COLOR.unknown} />
+);
 
+export const StatusBadge = ({ status, lang, compact = false, boxed = false }) => {
+  const c = COPY[lang];
+  const key = status === 'verified' || status === 'self' ? status : 'unknown';
+  const label = key === 'verified' ? c.statusVerified : key === 'self' ? c.statusSelf : c.statusUnknown;
   return (
-    <span style={{
-      display: 'inline-flex', alignItems: 'center', gap: 6,
-      padding: compact ? '3px 8px' : '5px 10px',
-      background: bg,
-      border: `1px solid ${color}55`,
-      color,
-      borderRadius: 999,
-      fontSize: compact ? 11 : 12,
-      fontWeight: 600,
-      letterSpacing: '0.01em',
-      lineHeight: 1,
-      whiteSpace: 'nowrap',
-    }}>
-      {glyph}
+    <span className={`ak-status ak-status--${key}${boxed ? ' ak-status--boxed' : ''}`}>
+      <StatusDot status={key} size={compact ? 11 : 13} />
       {label}
     </span>
   );
 };
+
+/** Vienna district number as a square sign, e.g. "12". Outside Vienna: the city. */
+export const District = ({ district, city, green = false }) => (
+  district > 0
+    ? <span className={`ak-district${green ? ' ak-district--green' : ''}`}>{district}</span>
+    : <span className={`ak-district ak-district--city${green ? ' ak-district--green' : ''}`}>{city}</span>
+);
+
+export const Logo = () => (
+  <Link href="/" className="ak-logo" aria-label="Akiwi.at — Startseite">
+    <Star size={26} color="var(--green)" hole />
+    <span className="ak-logo-word">AKIWI<span>.AT</span></span>
+  </Link>
+);
+
+export const Crumbs = ({ trail, current }) => (
+  <nav aria-label="Breadcrumb" className="ak-crumbs">
+    {trail.map((b) => (
+      <span key={b.href} style={{ display: 'inline-flex', gap: 6 }}>
+        <Link href={b.href}>{b.label}</Link>
+        <span aria-hidden>/</span>
+      </span>
+    ))}
+    <span aria-current="page">{current}</span>
+  </nav>
+);
 
 export const Icon = {
   search: (p = {}) => (

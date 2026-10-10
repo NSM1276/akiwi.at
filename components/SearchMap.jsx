@@ -33,159 +33,85 @@ const VIENNA_DISTRICTS = [
 
 const DANUBE = 'M8,18 C 24,22 44,30 62,26 S 90,14 96,20 L96,26 C 84,22 66,32 48,34 S 16,28 8,24 Z';
 
+const PIN = { verified: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
+
 export default function SearchMap({ lang, restaurants, hoveredId, setHoveredId }) {
   const c = SEARCH_COPY[lang];
   const [selected, setSelected] = useState(null);
 
   return (
-    <div style={{
-      position: 'sticky', top: 76,
-      background: 'var(--card)',
-      border: '1px solid var(--border)',
-      borderRadius: 16,
-      overflow: 'hidden',
-      height: 'calc(100vh - 96px)',
-      minHeight: 480,
-    }}>
-      {/* Subtle grid */}
-      <div aria-hidden style={{
-        position: 'absolute', inset: 0,
-        backgroundImage:
-          'linear-gradient(rgba(107,114,128,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(107,114,128,0.06) 1px, transparent 1px)',
-        backgroundSize: '32px 32px',
-      }} />
-
+    <div className="ak-map ak-map--search">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-        <path d={DANUBE} fill="rgba(59,130,246,0.18)" stroke="rgba(59,130,246,0.35)" strokeWidth="0.15" />
-        <text x="80" y="20" fontSize="1.4" fill="rgba(147,197,253,0.7)" fontWeight="600" letterSpacing="0.15em">DONAU</text>
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} aria-hidden="true">
+        <rect width="100" height="100" fill="#F4F3EF" />
+        <path d={DANUBE} fill="#CFE3E8" stroke="#9BBFC8" strokeWidth="0.15" />
+        <text x="80" y="20" fontSize="1.4" fill="#5E8C97" fontWeight="600" letterSpacing="0.15em">DONAU</text>
         {VIENNA_DISTRICTS.map((d) => (
-          <path key={d.n} d={d.d}
-            fill="rgba(75,85,99,0.22)" stroke="var(--border)" strokeWidth="0.15" />
+          <path key={d.n} d={d.d} fill="#FFFFFF" stroke="#141414" strokeWidth="0.15" />
         ))}
         {VIENNA_DISTRICTS.map((d) => {
           const coords = d.d.match(/\d+(?:\.\d+)?/g).map(Number);
           let cx = 0, cy = 0, n = 0;
           for (let i = 0; i < coords.length; i += 2) { cx += coords[i]; cy += coords[i + 1]; n++; }
-          cx /= n; cy /= n;
           return (
-            <text key={d.n} x={cx} y={cy + 0.4}
-              fontSize="1.4" textAnchor="middle"
-              fill="rgba(156,163,175,0.55)" fontWeight="700">
+            <text key={d.n} x={cx / n} y={cy / n + 0.5} fontSize="1.6" textAnchor="middle" fill="#7A7973" fontWeight="700">
               {d.n}
             </text>
           );
         })}
       </svg>
 
-      {/* Pins */}
       {restaurants.map((r) => {
         if (r.x == null || r.y == null) return null;
-        const isHover = hoveredId === r.id;
-        const isSel = selected === r.id;
-        const color =
-          r.status === 'verified' ? '#10B981' :
-          r.status === 'self' ? '#F59E0B' : '#EF4444';
+        const on = hoveredId === r.id || selected === r.id;
+        const color = PIN[r.status] || PIN.unknown;
         return (
           <button
             key={r.id}
+            type="button"
             onMouseEnter={() => setHoveredId && setHoveredId(r.id)}
             onMouseLeave={() => setHoveredId && setHoveredId(null)}
             onClick={() => setSelected(r.id === selected ? null : r.id)}
-            style={{
-              position: 'absolute',
-              left: `${r.x}%`, top: `${r.y}%`,
-              transform: 'translate(-50%, -100%)',
-              background: 'transparent', border: 'none', cursor: 'pointer',
-              padding: 0,
-              zIndex: isHover || isSel ? 5 : 1,
-            }}
             aria-label={r.name}
+            style={{
+              position: 'absolute', left: `${r.x}%`, top: `${r.y}%`,
+              transform: 'translate(-50%, -100%)',
+              background: 'transparent', border: 'none', padding: 0, cursor: 'pointer',
+              zIndex: on ? 5 : 1,
+            }}
           >
-            <div style={{
-              position: 'relative',
-              width: isHover || isSel ? 30 : 22,
-              height: isHover || isSel ? 38 : 28,
-              transition: 'all var(--dur-fast) var(--ease-out)',
-              filter: `drop-shadow(0 3px 6px ${color}66)`,
-            }}>
-              <svg viewBox="0 0 24 30" width="100%" height="100%">
-                <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 18 12 18s12-9 12-18C24 5.4 18.6 0 12 0z"
-                  fill={color} stroke="#1F2937" strokeWidth="1.5" />
-                <circle cx="12" cy="12" r="4" fill="#1F2937" />
-              </svg>
-            </div>
-            {(isHover || isSel) && (
-              <div style={{
-                position: 'absolute',
-                bottom: 'calc(100% + 6px)', left: '50%', transform: 'translateX(-50%)',
-                background: 'var(--background)',
-                border: `1px solid ${color}`,
-                borderRadius: 10,
-                padding: '8px 12px',
-                minWidth: 180,
-                boxShadow: 'var(--shadow-elev)',
-                pointerEvents: 'none',
-                zIndex: 10,
+            <svg viewBox="0 0 24 30" width={on ? 26 : 20} height={on ? 32 : 25} aria-hidden="true">
+              <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 18 12 18s12-9 12-18C24 5.4 18.6 0 12 0z" fill={color} stroke="#141414" strokeWidth="1.5" />
+              <rect x="8.5" y="8.5" width="7" height="7" fill="#fff" />
+            </svg>
+            {on && (
+              <span style={{
+                position: 'absolute', bottom: 'calc(100% + 6px)', left: '50%', transform: 'translateX(-50%)',
+                background: 'var(--paper)', border: 'var(--line) solid var(--ink)', boxShadow: 'var(--shadow-elev)',
+                padding: '8px 10px', minWidth: 170, textAlign: 'left', pointerEvents: 'none', zIndex: 10,
               }}>
-                <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 2, whiteSpace: 'nowrap' }}>{r.name}</div>
-                <div style={{
-                  fontSize: 11, color: 'var(--text-secondary)',
-                  display: 'flex', alignItems: 'center', gap: 6,
-                }}>
-                  <StatusDot status={r.status} size={6} />
+                <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 17, textTransform: 'uppercase', whiteSpace: 'nowrap', lineHeight: 1 }}>{r.name}</span>
+                <span className="ak-data" style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 5, color: 'var(--ink-2)' }}>
+                  <StatusDot status={r.status} size={10} />
                   {r.categories[0]} · {r.price}
-                </div>
-              </div>
+                </span>
+              </span>
             )}
           </button>
         );
       })}
 
-      {/* Zoom controls (decorative) */}
-      <div style={{
-        position: 'absolute', top: 12, right: 12,
-        display: 'flex', flexDirection: 'column',
-        background: 'var(--card)', border: '1px solid var(--border)',
-        borderRadius: 8, overflow: 'hidden',
-      }}>
-        {['+', '−'].map((s, i) => (
-          <button key={s} style={{
-            width: 32, height: 32, border: 'none', background: 'transparent',
-            color: 'var(--text-primary)', cursor: 'pointer',
-            fontSize: 16, fontWeight: 600, fontFamily: 'inherit',
-            borderBottom: i === 0 ? '1px solid var(--border)' : 'none',
-          }}>{s}</button>
-        ))}
-      </div>
+      <span className="ak-data" style={{ position: 'absolute', bottom: 8, left: 8, background: 'var(--ink)', color: '#fff', padding: '5px 8px', display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+        <Icon.pin size={11} /> {restaurants.length} {lang === 'de' ? 'sichtbar' : 'visible'}
+      </span>
 
-      {/* Result count chip */}
-      <div style={{
-        position: 'absolute', bottom: 12, left: 12,
-        display: 'inline-flex', alignItems: 'center', gap: 6,
-        background: 'var(--background)', border: '1px solid var(--border)',
-        borderRadius: 999, padding: '5px 11px',
-        fontSize: 12, fontWeight: 600,
-      }}>
-        <Icon.pin size={11} />
-        <span style={{ color: 'var(--accent)' }}>{restaurants.length}</span>
-        <span style={{ color: 'var(--text-secondary)' }}>{lang === 'de' ? 'sichtbar' : 'visible'}</span>
-      </div>
-
-      {/* Legend */}
-      <div style={{
-        position: 'absolute', bottom: 12, right: 12,
-        display: 'flex', gap: 10,
-        background: 'var(--background)', border: '1px solid var(--border)',
-        borderRadius: 999, padding: '5px 11px',
-        fontSize: 11, color: 'var(--text-secondary)',
-      }}>
+      <span style={{ position: 'absolute', top: 8, right: 8, background: 'var(--paper)', border: 'var(--line) solid var(--ink)', padding: '6px 8px', display: 'flex', flexDirection: 'column', gap: 4 }}>
         {[['verified', c.halalLabels.verified], ['self', c.halalLabels.self], ['unknown', c.halalLabels.unknown]].map(([s, l]) => (
-          <span key={s} style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-            <StatusDot status={s} size={6} />{l}
+          <span key={s} className="ak-data" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
+            <StatusDot status={s} size={10} />{l}
           </span>
         ))}
-      </div>
+      </span>
     </div>
   );
 }

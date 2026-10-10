@@ -1,150 +1,59 @@
 'use client';
-// SearchResultCard — horizontal restaurant card optimized for the catalog list view.
+// SearchResultCard — one row of the catalog list. The parent wraps it in a <Link>.
 
 import { SEARCH_COPY } from '@/data/search-data';
 import { Icon, StatusBadge } from '@/components/atoms';
 
-const tagStyle = {
-  padding: '2px 8px',
-  background: 'rgba(75,85,99,0.25)',
-  border: '1px solid var(--border)',
-  borderRadius: 999,
-  fontSize: 10, fontWeight: 600,
-  color: 'var(--text-secondary)',
-  letterSpacing: '0.02em',
-};
-
 export default function SearchResultCard({ r, lang, onHover, hovered, dense, openNow }) {
   const c = SEARCH_COPY[lang];
-  const isHovered = hovered;
-  const imgSize = dense ? 96 : 132;
+  const isChain = r.type === 'chain';
 
   return (
     <article
+      className="ak-card"
       onMouseEnter={() => onHover && onHover(r.id)}
       onMouseLeave={() => onHover && onHover(null)}
-      style={{
-        display: 'flex', gap: dense ? 12 : 16,
-        padding: dense ? 12 : 14,
-        background: 'var(--card)',
-        border: `1px solid ${isHovered ? 'var(--accent)' : 'var(--border)'}`,
-        borderRadius: 'var(--radius-card)',
-        cursor: 'pointer',
-        transition: 'all var(--dur-fast) var(--ease-out)',
-        boxShadow: isHovered ? '0 8px 20px rgba(0,0,0,0.3)' : 'none',
-      }}
+      style={{ boxShadow: hovered ? 'var(--shadow-elev)' : 'none', transition: 'box-shadow var(--dur-fast) var(--ease-out)' }}
     >
-      {/* Image */}
-      <div style={{
-        position: 'relative',
-        width: imgSize, height: imgSize, flexShrink: 0,
-        borderRadius: 8, overflow: 'hidden',
-        background: `linear-gradient(135deg, ${r.img[0]} 0%, ${r.img[1]} 100%)`,
-      }}>
-        <div aria-hidden style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: `radial-gradient(ellipse at 50% 50%, hsla(${r.accentHue}, 60%, 55%, 0.18) 0%, transparent 70%)`,
-        }} />
-        <div style={{
-          position: 'absolute', inset: 0,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>
-          <span style={{
-            fontSize: dense ? 36 : 48,
-            fontWeight: 700,
-            letterSpacing: '-0.04em',
-            color: 'rgba(255,255,255,0.85)',
-            textShadow: '0 2px 8px rgba(0,0,0,0.3)',
-          }}>{r.name.charAt(0)}</span>
-        </div>
-        {r.featured && (
-          <div style={{
-            position: 'absolute', top: 6, left: 6,
-            background: 'var(--accent)', color: 'var(--text-on-accent)',
-            padding: '2px 7px', borderRadius: 999,
-            fontSize: 9, fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase',
-          }}>★</div>
-        )}
-      </div>
+      <div className="ak-card-body" style={{ display: 'grid', gridTemplateColumns: 'auto minmax(0, 1fr) auto', gap: 12, alignItems: 'start', padding: dense ? 12 : undefined }}>
+        {isChain
+          ? <span className="ak-district ak-district--city">{r.locationCount}×</span>
+          : r.district > 0
+            ? <span className={`ak-district${r.status === 'verified' ? ' ak-district--green' : ''}`}>{r.district}</span>
+            : <span className="ak-district ak-district--city">{r.districtName}</span>}
 
-      {/* Body */}
-      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: dense ? 4 : 6 }}>
-        {/* Top row */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, justifyContent: 'space-between' }}>
-          <div style={{ minWidth: 0, flex: 1 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
-              <StatusBadge status={r.status} lang={lang} compact />
-              {r.reviews > 0 && (
-                <span style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 3,
-                  color: 'var(--accent)', fontSize: 12, fontWeight: 700,
-                }}>
-                  <Icon.star size={11} />
-                  {r.rating.toFixed(1)}
-                  <span style={{ color: 'var(--text-tertiary)', fontWeight: 500, marginLeft: 2 }}>
-                    ({r.reviews})
-                  </span>
-                </span>
-              )}
-              {/* openNow is null until the clock is available on the client */}
-              {openNow !== null && openNow !== undefined && (
-                <span style={{
-                  fontSize: 11, color: openNow ? 'var(--status-green)' : 'var(--status-red)',
-                  fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 4,
-                }}>
-                  <span style={{ width: 6, height: 6, borderRadius: 999, background: 'currentColor' }} />
-                  {openNow ? c.open : c.closed}
-                </span>
-              )}
-            </div>
-            <h3 style={{
-              margin: 0, fontSize: dense ? 16 : 18, fontWeight: 700,
-              letterSpacing: '-0.01em', lineHeight: 1.2,
-              overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-            }}>{r.name}</h3>
+        <div style={{ minWidth: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+            <StatusBadge status={r.status} lang={lang} compact />
+            {/* openNow is null until the clock is available on the client */}
+            {openNow !== null && openNow !== undefined && (
+              <span className="ak-data" style={{ color: openNow ? 'var(--green-ink)' : 'var(--ink-3)' }}>
+                {openNow ? c.open : c.closed}
+              </span>
+            )}
           </div>
-          <div style={{
-            fontSize: 13, fontWeight: 700, color: 'var(--text-secondary)',
-            padding: '3px 9px', background: 'rgba(75,85,99,0.3)',
-            border: '1px solid var(--border)', borderRadius: 999,
-            flexShrink: 0,
-          }}>{r.price}</div>
-        </div>
-
-        {/* Meta row */}
-        <div style={{
-          display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap',
-          fontSize: 12, color: 'var(--text-secondary)',
-        }}>
-          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{r.categories.join(', ')}</span>
-          <span style={{ color: 'var(--text-tertiary)' }}>·</span>
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-            <Icon.pin size={11} />
-            {r.districtName}
-          </span>
-          {r.type === 'chain' && (
-            <>
-              <span style={{ color: 'var(--text-tertiary)' }}>·</span>
-              <span style={{ color: 'var(--accent)', fontWeight: 600 }}>{c.locations(r.locationCount)}</span>
-            </>
+          <h3 className="ak-list-title" style={{ margin: '6px 0 4px', fontSize: dense ? 19 : 22, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {r.name}
+          </h3>
+          <div className="ak-card-meta">
+            {r.categories.join(' · ')} · {r.districtName}
+            {isChain && <> · <span style={{ color: 'var(--green-ink)', fontWeight: 600 }}>{c.locations(r.locationCount)}</span></>}
+          </div>
+          {!dense && r.amenities.length > 0 && (
+            <div className="ak-tags" style={{ marginTop: 8 }}>
+              {r.amenities.map((a) => <span key={a} className="ak-tag">{c.amenityLabels[a]}</span>)}
+            </div>
           )}
         </div>
 
-        {/* Amenities */}
-        {!dense && r.amenities.length > 0 && (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginTop: 'auto' }}>
-            {r.amenities.map((a) => (
-              <span
-                key={a}
-                style={a === 'prayer'
-                  ? { ...tagStyle, color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.35)' }
-                  : tagStyle}
-              >
-                {c.amenityLabels[a]}
-              </span>
-            ))}
-          </div>
-        )}
+        <div style={{ textAlign: 'right' }}>
+          <div className="ak-data">{r.price}</div>
+          {r.reviews > 0 && (
+            <div className="ak-data" style={{ marginTop: 4, display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+              <Icon.star size={10} /> {r.rating.toFixed(1)}
+            </div>
+          )}
+        </div>
       </div>
     </article>
   );

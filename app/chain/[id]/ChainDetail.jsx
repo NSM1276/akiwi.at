@@ -1,266 +1,99 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { StatusBadge, Icon } from '@/components/atoms';
-import { COPY } from '@/data/data';
+import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
 import { useLang } from '@/components/LangProvider';
-
-// ── helpers ──────────────────────────────────────────────────────────────────
-
-const DAYS_DE = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
-const DAYS_EN = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
-function todayHours(hours, lang) {
-  if (!hours?.length) return null;
-  const today = new Date().getDay();
-  const h = hours.find((d) => d.day === today);
-  if (!h) return lang === 'de' ? 'Heute geschlossen' : 'Closed today';
-  return `${h.open}–${h.close}`;
-}
+import { useNow } from '@/components/useNow';
 
 function mapsLink(address) {
-  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}&travelmode=walking`;
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
 }
 
-// ── sub-components ────────────────────────────────────────────────────────────
+/** Today's opening times. venues.js counts days from Monday = 0. */
+function todayHours(hours, now, lang) {
+  if (!now || !hours?.length) return null;
+  const day = (now.getDay() + 6) % 7;
+  const slots = hours.filter((h) => h.day === day && h.open && h.close);
+  if (!slots.length) return lang === 'de' ? 'heute geschlossen' : 'closed today';
+  return slots.map((h) => `${h.open}–${h.close}`).join(', ');
+}
 
-function LocationCard({ venue, lang }) {
-  const hours = todayHours(venue.hours, lang);
+function Branch({ venue, lang, now }) {
+  const de = lang === 'de';
+  const hours = todayHours(venue.hours, now, lang);
   return (
-    <div style={{
-      background: 'var(--card)',
-      border: '1px solid var(--border)',
-      borderRadius: 'var(--radius-card)',
-      padding: '20px 24px',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 12,
-    }}>
-      {/* Header row */}
-      <div style={{ display: 'flex', alignItems: 'start', justifyContent: 'space-between', gap: 12 }}>
-        <div>
-          <div style={{ fontWeight: 700, fontSize: 16, color: 'var(--text-primary)', marginBottom: 4 }}>
-            {venue.name}
-          </div>
-          <div style={{ fontSize: 13, color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Icon.pin size={12} />
-            {venue.address}
-          </div>
+    <li className="ak-card">
+      <div className="ak-card-body">
+        <div className="ak-row-between">
+          <District district={venue.district} city={venue.districtName} green={venue.status === 'verified'} />
+          <StatusBadge status={venue.status} lang={lang} compact />
         </div>
-        <StatusBadge status={venue.status} lang={lang} />
-      </div>
-
-      {/* Hours + phone row */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, fontSize: 13, color: 'var(--text-secondary)' }}>
-        {hours && (
-          <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <Icon.clock size={12} />
-            {lang === 'de' ? 'Heute:' : 'Today:'} <strong style={{ color: 'var(--text-primary)' }}>{hours}</strong>
-          </span>
-        )}
-        {venue.phone && (
-          <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <Icon.phone size={12} />
-            {venue.phone}
-          </span>
-        )}
-      </div>
-
-      {/* CTA row */}
-      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 4 }}>
-        <a
-          href={mapsLink(venue.address)}
-          target="_blank" rel="noopener noreferrer"
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: 'var(--accent)', color: 'var(--text-on-accent)',
-            padding: '8px 14px', borderRadius: 999,
-            fontSize: 13, fontWeight: 600, textDecoration: 'none',
-            transition: 'opacity 0.15s',
-          }}
-        >
-          <Icon.pin size={12} />
-          {lang === 'de' ? 'Navigation' : 'Navigate'}
-        </a>
-
-        {venue.phone && (
-          <a
-            href={`tel:${venue.phone}`}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 6,
-              background: 'rgba(75,85,99,0.25)',
-              border: '1px solid var(--border)',
-              color: 'var(--text-primary)',
-              padding: '8px 14px', borderRadius: 999,
-              fontSize: 13, fontWeight: 600, textDecoration: 'none',
-            }}
-          >
-            <Icon.phone size={12} />
-            {lang === 'de' ? 'Anrufen' : 'Call'}
-          </a>
-        )}
-
-        {venue.website && (
-          <a
-            href={venue.website.startsWith('http') ? venue.website : `https://${venue.website}`}
-            target="_blank" rel="noopener noreferrer"
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 6,
-              background: 'rgba(75,85,99,0.25)',
-              border: '1px solid var(--border)',
-              color: 'var(--text-primary)',
-              padding: '8px 14px', borderRadius: 999,
-              fontSize: 13, fontWeight: 600, textDecoration: 'none',
-            }}
-          >
-            <Icon.arrow size={12} />
-            Website
-          </a>
-        )}
-
-        <Link
-          href={`/r/${venue.id}`}
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: 'transparent',
-            border: '1px solid var(--border)',
-            color: 'var(--text-secondary)',
-            padding: '8px 14px', borderRadius: 999,
-            fontSize: 13, fontWeight: 600, textDecoration: 'none',
-          }}
-        >
-          Details
-          <Icon.arrow size={12} />
+        <Link href={`/r/${venue.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <h3 className="ak-card-title">{venue.name}</h3>
         </Link>
+        <div className="ak-card-meta">{venue.address}</div>
+        {(hours || venue.phone) && (
+          <div className="ak-data" style={{ marginTop: 8, display: 'flex', flexWrap: 'wrap', gap: 14, color: 'var(--ink-2)' }}>
+            {hours && <span><Icon.clock size={11} /> {de ? 'Heute' : 'Today'} {hours}</span>}
+            {venue.phone && <span>{venue.phone}</span>}
+          </div>
+        )}
+        <div style={{ display: 'grid', gridTemplateColumns: venue.phone ? '1fr 1fr 1fr' : '1fr 1fr', gap: 6, marginTop: 12 }}>
+          <Link href={`/r/${venue.id}`} className="ak-btn ak-btn--sm ak-btn--ink">{de ? 'Karte' : 'Menu'}</Link>
+          {venue.phone && <a href={`tel:${venue.phone}`} className="ak-btn ak-btn--sm"><Icon.phone size={13} /> {de ? 'Anrufen' : 'Call'}</a>}
+          <a href={mapsLink(venue.address)} target="_blank" rel="noopener noreferrer" className="ak-btn ak-btn--sm ak-btn--green">
+            <Icon.pin size={13} /> {de ? 'Route' : 'Directions'}
+          </a>
+        </div>
       </div>
-    </div>
+    </li>
   );
 }
 
-// ── main component ────────────────────────────────────────────────────────────
-
 export default function ChainDetail({ chain, venues, about }) {
-  const router = useRouter();
   const [lang, setLang] = useLang();
-  const c = COPY[lang];
-
-
-  const totalReviews = venues.reduce((s, v) => s + (v.reviews || 0), 0);
-  const bestRating = venues.reduce((best, v) => (v.reviews > 0 ? Math.max(best, v.rating || 0) : best), 0);
-  const tagline = lang === 'de' ? chain.tagline_de : chain.tagline_en;
+  const de = lang === 'de';
+  const now = useNow();
+  const tagline = de ? chain.tagline_de : chain.tagline_en;
+  const cities = [...new Set(venues.map((v) => (v.district > 0 ? 'Wien' : v.districtName)))];
 
   return (
     <>
       <Header lang={lang} setLang={setLang} />
 
-      {/* ── Hero ── */}
-      <section style={{
-        background: `linear-gradient(135deg, ${chain.img[0]} 0%, ${chain.img[1]} 100%)`,
-        position: 'relative', overflow: 'hidden',
-        padding: 'clamp(48px, 8vw, 96px) 24px clamp(40px, 6vw, 72px)',
-      }}>
-        <div aria-hidden style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: `radial-gradient(ellipse at 30% 50%, hsla(${chain.accentHue}, 60%, 55%, 0.25) 0%, transparent 65%)`,
-        }} />
-
-        {/* Back button */}
-        <div style={{ maxWidth: 900, margin: '0 auto', position: 'relative' }}>
-          <button
-            onClick={() => router.back()}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 6,
-              background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(4px)',
-              border: '1px solid rgba(255,255,255,0.15)',
-              color: 'rgba(255,255,255,0.85)',
-              padding: '6px 14px', borderRadius: 999,
-              fontSize: 13, fontWeight: 600, cursor: 'pointer',
-              fontFamily: 'inherit', marginBottom: 32,
-            }}
-          >
-            ← {lang === 'de' ? 'Zurück' : 'Back'}
-          </button>
-
-          {/* Chain name */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 12, flexWrap: 'wrap' }}>
-            <h1 style={{
-              margin: 0, fontSize: 'clamp(32px, 5vw, 56px)',
-              fontWeight: 800, letterSpacing: '-0.03em',
-              color: 'rgba(255,255,255,0.97)',
-              lineHeight: 1.05,
-            }}>{chain.name}</h1>
+      <main>
+        <div className="ak-wrap" style={{ paddingTop: 18, paddingBottom: 20 }}>
+          <Crumbs trail={[{ href: '/', label: 'Home' }]} current={chain.name} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
+            <span className="ak-district ak-district--city">{venues.length} {de ? 'Filialen' : 'branches'}</span>
             <StatusBadge status={chain.status} lang={lang} />
+            <span className="ak-data ak-muted">{chain.price}</span>
           </div>
-
-          {/* Tagline */}
-          <p style={{
-            margin: '0 0 24px',
-            fontSize: 'clamp(15px, 2vw, 19px)',
-            color: 'rgba(255,255,255,0.80)',
-            fontWeight: 500, lineHeight: 1.5,
-            maxWidth: 560,
-          }}>{tagline}</p>
-
-          {/* Categories */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-            {chain.categories.map((cat) => (
-              <span key={cat} style={{
-                padding: '5px 12px',
-                background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(4px)',
-                border: '1px solid rgba(255,255,255,0.25)',
-                borderRadius: 999, fontSize: 13, fontWeight: 600,
-                color: 'rgba(255,255,255,0.90)',
-              }}>{cat}</span>
-            ))}
+          <h1 className="ak-h1">{chain.name}</h1>
+          <p className="ak-lead" style={{ marginTop: 10 }}>{tagline}</p>
+          <div className="ak-tags" style={{ marginTop: 12 }}>
+            {chain.categories.map((cat) => <span key={cat} className="ak-tag">{cat}</span>)}
+            {cities.map((city) => <span key={city} className="ak-tag">{city}</span>)}
           </div>
-
-          {/* Stats strip */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
-            {[
-              { label: lang === 'de' ? 'Filialen' : 'Locations', value: chain.venueIds.length },
-              { label: lang === 'de' ? 'Beste Bewertung' : 'Best rating', value: bestRating > 0 ? `★ ${bestRating.toFixed(1)}` : '—' },
-              { label: lang === 'de' ? 'Bewertungen' : 'Reviews', value: totalReviews > 0 ? totalReviews : '—' },
-              { label: lang === 'de' ? 'Preisklasse' : 'Price range', value: chain.price },
-            ].map(({ label, value }) => (
-              <div key={label}>
-                <div style={{ fontSize: 22, fontWeight: 800, color: 'rgba(255,255,255,0.97)' }}>{value}</div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.65)', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</div>
-              </div>
-            ))}
-          </div>
+          <p className="ak-muted" style={{ margin: '18px 0 0', fontSize: 15, lineHeight: 1.65, maxWidth: 720 }}>
+            {de ? about.de : about.en}
+          </p>
         </div>
-      </section>
 
-      {/* ── Locations list ── */}
-      <main style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px 80px' }}>
-        <p style={{
-          margin: '0 0 36px', fontSize: 15, lineHeight: 1.65,
-          color: 'var(--text-secondary)', maxWidth: 720,
-        }}>{lang === 'de' ? about.de : about.en}</p>
-        <h2 style={{
-          margin: '0 0 28px',
-          fontSize: 'clamp(22px, 3vw, 30px)',
-          fontWeight: 700, letterSpacing: '-0.02em',
-          color: 'var(--text-primary)',
-        }}>
-          {lang === 'de' ? 'Alle Standorte' : 'All locations'}
-          <span style={{
-            marginLeft: 12,
-            fontSize: 15, fontWeight: 600,
-            color: 'var(--text-secondary)',
-            background: 'rgba(75,85,99,0.25)',
-            border: '1px solid var(--border)',
-            padding: '3px 10px', borderRadius: 999,
-          }}>{chain.venueIds.length}</span>
-        </h2>
+        <div className="ak-band ak-pattern" aria-hidden="true" />
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          {venues.map((venue) => (
-            <LocationCard key={venue.id} venue={venue} lang={lang} />
-          ))}
+        <div className="ak-wrap" style={{ paddingTop: 28 }}>
+          <h2 className="ak-section-h">
+            {de ? 'Alle Standorte' : 'All locations'}
+            <span className="ak-district">{venues.length}</span>
+          </h2>
+          <ul className="ak-grid" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+            {venues.map((venue) => (
+              <Branch key={venue.id} venue={venue} lang={lang} now={now} />
+            ))}
+          </ul>
         </div>
       </main>
 

@@ -1,50 +1,25 @@
 'use client';
+import Link from 'next/link';
 import { DETAIL_COPY } from '@/data/detail-copy';
-import { Icon, StatusBadge } from './atoms';
+import { Icon, StatusBadge, District } from './atoms';
 
 export function Menu({ venue, lang }) {
   const c = DETAIL_COPY[lang];
+  const de = lang === 'de';
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
       {venue.menu.map((cat) => (
         <div key={cat.cat_de}>
-          <h3 style={{
-            margin: '0 0 12px',
-            fontSize: 14, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
-            color: 'var(--text-tertiary)',
-          }}>{lang === 'de' ? cat.cat_de : cat.cat_en}</h3>
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <h3 className="ak-subh">{de ? cat.cat_de : cat.cat_en}</h3>
+          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {cat.items.map((it, i) => (
-              <li key={i} style={{
-                display: 'flex', alignItems: 'baseline', gap: 12,
-                padding: '12px 0',
-                borderBottom: i === cat.items.length - 1 ? 'none' : '1px dashed var(--border)',
-              }}>
-                <span style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)' }}>
-                  {lang === 'de' ? it.name_de : it.name_en}
+              <li key={i} className="ak-menu-row">
+                <span style={{ fontSize: 15, fontWeight: 500 }}>
+                  {de ? it.name_de : it.name_en}
+                  {it.tag === 'V' && <span className="ak-veg">{c.veg}</span>}
+                  {it.tag === 'H' && <span className="ak-veg">{c.halalTag}</span>}
                 </span>
-                {it.tag === 'V' && (
-                  <span style={{
-                    fontSize: 10, fontWeight: 700, letterSpacing: '0.06em',
-                    color: '#10B981', border: '1px solid #10B98155',
-                    padding: '1px 6px', borderRadius: 4, textTransform: 'uppercase',
-                  }}>{c.veg}</span>
-                )}
-                {it.tag === 'H' && (
-                  <span style={{
-                    fontSize: 10, fontWeight: 700, letterSpacing: '0.06em',
-                    color: 'var(--accent)', border: '1px solid rgba(163,230,53,0.35)',
-                    padding: '1px 6px', borderRadius: 4, textTransform: 'uppercase',
-                  }}>{c.halalTag}</span>
-                )}
-                <span style={{
-                  flex: 1, height: 1, alignSelf: 'center',
-                  borderTop: '1px dotted var(--border)',
-                  marginInline: 4,
-                }} />
-                <span style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent)', fontVariantNumeric: 'tabular-nums' }}>
-                  € {it.price}
-                </span>
+                {it.price && <span className="ak-price">€ {it.price}</span>}
               </li>
             ))}
           </ul>
@@ -56,106 +31,38 @@ export function Menu({ venue, lang }) {
 
 export function Reviews({ venue, lang }) {
   const c = DETAIL_COPY[lang];
-
-  if (!venue.reviews || venue.reviews === 0) {
-    return (
-      <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: 14 }}>
-        {lang === 'de' ? 'Noch keine Bewertungen.' : 'No reviews yet.'}
-      </p>
-    );
+  if (!venue.reviews) {
+    return <p className="ak-muted" style={{ margin: 0, fontSize: 14 }}>{lang === 'de' ? 'Noch keine Bewertungen.' : 'No reviews yet.'}</p>;
   }
-
   return (
-    <div>
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: 24,
-        padding: 20,
-        background: 'rgba(75,85,99,0.18)',
-        border: '1px solid var(--border)',
-        borderRadius: 'var(--radius-card)',
-        marginBottom: 20,
-      }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
-          <span style={{ fontSize: 48, fontWeight: 700, color: 'var(--accent)', lineHeight: 1, letterSpacing: '-0.02em' }}>
-            {venue.rating.toFixed(1)}
-          </span>
-          <span style={{ display: 'flex', gap: 2, color: 'var(--accent)' }}>
-            {[1,2,3,4,5].map((i) => (
-              <Icon.star key={i} size={12} />
-            ))}
-          </span>
-          <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-            {c.reviewsCount(venue.reviews)}
-          </span>
-        </div>
-      </div>
-
-      <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-        {(venue.reviews_list || []).map((r, i) => (
-          <li key={i} style={{
-            padding: 16,
-            background: 'var(--card)', border: '1px solid var(--border)',
-            borderRadius: 'var(--radius-card)',
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
-              <div style={{
-                width: 36, height: 36, borderRadius: 999,
-                background: `hsl(${i * 80 + 30}, 50%, 35%)`,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontWeight: 700, fontSize: 14, color: '#fff',
-              }}>{r.author[0]}</div>
-              <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 600, fontSize: 14 }}>{r.author}</div>
-                <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-                  {lang === 'de' ? r.date_de : r.date_en}
-                </div>
-              </div>
-              <div style={{ display: 'flex', gap: 1, color: 'var(--accent)' }}>
-                {[1,2,3,4,5].map((s) => (
-                  <Icon.star key={s} size={11} />
-                )).slice(0, r.rating)}
-              </div>
-            </div>
-            <p style={{ margin: 0, fontSize: 14, lineHeight: 1.5, color: 'var(--text-primary)' }}>
-              {lang === 'de' ? r.text_de : r.text_en}
-            </p>
-          </li>
-        ))}
-      </ul>
+    <div className="ak-panel" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+      <span className="ak-display" style={{ fontSize: 56 }}>{venue.rating.toFixed(1)}</span>
+      <span>
+        <span style={{ display: 'flex', gap: 2, color: 'var(--green)' }}>
+          {[1, 2, 3, 4, 5].map((i) => <Icon.star key={i} size={14} />)}
+        </span>
+        <span className="ak-data ak-muted">{c.reviewsCount(venue.reviews)}</span>
+      </span>
     </div>
   );
 }
 
 export function Verification({ venue, lang }) {
   const c = DETAIL_COPY[lang];
+  const de = lang === 'de';
   return (
     <div>
-      <p style={{ margin: '0 0 18px', color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.55 }}>
-        {venue.status === 'verified' ? c.statusBlurbVerified :
-         venue.status === 'self' ? c.statusBlurbSelf :
-         c.statusBlurbUnknown}
+      <p className="ak-muted" style={{ margin: '0 0 16px', fontSize: 14, lineHeight: 1.55 }}>
+        {venue.status === 'verified' ? c.statusBlurbVerified : venue.status === 'self' ? c.statusBlurbSelf : c.statusBlurbUnknown}
       </p>
-      <ol style={{ listStyle: 'none', margin: 0, padding: 0, position: 'relative' }}>
-        <span style={{
-          position: 'absolute', left: 7, top: 8, bottom: 8, width: 2,
-          background: 'var(--border)',
-        }} />
+      <ol style={{ listStyle: 'none', margin: 0, padding: 0, borderLeft: '4px solid var(--green)' }}>
         {(venue.verification_log || []).map((e, i) => (
-          <li key={i} style={{ position: 'relative', paddingLeft: 28, paddingBottom: 16 }}>
-            <span style={{
-              position: 'absolute', left: 0, top: 4,
-              width: 16, height: 16, borderRadius: 999,
-              background: i === 0 ? 'var(--status-green)' : 'var(--card)',
-              border: `2px solid ${i === 0 ? 'var(--status-green)' : 'var(--border-strong)'}`,
-              boxShadow: i === 0 ? '0 0 0 4px rgba(16,185,129,0.18)' : 'none',
-            }} />
-            <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--text-primary)' }}>
-              {lang === 'de' ? e.event_de : e.event_en}
-            </div>
-            <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginTop: 2 }}>
-              {new Date(e.date).toLocaleDateString(lang === 'de' ? 'de-AT' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
+          <li key={i} style={{ padding: '2px 0 14px 14px' }}>
+            <div style={{ fontSize: 14, fontWeight: 700 }}>{de ? e.event_de : e.event_en}</div>
+            <div className="ak-data ak-muted" style={{ marginTop: 3 }}>
+              {new Date(e.date).toLocaleDateString(de ? 'de-AT' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
               {' · '}
-              {lang === 'de' ? e.actor_de : e.actor_en}
+              {de ? e.actor_de : e.actor_en}
             </div>
           </li>
         ))}
@@ -166,107 +73,48 @@ export function Verification({ venue, lang }) {
 
 export function SimilarList({ venue, lang }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 12 }}>
+    <ul className="ak-list">
       {(venue.similar || []).map((s) => (
-        <a key={s.id} href={`/r/${s.id}`} style={{
-          textDecoration: 'none',
-          background: 'var(--card)', border: '1px solid var(--border)',
-          borderRadius: 'var(--radius-card)',
-          overflow: 'hidden',
-          transition: 'border-color 150ms, transform 150ms',
-        }}>
-          <div style={{
-            height: 100,
-            background: `radial-gradient(circle at 30% 50%, hsla(${s.hue},60%,45%,0.5), hsla(${s.hue+20},50%,20%,0.9))`,
-            position: 'relative',
-          }}>
-            <div style={{ position: 'absolute', top: 8, left: 8 }}>
-              <StatusBadge status={s.status} lang={lang} compact />
-            </div>
-          </div>
-          <div style={{ padding: 12 }}>
-            <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)' }}>{s.name}</div>
-            <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginTop: 3, display: 'flex', alignItems: 'center', gap: 6 }}>
-              <span>{lang === 'de' ? 'Bezirk' : 'District'} {s.district}</span>
-              <span style={{ marginLeft: 'auto', color: 'var(--text-tertiary)', fontSize: 11 }}>
-                {s.distance_km} km
-              </span>
-            </div>
-          </div>
-        </a>
+        <li key={s.id}>
+          <Link href={`/r/${s.id}`} className="ak-list-row" style={{ gridTemplateColumns: 'auto minmax(0, 1fr) auto' }}>
+            <District district={s.district} city="" />
+            <span>
+              <span className="ak-list-title">{s.name}</span>
+              <span style={{ display: 'block', marginTop: 5 }}><StatusBadge status={s.status} lang={lang} compact /></span>
+            </span>
+            <span className="ak-data ak-muted">{s.distance_km} km</span>
+          </Link>
+        </li>
       ))}
+    </ul>
+  );
+}
+
+/** Not a real map: the district as a big sign on the pattern band. */
+export function MiniMap({ venue }) {
+  return (
+    <div className="ak-pattern--green" style={{ height: 120, display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'var(--line) solid var(--ink)' }}>
+      <span className="ak-district" style={{ minWidth: 64, height: 56, fontSize: venue.district > 0 ? 40 : 18, padding: '0 12px' }}>
+        {venue.district > 0 ? venue.district : venue.districtName}
+      </span>
     </div>
   );
 }
 
-export function MiniMap({ venue }) {
-  return (
-    <div style={{
-      position: 'relative',
-      aspectRatio: '4 / 3',
-      borderRadius: 'var(--radius-card)',
-      overflow: 'hidden',
-      border: '1px solid var(--border)',
-      background: 'var(--card)',
-    }}>
-      <div aria-hidden style={{
-        position: 'absolute', inset: 0,
-        backgroundImage:
-          'linear-gradient(rgba(107,114,128,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(107,114,128,0.1) 1px, transparent 1px)',
-        backgroundSize: '24px 24px',
-      }} />
-      <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-        <path d="M0,55 C 25,50 50,60 75,55 S 100,50 100,55 L100,68 C 75,68 50,72 25,68 S 0,68 0,68 Z"
-          fill="rgba(59,130,246,0.18)" stroke="rgba(59,130,246,0.35)" strokeWidth="0.2" />
-        <path d="M30,30 L70,32 L72,75 L28,73 Z" fill="rgba(75,85,99,0.4)" stroke="var(--border-strong)" strokeWidth="0.3" />
-        <text x="50" y="55" fontSize="3" textAnchor="middle" fill="var(--text-tertiary)" fontWeight="600">{venue.districtName?.toUpperCase() || ''}</text>
-      </svg>
-      <div style={{
-        position: 'absolute', left: '50%', top: '60%',
-        transform: 'translate(-50%, -100%)',
-        filter: 'drop-shadow(0 4px 8px rgba(16,185,129,0.4))',
-      }}>
-        <svg viewBox="0 0 24 30" width="40" height="50">
-          <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 18 12 18s12-9 12-18C24 5.4 18.6 0 12 0z"
-            fill="#10B981" stroke="#1F2937" strokeWidth="1.5" />
-          <circle cx="12" cy="12" r="4" fill="#1F2937" />
-        </svg>
-      </div>
-    </div>
-  );
-}
+const AMENITY_ICON = {
+  parking: 'P', wheelchair: '♿', prayer: '✦', delivery: '→', outdoor: '☀', wifi: '◎',
+};
 
 export function Amenities({ venue, lang }) {
   const c = DETAIL_COPY[lang];
   const items = Object.entries(venue.amenities || {}).filter(([, v]) => v);
-  const icons = {
-    parking: 'P', wheelchair: '♿', prayer: '🕌', delivery: '🛵', outdoor: '☀', wifi: '◎',
-  };
+  if (!items.length) return null;
   return (
-    <ul style={{
-      listStyle: 'none', margin: 0, padding: 0,
-      display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8,
-    }}>
+    <ul className="ak-chips" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
       {items.map(([k]) => (
-        <li key={k} style={{
-          display: 'flex', alignItems: 'center', gap: 10,
-          padding: '10px 12px',
-          background: k === 'prayer' ? 'rgba(163,230,53,0.08)' : 'rgba(75,85,99,0.18)',
-          border: `1px solid ${k === 'prayer' ? 'rgba(163,230,53,0.35)' : 'var(--border)'}`,
-          borderRadius: 8,
-        }}>
-          <span style={{
-            width: 28, height: 28, borderRadius: 8,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            background: k === 'prayer' ? 'var(--accent)' : 'var(--background)',
-            color: k === 'prayer' ? 'var(--text-on-accent)' : 'var(--text-primary)',
-            fontWeight: 700, fontSize: 13,
-          }}>{icons[k]}</span>
-          <span style={{
-            fontSize: 13, fontWeight: k === 'prayer' ? 700 : 500,
-            color: k === 'prayer' ? 'var(--accent)' : 'var(--text-primary)',
-          }}>{c.amenityLabels[k]}</span>
+        <li key={k} className={`ak-chip${k === 'prayer' ? ' is-on' : ''}`} style={{ cursor: 'default' }}>
+          <span aria-hidden="true" style={{ fontFamily: 'var(--font-data)' }}>{AMENITY_ICON[k]}</span>
+          {c.amenityLabels[k]}
         </li>
       ))}
     </ul>

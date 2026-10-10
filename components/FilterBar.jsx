@@ -24,156 +24,68 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
     setFilters({ ...filters, categories: next });
   };
 
-  return (
-    <div style={{
-      position: 'sticky', top: 61, zIndex: 15,
-      background: 'rgba(31,41,55,0.85)',
-      backdropFilter: 'blur(10px)',
-      WebkitBackdropFilter: 'blur(10px)',
-      borderBottom: '1px solid var(--border)',
-    }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '14px 24px' }}>
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: 12,
-        flexWrap: 'wrap',
-      }}>
-        <button
-          onClick={() => setFilters({ ...filters, verifiedOnly: !filters.verifiedOnly })}
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: 10,
-            padding: '8px 14px 8px 10px',
-            background: filters.verifiedOnly ? 'var(--status-green-bg)' : 'var(--card)',
-            border: `1px solid ${filters.verifiedOnly ? 'var(--status-green)' : 'var(--border)'}`,
-            borderRadius: 999,
-            color: filters.verifiedOnly ? 'var(--status-green)' : 'var(--text-secondary)',
-            fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
-            cursor: 'pointer',
-            transition: 'all var(--dur-fast) var(--ease-out)',
-          }}
-        >
-          <span style={{
-            width: 28, height: 16, borderRadius: 999,
-            background: filters.verifiedOnly ? 'var(--status-green)' : 'var(--border-strong)',
-            position: 'relative',
-            transition: 'background var(--dur-fast) var(--ease-out)',
-          }}>
-            <span style={{
-              position: 'absolute', top: 2, left: filters.verifiedOnly ? 14 : 2,
-              width: 12, height: 12, borderRadius: 999, background: '#fff',
-              transition: 'left var(--dur-fast) var(--ease-out)',
-            }} />
-          </span>
-          {c.verifiedOnly}
-        </button>
+  const pickDistrict = (d) => { setFilters({ ...filters, district: d }); setDistrictOpen(false); };
 
-        <div ref={dropRef} style={{ position: 'relative' }}>
+  return (
+    <div className="ak-filterbar">
+      <div className="ak-filterbar-inner">
+        <div className="ak-filterbar-top">
           <button
-            onClick={(e) => { e.stopPropagation(); setDistrictOpen((v) => !v); }}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              padding: '8px 12px',
-              background: filters.district ? 'var(--primary)' : 'var(--card)',
-              border: `1px solid ${filters.district ? 'var(--primary)' : 'var(--border)'}`,
-              borderRadius: 999,
-              color: filters.district ? 'var(--accent)' : 'var(--text-primary)',
-              fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
-              cursor: 'pointer',
-              transition: 'all var(--dur-fast) var(--ease-out)',
-            }}
+            type="button"
+            className={`ak-chip ak-toggle${filters.verifiedOnly ? ' is-on' : ''}`}
+            aria-pressed={filters.verifiedOnly}
+            onClick={() => setFilters({ ...filters, verifiedOnly: !filters.verifiedOnly })}
           >
-            <Icon.pin size={14} />
-            {filters.district
-              ? `${1000 + filters.district * 10} · ${c.district}`
-              : c.allDistricts}
-            <Icon.chevron size={12} />
+            <span className="ak-toggle-box" aria-hidden="true">
+              {filters.verifiedOnly && (
+                <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6.2 4.8 9 10 3" stroke="#fff" strokeWidth="2" fill="none" /></svg>
+              )}
+            </span>
+            {c.verifiedOnly}
           </button>
-          {districtOpen && (
-            <div style={{
-              position: 'absolute', top: 'calc(100% + 6px)', left: 0,
-              background: 'var(--card)', border: '1px solid var(--border)',
-              borderRadius: 12, padding: 8,
-              boxShadow: 'var(--shadow-elev)',
-              width: 260, maxHeight: 320, overflowY: 'auto',
-              zIndex: 30,
-            }}>
-              <button onClick={() => { setFilters({ ...filters, district: null }); setDistrictOpen(false); }}
-                style={dropItemStyle(!filters.district)}>
-                {c.allDistricts}
-              </button>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+
+          <div ref={dropRef} style={{ position: 'relative' }}>
+            <button
+              type="button"
+              className={`ak-chip${filters.district ? ' is-on' : ''}`}
+              aria-expanded={districtOpen}
+              onClick={(e) => { e.stopPropagation(); setDistrictOpen((v) => !v); }}
+            >
+              <Icon.pin size={14} />
+              {filters.district ? `${1000 + filters.district * 10} · ${c.district}` : c.allDistricts}
+              <Icon.chevron size={12} />
+            </button>
+            {districtOpen && (
+              <div className="ak-dropdown" role="listbox">
+                <button type="button" className={!filters.district ? 'is-on' : ''} onClick={() => pickDistrict(null)}>
+                  {c.allDistricts}
+                </button>
                 {districts.map((d) => (
-                  <button key={d} onClick={() => { setFilters({ ...filters, district: d }); setDistrictOpen(false); }}
-                    style={dropItemStyle(filters.district === d)}>
-                    <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginRight: 6 }}>
-                      {1000 + d * 10}
-                    </span>
-                    {d}
+                  <button key={d} type="button" className={filters.district === d ? 'is-on' : ''} onClick={() => pickDistrict(d)}>
+                    <span className="ak-district" style={{ minWidth: 26, height: 22, fontSize: 13 }}>{d}</span>
+                    {1000 + d * 10}
                   </button>
                 ))}
               </div>
-            </div>
-          )}
+            )}
+          </div>
+
+          <span className="ak-data ak-filterbar-count">
+            <b style={{ color: 'var(--green-ink)' }}>{resultCount}</b> {c.resultsCount(resultCount).replace(/^\d+\s*/, '')}
+          </span>
         </div>
 
-        <div className="ak-filterbar-cats-desktop" style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+        <div className="ak-chips ak-chips--scroll ak-filterbar-cats">
           {categories.map((cat) => {
             const on = filters.categories.includes(cat);
             return (
-              <button key={cat} onClick={() => toggleCat(cat)} style={{
-                padding: '7px 14px',
-                background: on ? 'var(--accent)' : 'transparent',
-                border: `1px solid ${on ? 'var(--accent)' : 'var(--border)'}`,
-                borderRadius: 999,
-                color: on ? 'var(--text-on-accent)' : 'var(--text-secondary)',
-                fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
-                cursor: 'pointer',
-                transition: 'all var(--dur-fast) var(--ease-out)',
-              }}>{cat}</button>
+              <button key={cat} type="button" className={`ak-chip${on ? ' is-on' : ''}`} aria-pressed={on} onClick={() => toggleCat(cat)}>
+                {cat}
+              </button>
             );
           })}
         </div>
-
-        <div style={{ flex: 1 }} className="ak-filterbar-spacer" />
-
-        <div style={{
-          color: 'var(--text-secondary)', fontSize: 13, fontWeight: 500,
-          whiteSpace: 'nowrap',
-        }}>
-          <b style={{ color: 'var(--accent)', fontWeight: 700 }}>{resultCount}</b>{' '}
-          {c.resultsCount(resultCount).replace(/^\d+\s*/, '')}
-        </div>
-      </div>
-
-      <div className="ak-filterbar-cats-mobile">
-        {categories.map((cat) => {
-          const on = filters.categories.includes(cat);
-          return (
-            <button key={cat} onClick={() => toggleCat(cat)} style={{
-              padding: '7px 14px',
-              background: on ? 'var(--accent)' : 'transparent',
-              border: `1px solid ${on ? 'var(--accent)' : 'var(--border)'}`,
-              borderRadius: 999,
-              color: on ? 'var(--text-on-accent)' : 'var(--text-secondary)',
-              fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
-              cursor: 'pointer', flexShrink: 0,
-              transition: 'all var(--dur-fast) var(--ease-out)',
-            }}>{cat}</button>
-          );
-        })}
-      </div>
       </div>
     </div>
   );
 }
-
-const dropItemStyle = (on) => ({
-  width: '100%',
-  textAlign: 'left',
-  padding: '8px 12px',
-  background: on ? 'var(--primary)' : 'transparent',
-  border: 'none',
-  color: on ? 'var(--accent)' : 'var(--text-primary)',
-  borderRadius: 8,
-  fontFamily: 'inherit', fontSize: 13, fontWeight: 500,
-  cursor: 'pointer',
-});

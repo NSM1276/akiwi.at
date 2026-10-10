@@ -1,21 +1,15 @@
 'use client';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Crumbs } from '@/components/atoms';
 import { useLang } from '@/components/LangProvider';
 import { IMPRESSUM as I } from '@/data/legal-copy';
 
 function Section({ title, children }) {
   return (
-    <section style={{ marginTop: 28 }}>
-      <h2 style={{
-        margin: '0 0 8px', fontSize: 13, fontWeight: 700,
-        letterSpacing: '0.06em', textTransform: 'uppercase',
-        color: 'var(--text-tertiary)',
-      }}>{title}</h2>
-      <div style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--text-primary)' }}>
-        {children}
-      </div>
+    <section style={{ padding: '16px 0', borderTop: '1px solid var(--rule-soft)' }}>
+      <h2 className="ak-subh">{title}</h2>
+      <div style={{ fontSize: 15, lineHeight: 1.6 }}>{children}</div>
     </section>
   );
 }
@@ -24,22 +18,16 @@ export default function ImpressumContent() {
   const [lang, setLang] = useLang();
   const de = lang === 'de';
   const telHref = `tel:${I.phone.replace(/\s+/g, '')}`;
+  const link = { color: 'var(--green-ink)', fontWeight: 600 };
 
   return (
     <>
       <Header lang={lang} setLang={setLang} />
 
-      <main style={{ maxWidth: 680, margin: '0 auto', padding: '32px 24px 64px' }}>
-        <nav aria-label="Breadcrumb" style={{ fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 20 }}>
-          <Link href="/" style={{ color: 'var(--text-tertiary)', textDecoration: 'none' }}>Home</Link>
-          {' › '}
-          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Impressum</span>
-        </nav>
-
-        <h1 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 38px)', fontWeight: 700, letterSpacing: '-0.02em' }}>
-          Impressum
-        </h1>
-        <p style={{ margin: '10px 0 0', color: 'var(--text-secondary)', fontSize: 15 }}>
+      <main className="ak-wrap ak-main" style={{ maxWidth: 720 }}>
+        <Crumbs trail={[{ href: '/', label: 'Home' }]} current="Impressum" />
+        <h1 className="ak-h1">Impressum</h1>
+        <p className="ak-lead" style={{ margin: '10px 0 20px' }}>
           {de ? 'Angaben gemäß § 5 ECG' : 'Legal disclosure under Austrian law (§ 5 ECG)'}
         </p>
 
@@ -50,14 +38,8 @@ export default function ImpressumContent() {
         </Section>
 
         <Section title={de ? 'Kontakt' : 'Contact'}>
-          <p style={{ margin: 0 }}>
-            {de ? 'E-Mail: ' : 'Email: '}
-            <a href={`mailto:${I.email}`} style={{ color: 'var(--accent)' }}>{I.email}</a>
-          </p>
-          <p style={{ margin: 0 }}>
-            {de ? 'Tel: ' : 'Phone: '}
-            <a href={telHref} style={{ color: 'var(--accent)' }}>{I.phone}</a>
-          </p>
+          <p style={{ margin: 0 }}>{de ? 'E-Mail: ' : 'Email: '}<a href={`mailto:${I.email}`} style={link}>{I.email}</a></p>
+          <p style={{ margin: 0 }}>{de ? 'Tel: ' : 'Phone: '}<a href={telHref} style={link}>{I.phone}</a></p>
         </Section>
 
         <Section title={de ? 'Unternehmensgegenstand' : 'Business purpose'}>
@@ -65,7 +47,7 @@ export default function ImpressumContent() {
         </Section>
 
         <Section title={de ? 'UID-Nummer' : 'VAT ID'}>
-          <p style={{ margin: 0 }}>{I.uid}</p>
+          <p className="ak-data" style={{ margin: 0, fontSize: 14 }}>{I.uid}</p>
         </Section>
 
         <Section title={de ? 'Aufsichtsbehörde' : 'Supervisory authority'}>

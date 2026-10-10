@@ -1,6 +1,6 @@
 'use client';
-// BrowseLinks — the homepage entry points into the city, district and
-// category pages. Without these links those pages would be orphans.
+// BrowseLinks — the homepage entry points into the city, district, category
+// and dish pages. Without these links those pages would be orphans.
 
 import Link from 'next/link';
 import { useLang } from '@/components/LangProvider';
@@ -10,46 +10,31 @@ export default function BrowseLinks({ cities, districts, categories, dishes = []
   const de = lang === 'de';
 
   const groups = [
-    { key: 'cities', title: de ? 'Nach Stadt' : 'By city', items: cities.map((c) => ({ ...c, label: c.name })) },
-    { key: 'districts', title: de ? 'Nach Wiener Bezirk' : 'By Vienna district', items: districts },
-    { key: 'categories', title: de ? 'Nach Kategorie' : 'By category', items: categories.map((c) => ({ ...c, label: c.name })) },
-    { key: 'dishes', title: de ? 'Nach Gericht' : 'By dish', items: dishes.map((d) => ({ ...d, label: d.name })) },
+    { key: 'districts', title: de ? 'Wien nach Bezirk' : 'Vienna by district', items: districts.map((d) => ({ href: d.href, label: d.name, count: d.count, badge: d.district })) },
+    { key: 'dishes', title: de ? 'Nach Gericht' : 'By dish', items: dishes.map((d) => ({ href: d.href, label: d.name, count: d.count })) },
+    { key: 'categories', title: de ? 'Nach Kategorie' : 'By category', items: categories.map((c) => ({ href: c.href, label: c.name, count: c.count })) },
+    { key: 'cities', title: de ? 'Nach Stadt' : 'By city', items: cities.map((c) => ({ href: c.href, label: c.name, count: c.count })) },
   ].filter((g) => g.items.length > 0);
 
   return (
-    <section style={{ maxWidth: 1280, margin: '0 auto', padding: '56px 24px 0' }}>
-      <h2 className="ak-h2" style={{ margin: 0, fontSize: 'clamp(24px, 3vw, 34px)' }}>
-        {de ? 'Stöbern' : 'Browse'}
-      </h2>
-      <p style={{ margin: '8px 0 24px', color: 'var(--text-secondary)', fontSize: 15 }}>
+    <section className="ak-wrap" style={{ paddingTop: 48 }}>
+      <h2 className="ak-h2">{de ? 'Stöbern' : 'Browse'}</h2>
+      <p className="ak-lead" style={{ margin: '8px 0 24px' }}>
         {de
-          ? 'Alle Lokale nach Ort, Kategorie und Gericht — jede Seite listet die Adressen.'
-          : 'Every venue by place, category and dish — each page lists the addresses.'}
+          ? 'Alle Lokale nach Bezirk, Gericht, Kategorie und Stadt — jede Seite listet die Adressen.'
+          : 'Every venue by district, dish, category and city — each page lists the addresses.'}
       </p>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: 28,
-      }}>
+      <div style={{ display: 'grid', gap: 28 }}>
         {groups.map((g) => (
           <div key={g.key}>
-            <h3 style={{
-              margin: '0 0 12px', fontSize: 12, fontWeight: 700,
-              letterSpacing: '0.08em', textTransform: 'uppercase',
-              color: 'var(--text-tertiary)',
-            }}>{g.title}</h3>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+            <h3 className="ak-subh">{g.title}</h3>
+            <div className="ak-chips">
               {g.items.map((item) => (
-                <Link key={item.href} href={item.href} style={{
-                  display: 'inline-flex', alignItems: 'center',
-                  padding: '6px 12px', borderRadius: 999,
-                  background: 'var(--card)', border: '1px solid var(--border)',
-                  color: 'var(--text-secondary)',
-                  fontSize: 13, fontWeight: 600, textDecoration: 'none',
-                }}>
+                <Link key={item.href} href={item.href} className="ak-chip">
+                  {item.badge && <span className="ak-district" style={{ minWidth: 24, height: 20, fontSize: 13, margin: '-2px 0 -2px -4px' }}>{item.badge}</span>}
                   {item.label}
-                  <span style={{ color: 'var(--text-tertiary)', marginLeft: 6 }}>{item.count}</span>
+                  <span className="ak-count">{item.count}</span>
                 </Link>
               ))}
             </div>

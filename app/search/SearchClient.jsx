@@ -133,7 +133,7 @@ function SearchPage({ restaurants, facets }) {
   ));
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--background)', color: 'var(--text-primary)' }}>
+    <div style={{ minHeight: '100vh' }}>
       <Header lang={lang} setLang={setLang} />
       <Suspense fallback={null}><QuerySync setQuery={setQuery} /></Suspense>
 
@@ -148,38 +148,19 @@ function SearchPage({ restaurants, facets }) {
       {/* Mobile filter toggle */}
       <div className="search-mobile-toggle">
         <button
+          type="button"
           onClick={() => setMobileFiltersOpen((v) => !v)}
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            padding: '10px 18px',
-            background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 999,
-            color: 'var(--text-primary)',
-            fontFamily: 'inherit', fontSize: 13, fontWeight: 600, cursor: 'pointer',
-          }}
+          className={`ak-btn ak-btn--block${mobileFiltersOpen ? ' ak-btn--ink' : ''}`}
           aria-expanded={mobileFiltersOpen}
         >
           <Sliders />
           {mobileFiltersOpen ? c.hideFilters : c.showFilters}
-          {activeCount > 0 && (
-            <span style={{
-              background: 'var(--accent)', color: 'var(--text-on-accent)',
-              borderRadius: 999, fontSize: 10, fontWeight: 700,
-              padding: '2px 6px',
-            }}>{activeCount}</span>
-          )}
+          {activeCount > 0 && <span className="ak-district ak-district--green" style={{ height: 20, minWidth: 22, fontSize: 13 }}>{activeCount}</span>}
         </button>
       </div>
 
       {/* Main layout */}
-      <div
-        className="search-layout"
-        style={{
-          maxWidth: 1280, margin: '0 auto', padding: '0 24px 48px',
-          display: 'grid',
-          gridTemplateColumns: view === 'map' ? '1fr' : '260px 1fr',
-          gap: 28,
-        }}
-      >
+      <div className={`ak-wrap search-layout${view === 'map' ? ' is-map' : ''}`} style={{ paddingBottom: 48 }}>
         {view !== 'map' && (
           <div className={`search-sidebar${mobileFiltersOpen ? ' open' : ''}`}>
             <SearchFilters
@@ -209,7 +190,7 @@ function SearchPage({ restaurants, facets }) {
           <ActiveFilterChips lang={lang} filters={filters} setFilters={setFilters} />
 
           {view === 'split' ? (
-            <div className="search-split" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+            <div className="search-split" style={{ display: 'grid', gap: 20 }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {filtered.length === 0
                   ? <EmptyState lang={lang} onReset={() => setFilters({})} />

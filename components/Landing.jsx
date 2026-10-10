@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLang } from '@/components/LangProvider';
-import { StatusBadge, Icon } from '@/components/atoms';
+import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
 import { formatEuro, parsePrice } from '@/data/dishes';
 
 const AUSTRIA = { de: 'Österreich', en: 'Austria' };
@@ -58,6 +58,12 @@ function heading(kind, name, lang, place) {
   return de ? `Halal ${name} in ${place.de}` : `Halal ${name} in ${place.en}`;
 }
 
+const STATUS_TEXT = {
+  verified: { de: 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.', en: "Halal status confirmed by the venue's owner or website." },
+  self: { de: 'Vom Inhaber selbst angegeben. Noch keine Vor-Ort-Prüfung durch Akiwi.', en: 'Declared by the owner. No on-site check by Akiwi yet.' },
+  unknown: { de: 'Status unklar — bitte prüfe direkt im Lokal.', en: 'Status unclear — please check directly at the venue.' },
+};
+
 export default function Landing({
   kind, name, venues, stats, related, relatedKind,
   cities = [], districtCount = 0, breadcrumb, searchHref,
@@ -76,122 +82,69 @@ export default function Landing({
     <>
       <Header lang={lang} setLang={setLang} />
 
-      <main style={{ maxWidth: 1000, margin: '0 auto', padding: '24px 24px 64px' }}>
-        <nav aria-label="Breadcrumb" style={{
-          fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 16,
-          display: 'flex', flexWrap: 'wrap', gap: 6,
-        }}>
-          {breadcrumb.map((b, i) => (
-            <span key={b.href} style={{ display: 'inline-flex', gap: 6 }}>
-              {i > 0 && <span aria-hidden>›</span>}
-              <Link href={b.href} style={{ color: 'var(--text-tertiary)', textDecoration: 'none' }}>{b.label}</Link>
-            </span>
-          ))}
-          <span style={{ display: 'inline-flex', gap: 6 }}>
-            <span aria-hidden>›</span>
-            <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{name}</span>
-          </span>
-        </nav>
+      <main className="ak-wrap ak-main">
+        <Crumbs trail={breadcrumb} current={name} />
 
-        <h1 style={{
-          margin: 0, fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700,
-          letterSpacing: '-0.025em', lineHeight: 1.08,
-        }}>{heading(kind, name, lang, place)}</h1>
-
-        <p style={{
-          margin: '14px 0 0', fontSize: 16, lineHeight: 1.6,
-          color: 'var(--text-secondary)', maxWidth: 680,
-        }}>{intro(kind, name, stats, districtCount, cities.length, lang, place, prices)}</p>
+        <h1 className="ak-h1">{heading(kind, name, lang, place)}</h1>
+        <p className="ak-lead" style={{ marginTop: 12 }}>
+          {intro(kind, name, stats, districtCount, cities.length, lang, place, prices)}
+        </p>
 
         {stats.topCategories.length > 1 && (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 16 }}>
+          <div className="ak-chips ak-chips--scroll" style={{ marginTop: 16 }}>
             {stats.topCategories.map((c) => (
-              <Link key={c.name} href={c.href} style={chipStyle}>
-                {c.name} <span style={{ color: 'var(--text-tertiary)', marginLeft: 4 }}>{c.count}</span>
+              <Link key={c.name} href={c.href} className="ak-chip">
+                {c.name} <span className="ak-count">{c.count}</span>
               </Link>
             ))}
           </div>
         )}
 
         {cities.length > 1 && (
-          <section style={{ marginTop: 28 }}>
-            <h2 style={sectionH}>{de ? 'Nach Stadt' : 'By city'}</h2>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <div style={{ marginTop: 20 }}>
+            <h2 className="ak-subh">{de ? 'Nach Stadt' : 'By city'}</h2>
+            <div className="ak-chips">
               {cities.map((c) => (
-                <Link key={c.href} href={c.href} style={chipStyle}>
-                  {c.label} <span style={{ color: 'var(--text-tertiary)', marginLeft: 4 }}>{c.count}</span>
+                <Link key={c.href} href={c.href} className="ak-chip">
+                  {c.label} <span className="ak-count">{c.count}</span>
                 </Link>
               ))}
             </div>
-          </section>
+          </div>
         )}
 
-        <section style={{ marginTop: 36 }}>
-          <h2 style={sectionH}>
+        <section style={{ marginTop: 32 }}>
+          <h2 className="ak-section-h">
             {de ? 'Alle Lokale' : 'All venues'}
-            <span style={countPill}>{venues.length}</span>
+            <span className="ak-district">{venues.length}</span>
           </h2>
 
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <ul className="ak-list">
             {venues.map((v) => (
               <li key={v.id}>
-                <Link href={`/r/${v.id}`} style={{
-                  display: 'flex', gap: 14, alignItems: 'flex-start',
-                  padding: 14,
-                  background: 'var(--card)', border: '1px solid var(--border)',
-                  borderRadius: 'var(--radius-card)',
-                  textDecoration: 'none', color: 'inherit',
-                }}>
-                  <span aria-hidden style={{
-                    width: 44, height: 44, flexShrink: 0, borderRadius: 10,
-                    background: `hsl(${v.hue}, 45%, 28%)`,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontWeight: 700, fontSize: 18, color: 'rgba(255,255,255,0.9)',
-                  }}>{v.name.charAt(0)}</span>
-
-                  <span style={{ flex: 1, minWidth: 0 }}>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+                <Link href={`/r/${v.id}`} className="ak-list-row">
+                  <District district={v.district} city={v.city} green={v.status === 'verified'} />
+                  <span style={{ minWidth: 0 }}>
+                    <span className="ak-list-title">{v.name}</span>
+                    <span style={{ display: 'block', marginTop: 6 }}>
                       <StatusBadge status={v.status} lang={lang} compact />
-                      <span style={{ fontSize: 16, fontWeight: 700 }}>{v.name}</span>
                     </span>
-                    <span style={{
-                      display: 'flex', alignItems: 'center', gap: 6,
-                      fontSize: 13, color: 'var(--text-secondary)',
-                    }}>
-                      <Icon.pin size={11} />
+                    <span className="ak-card-meta" style={{ display: 'block', marginTop: 6 }}>
                       {v.address}
-                    </span>
-                    <span style={{
-                      display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap',
-                      fontSize: 12, color: 'var(--text-tertiary)', marginTop: 4,
-                    }}>
-                      <span>{v.categories.join(', ')}</span>
-                      <span aria-hidden>·</span>
-                      <span>{v.price}</span>
-                      {v.chain && (
-                        <>
-                          <span aria-hidden>·</span>
-                          <span style={{ color: 'var(--accent)' }}>{v.chain.name}</span>
-                        </>
-                      )}
+                      <br />
+                      {v.categories.join(' · ')} · {v.price}
+                      {v.chain && <> · <span style={{ color: 'var(--green-ink)', fontWeight: 600 }}>{v.chain.name}</span></>}
                     </span>
                     {v.items && (
-                      <span style={{ display: 'flex', flexDirection: 'column', gap: 2, marginTop: 8 }}>
+                      <span style={{ display: 'block', marginTop: 8, borderTop: '1px dashed var(--rule-soft)' }}>
                         {v.items.map((it) => (
-                          <span key={it.name_de} style={{
-                            display: 'flex', gap: 10, justifyContent: 'space-between',
-                            fontSize: 13, color: 'var(--text-secondary)',
-                          }}>
+                          <span key={it.name_de} className="ak-menu-row" style={{ fontSize: 13 }}>
                             <span>{de ? it.name_de : it.name_en}</span>
-                            {parsePrice(it.price) != null && (
-                              <span style={{ color: 'var(--accent)', fontWeight: 700, whiteSpace: 'nowrap' }}>
-                                {formatEuro(parsePrice(it.price))}
-                              </span>
-                            )}
+                            {parsePrice(it.price) != null && <span className="ak-price" style={{ fontSize: 13 }}>{formatEuro(parsePrice(it.price))}</span>}
                           </span>
                         ))}
                         {v.itemCount > v.items.length && (
-                          <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>
+                          <span className="ak-data ak-muted" style={{ display: 'block', paddingTop: 6 }}>
                             {de ? `+ ${v.itemCount - v.items.length} weitere auf der Speisekarte` : `+ ${v.itemCount - v.items.length} more on the menu`}
                           </span>
                         )}
@@ -205,55 +158,33 @@ export default function Landing({
         </section>
 
         {related.length > 0 && (
-          <section style={{ marginTop: 40 }}>
-            <h2 style={sectionH}>{relatedTitle}</h2>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <section style={{ marginTop: 36 }}>
+            <h2 className="ak-section-h">{relatedTitle}</h2>
+            <div className="ak-chips">
               {related.map((r) => (
-                <Link key={r.href} href={r.href} style={chipStyle}>
-                  {r.label} <span style={{ color: 'var(--text-tertiary)', marginLeft: 4 }}>{r.count}</span>
+                <Link key={r.href} href={r.href} className="ak-chip">
+                  {r.label} <span className="ak-count">{r.count}</span>
                 </Link>
               ))}
             </div>
           </section>
         )}
 
-        <section style={{
-          marginTop: 40, padding: 20,
-          background: 'var(--card)', border: '1px solid var(--border)',
-          borderRadius: 'var(--radius-card)',
-        }}>
-          <h2 style={{ ...sectionH, marginTop: 0 }}>{de ? 'Was der Halal-Status bedeutet' : 'What the halal status means'}</h2>
-          <dl style={{ margin: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {[
-              ['verified', de
-                ? 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.'
-                : "Halal status confirmed by the venue's owner or website."],
-              ['self', de
-                ? 'Vom Inhaber selbst angegeben. Noch keine Vor-Ort-Prüfung durch Akiwi.'
-                : 'Declared by the owner. No on-site check by Akiwi yet.'],
-              ['unknown', de
-                ? 'Status unklar — bitte prüfe direkt im Lokal.'
-                : 'Status unclear — please check directly at the venue.'],
-            ].map(([status, text]) => (
-              <div key={status} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                <dt style={{ flexShrink: 0 }}><StatusBadge status={status} lang={lang} compact /></dt>
-                <dd style={{ margin: 0, fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5, flex: 1, minWidth: 220 }}>
-                  {text}
-                </dd>
+        <section className="ak-panel" style={{ marginTop: 36 }}>
+          <h2 className="ak-subh">{de ? 'Was der Halal-Status bedeutet' : 'What the halal status means'}</h2>
+          <dl style={{ margin: 0, display: 'grid', gap: 12 }}>
+            {['verified', 'self', 'unknown'].map((s) => (
+              <div key={s}>
+                <dt><StatusBadge status={s} lang={lang} compact /></dt>
+                <dd className="ak-muted" style={{ margin: '4px 0 0', fontSize: 13, lineHeight: 1.5 }}>{STATUS_TEXT[s][lang]}</dd>
               </div>
             ))}
           </dl>
         </section>
 
-        <p style={{ marginTop: 28 }}>
-          <Link href={searchHref} style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            padding: '10px 18px', borderRadius: 999,
-            background: 'var(--accent)', color: 'var(--text-on-accent)',
-            fontWeight: 700, fontSize: 14, textDecoration: 'none',
-          }}>
-            <Icon.search size={14} />
-            {de ? 'Im Katalog filtern' : 'Filter in the catalogue'}
+        <p style={{ marginTop: 24 }}>
+          <Link href={searchHref} className="ak-btn ak-btn--ink">
+            <Icon.search size={14} /> {de ? 'Im Katalog filtern' : 'Filter in the catalogue'}
           </Link>
         </p>
       </main>
@@ -262,22 +193,3 @@ export default function Landing({
     </>
   );
 }
-
-const sectionH = {
-  margin: '0 0 14px', fontSize: 20, fontWeight: 700, letterSpacing: '-0.01em',
-  display: 'flex', alignItems: 'center', gap: 10,
-};
-
-const countPill = {
-  fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)',
-  background: 'rgba(75,85,99,0.25)', border: '1px solid var(--border)',
-  padding: '2px 9px', borderRadius: 999,
-};
-
-const chipStyle = {
-  display: 'inline-flex', alignItems: 'center',
-  padding: '6px 12px', borderRadius: 999,
-  background: 'var(--card)', border: '1px solid var(--border)',
-  color: 'var(--text-secondary)',
-  fontSize: 13, fontWeight: 600, textDecoration: 'none',
-};

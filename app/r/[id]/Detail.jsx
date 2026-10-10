@@ -5,296 +5,189 @@ import { DETAIL_COPY } from '@/data/detail-copy';
 import { useLang } from '@/components/LangProvider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Gallery from '@/components/Gallery';
 import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
-import { StatusBadge, StatusDot, Icon } from '@/components/atoms';
+import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
 
 export default function Detail({ venue, breadcrumb, about, faq, dishes, chain }) {
   const v = venue;
   const [lang, setLang] = useLang();
   const [active, setActive] = useState('overview');
-
-
   const c = DETAIL_COPY[lang];
+  const de = lang === 'de';
+  const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`;
+  const website = v.website ? (v.website.startsWith('http') ? v.website : `https://${v.website}`) : null;
 
   const sections = [
-    ['overview',     c.sections.info],
-    ['hours',        c.sections.hours],
-    ['menu',         c.sections.menu],
-    ['faq',          c.sections.faq],
-    ['reviews',      c.sections.reviews],
+    ['overview', c.sections.info],
+    ['hours', c.sections.hours],
+    ['menu', c.sections.menu],
+    ['faq', c.sections.faq],
+    ['reviews', c.sections.reviews],
     ['verification', c.sections.verification],
-    ['similar',      c.sections.similar],
+    ['similar', c.sections.similar],
   ];
 
   return (
     <>
       <Header lang={lang} setLang={setLang} />
 
-      <div className="ak-anchor-nav">
-        <div className="ak-anchor-nav-inner">
-          {sections.map(([id, label]) => (
-            <a key={id} href={`#${id}`} className={active === id ? 'active' : ''}
-               onClick={() => setActive(id)}>
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
+      <main>
+        <div className="ak-wrap" style={{ paddingTop: 18 }}>
+          <Crumbs trail={breadcrumb} current={v.name} />
 
-      <main style={{ maxWidth: 1200, margin: '0 auto', padding: '24px 24px 0' }}>
-        <nav aria-label="Breadcrumb" style={{ fontSize: 12, color: 'var(--text-tertiary)', marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-          {breadcrumb.map((b) => (
-            <span key={b.href} style={{ display: 'inline-flex', gap: 6 }}>
-              <Link href={b.href} style={{ color: 'var(--text-tertiary)', textDecoration: 'none' }}>{b.label}</Link>
-              <span aria-hidden>›</span>
-            </span>
-          ))}
-          <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{v.name}</span>
-        </nav>
-
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap', marginBottom: 20 }}>
-          <div style={{ flex: 1, minWidth: 280 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
-              <StatusBadge status={v.status} lang={lang} />
-              <span style={{
-                padding: '4px 10px', background: 'rgba(75,85,99,0.3)',
-                border: '1px solid var(--border)', borderRadius: 999,
-                fontSize: 12, fontWeight: 600, color: 'var(--text-secondary)',
-              }}>{v.price}</span>
-              {v.reviews > 0 && (
-                <span style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 4,
-                  color: 'var(--accent)', fontSize: 13, fontWeight: 700,
-                }}>
-                  <Icon.star size={12} /> {v.rating.toFixed(1)}
-                  <span style={{ color: 'var(--text-secondary)', fontWeight: 500, marginLeft: 4 }}>
-                    ({v.reviews})
+          <div className="ak-venue-head">
+            <div style={{ minWidth: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
+                <District district={v.district} city={v.districtName} green={v.status === 'verified'} />
+                <StatusBadge status={v.status} lang={lang} />
+                <span className="ak-data ak-muted">{v.price}</span>
+                {v.reviews > 0 && (
+                  <span className="ak-data" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                    <Icon.star size={11} /> {v.rating.toFixed(1)} ({v.reviews})
                   </span>
-                </span>
-              )}
-            </div>
-            <h1 style={{
-              margin: 0, fontSize: 'clamp(32px, 4.5vw, 48px)', fontWeight: 700,
-              letterSpacing: '-0.025em', lineHeight: 1.05,
-            }}>{v.name}</h1>
-            <p style={{ margin: '10px 0 0', fontSize: 16, color: 'var(--text-secondary)', maxWidth: 560 }}>
-              {lang === 'de' ? v.tagline_de : v.tagline_en}
-            </p>
-            <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-              {(v.tags || []).map((t) => (
-                <span key={t} style={{
-                  padding: '4px 10px', borderRadius: 999,
-                  background: 'rgba(75,85,99,0.3)', border: '1px solid var(--border)',
-                  fontSize: 12, color: 'var(--text-secondary)', fontWeight: 500,
-                }}>{t}</span>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', gap: 8 }}>
-            <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`}
-               target="_blank" rel="noopener" style={btn('accent')}>
-              <Icon.pin size={14} /> {c.actions.directions}
-            </a>
-            <a href={`tel:${v.phone}`} style={btn('ghost')}>📞 {c.actions.call}</a>
-          </div>
-        </div>
-
-        <Gallery venue={v} lang={lang} />
-
-        <div className="ak-detail-grid" style={{ marginTop: 32 }}>
-          <div>
-            <section id="overview" className="ak-section">
-              <h2 className="ak-section-h">{c.sections.info}</h2>
-              {(lang === 'de' ? v.description_de : v.description_en) && (
-                <p style={{ margin: '0 0 16px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: 640 }}>
-                  {lang === 'de' ? v.description_de : v.description_en}
-                </p>
-              )}
-              <h3 style={subH}>{lang === 'de' ? `Über ${v.name}` : `About ${v.name}`}</h3>
-              <p style={{ margin: '0 0 20px', fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.65, maxWidth: 680 }}>
-                {lang === 'de' ? about.de : about.en}
-              </p>
-              {(dishes.length > 0 || chain) && (
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, margin: '0 0 24px' }}>
-                  {chain && (
-                    <Link href={chain.href} style={{ ...chip, color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.35)' }}>
-                      {lang === 'de' ? `Alle ${chain.count} Filialen von ${chain.name}` : `All ${chain.count} ${chain.name} branches`}
-                    </Link>
-                  )}
-                  {dishes.map((d) => (
-                    <Link key={d.href} href={d.href} style={chip}>
-                      {lang === 'de' ? `Halal ${d.name}: alle ${d.count} Lokale` : `Halal ${d.name}: all ${d.count} venues`}
-                    </Link>
-                  ))}
-                </div>
-              )}
-              <div>
-                <h3 style={{
-                  margin: '0 0 10px', fontSize: 12, fontWeight: 700,
-                  letterSpacing: '0.08em', textTransform: 'uppercase',
-                  color: 'var(--text-tertiary)',
-                }}>{c.sections.amenities}</h3>
-                <Amenities venue={v} lang={lang} />
+                )}
               </div>
-            </section>
-
-            <section id="hours" className="ak-section">
-              <h2 className="ak-section-h">{c.sections.hours}</h2>
-              <Hours venue={v} lang={lang} />
-            </section>
-
-            <section id="menu" className="ak-section">
-              <h2 className="ak-section-h">{c.sections.menu}</h2>
-              <Menu venue={v} lang={lang} />
-            </section>
-
-            <section id="faq" className="ak-section">
-              <h2 className="ak-section-h">
-                {lang === 'de' ? `Häufige Fragen zu ${v.name}` : `FAQ about ${v.name}`}
-              </h2>
-              <dl style={{ margin: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
-                {faq.map((f) => (
-                  <div key={f.q_de}>
-                    <dt style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>
-                      {lang === 'de' ? f.q_de : f.q_en}
-                    </dt>
-                    <dd style={{ margin: 0, fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-                      {lang === 'de' ? f.a_de : f.a_en}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-
-            <section id="reviews" className="ak-section">
-              <h2 className="ak-section-h">{c.sections.reviews}</h2>
-              <Reviews venue={v} lang={lang} />
-            </section>
-
-            <section id="verification" className="ak-section">
-              <h2 className="ak-section-h">{c.verifiedHistory}</h2>
-              <Verification venue={v} lang={lang} />
-            </section>
-
-            <section id="similar" className="ak-section">
-              <h2 className="ak-section-h">{c.sections.similar}</h2>
-              <SimilarList venue={v} lang={lang} />
-            </section>
-
-          </div>
-
-          <aside className="ak-detail-aside">
-            <div style={asideCard}>
-              <h3 style={asideH}>{c.sections.address}</h3>
-              <MiniMap venue={v} />
-              <div style={{ padding: '12px 0', fontSize: 14, fontWeight: 600 }}>
-                {v.address}
+              <h1 className="ak-h1">{v.name}</h1>
+              <p className="ak-lead" style={{ marginTop: 10 }}>{de ? v.tagline_de : v.tagline_en}</p>
+              <div className="ak-tags" style={{ marginTop: 12 }}>
+                {(v.tags || []).map((t) => <span key={t} className="ak-tag">{t}</span>)}
               </div>
-              <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`}
-                 target="_blank" rel="noopener" style={{
-                fontSize: 13, color: 'var(--accent)', fontWeight: 600,
-                textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6,
-              }}>
-                {c.minDirections} →
+            </div>
+
+            <div className="ak-venue-actions">
+              {v.phone && (
+                <a href={`tel:${v.phone}`} className="ak-btn">
+                  <Icon.phone size={15} /> {c.actions.call}
+                </a>
+              )}
+              <a href={directions} target="_blank" rel="noopener" className="ak-btn ak-btn--green">
+                <Icon.pin size={15} /> {c.actions.directions}
               </a>
             </div>
+          </div>
+        </div>
 
-            <div style={asideCard}>
-              <h3 style={asideH}>{lang === 'de' ? 'Kontakt' : 'Contact'}</h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {v.phone && (
-                  <a href={`tel:${v.phone}`} style={contactRow}>
-                    <span style={{ color: 'var(--text-tertiary)', width: 16 }}>📞</span>
-                    <span>{v.phone}</span>
-                  </a>
+        <div className="ak-band ak-pattern" aria-hidden="true" />
+
+        <nav className="ak-anchor-nav" aria-label={de ? 'Abschnitte' : 'Sections'}>
+          <div className="ak-anchor-nav-inner">
+            {sections.map(([id, label]) => (
+              <a key={id} href={`#${id}`} className={active === id ? 'active' : ''} onClick={() => setActive(id)}>{label}</a>
+            ))}
+          </div>
+        </nav>
+
+        <div className="ak-wrap" style={{ paddingTop: 20 }}>
+          <div className="ak-detail-grid">
+            <div style={{ minWidth: 0 }}>
+              <section id="overview" className="ak-section">
+                <h2 className="ak-section-h">{de ? `Über ${v.name}` : `About ${v.name}`}</h2>
+                {(de ? v.description_de : v.description_en) && (
+                  <p style={{ margin: '0 0 12px', fontSize: 15, lineHeight: 1.65 }}>{de ? v.description_de : v.description_en}</p>
                 )}
-                {v.website && (
-                  <a href={v.website.startsWith('http') ? v.website : `https://${v.website}`}
-                     target="_blank" rel="noopener" style={contactRow}>
-                    <span style={{ color: 'var(--text-tertiary)', width: 16 }}>↗</span>
-                    <span>{v.website}</span>
-                  </a>
+                <p className="ak-muted" style={{ margin: '0 0 18px', fontSize: 15, lineHeight: 1.65 }}>{de ? about.de : about.en}</p>
+
+                {(dishes.length > 0 || chain) && (
+                  <div className="ak-chips" style={{ marginBottom: 20 }}>
+                    {chain && (
+                      <Link href={chain.href} className="ak-chip is-on">
+                        {de ? `Alle ${chain.count} Filialen von ${chain.name}` : `All ${chain.count} ${chain.name} branches`}
+                      </Link>
+                    )}
+                    {dishes.map((d) => (
+                      <Link key={d.href} href={d.href} className="ak-chip">
+                        Halal {d.name} <span className="ak-count">{d.count}</span>
+                      </Link>
+                    ))}
+                  </div>
                 )}
-              </div>
+
+                <Amenities venue={v} lang={lang} />
+              </section>
+
+              <section id="hours" className="ak-section">
+                <h2 className="ak-section-h">{c.sections.hours}</h2>
+                <Hours venue={v} lang={lang} />
+              </section>
+
+              <section id="menu" className="ak-section">
+                <h2 className="ak-section-h">{c.sections.menu}</h2>
+                <Menu venue={v} lang={lang} />
+              </section>
+
+              <section id="faq" className="ak-section">
+                <h2 className="ak-section-h">{de ? `Häufige Fragen zu ${v.name}` : `FAQ about ${v.name}`}</h2>
+                <dl className="ak-faq" style={{ margin: 0 }}>
+                  {faq.map((f) => (
+                    <div key={f.q_de}>
+                      <dt>{de ? f.q_de : f.q_en}</dt>
+                      <dd>{de ? f.a_de : f.a_en}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+
+              <section id="reviews" className="ak-section">
+                <h2 className="ak-section-h">{c.sections.reviews}</h2>
+                <Reviews venue={v} lang={lang} />
+              </section>
+
+              <section id="verification" className="ak-section">
+                <h2 className="ak-section-h">{c.verifiedHistory}</h2>
+                <Verification venue={v} lang={lang} />
+              </section>
+
+              <section id="similar" className="ak-section">
+                <h2 className="ak-section-h">{c.sections.similar}</h2>
+                <SimilarList venue={v} lang={lang} />
+              </section>
             </div>
-          </aside>
+
+            <aside className="ak-detail-aside">
+              <div className="ak-panel">
+                <h3 className="ak-subh">{c.sections.address}</h3>
+                <MiniMap venue={v} />
+                <p style={{ margin: '12px 0', fontSize: 15, fontWeight: 600 }}>{v.address}</p>
+                <a href={directions} target="_blank" rel="noopener" className="ak-btn ak-btn--sm ak-btn--block">
+                  {c.minDirections} <Icon.arrow size={12} />
+                </a>
+              </div>
+
+              {(v.phone || website) && (
+                <div className="ak-panel">
+                  <h3 className="ak-subh">{de ? 'Kontakt' : 'Contact'}</h3>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                    {v.phone && (
+                      <a href={`tel:${v.phone}`} className="ak-data" style={{ fontSize: 14, textDecoration: 'none', display: 'inline-flex', gap: 8, alignItems: 'center' }}>
+                        <Icon.phone size={14} /> {v.phone}
+                      </a>
+                    )}
+                    {website && (
+                      <a href={website} target="_blank" rel="noopener" style={{ fontSize: 14, fontWeight: 600, color: 'var(--green-ink)', overflowWrap: 'anywhere' }}>
+                        {v.website} ↗
+                      </a>
+                    )}
+                  </div>
+                </div>
+              )}
+            </aside>
+          </div>
         </div>
       </main>
 
       <Footer lang={lang} />
 
-      <div style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 30,
-        background: 'rgba(31,41,55,0.95)',
-        backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
-        borderTop: '1px solid var(--border)',
-        padding: '12px 16px',
-        display: 'flex', alignItems: 'center', gap: 10,
-      }}>
-        <div style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 10 }}>
-          <StatusDot status={v.status} size={10} />
-          <div style={{ minWidth: 0 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{v.name}</div>
-            <div style={{ fontSize: 11, color: 'var(--text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              {v.address}
-            </div>
-          </div>
+      <div className="ak-bottom-bar">
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 17, textTransform: 'uppercase', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', lineHeight: 1.1 }}>{v.name}</div>
+          <div className="ak-data" style={{ color: '#BDBCB5', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{v.address}</div>
         </div>
-        {v.phone && <a href={`tel:${v.phone}`} style={btn('ghost', 'sm')}>📞 {c.actions.call}</a>}
-        <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`}
-           target="_blank" rel="noopener" style={btn('accent', 'sm')}>
-          <Icon.pin size={12} /> {c.actions.directions}
+        {v.phone && <a href={`tel:${v.phone}`} className="ak-btn ak-btn--sm" aria-label={c.actions.call}><Icon.phone size={15} /></a>}
+        <a href={directions} target="_blank" rel="noopener" className="ak-btn ak-btn--sm ak-btn--green">
+          <Icon.pin size={14} /> {c.actions.directions}
         </a>
       </div>
     </>
   );
 }
-
-function btn(variant, size) {
-  const padding = size === 'sm' ? '8px 12px' : '10px 16px';
-  const fs = size === 'sm' ? 12 : 13;
-  if (variant === 'accent') {
-    return {
-      padding, fontSize: fs, fontWeight: 700,
-      background: 'var(--accent)', color: 'var(--text-on-accent)',
-      border: 'none', borderRadius: 999, cursor: 'pointer',
-      display: 'inline-flex', alignItems: 'center', gap: 6,
-      fontFamily: 'inherit', whiteSpace: 'nowrap', textDecoration: 'none',
-    };
-  }
-  return {
-    padding, fontSize: fs, fontWeight: 600,
-    background: 'var(--card)', color: 'var(--text-primary)',
-    border: '1px solid var(--border)', borderRadius: 999, cursor: 'pointer',
-    display: 'inline-flex', alignItems: 'center', gap: 6,
-    fontFamily: 'inherit', whiteSpace: 'nowrap', textDecoration: 'none',
-  };
-}
-
-const subH = {
-  margin: '0 0 8px', fontSize: 12, fontWeight: 700,
-  letterSpacing: '0.08em', textTransform: 'uppercase',
-  color: 'var(--text-tertiary)',
-};
-const chip = {
-  display: 'inline-flex', alignItems: 'center',
-  padding: '6px 12px', borderRadius: 999,
-  background: 'var(--card)', border: '1px solid var(--border)',
-  color: 'var(--text-secondary)', fontSize: 13, fontWeight: 600, textDecoration: 'none',
-};
-const asideCard = {
-  background: 'var(--card)', border: '1px solid var(--border)',
-  borderRadius: 'var(--radius-card)', padding: 16,
-};
-const asideH = {
-  margin: '0 0 12px', fontSize: 12, fontWeight: 700,
-  letterSpacing: '0.08em', textTransform: 'uppercase',
-  color: 'var(--text-tertiary)',
-};
-const contactRow = {
-  display: 'flex', alignItems: 'center', gap: 10,
-  textDecoration: 'none', color: 'var(--text-primary)', fontSize: 14, fontWeight: 500,
-};

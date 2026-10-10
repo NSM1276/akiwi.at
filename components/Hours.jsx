@@ -1,86 +1,60 @@
 'use client';
 import { DETAIL_COPY } from '@/data/detail-copy';
 import { useNow } from './useNow';
-import { StatusDot } from './atoms';
+
+const toMin = (t) => { const [H, M] = t.split(':').map(Number); return H * 60 + M; };
 
 export default function Hours({ venue, lang }) {
   const c = DETAIL_COPY[lang];
   const now = useNow();
 
-  const todayIdx = now ? (now.getDay() + 6) % 7 : 0;
+  const todayIdx = now ? (now.getDay() + 6) % 7 : -1;
   const minutesNow = now ? now.getHours() * 60 + now.getMinutes() : 0;
-  const todayHours = venue.hours.find((h) => h.day === todayIdx);
-  const toMin = (t) => { const [H, M] = t.split(':').map(Number); return H * 60 + M; };
-  let openNow = false; let nextLabel = '';
-  if (now && todayHours) {
-    const o = toMin(todayHours.open);
-    let cl = toMin(todayHours.close);
-    if (cl === 0) cl = 24 * 60;
-    if (minutesNow >= o && minutesNow < cl) {
-      openNow = true;
-      nextLabel = c.closesAt(todayHours.close);
-    } else if (minutesNow < o) {
-      nextLabel = c.opensAt(todayHours.open);
-    } else {
-      const tomorrow = venue.hours.find((h) => h.day === (todayIdx + 1) % 7);
+  const today = venue.hours.filter((h) => h.day === todayIdx && h.open && h.close);
+
+  let openNow = false;
+  let nextLabel = '';
+  if (now) {
+    for (const h of today) {
+      const o = toMin(h.open);
+      let cl = toMin(h.close);
+      if (cl <= o) cl += 24 * 60;
+      if (minutesNow >= o && minutesNow < cl) { openNow = true; nextLabel = c.closesAt(h.close); break; }
+      if (minutesNow < o && !nextLabel) nextLabel = c.opensAt(h.open);
+    }
+    if (!openNow && !nextLabel) {
+      const tomorrow = venue.hours.find((h) => h.day === (todayIdx + 1) % 7 && h.open);
       if (tomorrow) nextLabel = c.opensAt(tomorrow.open);
     }
   }
 
+  // One row per day; days with two time slots show both.
+  const rows = c.days.map((name, day) => {
+    const slots = venue.hours.filter((h) => h.day === day && h.open && h.close);
+    return {
+      day, name,
+      text: slots.length ? slots.map((h) => `${h.open}–${h.close === '00:00' ? '24:00' : h.close}`).join(', ') : (lang === 'de' ? 'geschlossen' : 'closed'),
+    };
+  });
+
   return (
     <div>
       {now && (
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 10,
-          padding: '8px 14px',
-          background: openNow ? 'var(--status-green-bg)' : 'rgba(75,85,99,0.25)',
-          border: `1px solid ${openNow ? 'var(--status-green)' : 'var(--border)'}`,
-          borderRadius: 999,
-          marginBottom: 16,
-        }}>
-          <StatusDot status={openNow ? 'verified' : 'unknown'} size={8} />
-          <span style={{ fontSize: 13, fontWeight: 700, color: openNow ? 'var(--status-green)' : 'var(--text-secondary)' }}>
-            {openNow ? c.openNow : c.closedNow}
-          </span>
-          <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>· {nextLabel}</span>
+        <div className={`ak-status ak-status--boxed ${openNow ? 'ak-status--verified' : 'ak-status--unknown'}`} style={{ marginBottom: 14 }}>
+          {openNow ? c.openNow : c.closedNow}
+          {nextLabel && <span style={{ color: 'var(--ink-2)' }}>· {nextLabel}</span>}
         </div>
       )}
-
-      <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 4 }}>
-        {venue.hours.map((h) => {
-          const isToday = now && h.day === todayIdx;
-          return (
-            <li key={h.day} style={{
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-              padding: '10px 14px',
-              background: isToday ? 'rgba(163,230,53,0.06)' : 'transparent',
-              border: `1px solid ${isToday ? 'rgba(163,230,53,0.25)' : 'transparent'}`,
-              borderRadius: 8,
-            }}>
-              <span style={{
-                fontSize: 14, fontWeight: isToday ? 700 : 500,
-                color: isToday ? 'var(--accent)' : 'var(--text-primary)',
-                display: 'flex', alignItems: 'center', gap: 8,
-              }}>
-                {c.days[h.day]}
-                {isToday && <span style={{
-                  fontSize: 10, fontWeight: 700, letterSpacing: '0.06em',
-                  textTransform: 'uppercase',
-                  background: 'var(--accent)', color: 'var(--text-on-accent)',
-                  padding: '2px 6px', borderRadius: 4,
-                }}>{c.today}</span>}
-              </span>
-              <span style={{
-                fontSize: 14, fontVariantNumeric: 'tabular-nums',
-                color: isToday ? 'var(--text-primary)' : 'var(--text-secondary)',
-                fontWeight: isToday ? 600 : 500,
-              }}>
-                {h.open} – {h.close === '00:00' ? '24:00' : h.close}
-              </span>
-            </li>
-          );
-        })}
-      </ul>
+      <table className="ak-hours">
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.day} className={r.day === todayIdx ? 'is-today' : ''}>
+              <td>{r.name}{r.day === todayIdx && <span className="ak-data" style={{ marginLeft: 8, color: 'var(--green-ink)' }}>{c.today}</span>}</td>
+              <td>{r.text}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { COPY } from '@/data/data';
-import { Icon, StatusDot } from './atoms';
+import { StatusBadge, StatusDot } from './atoms';
 
 const VIENNA_DISTRICTS = [
   { n: 1,  name: 'Innere Stadt',      d: 'M49,48 L55,46 L56,52 L51,54 L48,52 Z' },
@@ -31,95 +31,46 @@ const VIENNA_DISTRICTS = [
 
 const DANUBE = 'M8,18 C 24,22 44,30 62,26 S 90,14 96,20 L96,26 C 84,22 66,32 48,34 S 16,28 8,24 Z';
 
+const PIN = { verified: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
+
 export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHoveredId }) {
   const c = COPY[lang];
+  const de = lang === 'de';
   const [selected, setSelected] = useState(null);
 
   return (
-    <section style={{ maxWidth: 1280, margin: '0 auto', padding: '56px 24px' }}>
-      <div style={{
-        display: 'flex', alignItems: 'end', justifyContent: 'space-between',
-        flexWrap: 'wrap', gap: 12, marginBottom: 20,
-      }}>
+    <section className="ak-wrap" style={{ paddingTop: 48 }}>
+      <div className="ak-row-between" style={{ alignItems: 'flex-end', flexWrap: 'wrap', marginBottom: 14 }}>
         <div>
-          <h2 className="ak-h2" style={{
-            margin: 0, fontSize: 'clamp(28px, 3.5vw, 42px)',
-            display: 'flex', alignItems: 'center', gap: 12,
-          }}>
-            <span style={{ color: 'var(--accent)' }}>
-              <Icon.pin size={30} />
-            </span>
-            {c.mapHeading}
-          </h2>
-          <p style={{ margin: '8px 0 0', color: 'var(--text-secondary)', fontSize: 15 }}>
-            {c.mapSub}
-          </p>
+          <h2 className="ak-h2">{c.mapHeading}</h2>
+          <p className="ak-lead" style={{ marginTop: 6, fontSize: 15 }}>{c.mapSub}</p>
         </div>
-        <div style={{
-          display: 'flex', gap: 12, alignItems: 'center',
-          padding: '8px 12px',
-          background: 'var(--card)', border: '1px solid var(--border)',
-          borderRadius: 999,
-          fontSize: 12, color: 'var(--text-secondary)', fontWeight: 500,
-        }}>
-          {[
-            { s: 'verified', l: c.statusVerified },
-            { s: 'self',     l: c.statusSelf },
-            { s: 'unknown',  l: c.statusUnknown },
-          ].map((item) => (
-            <span key={item.s} style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-              <StatusDot status={item.s} size={8} />
-              {item.l}
-            </span>
-          ))}
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+          {['verified', 'self', 'unknown'].map((s) => <StatusBadge key={s} status={s} lang={lang} compact />)}
         </div>
       </div>
 
-      <div style={{
-        position: 'relative',
-        width: '100%',
-        background: 'var(--card)',
-        border: '1px solid var(--border)',
-        borderRadius: 20,
-        overflow: 'hidden',
-        aspectRatio: '16 / 9',
-        minHeight: 400,
-      }}>
-        <div aria-hidden style={{
-          position: 'absolute', inset: 0,
-          backgroundImage:
-            'linear-gradient(rgba(107,114,128,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(107,114,128,0.08) 1px, transparent 1px)',
-          backgroundSize: '40px 40px',
-        }} />
-
+      <div className="ak-map">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-          <path d={DANUBE} fill="rgba(59,130,246,0.18)" stroke="rgba(59,130,246,0.35)" strokeWidth="0.15" />
-          <text x="80" y="20" fontSize="1.4" fill="rgba(147,197,253,0.7)" fontWeight="600"
-            letterSpacing="0.15em">DONAU</text>
-
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} aria-hidden="true">
+          <rect width="100" height="100" fill="#F4F3EF" />
+          <path d={DANUBE} fill="#CFE3E8" stroke="#9BBFC8" strokeWidth="0.15" />
+          <text x="80" y="20" fontSize="1.4" fill="#5E8C97" fontWeight="600" letterSpacing="0.15em">DONAU</text>
           {VIENNA_DISTRICTS.map((d) => {
             const active = filters.district === d.n;
             return (
-              <g key={d.n}>
-                <path d={d.d}
-                  fill={active ? 'rgba(163,230,53,0.12)' : 'rgba(75,85,99,0.25)'}
-                  stroke={active ? 'var(--accent)' : 'var(--border)'}
-                  strokeWidth={active ? 0.3 : 0.15}
-                  style={{ cursor: 'pointer', transition: 'all 150ms' }}
-                />
-              </g>
+              <path key={d.n} d={d.d}
+                fill={active ? '#E3F2E9' : '#FFFFFF'}
+                stroke={active ? '#1F9D55' : '#141414'}
+                strokeWidth={active ? 0.4 : 0.15} />
             );
           })}
           {VIENNA_DISTRICTS.map((d) => {
             const coords = d.d.match(/\d+(?:\.\d+)?/g).map(Number);
             let cx = 0, cy = 0, n = 0;
-            for (let i = 0; i < coords.length; i += 2) { cx += coords[i]; cy += coords[i+1]; n++; }
-            cx /= n; cy /= n;
+            for (let i = 0; i < coords.length; i += 2) { cx += coords[i]; cy += coords[i + 1]; n++; }
             return (
-              <text key={d.n} x={cx} y={cy + 0.4}
-                fontSize="1.6" textAnchor="middle"
-                fill="rgba(156,163,175,0.6)" fontWeight="700">
+              <text key={d.n} x={cx / n} y={cy / n + 0.5} fontSize="1.7" textAnchor="middle" fill="#7A7973" fontWeight="700">
                 {d.n}
               </text>
             );
@@ -127,92 +78,49 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
         </svg>
 
         {restaurants.map((r) => {
-          const isHover = hoveredId === r.id;
-          const isSel = selected === r.id;
-          const color =
-            r.status === 'verified' ? '#10B981' :
-            r.status === 'self' ? '#F59E0B' : '#EF4444';
+          const on = hoveredId === r.id || selected === r.id;
+          const color = PIN[r.status] || PIN.unknown;
           return (
             <button
               key={r.id}
+              type="button"
               onMouseEnter={() => setHoveredId && setHoveredId(r.id)}
               onMouseLeave={() => setHoveredId && setHoveredId(null)}
               onClick={() => setSelected(r.id === selected ? null : r.id)}
-              style={{
-                position: 'absolute',
-                left: `${r.x}%`, top: `${r.y}%`,
-                transform: 'translate(-50%, -100%)',
-                background: 'transparent', border: 'none', cursor: 'pointer',
-                padding: 0,
-                zIndex: isHover || isSel ? 5 : 1,
-              }}
               aria-label={r.name}
+              style={{
+                position: 'absolute', left: `${r.x}%`, top: `${r.y}%`,
+                transform: 'translate(-50%, -100%)',
+                background: 'transparent', border: 'none', padding: 0, cursor: 'pointer',
+                zIndex: on ? 5 : 1,
+              }}
             >
-              <div style={{
-                position: 'relative',
-                width: isHover || isSel ? 32 : 26,
-                height: isHover || isSel ? 40 : 34,
-                transition: 'all var(--dur-fast) var(--ease-out)',
-                filter: `drop-shadow(0 3px 6px ${color}66)`,
-              }}>
-                <svg viewBox="0 0 24 30" width="100%" height="100%">
-                  <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 18 12 18s12-9 12-18C24 5.4 18.6 0 12 0z"
-                    fill={color} stroke="#1F2937" strokeWidth="1.5" />
-                  <circle cx="12" cy="12" r="4" fill="#1F2937" />
-                </svg>
-              </div>
-              {(isHover || isSel) && (
-                <div style={{
-                  position: 'absolute',
-                  bottom: 'calc(100% + 6px)', left: '50%', transform: 'translateX(-50%)',
-                  background: 'var(--background)',
-                  border: `1px solid ${color}`,
-                  borderRadius: 10,
-                  padding: '8px 12px',
-                  minWidth: 180,
-                  boxShadow: 'var(--shadow-elev)',
-                  pointerEvents: 'none',
+              <svg viewBox="0 0 24 30" width={on ? 26 : 20} height={on ? 32 : 25} aria-hidden="true">
+                <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 18 12 18s12-9 12-18C24 5.4 18.6 0 12 0z" fill={color} stroke="#141414" strokeWidth="1.5" />
+                <rect x="8.5" y="8.5" width="7" height="7" fill="#fff" />
+              </svg>
+              {on && (
+                <span style={{
+                  position: 'absolute', bottom: 'calc(100% + 6px)', left: '50%', transform: 'translateX(-50%)',
+                  background: 'var(--paper)', border: 'var(--line) solid var(--ink)', boxShadow: 'var(--shadow-elev)',
+                  padding: '8px 10px', minWidth: 170, textAlign: 'left', pointerEvents: 'none',
                 }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 2, whiteSpace: 'nowrap' }}>
-                    {r.name}
-                  </div>
-                  <div style={{
-                    fontSize: 11, color: 'var(--text-secondary)',
-                    display: 'flex', alignItems: 'center', gap: 6,
-                  }}>
-                    <StatusDot status={r.status} size={6} />
-                    {lang === 'de' ? 'Bezirk' : 'District'} {r.district} · {r.categories[0]}
-                  </div>
-                </div>
+                  <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 17, textTransform: 'uppercase', whiteSpace: 'nowrap', lineHeight: 1 }}>{r.name}</span>
+                  <span className="ak-data" style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 5, color: 'var(--ink-2)' }}>
+                    <StatusDot status={r.status} size={10} />
+                    {r.district > 0 ? `${1000 + r.district * 10}` : r.districtName} · {r.categories[0]}
+                  </span>
+                </span>
               )}
             </button>
           );
         })}
 
-
-        <div style={{
-          position: 'absolute', bottom: 10, right: 14,
-          fontSize: 10, color: 'var(--text-tertiary)',
-          background: 'rgba(31,41,55,0.6)', padding: '2px 8px', borderRadius: 6,
+        <span className="ak-data" style={{
+          position: 'absolute', bottom: 8, left: 8, background: 'var(--ink)', color: '#fff', padding: '5px 8px',
         }}>
-          © Akiwi · OpenStreetMap contributors
-        </div>
-
-        <div style={{
-          position: 'absolute', bottom: 14, left: 14,
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          background: 'var(--background)',
-          border: '1px solid var(--border)',
-          borderRadius: 999,
-          padding: '6px 12px',
-          fontSize: 12, fontWeight: 600, color: 'var(--text-primary)',
-        }}>
-          <Icon.pin size={12} />
-          <span style={{ color: 'var(--accent)' }}>{restaurants.length}</span>
-          <span style={{ color: 'var(--text-secondary)' }}>
-            {lang === 'de' ? 'sichtbar' : 'visible'}
-          </span>
-        </div>
+          {restaurants.length} {de ? 'sichtbar' : 'visible'}
+        </span>
       </div>
     </section>
   );

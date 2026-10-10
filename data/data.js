@@ -41,7 +41,7 @@ export const COPY = {
       'Suche': '/search',
       'Impressum': '/impressum',
     },
-    footerMadeWith: 'Gemacht mit ❤️ für Österreich',
+    footerMadeWith: 'Gemacht in Wien',
     copyright: '© 2026 Akiwi.at — Alle Rechte vorbehalten.',
   },
   en: {
@@ -73,7 +73,7 @@ export const COPY = {
       'Search': '/search',
       'Imprint': '/impressum',
     },
-    footerMadeWith: 'Made with ❤️ for Austria',
+    footerMadeWith: 'Made in Vienna',
     copyright: '© 2026 Akiwi.at — All rights reserved.',
   },
 };
