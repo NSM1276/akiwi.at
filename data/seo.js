@@ -150,31 +150,19 @@ function menuStats(v) {
 
 function halalShort(status) {
   if (status === 'verified') return 'Halal bestätigt';
-  if (status === 'self') return 'Halal laut Inhaber';
+  if (status === 'self') return 'Halal laut Betreiber';
   return 'Halal-Status ungeprüft';
-}
-
-function halalAnswer(v, lang) {
-  const n = v.name;
-  if (lang === 'de') {
-    if (v.status === 'verified') return `Ja. Der Halal-Status von ${n} ist laut Betreiber bzw. Website des Lokals bestätigt.`;
-    if (v.status === 'self') return `Laut Angabe des Inhabers ja (Selbstauskunft). Eine Prüfung vor Ort durch Akiwi steht noch aus — im Zweifel direkt im Lokal nachfragen.`;
-    return `Das ist nicht bestätigt. Akiwi führt ${n} als halal-freundlich, der genaue Halal-Status ist aber unklar — bitte direkt im Lokal nachfragen.`;
-  }
-  if (v.status === 'verified') return `Yes. ${n}'s halal status is confirmed by the venue's owner or website.`;
-  if (v.status === 'self') return `According to the owner, yes (self-declared). Akiwi has not checked it on site yet — if in doubt, ask at the venue.`;
-  return `That is not confirmed. Akiwi lists ${n} as halal-friendly, but its exact halal status is unclear — please ask at the venue.`;
 }
 
 /** One sentence for the "Über …" paragraph. */
 function halalSentence(v, lang) {
   if (lang === 'de') {
     if (v.status === 'verified') return 'Der Halal-Status ist laut Betreiber bzw. Website des Lokals bestätigt.';
-    if (v.status === 'self') return 'Halal laut Angabe des Inhabers (Selbstauskunft); eine Prüfung vor Ort durch Akiwi steht noch aus.';
+    if (v.status === 'self') return 'Halal laut Betreiber bzw. Website des Lokals (Selbstauskunft); eine Prüfung durch Akiwi steht noch aus.';
     return 'Der Halal-Status ist nicht bestätigt — bitte direkt im Lokal nachfragen.';
   }
   if (v.status === 'verified') return "The halal status is confirmed by the venue's owner or website.";
-  if (v.status === 'self') return 'Halal according to the owner (self-declared); Akiwi has not checked it on site yet.';
+  if (v.status === 'self') return 'Halal according to the operator or its website (self-declared); Akiwi has not checked it yet.';
   return 'The halal status is not confirmed — please ask at the venue.';
 }
 
@@ -248,62 +236,29 @@ export function venueAbout(v, dishes = []) {
   return { de: de.join(' '), en: en.join(' ') };
 }
 
-export function venueFaq(v) {
-  const m = menuStats(v);
-  const n = v.name;
+/**
+ * "At a glance" block on a venue page: halal status, opening hours, address.
+ * Only what the page itself already shows — no answers written for the venue
+ * (delivery, prayer room, vegetarian … stay as listed data, not as claims).
+ */
+export function venueFacts(v) {
   const where = isVienna(v) ? ` (${v.districtName})` : '';
-  const faq = [
+  return [
     {
-      q_de: `Ist ${n} halal?`, a_de: halalAnswer(v, 'de'),
-      q_en: `Is ${n} halal?`, a_en: halalAnswer(v, 'en'),
+      label_de: 'Halal-Status', label_en: 'Halal status',
+      text_de: halalSentence(v, 'de'), text_en: halalSentence(v, 'en'),
     },
     {
-      q_de: `Wann hat ${n} geöffnet?`, a_de: `${hoursSummary(v.hours, 'de').replace(/^täglich/, 'Täglich')}.`,
-      q_en: `When is ${n} open?`, a_en: `${hoursSummary(v.hours, 'en').replace(/^daily/, 'Daily')}.`,
+      label_de: 'Öffnungszeiten', label_en: 'Opening hours',
+      text_de: `${hoursSummary(v.hours, 'de').replace(/^täglich/, 'Täglich')}.`,
+      text_en: `${hoursSummary(v.hours, 'en').replace(/^daily/, 'Daily')}.`,
     },
     {
-      q_de: `Wo befindet sich ${n}?`,
-      a_de: `${v.address}${where}.${v.phone ? ` Telefon: ${v.phone}.` : ''}`,
-      q_en: `Where is ${n}?`,
-      a_en: `${v.address}${where}.${v.phone ? ` Phone: ${v.phone}.` : ''}`,
+      label_de: 'Adresse', label_en: 'Address',
+      text_de: `${v.address}${where}.${v.phone ? ` Telefon: ${v.phone}.` : ''}`,
+      text_en: `${v.address}${where}.${v.phone ? ` Phone: ${v.phone}.` : ''}`,
     },
   ];
-
-  if (m.count) {
-    const range = m.min != null ? ` von ${formatEuro(m.min)} bis ${formatEuro(m.max)}` : '';
-    const rangeEn = m.min != null ? ` from ${formatEuro(m.min)} to ${formatEuro(m.max)}` : '';
-    faq.push({
-      q_de: `Gibt es die Speisekarte von ${n} online?`,
-      a_de: `Ja, auf dieser Seite: ${m.count} Gerichte${range}. Preise können sich ändern — im Zweifel gilt die Karte im Lokal.`,
-      q_en: `Is the ${n} menu online?`,
-      a_en: `Yes, on this page: ${m.count} dishes${rangeEn}. Prices may change — the menu at the venue applies.`,
-    });
-  }
-  if (m.vegetarian) {
-    faq.push({
-      q_de: `Gibt es vegetarische Gerichte bei ${n}?`,
-      a_de: m.vegetarian === 1
-        ? 'Ja, ein Gericht auf der Karte ist als vegetarisch markiert.'
-        : `Ja, ${m.vegetarian} Gerichte auf der Karte sind als vegetarisch markiert.`,
-      q_en: `Does ${n} have vegetarian dishes?`,
-      a_en: m.vegetarian === 1
-        ? 'Yes, one dish on the menu is marked vegetarian.'
-        : `Yes, ${m.vegetarian} dishes on the menu are marked vegetarian.`,
-    });
-  }
-  if (v.amenities?.delivery) {
-    faq.push({
-      q_de: `Liefert ${n}?`, a_de: `Ja, laut Eintrag bietet ${n} Lieferung an.`,
-      q_en: `Does ${n} deliver?`, a_en: `Yes, according to the listing ${n} offers delivery.`,
-    });
-  }
-  if (v.amenities?.prayer) {
-    faq.push({
-      q_de: `Gibt es bei ${n} einen Gebetsraum?`, a_de: `Ja, laut Eintrag gibt es einen Gebetsraum.`,
-      q_en: `Is there a prayer room at ${n}?`, a_en: `Yes, according to the listing there is a prayer room.`,
-    });
-  }
-  return faq;
 }
 
 // ─── Chain page ──────────────────────────────────────────────────────────────

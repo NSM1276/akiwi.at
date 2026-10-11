@@ -9,7 +9,7 @@ import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
 import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
 
-export default function Detail({ venue, breadcrumb, about, faq, dishes, chain }) {
+export default function Detail({ venue, breadcrumb, about, facts, dishes, chain }) {
   const v = venue;
   const [lang, setLang] = useLang();
   const [active, setActive] = useState('overview');
@@ -22,7 +22,7 @@ export default function Detail({ venue, breadcrumb, about, faq, dishes, chain })
     ['overview', c.sections.info],
     ['hours', c.sections.hours],
     ['menu', c.sections.menu],
-    ['faq', c.sections.faq],
+    ['facts', c.sections.facts],
     ['reviews', c.sections.reviews],
     ['verification', c.sections.verification],
     ['similar', c.sections.similar],
@@ -116,13 +116,13 @@ export default function Detail({ venue, breadcrumb, about, faq, dishes, chain })
                 <Menu venue={v} lang={lang} />
               </section>
 
-              <section id="faq" className="ak-section">
-                <h2 className="ak-section-h">{de ? `Häufige Fragen zu ${v.name}` : `FAQ about ${v.name}`}</h2>
-                <dl className="ak-faq" style={{ margin: 0 }}>
-                  {faq.map((f) => (
-                    <div key={f.q_de}>
-                      <dt>{de ? f.q_de : f.q_en}</dt>
-                      <dd>{de ? f.a_de : f.a_en}</dd>
+              <section id="facts" className="ak-section">
+                <h2 className="ak-section-h">{c.sections.facts}</h2>
+                <dl className="ak-facts" style={{ margin: 0 }}>
+                  {facts.map((f) => (
+                    <div key={f.label_de}>
+                      <dt>{de ? f.label_de : f.label_en}</dt>
+                      <dd>{de ? f.text_de : f.text_en}</dd>
                     </div>
                   ))}
                 </dl>

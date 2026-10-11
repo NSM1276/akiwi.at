@@ -60,7 +60,7 @@ function heading(kind, name, lang, place) {
 
 const STATUS_TEXT = {
   verified: { de: 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.', en: "Halal status confirmed by the venue's owner or website." },
-  self: { de: 'Vom Inhaber selbst angegeben. Noch keine Vor-Ort-Prüfung durch Akiwi.', en: 'Declared by the owner. No on-site check by Akiwi yet.' },
+  self: { de: 'Laut Betreiber bzw. Website des Lokals halal. Noch nicht von Akiwi geprüft.', en: 'Halal according to the operator or its website. Not yet checked by Akiwi.' },
   unknown: { de: 'Status unklar — bitte prüfe direkt im Lokal.', en: 'Status unclear — please check directly at the venue.' },
 };
 
@@ -173,7 +173,7 @@ export default function Landing({
         <section className="ak-panel" style={{ marginTop: 36 }}>
           <h2 className="ak-subh">{de ? 'Was der Halal-Status bedeutet' : 'What the halal status means'}</h2>
           <dl style={{ margin: 0, display: 'grid', gap: 12 }}>
-            {['verified', 'self', 'unknown'].map((s) => (
+            {['verified', 'self', 'unknown'].filter((s) => s !== 'verified' || stats.verified).map((s) => (
               <div key={s}>
                 <dt><StatusBadge status={s} lang={lang} compact /></dt>
                 <dd className="ak-muted" style={{ margin: '4px 0 0', fontSize: 13, lineHeight: 1.5 }}>{STATUS_TEXT[s][lang]}</dd>

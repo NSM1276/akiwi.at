@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { VENUES } from '@/data/venues';
-import { venueJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/data/jsonld';
+import { venueJsonLd, breadcrumbJsonLd } from '@/data/jsonld';
 import { breadcrumbFor, dishesOf } from '@/data/landing';
-import { venueMeta, venueAbout, venueFaq } from '@/data/seo';
+import { venueMeta, venueAbout, venueFacts } from '@/data/seo';
 import { CHAINS } from '@/data/chains';
 import Detail from './Detail';
 
@@ -53,7 +53,7 @@ export default async function RestaurantDetailPage({ params }) {
   const breadcrumb = breadcrumbFor(venue);
   const dishes = dishesOf(venue);
   const about = venueAbout(venue, dishes);
-  const faq = venueFaq(venue);
+  const facts = venueFacts(venue);
 
   return (
     <>
@@ -67,15 +67,11 @@ export default async function RestaurantDetailPage({ params }) {
           __html: JSON.stringify(breadcrumbJsonLd([...breadcrumb, { href: `/r/${id}`, label: venue.name }])),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faq)) }}
-      />
       <Detail
         venue={{ ...venue, similar }}
         breadcrumb={breadcrumb}
         about={about}
-        faq={faq}
+        facts={facts}
         dishes={dishes}
         chain={chainOf(id)}
       />

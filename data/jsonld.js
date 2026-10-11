@@ -65,19 +65,6 @@ export function venueJsonLd(venue, description) {
   };
 }
 
-/** Questions and answers shown on the page, in the same words. */
-export function faqJsonLd(faq) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faq.map((f) => ({
-      '@type': 'Question',
-      name: f.q_de,
-      acceptedAnswer: { '@type': 'Answer', text: f.a_de },
-    })),
-  };
-}
-
 /** Site name for the search result header, and the organisation behind it. */
 export function siteJsonLd() {
   return [

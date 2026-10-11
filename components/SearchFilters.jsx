@@ -31,7 +31,7 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
       </div>
 
       <FilterGroup title={c.filters.halal}>
-        {['verified', 'self', 'unknown'].map((s) => (
+        {facets.halal.map((s) => (
           <CheckRow key={s} on={(filters.halal || []).includes(s)} onClick={() => toggle('halal', s)}>
             <StatusDot status={s} size={12} />
             <span>{c.halalLabels[s]}</span>

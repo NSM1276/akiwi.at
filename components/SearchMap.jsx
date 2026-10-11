@@ -106,7 +106,7 @@ export default function SearchMap({ lang, restaurants, hoveredId, setHoveredId }
       </span>
 
       <span style={{ position: 'absolute', top: 8, right: 8, background: 'var(--paper)', border: 'var(--line) solid var(--ink)', padding: '6px 8px', display: 'flex', flexDirection: 'column', gap: 4 }}>
-        {[['verified', c.halalLabels.verified], ['self', c.halalLabels.self], ['unknown', c.halalLabels.unknown]].map(([s, l]) => (
+        {[['verified', c.halalLabels.verified], ['self', c.halalLabels.self], ['unknown', c.halalLabels.unknown]].filter(([s]) => restaurants.some((r) => r.status === s)).map(([s, l]) => (
           <span key={s} className="ak-data" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
             <StatusDot status={s} size={10} />{l}
           </span>

@@ -30,6 +30,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
     <div className="ak-filterbar">
       <div className="ak-filterbar-inner">
         <div className="ak-filterbar-top">
+          {facets.halal.includes('verified') && (
           <button
             type="button"
             className={`ak-chip ak-toggle${filters.verifiedOnly ? ' is-on' : ''}`}
@@ -43,6 +44,7 @@ export default function FilterBar({ lang, filters, setFilters, resultCount, face
             </span>
             {c.verifiedOnly}
           </button>
+          )}
 
           <div ref={dropRef} style={{ position: 'relative' }}>
             <button

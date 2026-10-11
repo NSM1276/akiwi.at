@@ -46,7 +46,7 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
           <p className="ak-lead" style={{ marginTop: 6, fontSize: 15 }}>{c.mapSub}</p>
         </div>
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-          {['verified', 'self', 'unknown'].map((s) => <StatusBadge key={s} status={s} lang={lang} compact />)}
+          {['verified', 'self', 'unknown'].filter((st) => restaurants.some((r) => r.status === st)).map((s) => <StatusBadge key={s} status={s} lang={lang} compact />)}
         </div>
       </div>
 

@@ -470,8 +470,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 body:has(.ak-bottom-bar) { padding-bottom: 64px; }
 @media (min-width: 900px) { body:has(.ak-bottom-bar) { padding-bottom: 0; } }
 
-.ak-faq dt { font-weight: 700; font-size: 15px; margin: 0 0 4px; }
-.ak-faq dd { margin: 0 0 16px; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+.ak-facts dt { font-weight: 700; font-size: 15px; margin: 0 0 4px; }
+.ak-facts dd { margin: 0 0 16px; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
 
 /* ---------- Map ---------- */
 .ak-map {
