@@ -2,11 +2,11 @@ import { CHAINS } from '@/data/chains';
 import { VENUES } from '@/data/venues';
 import { chainStatus } from '@/data/listing';
 import { shareHalal } from '@/data/seo';
-import { ogCard, OG_SIZE } from '@/components/ogCard';
+import { ogCard, OG_SIZE, OG_VERSION } from '@/components/ogCard';
 
-export const size = OG_SIZE;
-export const contentType = 'image/png';
-export const alt = 'Akiwi.at – Halal-freundliche Kette';
+export function generateImageMetadata() {
+  return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at – Halal-freundliche Kette' }];
+}
 
 export function generateStaticParams() {
   return Object.keys(CHAINS).map((id) => ({ id }));

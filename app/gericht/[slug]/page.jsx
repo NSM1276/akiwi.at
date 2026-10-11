@@ -1,3 +1,4 @@
+import { OG_VERSION } from '@/components/ogCard';
 import { notFound } from 'next/navigation';
 import { getDishSlugs, getDishPage, placeOf, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }) {
     title: { absolute: title },
     description,
     alternates: { canonical: `/gericht/${slug}` },
-    openGraph: { title, description, images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
+    openGraph: { title, description, images: [`/opengraph-image/${OG_VERSION}`], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 

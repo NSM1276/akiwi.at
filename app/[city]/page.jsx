@@ -1,3 +1,4 @@
+import { OG_VERSION } from '@/components/ogCard';
 import { notFound } from 'next/navigation';
 import { getCitySlugs, getCityPage, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }) {
     title,
     description,
     alternates: { canonical: `/${city}` },
-    openGraph: { title: `${title} | Akiwi.at`, description, images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
+    openGraph: { title: `${title} | Akiwi.at`, description, images: [`/opengraph-image/${OG_VERSION}`], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 

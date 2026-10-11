@@ -1,9 +1,9 @@
 import { ImageResponse } from 'next/og';
-import { ogFonts, OgFrame, OG_SIZE } from '@/components/ogCard';
+import { ogFonts, OgFrame, OG_SIZE, OG_VERSION } from '@/components/ogCard';
 
-export const alt = 'Akiwi.at — Halal essen in Wien & Österreich';
-export const size = OG_SIZE;
-export const contentType = 'image/png';
+export function generateImageMetadata() {
+  return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at — Halal essen in Wien & Österreich' }];
+}
 
 const SUB = 'Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status';
 
@@ -37,6 +37,6 @@ export default async function OpenGraphImage() {
         <div style={{ display: 'flex', fontSize: 26, lineHeight: 1.25, color: '#55544F' }}>{SUB}</div>
       </OgFrame>
     ),
-    { ...size, fonts },
+    { ...OG_SIZE, fonts },
   );
 }

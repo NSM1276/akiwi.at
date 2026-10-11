@@ -1,10 +1,10 @@
 import { VENUES } from '@/data/venues';
 import { shareWhere, shareHalal } from '@/data/seo';
-import { ogCard, OG_SIZE } from '@/components/ogCard';
+import { ogCard, OG_SIZE, OG_VERSION } from '@/components/ogCard';
 
-export const size = OG_SIZE;
-export const contentType = 'image/png';
-export const alt = 'Akiwi.at – Halal-freundliches Lokal';
+export function generateImageMetadata() {
+  return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at – Halal-freundliches Lokal' }];
+}
 
 export function generateStaticParams() {
   return Object.keys(VENUES).map((id) => ({ id }));

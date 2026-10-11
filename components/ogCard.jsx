@@ -2,6 +2,10 @@ import { ImageResponse } from 'next/og';
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
+// Part of every share image URL (…/opengraph-image/<version>). Messengers cache images
+// by URL, so bump this whenever the design of the share images changes.
+export const OG_VERSION = 'v2';
+
 // Fonts are fetched from Google Fonts while the image is built (only the
 // glyphs used), so no font files live in the repo. If the fetch fails the
 // card falls back to the default sans-serif.

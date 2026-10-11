@@ -1,3 +1,4 @@
+import { OG_VERSION } from '@/components/ogCard';
 import { getListing, getFacets } from '@/data/listing';
 import { listCities, listDistricts, listCategories, listDishes } from '@/data/landing';
 import { VENUE_COUNT } from '@/data/venues';
@@ -15,7 +16,7 @@ export function generateMetadata() {
     title: { absolute: title },
     description,
     alternates: { canonical: '/' },
-    openGraph: { title, description, url: '/', images: ['/opengraph-image'], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
+    openGraph: { title, description, url: '/', images: [`/opengraph-image/${OG_VERSION}`], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 
