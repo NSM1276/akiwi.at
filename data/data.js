@@ -30,6 +30,7 @@ export const COPY = {
     mapSub: 'Alle Lokale auf einen Blick — gefiltert nach deinen Kriterien.',
     // Footer
     footerBlurb: 'Der ehrliche halal-freundliche Guide für Österreich. Transparent, unabhängig, werbefrei.',
+    followUs: 'Folgen Sie uns',
     // Datenschutz und Eintragen kommen dazu, sobald diese Seiten existieren.
     footerSections: {
       product: ['Home', 'Suche'],
@@ -63,6 +64,7 @@ export const COPY = {
     mapHeading: 'Map',
     mapSub: 'Every venue at a glance — filtered to match your picks.',
     footerBlurb: 'The honest halal-friendly guide to Austria. Transparent, independent, ad-free.',
+    followUs: 'Follow us',
     footerSections: {
       product: ['Home', 'Search'],
       legal: ['Imprint'],

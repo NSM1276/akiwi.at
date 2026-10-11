@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { COPY } from '@/data/data';
 import { Logo } from './atoms';
+import SocialLinks from './SocialLinks';
 
 export default function Header({ lang, setLang }) {
   const c = COPY[lang];
@@ -28,6 +29,7 @@ export default function Header({ lang, setLang }) {
         </nav>
 
         <div className="ak-header-tools">
+          <div className="ak-header-social"><SocialLinks lang={lang} /></div>
           <div className="ak-lang" role="group" aria-label="Sprache">
             {['de', 'en'].map((l) => (
               <button key={l} type="button" onClick={() => setLang(l)} className={lang === l ? 'is-on' : ''} aria-pressed={lang === l}>
@@ -59,6 +61,7 @@ export default function Header({ lang, setLang }) {
               {item.label}
             </Link>
           ))}
+          <div className="ak-nav-mobile-social"><SocialLinks lang={lang} /></div>
         </nav>
       )}
     </header>

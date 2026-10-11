@@ -312,7 +312,30 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   color: #fff; text-decoration: none; border-bottom: 1px solid #2A2A28;
 }
 .ak-nav-mobile a.is-on { color: var(--green); }
+
+/* Social links: square icon buttons on the dark header / footer */
+.ak-social { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; }
+.ak-social a {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  color: #fff; text-decoration: none; border: var(--line) solid #fff;
+  width: 36px; height: 36px; transition: background .12s, border-color .12s, color .12s;
+}
+.ak-social a:hover, .ak-social a:focus-visible { background: var(--green); border-color: var(--green); color: #fff; }
+.ak-social svg { width: 22px; height: 22px; flex: none; }
+.ak-nav-mobile .ak-social svg { width: 26px; height: 26px; }
+.ak-header-social { display: none; }
+.ak-nav-mobile-social { padding: 14px var(--gutter); }
+.ak-nav-mobile .ak-social a { width: 44px; height: 44px; }
+/* footer: icon + name + handle */
+.ak-social--list { flex-direction: column; gap: 10px; }
+.ak-social--list a { width: 220px; max-width: 100%; height: auto; justify-content: flex-start; padding: 8px 12px 8px 10px; }
+.ak-social--list a span { display: flex; flex-direction: column; line-height: 1.25; }
+.ak-social--list a b { font-weight: 700; font-size: 15px; }
+.ak-social--list a small { font-family: var(--font-data); font-size: 11px; color: #CFCEC8; }
+.ak-social--list a:hover small { color: #fff; }
+.ak-footer .ak-social a { font-size: 15px; }
 @media (min-width: 720px) {
+  .ak-header-social { display: block; margin-right: 6px; }
   .ak-nav-desktop { display: flex; }
   .ak-nav-burger, .ak-nav-mobile { display: none !important; }
 }
@@ -324,7 +347,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px;
 }
 @media (min-width: 720px) {
-  .ak-footer-grid { grid-template-columns: minmax(240px, 1.6fr) 1fr 1fr; gap: 40px; }
+  .ak-footer-grid { grid-template-columns: minmax(240px, 1.6fr) 1fr 1fr 1fr; gap: 40px; }
 }
 .ak-footer h4 {
   margin: 0 0 12px; font-family: var(--font-data); font-weight: 500; font-size: 11px;
