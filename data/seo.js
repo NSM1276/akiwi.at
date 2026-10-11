@@ -174,10 +174,13 @@ export function venueMeta(v) {
     ? `${v.name}, ${placeLabel(v)}`
     : nameHasPlace ? v.name : `${v.name}, ${cityOf(v)}`;
 
+  // Menu and hours are held back until the venue is onboarded (data/public.js),
+  // so the title only promises what the page shows.
+  const hasMenu = (v.menu || []).length > 0;
+  const hasHours = (v.hours || []).length > 0;
   const title = fit([
-    `${base} – Speisekarte, Öffnungszeiten, Halal`,
-    `${base} – Speisekarte & Öffnungszeiten`,
-    `${base} – Speisekarte`,
+    ...(hasMenu && hasHours ? [`${base} – Speisekarte, Öffnungszeiten, Halal`, `${base} – Speisekarte & Öffnungszeiten`] : []),
+    ...(hasMenu ? [`${base} – Speisekarte & Halal-Status`, `${base} – Speisekarte`] : [`${base} – Halal-Status & Adresse`, `${base} – Adresse`]),
     base,
   ], TITLE_MAX);
 
@@ -185,7 +188,7 @@ export function venueMeta(v) {
   const where = isVienna(v) ? `${placeLabel(v)}-${v.districtName}` : cityOf(v);
   const description = joinUpTo([
     `${halalShort(v.status)}: ${v.tagline_de} in ${where}`,
-    hoursSummary(v.hours, 'de', { short: true }).replace(/^täglich/, 'Täglich'),
+    hasHours ? hoursSummary(v.hours, 'de', { short: true }).replace(/^täglich/, 'Täglich') : null,
     m.count ? `Speisekarte mit ${m.count} Gerichten und Preisen` : null,
     street(v),
     v.phone ? `Tel. ${v.phone}` : null,
@@ -210,7 +213,7 @@ export function venueAbout(v, dishes = []) {
       ? `${v.name} ist ${venueKind(v, 'de')} im ${v.district}. Wiener Bezirk ${v.districtName}, ${v.address}.`
       : `${v.name} ist ${venueKind(v, 'de')} in ${cityOf(v)}, ${v.address}.`,
     `Schwerpunkt: ${v.tagline_de}.`,
-    `Öffnungszeiten: ${hoursSummary(v.hours, 'de')}.`,
+    (v.hours || []).length ? `Öffnungszeiten: ${hoursSummary(v.hours, 'de')}.` : null,
     m.count
       ? `Die Speisekarte auf Akiwi umfasst ${m.count} Gerichte${m.min != null ? ` von ${formatEuro(m.min)} bis ${formatEuro(m.max)}` : ''}${examplesDe.length ? `, darunter ${listDe(examplesDe)}` : ''}.`
       : null,
@@ -224,7 +227,7 @@ export function venueAbout(v, dishes = []) {
       ? `${v.name} is ${venueKind(v, 'en')} in Vienna's district ${v.district} (${v.districtName}), at ${v.address}.`
       : `${v.name} is ${venueKind(v, 'en')} in ${cityOf(v)}, at ${v.address}.`,
     `Focus: ${v.tagline_en}.`,
-    `Opening hours: ${hoursSummary(v.hours, 'en')}.`,
+    (v.hours || []).length ? `Opening hours: ${hoursSummary(v.hours, 'en')}.` : null,
     m.count
       ? `The menu on Akiwi lists ${m.count} dishes${m.min != null ? ` from ${formatEuro(m.min)} to ${formatEuro(m.max)}` : ''}${examplesEn.length ? `, including ${listEn(examplesEn)}` : ''}.`
       : null,
@@ -250,8 +253,12 @@ export function venueFacts(v) {
     },
     {
       label_de: 'Öffnungszeiten', label_en: 'Opening hours',
-      text_de: `${hoursSummary(v.hours, 'de').replace(/^täglich/, 'Täglich')}.`,
-      text_en: `${hoursSummary(v.hours, 'en').replace(/^daily/, 'Daily')}.`,
+      text_de: (v.hours || []).length
+        ? `${hoursSummary(v.hours, 'de').replace(/^täglich/, 'Täglich')}.`
+        : 'Derzeit nicht angegeben — bitte direkt beim Lokal nachfragen.',
+      text_en: (v.hours || []).length
+        ? `${hoursSummary(v.hours, 'en').replace(/^daily/, 'Daily')}.`
+        : 'Not listed at the moment — please ask the venue directly.',
     },
     {
       label_de: 'Adresse', label_en: 'Address',
@@ -260,8 +267,8 @@ export function venueFacts(v) {
     },
     {
       label_de: 'Datenquelle', label_en: 'Data source',
-      text_de: 'Aus öffentlichen Quellen zusammengetragen, nicht vom Lokal bestätigt. Öffnungszeiten, Preise und Speisekarte können abweichen — im Zweifel beim Lokal nachfragen.',
-      text_en: 'Compiled from public sources, not confirmed by the venue. Opening hours, prices and menu may differ — if in doubt, ask the venue.',
+      text_de: 'Aus öffentlichen Quellen zusammengetragen, nicht vom Lokal bestätigt — im Zweifel direkt beim Lokal nachfragen.',
+      text_en: 'Compiled from public sources, not confirmed by the venue — if in doubt, ask the venue directly.',
     },
   ];
 }
@@ -281,14 +288,14 @@ export function chainMeta(chain, venues) {
     : cities.length <= 3 ? listDe(cities).replace(' und ', ' & ') : `${cities.slice(0, 2).join(', ')} u. a.`;
 
   const title = fit([
-    `${chain.name}: ${n} Filialen in ${where} – Speisekarte & Öffnungszeiten`,
-    `${chain.name}: ${n} Filialen in ${where} – Speisekarte`,
+    `${chain.name}: ${n} Filialen in ${where} – Adressen & Halal-Status`,
+    `${chain.name}: ${n} Filialen in ${where} – Adressen`,
     `${chain.name}: alle ${n} Filialen`,
   ], TITLE_MAX);
 
   const labels = [...new Set(venues.map(branchLabel))];
   const head = `${chain.tagline_de}. `;
-  const tail = ' – Adressen, Öffnungszeiten, Speisekarte und Halal-Status.';
+  const tail = ' – Adressen und Halal-Status.';
   // As many branch names as fit; the rest become "u. a.".
   let branches = `Filialen: ${labels.join(', ')}`;
   for (let k = labels.length - 1; k > 0 && (head + branches + tail).length > DESC_MAX; k--) {
@@ -310,8 +317,8 @@ export function chainAbout(chain, venues) {
   if (counts.unknown) { partsDe.push(`${counts.unknown} ungeprüft`); partsEn.push(`${counts.unknown} unverified`); }
 
   return {
-    de: `${chain.name} hat ${venues.length} ${venues.length === 1 ? 'Filiale' : 'Filialen'} auf Akiwi: ${listDe(labels)}. Halal-Status der Filialen: ${partsDe.join(', ')}. Jede Filiale hat eine eigene Seite mit Adresse, Öffnungszeiten und Speisekarte.`,
-    en: `${chain.name} has ${venues.length} ${venues.length === 1 ? 'branch' : 'branches'} on Akiwi: ${listEn(labels)}. Halal status of the branches: ${partsEn.join(', ')}. Each branch has its own page with address, opening hours and menu.`,
+    de: `${chain.name} hat ${venues.length} ${venues.length === 1 ? 'Filiale' : 'Filialen'} auf Akiwi: ${listDe(labels)}. Halal-Status der Filialen: ${partsDe.join(', ')}. Jede Filiale hat eine eigene Seite mit Adresse und Halal-Status.`,
+    en: `${chain.name} has ${venues.length} ${venues.length === 1 ? 'branch' : 'branches'} on Akiwi: ${listEn(labels)}. Halal status of the branches: ${partsEn.join(', ')}. Each branch has its own page with address and halal status.`,
   };
 }
 

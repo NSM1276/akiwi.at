@@ -10,7 +10,7 @@ export function generateMetadata() {
   const title = 'Halal Restaurants in Wien & Österreich – Akiwi.at';
   const description =
     `${VENUE_COUNT} halal-freundliche Restaurants, Imbisse und Cafés in Wien, ${others.join(', ')} und mehr – ` +
-    'mit Speisekarte, Öffnungszeiten und Halal-Status. Unabhängig und werbefrei.';
+    'mit Adresse und Halal-Status. Unabhängig und werbefrei.';
   return {
     title: { absolute: title },
     description,

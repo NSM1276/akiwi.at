@@ -21,8 +21,8 @@ export default function BrowseLinks({ cities, districts, categories, dishes = []
       <h2 className="ak-h2">{de ? 'Stöbern' : 'Browse'}</h2>
       <p className="ak-lead" style={{ margin: '8px 0 24px' }}>
         {de
-          ? 'Alle Lokale nach Bezirk, Gericht, Kategorie und Stadt — jede Seite listet die Adressen.'
-          : 'Every venue by district, dish, category and city — each page lists the addresses.'}
+          ? 'Alle Lokale nach Bezirk, Kategorie und Stadt — jede Seite listet die Adressen.'
+          : 'Every venue by district, category and city — each page lists the addresses.'}
       </p>
 
       <div style={{ display: 'grid', gap: 28 }}>

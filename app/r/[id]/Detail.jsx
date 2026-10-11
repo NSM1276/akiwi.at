@@ -18,14 +18,18 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
   const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`;
   const website = v.website ? (v.website.startsWith('http') ? v.website : `https://${v.website}`) : null;
 
+  // Details held back until the venue is onboarded (data/public.js) get no section.
+  const hasHours = (v.hours || []).length > 0;
+  const hasMenu = (v.menu || []).length > 0;
+
   const sections = [
     ['overview', c.sections.info],
-    ['hours', c.sections.hours],
-    ['menu', c.sections.menu],
+    ...(hasHours ? [['hours', c.sections.hours]] : []),
+    ...(hasMenu ? [['menu', c.sections.menu]] : []),
     ['facts', c.sections.facts],
-    ['reviews', c.sections.reviews],
+    ...(v.reviews > 0 ? [['reviews', c.sections.reviews]] : []),
     ['verification', c.sections.verification],
-    ['similar', c.sections.similar],
+    ...(v.similar?.length ? [['similar', c.sections.similar]] : []),
   ];
 
   return (
@@ -41,7 +45,7 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
                 <District district={v.district} city={v.districtName} green={v.status === 'verified'} />
                 <StatusBadge status={v.status} lang={lang} />
-                <span className="ak-data ak-muted">{v.price}</span>
+                {v.price && <span className="ak-data ak-muted">{v.price}</span>}
                 {v.reviews > 0 && (
                   <span className="ak-data" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
                     <Icon.star size={11} /> {v.rating.toFixed(1)} ({v.reviews})
@@ -106,15 +110,19 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
                 <Amenities venue={v} lang={lang} />
               </section>
 
-              <section id="hours" className="ak-section">
-                <h2 className="ak-section-h">{c.sections.hours}</h2>
-                <Hours venue={v} lang={lang} />
-              </section>
+              {hasHours && (
+                <section id="hours" className="ak-section">
+                  <h2 className="ak-section-h">{c.sections.hours}</h2>
+                  <Hours venue={v} lang={lang} />
+                </section>
+              )}
 
-              <section id="menu" className="ak-section">
-                <h2 className="ak-section-h">{c.sections.menu}</h2>
-                <Menu venue={v} lang={lang} />
-              </section>
+              {hasMenu && (
+                <section id="menu" className="ak-section">
+                  <h2 className="ak-section-h">{c.sections.menu}</h2>
+                  <Menu venue={v} lang={lang} />
+                </section>
+              )}
 
               <section id="facts" className="ak-section">
                 <h2 className="ak-section-h">{c.sections.facts}</h2>
@@ -128,20 +136,24 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
                 </dl>
               </section>
 
-              <section id="reviews" className="ak-section">
-                <h2 className="ak-section-h">{c.sections.reviews}</h2>
-                <Reviews venue={v} lang={lang} />
-              </section>
+              {v.reviews > 0 && (
+                <section id="reviews" className="ak-section">
+                  <h2 className="ak-section-h">{c.sections.reviews}</h2>
+                  <Reviews venue={v} lang={lang} />
+                </section>
+              )}
 
               <section id="verification" className="ak-section">
                 <h2 className="ak-section-h">{c.verifiedHistory}</h2>
                 <Verification venue={v} lang={lang} />
               </section>
 
-              <section id="similar" className="ak-section">
-                <h2 className="ak-section-h">{c.sections.similar}</h2>
-                <SimilarList venue={v} lang={lang} />
-              </section>
+              {v.similar?.length > 0 && (
+                <section id="similar" className="ak-section">
+                  <h2 className="ak-section-h">{c.sections.similar}</h2>
+                  <SimilarList venue={v} lang={lang} />
+                </section>
+              )}
             </div>
 
             <aside className="ak-detail-aside">

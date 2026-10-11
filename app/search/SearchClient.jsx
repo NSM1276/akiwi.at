@@ -65,7 +65,7 @@ function applyFilters(restaurants, query, where, filters, now) {
     }
     if ((filters.amenities || []).length && !filters.amenities.every((a) => r.amenities.includes(a))) return false;
     // `now` is null until the client has mounted, so the server renders everything.
-    if (filters.openNow && now && !isOpenNow(r.hours, now)) return false;
+    if (filters.openNow && now && !(r.hours?.length && isOpenNow(r.hours, now))) return false;
     return true;
   });
 }
@@ -127,7 +127,7 @@ function SearchPage({ restaurants, facets }) {
         onHover={setHoveredId}
         hovered={hoveredId === r.id}
         dense={dense || view === 'split'}
-        openNow={now ? isOpenNow(r.hours, now) : null}
+        openNow={now && r.hours?.length ? isOpenNow(r.hours, now) : null}
       />
     </Link>
   ));

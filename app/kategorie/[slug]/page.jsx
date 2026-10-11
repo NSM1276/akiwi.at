@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const place = placeOf(page.cities, page.stats.total);
   const title = `Halal ${page.name} in ${place.de} – ${page.stats.total} Lokale`;
   const names = sampleNames(page.venues).join(', ');
-  const description = `${page.stats.total} halal-freundliche Lokale der Kategorie ${page.name}, u. a. ${names} — mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
+  const description = `${page.stats.total} halal-freundliche Lokale der Kategorie ${page.name}, u. a. ${names} — mit Adresse und Halal-Status.`;
 
   return {
     title,

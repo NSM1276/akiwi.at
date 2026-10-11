@@ -132,7 +132,7 @@ export default function Landing({
                     <span className="ak-card-meta" style={{ display: 'block', marginTop: 6 }}>
                       {v.address}
                       <br />
-                      {v.categories.join(' · ')} · {v.price}
+                      {[...v.categories, v.price].filter(Boolean).join(' · ')}
                       {v.chain && <> · <span style={{ color: 'var(--green-ink)', fontWeight: 600 }}>{v.chain.name}</span></>}
                     </span>
                     {v.items && (

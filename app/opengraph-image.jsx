@@ -7,7 +7,7 @@ export const contentType = 'image/png';
 
 // The share preview for WhatsApp and social links, in the site's colours.
 export default async function OpenGraphImage() {
-  const fonts = await ogFonts("Halal essen in Wien & Österreich Restaurants, Imbisse und Cafés — mit Speisekarte, Öffnungszeiten und Halal-Status");
+  const fonts = await ogFonts("Halal essen in Wien & Österreich Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status");
   return new ImageResponse(
     (
       <div style={{
@@ -32,7 +32,7 @@ export default async function OpenGraphImage() {
           </div>
         </div>
         <div style={{ display: 'flex', fontSize: 28, color: '#55544F' }}>
-          Restaurants, Imbisse und Cafés — mit Speisekarte, Öffnungszeiten und Halal-Status
+          Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status
         </div>
       </div>
     ),

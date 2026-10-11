@@ -19,8 +19,8 @@ export async function generateMetadata({ params }) {
   const kinds = page.stats.topCategories.slice(0, 4).map((c) => c.name).join(', ');
   const names = sampleNames(page.venues).join(', ');
   const description = page.districtCount > 1
-    ? `${n} halal-freundliche Restaurants, Imbisse und Cafés in ${page.name}: ${kinds}. Nach Bezirk, mit Speisekarte, Öffnungszeiten und Halal-Status.`
-    : `Halal-freundliche Lokale in ${page.name}: ${names}. Mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
+    ? `${n} halal-freundliche Restaurants, Imbisse und Cafés in ${page.name}: ${kinds}. Nach Bezirk, mit Adresse und Halal-Status.`
+    : `Halal-freundliche Lokale in ${page.name}: ${names}. Mit Adresse und Halal-Status.`;
 
   return {
     title,

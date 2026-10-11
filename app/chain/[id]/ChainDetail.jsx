@@ -69,7 +69,7 @@ export default function ChainDetail({ chain, venues, about }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
             <span className="ak-district ak-district--city">{venues.length} {de ? 'Filialen' : 'branches'}</span>
             <StatusBadge status={chain.status} lang={lang} />
-            <span className="ak-data ak-muted">{chain.price}</span>
+            {chain.price && <span className="ak-data ak-muted">{chain.price}</span>}
           </div>
           <h1 className="ak-h1">{chain.name}</h1>
           <p className="ak-lead" style={{ marginTop: 10 }}>{tagline}</p>

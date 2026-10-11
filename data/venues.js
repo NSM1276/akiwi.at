@@ -1,3 +1,4 @@
+import { publicVenues } from './public';
 // ─────────────────────────────────────────────────────────────────────────────
 // AKIWI — Venue registry (single source of truth)
 //
@@ -19,7 +20,7 @@
 // for a new venue.
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const VENUES = {
+const RAW_VENUES = {
 
   // ── ALATURKA ERDBERGSTRAßE 1030 ───────────────────────────────────────────────
   'alaturka-1030': {
@@ -6484,6 +6485,7 @@ export const VENUES = {
 };
 
 // Number of venues — used for the live counter on the homepage.
+export const VENUES = publicVenues(RAW_VENUES);
 export const VENUE_COUNT = Object.keys(VENUES).length;
 
 // ─────────────────────────────────────────────────────────────────────────────

@@ -59,9 +59,9 @@ export function venueJsonLd(venue, description) {
     telephone: venue.phone || undefined,
     sameAs: externalUrl(venue.website),
     servesCuisine: cuisines.length ? cuisines : undefined,
-    priceRange: venue.price,
+    priceRange: venue.price || undefined,
     hasMenu: venue.menu?.length ? `${BASE}/r/${venue.id}#menu` : undefined,
-    openingHoursSpecification: openingHours(venue.hours),
+    openingHoursSpecification: (venue.hours || []).length ? openingHours(venue.hours) : undefined,
   };
 }
 

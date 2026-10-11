@@ -1,3 +1,5 @@
+import { publicChains } from './public';
+import { VENUES } from './venues';
 // ─────────────────────────────────────────────────────────────────────────────
 // AKIWI — Chain registry
 //
@@ -8,7 +10,7 @@
 // featured  → optional, highlights the card on the homepage
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const CHAINS = {
+const RAW_CHAINS = {
 
   'alaturka': {
     id: 'alaturka',
@@ -315,3 +317,5 @@ export const CHAINS = {
   },
 
 };
+
+export const CHAINS = publicChains(RAW_CHAINS, VENUES);

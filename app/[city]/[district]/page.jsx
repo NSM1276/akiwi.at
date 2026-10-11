@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   const shown = page.venues.slice(0, 3).map((v) => v.name);
   const rest = page.venues.length - shown.length;
   const names = rest > 0 ? `${shown.join(', ')} und ${rest} weitere` : shown.join(', ');
-  const description = `Halal-freundliche Lokale in ${page.postal} Wien-${page.districtName}: ${names} — mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
+  const description = `Halal-freundliche Lokale in ${page.postal} Wien-${page.districtName}: ${names} — mit Adresse und Halal-Status.`;
 
   return {
     title,

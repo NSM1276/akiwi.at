@@ -39,11 +39,13 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
         ))}
       </FilterGroup>
 
-      <FilterGroup title={c.filters.openNow}>
-        <CheckRow on={!!filters.openNow} onClick={() => setBool('openNow')}>
-          <span>{c.openNowOnly}</span>
-        </CheckRow>
-      </FilterGroup>
+      {facets.hours && (
+        <FilterGroup title={c.filters.openNow}>
+          <CheckRow on={!!filters.openNow} onClick={() => setBool('openNow')}>
+            <span>{c.openNowOnly}</span>
+          </CheckRow>
+        </FilterGroup>
+      )}
 
       <FilterGroup title={c.filters.category}>
         <div className="ak-chips">
@@ -79,21 +81,25 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
         </FilterGroup>
       )}
 
-      <FilterGroup title={c.filters.price}>
-        <div className="ak-chips">
-          {facets.prices.map((p) => (
-            <Chip key={p} on={(filters.price || []).includes(p)} onClick={() => toggle('price', p)}>{p}</Chip>
-          ))}
-        </div>
-      </FilterGroup>
+      {facets.prices.length > 0 && (
+        <FilterGroup title={c.filters.price}>
+          <div className="ak-chips">
+            {facets.prices.map((p) => (
+              <Chip key={p} on={(filters.price || []).includes(p)} onClick={() => toggle('price', p)}>{p}</Chip>
+            ))}
+          </div>
+        </FilterGroup>
+      )}
 
-      <FilterGroup title={c.filters.amenities} last>
-        {facets.amenities.map((a) => (
-          <CheckRow key={a} on={(filters.amenities || []).includes(a)} onClick={() => toggle('amenities', a)}>
-            <span>{c.amenityLabels[a]}</span>
-          </CheckRow>
-        ))}
-      </FilterGroup>
+      {facets.amenities.length > 0 && (
+        <FilterGroup title={c.filters.amenities} last>
+          {facets.amenities.map((a) => (
+            <CheckRow key={a} on={(filters.amenities || []).includes(a)} onClick={() => toggle('amenities', a)}>
+              <span>{c.amenityLabels[a]}</span>
+            </CheckRow>
+          ))}
+        </FilterGroup>
+      )}
 
       <div className="ak-data" style={{ marginTop: 10, paddingTop: 12, borderTop: 'var(--line) solid var(--ink)' }}>
         <b style={{ color: 'var(--green-ink)' }}>{visibleCount}</b>{' '}

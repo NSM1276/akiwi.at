@@ -170,7 +170,9 @@ export function getFacets(listing) {
     cities: Object.keys(cities).sort((a, b) =>
       (a === 'Wien' ? -1 : b === 'Wien' ? 1 : 0) || a.localeCompare(b, 'de')),
     districts: [...districts].sort((a, b) => a - b),
-    prices: PRICE_LEVELS,
+    prices: listing.some((r) => r.price) ? PRICE_LEVELS : [],
+    // Hours are held back until a venue is onboarded (data/public.js).
+    hours: listing.some((r) => r.hours?.length > 0),
     // Only statuses that exist: nobody is 'verified' until Akiwi has checked a document.
     halal: ['verified', 'self', 'unknown'].filter((s) => listing.some((r) => r.status === s)),
     amenities: AMENITY_KEYS.filter((k) => amenities.has(k)),

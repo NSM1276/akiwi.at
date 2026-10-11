@@ -28,7 +28,7 @@ export const metadata = {
     default: 'Akiwi.at — Halal-freundliche Restaurants in Österreich',
     template: '%s | Akiwi.at',
   },
-  description: 'Der Halal-Guide für Österreich: Restaurants, Imbisse, Cafés und Konditoreien in Wien, Graz, Linz, Salzburg und Innsbruck — mit Halal-Status, Öffnungszeiten und Speisekarte.',
+  description: 'Der Halal-Guide für Österreich: Restaurants, Imbisse, Cafés und Konditoreien in Wien, Graz, Linz, Salzburg und Innsbruck — mit Adresse und Halal-Status.',
   openGraph: {
     siteName: 'Akiwi.at',
     locale: 'de_AT',

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   const title = `Halal ${page.name} in ${place.de} – ${n} Lokale mit Preisen`;
   const names = sampleNames(page.venues).join(', ');
   const price = page.priceMin != null ? ` ab ${formatEuro(page.priceMin)}` : '';
-  const description = `${page.name}${price} in ${n} halal-freundlichen Lokalen, u. a. ${names}. Mit Speisekarte, Adresse, Öffnungszeiten und Halal-Status.`;
+  const description = `${page.name}${price} in ${n} halal-freundlichen Lokalen, u. a. ${names}. Mit Adresse und Halal-Status.`;
 
   return {
     title: { absolute: title },
