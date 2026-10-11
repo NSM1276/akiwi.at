@@ -7,7 +7,8 @@ Lokal angebunden ist (siehe docs/PROJECT-LOG.md und CLAUDE.md).
 
 Bilder (erzeugen: `node social/make-profile-assets.mjs`, Ergebnis in `social/out/`):
 - `avatar-1000.png` — für alle Plattformen (werden rund zugeschnitten)
-- `youtube-banner-2560x1440.png` — nur YouTube
+- `youtube-banner-2560x1440.png` — nur YouTube (Text bleibt in der Mitte 1546x423: sichtbar auf TV, Computer, Tablet und Handy)
+- `youtube-banner-preview.png` — Vorschau, wie das Banner auf jedem Gerät zugeschnitten wird
 
 ## Google-Konto
 - Vorname: Akiwi · Nachname: Austria

@@ -58,14 +58,31 @@ await save('youtube-banner-2560x1440.png', h('div', {
   width: '100%', height: '100%', background: BG, alignItems: 'center', justifyContent: 'center',
   fontFamily: 'Inter Tight',
 }, [
-  h('div', { width: 1546, height: 423, flexDirection: 'column', justifyContent: 'space-between' }, [
+  h('div', { width: 1546, height: 423, flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }, [
     h('div', { alignItems: 'center' }, [
-      star(120, GREEN),
-      h('div', { fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 130, letterSpacing: 4, marginLeft: 24, color: INK }, [
+      star(104, GREEN),
+      h('div', { fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 112, lineHeight: 1, letterSpacing: 4, marginLeft: 22, color: INK }, [
         'AKIWI', h('span', { color: GREEN }, '.AT'),
       ]),
     ]),
-    h('div', { fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 112, lineHeight: 1, color: INK }, 'HALAL ESSEN IN WIEN & ÖSTERREICH'),
-    h('div', { fontSize: 44, fontWeight: 500, color: '#55544F' }, 'Ehrlicher Halal-Status · Unabhängig · Werbefrei'),
+    h('div', { fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 96, lineHeight: 1, marginTop: 26, color: INK }, 'HALAL ESSEN IN WIEN & ÖSTERREICH'),
+    h('div', { fontSize: 50, fontWeight: 500, lineHeight: 1, marginTop: 22, color: '#3A3A36' }, 'Ehrlicher Halal-Status · Unabhängig · Werbefrei'),
   ]),
 ]), 2560, 1440, fonts);
+
+// 3. Preview: how the banner is cut on each screen (YouTube shows the middle
+//    of the image: TV all of it, desktop 2560x423, tablet 1855x423, phone 1546x423).
+const dataUri = 'data:image/png;base64,' + fs.readFileSync(path.join(out, 'youtube-banner-2560x1440.png')).toString('base64');
+const K = 0.5;
+const view = (label, w, hgt) => h('div', { flexDirection: 'column', marginBottom: 28 }, [
+  h('div', { fontFamily: 'Inter Tight', fontWeight: 500, fontSize: 24, color: INK, marginBottom: 8 }, label),
+  h('div', { width: w * K, height: hgt * K, overflow: 'hidden', position: 'relative', border: '2px solid ' + INK }, [
+    { type: 'img', props: { src: dataUri, width: 2560 * K, height: 1440 * K, style: { position: 'absolute', left: -((2560 - w) / 2) * K, top: -((1440 - hgt) / 2) * K } } },
+  ]),
+]);
+await save('youtube-banner-preview.png', h('div', { width: '100%', height: '100%', background: '#fff', flexDirection: 'column', padding: 30 }, [
+  view('Smart TV (2560x1440)', 2560, 1440),
+  view('Computer (2560x423)', 2560, 423),
+  view('Tablet (1855x423)', 1855, 423),
+  view('Handy (1546x423)', 1546, 423),
+]), 1340, 1700, fonts);
