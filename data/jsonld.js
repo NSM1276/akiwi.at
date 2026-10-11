@@ -2,6 +2,8 @@
 // AKIWI — schema.org JSON-LD builders (server-side only)
 // ─────────────────────────────────────────────────────────────────────────────
 
+import { SOCIAL } from './social';
+
 const BASE = 'https://www.akiwi.at';
 // hours[].day: 0=Mo … 6=So (see template in venues.js)
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -73,7 +75,7 @@ export function siteJsonLd() {
       '@type': 'WebSite',
       '@id': `${BASE}/#website`,
       name: 'Akiwi.at',
-      alternateName: 'Akiwi',
+      alternateName: ['Akiwi', 'Akiwi – Halal in Österreich'],
       url: `${BASE}/`,
       inLanguage: 'de-AT',
     },
@@ -82,8 +84,12 @@ export function siteJsonLd() {
       '@type': 'Organization',
       '@id': `${BASE}/#organization`,
       name: 'Akiwi.at',
+      alternateName: ['Akiwi', 'Akiwi – Halal in Österreich'],
       url: `${BASE}/`,
       logo: `${BASE}/assets/logo.svg`,
+      description: 'Unabhängiger Halal-Guide für Österreich: Restaurants, Imbisse und Cafés mit klar gekennzeichnetem Halal-Status.',
+      // The same brand on the platforms, so search engines and AI systems join the profiles to the site.
+      sameAs: SOCIAL.map((s) => s.href),
     },
   ];
 }
