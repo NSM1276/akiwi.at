@@ -8,10 +8,6 @@ export function generateImageMetadata() {
   return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at – Halal-freundliche Kette' }];
 }
 
-export function generateStaticParams() {
-  return Object.keys(CHAINS).map((id) => ({ id }));
-}
-
 export default async function Image({ params }) {
   const { id } = await params;
   const chain = CHAINS[id];

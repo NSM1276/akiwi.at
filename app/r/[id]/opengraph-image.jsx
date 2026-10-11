@@ -6,10 +6,6 @@ export function generateImageMetadata() {
   return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at – Halal-freundliches Lokal' }];
 }
 
-export function generateStaticParams() {
-  return Object.keys(VENUES).map((id) => ({ id }));
-}
-
 export default async function Image({ params }) {
   const { id } = await params;
   const v = VENUES[id];
