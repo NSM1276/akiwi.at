@@ -21,7 +21,7 @@ export const SEARCH_COPY = {
       price: 'Preis',
       amenities: 'Ausstattung',
     },
-    halalLabels: { verified: 'Verifiziert', self: 'Selbstauskunft', unknown: 'Unbekannt' },
+    halalLabels: { verified: 'Verifiziert', self: 'Nicht geprüft', unknown: 'Unbekannt' },
     amenityLabels: {
       prayer: 'Gebetsraum',
       delivery: 'Lieferung',
@@ -72,7 +72,7 @@ export const SEARCH_COPY = {
       price: 'Price',
       amenities: 'Amenities',
     },
-    halalLabels: { verified: 'Verified', self: 'Self-declared', unknown: 'Unknown' },
+    halalLabels: { verified: 'Verified', self: 'Not checked', unknown: 'Unknown' },
     amenityLabels: {
       prayer: 'Prayer room',
       delivery: 'Delivery',

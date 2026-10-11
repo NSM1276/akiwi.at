@@ -150,7 +150,7 @@ function menuStats(v) {
 
 function halalShort(status) {
   if (status === 'verified') return 'Halal bestätigt';
-  if (status === 'self') return 'Halal laut Betreiber';
+  if (status === 'self') return 'Halal laut öffentlichen Angaben';
   return 'Halal-Status ungeprüft';
 }
 
@@ -158,11 +158,11 @@ function halalShort(status) {
 function halalSentence(v, lang) {
   if (lang === 'de') {
     if (v.status === 'verified') return 'Der Halal-Status ist laut Betreiber bzw. Website des Lokals bestätigt.';
-    if (v.status === 'self') return 'Halal laut Betreiber bzw. Website des Lokals (Selbstauskunft); eine Prüfung durch Akiwi steht noch aus.';
+    if (v.status === 'self') return 'Halal laut öffentlich zugänglichen Angaben; eine Prüfung durch Akiwi steht noch aus.';
     return 'Der Halal-Status ist nicht bestätigt — bitte direkt im Lokal nachfragen.';
   }
   if (v.status === 'verified') return "The halal status is confirmed by the venue's owner or website.";
-  if (v.status === 'self') return 'Halal according to the operator or its website (self-declared); Akiwi has not checked it yet.';
+  if (v.status === 'self') return 'Halal according to publicly available information; Akiwi has not checked it yet.';
   return 'The halal status is not confirmed — please ask at the venue.';
 }
 
@@ -258,6 +258,11 @@ export function venueFacts(v) {
       text_de: `${v.address}${where}.${v.phone ? ` Telefon: ${v.phone}.` : ''}`,
       text_en: `${v.address}${where}.${v.phone ? ` Phone: ${v.phone}.` : ''}`,
     },
+    {
+      label_de: 'Datenquelle', label_en: 'Data source',
+      text_de: 'Aus öffentlichen Quellen zusammengetragen, nicht vom Lokal bestätigt. Öffnungszeiten, Preise und Speisekarte können abweichen — im Zweifel beim Lokal nachfragen.',
+      text_en: 'Compiled from public sources, not confirmed by the venue. Opening hours, prices and menu may differ — if in doubt, ask the venue.',
+    },
   ];
 }
 
@@ -301,7 +306,7 @@ export function chainAbout(chain, venues) {
   const partsDe = [];
   const partsEn = [];
   if (counts.verified) { partsDe.push(`${counts.verified} verifiziert`); partsEn.push(`${counts.verified} verified`); }
-  if (counts.self) { partsDe.push(`${counts.self} mit Selbstauskunft`); partsEn.push(`${counts.self} self-declared`); }
+  if (counts.self) { partsDe.push(`${counts.self} nicht geprüft`); partsEn.push(`${counts.self} not checked`); }
   if (counts.unknown) { partsDe.push(`${counts.unknown} ungeprüft`); partsEn.push(`${counts.unknown} unverified`); }
 
   return {

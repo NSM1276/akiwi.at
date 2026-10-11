@@ -16,7 +16,7 @@ export const COPY = {
     allDistricts: 'Alle Bezirke',
     // Status
     statusVerified: 'Verifiziert',
-    statusSelf: 'Selbstauskunft',
+    statusSelf: 'Nicht geprüft',
     statusUnknown: 'Unbekannt',
     // Results
     resultsCount: (n) => `${n} ${n === 1 ? 'Eintrag' : 'Einträge'} in Österreich`,
@@ -52,7 +52,7 @@ export const COPY = {
     district: 'District',
     allDistricts: 'All districts',
     statusVerified: 'Verified',
-    statusSelf: 'Self-declared',
+    statusSelf: 'Not checked',
     statusUnknown: 'Unknown',
     resultsCount: (n) => `${n} ${n === 1 ? 'entry' : 'entries'} in Austria`,
     emptyTitle: 'No results',

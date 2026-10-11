@@ -3,10 +3,10 @@
 export const DETAIL_COPY = {
   de: {
     statusVerified: 'Verifiziert',
-    statusSelf: 'Selbstauskunft',
+    statusSelf: 'Nicht geprüft',
     statusUnknown: 'Unbekannt',
     statusBlurbVerified: 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.',
-    statusBlurbSelf: 'Laut Betreiber bzw. Website des Lokals halal. Noch nicht von Akiwi geprüft.',
+    statusBlurbSelf: 'Halal laut öffentlich zugänglichen Angaben. Noch nicht von Akiwi geprüft.',
     statusBlurbUnknown: 'Status unklar — bitte prüfe direkt im Lokal.',
     actions: { directions: 'Route', call: 'Anrufen' },
     sections: {
@@ -43,10 +43,10 @@ export const DETAIL_COPY = {
   },
   en: {
     statusVerified: 'Verified',
-    statusSelf: 'Self-declared',
+    statusSelf: 'Not checked',
     statusUnknown: 'Unknown',
     statusBlurbVerified: "Halal status confirmed by the venue's owner or website.",
-    statusBlurbSelf: 'Halal according to the operator or its website. Not yet checked by Akiwi.',
+    statusBlurbSelf: 'Halal according to publicly available information. Not yet checked by Akiwi.',
     statusBlurbUnknown: 'Status unclear — please check directly at the venue.',
     actions: { directions: 'Directions', call: 'Call' },
     sections: {

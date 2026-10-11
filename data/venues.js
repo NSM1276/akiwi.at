@@ -12,7 +12,7 @@
 // HOW TO CHANGE A VERIFICATION STATUS:
 //   Edit the `status` field of the venue: 'verified' | 'self' | 'unknown'.
 //   'verified' only after Akiwi has seen a document or visited the venue (add a verification_log entry saying what was seen).
-//   Until then every venue with an owner/website claim is 'self' — nobody is 'verified' yet.
+//   Until then every venue is 'self' (label: not checked; data from public sources) or 'unknown'. Nobody has contacted the venues yet.
 //   A chain's status is derived from its branches (lowest status wins).
 //
 // Rating/reviews: only shown when reviews > 0. Leave rating: 0, reviews: 0
@@ -883,7 +883,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'liwan-1200', name: 'Liwan Restaurant Brigittenau', district: 20, status: 'self', cat: 'Restaurant', distance_km: 8.5, rating: 4.0, hue: 160 },
@@ -975,7 +975,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'liwan-1120', name: 'Liwan Restaurant Meidling', district: 12, status: 'self', cat: 'Restaurant', distance_km: 8.5, rating: 4.0, hue: 160 },
@@ -1062,7 +1062,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'liwan-1120', name: 'Liwan Restaurant Meidling', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.1, rating: 4.0, hue: 160 },
@@ -1156,7 +1156,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'ava-persisch-1120', name: 'AVA Persisches Restaurant', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.0, rating: 4.0, hue: 350 },
@@ -1237,7 +1237,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'motelli-1120', name: 'Motelli Restaurant', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.0, rating: 4.0, hue: 25 },
@@ -1318,7 +1318,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-landstrasse', name: 'Türkis Landstraße', district: 3, status: 'self', cat: 'Restaurant', distance_km: 2.1, rating: 4.0, hue: 190 },
@@ -1395,7 +1395,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-city', name: 'Türkis City', district: 1, status: 'self', cat: 'Restaurant', distance_km: 2.1, rating: 4.0, hue: 190 },
@@ -1472,7 +1472,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-city', name: 'Türkis City', district: 1, status: 'self', cat: 'Restaurant', distance_km: 3.5, rating: 4.0, hue: 190 },
@@ -1549,7 +1549,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'cardak-1120', name: 'Restaurant Čardak', district: 12, status: 'self', cat: 'Restaurant', distance_km: 0.7, rating: 4.0, hue: 28 },
@@ -1626,7 +1626,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-neubau', name: 'Türkis Neubau', district: 7, status: 'self', cat: 'Restaurant', distance_km: 3.2, rating: 4.0, hue: 190 },
@@ -1703,7 +1703,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-donau', name: 'Türkis Donau Zentrum', district: 22, status: 'self', cat: 'Restaurant', distance_km: 2.8, rating: 4.0, hue: 190 },
@@ -1780,7 +1780,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'turkis-millennium', name: 'Türkis Millennium City', district: 20, status: 'self', cat: 'Restaurant', distance_km: 2.8, rating: 4.0, hue: 190 },
@@ -1901,7 +1901,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'kent-1150', name: 'Kent Rudolfsheim', district: 15, status: 'self', cat: 'Restaurant', distance_km: 3.8, rating: 4.0, hue: 15 },
@@ -2019,7 +2019,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'kent-1100', name: 'Kent Favoriten', district: 10, status: 'self', cat: 'Restaurant', distance_km: 3.8, rating: 4.0, hue: 15 },
@@ -2137,7 +2137,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'kent-1150', name: 'Kent Rudolfsheim', district: 15, status: 'self', cat: 'Restaurant', distance_km: 2.1, rating: 4.0, hue: 15 },
@@ -2255,7 +2255,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'kent-1160', name: 'Kent Ottakring', district: 16, status: 'self', cat: 'Restaurant', distance_km: 3.5, rating: 4.0, hue: 15 },
@@ -2350,7 +2350,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-gerngross', name: 'Akakiko Gerngross', district: 7, status: 'self', cat: 'Restaurant', distance_km: 3.2, rating: 4.0, hue: 0 },
@@ -2440,7 +2440,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-city', name: 'Akakiko City', district: 1, status: 'self', cat: 'Restaurant', distance_km: 3.2, rating: 4.0, hue: 0 },
@@ -2530,7 +2530,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-gerngross', name: 'Akakiko Gerngross', district: 7, status: 'self', cat: 'Restaurant', distance_km: 5.1, rating: 4.0, hue: 0 },
@@ -2620,7 +2620,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-gerngross', name: 'Akakiko Gerngross', district: 7, status: 'self', cat: 'Restaurant', distance_km: 1.8, rating: 4.0, hue: 0 },
@@ -2710,7 +2710,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-donau', name: 'Akakiko Donau Zentrum', district: 22, status: 'self', cat: 'Restaurant', distance_km: 2.8, rating: 4.0, hue: 0 },
@@ -2800,7 +2800,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
     ],
     similar: [
       { id: 'akakiko-millennium', name: 'Akakiko Millennium City', district: 20, status: 'self', cat: 'Restaurant', distance_km: 2.8, rating: 4.0, hue: 0 },
@@ -3815,7 +3815,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
     ],
     similar: [
       { id: 'habibi-nordbahn', name: 'Habibi & Hawara Nordbahn', district: 2, status: 'self', cat: 'Restaurant', distance_km: 4.2, rating: 4.3, hue: 34 },
@@ -3890,7 +3890,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
     ],
     similar: [
       { id: 'habibi-stadt', name: 'Habibi & Hawara Stadt', district: 1, status: 'self', cat: 'Restaurant', distance_km: 4.2, rating: 4.4, hue: 34 },
@@ -3965,7 +3965,7 @@ export const VENUES = {
     ],
     reviews_list: [],
     verification_log: [
-      { date: '2026-05-03', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
+      { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Restaurant hinzugefügt', event_en: 'Restaurant added' },
     ],
     similar: [
       { id: 'habibi-stadt', name: 'Habibi & Hawara Stadt', district: 1, status: 'self', cat: 'Restaurant', distance_km: 5.8, rating: 4.4, hue: 34 },
@@ -6557,7 +6557,7 @@ export const VENUE_COUNT = Object.keys(VENUES).length;
 //   ],
 //   reviews_list: [],                  // ← leave empty, fills over time
 //   verification_log: [
-//     { date: '2026-01-01', actor_de: 'Inhaber', actor_en: 'Owner', event_de: 'Selbstauskunft eingereicht', event_en: 'Self-declaration submitted' },
+//     { date: '2026-01-01', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
 //   ],
 //   similar: [],                       // ← leave empty or add nearby restaurants
 //   x: 50, y: 50,                      // ← map position (0–100), approximate

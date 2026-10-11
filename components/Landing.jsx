@@ -38,7 +38,7 @@ function intro(kind, name, stats, districtCount, cityCount, lang, place, prices)
 
   const parts = [];
   if (stats.verified) parts.push(de ? `${stats.verified} verifiziert` : `${stats.verified} verified`);
-  if (stats.self) parts.push(de ? `${stats.self} mit Selbstauskunft` : `${stats.self} self-declared`);
+  if (stats.self) parts.push(de ? `${stats.self} nicht geprüft` : `${stats.self} not checked`);
   if (stats.unknown) parts.push(de ? `${stats.unknown} ungeprüft` : `${stats.unknown} unverified`);
 
   const first = de
@@ -60,7 +60,7 @@ function heading(kind, name, lang, place) {
 
 const STATUS_TEXT = {
   verified: { de: 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.', en: "Halal status confirmed by the venue's owner or website." },
-  self: { de: 'Laut Betreiber bzw. Website des Lokals halal. Noch nicht von Akiwi geprüft.', en: 'Halal according to the operator or its website. Not yet checked by Akiwi.' },
+  self: { de: 'Halal laut öffentlich zugänglichen Angaben. Noch nicht von Akiwi geprüft.', en: 'Halal according to publicly available information. Not yet checked by Akiwi.' },
   unknown: { de: 'Status unklar — bitte prüfe direkt im Lokal.', en: 'Status unclear — please check directly at the venue.' },
 };
 

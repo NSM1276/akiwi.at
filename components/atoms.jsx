@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { COPY } from '@/data/data';
 
 // Eight-point star (khatam): two overlapping squares. Filled = verified,
-// outlined = self-declared or unknown. The only "halal" motif on the site.
+// outlined = not checked or unknown. The only "halal" motif on the site.
 export function Star({ size = 12, filled = true, color = 'currentColor', hole = false }) {
   const sw = filled ? 0 : 4;
   return (
