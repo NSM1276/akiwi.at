@@ -1,40 +1,41 @@
 import { ImageResponse } from 'next/og';
-import { ogFonts } from '@/components/ogCard';
+import { ogFonts, OgFrame, OG_SIZE } from '@/components/ogCard';
 
 export const alt = 'Akiwi.at — Halal essen in Wien & Österreich';
-export const size = { width: 1200, height: 630 };
+export const size = OG_SIZE;
 export const contentType = 'image/png';
 
-// The share preview for WhatsApp and social links, in the site's colours.
+const SUB = 'Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status';
+
+// The share preview for WhatsApp, Instagram and social links, in the site's colours.
+// Everything sits in the centred column of OgFrame so Instagram's square crop keeps it.
 export default async function OpenGraphImage() {
-  const fonts = await ogFonts("Halal essen in Wien & Österreich Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status");
+  const fonts = await ogFonts(`HALAL ESSEN IN WIEN & ÖSTERREICH Halal essen in Wien & Österreich ${SUB}`);
+  const line = { display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 112, fontWeight: 800, lineHeight: 0.98 };
   return new ImageResponse(
     (
-      <div style={{
-        width: '100%', height: '100%', display: 'flex', flexDirection: 'column',
-        background: '#EDECE7', color: '#141414', fontFamily: 'Inter Tight, sans-serif',
-        border: '12px solid #141414', padding: '56px 64px', justifyContent: 'space-between',
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          <div style={{ display: 'flex', position: 'relative', width: 64, height: 64 }}>
-            <div style={{ position: 'absolute', left: 10, top: 10, width: 44, height: 44, background: '#1F9D55' }} />
-            <div style={{ position: 'absolute', left: 10, top: 10, width: 44, height: 44, background: '#1F9D55', transform: 'rotate(45deg)' }} />
+      <OgFrame>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: 'flex', position: 'relative', width: 56, height: 56 }}>
+            <div style={{ position: 'absolute', left: 8, top: 8, width: 40, height: 40, background: '#1F9D55' }} />
+            <div style={{ position: 'absolute', left: 8, top: 8, width: 40, height: 40, background: '#1F9D55', transform: 'rotate(45deg)' }} />
           </div>
-          <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 60, fontWeight: 800, letterSpacing: 2 }}>
+          <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 52, fontWeight: 800, letterSpacing: 2, marginLeft: 14 }}>
             AKIWI<span style={{ color: '#1F9D55' }}>.AT</span>
           </div>
         </div>
+
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 118, fontWeight: 800, lineHeight: 0.95 }}>HALAL ESSEN IN</div>
-          <div style={{ display: 'flex', alignItems: 'flex-start', marginTop: 6, fontFamily: 'Barlow Condensed', fontSize: 118, fontWeight: 800, lineHeight: 0.95 }}>
-            <span style={{ background: '#1F9D55', color: '#fff', padding: '0 14px' }}>WIEN</span>
-            <span style={{ marginLeft: 24 }}>&amp; ÖSTERREICH</span>
+          <div style={line}>HALAL ESSEN</div>
+          <div style={{ ...line, alignItems: 'flex-start' }}>
+            <span>IN&nbsp;</span>
+            <span style={{ background: '#1F9D55', color: '#fff', padding: '0 12px' }}>WIEN</span>
           </div>
+          <div style={line}>&amp; ÖSTERREICH</div>
         </div>
-        <div style={{ display: 'flex', fontSize: 28, color: '#55544F' }}>
-          Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status
-        </div>
-      </div>
+
+        <div style={{ display: 'flex', fontSize: 26, lineHeight: 1.25, color: '#55544F' }}>{SUB}</div>
+      </OgFrame>
     ),
     { ...size, fonts },
   );

@@ -33,31 +33,68 @@ const STATUS = {
   unknown: { fill: '#fff', color: '#55544F', border: '#8C8B85' },
 };
 
-// Share card for WhatsApp and social links: site colours, the place's name
-// large, and the facts a reader wants before tapping.
+// Instagram and some messengers show link previews almost square and crop the
+// image from the sides, WhatsApp shows all 1200x630. So everything that matters
+// sits in a centred column (COLUMN px wide); the sides only carry decoration.
+const COLUMN = 640;
+
+function Star({ size, color, style }) {
+  const side = size * 0.72;
+  const off = (size - side) / 2;
+  return (
+    <div style={{ display: 'flex', position: 'absolute', width: size, height: size, ...style }}>
+      <div style={{ position: 'absolute', left: off, top: off, width: side, height: side, background: color }} />
+      <div style={{ position: 'absolute', left: off, top: off, width: side, height: side, background: color, transform: 'rotate(45deg)' }} />
+    </div>
+  );
+}
+
+function Logo({ size = 52 }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', position: 'relative', width: size, height: size }}>
+        <Star size={size} color="#1F9D55" style={{ left: 0, top: 0 }} />
+      </div>
+      <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: size * 0.9, fontWeight: 800, letterSpacing: 2, marginLeft: 14 }}>
+        AKIWI<span style={{ color: '#1F9D55' }}>.AT</span>
+      </div>
+    </div>
+  );
+}
+
+/** Frame shared by every share image: border, faint stars at the sides, centred column. */
+export function OgFrame({ children }) {
+  return (
+    <div style={{
+      width: '100%', height: '100%', display: 'flex', position: 'relative', overflow: 'hidden',
+      background: '#EDECE7', color: '#141414', fontFamily: 'Inter Tight, sans-serif',
+      border: '12px solid #141414', alignItems: 'stretch', justifyContent: 'center',
+    }}>
+      <Star size={520} color="#E3E2DC" style={{ left: -250, top: 55 }} />
+      <Star size={520} color="#E3E2DC" style={{ right: -250, top: 55 }} />
+      <div style={{
+        display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+        width: COLUMN, padding: '40px 0',
+      }}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// Share card for WhatsApp, Instagram and social links: site colours, the place's
+// name large, and the facts a reader wants before tapping.
 export async function ogCard({ kicker, title, lines = [], status, statusLabel, tag }) {
   const st = status ? STATUS[status] || STATUS.unknown : null;
-  const size = title.length > 34 ? 84 : title.length > 22 ? 100 : 120;
+  const size = title.length > 34 ? 72 : title.length > 22 ? 88 : 104;
   const fonts = await ogFonts([kicker, title, statusLabel, tag, ...lines].filter(Boolean).join(' '));
   return new ImageResponse(
     (
-      <div style={{
-        width: '100%', height: '100%', display: 'flex', flexDirection: 'column',
-        background: '#EDECE7', color: '#141414', fontFamily: 'Inter Tight, sans-serif',
-        border: '12px solid #141414', padding: '48px 60px', justifyContent: 'space-between',
-      }}>
+      <OgFrame>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-            <div style={{ display: 'flex', position: 'relative', width: 52, height: 52 }}>
-              <div style={{ position: 'absolute', left: 8, top: 8, width: 36, height: 36, background: '#1F9D55' }} />
-              <div style={{ position: 'absolute', left: 8, top: 8, width: 36, height: 36, background: '#1F9D55', transform: 'rotate(45deg)' }} />
-            </div>
-            <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 46, fontWeight: 800, letterSpacing: 2 }}>
-              AKIWI<span style={{ color: '#1F9D55' }}>.AT</span>
-            </div>
-          </div>
+          <Logo size={48} />
           {kicker && (
-            <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 34, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#55544F' }}>
+            <div style={{ display: 'flex', fontFamily: 'Barlow Condensed', fontSize: 32, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#55544F' }}>
               {kicker}
             </div>
           )}
@@ -68,26 +105,26 @@ export async function ogCard({ kicker, title, lines = [], status, statusLabel, t
             {title}
           </div>
           {lines.map((l) => (
-            <div key={l} style={{ display: 'flex', fontSize: 38, marginTop: 14, color: '#2A2A27' }}>{l}</div>
+            <div key={l} style={{ display: 'flex', fontSize: 32, lineHeight: 1.2, marginTop: 12, color: '#2A2A27' }}>{l}</div>
           ))}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           {st && (
             <div style={{
-              display: 'flex', fontSize: 30, fontWeight: 700, padding: '10px 22px',
+              display: 'flex', fontSize: 28, fontWeight: 700, padding: '10px 20px',
               background: st.fill, color: st.color, border: `3px solid ${st.border}`,
             }}>
               {statusLabel}
             </div>
           )}
           {tag && (
-            <div style={{ display: 'flex', fontSize: 30, fontWeight: 700, padding: '10px 22px', background: '#fff', border: '3px solid #141414' }}>
+            <div style={{ display: 'flex', fontSize: 28, fontWeight: 700, padding: '10px 20px', background: '#fff', border: '3px solid #141414', marginLeft: 12 }}>
               {tag}
             </div>
           )}
         </div>
-      </div>
+      </OgFrame>
     ),
     { ...OG_SIZE, fonts },
   );
