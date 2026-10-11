@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     title,
     description,
     alternates: { canonical: `/kategorie/${slug}` },
-    openGraph: { title: `${title} | Akiwi.at`, description, images: [`/opengraph-image/${OG_VERSION}`], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
+    openGraph: { title: `${title} | Akiwi.at`, description, images: [{ url: `/opengraph-image/${OG_VERSION}`, width: 1200, height: 630 }], siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
   };
 }
 
