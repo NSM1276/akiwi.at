@@ -59,6 +59,19 @@ Halal essen in Österreich — ehrlich gekennzeichnet. www.akiwi.at #halal #wien
 ```
 YouTube Shorts-Titel: `Halal essen in Österreich — Akiwi.at`
 
+## 4. Instagram-Stories und Highlights (nur in der App)
+Erzeugen: `node social/make-stories.mjs` → `social/out/stories/` (1080×1920)
+
+- `story-1-online` — Sticker **Link** → https://www.akiwi.at
+- `story-2-status` — Highlight „Halal-Status“
+- `story-3-werbefrei` — Sticker **Link** → https://www.akiwi.at
+- `story-4-frage` — Sticker **Fragen** (Frage: „Welche Stadt zuerst?“)
+
+Highlights (Profil → Neu → Stories aus dem Archiv wählen → Titel → Cover „Aus Galerie“):
+- „Über uns“: story-1, story-3 · Cover `cover-ueber-uns`
+- „Halal-Status“: story-2 · Cover `cover-status`
+- „Städte“: story-4 · Cover `cover-staedte`
+
 ## Reihenfolge und Rhythmus für den Start
 1. Tag 1: Karussell 1 (Instagram und TikTok)
 2. Tag 3–4: Karussell 2
