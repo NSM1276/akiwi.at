@@ -50,6 +50,15 @@ Akiwi.at — three honest halal levels: confirmed, not checked, unknown.
 Nicht jedes „halal“ ist gleich: bestätigt, nicht geprüft, unbekannt. www.akiwi.at #halal #wien #österreich
 ```
 
+## 3. Kurzes Intro-Video (`akiwi-intro-9x16.mp4`, 18 s, ohne Ton)
+Erzeugen: `node social/make-posts.mjs` dann `node social/make-video.mjs` → `social/out/videos/`. Für Instagram Reels, TikTok und YouTube Shorts.
+
+**Text (alle drei)**
+```
+Halal essen in Österreich — ehrlich gekennzeichnet. www.akiwi.at #halal #wien #österreich #halalfood
+```
+YouTube Shorts-Titel: `Halal essen in Österreich — Akiwi.at`
+
 ## Reihenfolge und Rhythmus für den Start
 1. Tag 1: Karussell 1 (Instagram und TikTok)
 2. Tag 3–4: Karussell 2

@@ -31,10 +31,10 @@ Bilder (erzeugen: `node social/make-profile-assets.mjs`, Ergebnis in `social/out
 - Benutzername: `akiwi.at` (Ersatz: `akiwi_at`, `akiwi.austria`)
 - Name: `Akiwi – Halal in Österreich`
 - Bio (max. 80): `Halal-Guide für Österreich. Ehrlich, unabhängig, werbefrei.`
-- Link in der Bio: erst mit Business-Konto oder ab 1000 Followern möglich — in den Einstellungen prüfen.
+- Kein Business-Konto (verlangt eine öffentliche Adresse, beschränkt die Musik). Webadresse als zweite Bio-Zeile: `www.akiwi.at`. Anklickbarer Link erst ab 1000 Followern.
 
 ## YouTube
-- Kanalname: `Akiwi.at` · Handle: `@akiwi.at`
+- Kanalname: `Akiwi – Halal in Österreich` (YouTube erlaubt keine Namen im Stil einer Webadresse) · Handle: `@akiwi_at` (`@akiwi.at` war vergeben)
 - Beschreibung:
   ```
   Akiwi.at ist der Halal-Guide für Österreich: Restaurants, Imbisse und Cafés in Wien, Graz, Linz, Salzburg und Innsbruck.
