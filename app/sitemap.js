@@ -12,6 +12,7 @@ export default function sitemap() {
   return [
     page('/', 1),
     page('/search', 0.8),
+    page('/lokale', 0.5),
     page('/impressum', 0.3),
     // Landing pages — the entry points for "halal <city>", "halal <dish>" etc.
     ...listCities().map((c) => page(c.href, 0.9)),

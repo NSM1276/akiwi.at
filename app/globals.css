@@ -544,3 +544,26 @@ body:has(.ak-bottom-bar) { padding-bottom: 64px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ---------- /lokale: page for venue owners ---------- */
+.ak-lokale { max-width: 640px; }
+.ak-seg { display: inline-flex; border: var(--line) solid var(--ink); background: var(--paper); }
+.ak-seg button {
+  border: 0; background: transparent; color: var(--ink-2); cursor: pointer;
+  min-width: 42px; height: 34px; padding: 0 8px;
+  font-family: var(--font-display); font-weight: 700; font-size: 14px; letter-spacing: 0.08em;
+}
+.ak-seg button + button { border-left: var(--line) solid var(--ink); }
+.ak-seg button.is-on { background: var(--ink); color: #fff; }
+.ak-steps { list-style: none; margin: 0; padding: 0; background: var(--paper); border: var(--line) solid var(--ink); }
+.ak-steps li { display: flex; gap: 12px; padding: 12px 14px; font-size: 15px; line-height: 1.45; }
+.ak-steps li + li { border-top: 1px solid var(--rule-soft); }
+.ak-steps-n { font-family: var(--font-display); font-weight: 800; font-size: 20px; line-height: 1.1; color: var(--green); min-width: 14px; }
+.ak-lokale-cta { min-height: 54px; font-size: 16px; border-color: var(--ink); }
+.ak-lokale-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.ak-lokale-section { padding: 18px 0; border-top: 1px solid var(--rule-soft); }
+.ak-lokale-section:first-of-type { border-top: 0; }
+.ak-lokale-section p { margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: var(--ink-2); }
+.ak-lokale-plans { list-style: none; margin: 10px 0 0; padding: 0; }
+.ak-lokale-plans li { position: relative; padding: 6px 0 6px 20px; font-size: 15px; line-height: 1.45; }
+.ak-lokale-plans li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--green); }
