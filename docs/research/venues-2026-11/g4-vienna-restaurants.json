@@ -1,0 +1,1211 @@
+[
+  {
+    "id": "kent-1100",
+    "name": "Kent Favoriten",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://kentrestaurant.at",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "venue_claim",
+      "certifier": null,
+      "quote": "Entdecken Sie Meze, Fleisch- (halal) und Fischgerichte",
+      "sources": [
+        "https://kentrestaurant.at/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://kentrestaurant.at/",
+        "says": "Official site lists 4 restaurants: Penzing (Hütteldorfer Str. 117), Rudolfsheim-Fünfhaus (Märzstr. 39), Ottakring (Brunnengasse 67), Brigittenau (Jägerstr. 45). Text: 'Fleisch- (halal)'. No Favoriten branch listed.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "says": "Kent's own online-order shop (all branches): menu with prices, categories 'Bier' and 'Wein' (Efes 0,5 l 2,90 €); no pork dishes seen; today's hours shown 11:00-23:00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.theviennareview.at/food-drink/12139/kent-restaurant-favoriten",
+        "says": "Kent Restaurant Favoriten, Favoritenstraße 118, 1100 Wien, tel. 05/99 61 61-10, daily 7–24 (undated directory entry).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/kent_restaurant_1100",
+        "says": "Kent Restaurant 1100, Favoritenstraße 118; status shown as 'Geschlossen' (no date).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.herold.at/gelbe-seiten/wien/vvlPv/kent-restaurant-wien-10/",
+        "says": "The former 'Kent Restaurant Wien 10' Herold listing now shows Kent Catering, Benedikt-Schellinger-Gasse 21, 1150 Wien.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "NO trace of a Kent at Laxenburger Straße 41-43 (our address is wrong). The known Favoriten branch was at Favoritenstraße 118 (tel. +43 5 99616110), but it is missing from the official list of restaurants (only 14., 15., 16., 20. district), speisekarte.de marks it 'Geschlossen' and its Herold entry now points to Kent Catering. Probably closed, not confirmed: do not show until verified. Phone on file +43 1 606 58 70 and hours 06-23 are not supported by any source."
+  },
+  {
+    "id": "kent-1150",
+    "name": "Kent Rudolfsheim-Fünfhaus",
+    "status": "open",
+    "address": "Märzstraße 39, 1150 Wien",
+    "address_changed": true,
+    "district": 15,
+    "city": "Wien",
+    "phone": "+43 5 99616115",
+    "website": "https://kentrestaurant.at/rudolfsheim-fuenfhaus/",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch",
+      "Frühstück"
+    ],
+    "hours": {
+      "mon": "07:00-24:00",
+      "tue": "07:00-24:00",
+      "wed": "07:00-24:00",
+      "thu": "07:00-24:00",
+      "fri": "07:00-24:00",
+      "sat": "07:00-24:00",
+      "sun": "07:00-24:00"
+    },
+    "hours_source": "https://kentrestaurant.at/rudolfsheim-fuenfhaus/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "venue_claim",
+      "certifier": null,
+      "quote": "Entdecken Sie Meze, Fleisch- (halal) und Fischgerichte",
+      "sources": [
+        "https://kentrestaurant.at/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "menu_url": "https://kent-zustellung.at/online-essen-bestellen.html",
+    "prices": [
+      {
+        "item": "Döner Sandwich (Rind)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Dürüm Sandwich (Rind)",
+        "price": "6,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "6,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Adana Kebap mit Salat und Reis",
+        "price": "18,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Mercimek Çorbası (Linsensuppe)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Efes Pilsener 0,5 l Dose",
+        "price": "2,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kentrestaurant.at/",
+        "says": "Official site lists 4 restaurants: Penzing (Hütteldorfer Str. 117), Rudolfsheim-Fünfhaus (Märzstr. 39), Ottakring (Brunnengasse 67), Brigittenau (Jägerstr. 45). Text: 'Fleisch- (halal)'. No Favoriten branch listed.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "says": "Kent's own online-order shop (all branches): menu with prices, categories 'Bier' and 'Wein' (Efes 0,5 l 2,90 €); no pork dishes seen; today's hours shown 11:00-23:00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kentrestaurant.at/rudolfsheim-fuenfhaus/",
+        "says": "Märzstraße 39, 1150 Wien; Tel. 05 99 6161-15; täglich 07:00 bis 00:00, 365 Tage; Frühstücksbuffet Mo–Fr 8–13, Sa/So 8–14, € 16,90.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/lokal/5484/kent-restaurant",
+        "says": "Märzstraße 39–41; daily 7–24; garden 60 seats, winter garden 130.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file 'Märzstraße 33' is wrong: official site says Märzstraße 39 (Falter: 39–41). Phone on file +43 1 982 54 27 is wrong: official 05 99 6161-15. Hours on file 06-23, real daily 07:00-24:00 (official site; Falter/Vienna Review also 7–24). Breakfast buffet € 16,90. Prices are from Kent's own online-order shop (kent-zustellung.at, shared by all branches), marked delivery_app because in-house prices may differ. Alcohol: beer and wine are on that menu. Pork: none on the online menu (site advertises halal meat); the in-house PDF menu is an image scan and could not be read. Hours: official branch page gives one daily span; the online shop delivers 11:00-23:00."
+  },
+  {
+    "id": "kent-1160",
+    "name": "Kent Ottakring",
+    "status": "open",
+    "address": "Brunnengasse 67, 1160 Wien",
+    "address_changed": false,
+    "district": 16,
+    "city": "Wien",
+    "phone": "+43 1 4059173",
+    "website": "https://kentrestaurant.at/ottakring/",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch",
+      "Frühstück"
+    ],
+    "hours": {
+      "mon": "06:00-02:00",
+      "tue": "06:00-02:00",
+      "wed": "06:00-02:00",
+      "thu": "06:00-02:00",
+      "fri": "06:00-02:00",
+      "sat": "06:00-02:00",
+      "sun": "06:00-02:00"
+    },
+    "hours_source": "https://kentrestaurant.at/ottakring/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "venue_claim",
+      "certifier": null,
+      "quote": "Entdecken Sie Meze, Fleisch- (halal) und Fischgerichte",
+      "sources": [
+        "https://kentrestaurant.at/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "menu_url": "https://kentrestaurant.at/speisekarte-ottakring/",
+    "prices": [
+      {
+        "item": "Döner Sandwich (Rind)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Dürüm Sandwich (Rind)",
+        "price": "6,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "6,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Adana Kebap mit Salat und Reis",
+        "price": "18,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Mercimek Çorbası (Linsensuppe)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Efes Pilsener 0,5 l Dose",
+        "price": "2,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kentrestaurant.at/",
+        "says": "Official site lists 4 restaurants: Penzing (Hütteldorfer Str. 117), Rudolfsheim-Fünfhaus (Märzstr. 39), Ottakring (Brunnengasse 67), Brigittenau (Jägerstr. 45). Text: 'Fleisch- (halal)'. No Favoriten branch listed.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "says": "Kent's own online-order shop (all branches): menu with prices, categories 'Bier' and 'Wein' (Efes 0,5 l 2,90 €); no pork dishes seen; today's hours shown 11:00-23:00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kentrestaurant.at/ottakring/",
+        "says": "Brunnengasse 67, 1160 Wien; Telefon 01 / 405 91 73; täglich 06:00 bis 02:00, 7 Tage; Stammhaus seit 1990; breakfast buffet € 16,90.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.theviennareview.at/food-drink/5484/kent-restaurant",
+        "says": "Brunnengasse 67, opening hours daily 6–2.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address OK. Phone on file +43 1 405 56 27 is wrong: official 01 405 91 73. Hours on file 06-23, real daily 06:00-02:00 (official site, confirmed by Vienna Review). Zabihah shows 09-22 (outdated). Prices are from Kent's own online-order shop (kent-zustellung.at, shared by all branches), marked delivery_app because in-house prices may differ. Alcohol: beer and wine are on that menu. Pork: none on the online menu (site advertises halal meat); the in-house PDF menu is an image scan and could not be read. Hours: official branch page gives one daily span; the online shop delivers 11:00-23:00."
+  },
+  {
+    "id": "kent-1200",
+    "name": "Kent Brigittenau",
+    "status": "open",
+    "address": "Jägerstraße 45, 1200 Wien",
+    "address_changed": true,
+    "district": 20,
+    "city": "Wien",
+    "phone": "+43 5 99616120",
+    "website": "https://kentrestaurant.at/brigittenau/",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch",
+      "Frühstück"
+    ],
+    "hours": {
+      "mon": "07:00-24:00",
+      "tue": "07:00-24:00",
+      "wed": "07:00-24:00",
+      "thu": "07:00-24:00",
+      "fri": "07:00-24:00",
+      "sat": "07:00-24:00",
+      "sun": "07:00-24:00"
+    },
+    "hours_source": "https://kentrestaurant.at/brigittenau/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "venue_claim",
+      "certifier": null,
+      "quote": "Entdecken Sie Meze, Fleisch- (halal) und Fischgerichte",
+      "sources": [
+        "https://kentrestaurant.at/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "menu_url": "https://kent-zustellung.at/online-essen-bestellen.html",
+    "prices": [
+      {
+        "item": "Döner Sandwich (Rind)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Dürüm Sandwich (Rind)",
+        "price": "6,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "6,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Adana Kebap mit Salat und Reis",
+        "price": "18,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Mercimek Çorbası (Linsensuppe)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Efes Pilsener 0,5 l Dose",
+        "price": "2,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kentrestaurant.at/",
+        "says": "Official site lists 4 restaurants: Penzing (Hütteldorfer Str. 117), Rudolfsheim-Fünfhaus (Märzstr. 39), Ottakring (Brunnengasse 67), Brigittenau (Jägerstr. 45). Text: 'Fleisch- (halal)'. No Favoriten branch listed.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "says": "Kent's own online-order shop (all branches): menu with prices, categories 'Bier' and 'Wein' (Efes 0,5 l 2,90 €); no pork dishes seen; today's hours shown 11:00-23:00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kentrestaurant.at/brigittenau/",
+        "says": "Jägerstraße 45, 1200 Wien; Telefon 05 99 6161-20; täglich 07:00 bis 00:00; Frühstücksbuffet Mo–Fr 8–13, Sa/So 8–14, € 16,90.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file 'Jägerstraße 40' is wrong: official Jägerstraße 45 (Lieferando brand page also 45). Phone on file +43 1 330 33 04 is wrong: official 05 99 6161-20. Hours on file 06-23, real daily 07:00-24:00 (official only; no second independent source found). Prices are from Kent's own online-order shop (kent-zustellung.at, shared by all branches), marked delivery_app because in-house prices may differ. Alcohol: beer and wine are on that menu. Pork: none on the online menu (site advertises halal meat); the in-house PDF menu is an image scan and could not be read. Hours: official branch page gives one daily span; the online shop delivers 11:00-23:00."
+  },
+  {
+    "id": null,
+    "name": "Kent Penzing",
+    "status": "open",
+    "address": "Hütteldorfer Straße 117, 1140 Wien",
+    "address_changed": false,
+    "district": 14,
+    "city": "Wien",
+    "phone": "+43 5 99616114",
+    "website": "https://kentrestaurant.at/penzing/",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch",
+      "Frühstück"
+    ],
+    "hours": {
+      "mon": "07:00-24:00",
+      "tue": "07:00-24:00",
+      "wed": "07:00-24:00",
+      "thu": "07:00-24:00",
+      "fri": "07:00-24:00",
+      "sat": "07:00-24:00",
+      "sun": "07:00-24:00"
+    },
+    "hours_source": "https://kentrestaurant.at/penzing/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "venue_claim",
+      "certifier": null,
+      "quote": "Entdecken Sie Meze, Fleisch- (halal) und Fischgerichte",
+      "sources": [
+        "https://kentrestaurant.at/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://kent-zustellung.at/online-essen-bestellen.html"
+      ]
+    },
+    "menu_url": "https://kent-zustellung.at/online-essen-bestellen.html",
+    "prices": [
+      {
+        "item": "Döner Sandwich (Rind)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Dürüm Sandwich (Rind)",
+        "price": "6,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "6,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Adana Kebap mit Salat und Reis",
+        "price": "18,50",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Mercimek Çorbası (Linsensuppe)",
+        "price": "5,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Efes Pilsener 0,5 l Dose",
+        "price": "2,90",
+        "source": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "kind": "delivery_app",
+        "seen": "2026-11-12"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://kentrestaurant.at/",
+        "says": "Official site lists 4 restaurants: Penzing (Hütteldorfer Str. 117), Rudolfsheim-Fünfhaus (Märzstr. 39), Ottakring (Brunnengasse 67), Brigittenau (Jägerstr. 45). Text: 'Fleisch- (halal)'. No Favoriten branch listed.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kent-zustellung.at/online-essen-bestellen.html",
+        "says": "Kent's own online-order shop (all branches): menu with prices, categories 'Bier' and 'Wein' (Efes 0,5 l 2,90 €); no pork dishes seen; today's hours shown 11:00-23:00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://kentrestaurant.at/penzing/",
+        "says": "Hütteldorfer Str. 117, 1140 Wien; Telefon 05 99 6161-14; täglich 07:00 bis 00:00, ganzes Jahr; seit 2014; Frühstück à la carte.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Missing in our data; not in _existing-input.json (no Kent in 1140). Lieferando's Kent brand page also lists Hütteldorfer Straße 117. Prices are from Kent's own online-order shop (kent-zustellung.at, shared by all branches), marked delivery_app because in-house prices may differ. Alcohol: beer and wine are on that menu. Pork: none on the online menu (site advertises halal meat); the in-house PDF menu is an image scan and could not be read. Hours: official branch page gives one daily span; the online shop delivers 11:00-23:00.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Kent chain, whose official site states its meat dishes are halal ('Fleisch- (halal)')."
+  },
+  {
+    "id": "pars-hauptrestaurant",
+    "name": "Restaurant Pars",
+    "status": "open",
+    "address": "Lerchenfelder Straße 148, 1080 Wien",
+    "address_changed": false,
+    "district": 8,
+    "city": "Wien",
+    "phone": "+43 1 4058245",
+    "website": "https://www.pars.at",
+    "instagram": "https://www.instagram.com/restaurant_pars/",
+    "categories": [
+      "Restaurant",
+      "Persisch"
+    ],
+    "hours": {
+      "mon": "closed",
+      "tue": "11:30-22:00",
+      "wed": "11:30-22:00",
+      "thu": "11:30-22:00",
+      "fri": "11:30-22:00",
+      "sat": "11:30-22:00",
+      "sun": "closed"
+    },
+    "hours_source": "https://www.pars.at/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "All food at this restaurant is certified halal (Zabihah; staff verbal assurance, issue report open)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/ca207c76-7767-11ef-95ae-6045bdeb9f57/pars-wien-vienna"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "https://www.zabihah.com/restaurants/ca207c76-7767-11ef-95ae-6045bdeb9f57/pars-wien-vienna"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf"
+      ]
+    },
+    "menu_url": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+    "prices": [
+      {
+        "item": "Kabab Kubideh (Mittagsmenü)",
+        "price": "15,90",
+        "source": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "kind": "venue",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Kabab Kubideh (à la carte, mit Basmati-Reis & Salat)",
+        "price": "26,00",
+        "source": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "kind": "venue",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Khoreschte Fesendjan",
+        "price": "19,50",
+        "source": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "kind": "venue",
+        "seen": "2026-11-12"
+      },
+      {
+        "item": "Dugh (Joghurtgetränk mit Minze) 0,5 l",
+        "price": "5,80",
+        "source": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "kind": "venue",
+        "seen": "2026-11-12"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pars.at/",
+        "says": "Restaurant Pars, Lerchenfelder Straße 148, 1080 Wien; Öffnungszeiten Dienstag bis Samstag 11:30–22:00; Tel. 01/4058245; family-run since 1982. No halal statement on the site.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pars.at/wp-content/uploads/2025/09/Pars_Speisekarte_2025_Neu.pdf",
+        "says": "Menu 2025 (PDF uploaded 2025-09): lamb/beef/chicken kababs and stews; drinks with Biere, Hausweine and a full Weinkarte; no pork dishes.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/lokal/2788/pars",
+        "says": "Persian cuisine, lunch menu from 15 €, Schanigarten 24 seats; Di–Sa.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/ca207c76-7767-11ef-95ae-6045bdeb9f57/pars-wien-vienna",
+        "says": "Zabihah lists Pars as halal ('certified'), but notes staff verbal assurance, an issue report under review, and alcohol served.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Hours on file are wrong: on file open 7 days; official site says Tue–Sat 11:30–22:00, closed Sun and Mon. Phone and address OK. Halal: the venue makes no halal claim on its website or menu; only Zabihah (user-based, contested) and vienna-trips.at ('Halal-style') say halal, so third_party only. Alcohol is served (wine list, beer). Price mapping from the two-column PDF is slightly uncertain; 15,90 is the lunch-menu Kubideh."
+  },
+  {
+    "id": "pars-grill",
+    "name": "Pars Grill",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 8,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Imbiss",
+      "Persisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://www.pars.at/",
+        "says": "Official Pars website shows only one restaurant, at Lerchenfelder Straße 148; no grill/Imbiss branch.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No trace found. No 'Pars Grill' at Lerchenfelder Straße 124 in any source; the official Pars site has a single location (No. 148). Probably an invented duplicate in our data."
+  },
+  {
+    "id": "mrbin-1100",
+    "name": "Mr. Bin Favoriten",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Imbiss",
+      "Orientalisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found. Searches for 'Mr. Bin' / 'Mister Bin' in Vienna (web, Falter, delivery listings) return nothing; no venue of that name at Favoritenstraße 131, 1100 Wien. The chain probably does not exist under this name; phone on file not verifiable."
+  },
+  {
+    "id": "mrbin-1220",
+    "name": "Mr. Bin Donaustadt",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 22,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Imbiss",
+      "Orientalisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found. Searches for 'Mr. Bin' / 'Mister Bin' in Vienna (web, Falter, delivery listings) return nothing; no venue of that name at Kagraner Platz 1 (K1 Center), 1220 Wien. At Kagraner Platz 1-4 the only snack bar found is 'Noodle King' (Asian), unrelated and not a replacement. The chain probably does not exist under this name; phone on file not verifiable."
+  },
+  {
+    "id": "damas-restaurant",
+    "name": "Damas Restaurant",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 4,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Syrisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://damas.at",
+        "says": "damas.at (website on file) is a parked domain offered for sale via Nameshift, no restaurant site.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No trace found of a Damas restaurant at Viktorgasse 22, 1040 Wien. The website on file (damas.at) is a domain-for-sale page. Viktorgasse 22 / Weyringergasse 36 appears in a 1000things list for a different, non-Syrian venue (daslokal.at). Similar names elsewhere in Vienna, NOT verified as the same business: 'Al Damas Restaurant', Herbststraße, 1160 Wien (swipein/speisekarte.de) and a 'Damas Restaurant' in the 15th district on Quandoo (platform now shut down). Owner may want Al Damas researched separately as a new venue."
+  },
+  {
+    "id": "damas-grand",
+    "name": "Damas Grand",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Syrisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://damas.at",
+        "says": "damas.at (website on file) is a parked domain offered for sale via Nameshift, no restaurant site.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No trace found of a Damas restaurant at Laxenburger Straße 8, 1100 Wien. The website on file (damas.at) is a domain-for-sale page. Similar names elsewhere in Vienna, NOT verified as the same business: 'Al Damas Restaurant', Herbststraße, 1160 Wien (swipein/speisekarte.de) and a 'Damas Restaurant' in the 15th district on Quandoo (platform now shut down). Owner may want Al Damas researched separately as a new venue."
+  },
+  {
+    "id": "derya-1200",
+    "name": "Derya Brigittenau",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 20,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found of a Turkish restaurant 'Derya' at Adalbert-Stifter-Straße 22, 1200 Wien. The only Vienna 'Derya' found is 'Steakhouse Derya', Columbusgasse 72, 1100 Wien (steak/BBQ, Herold: international cuisine), a different address and concept, not a replacement. "
+  },
+  {
+    "id": "derya-1100",
+    "name": "Derya Favoriten",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Türkisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found of a Turkish restaurant 'Derya' at Quellenstraße 103, 1100 Wien. The only Vienna 'Derya' found is 'Steakhouse Derya', Columbusgasse 72, 1100 Wien (steak/BBQ, Herold: international cuisine), a different address and concept, not a replacement. Nearby Turkish venues found on Quellenstraße are Gürbey (No. 100) and Döner'ci (No. 171), different businesses. "
+  },
+  {
+    "id": "levante-city",
+    "name": "Levante City",
+    "status": "permanently_closed",
+    "address": null,
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.falter.at/lokal/3365/verde",
+        "says": "Falter now lists 'Verde' (Italian) at Wallnerstraße 2, 1010 Wien, Mo–Do, So 9–24, Fr–Sa 9–1.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/zeitung/20080521/levante",
+        "says": "2008 Falter review: Levante at Wallnerstraße 2 (historic location).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "http://www.levante.at/",
+        "says": "Official Levante site lists a single restaurant: Walfischgasse 8, 1010 Wien.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Levante at Wallnerstraße 2 existed (Falter 2008), but the address is now 'Verde' (Italian) per Falter, and levante.at lists only Walfischgasse 8. Treat as closed. Phone on file +43 1 533 23 26 not found anywhere. The surviving Levante is added as a new entry (Walfischgasse 8); the owner can decide whether to re-use this id for it."
+  },
+  {
+    "id": "levante-mariahilf",
+    "name": "Levante Mariahilfer Straße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 7,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "http://www.levante.at/",
+        "says": "Official Levante site lists only Walfischgasse 8.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.quandoo.at/en/place/levante-international-mariahilfer-strase-5107/about",
+        "says": "Old Quandoo entry 'Levante International Mariahilfer Straße' in the 6th district, no house number; Quandoo has shut down, so the entry is not current.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No trace at Mariahilfer Straße 80, 1070 Wien. An old Quandoo entry names a 'Levante Mariahilfer Straße' in the 6th (not 7th) district without a house number; the official Levante site lists no such branch. Probably closed or never at this address. Phone on file not verifiable."
+  },
+  {
+    "id": "levante-landstrasse",
+    "name": "Levante Landstraße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 3,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "http://www.levante.at/",
+        "says": "Official Levante site lists only Walfischgasse 8.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No trace found of a Levante at Landstraßer Hauptstraße 25, 1030 Wien; not on the official site; no directory entry found."
+  },
+  {
+    "id": null,
+    "name": "Levante",
+    "status": "open",
+    "address": "Walfischgasse 8, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 1 5130315",
+    "website": "http://www.levante.at",
+    "instagram": "https://www.instagram.com/levante.at/",
+    "categories": [
+      "Restaurant",
+      "Levantinisch",
+      "Türkisch"
+    ],
+    "hours": {
+      "mon": "11:30-22:00",
+      "tue": "11:30-22:00",
+      "wed": "11:30-22:00",
+      "thu": "11:30-22:00",
+      "fri": "11:30-22:00",
+      "sat": "11:30-22:00",
+      "sun": "11:30-22:00"
+    },
+    "hours_source": "http://www.levante.at/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "menu features halal schnitzel (Wanderlog summary)",
+      "sources": [
+        "https://wanderlog.com/place/details/4058250/levante-walfisch"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "http://www.levante.at/"
+      ]
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": "http://www.levante.at/",
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "http://www.levante.at/",
+        "says": "Levante – Levantinische Küche seit 1989, Walfischgasse 8, 1010 Wien; Montag–Sonntag 11:30–22:00; +43 1 513 03 15; 'Weine & Cocktails'; no halal statement.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/lokal/3939/levante-restaurant-walfischgasse",
+        "says": "Levante Walfischgasse 8, täglich 11–21 (may differ in summer).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://wanderlog.com/place/details/4058250/levante-walfisch",
+        "says": "Third-party summary mentions halal schnitzel on the menu.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "The only Levante restaurant confirmed today (official site). Not in _existing-input.json (Vapiano Walfischgasse 11 is a different venue). Hours: official 11:30–22:00 daily vs Falter 11–21; official preferred. No prices extracted (menu PDF on site not parsed). Pork: no source either way. Halal evidence is weak and alcohol is served; owner should decide whether it belongs in the guide. Falstaff 'Levante cuisine' entries at Gertrude-Fröhlich-Sandner-Straße 3/2 (1100) and Taborstraße 19 (1020, that address is Bahur Tov, kosher) are a cuisine category, not Levante branches.",
+    "new_branch": true,
+    "why_halal_friendly": "Weak: Levantine/Turkish charcoal grill (Adana, Şiş, Köfte); only a third-party listing mentions halal schnitzel, the venue makes no halal claim and serves wine and cocktails."
+  },
+  {
+    "id": "damas-sweets-city",
+    "name": "Damas Sweets City",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Konditorei",
+      "Arabisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found. No Arabic sweets shop 'Damas' / 'Damas Sweets' in Vienna in any source; nothing at Opernring 19, 1010 Wien. Opernring 19 is a listed Ringstraße building (Heinrichshof); no sweets shop of this name found there. Phone on file not verifiable."
+  },
+  {
+    "id": "damas-sweets-favoriten",
+    "name": "Damas Sweets Favoriten",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Konditorei",
+      "Arabisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "low",
+    "sources": [],
+    "notes": "No trace found. No Arabic sweets shop 'Damas' / 'Damas Sweets' in Vienna in any source; nothing at Quellenstraße 101, 1100 Wien. Phone on file not verifiable."
+  }
+]

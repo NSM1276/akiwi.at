@@ -1,0 +1,106 @@
+{
+  "seen": "2026-11-12",
+  "certifiers": [
+    {
+      "name": "Islamische Glaubensgemeinschaft in Österreich (IGGÖ), Halal Department / IGGÖ Dienstleistungs-GmbH",
+      "website": "https://www.derislam.at/service/halal/",
+      "country": "AT",
+      "certifies": "Issues IGGÖ halal certificates under its own Halal-Richtlinien (passed by the Oberster Rat, September 2022) and the OIC/SMIIC 1:2019 standard. Scopes on the current list: meat processing (incl. döner), fish, water. Also accredits other halal certifiers (since 2019) and grants the 'Halal-Ermächtigungen' required for official approval of ritual slaughter, e.g. at Eid al-Adha (mandatory course since June 2022). Its page names food, cosmetics and pharma.",
+      "public_list": true,
+      "public_list_url": "https://www.derislam.at/service/halal/zertifizierte-betriebe/",
+      "public_list_contents": "3 entries on 2026-11-12: Blün GmbH (fish, 1220 Wien), SANET Fleischwarenproduktion GmbH (meat and döner, 1230 Wien), Hallstein Wasser (4831 Obertraun). No restaurants, Imbiss or caterers.",
+      "notes": "This is the only Austrian certifier with a public, current, per-company register: number, scope, validity, PDF certificate. The list says certification covers only the listed scope, not every product or site of a company. A Vienna commercial court ruled in 2018 (not final at the time) that IGGÖ may not claim to be the only body allowed to certify halal in Austria. Under the IslamG, halal certification is a free trade that private firms can also offer.",
+      "sources": [
+        {"url": "https://www.derislam.at/service/halal/", "says": "Halal Department and IGGÖ Dienstleistungs GmbH; guidelines since Sept 2022; IGGÖ as accreditation body for halal certifiers since 2019; mandatory course for Halal-Ermächtigungen since June 2022.", "seen": "2026-11-12"},
+        {"url": "https://www.derislam.at/service/halal/zertifizierte-betriebe/", "says": "Register of IGGÖ-certified companies (3 entries, all valid).", "seen": "2026-11-12"},
+        {"url": "https://www.islamportal.at/beitraege/artikel/halal-zertifizierung-in-oesterreich", "says": "Overview of IGGÖ, HQC and IIDC (article dated 15.05.2023).", "seen": "2026-11-12"},
+        {"url": "https://www.profil.at/oesterreich/islamische-glaubensgemeinschaft-rechtsbruch-10602900", "says": "Court ruling against IGGÖ's claim of exclusive halal certification.", "seen": "2026-11-12"}
+      ]
+    },
+    {
+      "name": "Islamic Information Documentation and Certification GmbH (IIDC), also called Islamisches Informations- und Dokumentationszentrum (IIDZ)",
+      "website": "https://www.iidc.at",
+      "country": "AT (Traun, Upper Austria)",
+      "certifies": "Private, accredited halal certification body for food and meat producers, slaughterhouses and exporters. Works to the UAE standard (UAE.S 2055) and helped draft the Austrian standard ONR 142000. Accredited by Turkey's HAK (the first European body with HAK accreditation) and recognised by SFDA (Saudi Arabia), MOIAT (UAE), CICOT (Thailand) and others.",
+      "public_list": false,
+      "public_list_url": null,
+      "public_list_contents": null,
+      "notes": "By its own (older) claim the market leader with about 90% of Austrian halal certificates and over 100 certified Austrian companies (islamportal 2023). The website is a JS app with login/register; its public API returns only the terms of business. No public list of certified companies found. Certificates usually surface only as PDFs on the certified companies' own sites.",
+      "sources": [
+        {"url": "https://english.hak.gov.tr/news/islamic-information-documentation-and-certification-gmbh-iidc-accredited-by-hak", "says": "IIDC accredited by HAK, first European certification body with HAK accreditation.", "seen": "2026-11-12"},
+        {"url": "https://www.islamportal.at/beitraege/artikel/halal-zertifizierung-in-oesterreich", "says": "IIDC: private accredited certifier, UAE S.2055, involved in ONR 142000, over 100 certified Austrian companies (15.05.2023).", "seen": "2026-11-12"},
+        {"url": "https://oega.boku.ac.at/wp-content/uploads/2025/01/28.11_Kasparek_et_al.pdf", "says": "BOKU study (2019): the three Austrian certification bodies are IGGÖ, IIDC and HQC.", "seen": "2026-11-12"},
+        {"url": "https://www.iidc.at", "says": "Official site (JS app); no public client list.", "seen": "2026-11-12"}
+      ]
+    },
+    {
+      "name": "Halal Quality Control (HQC); Austrian entity Halal Quality Control Austria GmbH / HQC Halal quality control GmbH",
+      "website": "https://hqc.eu",
+      "country": "International group (NL/DE); Austrian GmbH registered FN 469056 (Vienna commercial court; UAE directory lists Dametz Str. 6, 4020 Linz)",
+      "certifies": "Industrial halal certification (ingredients, chemicals, dairy, meat, döner producers), Indonesian standard / HAS 23000; runs its own 'HQC Scheme for Meat'.",
+      "public_list": true,
+      "public_list_url": "https://hqc.eu/en/clients",
+      "public_list_contents": "Group-wide client list, filterable by category (e.g. 'Halal Meat Products', id=108). It is mostly German and other EU industrial firms. Meat clients include German döner producers (Polat Dönerproduktion, Meva By Kah-ra-man Dönerproduktion, Baha Food, Yayla Türk), which say they supply across Europe. No Austrian restaurants and no Austrian company identified on the list.",
+      "notes": "In Austria since 2017. Some recognitions in public lists show expired dates (CICOT expiry 30/04/2025, MOIAT 21/12/2024), so its current Austrian accreditation status is unclear. No source ties a specific Austrian döner shop to an HQC-certified supplier.",
+      "sources": [
+        {"url": "https://hqc.eu/en/clients?id=108", "says": "HQC certified customers, category Halal Meat Products.", "seen": "2026-11-12"},
+        {"url": "https://hqc.eu/en/client_details/115?slug=Polat-D%C3%B6nerproduktion-GmbH", "says": "Polat Dönerproduktion (Mönchengladbach, DE), certified since 2021, delivers kebab spits throughout Europe.", "seen": "2026-11-12"},
+        {"url": "https://www.islamportal.at/beitraege/artikel/halal-zertifizierung-in-oesterreich", "says": "HQC: Dutch certifier based in Vienna since summer 2017, Indonesian standard, HAS 23000.", "seen": "2026-11-12"},
+        {"url": "https://www.evi.gv.at/f/469056p", "says": "Official publication entry for FN 469056 (HQC Austria GmbH).", "seen": "2026-11-12"}
+      ]
+    },
+    {
+      "name": "Halal Control GmbH (Germany)",
+      "website": null,
+      "country": "DE (Rüsselsheim)",
+      "certifies": "German halal certifier for food and industrial products. According to a GTAI webinar Q&A it does not certify meat or meat products.",
+      "public_list": false,
+      "public_list_url": null,
+      "public_list_contents": null,
+      "notes": "Included only because the name is often confused with Austrian bodies. Not relevant for Austrian restaurants or butchers; no Austrian meat business found under this certifier.",
+      "sources": [
+        {"url": "https://www.gtai.de/resource/blob/1950704/268d0a3af9107e1c710c5eedb157c8a3/Teilnehmerfragen_Halal-Webinar_GTAI_ABS_20251203.pdf", "says": "GTAI halal webinar Q&A (03.12.2025): Halal Control does not certify meat-containing products.", "seen": "2026-11-12"}
+      ]
+    }
+  ],
+  "certified_venues": [],
+  "certified_venues_note": "No restaurant, Imbiss or caterer in Austria appears on any public certifier list found (IGGÖ register: 3 companies, none in gastronomy; IIDC: no public list; HQC: group list without Austrian gastronomy). Restaurant-level 'certified' claims exist only in third-party directories such as Zabihah, which never name the certifier, so they do not count as certificate evidence under the brief.",
+  "certified_suppliers": [
+    {
+      "name": "SANET Fleischwarenproduktion GmbH",
+      "address": "Laxenburger Straße 365/A8, 1230 Wien",
+      "certifier": "IGGÖ",
+      "certificate": "001 07/2026, valid 15.07.2026 – 31.07.2027, status 'Gültig'",
+      "scope": "Cutting, processing, production and trade of meat: veal, lamb, beef, beef döner, veal döner",
+      "source": "https://www.derislam.at/service/halal/zertifizierte-betriebe/",
+      "certificate_pdf": "https://www.derislam.at/documents/213/IGG%C3%96_Halal-Zertifikat_SANET.pdf",
+      "seen": "2026-11-12",
+      "relevance": "Vienna döner/meat producer with a current IGGÖ certificate. No public source names which döner shops it supplies."
+    },
+    {
+      "name": "Blün GmbH",
+      "address": "Schafflerhofstraße 156, 1220 Wien",
+      "certifier": "IGGÖ",
+      "certificate": "001 08/2026, valid 01.08.2026 – 15.08.2027, status 'Gültig'",
+      "scope": "Fish farming and processing: African catfish (Wels) fillet, smoked, gravad, 'Wiener Wels', fish Leberkäse",
+      "source": "https://www.derislam.at/service/halal/zertifizierte-betriebe/",
+      "seen": "2026-11-12",
+      "relevance": "Fish producer; restaurants serving Blün fish could cite it."
+    },
+    {
+      "name": "Hallstein Wasser",
+      "address": "Obertraun 311, 4831 Obertraun",
+      "certifier": "IGGÖ",
+      "certificate": "001 03/2026, valid 15.03.2026 – 01.04.2027",
+      "scope": "Bottled water",
+      "source": "https://www.derislam.at/service/halal/zertifizierte-betriebe/",
+      "seen": "2026-11-12",
+      "relevance": "Not relevant for venues."
+    }
+  ],
+  "doener_meat_suppliers_named_in_sources": [
+    {"name": "SANET Fleischwarenproduktion GmbH", "source": "https://www.derislam.at/service/halal/zertifizierte-betriebe/", "says": "IGGÖ-certified beef/veal döner producer in 1230 Wien."},
+    {"name": "Polat Dönerproduktion GmbH, Meva By Kah-ra-man Dönerproduktion GmbH, Baha Food GmbH (all DE)", "source": "https://hqc.eu/en/clients?id=108", "says": "HQC-certified German döner producers that say they supply across Europe. No source ties them to Austrian shops."},
+    {"name": "Etsan, Hizmet, ER&ER (Austro-Turkish supermarkets)", "source": "https://www.profil.at/wirtschaft/halal-wien-vorschriften-fleisch-lebensmittelverkauf-7657662", "says": "Halal products certified by IGGÖ or IIDZ (article from 25.10.2016, outdated)."}
+  ]
+}

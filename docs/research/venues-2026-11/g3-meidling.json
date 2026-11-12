@@ -1,0 +1,1233 @@
+[
+ {
+  "id": "alaturka-1030",
+  "name": "Alaturka Erdbergstraße",
+  "status": "open",
+  "address": "Erdbergstraße 93, 1030 Wien",
+  "address_changed": false,
+  "district": 3,
+  "city": "Wien",
+  "phone": "+43 699 10327337",
+  "website": "https://www.alaturka-doener.at/",
+  "instagram": "https://www.instagram.com/alaturkawien/",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "10:00-21:00"
+  },
+  "hours_source": "https://www.alaturka-doener.at/standorte/ (official, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.alaturka-doener.at/",
+    "https://www.alaturka-doener.at/standorte/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€",
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "https://www.alaturka-doener.at/standorte/",
+    "says": "Official chain location list: address, hours and phone for all 5 branches",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/",
+    "says": "Chain site: kebab from veal, chicken or vegetarian; Turkish dishes + pizza; no halal wording on home, Standorte or Über uns",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.falter.at/lokal/13667/alaturka",
+    "says": "Falter: Alaturka, Erdbergstraße 93, kebab/Turkish takeaway, open Sundays (search snippet)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Hours on file Mon-Fri 10-22, Sat-Sun 11-22; official site now says daily 10:00-21:00. Phone and address match. Branch menu link on the official site is broken (404), so no branch prices. Halal: the chain's own site never says halal (checked home, Standorte, Über uns, Wiener Neustadt menu); no certifier or directory entry found either. Pork: the Wiener Neustadt menu uses Putenschinken and (Rind)Salami, but pizza 'Cardinale' just says 'Schinken' (type not stated) - unclear. Alcohol: none on the Wiener Neustadt drinks list (official); the other branch menus linked from the site return 'Seite nicht gefunden', so their drinks lists were not checked (alcohol=false for Vienna branches is inferred from the chain menu - weak)."
+ },
+ {
+  "id": "alaturka-1120",
+  "name": "Alaturka Am Schöpfwerk",
+  "status": "open",
+  "address": "Am Schöpfwerk (bei U6 Am Schöpfwerk), 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 699 10452687",
+  "website": "https://www.alaturka-doener.at/",
+  "instagram": "https://www.instagram.com/alaturkawien/",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "10:00-21:00"
+  },
+  "hours_source": "https://www.alaturka-doener.at/standorte/ (official, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.alaturka-doener.at/",
+    "https://www.alaturka-doener.at/standorte/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€",
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "https://www.alaturka-doener.at/standorte/",
+    "says": "Official chain location list: address, hours and phone for all 5 branches",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/",
+    "says": "Chain site: kebab from veal, chicken or vegetarian; Turkish dishes + pizza; no halal wording on home, Standorte or Über uns",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.falter.at/lokal/13668/alaturka",
+    "says": "Falter: Alaturka Am Schöpfwerk (U6) - kebab with house-made bread, veal/chicken/veg, pide (search snippet)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "PHONE OUTDATED: on file +43 681 10359266, official site +43 699 104 52 687. Hours on file Mon-Fri 9-21, Sat-Sun 10-21; official: daily 10:00-21:00. Official site gives no house number ('Am Schöpfwerk, U6 Stadion' [sic]); our 'Am Schöpfwerk 68' could not be confirmed - check on Google Maps. Branch menu link broken (404). Halal: the chain's own site never says halal (checked home, Standorte, Über uns, Wiener Neustadt menu); no certifier or directory entry found either. Pork: the Wiener Neustadt menu uses Putenschinken and (Rind)Salami, but pizza 'Cardinale' just says 'Schinken' (type not stated) - unclear. Alcohol: none on the Wiener Neustadt drinks list (official); the other branch menus linked from the site return 'Seite nicht gefunden', so their drinks lists were not checked (alcohol=false for Vienna branches is inferred from the chain menu - weak)."
+ },
+ {
+  "id": "alaturka-1150",
+  "name": "Alaturka MaHü",
+  "status": "open",
+  "address": "Mariahilfer Straße 134, 1150 Wien",
+  "address_changed": false,
+  "district": 15,
+  "city": "Wien",
+  "phone": "+43 678 1314354",
+  "website": "https://www.alaturka-doener.at/",
+  "instagram": "https://www.instagram.com/alaturkawien/",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "10:00-00:00",
+   "tue": "10:00-00:00",
+   "wed": "10:00-00:00",
+   "thu": "10:00-00:00",
+   "fri": "10:00-00:00",
+   "sat": "10:00-00:00",
+   "sun": "11:00-00:00"
+  },
+  "hours_source": "https://www.alaturka-doener.at/standorte/ (official, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.alaturka-doener.at/",
+    "https://www.alaturka-doener.at/standorte/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "menu_url": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+  "prices": [
+   {
+    "item": "Lahmacun",
+    "price": "6,00",
+    "source": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "kind": "third_party"
+   },
+   {
+    "item": "Kebap Menü",
+    "price": "9,00",
+    "source": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "kind": "third_party"
+   },
+   {
+    "item": "Dürüm Menü (Huhn oder Kalb/Lamm)",
+    "price": "9,50",
+    "source": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "kind": "third_party"
+   },
+   {
+    "item": "Steak Döner Teller",
+    "price": "13,90",
+    "source": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "kind": "third_party"
+   },
+   {
+    "item": "Pizza Margherita (~33 cm)",
+    "price": "7,50",
+    "source": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "kind": "third_party"
+   }
+  ],
+  "price_level": "€",
+  "confidence": "high",
+  "sources": [
+   {
+    "url": "https://www.alaturka-doener.at/standorte/",
+    "says": "Official chain location list: address, hours and phone for all 5 branches",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/",
+    "says": "Chain site: kebab from veal, chicken or vegetarian; Turkish dishes + pizza; no halal wording on home, Standorte or Über uns",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://neotaste.com/at/en/restaurants/vienna/alaturka-mahue",
+    "says": "Neotaste: Mo-Sa 10:00-23:59, Su 11:00-23:59; phone 0678 1314354; Lahmacun 6,00, Kebap Menü 9,00, Dürüm Menü 9,50 (no date shown)",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.falter.at/lokalfuehrer/tuerkische-lokale-in-wien",
+    "says": "Falter (search snippet): Mo-Sa 10-24, So 11-24",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Hours on file 10-22 (Sun 11-22) are wrong: official site, Falter and Neotaste all say open until midnight (Mo-Sa from 10, Su from 11). Phone and address match. Prices from Neotaste (third-party deals platform, undated) - indicative only. Halal: the chain's own site never says halal (checked home, Standorte, Über uns, Wiener Neustadt menu); no certifier or directory entry found either. Pork: the Wiener Neustadt menu uses Putenschinken and (Rind)Salami, but pizza 'Cardinale' just says 'Schinken' (type not stated) - unclear. Alcohol: none on the Wiener Neustadt drinks list (official); the other branch menus linked from the site return 'Seite nicht gefunden', so their drinks lists were not checked (alcohol=false for Vienna branches is inferred from the chain menu - weak)."
+ },
+ {
+  "id": "alaturka-1230",
+  "name": "Alaturka Alterlaa",
+  "status": "open",
+  "address": "Anton-Baumgartner-Straße 121, 1230 Wien",
+  "address_changed": false,
+  "district": 23,
+  "city": "Wien",
+  "phone": "+43 699 19671499",
+  "website": "https://www.alaturka-doener.at/",
+  "instagram": "https://www.instagram.com/alaturkawien/",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "hours_source": "https://www.alaturka-doener.at/standorte/ (official, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.alaturka-doener.at/",
+    "https://www.alaturka-doener.at/standorte/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€",
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "https://www.alaturka-doener.at/standorte/",
+    "says": "Official chain location list: address, hours and phone for all 5 branches",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/",
+    "says": "Chain site: kebab from veal, chicken or vegetarian; Turkish dishes + pizza; no halal wording on home, Standorte or Über uns",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Hours on file: Sun 11-22, official now daily 10:00-22:00 (only Sunday differs). Phone and address match. First Alaturka branch (since 2004, per official site). Branch menu link broken (404). Halal: the chain's own site never says halal (checked home, Standorte, Über uns, Wiener Neustadt menu); no certifier or directory entry found either. Pork: the Wiener Neustadt menu uses Putenschinken and (Rind)Salami, but pizza 'Cardinale' just says 'Schinken' (type not stated) - unclear. Alcohol: none on the Wiener Neustadt drinks list (official); the other branch menus linked from the site return 'Seite nicht gefunden', so their drinks lists were not checked (alcohol=false for Vienna branches is inferred from the chain menu - weak)."
+ },
+ {
+  "id": "alaturka-2700",
+  "name": "Alaturka Wiener Neustadt",
+  "status": "open",
+  "address": "Stadionstraße 5, 2700 Wiener Neustadt",
+  "address_changed": false,
+  "district": null,
+  "city": "Wiener Neustadt",
+  "phone": "+43 2622 83542",
+  "website": "https://www.alaturka-doener.at/",
+  "instagram": "https://www.instagram.com/alaturkawien/",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "11:00-21:00"
+  },
+  "hours_source": "https://www.alaturka-doener.at/standorte/ (official, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.alaturka-doener.at/",
+    "https://www.alaturka-doener.at/standorte/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/"
+   ]
+  },
+  "menu_url": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+  "prices": [
+   {
+    "item": "Döner Kebap Sandwich (Kalb oder Huhn)",
+    "price": "5,50",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   },
+   {
+    "item": "Dürüm Kebap (Wrap)",
+    "price": "5,50",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   },
+   {
+    "item": "Döner Kebap Teller",
+    "price": "11,00",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   },
+   {
+    "item": "Lahmacun",
+    "price": "7,00",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   },
+   {
+    "item": "Pizza Margherita",
+    "price": "7,00",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   },
+   {
+    "item": "Ayran 0,25l",
+    "price": "1,80",
+    "source": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "kind": "venue"
+   }
+  ],
+  "price_level": "€",
+  "confidence": "high",
+  "sources": [
+   {
+    "url": "https://www.alaturka-doener.at/standorte/",
+    "says": "Official chain location list: address, hours and phone for all 5 branches",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/",
+    "says": "Chain site: kebab from veal, chicken or vegetarian; Turkish dishes + pizza; no halal wording on home, Standorte or Über uns",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.alaturka-doener.at/speisekarte-alaturka-2700-wiener-neustadt/",
+    "says": "Official branch menu with prices (no date shown); drinks list has no alcohol; pizzas with Putenschinken / (Rind)Salami, Cardinale with unspecified 'Schinken'",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Hours on file Mon-Sat 10-22, Sun 10-21 are wrong: official Mo-Sa 10:00-21:00, Su 11:00-21:00. Phone matches (official writes +43 262 283 542 - same digits). district null (not Vienna; on file 0). Halal: the chain's own site never says halal (checked home, Standorte, Über uns, Wiener Neustadt menu); no certifier or directory entry found either. Pork: the Wiener Neustadt menu uses Putenschinken and (Rind)Salami, but pizza 'Cardinale' just says 'Schinken' (type not stated) - unclear. Alcohol: none on the Wiener Neustadt drinks list (official); the other branch menus linked from the site return 'Seite nicht gefunden', so their drinks lists were not checked (alcohol=false for Vienna branches is inferred from the chain menu - weak)."
+ },
+ {
+  "id": "antep-evi",
+  "name": "Antep Evi Grill Haus",
+  "status": "open",
+  "address": "Khleslplatz 5, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 699 1100 27 27",
+  "website": "https://www.antepevi-grillhaus.at/",
+  "instagram": "https://www.instagram.com/antepevi_grill/",
+  "categories": [
+   "Restaurant",
+   "Kebab",
+   "Türkisch",
+   "Grill"
+  ],
+  "hours": {
+   "mon": "closed",
+   "tue": "12:00-23:00",
+   "wed": "12:00-23:00",
+   "thu": "12:00-23:00",
+   "fri": "12:00-23:00",
+   "sat": "12:00-23:00",
+   "sun": "12:00-23:00"
+  },
+  "hours_source": "https://antepevi-grillhaus.at/oeffnungszeiten (official, seen 2026-11-12; page itself says current hours are on Google)",
+  "halal": {
+   "evidence": "venue_claim",
+   "certifier": null,
+   "quote": "achten wir darauf, dass jede Portion frisch und halal serviert wird",
+   "sources": [
+    "https://antepevi-grillhaus.at/speisekarte/hauptspeisen--fisch",
+    "https://antepevi-grillhaus.at/"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte"
+   ]
+  },
+  "menu_url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+  "prices": [
+   {
+    "item": "Lahmacun",
+    "price": "9,90",
+    "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "kind": "third_party"
+   },
+   {
+    "item": "Adana Kebab (Lammhack)",
+    "price": "16,90",
+    "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "kind": "third_party"
+   },
+   {
+    "item": "Beyti",
+    "price": "18,90",
+    "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "kind": "third_party"
+   },
+   {
+    "item": "Sucuklu Pide",
+    "price": "11,90",
+    "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "kind": "third_party"
+   },
+   {
+    "item": "Ayran 0,244l",
+    "price": "3,50",
+    "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "kind": "third_party"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "high",
+  "sources": [
+   {
+    "url": "https://antepevi-grillhaus.at/oeffnungszeiten",
+    "says": "Official site (built by Herold): Montag Ruhetag, Dienstag-Sonntag 12:00-23:00; Khleslplatz 5; +43 699 1100 27 27",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://antepevi-grillhaus.at/speisekarte/hauptspeisen--fisch",
+    "says": "Official menu text: 'jede Portion frisch und halal'; site meta description 'frisch & halal'",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/antep_evi_grill_haus/speisekarte",
+    "says": "speisekarte.de menu, Stand 06.10.2025: prices; drinks section only 'Alkoholfreie Getränke'; no pork items",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Data on file matches (hours Tue-Sun 12-23, Mon closed; address; phone). Official site has menu category pages with descriptive text only, no prices; prices are from speisekarte.de (Stand 06.10.2025, third party). Alcohol=false and pork=false rest on the speisekarte.de menu (no alcoholic drinks section, no pork items) - medium-strength evidence. Halal: the venue's own site says halal (strongest evidence in this group)."
+ },
+ {
+  "id": "burgallio-1120",
+  "name": "Burgallio Meidling",
+  "status": "moved",
+  "address": "Meidlinger Hauptstraße 30, 1120 Wien",
+  "address_changed": true,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 1 7200047",
+  "website": "https://burgallio.at/de/meidling",
+  "instagram": "https://www.instagram.com/burgallio/",
+  "categories": [
+   "Burger"
+  ],
+  "hours": {
+   "mon": "11:00-22:00",
+   "tue": "11:00-22:00",
+   "wed": "11:00-22:00",
+   "thu": "11:00-22:00",
+   "fri": "14:30-22:00",
+   "sat": "11:00-22:00",
+   "sun": "11:00-22:00"
+  },
+  "hours_source": "https://burgallio.at/de/meidling/info (official, seen 2026-11-12; delivery until 21:45)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "Partially halal. Restaurant states it serves halal food. (Zabihah)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/2b68ed69-8ddc-4c21-8034-b8a3a455465a/burgallio-wien-wien"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://burgallio.at/de/meidling",
+    "https://www.zabihah.com/restaurants/2b68ed69-8ddc-4c21-8034-b8a3a455465a/burgallio-wien-wien"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://burgallio.at/de/meidling"
+   ]
+  },
+  "menu_url": "https://burgallio.at/de/meidling",
+  "prices": [
+   {
+    "item": "Hamburger",
+    "price": "10,90",
+    "source": "https://burgallio.at/de/meidling",
+    "kind": "venue"
+   },
+   {
+    "item": "Cheese Burger",
+    "price": "11,90",
+    "source": "https://burgallio.at/de/meidling",
+    "kind": "venue"
+   },
+   {
+    "item": "Crispy Chicken Burger",
+    "price": "11,90",
+    "source": "https://burgallio.at/de/meidling",
+    "kind": "venue"
+   },
+   {
+    "item": "Pommes Frites (groß)",
+    "price": "4,90",
+    "source": "https://burgallio.at/de/meidling",
+    "kind": "venue"
+   },
+   {
+    "item": "fritz kola 0,33l",
+    "price": "3,90",
+    "source": "https://burgallio.at/de/meidling",
+    "kind": "venue"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "https://burgallio.at/de",
+    "says": "Official site lists only 2 locations: Burgallio Wien (Patrizigasse 14, 1210) and Burgallio Meidling (Meidlinger Hauptstraße 30, 1120)",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://burgallio.at/de/meidling/info",
+    "says": "Official Meidling info: Mo-Do, Sa, So 11-22, Fr 14:30-22; phone +43 1 7200047",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://burgallio.at/de/meidling",
+    "says": "Official online menu with prices; drinks only soft drinks/water (no alcohol); 'Speck' on Special/Farmhouse burger and 'Käsekrainer' hot dogs, meat type not stated",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/2b68ed69-8ddc-4c21-8034-b8a3a455465a/burgallio-wien-wien",
+    "says": "Zabihah (user directory): Meidlinger Hauptstraße 30, 'Partially halal', 'Restaurant states it serves halal food', 'No alcohol allowed'; Google review dated Jun 2026",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "ADDRESS on file Meidlinger Hauptstraße 45 -> official Meidlinger Hauptstraße 30. PHONE on file +43 1 353 17 07 -> official +43 1 7200047. Hours on file (10:30-22/23) wrong: official 11-22, Friday only from 14:30. Halal: the official site says nothing about halal; only Zabihah, which calls it 'partially halal'. PORK RISK: menu has Käsekrainer (traditionally a pork sausage) and Speck, both without meat type - do not present as fully halal. Lead: the chain's other branch is Burgallio Wien, Patrizigasse 14, 1210 Wien (same hours per burgallio.at/de/floridsdorf/info) - not in our data."
+ },
+ {
+  "id": "burgallio-1100",
+  "name": "Burgallio Favoriten",
+  "status": "unclear",
+  "address": "Quellenstraße 105, 1100 Wien",
+  "address_changed": false,
+  "district": 10,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Burger"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": []
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://burgallio.at/de",
+    "says": "Official Burgallio site lists only 2 locations (Patrizigasse 14, 1210 and Meidlinger Hauptstraße 30, 1120); this branch is not listed",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Branch is missing from the chain's own location list, and web searches for Burgallio at Quellenstraße 105, 1100 Wien found nothing (no directory, delivery app or press). Either closed or it never existed (possible error in the original data set). Phone on file +43 1 600 13 33 and hours 10:30-23:00 daily could not be confirmed anywhere. Recommend hiding unless the owner sees it open on Google Maps."
+ },
+ {
+  "id": "burgallio-1170",
+  "name": "Burgallio Hernals",
+  "status": "unclear",
+  "address": "Hernalser Hauptstraße 126, 1170 Wien",
+  "address_changed": false,
+  "district": 17,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Burger"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": []
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://burgallio.at/de",
+    "says": "Official Burgallio site lists only 2 locations (Patrizigasse 14, 1210 and Meidlinger Hauptstraße 30, 1120); this branch is not listed",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Branch is missing from the chain's own location list, and web searches for Burgallio at Hernalser Hauptstraße 126, 1170 Wien found nothing (no directory, delivery app or press). Either closed or it never existed (possible error in the original data set). Phone on file +43 1 484 21 00 and hours 11:00-22:30 daily could not be confirmed anywhere. Recommend hiding unless the owner sees it open on Google Maps."
+ },
+ {
+  "id": "damla",
+  "name": "Damla Cafe-Konditorei-Bäckerei",
+  "status": "open",
+  "address": "Wilhelmstraße 53, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 1 810 3519",
+  "website": "http://www.damla.at/",
+  "instagram": null,
+  "categories": [
+   "Café",
+   "Konditorei",
+   "Kebab",
+   "Pizza",
+   "Burger"
+  ],
+  "hours": {
+   "mon": "06:00-02:00",
+   "tue": "06:00-02:00",
+   "wed": "06:00-02:00",
+   "thu": "06:00-02:00",
+   "fri": "06:00-02:00",
+   "sat": "06:00-02:00",
+   "sun": "06:00-02:00"
+  },
+  "hours_source": "http://www.damla.at/kontakt (official, seen 2026-11-12; 'Täglich von 06:00 bis 02:00 Uhr'; delivery today 11:00-22:00 per home page)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "http://www.damla.at/",
+    "http://www.damla.at/bestellen"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "http://www.damla.at/bestellen"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "http://www.damla.at/bestellen"
+   ]
+  },
+  "menu_url": "http://www.damla.at/bestellen",
+  "prices": [
+   {
+    "item": "Kebap Sandwich (Kalb oder Huhn)",
+    "price": "3,80",
+    "source": "http://www.damla.at/bestellen",
+    "kind": "venue"
+   },
+   {
+    "item": "Dürüm Kebap (Kalb oder Huhn)",
+    "price": "4,30",
+    "source": "http://www.damla.at/bestellen",
+    "kind": "venue"
+   },
+   {
+    "item": "Lahmacun",
+    "price": "4,00",
+    "source": "http://www.damla.at/bestellen",
+    "kind": "venue"
+   },
+   {
+    "item": "Classico Burger (Rind)",
+    "price": "5,20",
+    "source": "http://www.damla.at/bestellen",
+    "kind": "venue"
+   },
+   {
+    "item": "Cola 0,33l",
+    "price": "1,80",
+    "source": "http://www.damla.at/bestellen",
+    "kind": "venue"
+   }
+  ],
+  "price_level": "€",
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "http://www.damla.at/",
+    "says": "Official site (only http works, https fails): Wilhelmstraße 53 (Bahnhof Meidling), Bestellhotline 01 810 3519, delivery today 11:00-22:00, © 2026",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "http://www.damla.at/kontakt",
+    "says": "Öffnungszeiten: Täglich von 06:00 bis 02:00 Uhr",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "http://www.damla.at/bestellen",
+    "says": "Online order menu: kebab veal/chicken, burgers 'mit Rindfleisch', pizzas with plain 'Schinken'/'Salami', burgers with 'Speck' (meat type not stated); drinks only soft drinks, no alcohol",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.swipein.restaurant/en/restaurant/damla-wien-wien",
+    "says": "Aggregator: phone +43 1 2080457, hours inconsistent (06:00-24:00)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Hours on file (daily 11-22) are the delivery hours; the venue itself is open daily 06:00-02:00 per its contact page. Phone matches the official site (an aggregator shows +43 1 2080457). Prices from the online shop look very low/old (Kebap 3,80) - shop may not be maintained; treat as uncertain. Halal: no halal wording on the official site; no certifier or directory entry found. Pizzas list plain 'Schinken'/'Salami' and burgers 'Speck' without meat type - possible pork, unknown. Alcohol: none on the online menu (delivery menu only - weak evidence)."
+ },
+ {
+  "id": "bakis-schnitzelparadies",
+  "name": "Baki's Schnitzelparadies",
+  "status": "unclear",
+  "address": "Meidlinger Hauptstraße 49/G2, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Restaurant",
+   "Schnitzel"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": []
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.swipein.restaurant/en/restaurant/schnitzelparadies-wien-wien",
+    "says": "Only 'Schnitzelparadies' found in Vienna is a different business at Brünner Straße 31A, 1210 (schnitzelparadies.at) - not this one",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No trace of 'Baki's Schnitzelparadies' at Meidlinger Hauptstraße 49 on foodora, Lieferando, Wolt, aggregators or search. Our 'website' was just foodora.at (no specific page). Phone +43 664 1563446 and hours on file unconfirmed. Possibly closed or renamed. Do not confuse with Schnitzelparadies, Brünner Straße 31A, 1210 Wien. Recommend hiding unless Google Maps shows it open."
+ },
+ {
+  "id": "le-doener",
+  "name": "Le Döner",
+  "status": "unclear",
+  "address": "Meidlinger Hauptstraße 43, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Kebab"
+  ],
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "11:00-21:00"
+  },
+  "hours_source": "https://www.swipein.restaurant/de/restaurant/le-doner-wien-wien (auto-generated aggregator, seen 2026-11-12; Sunday 11:40 on the German version, 11:00 on the English one)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.swipein.restaurant/de/restaurant/le-doner-wien-wien"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€",
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.swipein.restaurant/de/restaurant/le-doner-wien-wien",
+    "says": "SwipeIn (auto-generated aggregator): Meidlinger Hauptstraße 43, phone +43 660 9948965, website ledöner.at, Mo-Sa 10-21, So 11(:40)-21, no reviews; halal only as a generic category badge",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://xn--ledner-jua.at",
+    "says": "Website on file (ledöner.at) does not resolve (DNS failure)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Website ledöner.at is dead (domain does not resolve) - possible sign of closure. Only an auto-generated aggregator still lists it. Phone on file +43 660 6941900 differs from aggregator +43 660 9948965 - neither confirmed. Hours on file roughly match the aggregator. Not found on Lieferando/Wolt/Instagram. No halal evidence. Needs a Google Maps check before keeping."
+ },
+ {
+  "id": "liwan-1120",
+  "name": "Liwan Restaurant Meidling",
+  "status": "unclear",
+  "address": "Meidlinger Hauptstraße 12, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": []
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokalfuehrer/libanesische-lokale-in-wien",
+    "says": "Falter list of Lebanese restaurants in Vienna - no Liwan",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No trace of a 'Liwan' restaurant anywhere: no Google/Herold snippet, Falter, delivery app or directory, for either Meidlinger Hauptstraße 12 or Wallensteinplatz 4. The phone on file +43 1 810 5773 is shared in our data by Liwan 1120, Liwan 1200, AVA and Motelli - clearly a copy/paste error; no web page links it to any restaurant. Both Liwan records look invented or badly mixed up in the original data set. Recommend removing both unless the owner finds them on Google Maps."
+ },
+ {
+  "id": "liwan-1200",
+  "name": "Liwan Restaurant Brigittenau",
+  "status": "unclear",
+  "address": "Wallensteinplatz 4, 1200 Wien",
+  "address_changed": false,
+  "district": 20,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": []
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokalfuehrer/libanesische-lokale-in-wien",
+    "says": "Falter list of Lebanese restaurants in Vienna - no Liwan",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No trace of a 'Liwan' restaurant anywhere: no Google/Herold snippet, Falter, delivery app or directory, for either Meidlinger Hauptstraße 12 or Wallensteinplatz 4. The phone on file +43 1 810 5773 is shared in our data by Liwan 1120, Liwan 1200, AVA and Motelli - clearly a copy/paste error; no web page links it to any restaurant. Both Liwan records look invented or badly mixed up in the original data set. Recommend removing both unless the owner finds them on Google Maps."
+ },
+ {
+  "id": "ava-persisch-1120",
+  "name": "AVA Persisches Restaurant",
+  "status": "open",
+  "address": "Meidlinger Hauptstraße 1, 1120 Wien",
+  "address_changed": true,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 699 11137723",
+  "website": "https://www.avarest.at/",
+  "instagram": "https://www.instagram.com/ava_restaurantwien/",
+  "categories": [
+   "Restaurant",
+   "Persisch"
+  ],
+  "hours": {
+   "mon": "11:30-22:00",
+   "tue": "11:30-22:00",
+   "wed": "11:30-22:00",
+   "thu": "11:30-22:00",
+   "fri": "11:30-22:00",
+   "sat": "12:30-22:00",
+   "sun": "closed"
+  },
+  "hours_source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/ava_persisches_restaurant (third party, seen 2026-11-12; sources disagree - see notes)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.avapersischesrestaurantwien.at/",
+    "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/ava_persisches_restaurant"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://www.avapersischesrestaurantwien.at/"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://www.avapersischesrestaurantwien.at/"
+   ]
+  },
+  "menu_url": "https://www.avapersischesrestaurantwien.at/",
+  "prices": [
+   {
+    "item": "Kabab Kubide (2 Spieße Rind/Lamm)",
+    "price": "19,90",
+    "source": "https://www.avapersischesrestaurantwien.at/",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Djudje Kabab (Hühnerspieß)",
+    "price": "19,90",
+    "source": "https://www.avapersischesrestaurantwien.at/",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Ghorme Sabsi mit Rindfleisch",
+    "price": "17,90",
+    "source": "https://www.avapersischesrestaurantwien.at/",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Adas Suppe (Linsensuppe)",
+    "price": "5,90",
+    "source": "https://www.avapersischesrestaurantwien.at/",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Gösser 0,5l",
+    "price": "3,90",
+    "source": "https://www.avapersischesrestaurantwien.at/",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.avapersischesrestaurantwien.at/",
+    "says": "Ordering site (Lieferando/Takeaway-style shop): Meidlinger Hauptstraße 1, full menu with prices; 'Alkoholische Getränke': Zweigelt, Grüner Veltliner, Gösser; beef, lamb, chicken, fish; no pork; no halal wording",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.avapersischesrestaurantwien.at/contact",
+    "says": "Delivery times: Mo closed, Tu-Sa 12:00-20:30, Su closed",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/ava_persisches_restaurant",
+    "says": "speisekarte.de: Meidlinger Hauptstraße 1, tel +43 699 11137723, website avarest.at, Mo-Fr 11:30-22, Sa 12:30-22, So Ruhetag; menu Stand 11.08.2025",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.avarest.at/",
+    "says": "avarest.at only redirects to Instagram @ava_restaurantwien",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "ADDRESS on file Meidlinger Hauptstraße 10 is wrong -> Meidlinger Hauptstraße 1. PHONE on file +43 1 810 5773 is wrong (shared bogus number) -> +43 699 11137723 (speisekarte.de). Website on file is the delivery-shop domain; the venue's own domain avarest.at redirects to Instagram. Hours on file (daily 11-23) wrong; sources disagree: speisekarte.de Mo-Fr 11:30-22, Sa 12:30-22, Su closed; delivery shop Tu-Sa 12-20:30; other directories ~11/11:30-22. Sunday closed is consistent. ALCOHOL: wine and beer sold (its own ordering menu). Halal: no claim anywhere except a generic SwipeIn badge - none_found. Pork: none on the menu."
+ },
+ {
+  "id": "motelli-1120",
+  "name": "Pizzeria Motelli",
+  "status": "open",
+  "address": "Meidlinger Hauptstraße 3, 1120 Wien",
+  "address_changed": true,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 1 8179247",
+  "website": "https://motelli-restaurant.eatbu.com/",
+  "instagram": null,
+  "categories": [
+   "Restaurant",
+   "Italienisch",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "11:00-23:00",
+   "tue": "11:00-23:00",
+   "wed": "11:00-23:00",
+   "thu": "11:00-23:00",
+   "fri": "11:00-23:00",
+   "sat": "11:00-23:00",
+   "sun": "11:00-23:00"
+  },
+  "hours_source": "https://motelli-restaurant.eatbu.com/?lang=en (official DISH page, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://motelli-restaurant.eatbu.com/?lang=en"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://motelli-restaurant.eatbu.com/?lang=en"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "medium",
+  "sources": [
+   {
+    "url": "https://motelli-restaurant.eatbu.com/?lang=en",
+    "says": "Official page: Meidlinger Hauptstraße 3, +43 1 8179247, daily 11:00-23:00; Italian pizzeria with steaks; 'ein erfrischendes Glas Bier', 'Biergarten'",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.theviennareview.at/food-drink/6577/pizzeria-motelli",
+    "says": "Vienna Review/Falter: Pizzeria Motelli, Italian family business, Meidlinger Hauptstraße 3, tel 01/817 92 47, daily 11-22:15 (search snippet)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "ADDRESS on file Meidlinger Hauptstraße 10 is wrong -> 3. PHONE on file +43 1 810 5773 is wrong -> +43 1 817 92 47. Hours on file daily 10-23; official 11-23 (Falter says 11-22:15). Serves beer, has a 'Biergarten'; no halal claim anywhere (only generic SwipeIn badges). An ordinary Italian pizzeria - no reason found why it is in a halal guide. Menu not online, so pork unknown. Recommend removing from Akiwi."
+ },
+ {
+  "id": "cardak-1120",
+  "name": "Restaurant Čardak",
+  "status": "unclear",
+  "address": "Grieshofgasse 1, 1120 Wien",
+  "address_changed": true,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 677 63164265",
+  "website": null,
+  "instagram": "https://www.instagram.com/cardak.gastro/",
+  "categories": [
+   "Restaurant",
+   "Balkanisch"
+  ],
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "hours_source": "https://www.swipein.restaurant/de/restaurant/restaurant-cardak-altmannsdorf (auto-generated aggregator, seen 2026-11-12)",
+  "halal": {
+   "evidence": "none_found",
+   "certifier": null,
+   "quote": null,
+   "sources": [
+    "https://www.swipein.restaurant/de/restaurant/restaurant-cardak-altmannsdorf"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://www.swipein.restaurant/de/restaurant/restaurant-cardak-altmannsdorf"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€€",
+  "confidence": "low",
+  "sources": [
+   {
+    "url": "https://www.swipein.restaurant/de/restaurant/restaurant-cardak-altmannsdorf",
+    "says": "SwipeIn: Restaurant Čardak, Grieshofgasse 1, 1120 Wien (Altmannsdorf), +43 677 63164265, Instagram cardak.gastro, daily 10-22, beer and wine, wine list; €20-30",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://wolt.com/en/aut/vienna/restaurants/all/17",
+    "says": "Wolt Vienna index (search snippet): 'Restaurant Čardak' - Macedonian/Balkan cuisine, rating 8.2; no address shown",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No Čardak found at Meidlinger Hauptstraße 14 (address on file). The only Čardak in 1120 is at Grieshofgasse 1 (Altmannsdorf) per aggregator - may be the same business (moved, or our address wrong); not confirmed. Phone on file +43 1 8104445 not found anywhere. Website on file was just wolt.com. Beer and wine served (aggregator). No halal evidence at all - reason for inclusion unclear. Recommend removing unless halal evidence appears."
+ }
+]

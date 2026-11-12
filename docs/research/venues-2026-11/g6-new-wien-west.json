@@ -1,0 +1,1553 @@
+[
+ {
+  "id": null,
+  "proposed_id": "ferhatovic-1120",
+  "name": "Restaurant Ferhatovic",
+  "status": "open",
+  "address": "Steinbauergasse 8/1, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 676 3264189",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Balkan",
+   "Grill",
+   "Burger"
+  ],
+  "hours": {
+   "mon": "11:00-20:00",
+   "tue": "11:00-20:00",
+   "wed": "11:00-20:00",
+   "thu": "11:00-20:00",
+   "fri": "11:00-20:00",
+   "sat": "11:00-20:00",
+   "sun": "11:00-20:00"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic (delivery hours, seen 2026-11-12; Lieferando shows Sun-Thu 11:15-20:00, Fri-Sat 10:30-20:00)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "Unsere Grillspezialitäten werden mit halal-zertifiziertem Fleisch zubereitet",
+   "sources": [
+    "https://www.lieferando.at/speisekarte/ferhatovic-austria",
+    "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "https://www.lieferando.at/speisekarte/ferhatovic-austria"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+  "prices": [
+   {
+    "item": "Sarajevo Ćevapi im ganzen Somun (10 Stk)",
+    "price": "15,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Sarajevo Ćevapi im halben Somun (5 Stk)",
+    "price": "9,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Bosnische Pljeskavica im ganzen Somun",
+    "price": "15,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Grillplatte",
+    "price": "29,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Burger Deluxe",
+    "price": "17,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Bosnische Baklava",
+    "price": "4,20",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "medium",
+  "why_halal_friendly": "Bosnian grill whose own menu text on Lieferando says all grill dishes use halal-certified meat; Wolt describes it as 'Halal grill specialities'.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/restaurant-ferhatovic",
+    "says": "Wolt: venue Steinbauergasse 8/1, 1120; description 'Where tradition meets fire - Halal grill specialities'; delivery daily 11:00-20:00; phone +436763264189; no alcohol items",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.lieferando.at/speisekarte/ferhatovic-austria",
+    "says": "Lieferando 'Ferhatovic Austria', Steinbauergasse 8/1, 1120; items marked '(halal)', 'Halal-zertifiziert'; Sarajevski Cevapi 10 Stk 15,90 EUR; delivery Sun-Thu 11:15-20:00, Fri-Sat 10:30-20:00",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No own website or Instagram found. Certifier not named anywhere ('halal-zertifiziert' without a body). Hours are delivery-app hours only and the two apps differ slightly; venue opening hours not confirmed. Wolt also shows an operator address Braunhirschengasse 12-20, 1150 (company, not the restaurant). Alcohol/pork 'false' only from delivery menus (weak). Menu also sells packaged Bosnian sausages (Sudzuk, Kobasica) - usually beef, type not stated."
+ },
+ {
+  "id": null,
+  "proposed_id": "maman-paz-1190",
+  "name": "Maman Paz",
+  "status": "open",
+  "address": "Billrothstraße 18/3, 1190 Wien",
+  "address_changed": false,
+  "district": 19,
+  "city": "Wien",
+  "phone": "+43 1 9419092",
+  "website": "https://maman-paz.at",
+  "instagram": "https://www.instagram.com/persisches_mamanpaz",
+  "categories": [
+   "Persisch"
+  ],
+  "hours": {
+   "mon": "11:00-22:00",
+   "tue": "closed",
+   "wed": "11:00-22:00",
+   "thu": "11:00-22:00",
+   "fri": "11:00-22:00",
+   "sat": "11:00-22:00",
+   "sun": "11:00-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/13806/mamanpaz (Mo, Mi-So 11-22), matches https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+  "halal": {
+   "evidence": "venue_claim",
+   "certifier": null,
+   "quote": "Halal-freundliches persisches Restaurant in Wien (own site); Falter: 'alles halal'",
+   "sources": [
+    "https://maman-paz.at/de/halal-restaurant-wien",
+    "https://www.falter.at/lokal/13806/mamanpaz",
+    "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19"
+   ]
+  },
+  "menu_url": "https://maman-paz.at/de/speisekarte",
+  "prices": [
+   {
+    "item": "Kabab Kubideh",
+    "price": "19,40",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Jujeh Kabab",
+    "price": "19,40",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Khoreshte Ghorme Sabzi",
+    "price": "15,50",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Zereshkpolo ba Morgh",
+    "price": "18,00",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Persisches Brot",
+    "price": "3,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Coca-Cola 0,33l",
+    "price": "3,20",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "high",
+  "why_halal_friendly": "Persian restaurant that markets itself as halal on its own website (badge 'Halal', page 'Halal Restaurant Wien'); Falter's guide says 'alles halal'.",
+  "sources": [
+   {
+    "url": "https://maman-paz.at",
+    "says": "Own site: badge 'Halal', schema servesCuisine Persian/Iranian/Halal, page halal-restaurant-wien 'Halal-freundliches persisches Restaurant in Wien'; phone +43 1 9419092",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.falter.at/lokal/13806/mamanpaz",
+    "says": "Falter: Billrothstraße 18, 1190; 01/941 90 92; Mo, Mi-So 11-22; 'alles halal'; Instagram persisches_mamanpaz",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/maman-paz19",
+    "says": "Wolt: 'Persian Maman Cuisine - Halal'; Mon 11-22, Tue closed, Wed-Sun 11-22; no alcohol items on menu",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Own website body text says 'halal-freundlich' but shows a plain 'Halal' badge - no certificate. Alcohol not stated anywhere; none on the delivery menu (weak). Falter and Wolt agree on hours."
+ },
+ {
+  "id": null,
+  "proposed_id": "chicken-plus-1160",
+  "name": "Chicken Plus",
+  "status": "open",
+  "address": "Thaliastraße 18, 1160 Wien",
+  "address_changed": false,
+  "district": 16,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": "https://www.instagram.com/chickenpluswien",
+  "categories": [
+   "Fried Chicken",
+   "Burger"
+  ],
+  "hours": {
+   "mon": "11:00-22:00",
+   "tue": "11:00-22:00",
+   "wed": "11:00-22:00",
+   "thu": "11:00-22:00",
+   "fri": "11:00-22:00",
+   "sat": "11:00-22:00",
+   "sun": "11:00-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/12869/chicken-plus (täglich 11-22); Wolt delivery 11:00-21:45 daily",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "alle Speisen halal (Falter)",
+   "sources": [
+    "https://www.falter.at/lokal/12869/chicken-plus",
+    "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+  "prices": [
+   {
+    "item": "Angry Chicken Burger",
+    "price": "9,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Smash Chili Cheese Burger",
+    "price": "11,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Chicken Strips 4x",
+    "price": "6,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Wings Menü 8x Wings",
+    "price": "14,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Pommes",
+    "price": "5,50",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Coca-Cola Dose 0,33l",
+    "price": "3,75",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "medium",
+  "why_halal_friendly": "Fried-chicken and smash-burger shop described by Falter as 'alle Speisen halal'; Wolt tags it halal.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/12869/chicken-plus",
+    "says": "Falter: Thaliastraße 18, 1160; täglich 11-22; €€; 'alle Speisen halal'; Instagram chickenpluswien",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/chicken-plus-vie",
+    "says": "Wolt: venue Thaliastraße 18 (operator address Thaliastrasse 9); food tag halal; delivery 11:00-21:45; no alcohol items; item 'Smash BBQ Bacon'",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Phone not found. Menu has 'Smash BBQ Bacon' - bacon type not stated (likely beef/turkey given 'alle Speisen halal', unconfirmed), so pork=null. Instagram could not be read (login wall)."
+ },
+ {
+  "id": null,
+  "proposed_id": "smash-house-1080",
+  "name": "Smash House Vienna",
+  "status": "unclear",
+  "address": "Lerchenfelder Straße 128, 1080 Wien",
+  "address_changed": false,
+  "district": 8,
+  "city": "Wien",
+  "phone": "+43 665 65934002",
+  "website": null,
+  "instagram": "https://www.instagram.com/smashhousevienna",
+  "categories": [
+   "Burger"
+  ],
+  "hours": {
+   "mon": "11:00-24:00",
+   "tue": "11:00-24:00",
+   "wed": "11:00-24:00",
+   "thu": "11:00-24:00",
+   "fri": "11:00-24:00",
+   "sat": "11:00-24:00",
+   "sun": "11:00-24:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/13048/smash-house-vienna (täglich 11-24); Neotaste also 11:00-00:00",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "alle Zutaten halal (Falter)",
+   "sources": [
+    "https://www.falter.at/lokal/13048/smash-house-vienna"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€€",
+  "confidence": "medium",
+  "why_halal_friendly": "Smash-burger place that Falter describes with 'alle Zutaten halal'.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/13048/smash-house-vienna",
+    "says": "Falter: Lerchenfelder Straße 128, 1080; 0665/65 93 40 02; täglich 11-24; €€; 'alle Zutaten halal'; vegetarian/vegan burgers",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://neotaste.com/gb/restaurants/vienna/smash-house-vienna",
+    "says": "Neotaste: 2-for-1 deal, open 11:00-00:00",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No delivery-app menu or own website found, so no prices and no alcohol/pork data. Status 'unclear' only because no dated recent source was found; the Falter listing is current. Not the same as Pars (Lerchenfelder Str. 124/148), which we already have."
+ },
+ {
+  "id": null,
+  "proposed_id": "bab-alhara-1160",
+  "name": "Bab Alhara",
+  "status": "unclear",
+  "address": "Koppstraße 2, 1160 Wien",
+  "address_changed": false,
+  "district": 16,
+  "city": "Wien",
+  "phone": "+43 677 61413897",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Arabisch"
+  ],
+  "hours": null,
+  "hours_source": null,
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "Traditionelle arabische Küche; Halal, auch vegetarische und vegane Gerichte (Falter)",
+   "sources": [
+    "https://www.falter.at/lokalfuehrer/arabische-lokale-in-wien"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "why_halal_friendly": "Arabic restaurant (falafel, shawarma, hummus) listed by Falter as halal.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokalfuehrer/arabische-lokale-in-wien",
+    "says": "Falter list: Bab Alhara, Koppstraße 2, 1160; 'Halal, auch vegetarische und vegane Gerichte'",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.swipein.restaurant/en/restaurant/bab-alhara-restaurant-wien-wien",
+    "says": "Swipein (auto-generated): phone +43 677 61413897, falafel/shawarma/hummus",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "No hours from any reliable source. Phone only from an auto-generated directory (unverified). No delivery listing found. Needs a Google Maps check for status and hours."
+ },
+ {
+  "id": null,
+  "proposed_id": "maza-burger-1060",
+  "name": "Maza Burger",
+  "status": "open",
+  "address": "Gumpendorfer Straße 82, 1060 Wien",
+  "address_changed": false,
+  "district": 6,
+  "city": "Wien",
+  "phone": "+43 676 583506",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Burger"
+  ],
+  "hours": {
+   "mon": "12:00-22:00",
+   "tue": "12:00-22:00",
+   "wed": "12:00-22:00",
+   "thu": "12:00-22:00",
+   "fri": "12:00-13:15, 14:00-22:45",
+   "sat": "13:30-22:45",
+   "sun": "13:30-22:00"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger (delivery hours, seen 2026-11-12)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "food tags: burgers, halal (Wolt); listed in Lieferando 'Halal' category",
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "https://www.lieferando.at/en/takeaway/land-wien/halal"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+  "prices": [
+   {
+    "item": "Maza Menü",
+    "price": "17,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Spicy Burger",
+    "price": "10,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Bacon Burger",
+    "price": "11,50",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Chicken Burger",
+    "price": "14,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Pommes Frites",
+    "price": "4,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Palestine Cola Dose 0,33l",
+    "price": "3,20",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Burger shop tagged halal on Wolt and included in Lieferando's Vienna halal category.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/maza-burger",
+    "says": "Wolt: venue Gumpendorfer Straße 82 (operator Hirschengasse 2/9, 1060); tags burgers/halal; phone +43676583506; Bacon Burger on menu; no alcohol",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.lieferando.at/en/takeaway/land-wien/halal",
+    "says": "Lieferando halal list (search snippet): Maza Burger, Hirschengasse 2/9, 1060, 4.4/5 (90)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Address differs: Wolt venue = Gumpendorfer Straße 82, Lieferando = Hirschengasse 2/9 (same corner block, entrance unclear). 'Bacon Burger' - bacon type not stated, so pork=null. Halal only from delivery-app tags; no own site/Instagram found."
+ },
+ {
+  "id": null,
+  "proposed_id": "corner-xvi-1160",
+  "name": "Corner XVI",
+  "status": "unclear",
+  "address": "Thaliastraße 69, 1160 Wien",
+  "address_changed": false,
+  "district": 16,
+  "city": "Wien",
+  "phone": null,
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Burger",
+   "Fast Food"
+  ],
+  "hours": {
+   "mon": "11:00-02:00",
+   "tue": "11:00-02:00",
+   "wed": "11:00-02:00",
+   "thu": "11:00-02:00",
+   "fri": "11:00-02:00",
+   "sat": "11:00-02:00",
+   "sun": "11:00-02:00"
+  },
+  "hours_source": "https://neotaste.com/gb/restaurants/vienna/corner-xvi (undated)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "Burgers, Fast Food, Halal (Neotaste); in Lieferando halal category",
+   "sources": [
+    "https://neotaste.com/gb/restaurants/vienna/corner-xvi",
+    "https://www.lieferando.at/en/takeaway/land-wien/halal"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": null,
+  "confidence": "low",
+  "why_halal_friendly": "Burger/fast-food spot listed under 'Halal' on Neotaste and in Lieferando's Vienna halal category (4.8/5, 188 ratings).",
+  "sources": [
+   {
+    "url": "https://neotaste.com/gb/restaurants/vienna/corner-xvi",
+    "says": "Neotaste: Corner XVI, Thaliastraße 69; Burgers, Fast Food, Halal; 11:00-02:00",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.lieferando.at/en/takeaway/land-wien/halal",
+    "says": "Lieferando halal list (search snippet): CORNER XVI Thaliastraße 69, 1160, 4.8/5 (188)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Could not open the Lieferando menu (slug unknown); no phone, website or Instagram found. Hours only from Neotaste (undated). Weak evidence; check before listing."
+ },
+ {
+  "id": null,
+  "proposed_id": "al-fayrooz-1010",
+  "name": "Al Fayrooz",
+  "status": "open",
+  "address": "Universitätsring 8, 1010 Wien",
+  "address_changed": false,
+  "district": 1,
+  "city": "Wien",
+  "phone": "+43 1 5338411",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Libanesisch",
+   "Grill"
+  ],
+  "hours": {
+   "mon": "16:15-23:30",
+   "tue": "16:15-23:30",
+   "wed": "16:15-23:30",
+   "thu": "16:15-23:30",
+   "fri": "16:15-00:45",
+   "sat": "16:15-00:45",
+   "sun": "16:15-23:30"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz (delivery hours only, seen 2026-11-12)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "food tags: lebanese, halal, grill (Wolt); Zabihah: reported halal by readers, unverified",
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "https://www.zabihah.com/restaurants/ca207a46-7767-11ef-95ae-6045bdeb9f57/al-fayrooz-wien-austria"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+  "prices": [
+   {
+    "item": "Hummus",
+    "price": "8,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Falafel",
+    "price": "8,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Fatousch",
+    "price": "9,20",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Arayes",
+    "price": "10,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Kebbe Meklieh",
+    "price": "9,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Lebanese grill tagged halal on Wolt and listed on Zabihah, but it serves beer.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/al-fayrooz",
+    "says": "Wolt: Universitätsring 8, 1010; phone +4315338411; tag halal; beer on menu (Almaza, Heineken, Stiegl)",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/ca207a46-7767-11ef-95ae-6045bdeb9f57/al-fayrooz-wien-austria",
+    "says": "Zabihah: 'Reported to be halal by our readers but is still unverified'",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Alcohol confirmed (beer on the Wolt menu). Wolt hours start 16:15 - probably the delivery window; restaurant may open earlier, not confirmed. No pork items on menu (weak)."
+ },
+ {
+  "id": null,
+  "proposed_id": "wiener-deewan-1090",
+  "name": "Der Wiener Deewan",
+  "status": "open",
+  "address": "Liechtensteinstraße 10, 1090 Wien",
+  "address_changed": false,
+  "district": 9,
+  "city": "Wien",
+  "phone": "+43 1 9251185",
+  "website": "https://www.deewan.at",
+  "instagram": null,
+  "categories": [
+   "Pakistanisch",
+   "Curry",
+   "Buffet"
+  ],
+  "hours": {
+   "mon": "11:00-23:00",
+   "tue": "11:00-23:00",
+   "wed": "11:00-23:00",
+   "thu": "11:00-23:00",
+   "fri": "11:00-23:00",
+   "sat": "11:00-23:00",
+   "sun": "closed"
+  },
+  "hours_source": "https://www.falter.at/lokal/5266/der-wiener-deewan (Mo-Sa 11-23, Fei geschlossen)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "All food at this restaurant is certified halal (Zabihah, active issue report)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/ca154be8-7767-11ef-95ae-6045bdeb9f57/der-wiener-deewan-wien-austria",
+    "https://www.lieferando.at/speisekarte/der-wiener-deewan"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://www.lieferando.at/speisekarte/der-wiener-deewan"
+   ]
+  },
+  "menu_url": "https://www.lieferando.at/speisekarte/der-wiener-deewan",
+  "prices": [
+   {
+    "item": "Kleine Take-away-Box",
+    "price": "7,00",
+    "source": "https://www.falter.at/lokal/5266/der-wiener-deewan",
+    "kind": "venue"
+   },
+   {
+    "item": "Große Take-away-Box",
+    "price": "12,00",
+    "source": "https://www.falter.at/lokal/5266/der-wiener-deewan",
+    "kind": "venue"
+   },
+   {
+    "item": "Große Currybox - Huhn",
+    "price": "14,00",
+    "source": "https://www.lieferando.at/speisekarte/der-wiener-deewan",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Große Currybox - Rind",
+    "price": "15,00",
+    "source": "https://www.lieferando.at/speisekarte/der-wiener-deewan",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Große Currybox - Vegan",
+    "price": "12,00",
+    "source": "https://www.lieferando.at/speisekarte/der-wiener-deewan",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€",
+  "confidence": "medium",
+  "why_halal_friendly": "Pakistani pay-as-you-wish curry buffet; Zabihah lists all food as halal and Lieferando files it under the 'Halal' cuisine.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/5266/der-wiener-deewan",
+    "says": "Falter: Liechtensteinstraße 10, 1090; 01/925 11 85; Mo-Sa 11-23; pay what you want, drinks fixed price; boxes 7/12 EUR",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.lieferando.at/speisekarte/der-wiener-deewan",
+    "says": "Lieferando: Liechtensteinstr. 10, 1090; cuisine tags Indisch/Halal/Vegan (but data field isHalal=false); delivery Mon-Fri 11:00-21:15, Sat 12:00-21:15, Sun closed",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/ca154be8-7767-11ef-95ae-6045bdeb9f57/der-wiener-deewan-wien-austria",
+    "says": "Zabihah: fully halal, certified; active issue report under review",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Official site deewan.at did not load (TLS error), so no own halal statement seen. Falter used to note a summer break in August. Lieferando shows contradicting halal flags (category 'Halal' vs isHalal=false). Alcohol not stated."
+ },
+ {
+  "id": null,
+  "proposed_id": "meidlinger-deewan-1120",
+  "name": "Meidlinger Deewan",
+  "status": "unclear",
+  "address": "Krichbaumgasse 27, 1120 Wien",
+  "address_changed": false,
+  "district": 12,
+  "city": "Wien",
+  "phone": "+43 699 11786645",
+  "website": "https://www.deewan-shani.at",
+  "instagram": null,
+  "categories": [
+   "Pakistanisch",
+   "Curry",
+   "Buffet"
+  ],
+  "hours": {
+   "mon": "11:30-22:00",
+   "tue": "11:30-22:00",
+   "wed": "11:30-22:00",
+   "thu": "11:30-22:00",
+   "fri": "11:30-22:00",
+   "sat": "12:00-22:00",
+   "sun": "12:00-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/11021/meidlinger-deewan (kitchen until 21:30)",
+  "halal": {
+   "evidence": "partial",
+   "certifier": null,
+   "quote": "2 Fleischcurrys (halal)",
+   "sources": [
+    "https://www.falter.at/lokal/11021/meidlinger-deewan"
+   ]
+  },
+  "alcohol": {
+   "value": null,
+   "sources": []
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€",
+  "confidence": "medium",
+  "why_halal_friendly": "Pakistani pay-as-you-wish curry buffet whose two meat curries are described as halal.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/11021/meidlinger-deewan",
+    "says": "Falter: Krichbaumgasse 27, 1120; 0699/11 78 66 45; Mo-Fr 11:30-22, Sa/So 12-22; '2 Fleischcurrys (halal)'; pay as you wish, take-away fixed prices",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/meidlinger_deewan/speisekarte",
+    "says": "speisekarte.de: menu data last updated 03.10.2025",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Website deewan-shani.at did not respond. Status 'unclear' because no dated 2026 source; the Falter listing is current. Prices are pay-as-you-wish, so none recorded. Different business from Der Wiener Deewan (1090) despite the name. Evidence 'partial' because only the meat curries are named halal (the other dishes are vegan)."
+ },
+ {
+  "id": null,
+  "proposed_id": "asala-1080",
+  "name": "Asala Halal Food",
+  "status": "open",
+  "address": "Alser Straße 21, 1080 Wien",
+  "address_changed": false,
+  "district": 8,
+  "city": "Wien",
+  "phone": "+43 1 9560688",
+  "website": "https://asala-halal-food.at",
+  "instagram": null,
+  "categories": [
+   "Ägyptisch",
+   "Imbiss"
+  ],
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "12:00-20:00",
+   "sun": "12:00-20:00"
+  },
+  "hours_source": "https://asala-halal-food.at (official; Sa/So/Feiertag 12-20)",
+  "halal": {
+   "evidence": "venue_claim",
+   "certifier": null,
+   "quote": "Asala & Basta Halal Food (site title)",
+   "sources": [
+    "https://asala-halal-food.at",
+    "https://www.zabihah.com/restaurants/ca2ad99a-7767-11ef-95ae-6045bdeb9f57/asala-wien-austria"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.zabihah.com/restaurants/ca2ad99a-7767-11ef-95ae-6045bdeb9f57/asala-wien-austria"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": "https://asala-halal-food.at",
+  "prices": [],
+  "price_level": "€",
+  "confidence": "medium",
+  "why_halal_friendly": "Egyptian takeaway that carries 'Halal Food' in its own name and website title; Zabihah lists it as fully halal without alcohol.",
+  "sources": [
+   {
+    "url": "https://asala-halal-food.at",
+    "says": "Official site: 'Asala & Basta Halal Food'; Asala 01/9560688, Mo-Fr 10-22, Sa/So/Fei 12-20; menu only as image (Speisekarte 01/2025); sister shop Basata 01/2089938",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/ca2ad99a-7767-11ef-95ae-6045bdeb9f57/asala-wien-austria",
+    "says": "Zabihah: fully halal, no alcohol allowed (older listing)",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://pocketaustria.at/en/imbiss-asala-halal-wien-2evaae4",
+    "says": "PocketAustria: Mon-Fri 10:00-22:00, Sun 12:00-19:00 (differs)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Street address not printed on the official site (only Google links); Alser Straße 21 comes from several directories, some wrongly say district 9 (odd numbers of Alser Straße are 1080). Menu is an image, prices not readable. Alcohol 'false' from an old Zabihah listing only. Sister venue 'Basata' (address not found) could become a separate entry later."
+ },
+ {
+  "id": null,
+  "proposed_id": "jasmin-al-sham-1190",
+  "name": "Jasmin al Sham",
+  "status": "open",
+  "address": "Heiligenstädter Straße 9, 1190 Wien",
+  "address_changed": false,
+  "district": 19,
+  "city": "Wien",
+  "phone": "+43 1 8902170",
+  "website": "https://www.jasminalsham.wien",
+  "instagram": null,
+  "categories": [
+   "Syrisch",
+   "Libanesisch"
+  ],
+  "hours": {
+   "mon": "08:00-22:00",
+   "tue": "08:00-22:00",
+   "wed": "08:00-22:00",
+   "thu": "08:00-22:00",
+   "fri": "08:00-22:00",
+   "sat": "08:00-22:00",
+   "sun": "08:00-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/340/jasmin-al-sham (täglich 8-22); Zabihah same",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "Restaurant states it serves halal food (Zabihah)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/cb725470-7767-11ef-95ae-6045bdeb9f57/jasmin-al-sham-wien-austria"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://www.falter.at/lokal/340/jasmin-al-sham",
+    "https://www.zabihah.com/restaurants/cb725470-7767-11ef-95ae-6045bdeb9f57/jasmin-al-sham-wien-austria"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": null,
+  "prices": [],
+  "price_level": "€€",
+  "confidence": "medium",
+  "why_halal_friendly": "Syrian restaurant that serves no alcohol (Falter) and is listed on Zabihah as fully halal by the restaurant's own statement.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/340/jasmin-al-sham",
+    "says": "Falter: Heiligenstädter Straße 9, 1190; 01/890 21 70; jasminalsham.wien; täglich 8-22; 'es wird kein Alkohol ausgeschenkt'",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/cb725470-7767-11ef-95ae-6045bdeb9f57/jasmin-al-sham-wien-austria",
+    "says": "Zabihah: fully halal, 'Restaurant states it serves halal food', no alcohol; photos added Oct 2025",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.jasminalsham.wien",
+    "says": "Official site online (Syrisches Restaurant & Catering); halal text not found in the part that loaded",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Halal statement only via Zabihah; the official website did not show the word halal in the part that loaded. Falter and Zabihah agree on hours and no alcohol. No prices found."
+ },
+ {
+  "id": null,
+  "proposed_id": "munchos-1050",
+  "name": "Munchos - Peri Peri Chicken",
+  "status": "open",
+  "address": "Reinprechtsdorfer Straße 74, 1050 Wien",
+  "address_changed": false,
+  "district": 5,
+  "city": "Wien",
+  "phone": "+43 676 9008512",
+  "website": "https://munchos.at",
+  "instagram": null,
+  "categories": [
+   "Chicken",
+   "Peri Peri"
+  ],
+  "hours": {
+   "mon": "11:45-22:45",
+   "tue": "11:45-22:45",
+   "wed": "11:45-22:45",
+   "thu": "11:45-22:45",
+   "fri": "11:45-22:45",
+   "sat": "11:45-22:45",
+   "sun": "11:45-22:45"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken (delivery hours; Quandoo shows Fri 11:00-22:00)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "food tags: wings, chicken, fried chicken, halal (Wolt); 'Halāl' on munchos.at",
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "https://munchos.at"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+  "prices": [
+   {
+    "item": "Peri Peri Wrap (Chicken Strips)",
+    "price": "7,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Peri Peri Bowl (Chicken Strips)",
+    "price": "12,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Schnitzel Box",
+    "price": "9,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Sharing is Caring (Full Chicken, Beilage, Getränk)",
+    "price": "26,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Pommes frites",
+    "price": "5,20",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Coca-Cola Dose 0,33l",
+    "price": "3,40",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Peri-peri chicken shop tagged halal on Wolt and on its own (Wolt-hosted) order page.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/munchos-peri-peri-chicken",
+    "says": "Wolt: Reinprechtsdorfer Str. 74, 1050; tag halal; daily 11:45-22:45; no alcohol, no pork items",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://munchos.at",
+    "says": "Own order page (Wolt storefront): cuisine 'Halāl', same address and phone",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "munchos.at is a Wolt white-label shop, so not independent of Wolt. No certificate. Venue hours not confirmed (Quandoo snippet differs)."
+ },
+ {
+  "id": null,
+  "proposed_id": "schnitzel-madam-1050",
+  "name": "Schnitzel Madam",
+  "status": "open",
+  "address": "Reinprechtsdorfer Straße 3, 1050 Wien",
+  "address_changed": false,
+  "district": 5,
+  "city": "Wien",
+  "phone": "+43 1 2085764",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Schnitzel",
+   "Burger"
+  ],
+  "hours": {
+   "mon": "10:00-23:45",
+   "tue": "10:00-23:45",
+   "wed": "10:00-23:45",
+   "thu": "10:00-23:45",
+   "fri": "10:00-23:45",
+   "sat": "closed",
+   "sun": "10:00-23:45"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam (delivery hours, seen 2026-11-12)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "food tags: burger, schnitzel, wrap, halal (Wolt)",
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+  "prices": [
+   {
+    "item": "Gebackenes Hühnerschnitzel",
+    "price": "10,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Hühner Cordon Bleu",
+    "price": "12,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Schnitzelsemmel Menü",
+    "price": "13,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Schnitzelbox",
+    "price": "8,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Crunchy Chicken Burger",
+    "price": "7,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Chicken-schnitzel shop (no pork on the menu) tagged halal on Wolt.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/schnitzel-madam",
+    "says": "Wolt: Reinprechtsdorfer Straße 3, 1050; phone +4312085764; tag halal; only chicken schnitzel/cordon bleu; closed Saturday",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Only one source (Wolt); no second source found - does not meet the 'one source beyond a directory' bar, flag for the owner. Saturday closed per Wolt (unusual, may be a delivery setting)."
+ },
+ {
+  "id": null,
+  "proposed_id": "ammis-kitchen-1150",
+  "name": "Ammi's Kitchen",
+  "status": "open",
+  "address": "Herklotzgasse 5, 1150 Wien",
+  "address_changed": false,
+  "district": 15,
+  "city": "Wien",
+  "phone": "+43 681 20897873",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Pakistanisch",
+   "Indisch",
+   "Pizza"
+  ],
+  "hours": {
+   "mon": "11:00-24:00",
+   "tue": "11:00-24:00",
+   "wed": "11:00-24:00",
+   "thu": "11:00-24:00",
+   "fri": "11:00-01:00",
+   "sat": "11:00-01:00",
+   "sun": "11:00-24:00"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen (delivery hours, seen 2026-11-12)",
+  "halal": {
+   "evidence": "partial",
+   "certifier": null,
+   "quote": "HAUPTSPEISEN MIT FLEISCH HALAL (menu section)",
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen"
+   ]
+  },
+  "alcohol": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+  "prices": [
+   {
+    "item": "Chicken Tikka Masala",
+    "price": "14,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Matar Paneer",
+    "price": "11,00",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Ammi's Specialpizza Tandoori 33 cm",
+    "price": "13,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Hühnerschnitzel mit Pommes - kleine Portion",
+    "price": "9,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Pizza Salami 33 cm",
+    "price": "11,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Pakistani kitchen whose menu has a section 'Hauptspeisen mit Fleisch halal'; other parts (pizza) are not marked.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/ammis-kitchen",
+    "says": "Wolt: Herklotzgasse 5, 1150; menu category 'HAUPTSPEISEN MIT FLEISCH HALAL'; also Pizza Salami, Pizza Hawaii, Austrian dishes; no alcohol items",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/ammis_kitchen_wien/speisekarte",
+    "says": "speisekarte.de (search snippet): meat main dishes marked halal; updated Oct 2025",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Only the meat curries are marked halal. Pizza Salami / Hawaii appear without meat type - possible pork, so pork=null and evidence 'partial'."
+ },
+ {
+  "id": null,
+  "proposed_id": "hafes-1070",
+  "name": "Hafes",
+  "status": "open",
+  "address": "Kaiserstraße 98, 1070 Wien",
+  "address_changed": false,
+  "district": 7,
+  "city": "Wien",
+  "phone": "+43 1 5239936",
+  "website": "https://www.hafes.at",
+  "instagram": null,
+  "categories": [
+   "Persisch"
+  ],
+  "hours": {
+   "mon": "11:30-22:00",
+   "tue": "11:30-22:00",
+   "wed": "closed",
+   "thu": "11:30-22:00",
+   "fri": "11:30-22:00",
+   "sat": "11:30-22:00",
+   "sun": "11:30-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/1041/hafes (Mo, Di, Do-So, Fei 11.30-22); Wolt matches",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "all food at this restaurant is certified halal (Zabihah, active issue report)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/cb721e25-7767-11ef-95ae-6045bdeb9f57/hafes-neubau-wien"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/hafes"
+   ]
+  },
+  "pork": {
+   "value": false,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+    "https://www.hafes.at"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+  "prices": [
+   {
+    "item": "Baghalipolo ba Mahitsche (Lammstelze)",
+    "price": "18,90",
+    "source": "https://www.hafes.at",
+    "kind": "venue"
+   },
+   {
+    "item": "Vorspeisenteller Hafes",
+    "price": "14,90",
+    "source": "https://www.hafes.at",
+    "kind": "venue"
+   },
+   {
+    "item": "Kabab Barg",
+    "price": "21,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Kabab Makhsus",
+    "price": "18,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Fessendjan",
+    "price": "16,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€€",
+  "confidence": "low",
+  "why_halal_friendly": "Long-running Persian restaurant listed on Zabihah as fully halal with a certificate on file, but beer is sold.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/1041/hafes",
+    "says": "Falter: Kaiserstraße 98, 1070; 01/523 99 36; Mo, Di, Do-So 11.30-22; €€€; no halal mention",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/hafes",
+    "says": "Wolt: same hours (Wed closed); Wieselburger beer on menu; no halal tag",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.hafes.at",
+    "says": "Own site: menu prices, contact 01 5239936; no halal mention",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/cb721e25-7767-11ef-95ae-6045bdeb9f57/hafes-neubau-wien",
+    "says": "Zabihah: fully halal, certified, but alcohol served; active issue report",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Weak: halal only on Zabihah (with an open issue report); own site and Wolt don't mention halal; alcohol sold. Owner decides whether to list."
+ },
+ {
+  "id": null,
+  "proposed_id": "berliner-doener-1070",
+  "name": "Berliner Döner",
+  "status": "open",
+  "address": "Zieglergasse 35, 1070 Wien",
+  "address_changed": false,
+  "district": 7,
+  "city": "Wien",
+  "phone": "+43 1 4114509",
+  "website": null,
+  "instagram": null,
+  "categories": [
+   "Kebab",
+   "Döner"
+  ],
+  "hours": {
+   "mon": "10:30-22:00",
+   "tue": "10:30-22:00",
+   "wed": "10:30-22:00",
+   "thu": "10:30-22:00",
+   "fri": "10:30-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "hours_source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner (delivery hours, seen 2026-11-12)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "A halal sign is clearly visible on the premises (Zabihah)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/cb84058a-7767-11ef-95ae-6045bdeb9f57/berliner-dner-wien-austria"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": [
+    "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner"
+   ]
+  },
+  "menu_url": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+  "prices": [
+   {
+    "item": "Berliner Hähnchen-Dürüm",
+    "price": "8,50",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Berliner Lamm-Sandwich",
+    "price": "7,60",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Berliner Dönerteller Lamm",
+    "price": "15,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Adana Kebap",
+    "price": "22,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "kind": "delivery_app"
+   },
+   {
+    "item": "Baklava",
+    "price": "7,90",
+    "source": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "kind": "delivery_app"
+   }
+  ],
+  "price_level": "€€",
+  "confidence": "low",
+  "why_halal_friendly": "Popular Döner restaurant that Zabihah lists as fully halal with a visible halal sign; however the current menu sells beer.",
+  "sources": [
+   {
+    "url": "https://wolt.com/de-at/aut/vienna/restaurant/berliner-dner",
+    "says": "Wolt: Zieglergasse 35/Lokal 2+3, 1070; phone +4314114509; beer and Spumante on menu; 'Berliner Currywurst' (meat not stated); no halal tag",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/cb84058a-7767-11ef-95ae-6045bdeb9f57/berliner-dner-wien-austria",
+    "says": "Zabihah: fully halal, halal sign visible, 'No alcohol' (contradicted by Wolt menu)",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.falter.at/lokalfuehrer/tuerkische-lokale-in-wien",
+    "says": "Falter: 'Berliner Restaurant', Zieglergasse 35, 1070",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Address in directories varies (Zieglergasse 33, 33A, 35); Wolt and Falter use 35. Zabihah 'no alcohol' is outdated - beer is on the delivery menu. Currywurst meat type unknown, so pork=null. Weak; owner decides."
+ },
+ {
+  "id": null,
+  "proposed_id": "buon-giorno-1070",
+  "name": "Buon Giorno",
+  "status": "open",
+  "address": "Mariahilfer Straße 100, 1070 Wien",
+  "address_changed": false,
+  "district": 7,
+  "city": "Wien",
+  "phone": "+43 1 5238085",
+  "website": "https://pizzabuongiorno.at",
+  "instagram": null,
+  "categories": [
+   "Pizza",
+   "Asiatisch"
+  ],
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "hours_source": "https://www.falter.at/lokal/6759/buon-giorno (Nov-Dez täglich 10-22, Jan-Okt 10-23)",
+  "halal": {
+   "evidence": "third_party",
+   "certifier": null,
+   "quote": "halal sign is clearly visible on the premises (Zabihah)",
+   "sources": [
+    "https://www.zabihah.com/restaurants/cb7214c5-7767-11ef-95ae-6045bdeb9f57/buon-giorno-neubau-wien"
+   ]
+  },
+  "alcohol": {
+   "value": true,
+   "sources": [
+    "https://www.falter.at/lokal/6759/buon-giorno"
+   ]
+  },
+  "pork": {
+   "value": null,
+   "sources": []
+  },
+  "menu_url": "https://pizzabuongiorno.at",
+  "prices": [],
+  "price_level": "€",
+  "confidence": "low",
+  "why_halal_friendly": "Pizza and noodle takeaway on Mariahilfer Straße that Zabihah lists as fully halal with a visible halal sign.",
+  "sources": [
+   {
+    "url": "https://www.falter.at/lokal/6759/buon-giorno",
+    "says": "Falter: Mariahilfer Straße 100, 1070; 01/523 80 85; pizzabuongiorno.at; Jan-Okt 10-23, Nov-Dez 10-22; 'Italienische Weine, Bier, Softdrinks'",
+    "seen": "2026-11-12"
+   },
+   {
+    "url": "https://www.zabihah.com/restaurants/cb7214c5-7767-11ef-95ae-6045bdeb9f57/buon-giorno-neubau-wien",
+    "says": "Zabihah: fully halal, halal sign visible, no alcohol (contradicted by Falter)",
+    "seen": "2026-11-12"
+   }
+  ],
+  "notes": "Contradiction: Zabihah says no alcohol, Falter lists wine and beer. Own website loads but shows no halal text. Prices not found. Hours are seasonal (Jan-Oct until 23:00). Weak; owner decides."
+ }
+]

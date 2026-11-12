@@ -1,0 +1,2929 @@
+[
+  {
+    "id": "pizza-mann-wien-02",
+    "name": "Pizza Mann Wien 2",
+    "status": "permanently_closed",
+    "address": "Franzensbrückenstraße 13, 1020 Wien",
+    "address_changed": true,
+    "district": 2,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Ausstellungsstraße 15, 1020 Wien' and phone +43 1 216 5555 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. The real Vienna-2 branch was Franzensbrückenstraße 13, 1020 Wien (official list Oct 2024; MeinBezirk Feb 2025). It is no longer on the official list (gone by May 2026), so it is most likely closed. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-wien-10",
+    "name": "Pizza Mann Quellenstraße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Quellenstraße 154, 1100 Wien' and phone +43 1 684 2222 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. No Pizza Mann in 1100 Wien on any official list. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-wien-14",
+    "name": "Pizza Mann Linzer Straße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 14,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Linzer Straße 104, 1140 Wien' and phone +43 1 892 3333 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. Nearest former official branch was Hütteldorfer Straße 23, 1150 Wien (on the list in Oct 2024, gone by May 2026). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-wien-21",
+    "name": "Pizza Mann Prager Straße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 21,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Prager Straße 105, 1210 Wien' and phone +43 1 290 4444 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. No Pizza Mann in 1210 Wien on any official list. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-wien-22",
+    "name": "Pizza Mann Wagramer Straße",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 22,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Wagramer Straße 122, 1220 Wien' and phone +43 1 202 5555 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. No Pizza Mann in 1220 Wien on any official list. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-graz",
+    "name": "Pizza Mann Graz",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 0,
+    "city": "Graz",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Münzgrabenstraße 158, 8010 Graz' and phone +43 316 825 4444 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. Pizza Mann has no branch in Styria at all (official lists 2024 and 2026; MeinBezirk 2025 names only Wien, OÖ, Salzburg, Tirol). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-linz-zentrum",
+    "name": "Pizza Mann Linz (Unionstraße)",
+    "status": "open",
+    "address": "Unionstraße 33, 4020 Linz",
+    "address_changed": true,
+    "district": 0,
+    "city": "Linz",
+    "phone": "+43 50 10 10 10",
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-23:50",
+      "tue": "11:00-23:50",
+      "wed": "11:00-23:50",
+      "thu": "11:00-01:45",
+      "fri": "11:00-01:45",
+      "sat": "11:00-01:45",
+      "sun": "11:00-23:50"
+    },
+    "hours_source": "https://www.pizzamann.at/api/filialen (seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "11,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1404&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Pizza Chicken BBQ",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1404&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Teriyaki Pizza (Huhn)",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1404&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Sweet Chicken Salat",
+        "price": "10,60",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1404&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,5l PET",
+        "price": "3,40",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1404&typ_zustellung=1",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Landwiedstraße 117' and phone +43 732 784 3333 are not confirmed anywhere; the only open Pizza Mann in Linz is Unionstraße 33 (official list). I mapped this id to it; owner decides. Hours are the online-shop times from the API (day 1 assumed Monday); the branch note says 'Zustellungen Donnerstag bis Sonntag bis 3 Uhr. Montag bis Mittwoch nur bis 24 Uhr' - the two do not fully agree, treat hours as low confidence. Former Linz branches Dauphinestraße 192 and Freistädterstraße 313 were dropped from the official list between Oct 2024 and May 2026. Phone: only the central order hotline 050 10 10 10 is published (pizzamann.at service/kontakt pages); no branch phone found. Prices are from Pizza Mann's own online shop (identical for branches 1133, 1404, 1560); delivery adds a service fee of 3,90 EUR (pizzamann.at service page). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-linz-restaurant",
+    "name": "Pizza Mann Linz Restaurant",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 0,
+    "city": "Linz",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Wiener Straße 443, 4020 Linz' and phone +43 732 783 2222 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. Pizza Mann is a delivery chain; no 'restaurant' at Wiener Straße found. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-leonding",
+    "name": "Pizza Mann Leonding",
+    "status": "unclear",
+    "address": null,
+    "address_changed": false,
+    "district": 0,
+    "city": "Leonding",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Welser Straße 41, 4060 Leonding' and phone +43 732 691 5555 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. Welser Straße 43, Leonding is a different pizzeria (Pizzeria David, swipein). Nearest official Pizza Mann is Traun, Wiener Bundesstraße 196. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-salzburg",
+    "name": "Pizza Mann Salzburg",
+    "status": "open",
+    "address": "Aiglhofstraße 1, 5020 Salzburg",
+    "address_changed": true,
+    "district": 0,
+    "city": "Salzburg",
+    "phone": "+43 50 10 10 10",
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-24:00",
+      "tue": "11:00-24:00",
+      "wed": "11:00-24:00",
+      "thu": "11:00-24:00",
+      "fri": "11:00-24:00",
+      "sat": "11:00-24:00",
+      "sun": "11:00-24:00"
+    },
+    "hours_source": "https://www.pizzamann.at/api/filialen (branch text: 'Täglich bis 24 Uhr geöffnet!'; API times 11:00-23:50) (seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "11,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1560&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Pizza Chicken BBQ",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1560&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Teriyaki Pizza (Huhn)",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1560&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Sweet Chicken Salat",
+        "price": "10,60",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1560&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,5l PET",
+        "price": "3,40",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1560&typ_zustellung=1",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Itzlinger Hauptstraße 19' and phone +43 662 872 3333 are wrong/unconfirmed; the only Salzburg branch is Aiglhofstraße 1. Phone: only the central order hotline 050 10 10 10 is published (pizzamann.at service/kontakt pages); no branch phone found. Prices are from Pizza Mann's own online shop (identical for branches 1133, 1404, 1560); delivery adds a service fee of 3,90 EUR (pizzamann.at service page). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-innsbruck",
+    "name": "Pizza Mann Innsbruck",
+    "status": "open",
+    "address": "Ing.-Etzel-Straße, Viaduktbogen 21, 6020 Innsbruck",
+    "address_changed": true,
+    "district": 0,
+    "city": "Innsbruck",
+    "phone": "+43 50 10 10 10",
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-24:00",
+      "tue": "11:00-24:00",
+      "wed": "11:00-24:00",
+      "thu": "11:00-24:00",
+      "fri": "11:00-24:00",
+      "sat": "11:00-24:00",
+      "sun": "11:00-24:00"
+    },
+    "hours_source": "https://www.pizzamann.at/api/filialen (branch text: 'Montag bis Sonntag von 11 bis 24 Uhr geöffnet'; API shows Fri/Sat online orders until 01:50) (seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "11,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1670&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Pizza Chicken BBQ",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1670&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Teriyaki Pizza (Huhn)",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1670&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Sweet Chicken Salat",
+        "price": "10,60",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1670&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,5l PET",
+        "price": "3,40",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1670&typ_zustellung=1",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Innrain 100' and phone +43 512 589 4444 are wrong/unconfirmed; the only Innsbruck branch is Viaduktbogen 21, Ing.-Etzel-Straße. Phone: only the central order hotline 050 10 10 10 is published (pizzamann.at service/kontakt pages); no branch phone found. Prices are from Pizza Mann's own online shop (identical for branches 1133, 1404, 1560); delivery adds a service fee of 3,90 EUR (pizzamann.at service page). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": "pizza-mann-wels",
+    "name": "Pizza Mann Wels",
+    "status": "permanently_closed",
+    "address": "Dr.-Koss-Straße 3, 4600 Wels",
+    "address_changed": true,
+    "district": 0,
+    "city": "Wels",
+    "phone": null,
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address 'Hans-Sachs-Straße 103, 4600 Wels' and phone +43 7242 456 2222 could not be confirmed anywhere: the address is not on the official Pizza Mann branch list today, nor in the archived list from Oct 2024, and no directory shows a Pizza Mann there. The record looks invented. The real Wels branch was Dr.-Koss-Straße 3, 4600 Wels (official list Oct 2024); it is no longer on the official list (gone by May 2026), so most likely closed. HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi."
+  },
+  {
+    "id": null,
+    "name": "Pizza Mann Wien 5 (Ziegelofengasse)",
+    "status": "open",
+    "address": "Ziegelofengasse 41, 1050 Wien",
+    "address_changed": false,
+    "district": 5,
+    "city": "Wien",
+    "phone": "+43 50 10 10 10",
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-24:00",
+      "tue": "11:00-24:00",
+      "wed": "11:00-24:00",
+      "thu": "11:00-24:00",
+      "fri": "11:00-24:00",
+      "sat": "11:00-24:00",
+      "sun": "11:00-24:00"
+    },
+    "hours_source": "https://www.pizzamann.at/api/filialen (branch text: 'Öffnungszeiten täglich von 11 bis 24 Uhr'; closed 24 and 31 Dec) (seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "11,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Pizza Chicken BBQ",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Teriyaki Pizza (Huhn)",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Sweet Chicken Salat",
+        "price": "10,60",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,5l PET",
+        "price": "3,40",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Only open Pizza Mann in Vienna. Not in our data (checked _existing-input.json by name and address). Phone: only the central order hotline 050 10 10 10 is published (pizzamann.at service/kontakt pages); no branch phone found. Prices are from Pizza Mann's own online shop (identical for branches 1133, 1404, 1560); delivery adds a service fee of 3,90 EUR (pizzamann.at service page). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly: listed only because the brief asks for missing branches; pork and alcohol on the menu, no halal claim."
+  },
+  {
+    "id": null,
+    "name": "Pizza Mann Traun",
+    "status": "open",
+    "address": "Wiener Bundesstraße 196, 4050 Traun",
+    "address_changed": false,
+    "district": 0,
+    "city": "Traun",
+    "phone": "+43 50 10 10 10",
+    "website": "https://www.pizzamann.at",
+    "instagram": null,
+    "categories": [
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "10:00-24:00",
+      "tue": "10:00-24:00",
+      "wed": "10:00-24:00",
+      "thu": "10:00-24:00",
+      "fri": "10:00-24:00",
+      "sat": "10:00-24:00",
+      "sun": "10:00-24:00"
+    },
+    "hours_source": "https://www.pizzamann.at/api/filialen (branch text: 'Öffnungszeiten täglich bis 24 Uhr'; API times 10:00-23:50) (seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Schweinsschnitzel; Cardinale: mit Tomatensauce, 100 % Mozzarella und Pizza Schinken",
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "https://www.pizzamann.at/qualitaet"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Getränke: Gösser 0,5l Dose 4,30; Rotwein Zweigelt 15,00)"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1 (Schweinsschnitzel 10,90; Pizza Schinken, Speck, Salami on many pizzas)"
+      ]
+    },
+    "menu_url": "https://www.pizzamann.at",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "11,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1409&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Pizza Chicken BBQ",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1409&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Teriyaki Pizza (Huhn)",
+        "price": "15,90",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1409&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Sweet Chicken Salat",
+        "price": "10,60",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1409&typ_zustellung=1",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,5l PET",
+        "price": "3,40",
+        "source": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1409&typ_zustellung=1",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.pizzamann.at/api/filialen",
+        "says": "Official branch list (API behind pizzamann.at/filialen) has only 5 branches: 1050 Wien Ziegelofengasse 41, 4020 Linz Unionstraße 33, 4050 Traun Wiener Bundesstraße 196, 5020 Salzburg Aiglhofstraße 1, 6020 Innsbruck Ing. Etzel-Str. Viaduktbogen 21",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20241009163019/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2024-10-09: 12 branches (1020 Franzensbrückenstraße 13, 1050 Ziegelofengasse 41, 1150 Hütteldorfer Straße 23, 1180 Gersthofer Straße 2a, 1230 Breitenfurter Straße 228, Linz Unionstraße 33, Linz Dauphinestraße 192, Linz Freistädterstraße 313, Traun Wiener Bundesstraße 196, Wels Dr.-Koss-Straße 3, Salzburg Aiglhofstraße 1, Innsbruck Viaduktbogen 21). No Graz, no Leonding.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260503103231/https://www.pizzamann.at/api/filialen",
+        "says": "Archived official list 2026-05-03: the same 5 branches as today",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/wien/c-wirtschaft/teil-von-pizzamann-insolvent-doch-betrieb-laeuft-weiter_a7175517",
+        "says": "27.02.2025: PHD Service GmbH (operator of Pizzamann) filed for Sanierungsverfahren; at that time 11 branches, 5 in Vienna",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/listartikelgruppen?filiale=1133&typ_zustellung=1",
+        "says": "Online menu: Schinken/Speck/Salami pizzas, Schweinsschnitzel, Gösser beer, Rotwein; the word 'halal' does not appear in the menu data",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.pizzamann.at/api/kontakt.json",
+        "says": "Operator PHD Service GmbH on behalf of SGS Handels GesmbH, Sternwartstraße 76, 1180 Wien; central order hotline 050 10 10 10",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list, not in our data. Phone: only the central order hotline 050 10 10 10 is published (pizzamann.at service/kontakt pages); no branch phone found. Prices are from Pizza Mann's own online shop (identical for branches 1133, 1404, 1560); delivery adds a service fee of 3,90 EUR (pizzamann.at service page). HALAL: pizzamann.at does not say halal anywhere (menu data, Qualität and service pages checked); the menu has pork (Schweinsschnitzel, Pizza Schinken, Speck, Salami) and beer/wine. Only an auto-generated aggregator (swipein.restaurant) shows a halal badge for Wien 18/23, which is not evidence. Recommendation: remove the whole Pizza Mann chain from Akiwi.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly: listed only because the brief asks for missing branches; pork and alcohol on the menu, no halal claim."
+  },
+  {
+    "id": "vapiano-wien-mariahilf",
+    "name": "Vapiano Wien Mariahilferstraße",
+    "status": "open",
+    "address": "Theobaldgasse 19, 1060 Wien",
+    "address_changed": false,
+    "district": 6,
+    "city": "Wien",
+    "phone": "+43 1 5811212",
+    "website": "https://www.vapiano.at/restaurants/wien-mariahilferstrasse/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-22:30",
+      "fri": "11:00-22:30",
+      "sat": "11:00-22:30",
+      "sun": "12:00-22:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-mariahilferstrasse/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-mariahilferstrasse/",
+        "says": "Official branch page: address Theobaldgasse 19, 1060 Wien, phone +43 1 5811212, e-mail mariahilferstrasse@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address correct. Phone on file +43 1 585 0000 is wrong (real +43 1 5811212). Hours on file 11-23 (two days to 23:30) are wrong: real Mon-Sat 11:00-22:30, Sun 12:00-22:30. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-wien-innenstadt-walfisch",
+    "name": "Vapiano Wien Moulin Rouge (Walfischgasse)",
+    "status": "permanently_closed",
+    "address": "Walfischgasse 11, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Italienisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.leadersnet.at/news/99449,vapiano-eroeffnet-erstes-piccolo-restaurant-im-zuge-der.html",
+        "says": "23.04.2026: the Vapiano in the historic Moulin Rouge in Vienna closed recently",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.meinbezirk.at/innere-stadt/c-wirtschaft/nach-vapiano-aus-das-ist-in-der-walfischgasse-geplant_a8808969",
+        "says": "After the Vapiano exit the premises were empty from 16 April; successor planned",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.news.at/schlagzeilen/losteria-moulin-rouge-eroeffnet-mit-prominentem-aufgebot-in-der-wiener-innenstadt",
+        "says": "L'Osteria opened in the Moulin Rouge (successor tenant)",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260308033808/https://www.vapiano.at/restaurants/wien-moulin-rouge/",
+        "says": "Archived branch page March 2026: Walfischgasse 11, 1010 Wien, +43 1 5122277",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Closed mid-April 2026; no longer on vapiano.at. L'Osteria now uses the premises. Remove from Akiwi. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-wien-innenstadt-herren",
+    "name": "Vapiano Wien Herrengasse",
+    "status": "open",
+    "address": "Herrengasse 6-8, 1010 Wien",
+    "address_changed": true,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 1 5337272",
+    "website": "https://www.vapiano.at/restaurants/wien-herrengasse/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-23:00",
+      "fri": "11:00-23:00",
+      "sat": "11:00-23:00",
+      "sun": "12:00-23:00"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-herrengasse/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-herrengasse/",
+        "says": "Official branch page: address Herrengasse 6-8, 1010 Wien, phone +43 1 5337272, e-mail herrengasse@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file 'Herrengasse 1-3' is wrong: official 'Herrengasse 6-8'. Phone on file +43 1 585 0002 wrong (real +43 1 5337272). Hours on file wrong: real Mon-Wed 11:00-22:30, Thu-Sat 11:00-23:00, Sun 12:00-23:00; the bar part opens daily 08:00-23:00. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-wien-leopoldstadt",
+    "name": "Vapiano Praterstraße",
+    "status": "permanently_closed",
+    "address": "Praterstraße 24-26, 1020 Wien",
+    "address_changed": false,
+    "district": 2,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Italienisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/cdx/search/cdx?url=vapiano.at/restaurants/*",
+        "says": "No Praterstraße branch page archived for the current vapiano.at site (pages exist for all 12 current branches plus Moulin Rouge and Sparkassenplatz)",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://theviennareview.at/food-drink/6475/vapiano-praterstrasse",
+        "says": "Old guide entry 'Vapiano Praterstraße' (no verification date)",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Not on the official vapiano.at list today nor in Feb 2026; no branch page on the current site. No closure article found, so 'permanently_closed' is inferred from absence on the chain's own list (medium confidence). Remove unless the owner finds it open. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-wien-westbahnhof",
+    "name": "Vapiano Wien Westbahnhof",
+    "status": "open",
+    "address": "Europaplatz 1, 1150 Wien",
+    "address_changed": true,
+    "district": 15,
+    "city": "Wien",
+    "phone": "+43 1 9621515",
+    "website": "https://www.vapiano.at/restaurants/wien-westbahnhof/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-22:30",
+      "fri": "11:00-22:30",
+      "sat": "11:00-22:30",
+      "sun": "11:00-22:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-westbahnhof/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-westbahnhof/",
+        "says": "Official branch page: address Europaplatz 1, 1150 Wien, phone +43 1 9621515, e-mail westbahnhof@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file 'Europaplatz 2' -> official 'Europaplatz 1, 1150 Wien'; district on file 6 is wrong, it is 15. Phone on file wrong (real +43 1 9621515). Hours on file 07:00-23:00 wrong: real daily 11:00-22:30 (bar hours on the branch page may differ). HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-graz-zentrum",
+    "name": "Vapiano piccolo Graz (Kaiserfeldgasse)",
+    "status": "moved",
+    "address": "Kaiserfeldgasse 3, 8010 Graz",
+    "address_changed": true,
+    "district": 0,
+    "city": "Graz",
+    "phone": "+43 316 839898",
+    "website": "https://www.vapiano.at/restaurants/graz-kaiserfeldgasse/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:00",
+      "tue": "11:00-22:00",
+      "wed": "11:00-22:00",
+      "thu": "11:00-22:00",
+      "fri": "11:00-22:00",
+      "sat": "11:00-22:00",
+      "sun": "11:00-22:00"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/graz-kaiserfeldgasse/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Carbonara (Guanciale)",
+        "price": "14,90",
+        "source": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Bolognese",
+        "price": "15,90",
+        "source": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/graz-kaiserfeldgasse/",
+        "says": "Official page: Kaiserfeldgasse 3, 8010 Graz, +43 (316) 83 98 98, daily 11:00-22:00",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260308045849/https://www.vapiano.at/restaurants/graz-sparkassenplatz/",
+        "says": "Archived page March 2026: Sparkassenpl. 4, 8010 Graz, +43 316 839898",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.leadersnet.at/news/99449,vapiano-eroeffnet-erstes-piccolo-restaurant-im-zuge-der.html",
+        "says": "23.04.2026: first Vapiano piccolo opened at Kaiserfeldgasse 3, Graz (former Swing Kitchen)",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://ground.news/article/city-stroll-60-seconds-to-napoli-to-take-over-former-vapiano-surfaces-in-graz",
+        "says": "Headline: 60 Seconds to Napoli to take over former Vapiano space in Graz (undated aggregator)",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/VapianoPiccolo_Men%C3%BCbards.pdf",
+        "says": "Piccolo menu: Margherita 10,90, Carbonara 14,90, Chicken Alfredo 16,90, Bolognese 15,90, extra Guanciale +5,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "MOVED: the Vapiano at Sparkassenplatz 4 is no longer on vapiano.at (still listed in Feb 2026). The chain opened its first 'Vapiano piccolo' at Kaiserfeldgasse 3 (former Swing Kitchen) in April 2026, and the new page uses the same phone number (+43 316 839898) as the archived Sparkassenplatz page. A Ground News headline says '60 Seconds to Napoli' takes over the former Vapiano space at Sparkassenplatz. Phone on file +43 316 823 0000 wrong. Hours on file wrong: real daily 11:00-22:00. Piccolo has its own smaller menu. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-graz-murpark",
+    "name": "Vapiano Murpark",
+    "status": "permanently_closed",
+    "address": "Ostbahnstraße 3 (Murpark), 8041 Graz",
+    "address_changed": false,
+    "district": 0,
+    "city": "Graz",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Italienisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.hogapage.de/nachrichten/wirtschaft/gastronomie/vapiano-startet-oesterreichweit-wieder-durch/",
+        "says": "2020 reopening report after the insolvency/lockdown: smaller restaurants in SCS, Parndorf and Murpark Graz would not reopen (per search snippet)",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Not on vapiano.at; 2020 reports say Murpark was not reopened after Vapiano Austria's 2020 insolvency. Murpark postcode is 8041 (our file says 8020). Remove. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-innsbruck-dez",
+    "name": "Vapiano Innsbruck Bleichenweg (DEZ)",
+    "status": "open",
+    "address": "Bleichenweg 18, 6020 Innsbruck",
+    "address_changed": false,
+    "district": 0,
+    "city": "Innsbruck",
+    "phone": "+43 512 342650",
+    "website": "https://www.vapiano.at/restaurants/innsbruck-bleichenweg/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:00",
+      "tue": "11:00-22:00",
+      "wed": "11:00-22:00",
+      "thu": "11:00-22:00",
+      "fri": "11:00-22:00",
+      "sat": "11:00-22:00",
+      "sun": "12:00-21:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/innsbruck-bleichenweg/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/innsbruck-bleichenweg/",
+        "says": "Official branch page: address Bleichenweg 18, 6020 Innsbruck, phone +43 512 342650, e-mail innsbruck@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address correct. Phone on file wrong (official page shows '+43 51 2342650', i.e. +43 512 342650). Hours on file 10-22 wrong: real Mon-Sat 11:00-22:00, Sun 12:00-21:30. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-innsbruck-leopold",
+    "name": "Vapiano Innsbruck Triumphpforte",
+    "status": "open",
+    "address": "Leopoldstraße 1, 6020 Innsbruck",
+    "address_changed": false,
+    "district": 0,
+    "city": "Innsbruck",
+    "phone": "+43 512 567350",
+    "website": "https://www.vapiano.at/restaurants/innsbruck-triumphpforte/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:00",
+      "tue": "11:00-22:00",
+      "wed": "11:00-22:00",
+      "thu": "11:00-22:00",
+      "fri": "11:00-22:00",
+      "sat": "11:00-22:00",
+      "sun": "12:00-21:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/innsbruck-triumphpforte/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/innsbruck-triumphpforte/",
+        "says": "Official branch page: address Leopoldstraße 1, 6020 Innsbruck, phone +43 512 567350, e-mail innsbruck2@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address correct (branch is called 'Triumphpforte'). Phone on file wrong (real +43 512 567350). Hours on file wrong: real Mon-Sat 11:00-22:00, Sun 12:00-21:30. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-linz",
+    "name": "Vapiano Linz Hauptplatz",
+    "status": "open",
+    "address": "Schmidtorstraße 1, 4020 Linz",
+    "address_changed": true,
+    "district": 0,
+    "city": "Linz",
+    "phone": "+43 732 776577",
+    "website": "https://www.vapiano.at/restaurants/linz-hauptplatz/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:30-21:00",
+      "tue": "11:30-21:00",
+      "wed": "11:30-21:00",
+      "thu": "11:30-21:00",
+      "fri": "11:30-21:30",
+      "sat": "11:30-21:30",
+      "sun": "11:30-21:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/linz-hauptplatz/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Bolognese",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_LINZ-Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/linz-hauptplatz/",
+        "says": "Official branch page: address Schmidtorstraße 1, 4020 Linz, phone +43 732 776577, e-mail info@italinz.com, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file 'Hauptplatz 11' -> official 'Schmidtorstraße 1, 4020 Linz' (branch named 'Linz Hauptplatz'). Phone on file wrong (official '+43 73 2776577', i.e. +43 732 776577; contact e-mail info@italinz.com, a franchise operator). Hours on file wrong: real Mon-Thu 11:30-21:00, Fri-Sun 11:30-21:30. Linz has its own menu PDF, also with the pork symbol. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-salzburg",
+    "name": "Vapiano Salzburg",
+    "status": "unclear",
+    "address": null,
+    "address_changed": true,
+    "district": 0,
+    "city": "Salzburg",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Italienisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/neuer-mieter-im-forum-1-diese-pizzeria-kette-eroeffnet-jetzt-erstmals-in-salzburg-art-336929",
+        "says": "03.09.2026: Vapiano opens for the first time in Salzburg, in FORUM 1 (Hauptbahnhof), in November",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.weekend.at/bundesland/salzburg/vapiano-forum-1-eroeffnung",
+        "says": "05.11.2026: Vapiano piccolo in Forum 1 opening in November (no exact date)",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our record 'Hanushplatz 1' is wrong: there has never been a Vapiano in Salzburg ('erstmals in Salzburg'). A Vapiano piccolo is announced for FORUM 1 at Salzburg Hauptbahnhof in November 2026, not yet on vapiano.at today. Owner: replace the record once it appears on vapiano.at; exact address and hours not yet published. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": "vapiano-klagenfurt",
+    "name": "Vapiano Klagenfurt",
+    "status": "unclear",
+    "address": null,
+    "address_changed": true,
+    "district": 0,
+    "city": "Klagenfurt",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Italienisch"
+    ],
+    "hours": null,
+    "hours_source": null,
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.hogapage.de/nachrichten/wirtschaft/gastronomie/vapiano-feiert-in-oesterreich-10-geburtstag/",
+        "says": "Older article: Vapiano would like to expand to Salzburg and Klagenfurt (plans only)",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No evidence a Vapiano ever existed at Heuplatz 4, Klagenfurt; not on the official list, only old expansion plans found. The record looks invented. Remove. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note."
+  },
+  {
+    "id": null,
+    "name": "Vapiano Wien Donauzentrum",
+    "status": "open",
+    "address": "Wagramer Straße 79, 1220 Wien",
+    "address_changed": false,
+    "district": 22,
+    "city": "Wien",
+    "phone": "+43 1 3888585",
+    "website": "https://www.vapiano.at/restaurants/wien-donauzentrum/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-22:30",
+      "fri": "11:00-22:30",
+      "sat": "11:00-22:30",
+      "sun": "12:00-22:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-donauzentrum/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-donauzentrum/",
+        "says": "Official branch page: address Wagramer Straße 79, 1220 Wien, phone +43 1 3888585, e-mail donauzentrum@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list, not in our data. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly by evidence (pork and alcohol on the menu, no halal claim); listed only because the brief asks for missing branches."
+  },
+  {
+    "id": null,
+    "name": "Vapiano Wien Hauptbahnhof",
+    "status": "open",
+    "address": "Gertrude-Fröhlich-Sandner-Straße 13a, 1100 Wien",
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": "+43 1 3883333",
+    "website": "https://www.vapiano.at/restaurants/wien-hauptbahnhof/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-22:30",
+      "fri": "11:00-22:30",
+      "sat": "11:00-22:30",
+      "sun": "12:00-22:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-hauptbahnhof/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-hauptbahnhof/",
+        "says": "Official branch page: address Gertrude-Fröhlich-Sandner-Straße 13a, 1100 Wien, phone +43 1 3883333, e-mail hauptbahnhof@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list, not in our data. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly by evidence (pork and alcohol on the menu, no halal claim); listed only because the brief asks for missing branches."
+  },
+  {
+    "id": null,
+    "name": "Vapiano Wien Mitte Landstraße",
+    "status": "open",
+    "address": "Invalidenstraße 2, 1030 Wien",
+    "address_changed": false,
+    "district": 3,
+    "city": "Wien",
+    "phone": "+43 1 7107373",
+    "website": "https://www.vapiano.at/restaurants/wien-mitte-landstrasze/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:30",
+      "tue": "11:00-22:30",
+      "wed": "11:00-22:30",
+      "thu": "11:00-22:30",
+      "fri": "11:00-22:30",
+      "sat": "11:00-22:30",
+      "sun": "12:00-22:30"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-mitte-landstrasze/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-mitte-landstrasze/",
+        "says": "Official branch page: address Invalidenstraße 2, 1030 Wien, phone +43 1 7107373, e-mail wienmitte@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list, not in our data. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly by evidence (pork and alcohol on the menu, no halal claim); listed only because the brief asks for missing branches."
+  },
+  {
+    "id": null,
+    "name": "Vapiano SCS Vösendorf",
+    "status": "open",
+    "address": "Shopping City Süd, Kaufhaus A, Eingang 7, 2334 Vösendorf",
+    "address_changed": false,
+    "district": 0,
+    "city": "Vösendorf",
+    "phone": "+43 1 6981515",
+    "website": "https://www.vapiano.at/restaurants/wien-scs-voesendorf/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:00",
+      "tue": "11:00-22:00",
+      "wed": "11:00-22:00",
+      "thu": "11:00-22:00",
+      "fri": "11:00-22:00",
+      "sat": "11:00-22:00",
+      "sun": "12:00-22:00"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-scs-voesendorf/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-scs-voesendorf/",
+        "says": "Official branch page: address Shopping City Süd, Kaufhaus A, Eingang 7, 2334 Vösendorf, phone +43 1 6981515, e-mail scs@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list (Lower Austria, outside Vienna). Official page writes the phone as '+43 16 981515' (= +43 1 6981515). HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly by evidence (pork and alcohol on the menu, no halal claim); listed only because the brief asks for missing branches."
+  },
+  {
+    "id": null,
+    "name": "Vapiano Wien Vio Plaza",
+    "status": "open",
+    "address": "Schönbrunner Schloßstraße 2, Top 1 (EG.01), 1120 Wien",
+    "address_changed": false,
+    "district": 12,
+    "city": "Wien",
+    "phone": "+43 1 4230100",
+    "website": "https://www.vapiano.at/restaurants/wien-vio-plaza/",
+    "instagram": "https://www.instagram.com/vapiano_austria/",
+    "categories": [
+      "Italienisch",
+      "Pasta",
+      "Pizza"
+    ],
+    "hours": {
+      "mon": "11:00-22:00",
+      "tue": "11:00-22:00",
+      "wed": "11:00-22:00",
+      "thu": "11:00-22:00",
+      "fri": "11:00-22:00",
+      "sat": "11:00-22:00",
+      "sun": "12:00-21:00"
+    },
+    "hours_source": "https://www.vapiano.at/restaurants/wien-vio-plaza/ ('Restaurant' hours; kitchen closes about 30 min earlier; seen 2026-11-12)",
+    "halal": {
+      "evidence": "contradicted",
+      "certifier": null,
+      "quote": "Menu legend 'enthält Schweinefleisch'; Carbonara: Guanciale; Prosciutto e Funghi: italienischer Beinschinken",
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "https://www.vapiano.at/menue/"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/menue/ (Vino & Spritz, Bier: Aperol Spritz, Prosecco, Birra Moretti, Stiegl)",
+        "https://www.vapiano.at/uploads/Barkarte_2026-Ansicht.pdf"
+      ]
+    },
+    "pork": {
+      "value": true,
+      "sources": [
+        "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf (pork symbol 'enthält Schweinefleisch')",
+        "https://www.vapiano.at/menue/ (Guanciale, Prosciutto Crudo, italienischer Beinschinken, Salami)"
+      ]
+    },
+    "menu_url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+    "prices": [
+      {
+        "item": "Pizza Margherita",
+        "price": "10,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Chicken Alfredo (Pasta)",
+        "price": "16,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Lasagne alla Bolognese (Rind)",
+        "price": "13,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Coca-Cola 0,33 l",
+        "price": "4,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Aperol Spritz",
+        "price": "7,90",
+        "source": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.vapiano.at/restaurants/wien-vio-plaza/",
+        "says": "Official branch page: address Schönbrunner Schloßstraße 2, Top 1 (EG.01), 1120 Wien, phone +43 1 4230100, e-mail vioplaza@vapiano.at, restaurant hours as given",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/restaurants/",
+        "says": "Official list today: Wien Vio Plaza, Mariahilferstraße, Donauzentrum, Hauptbahnhof, Herrengasse, Westbahnhof, SCS Vösendorf, Wien Mitte Landstraße; Innsbruck Bleichenweg, Triumphpforte; Linz Hauptplatz; Graz Kaiserfeldgasse (12 in total). No Salzburg, Klagenfurt, Praterstraße, Walfischgasse/Moulin Rouge, Murpark or Sparkassenplatz.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://web.archive.org/web/20260215204851/https://www.vapiano.at/restaurants/",
+        "says": "Archived list Feb 2026 still had Wien Moulin Rouge (Walfischgasse 11) and Graz Sparkassenplatz instead of Kaiserfeldgasse",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/uploads/Speisekarte_DE_2026_Ansicht.pdf",
+        "says": "Menu 2026: legend 'enthält Schweinefleisch'; Margherita 10,90, Chicken Alfredo 16,90, Lasagne alla Bolognese 13,90, Coca-Cola 0,33 l 4,90, Aperol Spritz 7,90",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vapiano.at/menue/",
+        "says": "Menu page: Carbonara with Guanciale, Prosciutto Crudo, italienischer Beinschinken, scharfe Salami; drinks: wines, Spritz, Prosecco, Birra Moretti, Stiegl. No halal wording.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "On the official list, not in our data. HALAL: vapiano.at (menu page, menu PDF 2026, FAQ) says nothing about halal - no halal-chicken claim, no certificate. The menu marks pork dishes ('enthält Schweinefleisch': Carbonara with Guanciale, Prosciutto, Beinschinken, Salami) and has a full bar (wine, Spritz, Prosecco, beer). Chicken (Hühnerbrust) and beef (Rind) are served, but no source says they are halal in Austria; Zabihah halal-chicken notes exist only for German Vapiano branches (staff verbal claims) and do not apply here. swipein.restaurant shows a user 'Halal' badge for Herrengasse only, with the disclaimer that binding information must come from the restaurant. Recommendation: not halal-friendly by our evidence; remove, or keep only with a clear 'not halal' note.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly by evidence (pork and alcohol on the menu, no halal claim); listed only because the brief asks for missing branches."
+  }
+]

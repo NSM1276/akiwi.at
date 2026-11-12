@@ -1,0 +1,4501 @@
+[
+ {
+  "id": "alaturka-1030",
+  "name": "Alaturka Erdbergstraße",
+  "address": "Erdbergstraße 93, 1030 Wien",
+  "district": 3,
+  "phone": "+43 699 10327337",
+  "website": "alaturka-doener.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "alaturka-1120",
+  "name": "Alaturka Am Schöpfwerk",
+  "address": "Am Schöpfwerk 68, 1120 Wien",
+  "district": 12,
+  "phone": "+43 681 10359266",
+  "website": "alaturka-doener.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "alaturka-1150",
+  "name": "Alaturka MaHü",
+  "address": "Mariahilfer Straße 134, 1150 Wien",
+  "district": 15,
+  "phone": "+43 678 1314354",
+  "website": "alaturka-doener.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "alaturka-1230",
+  "name": "Alaturka Alterlaa",
+  "address": "Anton-Baumgartner-Straße 121, 1230 Wien",
+  "district": 23,
+  "phone": "+43 699 19671499",
+  "website": "alaturka-doener.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "alaturka-2700",
+  "name": "Alaturka Wiener Neustadt",
+  "address": "Stadionstraße 5, 2700 Wiener Neustadt",
+  "district": 0,
+  "phone": "+43 2622 83542",
+  "website": "alaturka-doener.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "antep-evi",
+  "name": "Antep Evi Grillhaus",
+  "address": "Khleslplatz 5, 1120 Wien",
+  "district": 12,
+  "phone": "+43 699 1100 27 27",
+  "website": "antepevi-grillhaus.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": null,
+    "close": null
+   },
+   {
+    "day": 1,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 9
+ },
+ {
+  "id": "damla",
+  "name": "Damla Cafe-Konditorei-Bäckerei",
+  "address": "Wilhelmstraße 53, 1120 Wien (Bahnhof Meidling)",
+  "district": 12,
+  "phone": "+43 1 810 3519",
+  "website": "damla.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant",
+   "Café",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 11
+ },
+ {
+  "id": "bakis-schnitzelparadies",
+  "name": "Baki's Schnitzelparadies",
+  "address": "Meidlinger Hauptstraße 49/G2, 1120 Wien",
+  "district": 12,
+  "phone": "+43 664 1563446",
+  "website": "foodora.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "19:30"
+   },
+   {
+    "day": 6,
+    "open": null,
+    "close": null
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "le-doener",
+  "name": "Le Döner",
+  "address": "Meidlinger Hauptstraße 43, 1120 Wien",
+  "district": 12,
+  "phone": "+43 660 6941900",
+  "website": "xn--ledner-jua.at",
+  "status": "unknown",
+  "categories": [
+   "Kebab",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 6
+ },
+ {
+  "id": "burgallio-1120",
+  "name": "Burgallio Meidling",
+  "address": "Meidlinger Hauptstraße 45, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 353 17 07",
+  "website": "burgallio.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:30",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:30",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "burgallio-1100",
+  "name": "Burgallio Favoriten",
+  "address": "Quellenstraße 105, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 600 13 33",
+  "website": "burgallio.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "10:30",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "burgallio-1170",
+  "name": "Burgallio Hernals",
+  "address": "Hernalser Hauptstraße 126, 1170 Wien",
+  "district": 17,
+  "phone": "+43 1 484 21 00",
+  "website": "burgallio.at",
+  "status": "unknown",
+  "categories": [
+   "Restaurant"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:30"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "liwan-1120",
+  "name": "Liwan Restaurant Meidling",
+  "address": "Meidlinger Hauptstraße 12, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 810 5773",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 34
+ },
+ {
+  "id": "liwan-1200",
+  "name": "Liwan Restaurant Brigittenau",
+  "address": "Wallensteinplatz 4, 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 810 5773",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 34
+ },
+ {
+  "id": "ava-persisch-1120",
+  "name": "AVA Persisches Restaurant",
+  "address": "Meidlinger Hauptstraße 10, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 810 5773",
+  "website": "avapersischesrestaurantwien.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Persisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 29
+ },
+ {
+  "id": "motelli-1120",
+  "name": "Motelli Restaurant",
+  "address": "Meidlinger Hauptstraße 10, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 810 5773",
+  "website": "motelli-restaurant.eatbu.com",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 34
+ },
+ {
+  "id": "cardak-1120",
+  "name": "Restaurant Čardak",
+  "address": "Meidlinger Hauptstraße 14, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 8104445",
+  "website": "wolt.com",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Balkanisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:30"
+   }
+  ],
+  "menu_items_on_file": 24
+ },
+ {
+  "id": "turkis-city",
+  "name": "Türkis City",
+  "address": "Rotenturmstraße 19, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-landstrasse",
+  "name": "Türkis Landstraße",
+  "address": "Landstraßer Hauptstraße 21, 1030 Wien",
+  "district": 3,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-neubau",
+  "name": "Türkis Neubau",
+  "address": "Mariahilfer Straße 72, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-meidling",
+  "name": "Türkis Meidling",
+  "address": "Meidlinger Hauptstraße 74, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-westbahnhof",
+  "name": "Türkis Westbahnhof",
+  "address": "Europaplatz 2, 1150 Wien",
+  "district": 15,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-millennium",
+  "name": "Türkis Millennium City",
+  "address": "Handelskai 94-96, 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "turkis-donau",
+  "name": "Türkis Donau Zentrum",
+  "address": "Wagramer Straße 94, 1220 Wien",
+  "district": 22,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Kebab"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 23
+ },
+ {
+  "id": "kent-1100",
+  "name": "Kent Favoriten",
+  "address": "Laxenburger Straße 41-43, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 606 58 70",
+  "website": "kentrestaurant.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "06:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 55
+ },
+ {
+  "id": "kent-1150",
+  "name": "Kent Rudolfsheim",
+  "address": "Märzstraße 33, 1150 Wien",
+  "district": 15,
+  "phone": "+43 1 982 54 27",
+  "website": "kentrestaurant.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "06:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 55
+ },
+ {
+  "id": "kent-1160",
+  "name": "Kent Ottakring",
+  "address": "Brunnenmarkt / Brunnengasse 67, 1160 Wien",
+  "district": 16,
+  "phone": "+43 1 405 56 27",
+  "website": "kentrestaurant.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "06:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 55
+ },
+ {
+  "id": "kent-1200",
+  "name": "Kent Brigittenau",
+  "address": "Jägerstraße 40, 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 330 33 04",
+  "website": "kentrestaurant.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "06:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "06:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 55
+ },
+ {
+  "id": "akakiko-city",
+  "name": "Akakiko City",
+  "address": "Rotenturmstraße 15, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "akakiko-gerngross",
+  "name": "Akakiko Gerngross",
+  "address": "Mariahilfer Straße 42-48, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "akakiko-meidling",
+  "name": "Akakiko Meidling",
+  "address": "Meidlinger Hauptstraße 73, 1120 Wien",
+  "district": 12,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "akakiko-westbahnhof",
+  "name": "Akakiko Westbahnhof",
+  "address": "Europaplatz 2, 1150 Wien",
+  "district": 15,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "akakiko-millennium",
+  "name": "Akakiko Millennium City",
+  "address": "Handelskai 94-96, 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "akakiko-donau",
+  "name": "Akakiko Donau Zentrum",
+  "address": "Wagramer Straße 81, 1220 Wien",
+  "district": 22,
+  "phone": "+43 1 513 84 10",
+  "website": "akakiko.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "10:30",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "10:30",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 32
+ },
+ {
+  "id": "pizza-mann-wien-02",
+  "name": "Pizza Mann Ausstellungsstraße",
+  "address": "Ausstellungsstraße 15, 1020 Wien",
+  "district": 2,
+  "phone": "+43 1 216 5555",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-wien-10",
+  "name": "Pizza Mann Quellenstraße",
+  "address": "Quellenstraße 154, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 684 2222",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-wien-14",
+  "name": "Pizza Mann Linzer Straße",
+  "address": "Linzer Straße 104, 1140 Wien",
+  "district": 14,
+  "phone": "+43 1 892 3333",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-wien-21",
+  "name": "Pizza Mann Prager Straße",
+  "address": "Prager Straße 105, 1210 Wien",
+  "district": 21,
+  "phone": "+43 1 290 4444",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-wien-22",
+  "name": "Pizza Mann Wagramer Straße",
+  "address": "Wagramer Straße 122, 1220 Wien",
+  "district": 22,
+  "phone": "+43 1 202 5555",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-graz",
+  "name": "Pizza Mann Graz",
+  "address": "Münzgrabenstraße 158, 8010 Graz",
+  "district": 0,
+  "phone": "+43 316 825 4444",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-linz-zentrum",
+  "name": "Pizza Mann Linz Zentrum",
+  "address": "Landwiedstraße 117, 4020 Linz",
+  "district": 0,
+  "phone": "+43 732 784 3333",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-linz-restaurant",
+  "name": "Pizza Mann Linz Restaurant",
+  "address": "Wiener Straße 443, 4020 Linz",
+  "district": 0,
+  "phone": "+43 732 783 2222",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-leonding",
+  "name": "Pizza Mann Leonding",
+  "address": "Welser Straße 41, 4060 Leonding",
+  "district": 0,
+  "phone": "+43 732 691 5555",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-salzburg",
+  "name": "Pizza Mann Salzburg",
+  "address": "Itzlinger Hauptstraße 19, 5020 Salzburg",
+  "district": 0,
+  "phone": "+43 662 872 3333",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-innsbruck",
+  "name": "Pizza Mann Innsbruck",
+  "address": "Innrain 100, 6020 Innsbruck",
+  "district": 0,
+  "phone": "+43 512 589 4444",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "pizza-mann-wels",
+  "name": "Pizza Mann Wels",
+  "address": "Hans-Sachs-Straße 103, 4600 Wels",
+  "district": 0,
+  "phone": "+43 7242 456 2222",
+  "website": "pizzamann.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Pizza"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 20
+ },
+ {
+  "id": "habibi-stadt",
+  "name": "Habibi & Hawara Stadt",
+  "address": "Wipplingerstraße 29, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 532 06 58",
+  "website": "habibiundhawara.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 0,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 1,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 2,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 3,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 4,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "18:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 11
+ },
+ {
+  "id": "habibi-nordbahn",
+  "name": "Habibi & Hawara Nordbahn",
+  "address": "Bruno-Marek-Allee 5, 1020 Wien",
+  "district": 2,
+  "phone": "+43 1 361 94 40",
+  "website": "habibiundhawara.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 0,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 1,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 2,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 3,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 4,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "18:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 11
+ },
+ {
+  "id": "habibi-siebenstern",
+  "name": "Habibi & Hawara Siebenstern",
+  "address": "Siebensterngasse 46, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 522 36 21",
+  "website": "habibiundhawara.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 0,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 1,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 2,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 3,
+    "open": "18:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "14:30"
+   },
+   {
+    "day": 4,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "18:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "18:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 11
+ },
+ {
+  "id": "vapiano-wien-mariahilf",
+  "name": "Vapiano Mariahilf",
+  "address": "Theobaldgasse 19, 1060 Wien",
+  "district": 6,
+  "phone": "+43 1 585 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-wien-innenstadt-walfisch",
+  "name": "Vapiano Innere Stadt (Walfischgasse)",
+  "address": "Walfischgasse 11, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 585 0001",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-wien-innenstadt-herren",
+  "name": "Vapiano Innere Stadt (Herrengasse)",
+  "address": "Herrengasse 1-3, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 585 0002",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-wien-leopoldstadt",
+  "name": "Vapiano Leopoldstadt",
+  "address": "Praterstraße 24-26, 1020 Wien",
+  "district": 2,
+  "phone": "+43 1 585 0003",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-wien-westbahnhof",
+  "name": "Vapiano Westbahnhof",
+  "address": "Europaplatz 2, 1150 Wien (Westbahnhof)",
+  "district": 6,
+  "phone": "+43 1 585 0004",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "07:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "07:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "07:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "07:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "07:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "07:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-graz-zentrum",
+  "name": "Vapiano Graz",
+  "address": "Sparkassenplatz 4, 8010 Graz",
+  "district": 0,
+  "phone": "+43 316 823 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-graz-murpark",
+  "name": "Vapiano Murpark (Graz)",
+  "address": "Murpark, Ostbahnstraße 3, 8020 Graz",
+  "district": 0,
+  "phone": "+43 316 823 0001",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-innsbruck-dez",
+  "name": "Vapiano Innsbruck (DEZ)",
+  "address": "Bleichenweg 18 (DEZ), 6020 Innsbruck",
+  "district": 0,
+  "phone": "+43 512 589 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-innsbruck-leopold",
+  "name": "Vapiano Innsbruck (Leopoldstraße)",
+  "address": "Leopoldstraße 1, 6020 Innsbruck",
+  "district": 0,
+  "phone": "+43 512 589 0001",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-linz",
+  "name": "Vapiano Linz",
+  "address": "Hauptplatz 11, 4020 Linz",
+  "district": 0,
+  "phone": "+43 732 781 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-salzburg",
+  "name": "Vapiano Salzburg",
+  "address": "Hanushplatz 1, 5020 Salzburg",
+  "district": 0,
+  "phone": "+43 662 887 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "vapiano-klagenfurt",
+  "name": "Vapiano Klagenfurt",
+  "address": "Heuplatz 4, 9020 Klagenfurt",
+  "district": 0,
+  "phone": "+43 463 505 0000",
+  "website": "vapiano.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Italienisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 14
+ },
+ {
+  "id": "turkis-linz",
+  "name": "Türkis Linz",
+  "address": "Landstraße 17-25 (Passage), 4020 Linz",
+  "district": 0,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 8
+ },
+ {
+  "id": "turkis-voesendorf",
+  "name": "Türkis Vösendorf (SCS)",
+  "address": "Shopping City Süd (SCS), 2334 Vösendorf",
+  "district": 0,
+  "phone": "+43 1 513 14 00",
+  "website": "tuerkis.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 5,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 6,
+    "open": "09:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 8
+ },
+ {
+  "id": "lemir-city",
+  "name": "L'Emir City",
+  "address": "Wipplingerstraße 32, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 532 21 71",
+  "website": "lemir.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "12:00",
+    "close": "22:30"
+   },
+   {
+    "day": 1,
+    "open": "12:00",
+    "close": "22:30"
+   },
+   {
+    "day": 2,
+    "open": "12:00",
+    "close": "22:30"
+   },
+   {
+    "day": 3,
+    "open": "12:00",
+    "close": "22:30"
+   },
+   {
+    "day": 4,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "12:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 13
+ },
+ {
+  "id": "lemir-millennium",
+  "name": "L'Emir Millennium",
+  "address": "Handelskai 94-96 (Millennium City), 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 332 08 30",
+  "website": "lemir.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Libanesisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "21:30"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "21:30"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "21:30"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "21:30"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 13
+ },
+ {
+  "id": "pars-hauptrestaurant",
+  "name": "Pars Restaurant",
+  "address": "Lerchenfelder Straße 148, 1080 Wien",
+  "district": 8,
+  "phone": "+43 1 405 82 45",
+  "website": "pars.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Persisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 10
+ },
+ {
+  "id": "pars-grill",
+  "name": "Pars Grill",
+  "address": "Lerchenfelder Straße 124, 1080 Wien",
+  "district": 8,
+  "phone": "+43 1 405 82 45",
+  "website": "pars.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Persisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 6
+ },
+ {
+  "id": "mrbin-1100",
+  "name": "Mr. Bin Favoriten",
+  "address": "Favoritenstraße 131, 1100 Wien",
+  "district": 10,
+  "phone": "+43 676 444 02 12",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "11:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 10
+ },
+ {
+  "id": "mrbin-1220",
+  "name": "Mr. Bin Donaustadt",
+  "address": "Kagraner Platz 1 (K1 Center), 1220 Wien",
+  "district": 22,
+  "phone": "+43 676 555 10 90",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 10
+ },
+ {
+  "id": "damas-restaurant",
+  "name": "Damas Restaurant",
+  "address": "Viktorgasse 22, 1040 Wien",
+  "district": 4,
+  "phone": "+43 1 944 35 14",
+  "website": "damas.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Syrisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "12:00",
+    "close": "23:30"
+   },
+   {
+    "day": 5,
+    "open": "12:00",
+    "close": "23:30"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 10
+ },
+ {
+  "id": "damas-grand",
+  "name": "Damas Grand",
+  "address": "Laxenburger Straße 8, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 944 35 14",
+  "website": "damas.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Syrisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 1,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 2,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 3,
+    "open": "12:00",
+    "close": "23:00"
+   },
+   {
+    "day": 4,
+    "open": "12:00",
+    "close": "24:00"
+   },
+   {
+    "day": 5,
+    "open": "12:00",
+    "close": "24:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "23:00"
+   }
+  ],
+  "menu_items_on_file": 9
+ },
+ {
+  "id": "derya-1200",
+  "name": "Derya Brigittenau",
+  "address": "Adalbert-Stifter-Straße 22, 1200 Wien",
+  "district": 20,
+  "phone": "+43 1 330 35 44",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "07:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 9
+ },
+ {
+  "id": "derya-1100",
+  "name": "Derya Favoriten",
+  "address": "Quellenstraße 103, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 602 11 11",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "08:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "09:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 9
+ },
+ {
+  "id": "levante-city",
+  "name": "Levante City",
+  "address": "Wallnerstraße 2, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 533 23 26",
+  "website": "levante.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "levante-mariahilf",
+  "name": "Levante Mariahilfer Straße",
+  "address": "Mariahilfer Straße 80, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 526 21 21",
+  "website": "levante.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "levante-landstrasse",
+  "name": "Levante Landstraße",
+  "address": "Landstraßer Hauptstraße 25, 1030 Wien",
+  "district": 3,
+  "phone": "+43 1 713 03 04",
+  "website": "levante.at",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "iko-city",
+  "name": "IKO City",
+  "address": "Wipplingerstraße 15, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 945 55 94",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:30"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "iko-mariahilf",
+  "name": "IKO Mariahilf",
+  "address": "Mariahilfer Straße 124, 1070 Wien",
+  "district": 6,
+  "phone": "+43 1 522 10 10",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Restaurant",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 1,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 2,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 3,
+    "open": "11:30",
+    "close": "22:30"
+   },
+   {
+    "day": 4,
+    "open": "11:30",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "11:30",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:30"
+   }
+  ],
+  "menu_items_on_file": 7
+ },
+ {
+  "id": "baobar-1020",
+  "name": "Bao Bar Leopoldstadt",
+  "address": "Leopoldgasse 31, 1020 Wien",
+  "district": 2,
+  "phone": "+43 1 212 34 56",
+  "website": "baobar.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "baobar-1070",
+  "name": "Bao Bar Neubau",
+  "address": "Zollergasse 2, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 522 44 33",
+  "website": "baobar.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Asiatisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "11:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 5,
+    "open": "11:00",
+    "close": "23:00"
+   },
+   {
+    "day": 6,
+    "open": "12:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "charlyfresh-city",
+  "name": "Charly Fresh City",
+  "address": "Karlsplatz (U-Bahn Station), 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 505 10 10",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Healthy Food"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 5,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "20:00"
+   }
+  ],
+  "menu_items_on_file": 4
+ },
+ {
+  "id": "charlyfresh-landstrasse",
+  "name": "Charly Fresh Wien Mitte",
+  "address": "Wien Mitte (The Mall), 1030 Wien",
+  "district": 3,
+  "phone": "+43 1 710 20 30",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Healthy Food"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 5,
+    "open": "09:00",
+    "close": "21:00"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "20:00"
+   }
+  ],
+  "menu_items_on_file": 4
+ },
+ {
+  "id": "radatz-viktorianer",
+  "name": "Radatz Viktor-Adler-Markt",
+  "address": "Viktor-Adler-Markt Stand 114-115, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 604 12 43",
+  "website": "radatz.at",
+  "status": "self",
+  "categories": [
+   "Imbiss",
+   "Traditionell Wienerisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "07:00",
+    "close": "18:00"
+   },
+   {
+    "day": 1,
+    "open": "07:00",
+    "close": "18:00"
+   },
+   {
+    "day": 2,
+    "open": "07:00",
+    "close": "18:00"
+   },
+   {
+    "day": 3,
+    "open": "07:00",
+    "close": "18:00"
+   },
+   {
+    "day": 4,
+    "open": "07:00",
+    "close": "18:00"
+   },
+   {
+    "day": 5,
+    "open": "07:00",
+    "close": "18:00"
+   }
+  ],
+  "menu_items_on_file": 4
+ },
+ {
+  "id": "cafenil-1070",
+  "name": "Cafe Nil",
+  "address": "Siebensterngasse 39, 1070 Wien",
+  "district": 7,
+  "phone": "+43 1 526 29 49",
+  "website": "cafenil.at",
+  "status": "self",
+  "categories": [
+   "Café",
+   "Orientalisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "09:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "damas-sweets-city",
+  "name": "Damas Sweets City",
+  "address": "Opernring 19, 1010 Wien",
+  "district": 1,
+  "phone": "+43 1 581 12 12",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Konditorei",
+   "Arabisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "21:30"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "21:30"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "damas-sweets-favoriten",
+  "name": "Damas Sweets Favoriten",
+  "address": "Quellenstraße 101, 1100 Wien",
+  "district": 10,
+  "phone": "+43 1 602 10 10",
+  "website": "",
+  "status": "self",
+  "categories": [
+   "Konditorei",
+   "Arabisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 1,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "21:30"
+   },
+   {
+    "day": 5,
+    "open": "10:00",
+    "close": "21:30"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "21:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ },
+ {
+  "id": "mado-wien",
+  "name": "Mado Wien",
+  "address": "Mariahilfer Straße 101, 1060 Wien",
+  "district": 6,
+  "phone": "+43 1 595 12 34",
+  "website": "mado.at",
+  "status": "self",
+  "categories": [
+   "Café",
+   "Türkisch"
+  ],
+  "hours_on_file": [
+   {
+    "day": 0,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 1,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 2,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 3,
+    "open": "09:00",
+    "close": "22:00"
+   },
+   {
+    "day": 4,
+    "open": "09:00",
+    "close": "22:30"
+   },
+   {
+    "day": 5,
+    "open": "09:00",
+    "close": "22:30"
+   },
+   {
+    "day": 6,
+    "open": "10:00",
+    "close": "22:00"
+   }
+  ],
+  "menu_items_on_file": 5
+ }
+]

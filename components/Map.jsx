@@ -78,6 +78,7 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
         </svg>
 
         {restaurants.map((r) => {
+          if (r.x == null || r.y == null) return null; // outside Vienna: no pin on this map
           const on = hoveredId === r.id || selected === r.id;
           const color = PIN[r.status] || PIN.unknown;
           return (

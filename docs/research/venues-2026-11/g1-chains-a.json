@@ -1,0 +1,3600 @@
+[
+  {
+    "id": "turkis-city",
+    "name": "Türkis Goldschmiedgasse (Türkis am Graben / Türkis City)",
+    "status": "open",
+    "address": "Goldschmiedgasse 4, 1010 Wien",
+    "address_changed": true,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 699 13176474",
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://wolt.com/en/aut/vienna/restaurant/turkisgold",
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [
+      {
+        "item": "Döner Kebab (Teller mit Reis, Salat, Tsatsiki)",
+        "price": "15,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Iskender Kebab",
+        "price": "18,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Türkis Döner Kebap",
+        "price": "19,90",
+        "source": "https://wolt.com/en/aut/vienna/restaurant/turkisgold",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Ayran 0,25 l",
+        "price": "2,80",
+        "source": "https://wolt.com/en/aut/vienna/restaurant/turkisgold",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Efes Bier 0,5 l",
+        "price": "4,90",
+        "source": "https://wolt.com/en/aut/vienna/restaurant/turkisgold",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://wolt.com/en/aut/vienna/restaurant/turkisgold",
+        "says": "Wolt 'Türkis am Graben', Goldschmiedgasse 4, 1010, phone +43 699 13176474, website tuerkis.at; drinks include Efes Bier 0.5 l €4.90 and Wieselburger 0.5 l €3.90; delivery hours Mo–Su 09:00–23:45.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file Rotenturmstraße 19 is not on the official list; the only Türkis restaurant in the 1st district is Goldschmiedgasse 4 (Zabihah calls it 'Türkis City') – we assume it is the same venue, owner should confirm. Hours on file (10/11–23) wrong: official Mo–So 8:00–23:45 (Wolt delivery 9:00–23:45). Phone on file not found anywhere; official reservation 01 600 50 10 1010 and +43 699 1317 6474. Alcohol: beer on the Wolt menu. Halal only via user-maintained Zabihah; Türkis itself says nothing about halal. Two To-Go kiosks at the Ring (1010) added as new branches."
+  },
+  {
+    "id": "turkis-landstrasse",
+    "name": "Türkis Landstraße (Wien Mitte)",
+    "status": "unclear",
+    "address": "Landstraßer Hauptstraße 1B, 1030 Wien",
+    "address_changed": true,
+    "district": 3,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [
+      {
+        "item": "Döner Kebab",
+        "price": "15,90",
+        "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/tuerkis_landstrasse/speisekarte",
+        "kind": "venue"
+      },
+      {
+        "item": "Şiş Kebab",
+        "price": "20,90",
+        "source": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/tuerkis_landstrasse/speisekarte",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/uber-uns/",
+        "says": "Official 'Über uns': 'In unserer neuen Filiale in Wien-Mitte bieten wir bereits ein neues, überarbeitetes Speiseangebot'; '16 Filialen'.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.speisekarte.de/wien-%C3%B6sterreich/restaurant/tuerkis_landstrasse/speisekarte",
+        "says": "Türkis – Landstraße, Landstraßer Hauptstraße 1B, 1030 Wien; menu last updated 03.10.2025.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.plantspack.com/place/turkis-wien-4",
+        "says": "Türkis at Landstraßer Hauptstraße 1B (directory, undated).",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Our address Landstraßer Hauptstraße 21 not confirmed anywhere. A Türkis at Landstraßer Hauptstraße 1B (Wien Mitte) appears in directories (menu dated Oct 2025) and the official 'Über uns' mentions a new Wien-Mitte branch, BUT it is missing from the official Standorte page (which claims 15 locations but lists 12 + SCS). Status unclear; hours and phone unknown."
+  },
+  {
+    "id": "turkis-neubau",
+    "name": "Türkis Mariahilferstraße",
+    "status": "open",
+    "address": "Mariahilfer Straße 22-24, 1070 Wien",
+    "address_changed": true,
+    "district": 7,
+    "city": "Wien",
+    "phone": "+43 699 18881835",
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "https://www.zabihah.com/restaurants/cac8fb29-7767-11ef-95ae-6045bdeb9f57/turkis-mariahilf-1-wien-vienna"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": [
+        "https://www.zabihah.com/restaurants/cac8fb29-7767-11ef-95ae-6045bdeb9f57/turkis-mariahilf-1-wien-vienna"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [
+      {
+        "item": "Döner Kebab (Teller mit Reis, Salat, Tsatsiki)",
+        "price": "15,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Iskender Kebab",
+        "price": "18,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Türkis Combo (Dönersandwich mit Pommes)",
+        "price": "10,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "8,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Falafel Teller",
+        "price": "12,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cac8fb29-7767-11ef-95ae-6045bdeb9f57/turkis-mariahilf-1-wien-vienna",
+        "says": "Zabihah 'Türkis Mariahilf 1': halal status confirmed (user-maintained); a 2013 user review mentions alcohol served.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file Mariahilfer Straße 72 wrong → Mariahilferstrasse 22-24, 1070. Hours on file (10/11–23) wrong: official Mo–So 8:00–23:45. Phone on file not found; official reservation +43 699 1888 1835 / 01 600 50 10 1070. Alcohol only from a 2013 review → null."
+  },
+  {
+    "id": "turkis-meidling",
+    "name": "Türkis Meidling",
+    "status": "unclear",
+    "address": "Meidlinger Hauptstraße 74, 1120 Wien",
+    "address_changed": false,
+    "district": 12,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Meidlinger Hauptstraße 74 is NOT on the official Türkis list and no other source found for it. Official 1120 branches today: To Go Längenfeldgasse 202/3 and To Go Bahnhof Meidling (Eichenstraße 25), both added as new branches. Recommend removing this record or replacing it with one of those."
+  },
+  {
+    "id": "turkis-westbahnhof",
+    "name": "Türkis To Go Westbahnhof",
+    "status": "open",
+    "address": "Europaplatz 2 (BahnhofCity Wien West, E1 80), 1150 Wien",
+    "address_changed": false,
+    "district": 15,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "https://www.zabihah.com/restaurants/cac90381-7767-11ef-95ae-6045bdeb9f57/trkis-westbahn-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": [
+        "https://www.zabihah.com/restaurants/cac90381-7767-11ef-95ae-6045bdeb9f57/trkis-westbahn-wien-austria"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cac90381-7767-11ef-95ae-6045bdeb9f57/trkis-westbahn-wien-austria",
+        "says": "Zabihah 'Türkis Westbahn', 1 Europaplatz: one note says alcohol is served in all Türkis branches in Vienna, the next says that alcohol information is not correct – contradictory.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address correct (add 'BahnhofCity Wien West E1 80'). This is a To-Go outlet → category Imbiss rather than Restaurant. Hours on file (10/11–23) wrong: official Mo–So 8:00–23:45. Phone on file not found; no phone published for To-Go branches. Alcohol contradictory on Zabihah → null. To-Go prices not found (official menu is the restaurant menu)."
+  },
+  {
+    "id": "turkis-millennium",
+    "name": "Türkis Millennium City",
+    "status": "unclear",
+    "address": "Handelskai 94-96, 1200 Wien",
+    "address_changed": false,
+    "district": 20,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No Türkis at Millennium City on the official list, and web searches found no listing. Probably never existed or long closed. Recommend removing."
+  },
+  {
+    "id": "turkis-donau",
+    "name": "Türkis Donauzentrum",
+    "status": "open",
+    "address": "Wagramer Straße 94 (Donauzentrum, EG Top 137b), 1220 Wien",
+    "address_changed": false,
+    "district": 22,
+    "city": "Wien",
+    "phone": "+43 1 600 50 10 1220",
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": "09:00-22:00",
+      "tue": "09:00-22:00",
+      "wed": "09:00-22:00",
+      "thu": "09:00-22:00",
+      "fri": "09:00-22:00",
+      "sat": "09:00-22:00",
+      "sun": null
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [
+      {
+        "item": "Döner Kebab (Teller mit Reis, Salat, Tsatsiki)",
+        "price": "15,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Iskender Kebab",
+        "price": "18,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Türkis Combo (Dönersandwich mit Pommes)",
+        "price": "10,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Lahmacun",
+        "price": "8,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      },
+      {
+        "item": "Falafel Teller",
+        "price": "12,90",
+        "source": "https://tuerkis.at/speisekarte/",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.quandoo.at/en/place/turkis-donauzentrum-38620",
+        "says": "Quandoo lists Türkis Donauzentrum, 1220 Wien.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address OK (official: Donauzentrum, EG Top 137b). Hours on file wrong: official Mo–Sa 9:00–22:00; Sunday not stated (mall normally closed Sundays) → sun null. Phone: official reservation 01 600 50 10 1220. Alcohol not verified for this branch."
+  },
+  {
+    "id": "turkis-linz",
+    "name": "Türkis Linz",
+    "status": "unclear",
+    "address": "Landstraße 17-25 (Passage), 4020 Linz",
+    "address_changed": false,
+    "district": null,
+    "city": "Linz",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/linz",
+        "says": "Akakiko Passage is at Landstraße 17-25, Passage Center 3. Stock, 4020 Linz – the same address as our 'Türkis Linz'.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Türkis says its branches are in Vienna (plus SCS); no Türkis in Linz found anywhere. Our address is the Akakiko Passage address – looks like a data mix-up. Recommend removing."
+  },
+  {
+    "id": "turkis-voesendorf",
+    "name": "Türkis Shopping City Süd",
+    "status": "open",
+    "address": "Shopping City Süd, Top 44, G212, 2334 Vösendorf",
+    "address_changed": true,
+    "district": null,
+    "city": "Vösendorf",
+    "phone": "+43 670 07745648",
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "low",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Reservation pop-up on tuerkis.at: 'Shopping City Süd, SCS, Top 44, G212, 2334 Vösendorf, Tisch reservieren: +43 670 0774 5648'. Not in the main Standorte list; no hours.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Exists per the tuerkis.at reservation pop-up (Top 44, G212; phone +43 670 0774 5648) but is missing from the main Standorte list and no hours are published. Hours on file (daily 9–21) unverified; SCS shops close on Sundays, so Sun 9–21 is likely wrong. Our phone not found."
+  },
+  {
+    "id": "akakiko-city",
+    "name": "Akakiko Rotenturmstraße",
+    "status": "open",
+    "address": "Rotenturmstraße 6, 1010 Wien",
+    "address_changed": true,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 57 333 190",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/rotenturmstrasse (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/rotenturmstrasse",
+        "says": "Rotenturmstraße 6 (Stephansdom), Tel. 057 333 190, täglich 10.30–23.00, warme Küche bis 22.30.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file Rotenturmstraße 15 wrong → Rotenturmstraße 6. Phone on file +43 1 513 84 10 not found; official 057 333 190. Hours on file (10:30/11–23, Thu/Fri to 23:30) wrong: daily 10:30–23:00. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "akakiko-gerngross",
+    "name": "Akakiko Gerngross",
+    "status": "open",
+    "address": "Mariahilfer Straße 42-48 (Kaufhaus Gerngross), 1070 Wien",
+    "address_changed": false,
+    "district": 7,
+    "city": "Wien",
+    "phone": "+43 57 333 150",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/gerngross (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/gerngross",
+        "says": "Mariahilferstraße 42-48, Kaufhaus Gerngross, Tel. 057 333 150, täglich 10.30–23.00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address OK. Phone wrong → 057 333 150. Hours wrong → daily 10:30–23:00 (kitchen to 22:30). Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "akakiko-meidling",
+    "name": "Akakiko Meidling",
+    "status": "unclear",
+    "address": "Meidlinger Hauptstraße 73, 1120 Wien",
+    "address_changed": false,
+    "district": 12,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Not on the official Akakiko list (17 restaurants, none in 1120, 1150 or 1200) and no other source found. Closed or never existed. Recommend removing. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "akakiko-westbahnhof",
+    "name": "Akakiko Westbahnhof",
+    "status": "unclear",
+    "address": "Europaplatz 2, 1150 Wien",
+    "address_changed": false,
+    "district": 15,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Not on the official Akakiko list (17 restaurants, none in 1120, 1150 or 1200) and no other source found. Closed or never existed. Recommend removing. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "akakiko-millennium",
+    "name": "Akakiko Millennium City",
+    "status": "unclear",
+    "address": "Handelskai 94-96, 1200 Wien",
+    "address_changed": false,
+    "district": 20,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Not on the official Akakiko list (17 restaurants, none in 1120, 1150 or 1200) and no other source found. Closed or never existed. Recommend removing. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "akakiko-donau",
+    "name": "Akakiko Donau Zentrum",
+    "status": "open",
+    "address": "Wagramer Straße 79 (Cineplexx Donau Zentrum, Top 601A), 1220 Wien",
+    "address_changed": true,
+    "district": 22,
+    "city": "Wien",
+    "phone": "+43 57 333 230",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/donau-zentrum (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/donau-zentrum",
+        "says": "Wagramer Straße 79, Cineplexx Donau Zentrum, Top 601A, Tel. 057 333 230, täglich 10.30–23.00.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/help/general",
+        "says": "Official FAQ: 17 restaurants in 5 Bundesländer; nothing about halal, meat sourcing or slaughter.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Address on file Wagramer Straße 81 → 79 (Cineplexx, Top 601A). Phone → 057 333 230. Hours → daily 10:30–23:00. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain."
+  },
+  {
+    "id": "habibi-stadt",
+    "name": "Habibi & Hawara Stadt",
+    "status": "permanently_closed",
+    "address": "Wipplingerstraße 29, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://habibi.at",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://habibi.at/",
+        "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://wien.orf.at/stories/3191134/",
+        "says": "ORF (Jan 2023): insolvency; locations Wipplingerstraße, Nordbahnviertel, Siebensterngasse and Seestadt given up.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vienna.at/restaurantgruppe-habibi-hawara-schliest-lokale-in-wien/7856839",
+        "says": "vienna.at (2023): Habibi & Hawara insolvent, closes most Vienna restaurants; only Landstraße continues.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/",
+        "says": "habibi.at today shows only one restaurant: Habibi & Hawara Landstraße, Platz der Sozialen Sicherheit.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.airbnb.dk/things-to-do/places/1848190",
+        "says": "Wipplingerstraße 29 marked 'Lukket permanent' (permanently closed).",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Closed in the January 2023 insolvency of the Habibi & Hawara group. The chain site is now habibi.at (our habibiundhawara.at does not resolve) and lists only the Landstraße restaurant. Remove from the site. Landstraße added as a new branch, but it has no halal claim and serves a lot of alcohol."
+  },
+  {
+    "id": "habibi-nordbahn",
+    "name": "Habibi & Hawara Nordbahn",
+    "status": "permanently_closed",
+    "address": "Bruno-Marek-Allee 5, 1020 Wien",
+    "address_changed": false,
+    "district": 2,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://habibi.at",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://habibi.at/",
+        "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://wien.orf.at/stories/3191134/",
+        "says": "ORF (Jan 2023): insolvency; locations Wipplingerstraße, Nordbahnviertel, Siebensterngasse and Seestadt given up.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vienna.at/restaurantgruppe-habibi-hawara-schliest-lokale-in-wien/7856839",
+        "says": "vienna.at (2023): Habibi & Hawara insolvent, closes most Vienna restaurants; only Landstraße continues.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/",
+        "says": "habibi.at today shows only one restaurant: Habibi & Hawara Landstraße, Platz der Sozialen Sicherheit.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Closed in the January 2023 insolvency of the Habibi & Hawara group. The chain site is now habibi.at (our habibiundhawara.at does not resolve) and lists only the Landstraße restaurant. Remove from the site. Landstraße added as a new branch, but it has no halal claim and serves a lot of alcohol."
+  },
+  {
+    "id": "habibi-siebenstern",
+    "name": "Habibi & Hawara Siebenstern",
+    "status": "permanently_closed",
+    "address": "Siebensterngasse 46, 1070 Wien",
+    "address_changed": false,
+    "district": 7,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://habibi.at",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://habibi.at/",
+        "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://wien.orf.at/stories/3191134/",
+        "says": "ORF (Jan 2023): insolvency; locations Wipplingerstraße, Nordbahnviertel, Siebensterngasse and Seestadt given up.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vienna.at/restaurantgruppe-habibi-hawara-schliest-lokale-in-wien/7856839",
+        "says": "vienna.at (2023): Habibi & Hawara insolvent, closes most Vienna restaurants; only Landstraße continues.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/",
+        "says": "habibi.at today shows only one restaurant: Habibi & Hawara Landstraße, Platz der Sozialen Sicherheit.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Closed in the January 2023 insolvency of the Habibi & Hawara group. The chain site is now habibi.at (our habibiundhawara.at does not resolve) and lists only the Landstraße restaurant. Remove from the site. Landstraße added as a new branch, but it has no halal claim and serves a lot of alcohol."
+  },
+  {
+    "id": "lemir-city",
+    "name": "L'Emir City",
+    "status": "unclear",
+    "address": "Wipplingerstraße 32, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Libanesisch"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://lemir.at/",
+        "says": "lemir.at shows a Websupport.sk parking page ('Na tejto doméne zatiaľ nič nie je') – no restaurant website.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/lokalfuehrer/libanesische-lokale-in-wien",
+        "says": "Falter list of Lebanese restaurants in Vienna has no L'Emir; web searches for 'L'Emir Wien' only return an L'Emir in Frankfurt and El Emir in Prague.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No evidence that an L'Emir restaurant exists in Vienna: lemir.at is a parked domain; no directory, delivery app, press or review found for either address. Possibly invented in the original data set. Recommend removing both records."
+  },
+  {
+    "id": "lemir-millennium",
+    "name": "L'Emir Millennium",
+    "status": "unclear",
+    "address": "Handelskai 94-96 (Millennium City), 1200 Wien",
+    "address_changed": false,
+    "district": 20,
+    "city": "Wien",
+    "phone": null,
+    "website": null,
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Libanesisch"
+    ],
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "hours_source": null,
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": []
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": null,
+      "sources": []
+    },
+    "menu_url": null,
+    "prices": [],
+    "price_level": null,
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://lemir.at/",
+        "says": "lemir.at shows a Websupport.sk parking page ('Na tejto doméne zatiaľ nič nie je') – no restaurant website.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.falter.at/lokalfuehrer/libanesische-lokale-in-wien",
+        "says": "Falter list of Lebanese restaurants in Vienna has no L'Emir; web searches for 'L'Emir Wien' only return an L'Emir in Frankfurt and El Emir in Prague.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "No evidence that an L'Emir restaurant exists in Vienna: lemir.at is a parked domain; no directory, delivery app, press or review found for either address. Possibly invented in the original data set. Recommend removing both records."
+  },
+  {
+    "id": null,
+    "name": "Türkis Praterstern",
+    "status": "open",
+    "address": "Praterstern, Top SH07, 1020 Wien",
+    "address_changed": false,
+    "district": 2,
+    "city": "Wien",
+    "phone": "+43 699 14235574",
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Restaurant"
+    ],
+    "hours": {
+      "mon": "09:00-24:00",
+      "tue": "09:00-24:00",
+      "wed": "09:00-24:00",
+      "thu": "09:00-24:00",
+      "fri": "09:00-24:00",
+      "sat": "09:00-24:00",
+      "sun": "09:00-24:00"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cac90869-7767-11ef-95ae-6045bdeb9f57/trkis-prater-wien-austria",
+        "says": "Zabihah 'Türkis Prater', U-Bahn Praterstern, daily 11:00–22:00 (user-maintained, differs from official).",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Restaurant; reservation +43 699 1423 5574 / 01 600 50 10 1020. Zabihah 'Türkis Prater' gives 11–22 – official hours used. Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Ring/Volkstheater",
+    "status": "open",
+    "address": "Fußgängerpassage Bellariastraße, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-04:00",
+      "tue": "08:00-04:00",
+      "wed": "08:00-04:00",
+      "thu": "09:00-06:00",
+      "fri": "09:00-06:00",
+      "sat": "09:00-06:00",
+      "sun": "08:00-04:00"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Night kiosk; official Mo–Mi 8–4, Do–Sa 9–6, So 8–4 (closing next morning). Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Ring/Volksgarten",
+    "status": "open",
+    "address": "Dr.-Karl-Renner-Ring, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-04:00",
+      "tue": "08:00-04:00",
+      "wed": "08:00-04:00",
+      "thu": "09:00-06:00",
+      "fri": "09:00-06:00",
+      "sat": "09:00-06:00",
+      "sun": "08:00-04:00"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Night kiosk; same hours as Ring/Volkstheater. No house number on the official site. Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Kagran",
+    "status": "open",
+    "address": "Siebeckstraße 7, 1220 Wien",
+    "address_changed": false,
+    "district": 22,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Official site writes '1120 Wien', but Siebeckstraße is in Kagran (1220) – PLZ typo on the site; owner should check. Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Hauptbahnhof",
+    "status": "open",
+    "address": "Hauptbahnhof, BahnhofCity Top EG 112, 1100 Wien",
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data.  Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Längenfeldgasse",
+    "status": "open",
+    "address": "Längenfeldgasse 202/3, 1120 Wien",
+    "address_changed": false,
+    "district": 12,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-24:00",
+      "tue": "08:00-24:00",
+      "wed": "08:00-24:00",
+      "thu": "08:00-24:00",
+      "fri": "09:00-24:00",
+      "sat": "09:00-24:00",
+      "sun": "08:00-24:00"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Probably at the U-Bahn station Längenfeldgasse. Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Bahnhof Meidling",
+    "status": "open",
+    "address": "Eichenstraße 25, 1120 Wien",
+    "address_changed": false,
+    "district": 12,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data.  Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Türkis To Go Hütteldorf",
+    "status": "open",
+    "address": "Keißlergasse 5, 1140 Wien",
+    "address_changed": false,
+    "district": 14,
+    "city": "Wien",
+    "phone": null,
+    "website": "https://tuerkis.at",
+    "instagram": null,
+    "categories": [
+      "Kebab",
+      "Imbiss"
+    ],
+    "hours": {
+      "mon": "08:00-23:45",
+      "tue": "08:00-23:45",
+      "wed": "08:00-23:45",
+      "thu": "08:00-23:45",
+      "fri": "08:00-23:45",
+      "sat": "08:00-23:45",
+      "sun": "08:00-23:45"
+    },
+    "hours_source": "https://tuerkis.at/standorte/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "third_party",
+      "certifier": null,
+      "quote": "Restaurant states it serves halal food. (Zabihah, user-maintained listing, Türkis City)",
+      "sources": [
+        "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria"
+      ]
+    },
+    "alcohol": {
+      "value": null,
+      "sources": []
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://tuerkis.at/speisekarte/"
+      ]
+    },
+    "menu_url": "https://tuerkis.at/speisekarte/",
+    "prices": [],
+    "price_level": "€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://tuerkis.at/standorte/",
+        "says": "Official Türkis location list ('15 Standorte'): restaurants Goldschmiedgasse, Donauzentrum, Mariahilferstrasse, Praterstern; To-Go Ring/Volkstheater, Ring/Volksgarten, Kagran, Hauptbahnhof, Längenfeldgasse, Bahnhof Meidling, Hütteldorf, Westbahnhof; SCS only in the reservation pop-up. Hours per branch.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://tuerkis.at/speisekarte/",
+        "says": "Official menu (for 'allen Standorten in Wien'): no pork items; Putenschinken, Putenwurst, Rindersalami; meat of 'türkische Wurst'/Sucuk not stated. No halal statement anywhere on tuerkis.at. The 2023 PDF link now returns an HTML page; drinks card not reachable.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cb5d9f12-7767-11ef-95ae-6045bdeb9f57/trkis-city-wien-austria",
+        "says": "Zabihah (user-maintained halal directory), Türkis City, Goldschmiedgasse 4: 'Restaurant states it serves halal food', label 'Fully halal', 'Alcohol served'. Latest review Aug 2026.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.zabihah.com/restaurants/cac905f2-7767-11ef-95ae-6045bdeb9f57/trkis-htteldorf-wien-austria",
+        "says": "Zabihah 'Türkis Hütteldorf': operators Muslim, halal status confirmed; alcohol served (user-maintained).",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Türkis list, not in our data. Zabihah 'Türkis Hütteldorf': halal confirmed by owners, alcohol served (user-maintained). Halal only third-party (Zabihah); alcohol not verified for this branch.",
+    "new_branch": true,
+    "why_halal_friendly": "Branch of the Türkis kebab chain, which Zabihah (user-maintained) lists as halal per the owners; no pork on the official menu."
+  },
+  {
+    "id": null,
+    "name": "Akakiko SCS Multiplex",
+    "status": "open",
+    "address": "Shopping City Süd, Multiplex-Center Top 453, 2334 Wiener Neudorf",
+    "address_changed": false,
+    "district": null,
+    "city": "Wiener Neudorf",
+    "phone": "+43 57 333 110",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/multiplex (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/multiplex",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Heidenschuss",
+    "status": "open",
+    "address": "Heidenschuss 3 (Ecke Naglergasse), 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 57 333 130",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/heidenschuss (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/heidenschuss",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Singerstraße",
+    "status": "open",
+    "address": "Singerstraße 4, 1010 Wien",
+    "address_changed": false,
+    "district": 1,
+    "city": "Wien",
+    "phone": "+43 57 333 140",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/singerstrasse (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/singerstrasse",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Am Platz (Hietzing)",
+    "status": "open",
+    "address": "Am Platz 3, 1130 Wien",
+    "address_changed": false,
+    "district": 13,
+    "city": "Wien",
+    "phone": "+43 57 333 160",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/hietzing (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/hietzing",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Passage Linz",
+    "status": "open",
+    "address": "Landstraße 17-25 (Passage Center, 3. Stock), 4020 Linz",
+    "address_changed": false,
+    "district": null,
+    "city": "Linz",
+    "phone": "+43 57 333 170",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-22:30",
+      "tue": "10:30-22:30",
+      "wed": "10:30-22:30",
+      "thu": "10:30-22:30",
+      "fri": "10:30-22:30",
+      "sat": "10:30-22:30",
+      "sun": "10:30-22:30"
+    },
+    "hours_source": "https://akakiko.at/lokale/linz (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/linz",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Landstraßer Hauptstraße",
+    "status": "open",
+    "address": "Landstraßer Hauptstraße 59, 1030 Wien",
+    "address_changed": false,
+    "district": 3,
+    "city": "Wien",
+    "phone": "+43 57 333 120",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/landstrasse (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/landstrasse",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Julius-Tandler-Platz",
+    "status": "open",
+    "address": "Julius-Tandler-Platz 4, 1090 Wien",
+    "address_changed": false,
+    "district": 9,
+    "city": "Wien",
+    "phone": "+43 57 333 180",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/julius-tandler-platz (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/julius-tandler-platz",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Favoritenstraße",
+    "status": "open",
+    "address": "Favoritenstraße 78, 1100 Wien",
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": "+43 57 333 210",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/favoritenstrasse (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/favoritenstrasse",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Floridsdorf",
+    "status": "open",
+    "address": "Schloßhofer Straße 11 (1. OG), 1210 Wien",
+    "address_changed": false,
+    "district": 21,
+    "city": "Wien",
+    "phone": "+43 57 333 220",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/floridsdorf (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/floridsdorf",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Hauptbahnhof",
+    "status": "open",
+    "address": "Hauptbahnhof, BahnhofCity Wien Top 130 EG (Stiege 9), 1100 Wien",
+    "address_changed": false,
+    "district": 10,
+    "city": "Wien",
+    "phone": "+43 57 333 240",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "09:00-21:00",
+      "tue": "09:00-21:00",
+      "wed": "09:00-21:00",
+      "thu": "09:00-21:00",
+      "fri": "09:00-21:00",
+      "sat": "09:00-21:00",
+      "sun": "09:00-21:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/hauptbahnhof (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/hauptbahnhof",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko PlusCity",
+    "status": "open",
+    "address": "Pluskaufstraße 7, 4061 Pasching",
+    "address_changed": false,
+    "district": null,
+    "city": "Pasching",
+    "phone": "+43 57 333 250",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-21:30",
+      "tue": "10:30-21:30",
+      "wed": "10:30-21:30",
+      "thu": "10:30-21:30",
+      "fri": "10:30-21:30",
+      "sat": "10:30-21:30",
+      "sun": "10:30-21:30"
+    },
+    "hours_source": "https://akakiko.at/lokale/pluscity (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/pluscity",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Sparkassenplatz Graz",
+    "status": "open",
+    "address": "Sparkassenplatz 2, 8010 Graz",
+    "address_changed": false,
+    "district": null,
+    "city": "Graz",
+    "phone": "+43 57 333 260",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/graz (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/graz",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko Forum 1 Salzburg",
+    "status": "open",
+    "address": "Südtiroler Platz 11 / Top 6 / EG, 5020 Salzburg",
+    "address_changed": false,
+    "district": null,
+    "city": "Salzburg",
+    "phone": "+43 57 333 270",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-23:00",
+      "tue": "10:30-23:00",
+      "wed": "10:30-23:00",
+      "thu": "10:30-23:00",
+      "fri": "10:30-23:00",
+      "sat": "10:30-23:00",
+      "sun": "10:30-23:00"
+    },
+    "hours_source": "https://akakiko.at/lokale/salzburg (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/salzburg",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Akakiko LentiaCity Linz",
+    "status": "open",
+    "address": "Hauptstraße 54 (LentiaCity Top 31), 4040 Linz",
+    "address_changed": false,
+    "district": null,
+    "city": "Linz",
+    "phone": "+43 57 333 280",
+    "website": "https://akakiko.at",
+    "instagram": "https://instagram.com/akakiko_official",
+    "categories": [
+      "Asiatisch",
+      "Sushi"
+    ],
+    "hours": {
+      "mon": "10:30-22:30",
+      "tue": "10:30-22:30",
+      "wed": "10:30-22:30",
+      "thu": "10:30-22:30",
+      "fri": "10:30-22:30",
+      "sat": "10:30-22:30",
+      "sun": "10:30-22:30"
+    },
+    "hours_source": "https://akakiko.at/lokale/lentiacity (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://akakiko.at/help/general",
+        "https://akakiko.at/menu"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "pork": {
+      "value": false,
+      "sources": [
+        "https://akakiko.at/menu"
+      ]
+    },
+    "menu_url": "https://akakiko.at/menu",
+    "prices": [
+      {
+        "item": "Sake Maki (18 Stk)",
+        "price": "14,80",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Chicken Teriyaki Maki (8 Stk)",
+        "price": "17,10",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Sesam Chicken",
+        "price": "15,40",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Gan Bian Beef",
+        "price": "17,60",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      },
+      {
+        "item": "Coca-Cola",
+        "price": "3,00",
+        "source": "https://akakiko.at/menu",
+        "kind": "delivery_app"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://akakiko.at/lokale",
+        "says": "Official list of 17 Akakiko restaurants with branch pages (address, hours, phone 057 333 xxx).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/lokale/lentiacity",
+        "says": "Official branch page: address, phone and daily hours as given.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://akakiko.at/menu",
+        "says": "Akakiko's own online order menu: section 'Alkoholische Getränke' (Stiegl Goldbräu €3,20, Wiener Gemischter Satz €8,50, red wine). Meat: chicken, beef, duck, fish/seafood; no pork item seen. No halal labels or statements.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "New branch from the official Akakiko list, not in our data. Halal: Akakiko says nothing about halal anywhere (FAQ, menu); no certifier found; only an unverified user badge on swipein.restaurant for Julius-Tandler-Platz. Beer and wine on the menu. No pork seen on the online menu (weak evidence; it does not make the meat halal). Prices are from Akakiko's own online shop (marked delivery_app). Akakiko is not halal-friendly on the evidence – owner to decide whether to keep the chain.",
+    "new_branch": true,
+    "why_halal_friendly": "Not halal-friendly on the evidence: no halal statement or certificate, alcohol on the menu. Listed only for completeness because the chain is in our data."
+  },
+  {
+    "id": null,
+    "name": "Habibi & Hawara Landstraße",
+    "status": "open",
+    "address": "Platz der Sozialen Sicherheit, Kundmanngasse 21-27, 1030 Wien",
+    "address_changed": false,
+    "district": 3,
+    "city": "Wien",
+    "phone": "+43 1 710 87 27",
+    "website": "https://habibi.at",
+    "instagram": null,
+    "categories": [
+      "Restaurant",
+      "Orientalisch",
+      "Brunch"
+    ],
+    "hours": {
+      "mon": "closed",
+      "tue": "11:30-15:00",
+      "wed": "11:30-15:00",
+      "thu": "11:30-15:00",
+      "fri": "11:30-15:00",
+      "sat": "09:00-15:00",
+      "sun": "09:00-15:00"
+    },
+    "hours_source": "https://habibi.at/ (seen 2026-11-12)",
+    "halal": {
+      "evidence": "none_found",
+      "certifier": null,
+      "quote": null,
+      "sources": [
+        "https://habibi.at/",
+        "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf"
+      ]
+    },
+    "alcohol": {
+      "value": true,
+      "sources": [
+        "https://habibi.at/wp-content/uploads/habibi-getraenkekarte.pdf",
+        "https://habibi.at/"
+      ]
+    },
+    "pork": {
+      "value": null,
+      "sources": [
+        "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+        "https://habibi.at/landstrasse/brunch/"
+      ]
+    },
+    "menu_url": "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+    "prices": [
+      {
+        "item": "Hühner Shawarma (mit Pommes)",
+        "price": "12,80",
+        "source": "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Habibi Burger (Bio-Galloway-Rind)",
+        "price": "17,90",
+        "source": "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Falafel Sandwich Rolle",
+        "price": "9,80",
+        "source": "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+        "kind": "venue"
+      },
+      {
+        "item": "Mittagsbuffet (Di–Fr)",
+        "price": "17,90",
+        "source": "https://habibi.at/landstrasse/lunch/",
+        "kind": "venue"
+      },
+      {
+        "item": "Brunch-Buffet (Sa/So)",
+        "price": "29,90",
+        "source": "https://habibi.at/landstrasse/brunch/",
+        "kind": "venue"
+      },
+      {
+        "item": "Habibi Hauslimo 0,33 l",
+        "price": "4,60",
+        "source": "https://habibi.at/wp-content/uploads/habibi-getraenkekarte.pdf",
+        "kind": "venue"
+      }
+    ],
+    "price_level": "€€",
+    "confidence": "medium",
+    "sources": [
+      {
+        "url": "https://habibi.at/",
+        "says": "Only remaining restaurant; Mo & Feiertag Ruhetag, Di–Fr 11:30–15:00, Sa/So Brunch 9:00–15:00; closed 21.12.2026–8.1.2027; tel 01/710 87 27; 'PROSECCO &/oder LIMONADEN FREE FLOW'. No halal mention.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/wp-content/uploads/habibi-speisekarte.pdf",
+        "says": "Food menu: 'Dienstag bis Freitag 11:30 - 17:30'; chicken is 'steirisches Hühnerfleisch', burger Bio-Galloway beef; no halal mention.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/wp-content/uploads/habibi-getraenkekarte.pdf",
+        "says": "Drinks card Landstraße: Mimosa, Aperol Spritz, Hugo, Gin Tonic, wines, spritzers.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://habibi.at/landstrasse/brunch/",
+        "says": "Brunch buffet €29.90 with 'Käse- und Wurstplatten' (meat not stated).",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://wien.orf.at/stories/3191134/",
+        "says": "ORF (Jan 2023): insolvency; locations Wipplingerstraße, Nordbahnviertel, Siebensterngasse and Seestadt given up.",
+        "seen": "2026-11-12"
+      },
+      {
+        "url": "https://www.vienna.at/restaurantgruppe-habibi-hawara-schliest-lokale-in-wien/7856839",
+        "says": "vienna.at (2023): Habibi & Hawara insolvent, closes most Vienna restaurants; only Landstraße continues.",
+        "seen": "2026-11-12"
+      }
+    ],
+    "notes": "Only surviving Habibi & Hawara restaurant (run by The Good Life Hospitality Group). No halal claim anywhere; chicken is Styrian chicken; wide alcohol offer; brunch has Wurstplatten of unstated meat → pork null. Hours conflict: homepage Di–Fr 11:30–15:00 vs PDF menu Di–Fr 11:30–17:30 – homepage used. Probably not halal-friendly; owner to decide.",
+    "new_branch": true,
+    "why_halal_friendly": "Weak: oriental-Viennese kitchen run as a refugee social business, but no halal claim and alcohol served – listed only because the chain is in our data."
+  }
+]
