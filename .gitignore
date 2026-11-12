@@ -41,3 +41,6 @@ next-env.d.ts
 
 # social media assets (regenerate with node social/make-profile-assets.mjs)
 /social/out/
+
+# Logo and business-card files: kept locally, not published
+/brand/
