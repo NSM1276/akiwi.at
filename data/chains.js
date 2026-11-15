@@ -39,7 +39,7 @@ const RAW_CHAINS = {
     img: ['#0D9488', '#14B8A6'],
     accentHue: 190,
     primaryId: 'turkis-city',
-    venueIds: ['turkis-city', 'turkis-neubau', 'turkis-westbahnhof', 'turkis-donau', 'turkis-voesendorf'],
+    venueIds: ['turkis-city', 'turkis-neubau', 'turkis-westbahnhof', 'turkis-donau', 'turkis-voesendorf', 'turkis-praterstern'],
   },
 
   'kent': {
@@ -70,6 +70,21 @@ const RAW_CHAINS = {
     accentHue: 0,
     primaryId: 'akakiko-city',
     venueIds: ['akakiko-city', 'akakiko-gerngross', 'akakiko-donau'],
+  },
+
+  'otacos': {
+    id: 'otacos',
+    name: "O'Tacos",
+    tagline_de: 'French Tacos — gefüllte Tortillas mit Fleisch, Pommes und Käsesauce',
+    tagline_en: 'French tacos — filled tortillas with meat, fries and cheese sauce',
+    website: null,
+    categories: ['Imbiss'],
+    tags: [],
+    price: '',
+    img: ['#7C2D12', '#431407'],
+    accentHue: 18,
+    primaryId: 'o-tacos-karntner-strasse-1010',
+    venueIds: ['o-tacos-karntner-strasse-1010', 'o-tacos-kohlmarkt-1010', 'o-tacos-rotenturmstrasse-1010', 'o-tacos-naschmarkt-1040', 'o-tacos-mariahilfer-strasse-34-1070', 'o-tacos-mariahilfer-strasse-84-1070', 'o-tacos-hauptbahnhof-1100', 'o-tacos-wahringer-strasse-1180', 'o-tacos-donauzentrum-1220'],
   },
 
 };
