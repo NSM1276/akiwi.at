@@ -264,9 +264,13 @@ function dataSource(v) {
   const [y, m, d] = v.checked.date.split('-');
   const sources = v.checked.sources || [];
   const names = sources.map((s) => s.label);
+  // Name only what was actually compared.
+  const hasHours = (v.hours || []).length > 0;
   const hasMenu = (v.menu || []).length > 0;
-  const whatDe = hasMenu ? 'Öffnungszeiten, Speisekarte und Preise' : 'Öffnungszeiten';
-  const whatEn = hasMenu ? 'opening hours, menu and prices' : 'opening hours';
+  const partsDe = [hasHours && 'Öffnungszeiten', hasMenu && 'Speisekarte mit Preisen', !hasMenu && typeof v.alcohol === 'boolean' && 'Getränkekarte'].filter(Boolean);
+  const partsEn = [hasHours && 'opening hours', hasMenu && 'menu with prices', !hasMenu && typeof v.alcohol === 'boolean' && 'drinks list'].filter(Boolean);
+  const whatDe = partsDe.length ? listDe(partsDe) : 'Angaben';
+  const whatEn = partsEn.length ? listEn(partsEn) : 'details';
   return {
     ...base,
     text_de: `Stand ${d}.${m}.${y}: ${whatDe} von Akiwi mit den eigenen Angaben des Lokals abgeglichen${names.length ? ` (${listDe(names)})` : ''}. Nicht vom Lokal bestätigt — Änderungen sind möglich.`,
