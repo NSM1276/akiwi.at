@@ -57,21 +57,6 @@ const RAW_CHAINS = {
     venueIds: ['kent-1150', 'kent-1160', 'kent-1200'],
   },
 
-  'akakiko': {
-    id: 'akakiko',
-    name: 'Akakiko',
-    tagline_de: 'Easy Japanese Dining — Japanisch, Koreanisch, Thailändisch',
-    tagline_en: 'Easy Japanese Dining — Japanese, Korean, Thai',
-    website: 'akakiko.at',
-    categories: ['Restaurant', 'Asiatisch'],
-    tags: ['Japanisch', 'Koreanisch', 'Sushi', 'Lieferung', 'Schnell'],
-    price: '€€',
-    img: ['#B91C1C', '#DC2626'],
-    accentHue: 0,
-    primaryId: 'akakiko-city',
-    venueIds: ['akakiko-city', 'akakiko-gerngross', 'akakiko-donau'],
-  },
-
   'otacos': {
     id: 'otacos',
     name: "O'Tacos",
