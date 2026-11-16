@@ -148,8 +148,13 @@ function menuStats(v) {
 
 // ─── Halal status, worded the same way everywhere on the site ────────────────
 
+// Where the venue says it is halal: { label: 'Instagram', url }.
+const sourceDe = (s) => (!s?.label ? 'in seinen eigenen Kanälen' : s.label === 'Website' ? 'auf seiner Website' : `auf ${s.label}`);
+const sourceEn = (s) => (!s?.label ? 'on its own channels' : s.label === 'Website' ? 'on its website' : `on ${s.label}`);
+
 function halalShort(status) {
   if (status === 'verified') return 'Halal bestätigt';
+  if (status === 'claimed') return 'Halal laut Lokal';
   if (status === 'self') return 'Halal laut öffentlichen Angaben';
   return 'Halal-Status ungeprüft';
 }
@@ -157,11 +162,13 @@ function halalShort(status) {
 /** One sentence for the "Über …" paragraph. */
 function halalSentence(v, lang) {
   if (lang === 'de') {
-    if (v.status === 'verified') return 'Der Halal-Status ist laut Betreiber bzw. Website des Lokals bestätigt.';
+    if (v.status === 'verified') return 'Der Halal-Status ist von Akiwi geprüft.';
+    if (v.status === 'claimed') return `Das Lokal gibt ${sourceDe(v.halal_source)} an, halal zu sein; von Akiwi noch nicht vor Ort geprüft.`;
     if (v.status === 'self') return 'Halal laut öffentlich zugänglichen Angaben; eine Prüfung durch Akiwi steht noch aus.';
     return 'Der Halal-Status ist nicht bestätigt — bitte direkt im Lokal nachfragen.';
   }
-  if (v.status === 'verified') return "The halal status is confirmed by the venue's owner or website.";
+  if (v.status === 'verified') return 'The halal status has been checked by Akiwi.';
+  if (v.status === 'claimed') return `The venue states ${sourceEn(v.halal_source)} that it is halal; Akiwi has not checked it on site yet.`;
   if (v.status === 'self') return 'Halal according to publicly available information; Akiwi has not checked it yet.';
   return 'The halal status is not confirmed — please ask at the venue.';
 }
@@ -244,12 +251,37 @@ export function venueAbout(v, dishes = []) {
  * Only what the page itself already shows — no answers written for the venue
  * (delivery, prayer room, vegetarian … stay as listed data, not as claims).
  */
+function dataSource(v) {
+  const base = { label_de: 'Datenquelle', label_en: 'Data source' };
+  if (v.onboarded) return null;
+  if (!v.checked?.date) {
+    return {
+      ...base,
+      text_de: 'Aus öffentlichen Quellen zusammengetragen, nicht vom Lokal bestätigt — im Zweifel direkt beim Lokal nachfragen.',
+      text_en: 'Compiled from public sources, not confirmed by the venue — if in doubt, ask the venue directly.',
+    };
+  }
+  const [y, m, d] = v.checked.date.split('-');
+  const sources = v.checked.sources || [];
+  const names = sources.map((s) => s.label);
+  const hasMenu = (v.menu || []).length > 0;
+  const whatDe = hasMenu ? 'Öffnungszeiten, Speisekarte und Preise' : 'Öffnungszeiten';
+  const whatEn = hasMenu ? 'opening hours, menu and prices' : 'opening hours';
+  return {
+    ...base,
+    text_de: `Stand ${d}.${m}.${y}: ${whatDe} von Akiwi mit den eigenen Angaben des Lokals abgeglichen${names.length ? ` (${listDe(names)})` : ''}. Nicht vom Lokal bestätigt — Änderungen sind möglich.`,
+    text_en: `As of ${d}/${m}/${y}: ${whatEn} compared by Akiwi with the venue's own information${names.length ? ` (${listEn(names)})` : ''}. Not confirmed by the venue — things may have changed.`,
+    links: sources,
+  };
+}
+
 export function venueFacts(v) {
   const where = isVienna(v) ? ` (${v.districtName})` : '';
   return [
     {
       label_de: 'Halal-Status', label_en: 'Halal status',
       text_de: halalSentence(v, 'de'), text_en: halalSentence(v, 'en'),
+      links: v.status === 'claimed' && v.halal_source?.url ? [v.halal_source] : undefined,
     },
     {
       label_de: 'Öffnungszeiten', label_en: 'Opening hours',
@@ -265,12 +297,8 @@ export function venueFacts(v) {
       text_de: `${v.address}${where}.${v.phone ? ` Telefon: ${v.phone}.` : ''}`,
       text_en: `${v.address}${where}.${v.phone ? ` Phone: ${v.phone}.` : ''}`,
     },
-    {
-      label_de: 'Datenquelle', label_en: 'Data source',
-      text_de: 'Aus öffentlichen Quellen zusammengetragen, nicht vom Lokal bestätigt — im Zweifel direkt beim Lokal nachfragen.',
-      text_en: 'Compiled from public sources, not confirmed by the venue — if in doubt, ask the venue directly.',
-    },
-  ];
+    dataSource(v),
+  ].filter(Boolean);
 }
 
 // ─── Chain page ──────────────────────────────────────────────────────────────
@@ -308,11 +336,12 @@ export function chainMeta(chain, venues) {
 
 export function chainAbout(chain, venues) {
   const labels = [...new Set(venues.map(branchLabel))];
-  const counts = { verified: 0, self: 0, unknown: 0 };
+  const counts = { verified: 0, claimed: 0, self: 0, unknown: 0 };
   for (const v of venues) counts[v.status] += 1;
   const partsDe = [];
   const partsEn = [];
   if (counts.verified) { partsDe.push(`${counts.verified} verifiziert`); partsEn.push(`${counts.verified} verified`); }
+  if (counts.claimed) { partsDe.push(`${counts.claimed} halal laut Lokal`); partsEn.push(`${counts.claimed} halal per venue`); }
   if (counts.self) { partsDe.push(`${counts.self} nicht geprüft`); partsEn.push(`${counts.self} not checked`); }
   if (counts.unknown) { partsDe.push(`${counts.unknown} ungeprüft`); partsEn.push(`${counts.unknown} unverified`); }
 

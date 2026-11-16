@@ -33,7 +33,7 @@ const VIENNA_DISTRICTS = [
 
 const DANUBE = 'M8,18 C 24,22 44,30 62,26 S 90,14 96,20 L96,26 C 84,22 66,32 48,34 S 16,28 8,24 Z';
 
-const PIN = { verified: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
+const PIN = { verified: '#1F9D55', claimed: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
 
 export default function SearchMap({ lang, restaurants, hoveredId, setHoveredId }) {
   const c = SEARCH_COPY[lang];
@@ -106,7 +106,7 @@ export default function SearchMap({ lang, restaurants, hoveredId, setHoveredId }
       </span>
 
       <span style={{ position: 'absolute', top: 8, right: 8, background: 'var(--paper)', border: 'var(--line) solid var(--ink)', padding: '6px 8px', display: 'flex', flexDirection: 'column', gap: 4 }}>
-        {[['verified', c.halalLabels.verified], ['self', c.halalLabels.self], ['unknown', c.halalLabels.unknown]].filter(([s]) => restaurants.some((r) => r.status === s)).map(([s, l]) => (
+        {[['verified', c.halalLabels.verified], ['claimed', c.halalLabels.claimed], ['self', c.halalLabels.self], ['unknown', c.halalLabels.unknown]].filter(([s]) => restaurants.some((r) => r.status === s)).map(([s, l]) => (
           <span key={s} className="ak-data" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 10 }}>
             <StatusDot status={s} size={10} />{l}
           </span>

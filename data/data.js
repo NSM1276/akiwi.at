@@ -16,6 +16,7 @@ export const COPY = {
     allDistricts: 'Alle Bezirke',
     // Status
     statusVerified: 'Verifiziert',
+    statusClaimed: 'Halal laut Lokal',
     statusSelf: 'Nicht geprüft',
     statusUnknown: 'Unbekannt',
     // Results
@@ -54,6 +55,7 @@ export const COPY = {
     district: 'District',
     allDistricts: 'All districts',
     statusVerified: 'Verified',
+    statusClaimed: 'Halal per venue',
     statusSelf: 'Not checked',
     statusUnknown: 'Unknown',
     resultsCount: (n) => `${n} ${n === 1 ? 'entry' : 'entries'} in Austria`,

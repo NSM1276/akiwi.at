@@ -53,7 +53,7 @@ export function Verification({ venue, lang }) {
   return (
     <div>
       <p className="ak-muted" style={{ margin: '0 0 16px', fontSize: 14, lineHeight: 1.55 }}>
-        {venue.status === 'verified' ? c.statusBlurbVerified : venue.status === 'self' ? c.statusBlurbSelf : c.statusBlurbUnknown}
+        {{ verified: c.statusBlurbVerified, claimed: c.statusBlurbClaimed, self: c.statusBlurbSelf }[venue.status] || c.statusBlurbUnknown}
       </p>
       <ol style={{ listStyle: 'none', margin: 0, padding: 0, borderLeft: '4px solid var(--green)' }}>
         {(venue.verification_log || []).map((e, i) => (

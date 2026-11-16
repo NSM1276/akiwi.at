@@ -38,6 +38,7 @@ function intro(kind, name, stats, districtCount, cityCount, lang, place, prices)
 
   const parts = [];
   if (stats.verified) parts.push(de ? `${stats.verified} verifiziert` : `${stats.verified} verified`);
+  if (stats.claimed) parts.push(de ? `${stats.claimed} halal laut Lokal` : `${stats.claimed} halal per venue`);
   if (stats.self) parts.push(de ? `${stats.self} nicht geprüft` : `${stats.self} not checked`);
   if (stats.unknown) parts.push(de ? `${stats.unknown} ungeprüft` : `${stats.unknown} unverified`);
 
@@ -59,7 +60,8 @@ function heading(kind, name, lang, place) {
 }
 
 const STATUS_TEXT = {
-  verified: { de: 'Halal-Status laut Betreiber bzw. Website des Lokals bestätigt.', en: "Halal status confirmed by the venue's owner or website." },
+  verified: { de: 'Von Akiwi geprüft: Halal-Nachweis gesehen oder vor Ort besucht.', en: 'Checked by Akiwi: halal certificate seen or venue visited.' },
+  claimed: { de: 'Das Lokal gibt in seinen eigenen Kanälen an, halal zu sein. Von Akiwi noch nicht vor Ort geprüft.', en: 'The venue states on its own channels that it is halal. Not yet checked on site by Akiwi.' },
   self: { de: 'Halal laut öffentlich zugänglichen Angaben. Noch nicht von Akiwi geprüft.', en: 'Halal according to publicly available information. Not yet checked by Akiwi.' },
   unknown: { de: 'Status unklar — bitte prüfe direkt im Lokal.', en: 'Status unclear — please check directly at the venue.' },
 };
@@ -173,7 +175,7 @@ export default function Landing({
         <section className="ak-panel" style={{ marginTop: 36 }}>
           <h2 className="ak-subh">{de ? 'Was der Halal-Status bedeutet' : 'What the halal status means'}</h2>
           <dl style={{ margin: 0, display: 'grid', gap: 12 }}>
-            {['verified', 'self', 'unknown'].filter((s) => s !== 'verified' || stats.verified).map((s) => (
+            {['verified', 'claimed', 'self', 'unknown'].filter((s) => (s !== 'verified' && s !== 'claimed') || stats[s]).map((s) => (
               <div key={s}>
                 <dt><StatusBadge status={s} lang={lang} compact /></dt>
                 <dd className="ak-muted" style={{ margin: '4px 0 0', fontSize: 13, lineHeight: 1.5 }}>{STATUS_TEXT[s][lang]}</dd>

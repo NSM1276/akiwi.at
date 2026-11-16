@@ -14,7 +14,7 @@
 import { VENUES } from './venues';
 import { CHAINS } from './chains';
 
-const STATUS_RANK = { unknown: 0, self: 1, verified: 2 };
+const STATUS_RANK = { unknown: 0, self: 1, claimed: 2, verified: 3 };
 
 export const AMENITY_KEYS = ['prayer', 'delivery', 'outdoor', 'wifi', 'wheelchair', 'parking'];
 export const PRICE_LEVELS = ['€', '€€', '€€€'];
@@ -174,7 +174,7 @@ export function getFacets(listing) {
     // Hours are held back until a venue is onboarded (data/public.js).
     hours: listing.some((r) => r.hours?.length > 0),
     // Only statuses that exist: nobody is 'verified' until Akiwi has checked a document.
-    halal: ['verified', 'self', 'unknown'].filter((s) => listing.some((r) => r.status === s)),
+    halal: ['verified', 'claimed', 'self', 'unknown'].filter((s) => listing.some((r) => r.status === s)),
     amenities: AMENITY_KEYS.filter((k) => amenities.has(k)),
   };
 }

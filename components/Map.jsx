@@ -31,7 +31,7 @@ const VIENNA_DISTRICTS = [
 
 const DANUBE = 'M8,18 C 24,22 44,30 62,26 S 90,14 96,20 L96,26 C 84,22 66,32 48,34 S 16,28 8,24 Z';
 
-const PIN = { verified: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
+const PIN = { verified: '#1F9D55', claimed: '#1F9D55', self: '#E0A030', unknown: '#B23A2E' };
 
 export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHoveredId }) {
   const c = COPY[lang];
@@ -46,7 +46,7 @@ export default function ViennaMap({ lang, restaurants, filters, hoveredId, setHo
           <p className="ak-lead" style={{ marginTop: 6, fontSize: 15 }}>{c.mapSub}</p>
         </div>
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-          {['verified', 'self', 'unknown'].filter((st) => restaurants.some((r) => r.status === st)).map((s) => <StatusBadge key={s} status={s} lang={lang} compact />)}
+          {['verified', 'claimed', 'self', 'unknown'].filter((st) => restaurants.some((r) => r.status === st)).map((s) => <StatusBadge key={s} status={s} lang={lang} compact />)}
         </div>
       </div>
 

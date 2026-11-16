@@ -11,9 +11,15 @@ import { publicVenues } from './public';
 //   3. git add . && git commit -m "Add <name>" && git push → live in ~1 min.
 //
 // HOW TO CHANGE A VERIFICATION STATUS:
-//   Edit the `status` field of the venue: 'verified' | 'self' | 'unknown'.
+//   Edit the `status` field of the venue: 'verified' | 'claimed' | 'self' | 'unknown'.
 //   'verified' only after Akiwi has seen a document or visited the venue (add a verification_log entry saying what was seen).
-//   Until then every venue is 'self' (label: not checked; data from public sources) or 'unknown'. Nobody has contacted the venues yet.
+//   'claimed' ("Halal laut Lokal") when the venue itself says it is halal on its own website/Instagram:
+//     add halal_source: { label: 'Instagram', url: '...' } pointing to where it says so.
+//   Otherwise 'self' (label: not checked; data from public sources) or 'unknown'. Nobody has contacted the venues yet.
+//
+// CHECKED BY AKIWI (shows hours, menu, prices, amenities before the venue is onboarded):
+//   checked: { date: 'YYYY-MM-DD', sources: [{ label: 'Website', url: '...' }, { label: 'Instagram', url: '...' }] }
+//   Set it only after comparing the record with the venue's own sources on that date. See data/public.js.
 //   A chain's status is derived from its branches (lowest status wins).
 //
 // Rating/reviews: only shown when reviews > 0. Leave rating: 0, reviews: 0
@@ -304,9 +310,14 @@ const RAW_VENUES = {
     address: 'Khleslplatz 5, 1120 Wien',
     phone: '+43 699 1100 27 27',
     website: 'antepevi-grillhaus.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://antepevi-grillhaus.at/speisekarte' },
+    checked: { date: '2026-11-16', sources: [
+      { label: 'Website', url: 'https://antepevi-grillhaus.at/' },
+      { label: 'Instagram', url: 'https://www.instagram.com/antepevi_grill/' },
+    ]},
     categories: ['Restaurant', 'Kebab'],
-    price: '€€',
+    price: '',
     rating: 4.0,
     reviews: 0,
     gallery: [
@@ -314,9 +325,8 @@ const RAW_VENUES = {
       { hue: 18,  a: '#7C2D12', b: '#431407' },
       { hue: 38,  a: '#713F12', b: '#422006' },
     ],
-    tags: ['Türkisch', 'Gaziantep', 'Pide', 'Lahmacun', 'Baklava'],
+    tags: ['Grill', 'Gaziantep', 'Pide', 'Lahmacun'],
     hours: [
-      { day: 0, open: null,    close: null    },
       { day: 1, open: '12:00', close: '23:00' },
       { day: 2, open: '12:00', close: '23:00' },
       { day: 3, open: '12:00', close: '23:00' },
@@ -325,7 +335,8 @@ const RAW_VENUES = {
       { day: 6, open: '12:00', close: '23:00' },
     ],
     amenities: { parking: false, wheelchair: false, prayer: false, delivery: false, outdoor: false, wifi: false },
-    menu: [
+    // Older menu from public sources, not on the venue's own site; not shown.
+    menu_unchecked: [
       { cat_de: 'Frühstück', cat_en: 'Breakfast', items: [
         { name_de: 'Türkisches Frühstück', name_en: 'Turkish breakfast' },
       ]},
@@ -346,9 +357,12 @@ const RAW_VENUES = {
         { name_de: 'Antep Baklava', name_en: 'Antep baklava' },
       ]},
     ],
+    menu: [],
     reviews_list: [],
     verification_log: [
       { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours compared with the venue\'s own channels' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Website des Lokals („100 % halal“)', event_en: 'Halal according to the venue\'s website ("100 % halal")' },
     ],
     similar: [
       { id: 'alaturka-1120', name: 'Alaturka Am Schöpfwerk', district: 12, status: 'unknown', cat: 'Kebab', distance_km: 1.2, rating: 4.0, hue: 28 },
@@ -435,7 +449,12 @@ const RAW_VENUES = {
     address: 'Meidlinger Hauptstraße 30, 1120 Wien',
     phone: '+43 1 7200047',
     website: 'burgallio.at/de/meidling',
-    status: 'unknown',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/burgallio/' },
+    checked: { date: '2026-11-16', sources: [
+      { label: 'Website', url: 'https://burgallio.at/de/meidling' },
+      { label: 'Instagram', url: 'https://www.instagram.com/burgallio/' },
+    ]},
     categories: ['Restaurant'],
     price: '€€',
     rating: 4.0,
@@ -445,57 +464,52 @@ const RAW_VENUES = {
       { hue: 18,  a: '#92400E', b: '#451A03' },
       { hue: 0,   a: '#7F1D1D', b: '#450A0A' },
     ],
-    tags: ['Burger', 'Vegan', 'Snacks', 'Lieferung', 'Take-away', 'Hausgemacht'],
+    tags: ['Burger', 'Hot Dogs', 'Lieferung', 'Take-away'],
     hours: [
-      { day: 0, open: '10:30', close: '22:00' },
-      { day: 1, open: '10:30', close: '22:00' },
-      { day: 2, open: '10:30', close: '22:00' },
-      { day: 3, open: '10:30', close: '22:00' },
-      { day: 4, open: '10:30', close: '23:00' },
-      { day: 5, open: '10:30', close: '23:00' },
-      { day: 6, open: '11:30', close: '22:00' },
+      { day: 0, open: '11:00', close: '22:00' },
+      { day: 1, open: '11:00', close: '22:00' },
+      { day: 2, open: '11:00', close: '22:00' },
+      { day: 3, open: '11:00', close: '22:00' },
+      { day: 4, open: '14:30', close: '22:00' },
+      { day: 5, open: '11:00', close: '22:00' },
+      { day: 6, open: '11:00', close: '22:00' },
     ],
     amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
     menu: [
-      { cat_de: 'Burger (Rindfleisch 140g, Medium Well)', cat_en: 'Burgers (beef 140g, medium well)', items: [
-        { name_de: 'Classic Burger (Salat, Tomaten, Zwiebeln, Gewürzgurken, Ketchup, Mayo)', name_en: 'Classic burger (lettuce, tomato, onion, pickles, ketchup, mayo)', price: '8,90' },
-        { name_de: 'Cheeseburger (Classic + Cheddar)', name_en: 'Cheeseburger (classic + cheddar)', price: '9,90' },
-        { name_de: 'Double Burger (2× Rindfleisch, Haus-Sauce)', name_en: 'Double burger (2× beef, house sauce)', price: '13,50' },
-        { name_de: 'BBQ Burger (Speck, Röstzwiebeln, BBQ-Sauce, Cheddar)', name_en: 'BBQ burger (bacon, fried onions, BBQ sauce, cheddar)', price: '10,90' },
-        { name_de: 'Chili Cheese Burger (Jalapeños, scharfe Sauce, Cheddar)', name_en: 'Chili cheese burger (jalapeños, spicy sauce, cheddar)', price: '10,90' },
-        { name_de: 'Mushroom Burger (Champignons, Zwiebeln, Spezialsauce)', name_en: 'Mushroom burger (mushrooms, onions, special sauce)', price: '10,50' },
+      { cat_de: 'Burger', cat_en: 'Burgers', items: [
+        { name_de: 'Hamburger', name_en: 'Hamburger', price: '10,90' },
+        { name_de: 'Cheese Burger', name_en: 'Cheese Burger', price: '11,90' },
+        { name_de: 'Chilli Burger', name_en: 'Chilli Burger', price: '12,90' },
+        { name_de: 'Farmhouse Burger', name_en: 'Farmhouse Burger', price: '13,90' },
+        { name_de: 'Burgallio Special', name_en: 'Burgallio Special', price: '13,90' },
+        { name_de: 'Surf & Turf', name_en: 'Surf & Turf', price: '15,90' },
       ]},
-      { cat_de: 'Chicken Burger (100% Hühnerbrust)', cat_en: 'Chicken burgers (100% chicken breast)', items: [
-        { name_de: 'Crispy Chicken (paniert, Salat, Mayo)', name_en: 'Crispy chicken (breaded, lettuce, mayo)', price: '8,50' },
-        { name_de: 'Grilled Chicken (gegrillt, Tomaten, Haussauce)', name_en: 'Grilled chicken (grilled, tomato, house sauce)', price: '8,90' },
+      { cat_de: 'Chicken & Veggie', cat_en: 'Chicken & veggie', items: [
+        { name_de: 'Crispy Chicken Burger', name_en: 'Crispy Chicken Burger', price: '11,90' },
+        { name_de: 'Halloumi Burger', name_en: 'Halloumi burger', price: '12,90', tag: 'V' },
+        { name_de: 'Gemüse Burger', name_en: 'Veggie burger', price: '10,50', tag: 'V' },
+        { name_de: 'Veganer Chicken Burger', name_en: 'Vegan chicken burger', price: '12,90', tag: 'V' },
       ]},
-      { cat_de: 'Veggie & Vegan', cat_en: 'Veggie & Vegan', items: [
-        { name_de: 'Veggie Burger (Gemüse-Patty, Salat, Haussauce)', name_en: 'Veggie burger (veggie patty, lettuce, house sauce)', price: '8,50', tag: 'V' },
-        { name_de: 'Halloumi Burger (Halloumi, Rucola, Tomaten)', name_en: 'Halloumi burger (halloumi, arugula, tomato)', price: '9,50', tag: 'V' },
-        { name_de: 'Vegan Burger (pflanzliches Patty, vegane Mayo)', name_en: 'Vegan burger (plant patty, vegan mayo)', price: '9,90', tag: 'V' },
+      { cat_de: 'Hot Dogs', cat_en: 'Hot dogs', items: [
+        { name_de: 'Käsekrainer', name_en: 'Käsekrainer', price: '10,90' },
+        { name_de: 'Spezial Käsekrainer', name_en: 'Spezial Käsekrainer', price: '12,40' },
       ]},
-      { cat_de: 'Beilagen (Fries & Snacks)', cat_en: 'Sides (Fries & Snacks)', items: [
-        { name_de: 'Pommes (Klein)', name_en: 'Fries (small)', price: '3,50', tag: 'V' },
-        { name_de: 'Pommes (Groß)', name_en: 'Fries (large)', price: '4,90', tag: 'V' },
-        { name_de: 'Süßkartoffelpommes', name_en: 'Sweet potato fries', price: '5,50', tag: 'V' },
-        { name_de: 'Onion Rings (8 Stk.)', name_en: 'Onion rings (8 pcs)', price: '4,50', tag: 'V' },
-        { name_de: 'Chili Cheese Nuggets (6 Stk.)', name_en: 'Chili cheese nuggets (6 pcs)', price: '5,50' },
-        { name_de: 'Mozzarella Sticks (5 Stk.)', name_en: 'Mozzarella sticks (5 pcs)', price: '5,50', tag: 'V' },
+      { cat_de: 'Bowls', cat_en: 'Bowls', items: [
+        { name_de: 'Caesar Salat', name_en: 'Caesar salad', price: '13,90' },
+        { name_de: 'Halloumi Salat', name_en: 'Halloumi salad', price: '12,90', tag: 'V' },
       ]},
-      { cat_de: 'Saucen (Extra)', cat_en: 'Sauces (extra)', items: [
-        { name_de: 'Ketchup / Mayo', name_en: 'Ketchup / Mayo', price: '0,70' },
-        { name_de: 'Burgallio Haus-Sauce', name_en: 'Burgallio house sauce', price: '1,00' },
-        { name_de: 'BBQ / Knoblauch / Chili-Sauce', name_en: 'BBQ / Garlic / Chili sauce', price: '1,00' },
-      ]},
-      { cat_de: 'Getränke', cat_en: 'Drinks', items: [
-        { name_de: 'Dosen 0,33l (Cola, Fanta, Sprite, Mezzo Mix)', name_en: 'Cans 0.33l (Cola, Fanta, Sprite, Mezzo Mix)', price: '2,20' },
-        { name_de: 'Eistee / Ayran', name_en: 'Iced tea / Ayran', price: '2,50' },
-        { name_de: 'Mineralwasser (0,5l)', name_en: 'Mineral water (0.5l)', price: '2,00' },
+      { cat_de: 'Beilagen', cat_en: 'Sides', items: [
+        { name_de: 'Pommes Frites (groß)', name_en: 'French fries (large)', price: '4,90', tag: 'V' },
+        { name_de: 'Cheesy Pommes', name_en: 'Cheesy fries', price: '6,90', tag: 'V' },
+        { name_de: 'Sweet Potato Fries', name_en: 'Sweet potato fries', price: '5,90', tag: 'V' },
+        { name_de: 'Crispy Chicken Tenders (3 Stück)', name_en: 'Crispy chicken tenders (3)', price: '6,90' },
       ]},
     ],
     reviews_list: [],
     verification_log: [
       { date: '2026-05-02', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Eintrag erstellt — Status noch ungeprüft', event_en: 'Entry created — status not yet verified' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten und Speisekarte mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours and menu compared with the venue\'s own channels' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Instagram-Profil des Lokals', event_en: 'Halal according to the venue\'s Instagram profile' },
     ],
     similar: [
       { id: 'burgallio-1100',          name: 'Burgallio Favoriten',          district: 10, status: 'unknown', cat: 'Restaurant', distance_km: 5.4, rating: 4.0, hue: 18  },
@@ -3090,21 +3104,67 @@ const RAW_VENUES = {
     address: 'Leibnizgasse 13/3, 1100 Wien',
     phone: '+43 6609714522',
     website: 'www.munchy.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://www.munchy.at/speisekarte.html' },
+    checked: { date: '2026-11-16', sources: [
+      { label: 'Website', url: 'https://www.munchy.at/speisekarte.html' },
+      { label: 'Instagram', url: 'https://www.instagram.com/munchyvienna/' },
+    ]},
     categories: ['Imbiss', 'Burger'],
-    price: '',
+    price: '€€',
     rating: 0,
     reviews: 0,
     gallery: [
       { hue: 119, a: '#1E721D', b: '#0D310C' },
     ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
+    tags: ['Smashburger', 'Burger', 'Hot Dogs', 'Lieferung'],
+    hours: [
+      { day: 0, open: '11:00', close: '22:00' },
+      { day: 1, open: '11:00', close: '22:00' },
+      { day: 2, open: '11:00', close: '22:00' },
+      { day: 3, open: '11:00', close: '22:00' },
+      { day: 4, open: '11:00', close: '23:00' },
+      { day: 5, open: '11:00', close: '23:00' },
+      { day: 6, open: '12:00', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: true, wifi: false },
+    menu: [
+      { cat_de: 'Rindfleisch-Burger', cat_en: 'Beef burgers', items: [
+        { name_de: 'Hamburger', name_en: 'Hamburger', price: '12,90' },
+        { name_de: 'Cheeseburger', name_en: 'Cheeseburger', price: '13,90' },
+        { name_de: 'Bacon Cheeseburger', name_en: 'Bacon Cheeseburger', price: '14,90' },
+        { name_de: 'Signature Beef Burger', name_en: 'Signature Beef Burger', price: '14,90' },
+        { name_de: 'El Patron', name_en: 'El Patron', price: '15,90' },
+        { name_de: 'Smoky Texas', name_en: 'Smoky Texas', price: '9,90' },
+      ]},
+      { cat_de: 'Hühnchen-Burger', cat_en: 'Chicken burgers', items: [
+        { name_de: 'Crispy Chicken', name_en: 'Crispy Chicken', price: '13,90' },
+        { name_de: 'Chicken Cheese Burger', name_en: 'Chicken Cheese Burger', price: '14,90' },
+        { name_de: 'Spicy Chicken Burger', name_en: 'Spicy Chicken Burger', price: '14,90' },
+        { name_de: 'JR Smashed Chicken Burger', name_en: 'JR Smashed Chicken Burger', price: '7,90' },
+      ]},
+      { cat_de: 'Hot Dogs', cat_en: 'Hot dogs', items: [
+        { name_de: 'Munchy Hot Dog', name_en: 'Munchy Hot Dog', price: '7,90' },
+        { name_de: 'Chili Cheese Hot Dog', name_en: 'Chili Cheese Hot Dog', price: '7,90' },
+        { name_de: 'Käsekrainer', name_en: 'Käsekrainer', price: '7,90' },
+      ]},
+      { cat_de: 'Wraps & Toasts', cat_en: 'Wraps & toasts', items: [
+        { name_de: 'Köfte Wrap', name_en: 'Köfte Wrap', price: '9,90' },
+        { name_de: 'Crispy Chicken Wrap', name_en: 'Crispy Chicken Wrap', price: '10,90' },
+        { name_de: 'XL Sucuk Toast', name_en: 'XL Sucuk Toast', price: '7,90' },
+        { name_de: 'XL Pulled Beef Toast', name_en: 'XL Pulled Beef Toast', price: '9,90' },
+        { name_de: 'Falafel Wrap', name_en: 'Falafel Wrap', price: '10,90', tag: 'V' },
+      ]},
+      { cat_de: 'Vegane Burger', cat_en: 'Vegan burgers', items: [
+        { name_de: 'Vegan Burger', name_en: 'Vegan Burger', price: '12,90', tag: 'V' },
+        { name_de: 'Falafel Burger', name_en: 'Falafel Burger', price: '13,90', tag: 'V' },
+      ]},
+    ],
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten und Speisekarte mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours and menu compared with the venue\'s own channels' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Speisekarte des Lokals (Rind, Huhn, Würste)', event_en: 'Halal according to the venue\'s own menu (beef, chicken, sausages)' },
     ],
     similar: [],
     x: 50.7, y: 68.5,
@@ -5392,20 +5452,58 @@ const RAW_VENUES = {
     phone: null,
     website: 'steakdoener.at',
     status: 'self',
+    checked: { date: '2026-11-16', sources: [
+      { label: 'Website', url: 'https://steakdoener.at/' },
+    ]},
     categories: ['Restaurant', 'Kebab', 'Türkisch'],
-    price: '',
+    price: '€',
     rating: 0,
     reviews: 0,
     gallery: [
       { hue: 304, a: '#721D6D', b: '#310C2F' },
     ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
+    tags: ['Döner', 'İskender', 'Take-away', 'Lieferung'],
+    hours: [
+      { day: 0, open: '10:30', close: '22:00' },
+      { day: 1, open: '10:30', close: '22:00' },
+      { day: 2, open: '10:30', close: '22:00' },
+      { day: 3, open: '10:30', close: '22:00' },
+      { day: 4, open: '10:30', close: '22:00' },
+      { day: 5, open: '10:30', close: '22:00' },
+      { day: 6, open: '10:30', close: '22:00' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: true, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Sandwich & Dürüm', cat_en: 'Sandwich & dürüm', items: [
+        { name_de: 'Döner Sandwich 120 g', name_en: 'Döner sandwich 120 g', price: '9,90' },
+        { name_de: 'Döner Sandwich 180 g', name_en: 'Döner sandwich 180 g', price: '11,90' },
+        { name_de: 'Dürüm 120 g', name_en: 'Dürüm 120 g', price: '9,90' },
+        { name_de: 'Dürüm 180 g', name_en: 'Dürüm 180 g', price: '11,90' },
+      ]},
+      { cat_de: 'Teller & Box', cat_en: 'Plates & boxes', items: [
+        { name_de: 'Döner Teller 150 g', name_en: 'Döner plate 150 g', price: '16,80' },
+        { name_de: 'Döner Teller 200 g', name_en: 'Döner plate 200 g', price: '18,80' },
+        { name_de: 'Döner Box 120 g', name_en: 'Döner box 120 g', price: '11,90' },
+        { name_de: 'Döner Box 180 g', name_en: 'Döner box 180 g', price: '13,50' },
+      ]},
+      { cat_de: 'İskender', cat_en: 'İskender', items: [
+        { name_de: 'İskender (1 Portion)', name_en: 'İskender (1 portion)', price: '19,90' },
+        { name_de: 'İskender (1,5 Portionen)', name_en: 'İskender (1.5 portions)', price: '22,40' },
+      ]},
+      { cat_de: 'Vegetarisch', cat_en: 'Vegetarian', items: [
+        { name_de: 'Falafel Sandwich', name_en: 'Falafel sandwich', price: '7,00', tag: 'V' },
+        { name_de: 'Falafel Dürüm', name_en: 'Falafel dürüm', price: '7,90', tag: 'V' },
+        { name_de: 'Falafel Teller', name_en: 'Falafel plate', price: '14,90', tag: 'V' },
+        { name_de: 'Falafel Box', name_en: 'Falafel box', price: '11,50', tag: 'V' },
+      ]},
+      { cat_de: 'Suppe', cat_en: 'Soup', items: [
+        { name_de: 'Linsensuppe', name_en: 'Lentil soup', price: '5,50' },
+      ]},
+    ],
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten und Speisekarte mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours and menu compared with the venue\'s own channels' },
     ],
     similar: [],
     x: 62.6, y: 31.9,
@@ -6075,20 +6173,64 @@ const RAW_VENUES = {
     phone: '+4312360222',
     website: 'www.damak.at',
     status: 'self',
+    checked: { date: '2026-11-16', sources: [
+      { label: 'Website', url: 'https://www.damak.at/' },
+      { label: 'Speisekarte', url: 'https://www.damak.at/speisekarte' },
+    ]},
     categories: ['Restaurant', 'Türkisch'],
-    price: '',
+    price: '€€€',
     rating: 0,
     reviews: 0,
     gallery: [
       { hue: 102, a: '#36721D', b: '#17310C' },
     ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
+    tags: ['Grill', 'Pide', 'Frühstück', 'Etli Ekmek'],
+    hours: [
+      { day: 0, open: '09:00', close: '22:30' },
+      { day: 1, open: '09:00', close: '22:30' },
+      { day: 2, open: '09:00', close: '22:30' },
+      { day: 3, open: '09:00', close: '22:30' },
+      { day: 4, open: '09:00', close: '23:30' },
+      { day: 5, open: '09:00', close: '23:30' },
+      { day: 6, open: '09:00', close: '22:30' },
+    ],
+    amenities: { parking: false, wheelchair: false, prayer: false, delivery: false, outdoor: false, wifi: false },
+    menu: [
+      { cat_de: 'Grill (Izgaralar)', cat_en: 'Grill (Izgaralar)', items: [
+        { name_de: 'Köfte (Lamm & Rind)', name_en: 'Köfte (lamb & beef)', price: '19,90' },
+        { name_de: 'Adana Kebap', name_en: 'Adana kebab', price: '23,90' },
+        { name_de: 'Tavuk Şiş (Hühnerspieß)', name_en: 'Tavuk şiş (chicken skewer)', price: '22,90' },
+        { name_de: 'Kuzu Şiş (Lammspieß)', name_en: 'Kuzu şiş (lamb skewer)', price: '24,90' },
+        { name_de: 'Tavuk Kanat (Hühnerflügel)', name_en: 'Tavuk kanat (chicken wings)', price: '21,90' },
+        { name_de: 'Pirzola (Lammkoteletts, 4 Stück)', name_en: 'Pirzola (lamb chops, 4 pcs)', price: '29,90' },
+      ]},
+      { cat_de: 'Damak Spezial', cat_en: 'Damak specials', items: [
+        { name_de: 'Mardin Spesiyal (Lammhackfleisch)', name_en: 'Mardin special (minced lamb)', price: '26,90' },
+        { name_de: 'Beyti (Lamm im Fladenbrot)', name_en: 'Beyti (lamb in flatbread)', price: '28,90' },
+        { name_de: 'Dana Kaburga (Spareribs vom Kalb)', name_en: 'Dana kaburga (veal spare ribs)', price: '25,90' },
+        { name_de: 'Fırın Kebap (geschmortes Lamm)', name_en: 'Fırın kebap (braised lamb)', price: '25,90' },
+      ]},
+      { cat_de: 'Pide & Etli Ekmek', cat_en: 'Pide & etli ekmek', items: [
+        { name_de: 'Etli Ekmek (Rindfleisch)', name_en: 'Etli ekmek (beef)', price: '15,90' },
+        { name_de: 'Konya Böreği (Rind & Käse)', name_en: 'Konya böreği (beef & cheese)', price: '15,90' },
+        { name_de: 'Bıçak Arası (Rindfleischstücke)', name_en: 'Bıçak arası (beef pieces)', price: '16,90' },
+        { name_de: 'Sucuklu Pide', name_en: 'Pide with sucuk', price: '16,90' },
+        { name_de: 'Kaşarlı Pide (Käse)', name_en: 'Kaşarlı pide (cheese)', price: '15,50', tag: 'V' },
+      ]},
+      { cat_de: 'Suppen', cat_en: 'Soups', items: [
+        { name_de: 'Mercimek (Linsensuppe)', name_en: 'Mercimek (lentil soup)', price: '6,50' },
+        { name_de: 'Tavuk Çorbası (Hühnersuppe)', name_en: 'Tavuk çorbası (chicken soup)', price: '6,90' },
+        { name_de: 'Paça Çorbası', name_en: 'Paça soup', price: '7,90' },
+      ]},
+      { cat_de: 'Frühstück', cat_en: 'Breakfast', items: [
+        { name_de: 'Kahvaltı Tabağı (für 1 Person)', name_en: 'Breakfast plate (1 person)', price: '19,90' },
+        { name_de: 'Serpme Kahvaltı (pro Person, ab 2 Personen)', name_en: 'Serpme breakfast (per person, from 2)', price: '19,90' },
+      ]},
+    ],
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten und Speisekarte mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours and menu compared with the venue\'s own channels' },
     ],
     similar: [],
     x: 50.2, y: 74.3,

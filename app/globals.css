@@ -212,6 +212,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   white-space: nowrap;
 }
 .ak-status--verified { color: var(--green-ink); }
+.ak-status--claimed { color: var(--green-ink); }
 .ak-status--self { color: var(--saffron-ink); }
 .ak-status--unknown { color: var(--pomegranate); }
 .ak-status--boxed { padding: 6px 9px; border: var(--line) solid currentColor; background: var(--paper); }

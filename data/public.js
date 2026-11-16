@@ -12,8 +12,16 @@
 //
 // The full data stays in venues.js, so nothing is lost: it is simply not
 // exposed until the venue is onboarded.
+//
+// A second way in: `checked: { date, sources: [{ label, url }] }`. Akiwi has
+// compared hours, menu, prices and amenities with the venue's own website,
+// Instagram or delivery page on that date and updated the record. Those
+// details then show, with the date and sources under "Datenquelle". Ratings,
+// reviews and the old "nearby" list stay hidden: they were not collected on Akiwi.
 
 export const isOnboarded = (v) => v.onboarded === true;
+export const isChecked = (v) => Boolean(v.checked?.date);
+const ratingsOff = { rating: 0, reviews: 0, reviews_list: [], similar: [] };
 
 function hide(v) {
   return {
@@ -32,15 +40,16 @@ function hide(v) {
 
 export function publicVenues(raw) {
   return Object.fromEntries(
-    Object.entries(raw).map(([id, v]) => [id, isOnboarded(v) ? v : hide(v)]),
+    Object.entries(raw).map(([id, v]) => [id,
+      isOnboarded(v) ? v : isChecked(v) ? { ...v, ...ratingsOff } : hide(v)]),
   );
 }
 
-/** A chain's own price level and tags show only once one of its branches is onboarded. */
+/** A chain's own price level and tags show only once one of its branches is onboarded or checked. */
 export function publicChains(raw, venues) {
   return Object.fromEntries(
     Object.entries(raw).map(([id, c]) => {
-      const live = c.venueIds.some((vid) => venues[vid] && isOnboarded(venues[vid]));
+      const live = c.venueIds.some((vid) => venues[vid] && (isOnboarded(venues[vid]) || isChecked(venues[vid])));
       return [id, live ? c : { ...c, price: '', tags: [] }];
     }),
   );

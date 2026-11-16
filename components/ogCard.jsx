@@ -33,6 +33,7 @@ export async function ogFonts(text) {
 
 const STATUS = {
   verified: { fill: '#1F9D55', color: '#fff', border: '#1F9D55' },
+  claimed: { fill: '#E6F4EC', color: '#14673A', border: '#1F9D55' },
   self: { fill: '#FFF4DC', color: '#6B4A00', border: '#E0A030' },
   unknown: { fill: '#fff', color: '#55544F', border: '#8C8B85' },
 };

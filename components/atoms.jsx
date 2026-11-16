@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { COPY } from '@/data/data';
 
 // Eight-point star (khatam): two overlapping squares. Filled = verified,
-// outlined = not checked or unknown. The only "halal" motif on the site.
+// outlined = claimed by the venue, not checked or unknown. The only "halal" motif on the site.
 export function Star({ size = 12, filled = true, color = 'currentColor', hole = false }) {
   const sw = filled ? 0 : 4;
   return (
@@ -17,6 +17,7 @@ export function Star({ size = 12, filled = true, color = 'currentColor', hole = 
 
 const STATUS_COLOR = {
   verified: 'var(--green)',
+  claimed: 'var(--green)',
   self: 'var(--saffron)',
   unknown: 'var(--pomegranate)',
 };
@@ -28,8 +29,8 @@ export const StatusDot = ({ status, size = 10 }) => (
 
 export const StatusBadge = ({ status, lang, compact = false, boxed = false }) => {
   const c = COPY[lang];
-  const key = status === 'verified' || status === 'self' ? status : 'unknown';
-  const label = key === 'verified' ? c.statusVerified : key === 'self' ? c.statusSelf : c.statusUnknown;
+  const key = STATUS_COLOR[status] ? status : 'unknown';
+  const label = { verified: c.statusVerified, claimed: c.statusClaimed, self: c.statusSelf, unknown: c.statusUnknown }[key];
   return (
     <span className={`ak-status ak-status--${key}${boxed ? ' ak-status--boxed' : ''}`}>
       <StatusDot status={key} size={compact ? 11 : 13} />

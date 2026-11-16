@@ -130,7 +130,16 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
                   {facts.map((f) => (
                     <div key={f.label_de}>
                       <dt>{de ? f.label_de : f.label_en}</dt>
-                      <dd>{de ? f.text_de : f.text_en}</dd>
+                      <dd>
+                        {de ? f.text_de : f.text_en}
+                        {f.links?.length > 0 && (
+                          <span style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px', marginTop: 6 }}>
+                            {f.links.map((l) => (
+                              <a key={l.url} href={l.url} target="_blank" rel="noopener" style={{ fontWeight: 600, color: 'var(--green-ink)' }}>{l.label} ↗</a>
+                            ))}
+                          </span>
+                        )}
+                      </dd>
                     </div>
                   ))}
                 </dl>
