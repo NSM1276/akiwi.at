@@ -47,6 +47,14 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
         </FilterGroup>
       )}
 
+      {facets.noAlcohol && (
+        <FilterGroup title={c.filters.alcohol}>
+          <CheckRow on={!!filters.noAlcohol} onClick={() => setBool('noAlcohol')}>
+            <span>{c.noAlcoholOnly}</span>
+          </CheckRow>
+        </FilterGroup>
+      )}
+
       <FilterGroup title={c.filters.category}>
         <div className="ak-chips">
           {facets.categories.map((cat) => (

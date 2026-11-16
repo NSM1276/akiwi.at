@@ -15,6 +15,8 @@ export const SEARCH_COPY = {
     filters: {
       halal: 'Halal-Status',
       openNow: 'Jetzt geöffnet',
+      alcohol: 'Alkohol',
+      noAlcohol: 'Ohne Alkohol',
       category: 'Kategorie',
       city: 'Ort',
       district: 'Wiener Bezirk',
@@ -31,6 +33,7 @@ export const SEARCH_COPY = {
       parking: 'Parkplatz',
     },
     openNowOnly: 'Nur jetzt geöffnete Lokale',
+    noAlcoholOnly: 'Nur Lokale ohne Alkohol auf der Karte',
     open: 'Geöffnet',
     closed: 'Geschlossen',
     sortLabel: 'Sortieren',
@@ -66,6 +69,8 @@ export const SEARCH_COPY = {
     filters: {
       halal: 'Halal status',
       openNow: 'Open now',
+      alcohol: 'Alcohol',
+      noAlcohol: 'No alcohol',
       category: 'Category',
       city: 'City',
       district: 'Vienna district',
@@ -82,6 +87,7 @@ export const SEARCH_COPY = {
       parking: 'Parking',
     },
     openNowOnly: 'Only venues open right now',
+    noAlcoholOnly: 'Only venues with no alcohol on the menu',
     open: 'Open',
     closed: 'Closed',
     sortLabel: 'Sort',

@@ -64,6 +64,7 @@ function applyFilters(restaurants, query, where, filters, now) {
       if (!filters.price.some((p) => levels.includes(p))) return false;
     }
     if ((filters.amenities || []).length && !filters.amenities.every((a) => r.amenities.includes(a))) return false;
+    if (filters.noAlcohol && !r.noAlcohol) return false;
     // `now` is null until the client has mounted, so the server renders everything.
     if (filters.openNow && now && !(r.hours?.length && isOpenNow(r.hours, now))) return false;
     return true;

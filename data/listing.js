@@ -80,6 +80,8 @@ function facetsOf(venues, withHours) {
     districts: [...new Set(venues.map((v) => v.district))].filter((d) => d > 0).sort((a, b) => a - b),
     postals: [...new Set(venues.map(postalOf))].filter(Boolean),
     amenities: amenityList(venues),
+    // Only when every branch's drinks list was seen and has no alcohol; unknown is not "none".
+    noAlcohol: venues.length > 0 && venues.every((v) => v.alcohol === false),
   };
   if (withHours) card.hours = hourSet(venues);
   return card;
@@ -176,5 +178,6 @@ export function getFacets(listing) {
     // Only statuses that exist: nobody is 'verified' until Akiwi has checked a document.
     halal: ['verified', 'claimed', 'self', 'unknown'].filter((s) => listing.some((r) => r.status === s)),
     amenities: AMENITY_KEYS.filter((k) => amenities.has(k)),
+    noAlcohol: listing.some((r) => r.noAlcohol),
   };
 }

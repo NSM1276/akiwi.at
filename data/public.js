@@ -30,6 +30,7 @@ function hide(v) {
     menu: [],
     amenities: {},
     price: '',
+    alcohol: undefined,
     rating: 0,
     reviews: 0,
     reviews_list: [],

@@ -118,6 +118,9 @@ export function ActiveFilterChips({ lang, filters, setFilters }) {
     chips.push({ k: 'p:' + s, label: s, rm: () => dropFrom('price', s) }));
   (filters.amenities || []).forEach((s) =>
     chips.push({ k: 'a:' + s, label: c.amenityLabels[s], rm: () => dropFrom('amenities', s) }));
+  if (filters.noAlcohol) {
+    chips.push({ k: 'na', label: c.filters.noAlcohol, rm: () => setFilters({ ...filters, noAlcohol: false }) });
+  }
   if (filters.openNow) {
     chips.push({ k: 'on', label: c.filters.openNow, rm: () => setFilters({ ...filters, openNow: false }) });
   }

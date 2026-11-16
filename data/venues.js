@@ -20,6 +20,8 @@ import { publicVenues } from './public';
 // CHECKED BY AKIWI (shows hours, menu, prices, amenities before the venue is onboarded):
 //   checked: { date: 'YYYY-MM-DD', sources: [{ label: 'Website', url: '...' }, { label: 'Instagram', url: '...' }] }
 //   Set it only after comparing the record with the venue's own sources on that date. See data/public.js.
+//   alcohol: true | false — only when Akiwi has seen the venue's full drinks list; leave it out otherwise.
+//   Shown on the page and used by the 'Ohne Alkohol' filter under the same rules as hours and menu.
 //   A chain's status is derived from its branches (lowest status wins).
 //
 // Rating/reviews: only shown when reviews > 0. Leave rating: 0, reviews: 0
@@ -1437,6 +1439,7 @@ const RAW_VENUES = {
   'pars-hauptrestaurant': {
     id: 'pars-hauptrestaurant',
     name: 'Pars Restaurant',
+    alcohol: true,
     tagline_de: 'Traditionelle persische Küche in der Josefstadt',
     tagline_en: 'Traditional Persian cuisine in Josefstadt',
     district: 8,
@@ -2877,6 +2880,7 @@ const RAW_VENUES = {
   'munchy-am-reumannplatz-1100': {
     id: 'munchy-am-reumannplatz-1100',
     name: 'Munchy am Reumannplatz',
+    alcohol: false,
     tagline_de: 'Burger in Wien-Favoriten',
     tagline_en: 'Burgers in Wien-Favoriten',
     district: 10,

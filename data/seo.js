@@ -292,6 +292,11 @@ export function venueFacts(v) {
         ? `${hoursSummary(v.hours, 'en').replace(/^daily/, 'Daily')}.`
         : 'Not listed at the moment — please ask the venue directly.',
     },
+    typeof v.alcohol === 'boolean' && {
+      label_de: 'Alkohol', label_en: 'Alcohol',
+      text_de: v.alcohol ? 'Alkoholische Getränke stehen auf der Karte.' : 'Keine alkoholischen Getränke auf der Karte.',
+      text_en: v.alcohol ? 'Alcoholic drinks are on the menu.' : 'No alcoholic drinks on the menu.',
+    },
     {
       label_de: 'Adresse', label_en: 'Address',
       text_de: `${v.address}${where}.${v.phone ? ` Telefon: ${v.phone}.` : ''}`,
