@@ -1808,7 +1808,7 @@ const RAW_VENUES = {
     x: 46, y: 50,
   },
 
-  // ── RESTAURANT FERHATOVIC · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── RESTAURANT FERHATOVIC · neu 2026-11 ──
   'ferhatovic-1120': {
     id: 'ferhatovic-1120',
     name: 'Restaurant Ferhatovic',
@@ -1839,7 +1839,7 @@ const RAW_VENUES = {
     x: 34.4, y: 69.2,
   },
 
-  // ── MAMAN PAZ · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── MAMAN PAZ · neu 2026-11 ──
   'maman-paz-1190': {
     id: 'maman-paz-1190',
     name: 'Maman Paz',
@@ -1870,7 +1870,7 @@ const RAW_VENUES = {
     x: 48.0, y: 19.1,
   },
 
-  // ── CHICKEN PLUS · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── CHICKEN PLUS · neu 2026-11 ──
   'chicken-plus-1160': {
     id: 'chicken-plus-1160',
     name: 'Chicken Plus',
@@ -1901,7 +1901,7 @@ const RAW_VENUES = {
     x: 26.5, y: 39.0,
   },
 
-  // ── DER WIENER DEEWAN · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── DER WIENER DEEWAN · neu 2026-11 ──
   'wiener-deewan-1090': {
     id: 'wiener-deewan-1090',
     name: 'Der Wiener Deewan',
@@ -1932,7 +1932,7 @@ const RAW_VENUES = {
     x: 49.3, y: 35.9,
   },
 
-  // ── ASALA HALAL FOOD · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ASALA HALAL FOOD · neu 2026-11 ──
   'asala-1080': {
     id: 'asala-1080',
     name: 'Asala Halal Food',
@@ -1963,7 +1963,7 @@ const RAW_VENUES = {
     x: 47.1, y: 42.5,
   },
 
-  // ── JASMIN AL SHAM · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── JASMIN AL SHAM · neu 2026-11 ──
   'jasmin-al-sham-1190': {
     id: 'jasmin-al-sham-1190',
     name: 'Jasmin al Sham',
@@ -1994,7 +1994,7 @@ const RAW_VENUES = {
     x: 47.1, y: 18.7,
   },
 
-  // ── DER LEOPOLDSTÄDTER DEEWAN · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── DER LEOPOLDSTÄDTER DEEWAN · neu 2026-11 ──
   'leopoldstaedter-deewan-1020': {
     id: 'leopoldstaedter-deewan-1020',
     name: 'Der Leopoldstädter Deewan',
@@ -2025,7 +2025,7 @@ const RAW_VENUES = {
     x: 61.5, y: 37.1,
   },
 
-  // ── RHULO ÇIĞKÖFTE · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── RHULO ÇIĞKÖFTE · neu 2026-11 ──
   'rhulo-cigkoefte-1020': {
     id: 'rhulo-cigkoefte-1020',
     name: 'Rhulo Çiğköfte',
@@ -2056,7 +2056,7 @@ const RAW_VENUES = {
     x: 62.3, y: 37.5,
   },
 
-  // ── LOCO CHICKEN FAVORITEN · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── LOCO CHICKEN FAVORITEN · neu 2026-11 ──
   'loco-chicken-1100': {
     id: 'loco-chicken-1100',
     name: 'Loco Chicken Favoriten',
@@ -2087,7 +2087,7 @@ const RAW_VENUES = {
     x: 52.3, y: 72.4,
   },
 
-  // ── ELITE KEBAP HOUSE · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ELITE KEBAP HOUSE · neu 2026-11 ──
   'elite-kebap-1100': {
     id: 'elite-kebap-1100',
     name: 'Elite Kebap House',
@@ -2118,7 +2118,7 @@ const RAW_VENUES = {
     x: 53.1, y: 72.8,
   },
 
-  // ── ĆEVAPI DRINA GRILL · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ĆEVAPI DRINA GRILL · neu 2026-11 ──
   'drina-cevapi-1100': {
     id: 'drina-cevapi-1100',
     name: 'Ćevapi Drina Grill',
@@ -2149,7 +2149,7 @@ const RAW_VENUES = {
     x: 49.9, y: 71.2,
   },
 
-  // ── PHILLY CHEESESTEAK FAVORITEN · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── PHILLY CHEESESTEAK FAVORITEN · neu 2026-11 ──
   'philly-cheesesteak-1100': {
     id: 'philly-cheesesteak-1100',
     name: 'Philly Cheesesteak Favoriten',
@@ -2180,7 +2180,7 @@ const RAW_VENUES = {
     x: 50.7, y: 71.6,
   },
 
-  // ── LEZZET KEBAP · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── LEZZET KEBAP · neu 2026-11 ──
   'lezzet-kebap-1200': {
     id: 'lezzet-kebap-1200',
     name: 'Lezzet Kebap',
@@ -2211,7 +2211,7 @@ const RAW_VENUES = {
     x: 49.8, y: 27.0,
   },
 
-  // ── ARIA PERSISCHES RESTAURANT · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ARIA PERSISCHES RESTAURANT · neu 2026-11 ──
   'aria-persisches-restaurant-graz': {
     id: 'aria-persisches-restaurant-graz',
     name: 'Aria Persisches Restaurant',
@@ -2242,7 +2242,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BURGERLIEBE · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── BURGERLIEBE · neu 2026-11 ──
   'burgerliebe-linz': {
     id: 'burgerliebe-linz',
     name: 'Burgerliebe',
@@ -2273,7 +2273,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ALARABE RESTAURANT · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ALARABE RESTAURANT · neu 2026-11 ──
   'alarabe-linz': {
     id: 'alarabe-linz',
     name: 'Alarabe Restaurant',
@@ -2304,7 +2304,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── POMMES BOUTIQUE ITZLING · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── POMMES BOUTIQUE ITZLING · neu 2026-11 ──
   'pommes-boutique-salzburg': {
     id: 'pommes-boutique-salzburg',
     name: 'Pommes Boutique Itzling',
@@ -2335,7 +2335,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── INDIAN PALACE · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── INDIAN PALACE · neu 2026-11 ──
   'indian-palace-salzburg': {
     id: 'indian-palace-salzburg',
     name: 'Indian Palace',
@@ -2366,7 +2366,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── STERN PIZZA · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── STERN PIZZA · neu 2026-11 ──
   'stern-pizza-salzburg': {
     id: 'stern-pizza-salzburg',
     name: 'Stern Pizza',
@@ -2397,7 +2397,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── AFGHAN RESTAURANT AZADI · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── AFGHAN RESTAURANT AZADI · neu 2026-11 ──
   'azadi-innsbruck': {
     id: 'azadi-innsbruck',
     name: 'Afghan Restaurant Azadi',
@@ -2428,7 +2428,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RESTAURANT SAFRAN · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── RESTAURANT SAFRAN · neu 2026-11 ──
   'safran-innsbruck': {
     id: 'safran-innsbruck',
     name: 'Restaurant Safran',
@@ -2459,7 +2459,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── TOP BURGER · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── TOP BURGER · neu 2026-11 ──
   'top-burger-klagenfurt': {
     id: 'top-burger-klagenfurt',
     name: 'Top Burger',
@@ -2490,7 +2490,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ROYAL FOODS · neu 2026-11 (Quellen: docs/research/venues-2026-11) ──
+  // ── ROYAL FOODS · neu 2026-11 ──
   'royal-foods-villach': {
     id: 'royal-foods-villach',
     name: 'Royal Foods',
@@ -2521,7 +2521,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── HOT KEBAP GRILL PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HOT KEBAP GRILL PIZZA · neu 2026-11-15 ──
   'hot-kebap-grill-pizza-feldkirchen-bei-graz': {
     id: 'hot-kebap-grill-pizza-feldkirchen-bei-graz',
     name: 'Hot Kebap Grill Pizza',
@@ -2552,7 +2552,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── DERMAN GRILLHOUSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── DERMAN GRILLHOUSE · neu 2026-11-15 ──
   'derman-grillhouse-graz': {
     id: 'derman-grillhouse-graz',
     name: 'Derman Grillhouse',
@@ -2583,7 +2583,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ELIT RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── ELIT RESTAURANT · neu 2026-11-15 ──
   'elit-restaurant-graz': {
     id: 'elit-restaurant-graz',
     name: 'Elit Restaurant',
@@ -2614,7 +2614,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── HAPPY CHICKEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HAPPY CHICKEN · neu 2026-11-15 ──
   'happy-chicken-kufstein': {
     id: 'happy-chicken-kufstein',
     name: 'Happy Chicken',
@@ -2645,7 +2645,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── THE DESI AFFAIR · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── THE DESI AFFAIR · neu 2026-11-15 ──
   'the-desi-affair-linz': {
     id: 'the-desi-affair-linz',
     name: 'The Desi Affair',
@@ -2676,7 +2676,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── URBAN IMBISS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── URBAN IMBISS · neu 2026-11-15 ──
   'urban-imbiss-linz': {
     id: 'urban-imbiss-linz',
     name: 'Urban Imbiss',
@@ -2707,7 +2707,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── KEBAP UND PIZZA EXPRESS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── KEBAP UND PIZZA EXPRESS · neu 2026-11-15 ──
   'kebap-und-pizza-express-modling': {
     id: 'kebap-und-pizza-express-modling',
     name: 'Kebap und Pizza Express',
@@ -2738,7 +2738,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── PAPA BISTRO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── PAPA BISTRO · neu 2026-11-15 ──
   'papa-bistro-salzburg': {
     id: 'papa-bistro-salzburg',
     name: 'Papa Bistro',
@@ -2769,7 +2769,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── HANEDAN RESTAURANT & CAFE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HANEDAN RESTAURANT & CAFE · neu 2026-11-15 ──
   'hanedan-restaurant-cafe-traiskirchen': {
     id: 'hanedan-restaurant-cafe-traiskirchen',
     name: 'Hanedan Restaurant & Cafe',
@@ -2800,7 +2800,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── PIZZA PICCOLA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── PIZZA PICCOLA · neu 2026-11-15 ──
   'pizza-piccola-villach': {
     id: 'pizza-piccola-villach',
     name: 'Pizza Piccola',
@@ -2831,7 +2831,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── WELSER DÖNER PIZZA & BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── WELSER DÖNER PIZZA & BURGER · neu 2026-11-15 ──
   'welser-doner-pizza-burger': {
     id: 'welser-doner-pizza-burger',
     name: 'Welser Döner Pizza & Burger',
@@ -2862,7 +2862,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── GEFLÜGEL & FISCH OASE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── GEFLÜGEL & FISCH OASE · neu 2026-11-15 ──
   'geflugel-fisch-oase-1020': {
     id: 'geflugel-fisch-oase-1020',
     name: 'Geflügel & Fisch Oase',
@@ -2893,7 +2893,7 @@ const RAW_VENUES = {
     x: 59.5, y: 39.4,
   },
 
-  // ── CHINGU DAK · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── CHINGU DAK · neu 2026-11-15 ──
   'chingu-dak-1050': {
     id: 'chingu-dak-1050',
     name: 'Chingu Dak',
@@ -2924,7 +2924,7 @@ const RAW_VENUES = {
     x: 50.3, y: 56.0,
   },
 
-  // ── KEBAP ART · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── KEBAP ART · neu 2026-11-15 ──
   'kebap-art-1050': {
     id: 'kebap-art-1050',
     name: 'Kebap Art',
@@ -2955,7 +2955,7 @@ const RAW_VENUES = {
     x: 46.5, y: 53.8,
   },
 
-  // ── KEZZA KEBAP & PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── KEZZA KEBAP & PIZZA · neu 2026-11-15 ──
   'kezza-kebap-pizza-1050': {
     id: 'kezza-kebap-pizza-1050',
     name: 'KEZZA Kebap & Pizza',
@@ -2986,7 +2986,7 @@ const RAW_VENUES = {
     x: 45.8, y: 51.4,
   },
 
-  // ── KÖNIG KEBAB, SCHNITZEL & HOT DOG · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── KÖNIG KEBAB, SCHNITZEL & HOT DOG · neu 2026-11-15 ──
   'konig-kebab-schnitzel-hot-dog-1050': {
     id: 'konig-kebab-schnitzel-hot-dog-1050',
     name: 'König Kebab, Schnitzel & Hot Dog',
@@ -3017,7 +3017,7 @@ const RAW_VENUES = {
     x: 46.2, y: 55.6,
   },
 
-  // ── QUICKY'S BURGERS & MORE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── QUICKY'S BURGERS & MORE · neu 2026-11-15 ──
   'quicky-s-burgers-more-1090': {
     id: 'quicky-s-burgers-more-1090',
     name: 'Quicky\'s Burgers & More',
@@ -3048,7 +3048,7 @@ const RAW_VENUES = {
     x: 49.7, y: 28.9,
   },
 
-  // ── ETILER SMASH BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── ETILER SMASH BURGER · neu 2026-11-15 ──
   'etiler-smash-burger-1100': {
     id: 'etiler-smash-burger-1100',
     name: 'Etiler Smash Burger',
@@ -3079,7 +3079,7 @@ const RAW_VENUES = {
     x: 53.8, y: 72.7,
   },
 
-  // ── MUNCHY AM REUMANNPLATZ · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── MUNCHY AM REUMANNPLATZ · neu 2026-11-15 ──
   'munchy-am-reumannplatz-1100': {
     id: 'munchy-am-reumannplatz-1100',
     name: 'Munchy am Reumannplatz',
@@ -3110,7 +3110,7 @@ const RAW_VENUES = {
     x: 50.7, y: 68.5,
   },
 
-  // ── SCHNITZELSTUBE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── SCHNITZELSTUBE · neu 2026-11-15 ──
   'schnitzelstube-1100': {
     id: 'schnitzelstube-1100',
     name: 'Schnitzelstube',
@@ -3141,7 +3141,7 @@ const RAW_VENUES = {
     x: 51.7, y: 66.7,
   },
 
-  // ── CARDANO KEBAPIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── CARDANO KEBAPIZZA · neu 2026-11-15 ──
   'cardano-kebapizza-1110': {
     id: 'cardano-kebapizza-1110',
     name: 'Cardano Kebapizza',
@@ -3172,7 +3172,7 @@ const RAW_VENUES = {
     x: 68.7, y: 63.1,
   },
 
-  // ── LA SMASH BURGER UND PIZZERIA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── LA SMASH BURGER UND PIZZERIA · neu 2026-11-15 ──
   'la-smash-burger-und-pizzeria-1120': {
     id: 'la-smash-burger-und-pizzeria-1120',
     name: 'La Smash Burger und Pizzeria',
@@ -3203,7 +3203,7 @@ const RAW_VENUES = {
     x: 37.1, y: 67.2,
   },
 
-  // ── PIZZA PANZO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── PIZZA PANZO · neu 2026-11-15 ──
   'pizza-panzo-1120': {
     id: 'pizza-panzo-1120',
     name: 'Pizza Panzo',
@@ -3234,7 +3234,7 @@ const RAW_VENUES = {
     x: 38.7, y: 63.1,
   },
 
-  // ── CITY PIZZA & BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── CITY PIZZA & BURGER · neu 2026-11-15 ──
   'city-pizza-burger-1140': {
     id: 'city-pizza-burger-1140',
     name: 'City Pizza & Burger',
@@ -3265,7 +3265,7 @@ const RAW_VENUES = {
     x: 19.8, y: 44.7,
   },
 
-  // ── VOODOO BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── VOODOO BURGER · neu 2026-11-15 ──
   'voodoo-burger-1140': {
     id: 'voodoo-burger-1140',
     name: 'Voodoo Burger',
@@ -3296,7 +3296,7 @@ const RAW_VENUES = {
     x: 16.0, y: 44.3,
   },
 
-  // ── HENDL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HENDL · neu 2026-11-15 ──
   'hendl-1150': {
     id: 'hendl-1150',
     name: 'Hendl',
@@ -3327,7 +3327,7 @@ const RAW_VENUES = {
     x: 33.2, y: 45.2,
   },
 
-  // ── JAKOB TANDOORI HAUS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── JAKOB TANDOORI HAUS · neu 2026-11-15 ──
   'jakob-tandoori-haus-1150': {
     id: 'jakob-tandoori-haus-1150',
     name: 'Jakob Tandoori Haus',
@@ -3358,7 +3358,7 @@ const RAW_VENUES = {
     x: 31.3, y: 50.9,
   },
 
-  // ── NAMASTE WIEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── NAMASTE WIEN · neu 2026-11-15 ──
   'namaste-wien-1150': {
     id: 'namaste-wien-1150',
     name: 'Namaste Wien',
@@ -3389,7 +3389,7 @@ const RAW_VENUES = {
     x: 34.6, y: 47.8,
   },
 
-  // ── PIZZA POPEYE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── PIZZA POPEYE · neu 2026-11-15 ──
   'pizza-popeye-1150': {
     id: 'pizza-popeye-1150',
     name: 'Pizza Popeye',
@@ -3420,7 +3420,7 @@ const RAW_VENUES = {
     x: 33.6, y: 45.4,
   },
 
-  // ── SKADARLIJA PIZZA-BUREK-PITA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── SKADARLIJA PIZZA-BUREK-PITA · neu 2026-11-15 ──
   'skadarlija-pizza-burek-pita-1150': {
     id: 'skadarlija-pizza-burek-pita-1150',
     name: 'Skadarlija Pizza-Burek-Pita',
@@ -3451,7 +3451,7 @@ const RAW_VENUES = {
     x: 35.3, y: 42.7,
   },
 
-  // ── STYLE PIZZA & BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── STYLE PIZZA & BURGER · neu 2026-11-15 ──
   'style-pizza-burger-1150': {
     id: 'style-pizza-burger-1150',
     name: 'Style Pizza & Burger',
@@ -3482,7 +3482,7 @@ const RAW_VENUES = {
     x: 31.1, y: 51.1,
   },
 
-  // ── LOKANTA OASE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── LOKANTA OASE · neu 2026-11-15 ──
   'lokanta-oase-1160': {
     id: 'lokanta-oase-1160',
     name: 'Lokanta Oase',
@@ -3513,7 +3513,7 @@ const RAW_VENUES = {
     x: 29.7, y: 35.0,
   },
 
-  // ── HİRA BAR & GRILL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HİRA BAR & GRILL · neu 2026-11-15 ──
   'hira-bar-grill-1170': {
     id: 'hira-bar-grill-1170',
     name: 'HİRA Bar & Grill',
@@ -3544,7 +3544,7 @@ const RAW_VENUES = {
     x: 30.0, y: 29.1,
   },
 
-  // ── LA GUSTA HALAL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── LA GUSTA HALAL · neu 2026-11-15 ──
   'la-gusta-halal-1170': {
     id: 'la-gusta-halal-1170',
     name: 'La Gusta Halal',
@@ -3575,7 +3575,7 @@ const RAW_VENUES = {
     x: 32.0, y: 27.0,
   },
 
-  // ── NAUGHTY! FRENCH TACOS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── NAUGHTY! FRENCH TACOS · neu 2026-11-15 ──
   'naughty-french-tacos-1190': {
     id: 'naughty-french-tacos-1190',
     name: 'Naughty! French Tacos',
@@ -3606,7 +3606,7 @@ const RAW_VENUES = {
     x: 47.5, y: 16.9,
   },
 
-  // ── BOLLYWOOD PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── BOLLYWOOD PIZZA · neu 2026-11-15 ──
   'bollywood-pizza-1200': {
     id: 'bollywood-pizza-1200',
     name: 'Bollywood Pizza',
@@ -3637,7 +3637,7 @@ const RAW_VENUES = {
     x: 52.9, y: 25.6,
   },
 
-  // ── HÜHNERMEISTER ALLERHEILIGENPLATZ · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── HÜHNERMEISTER ALLERHEILIGENPLATZ · neu 2026-11-15 ──
   'huhnermeister-allerheiligenplatz-1200': {
     id: 'huhnermeister-allerheiligenplatz-1200',
     name: 'HühnerMeister Allerheiligenplatz',
@@ -3668,7 +3668,7 @@ const RAW_VENUES = {
     x: 54.1, y: 22.5,
   },
 
-  // ── KEYF CAFE & RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── KEYF CAFE & RESTAURANT · neu 2026-11-15 ──
   'keyf-cafe-restaurant-1210': {
     id: 'keyf-cafe-restaurant-1210',
     name: 'Keyf Cafe & Restaurant',
@@ -3699,7 +3699,7 @@ const RAW_VENUES = {
     x: 59.7, y: 9.6,
   },
 
-  // ── MORVARID FOOD HOUSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── MORVARID FOOD HOUSE · neu 2026-11-15 ──
   'morvarid-food-house-1220': {
     id: 'morvarid-food-house-1220',
     name: 'Morvarid Food House',
@@ -3730,7 +3730,7 @@ const RAW_VENUES = {
     x: 72.3, y: 30.4,
   },
 
-  // ── ARENA PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── ARENA PIZZA · neu 2026-11-15 ──
   'arena-pizza-wiener-neustadt': {
     id: 'arena-pizza-wiener-neustadt',
     name: 'Arena Pizza',
@@ -3761,7 +3761,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── SADO'S PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe A) ──
+  // ── SADO'S PIZZA · neu 2026-11-15 ──
   'sado-s-pizza-zwolfaxing': {
     id: 'sado-s-pizza-zwolfaxing',
     name: 'Sado\'s Pizza',
@@ -3792,7 +3792,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── STADT KEBAP · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── STADT KEBAP · neu 2026-11-15 ──
   'stadt-kebap-bregenz': {
     id: 'stadt-kebap-bregenz',
     name: 'Stadt Kebap',
@@ -3823,7 +3823,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── LINDEN BÄCKEREI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── LINDEN BÄCKEREI · neu 2026-11-15 ──
   'linden-backerei-dornbirn': {
     id: 'linden-backerei-dornbirn',
     name: 'Linden Bäckerei',
@@ -3854,7 +3854,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── FELD CHICKEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── FELD CHICKEN · neu 2026-11-15 ──
   'feld-chicken-feldkirch': {
     id: 'feld-chicken-feldkirch',
     name: 'Feld Chicken',
@@ -3885,7 +3885,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ASPENDOS - GRAMATNEUSIEDL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ASPENDOS - GRAMATNEUSIEDL · neu 2026-11-15 ──
   'aspendos-gramatneusiedl': {
     id: 'aspendos-gramatneusiedl',
     name: 'ASPENDOS - Gramatneusiedl',
@@ -3916,7 +3916,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BEST FOOD GRILL ANNENSTRASSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BEST FOOD GRILL ANNENSTRASSE · neu 2026-11-15 ──
   'best-food-grill-annenstrasse-graz': {
     id: 'best-food-grill-annenstrasse-graz',
     name: 'Best Food Grill Annenstraße',
@@ -3947,7 +3947,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BEST FOOD GRILL HAUPTBAHNHOF · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BEST FOOD GRILL HAUPTBAHNHOF · neu 2026-11-15 ──
   'best-food-grill-hauptbahnhof-graz': {
     id: 'best-food-grill-hauptbahnhof-graz',
     name: 'Best Food Grill Hauptbahnhof',
@@ -3978,7 +3978,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BURGER MEISTER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BURGER MEISTER · neu 2026-11-15 ──
   'burger-meister-graz': {
     id: 'burger-meister-graz',
     name: 'Burger Meister',
@@ -4010,7 +4010,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── MY KEBAB · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MY KEBAB · neu 2026-11-15 ──
   'my-kebab-graz': {
     id: 'my-kebab-graz',
     name: 'My Kebab',
@@ -4041,7 +4041,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── DOGAN'S BISTRO 2 YE & DOY · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DOGAN'S BISTRO 2 YE & DOY · neu 2026-11-15 ──
   'dogan-s-bistro-2-ye-doy-hohenems': {
     id: 'dogan-s-bistro-2-ye-doy-hohenems',
     name: 'Dogan\'s Bistro 2 Ye & Doy',
@@ -4072,7 +4072,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── GRENZ BISTRO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── GRENZ BISTRO · neu 2026-11-15 ──
   'grenz-bistro-horbranz': {
     id: 'grenz-bistro-horbranz',
     name: 'Grenz Bistro',
@@ -4104,7 +4104,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── AZADI ORIENTAL TANDOOR RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── AZADI ORIENTAL TANDOOR RESTAURANT · neu 2026-11-15 ──
   'azadi-oriental-tandoor-restaurant-innsbruck': {
     id: 'azadi-oriental-tandoor-restaurant-innsbruck',
     name: 'Azadi Oriental Tandoor Restaurant',
@@ -4135,7 +4135,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BOLLYWOOD TANDOORI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BOLLYWOOD TANDOORI · neu 2026-11-15 ──
   'bollywood-tandoori-innsbruck': {
     id: 'bollywood-tandoori-innsbruck',
     name: 'Bollywood Tandoori',
@@ -4166,7 +4166,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── CHILI RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CHILI RESTAURANT · neu 2026-11-15 ──
   'chili-restaurant-innsbruck': {
     id: 'chili-restaurant-innsbruck',
     name: 'Chili Restaurant',
@@ -4197,7 +4197,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── DERMAN INNSBRUCK · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DERMAN INNSBRUCK · neu 2026-11-15 ──
   'derman-innsbruck': {
     id: 'derman-innsbruck',
     name: 'Derman Innsbruck',
@@ -4228,7 +4228,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── KADI - LAZ UNS ESSEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── KADI - LAZ UNS ESSEN · neu 2026-11-15 ──
   'kadi-laz-uns-essen-innsbruck': {
     id: 'kadi-laz-uns-essen-innsbruck',
     name: 'Kadi - Laz uns Essen',
@@ -4259,7 +4259,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RISTORANTE GARDA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RISTORANTE GARDA · neu 2026-11-15 ──
   'ristorante-garda-innsbruck': {
     id: 'ristorante-garda-innsbruck',
     name: 'Ristorante Garda',
@@ -4290,7 +4290,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── TANDOORI DELIGHT KLAGENFURT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TANDOORI DELIGHT KLAGENFURT · neu 2026-11-15 ──
   'tandoori-delight-klagenfurt': {
     id: 'tandoori-delight-klagenfurt',
     name: 'Tandoori Delight Klagenfurt',
@@ -4321,7 +4321,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── DÜRNE’S PIZZA UND GRILL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DÜRNE’S PIZZA UND GRILL · neu 2026-11-15 ──
   'durne-s-pizza-und-grill-koblach': {
     id: 'durne-s-pizza-und-grill-koblach',
     name: 'Dürne’s Pizza und Grill',
@@ -4352,7 +4352,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── MONTANA KEBAP · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MONTANA KEBAP · neu 2026-11-15 ──
   'montana-kebap-leoben': {
     id: 'montana-kebap-leoben',
     name: 'Montana Kebap',
@@ -4383,7 +4383,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BIG JOE FALAFEL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BIG JOE FALAFEL · neu 2026-11-15 ──
   'big-joe-falafel-linz': {
     id: 'big-joe-falafel-linz',
     name: 'Big Joe Falafel',
@@ -4414,7 +4414,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── DÖNERIUM · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DÖNERIUM · neu 2026-11-15 ──
   'donerium-linz': {
     id: 'donerium-linz',
     name: 'DÖNERIUM',
@@ -4445,7 +4445,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── HALFETTO PIZZA-KEBAP-BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HALFETTO PIZZA-KEBAP-BURGER · neu 2026-11-15 ──
   'halfetto-pizza-kebap-burger-linz': {
     id: 'halfetto-pizza-kebap-burger-linz',
     name: 'Halfetto Pizza-Kebap-Burger',
@@ -4476,7 +4476,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── PIZZA-SERVICE SOLO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZA-SERVICE SOLO · neu 2026-11-15 ──
   'pizza-service-solo-linz': {
     id: 'pizza-service-solo-linz',
     name: 'Pizza-Service Solo',
@@ -4507,7 +4507,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── PRIMO BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PRIMO BURGER · neu 2026-11-15 ──
   'primo-burger-linz': {
     id: 'primo-burger-linz',
     name: 'Primo Burger',
@@ -4538,7 +4538,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RESTAURANT AYAM ZAMAN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RESTAURANT AYAM ZAMAN · neu 2026-11-15 ──
   'restaurant-ayam-zaman-linz': {
     id: 'restaurant-ayam-zaman-linz',
     name: 'Restaurant Ayam Zaman',
@@ -4569,7 +4569,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── BAYLEAF · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BAYLEAF · neu 2026-11-15 ──
   'bayleaf-salzburg': {
     id: 'bayleaf-salzburg',
     name: 'Bayleaf',
@@ -4600,7 +4600,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── CITY KEBAP · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CITY KEBAP · neu 2026-11-15 ──
   'city-kebap-salzburg': {
     id: 'city-kebap-salzburg',
     name: 'City Kebap',
@@ -4631,7 +4631,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── HANA'S RASOI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HANA'S RASOI · neu 2026-11-15 ──
   'hana-s-rasoi-salzburg': {
     id: 'hana-s-rasoi-salzburg',
     name: 'Hana\'s Rasoi',
@@ -4662,7 +4662,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── MAHARAJA INDIAN RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MAHARAJA INDIAN RESTAURANT · neu 2026-11-15 ──
   'maharaja-indian-restaurant-salzburg': {
     id: 'maharaja-indian-restaurant-salzburg',
     name: 'Maharaja Indian Restaurant',
@@ -4693,7 +4693,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── OSSIS SPEZIALITÄTEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── OSSIS SPEZIALITÄTEN · neu 2026-11-15 ──
   'ossis-spezialitaten-salzburg': {
     id: 'ossis-spezialitaten-salzburg',
     name: 'Ossis Spezialitäten',
@@ -4726,7 +4726,7 @@ const RAW_VENUES = {
 
 
 
-  // ── TAJ MAHAL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TAJ MAHAL · neu 2026-11-15 ──
   'taj-mahal-salzburg': {
     id: 'taj-mahal-salzburg',
     name: 'Taj Mahal',
@@ -4757,7 +4757,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── TASTY TANTUNI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TASTY TANTUNI · neu 2026-11-15 ──
   'tasty-tantuni-salzburg': {
     id: 'tasty-tantuni-salzburg',
     name: 'Tasty Tantuni',
@@ -4788,7 +4788,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── UNCLE FALAFEL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── UNCLE FALAFEL · neu 2026-11-15 ──
   'uncle-falafel-salzburg': {
     id: 'uncle-falafel-salzburg',
     name: 'Uncle Falafel',
@@ -4819,7 +4819,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RIALTO PIZZERIA JACKSON · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RIALTO PIZZERIA JACKSON · neu 2026-11-15 ──
   'rialto-pizzeria-jackson-schwechat': {
     id: 'rialto-pizzeria-jackson-schwechat',
     name: 'Rialto Pizzeria JACKSON',
@@ -4850,7 +4850,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ANTIOCHIA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ANTIOCHIA · neu 2026-11-15 ──
   'antiochia-ternitz': {
     id: 'antiochia-ternitz',
     name: 'Antiochia',
@@ -4882,7 +4882,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── DELI KING · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DELI KING · neu 2026-11-15 ──
   'deli-king-vosendorf': {
     id: 'deli-king-vosendorf',
     name: 'Deli King',
@@ -4913,7 +4913,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── SOLO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SOLO · neu 2026-11-15 ──
   'solo-wels': {
     id: 'solo-wels',
     name: 'Solo',
@@ -4944,7 +4944,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── AL ZAYTOUNA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── AL ZAYTOUNA · neu 2026-11-15 ──
   'al-zaytouna-1010': {
     id: 'al-zaytouna-1010',
     name: 'Al Zaytouna',
@@ -4975,7 +4975,7 @@ const RAW_VENUES = {
     x: 56.7, y: 52.0,
   },
 
-  // ── CHAIHONA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CHAIHONA · neu 2026-11-15 ──
   'chaihona-1010': {
     id: 'chaihona-1010',
     name: 'Chaihona',
@@ -5006,7 +5006,7 @@ const RAW_VENUES = {
     x: 53.5, y: 49.8,
   },
 
-  // ── HAMAMA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HAMAMA · neu 2026-11-15 ──
   'hamama-1010': {
     id: 'hamama-1010',
     name: 'Hamama',
@@ -5037,7 +5037,7 @@ const RAW_VENUES = {
     x: 54.9, y: 49.5,
   },
 
-  // ── INDIA GATE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── INDIA GATE · neu 2026-11-15 ──
   'india-gate-1010': {
     id: 'india-gate-1010',
     name: 'India Gate',
@@ -5068,7 +5068,7 @@ const RAW_VENUES = {
     x: 52.5, y: 50.3,
   },
 
-  // ── INDIEN VILLAGE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── INDIEN VILLAGE · neu 2026-11-15 ──
   'indien-village-1010': {
     id: 'indien-village-1010',
     name: 'Indien Village',
@@ -5100,7 +5100,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── LORD OF S · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── LORD OF S · neu 2026-11-15 ──
   'lord-of-s-1010': {
     id: 'lord-of-s-1010',
     name: 'Lord of S',
@@ -5131,7 +5131,7 @@ const RAW_VENUES = {
     x: 53.3, y: 44.3,
   },
 
-  // ── NIRVANA – THE INDIAN RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── NIRVANA – THE INDIAN RESTAURANT · neu 2026-11-15 ──
   'nirvana-the-indian-restaurant-1010': {
     id: 'nirvana-the-indian-restaurant-1010',
     name: 'Nirvana – The Indian Restaurant',
@@ -5162,7 +5162,7 @@ const RAW_VENUES = {
     x: 54.5, y: 44.0,
   },
 
-  // ── O'TACOS KÄRNTNER STRASSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS KÄRNTNER STRASSE · neu 2026-11-15 ──
   'o-tacos-karntner-strasse-1010': {
     id: 'o-tacos-karntner-strasse-1010',
     name: 'O\'Tacos Kärntner Straße',
@@ -5193,7 +5193,7 @@ const RAW_VENUES = {
     x: 55.8, y: 42.8,
   },
 
-  // ── O'TACOS KOHLMARKT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS KOHLMARKT · neu 2026-11-15 ──
   'o-tacos-kohlmarkt-1010': {
     id: 'o-tacos-kohlmarkt-1010',
     name: 'O\'Tacos Kohlmarkt',
@@ -5224,7 +5224,7 @@ const RAW_VENUES = {
     x: 57.4, y: 43.9,
   },
 
-  // ── O'TACOS ROTENTURMSTRASSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS ROTENTURMSTRASSE · neu 2026-11-15 ──
   'o-tacos-rotenturmstrasse-1010': {
     id: 'o-tacos-rotenturmstrasse-1010',
     name: 'O\'Tacos Rotenturmstraße',
@@ -5256,7 +5256,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── RESTAURANT KOH-I-NOOR · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RESTAURANT KOH-I-NOOR · neu 2026-11-15 ──
   'restaurant-koh-i-noor-1010': {
     id: 'restaurant-koh-i-noor-1010',
     name: 'Restaurant Koh-i-noor',
@@ -5287,7 +5287,7 @@ const RAW_VENUES = {
     x: 55.3, y: 52.2,
   },
 
-  // ── SCHESCH BESCH · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SCHESCH BESCH · neu 2026-11-15 ──
   'schesch-besch-1010': {
     id: 'schesch-besch-1010',
     name: 'Schesch Besch',
@@ -5318,7 +5318,7 @@ const RAW_VENUES = {
     x: 57.1, y: 45.6,
   },
 
-  // ── AE CIGKÖFTECI - VEGANHOME · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── AE CIGKÖFTECI - VEGANHOME · neu 2026-11-15 ──
   'ae-cigkofteci-veganhome-1020': {
     id: 'ae-cigkofteci-veganhome-1020',
     name: 'AE Cigköfteci - Veganhome',
@@ -5349,7 +5349,7 @@ const RAW_VENUES = {
     x: 62.9, y: 38.8,
   },
 
-  // ── CAFE KONSTANTIN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CAFE KONSTANTIN · neu 2026-11-15 ──
   'cafe-konstantin-1020': {
     id: 'cafe-konstantin-1020',
     name: 'Cafe Konstantin',
@@ -5380,7 +5380,7 @@ const RAW_VENUES = {
     x: 59.6, y: 39.2,
   },
 
-  // ── STEAK DÖNER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── STEAK DÖNER · neu 2026-11-15 ──
   'steak-doner-1020': {
     id: 'steak-doner-1020',
     name: 'Steak Döner',
@@ -5411,7 +5411,7 @@ const RAW_VENUES = {
     x: 62.6, y: 31.9,
   },
 
-  // ── TÜRKIS PRATERSTERN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TÜRKIS PRATERSTERN · neu 2026-11-15 ──
   'turkis-praterstern': {
     id: 'turkis-praterstern',
     name: 'Türkis Praterstern',
@@ -5442,7 +5442,7 @@ const RAW_VENUES = {
     x: 62.0, y: 38.3,
   },
 
-  // ── GRILL STORY · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── GRILL STORY · neu 2026-11-15 ──
   'grill-story-1030': {
     id: 'grill-story-1030',
     name: 'Grill Story',
@@ -5473,7 +5473,7 @@ const RAW_VENUES = {
     x: 62.0, y: 46.2,
   },
 
-  // ── HAYAT PIZZA KEBAP · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HAYAT PIZZA KEBAP · neu 2026-11-15 ──
   'hayat-pizza-kebap-1030': {
     id: 'hayat-pizza-kebap-1030',
     name: 'Hayat Pizza Kebap',
@@ -5504,7 +5504,7 @@ const RAW_VENUES = {
     x: 60.2, y: 52.5,
   },
 
-  // ── KÖNIG · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── KÖNIG · neu 2026-11-15 ──
   'konig-1030': {
     id: 'konig-1030',
     name: 'KÖNIG',
@@ -5535,7 +5535,7 @@ const RAW_VENUES = {
     x: 59.4, y: 48.6,
   },
 
-  // ── SMASH HABIBI BY DIDDI BURGER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SMASH HABIBI BY DIDDI BURGER · neu 2026-11-15 ──
   'smash-habibi-by-diddi-burger-1030': {
     id: 'smash-habibi-by-diddi-burger-1030',
     name: 'Smash Habibi by Diddi Burger',
@@ -5566,7 +5566,7 @@ const RAW_VENUES = {
     x: 58.3, y: 46.0,
   },
 
-  // ── VULCANO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── VULCANO · neu 2026-11-15 ──
   'vulcano-1030': {
     id: 'vulcano-1030',
     name: 'Vulcano',
@@ -5597,7 +5597,7 @@ const RAW_VENUES = {
     x: 59.6, y: 53.4,
   },
 
-  // ── CUCCU GRILL-STEAK DÖNER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CUCCU GRILL-STEAK DÖNER · neu 2026-11-15 ──
   'cuccu-grill-steak-doner-1040': {
     id: 'cuccu-grill-steak-doner-1040',
     name: 'Cuccu Grill-Steak Döner',
@@ -5628,7 +5628,7 @@ const RAW_VENUES = {
     x: 52.7, y: 57.8,
   },
 
-  // ── JARITA'S INDIAN KITCHEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── JARITA'S INDIAN KITCHEN · neu 2026-11-15 ──
   'jarita-s-indian-kitchen-1040': {
     id: 'jarita-s-indian-kitchen-1040',
     name: 'Jarita\'s Indian Kitchen',
@@ -5659,7 +5659,7 @@ const RAW_VENUES = {
     x: 53.7, y: 51.1,
   },
 
-  // ── O'TACOS NASCHMARKT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS NASCHMARKT · neu 2026-11-15 ──
   'o-tacos-naschmarkt-1040': {
     id: 'o-tacos-naschmarkt-1040',
     name: 'O\'Tacos Naschmarkt',
@@ -5691,7 +5691,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── TOMOCHAN RAMEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TOMOCHAN RAMEN · neu 2026-11-15 ──
   'tomochan-ramen-1040': {
     id: 'tomochan-ramen-1040',
     name: 'Tomochan Ramen',
@@ -5722,7 +5722,7 @@ const RAW_VENUES = {
     x: 52.8, y: 55.0,
   },
 
-  // ── APADANA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── APADANA · neu 2026-11-15 ──
   'apadana-1050': {
     id: 'apadana-1050',
     name: 'Apadana',
@@ -5753,7 +5753,7 @@ const RAW_VENUES = {
     x: 49.4, y: 54.4,
   },
 
-  // ── CHICKEN KING 1050 · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CHICKEN KING 1050 · neu 2026-11-15 ──
   'chicken-king-1050': {
     id: 'chicken-king-1050',
     name: 'Chicken King 1050',
@@ -5784,7 +5784,7 @@ const RAW_VENUES = {
     x: 46.3, y: 59.1,
   },
 
-  // ── HANA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HANA · neu 2026-11-15 ──
   'hana-1060': {
     id: 'hana-1060',
     name: 'HANA',
@@ -5815,7 +5815,7 @@ const RAW_VENUES = {
     x: 46.3, y: 46.8,
   },
 
-  // ── O'TACOS MARIAHILFER STRASSE 34 · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS MARIAHILFER STRASSE 34 · neu 2026-11-15 ──
   'o-tacos-mariahilfer-strasse-34-1070': {
     id: 'o-tacos-mariahilfer-strasse-34-1070',
     name: 'O\'Tacos Mariahilfer Straße 34',
@@ -5846,7 +5846,7 @@ const RAW_VENUES = {
     x: 43.5, y: 42.8,
   },
 
-  // ── O'TACOS MARIAHILFER STRASSE 84 · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS MARIAHILFER STRASSE 84 · neu 2026-11-15 ──
   'o-tacos-mariahilfer-strasse-84-1070': {
     id: 'o-tacos-mariahilfer-strasse-84-1070',
     name: 'O\'Tacos Mariahilfer Straße 84',
@@ -5877,7 +5877,7 @@ const RAW_VENUES = {
     x: 46.2, y: 48.1,
   },
 
-  // ── DON CHICKOTE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DON CHICKOTE · neu 2026-11-15 ──
   'don-chickote-1090': {
     id: 'don-chickote-1090',
     name: 'Don Chickote',
@@ -5908,7 +5908,7 @@ const RAW_VENUES = {
     x: 47.8, y: 33.8,
   },
 
-  // ── NINO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── NINO · neu 2026-11-15 ──
   'nino-1090': {
     id: 'nino-1090',
     name: 'Nino',
@@ -5939,7 +5939,7 @@ const RAW_VENUES = {
     x: 47.4, y: 30.5,
   },
 
-  // ── RESTAURANT HATAM · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RESTAURANT HATAM · neu 2026-11-15 ──
   'restaurant-hatam-1090': {
     id: 'restaurant-hatam-1090',
     name: 'Restaurant Hatam',
@@ -5970,7 +5970,7 @@ const RAW_VENUES = {
     x: 49.1, y: 31.7,
   },
 
-  // ── ULI'S KEBAB UND PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ULI'S KEBAB UND PIZZA · neu 2026-11-15 ──
   'uli-s-kebab-und-pizza-1090': {
     id: 'uli-s-kebab-und-pizza-1090',
     name: 'Uli\'s Kebab und Pizza',
@@ -6001,7 +6001,7 @@ const RAW_VENUES = {
     x: 49.3, y: 34.6,
   },
 
-  // ── BAB AL YEMEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BAB AL YEMEN · neu 2026-11-15 ──
   'bab-al-yemen-1100': {
     id: 'bab-al-yemen-1100',
     name: 'Bab Al Yemen',
@@ -6032,7 +6032,7 @@ const RAW_VENUES = {
     x: 53.8, y: 73.5,
   },
 
-  // ── CAFÉ GRILL PIZZERIA MEMO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── CAFÉ GRILL PIZZERIA MEMO · neu 2026-11-15 ──
   'cafe-grill-pizzeria-memo-1100': {
     id: 'cafe-grill-pizzeria-memo-1100',
     name: 'Café Grill Pizzeria Memo',
@@ -6063,7 +6063,7 @@ const RAW_VENUES = {
     x: 53.0, y: 69.2,
   },
 
-  // ── DAMAK RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DAMAK RESTAURANT · neu 2026-11-15 ──
   'damak-restaurant-1100': {
     id: 'damak-restaurant-1100',
     name: 'Damak Restaurant',
@@ -6094,7 +6094,7 @@ const RAW_VENUES = {
     x: 50.2, y: 74.3,
   },
 
-  // ── DÖNER'CI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DÖNER'CI · neu 2026-11-15 ──
   'doner-ci-1100': {
     id: 'doner-ci-1100',
     name: 'Döner\'ci',
@@ -6125,7 +6125,7 @@ const RAW_VENUES = {
     x: 53.5, y: 68.8,
   },
 
-  // ── FERHAT DÖNER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── FERHAT DÖNER · neu 2026-11-15 ──
   'ferhat-doner-1100': {
     id: 'ferhat-doner-1100',
     name: 'Ferhat Döner',
@@ -6156,7 +6156,7 @@ const RAW_VENUES = {
     x: 51.5, y: 69.5,
   },
 
-  // ── KÖFTECI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── KÖFTECI · neu 2026-11-15 ──
   'kofteci-1100': {
     id: 'kofteci-1100',
     name: 'Köfteci',
@@ -6187,7 +6187,7 @@ const RAW_VENUES = {
     x: 51.1, y: 67.7,
   },
 
-  // ── MENSA 4 YOU · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MENSA 4 YOU · neu 2026-11-15 ──
   'mensa-4-you-1100': {
     id: 'mensa-4-you-1100',
     name: 'Mensa 4 You',
@@ -6218,7 +6218,7 @@ const RAW_VENUES = {
     x: 50.3, y: 65.5,
   },
 
-  // ── O'TACOS HAUPTBAHNHOF · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS HAUPTBAHNHOF · neu 2026-11-15 ──
   'o-tacos-hauptbahnhof-1100': {
     id: 'o-tacos-hauptbahnhof-1100',
     name: 'O\'Tacos Hauptbahnhof',
@@ -6249,7 +6249,7 @@ const RAW_VENUES = {
     x: 49.7, y: 73.9,
   },
 
-  // ── REENA RASOI INDIAN RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── REENA RASOI INDIAN RESTAURANT · neu 2026-11-15 ──
   'reena-rasoi-indian-restaurant-1100': {
     id: 'reena-rasoi-indian-restaurant-1100',
     name: 'Reena Rasoi Indian Restaurant',
@@ -6280,7 +6280,7 @@ const RAW_VENUES = {
     x: 52.0, y: 67.5,
   },
 
-  // ── RHULO ÇIĞKÖFTE GUDRUNSTRASSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RHULO ÇIĞKÖFTE GUDRUNSTRASSE · neu 2026-11-15 ──
   'rhulo-cigkofte-gudrunstrasse-1100': {
     id: 'rhulo-cigkofte-gudrunstrasse-1100',
     name: 'Rhulo Çiğköfte Gudrunstraße',
@@ -6311,7 +6311,7 @@ const RAW_VENUES = {
     x: 52.6, y: 72.2,
   },
 
-  // ── PIZZERIA CAPRESE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZERIA CAPRESE · neu 2026-11-15 ──
   'pizzeria-caprese-1110': {
     id: 'pizzeria-caprese-1110',
     name: 'Pizzeria Caprese',
@@ -6342,7 +6342,7 @@ const RAW_VENUES = {
     x: 69.7, y: 59.9,
   },
 
-  // ── DON MATLI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DON MATLI · neu 2026-11-15 ──
   'don-matli-1120': {
     id: 'don-matli-1120',
     name: 'Don Matli',
@@ -6373,7 +6373,7 @@ const RAW_VENUES = {
     x: 35.7, y: 70.0,
   },
 
-  // ── HATAY KITCHEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HATAY KITCHEN · neu 2026-11-15 ──
   'hatay-kitchen-1120': {
     id: 'hatay-kitchen-1120',
     name: 'Hatay Kitchen',
@@ -6406,7 +6406,7 @@ const RAW_VENUES = {
 
 
 
-  // ── PIZZERIA LA CASA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZERIA LA CASA · neu 2026-11-15 ──
   'pizzeria-la-casa-1140': {
     id: 'pizzeria-la-casa-1140',
     name: 'Pizzeria La Casa',
@@ -6437,7 +6437,7 @@ const RAW_VENUES = {
     x: 19.5, y: 43.3,
   },
 
-  // ── ASIA HAUS RESTAURANT HUI CHUN YUAN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ASIA HAUS RESTAURANT HUI CHUN YUAN · neu 2026-11-15 ──
   'asia-haus-restaurant-hui-chun-yuan-1150': {
     id: 'asia-haus-restaurant-hui-chun-yuan-1150',
     name: 'Asia Haus Restaurant Hui Chun Yuan',
@@ -6468,7 +6468,7 @@ const RAW_VENUES = {
     x: 32.9, y: 47.8,
   },
 
-  // ── BELLISSIMA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── BELLISSIMA · neu 2026-11-15 ──
   'bellissima-1150': {
     id: 'bellissima-1150',
     name: 'Bellissima',
@@ -6499,7 +6499,7 @@ const RAW_VENUES = {
     x: 32.0, y: 46.8,
   },
 
-  // ── ROYAL INDISCHES RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ROYAL INDISCHES RESTAURANT · neu 2026-11-15 ──
   'royal-indisches-restaurant-1150': {
     id: 'royal-indisches-restaurant-1150',
     name: 'Royal Indisches Restaurant',
@@ -6530,7 +6530,7 @@ const RAW_VENUES = {
     x: 31.1, y: 45.6,
   },
 
-  // ── AL DAMAS RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── AL DAMAS RESTAURANT · neu 2026-11-15 ──
   'al-damas-restaurant-1160': {
     id: 'al-damas-restaurant-1160',
     name: 'Al Damas Restaurant',
@@ -6561,7 +6561,7 @@ const RAW_VENUES = {
     x: 27.2, y: 38.3,
   },
 
-  // ── DOLCE LAGO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DOLCE LAGO · neu 2026-11-15 ──
   'dolce-lago-1160': {
     id: 'dolce-lago-1160',
     name: 'Dolce Lago',
@@ -6593,7 +6593,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── LIMAN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── LIMAN · neu 2026-11-15 ──
   'liman-1160': {
     id: 'liman-1160',
     name: 'Liman',
@@ -6624,7 +6624,7 @@ const RAW_VENUES = {
     x: 28.1, y: 41.4,
   },
 
-  // ── PIZZA IMBISS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZA IMBISS · neu 2026-11-15 ──
   'pizza-imbiss-1160': {
     id: 'pizza-imbiss-1160',
     name: 'Pizza Imbiss',
@@ -6655,7 +6655,7 @@ const RAW_VENUES = {
     x: 26.8, y: 33.4,
   },
 
-  // ── PIZZERIA BEN VENUTO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZERIA BEN VENUTO · neu 2026-11-15 ──
   'pizzeria-ben-venuto-1160': {
     id: 'pizzeria-ben-venuto-1160',
     name: 'Pizzeria Ben Venuto',
@@ -6686,7 +6686,7 @@ const RAW_VENUES = {
     x: 26.6, y: 32.6,
   },
 
-  // ── HÜHNERPARADIES · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── HÜHNERPARADIES · neu 2026-11-15 ──
   'huhnerparadies-1170': {
     id: 'huhnerparadies-1170',
     name: 'Hühnerparadies',
@@ -6717,7 +6717,7 @@ const RAW_VENUES = {
     x: 30.8, y: 32.7,
   },
 
-  // ── PIZZA MEISTER · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── PIZZA MEISTER · neu 2026-11-15 ──
   'pizza-meister-1170': {
     id: 'pizza-meister-1170',
     name: 'Pizza Meister',
@@ -6748,7 +6748,7 @@ const RAW_VENUES = {
     x: 29.1, y: 28.2,
   },
 
-  // ── C'EST BON – ORIENTALISCHE SPEZIALITÄTEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── C'EST BON – ORIENTALISCHE SPEZIALITÄTEN · neu 2026-11-15 ──
   'c-est-bon-orientalische-spezialitaten-1180': {
     id: 'c-est-bon-orientalische-spezialitaten-1180',
     name: 'C\'est Bon – Orientalische Spezialitäten',
@@ -6779,7 +6779,7 @@ const RAW_VENUES = {
     x: 36.5, y: 24.4,
   },
 
-  // ── O'TACOS WÄHRINGER STRASSE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS WÄHRINGER STRASSE · neu 2026-11-15 ──
   'o-tacos-wahringer-strasse-1180': {
     id: 'o-tacos-wahringer-strasse-1180',
     name: 'O\'Tacos Währinger Straße',
@@ -6810,7 +6810,7 @@ const RAW_VENUES = {
     x: 38.2, y: 23.6,
   },
 
-  // ── TERMEH – PERSISCHE KÜCHE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TERMEH – PERSISCHE KÜCHE · neu 2026-11-15 ──
   'termeh-persische-kuche-1190': {
     id: 'termeh-persische-kuche-1190',
     name: 'Termeh – Persische Küche',
@@ -6841,7 +6841,7 @@ const RAW_VENUES = {
     x: 47.4, y: 20.5,
   },
 
-  // ── URBAN PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── URBAN PIZZA · neu 2026-11-15 ──
   'urban-pizza-1190': {
     id: 'urban-pizza-1190',
     name: 'Urban Pizza',
@@ -6873,7 +6873,7 @@ const RAW_VENUES = {
   },
 
 
-  // ── DAS GÖXL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DAS GÖXL · neu 2026-11-15 ──
   'das-goxl-1200': {
     id: 'das-goxl-1200',
     name: 'Das Göxl',
@@ -6904,7 +6904,7 @@ const RAW_VENUES = {
     x: 56.4, y: 25.8,
   },
 
-  // ── LA ESNO PIZZERIA & RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── LA ESNO PIZZERIA & RESTAURANT · neu 2026-11-15 ──
   'la-esno-pizzeria-restaurant-1200': {
     id: 'la-esno-pizzeria-restaurant-1200',
     name: 'La Esno Pizzeria & Restaurant',
@@ -6935,7 +6935,7 @@ const RAW_VENUES = {
     x: 53.5, y: 29.4,
   },
 
-  // ── DAS HAUS DES KEBAPS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── DAS HAUS DES KEBAPS · neu 2026-11-15 ──
   'das-haus-des-kebaps-1210': {
     id: 'das-haus-des-kebaps-1210',
     name: 'Das Haus des Kebaps',
@@ -6966,7 +6966,7 @@ const RAW_VENUES = {
     x: 57.4, y: 9.3,
   },
 
-  // ── MALAK AL-AQSA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MALAK AL-AQSA · neu 2026-11-15 ──
   'malak-al-aqsa-1210': {
     id: 'malak-al-aqsa-1210',
     name: 'Malak Al-Aqsa',
@@ -6997,7 +6997,7 @@ const RAW_VENUES = {
     x: 55.7, y: 10.9,
   },
 
-  // ── NEFIS · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── NEFIS · neu 2026-11-15 ──
   'nefis-1210': {
     id: 'nefis-1210',
     name: 'Nefis',
@@ -7028,7 +7028,7 @@ const RAW_VENUES = {
     x: 58.1, y: 11.6,
   },
 
-  // ── TYBAH · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── TYBAH · neu 2026-11-15 ──
   'tybah-1210': {
     id: 'tybah-1210',
     name: 'Tybah',
@@ -7059,7 +7059,7 @@ const RAW_VENUES = {
     x: 56.4, y: 10.6,
   },
 
-  // ── O'TACOS DONAUZENTRUM · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── O'TACOS DONAUZENTRUM · neu 2026-11-15 ──
   'o-tacos-donauzentrum-1220': {
     id: 'o-tacos-donauzentrum-1220',
     name: 'O\'Tacos Donauzentrum',
@@ -7090,7 +7090,7 @@ const RAW_VENUES = {
     x: 74.4, y: 32.3,
   },
 
-  // ── SAFRAN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SAFRAN · neu 2026-11-15 ──
   'safran-1220': {
     id: 'safran-1220',
     name: 'Safran',
@@ -7121,7 +7121,7 @@ const RAW_VENUES = {
     x: 70.8, y: 25.2,
   },
 
-  // ── SOLO ITALIANO / ZUM HUNGRIGEN SPATZ · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SOLO ITALIANO / ZUM HUNGRIGEN SPATZ · neu 2026-11-15 ──
   'solo-italiano-zum-hungrigen-spatz-1220': {
     id: 'solo-italiano-zum-hungrigen-spatz-1220',
     name: 'Solo Italiano / Zum Hungrigen Spatz',
@@ -7152,7 +7152,7 @@ const RAW_VENUES = {
     x: 73.4, y: 25.6,
   },
 
-  // ── MURO'S SMASH BURGER & HOT DOG · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── MURO'S SMASH BURGER & HOT DOG · neu 2026-11-15 ──
   'muro-s-smash-burger-hot-dog-1230': {
     id: 'muro-s-smash-burger-hot-dog-1230',
     name: 'Muro\'s Smash Burger & Hot Dog',
@@ -7183,7 +7183,7 @@ const RAW_VENUES = {
     x: 36.9, y: 86.1,
   },
 
-  // ── ANTONIO'S BASMATI · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ANTONIO'S BASMATI · neu 2026-11-15 ──
   'antonio-s-basmati-zell-am-see': {
     id: 'antonio-s-basmati-zell-am-see',
     name: 'Antonio\'s Basmati',
@@ -7214,7 +7214,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ISTANBUL RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ISTANBUL RESTAURANT · neu 2026-11-15 ──
   'istanbul-restaurant-zell-am-see': {
     id: 'istanbul-restaurant-zell-am-see',
     name: 'Istanbul Restaurant',
@@ -7245,7 +7245,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RESTAURANT AL KHALIJ · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RESTAURANT AL KHALIJ · neu 2026-11-15 ──
   'restaurant-al-khalij-zell-am-see': {
     id: 'restaurant-al-khalij-zell-am-see',
     name: 'Restaurant Al Khalij',
@@ -7276,7 +7276,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── RESTAURANT ALI BABA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── RESTAURANT ALI BABA · neu 2026-11-15 ──
   'restaurant-ali-baba-zell-am-see': {
     id: 'restaurant-ali-baba-zell-am-see',
     name: 'Restaurant Ali Baba',
@@ -7307,7 +7307,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── SHIRAZ RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── SHIRAZ RESTAURANT · neu 2026-11-15 ──
   'shiraz-restaurant-zell-am-see': {
     id: 'shiraz-restaurant-zell-am-see',
     name: 'Shiraz Restaurant',
@@ -7338,7 +7338,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ZUM CÄSAR · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
+  // ── ZUM CÄSAR · neu 2026-11-15 ──
   'zum-casar-zell-am-see': {
     id: 'zum-casar-zell-am-see',
     name: 'Zum Cäsar',
