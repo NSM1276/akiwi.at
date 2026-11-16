@@ -2189,36 +2189,6 @@ const RAW_VENUES = {
     x: 49.9, y: 71.2,
   },
 
-  // ── PHILLY CHEESESTEAK FAVORITEN · neu 2026-11 ──
-  'philly-cheesesteak-1100': {
-    id: 'philly-cheesesteak-1100',
-    name: 'Philly Cheesesteak Favoriten',
-    tagline_de: 'Cheesesteak-Sandwiches und Burger in Favoriten',
-    tagline_en: 'Cheesesteak sandwiches and burgers in Favoriten',
-    district: 10,
-    districtName: 'Favoriten',
-    address: 'Favoritenstraße 84, 1100 Wien',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Burger'],
-    price: '€€',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 36, a: '#72501D', b: '#31220C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 50.7, y: 71.6,
-  },
 
   // ── LEZZET KEBAP · neu 2026-11 ──
   'lezzet-kebap-1200': {
@@ -3402,36 +3372,6 @@ const RAW_VENUES = {
     x: 19.8, y: 44.7,
   },
 
-  // ── VOODOO BURGER · neu 2026-11-15 ──
-  'voodoo-burger-1140': {
-    id: 'voodoo-burger-1140',
-    name: 'Voodoo Burger',
-    tagline_de: 'Burger in Wien-Penzing',
-    tagline_en: 'Burgers in Wien-Penzing',
-    district: 14,
-    districtName: 'Penzing',
-    address: 'Hütteldorfer Straße 249, 1140 Wien',
-    phone: '+4318900388',
-    website: null,
-    status: 'unknown',
-    categories: ['Imbiss', 'Burger'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 324, a: '#721D50', b: '#310C22' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal nur bei einzelnen Gerichten angegeben, noch nicht geprüft', event_en: 'Taken from public sources — halal stated for single dishes only, not yet checked' },
-    ],
-    similar: [],
-    x: 16.0, y: 44.3,
-  },
 
   // ── HENDL · neu 2026-11-15 ──
   'hendl-1150': {
@@ -7412,36 +7352,6 @@ const RAW_VENUES = {
     x: 74.4, y: 32.3,
   },
 
-  // ── SAFRAN · neu 2026-11-15 ──
-  'safran-1220': {
-    id: 'safran-1220',
-    name: 'Safran',
-    tagline_de: 'Kebab und persische Küche in Wien-Donaustadt',
-    tagline_en: 'Kebab and Persian food in Wien-Donaustadt',
-    district: 22,
-    districtName: 'Donaustadt',
-    address: 'Wagramer Straße 97-103, 1220 Wien',
-    phone: '+43 1 9538107',
-    website: 'safran-pizzakebap.com',
-    status: 'self',
-    categories: ['Imbiss', 'Kebab', 'Persisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 190, a: '#1D6472', b: '#0C2B31' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 70.8, y: 25.2,
-  },
 
   // ── SOLO ITALIANO / ZUM HUNGRIGEN SPATZ · neu 2026-11-15 ──
   'solo-italiano-zum-hungrigen-spatz-1220': {
