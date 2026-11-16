@@ -4009,36 +4009,6 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── KARA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'kara-graz': {
-    id: 'kara-graz',
-    name: 'Kara',
-    tagline_de: 'Kebab und türkische Küche in Graz',
-    tagline_en: 'Kebab and Turkish food in Graz',
-    district: 0,
-    districtName: 'Graz',
-    address: 'Rösselmühlgasse 14, 8020 Graz',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Kebab', 'Türkisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 133, a: '#1D722F', b: '#0C3114' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: null, y: null,
-  },
 
   // ── MY KEBAB · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'my-kebab-graz': {
@@ -4133,36 +4103,6 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ALSALAM · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'alsalam-innsbruck': {
-    id: 'alsalam-innsbruck',
-    name: 'Alsalam',
-    tagline_de: 'Burger und orientalische Küche in Innsbruck',
-    tagline_en: 'Burgers and Middle Eastern food in Innsbruck',
-    district: 0,
-    districtName: 'Innsbruck',
-    address: 'Sillgasse 12, 6020 Innsbruck',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Restaurant', 'Burger', 'Orientalisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 182, a: '#1D6F72', b: '#0C3031' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: null, y: null,
-  },
 
   // ── AZADI ORIENTAL TANDOOR RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'azadi-oriental-tandoor-restaurant-innsbruck': {
@@ -4784,67 +4724,7 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── SOFRA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'sofra-salzburg': {
-    id: 'sofra-salzburg',
-    name: 'Sofra',
-    tagline_de: 'Kebab und türkische Küche in Salzburg',
-    tagline_en: 'Kebab and Turkish food in Salzburg',
-    district: 0,
-    districtName: 'Salzburg',
-    address: 'Rainerstraße 25, 5020 Salzburg',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Kebab', 'Türkisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 127, a: '#1D7227', b: '#0C3111' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: null, y: null,
-  },
 
-  // ── SULTAN KEBAP · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'sultan-kebap-salzburg': {
-    id: 'sultan-kebap-salzburg',
-    name: 'Sultan Kebap',
-    tagline_de: 'Kebab und türkische Küche in Salzburg',
-    tagline_en: 'Kebab and Turkish food in Salzburg',
-    district: 0,
-    districtName: 'Salzburg',
-    address: 'Eichstraße 2, 5020 Salzburg',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Kebab', 'Türkisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 49, a: '#72631D', b: '#312A0C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: null, y: null,
-  },
 
   // ── TAJ MAHAL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'taj-mahal-salzburg': {
@@ -5001,36 +4881,6 @@ const RAW_VENUES = {
     x: null, y: null,
   },
 
-  // ── ZUR EULE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'zur-eule-villach': {
-    id: 'zur-eule-villach',
-    name: 'Zur Eule',
-    tagline_de: 'Burger in Villach',
-    tagline_en: 'Burgers in Villach',
-    district: 0,
-    districtName: 'Villach',
-    address: 'Badstubenweg 75, 9500 Villach',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Burger'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 28, a: '#72451D', b: '#311D0C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: null, y: null,
-  },
 
   // ── DELI KING · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'deli-king-vosendorf': {
@@ -5249,36 +5099,6 @@ const RAW_VENUES = {
     x: 55.4, y: 44.4,
   },
 
-  // ── LALE · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'lale-1010': {
-    id: 'lale-1010',
-    name: 'Lale',
-    tagline_de: 'Kebab und türkische Küche in Wien-Innere Stadt',
-    tagline_en: 'Kebab and Turkish food in Wien-Innere Stadt',
-    district: 1,
-    districtName: 'Innere Stadt',
-    address: 'Franz-Josefs-Kai 29, 1010 Wien',
-    phone: '+43 1 5352736',
-    website: 'lale.at',
-    status: 'self',
-    categories: ['Restaurant', 'Kebab', 'Türkisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 158, a: '#1D7253', b: '#0C3123' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 53.2, y: 43.5,
-  },
 
   // ── LORD OF S · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'lord-of-s-1010': {
@@ -5435,36 +5255,6 @@ const RAW_VENUES = {
     x: 56.2, y: 47.5,
   },
 
-  // ── OSTERIA DA ANTONIO · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'osteria-da-antonio-1010': {
-    id: 'osteria-da-antonio-1010',
-    name: 'Osteria da Antonio',
-    tagline_de: 'Orientalische und italienische Küche in Wien-Innere Stadt',
-    tagline_en: 'Middle Eastern food and Italian food in Wien-Innere Stadt',
-    district: 1,
-    districtName: 'Innere Stadt',
-    address: 'Bösendorferstraße 5, 1010 Wien',
-    phone: '+43 1 5058327',
-    website: 'www.da-antonio.at',
-    status: 'self',
-    categories: ['Restaurant', 'Orientalisch', 'Italienisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 24, a: '#723F1D', b: '#311B0C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 54.4, y: 42.9,
-  },
 
   // ── RESTAURANT KOH-I-NOOR · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'restaurant-koh-i-noor-1010': {
@@ -5900,36 +5690,6 @@ const RAW_VENUES = {
     x: 52.6, y: 57.4,
   },
 
-  // ── TASTY KEBAP & PIZZA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'tasty-kebap-pizza-1040': {
-    id: 'tasty-kebap-pizza-1040',
-    name: 'Tasty Kebap & Pizza',
-    tagline_de: 'Kebab und Pizza in Wien-Wieden',
-    tagline_en: 'Kebab and pizza in Wien-Wieden',
-    district: 4,
-    districtName: 'Wieden',
-    address: 'Rechte Wienzeile 1A, 1040 Wien',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Kebab', 'Pizza'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 191, a: '#1D6372', b: '#0C2A31' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 50.1, y: 54.6,
-  },
 
   // ── TOMOCHAN RAMEN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'tomochan-ramen-1040': {
@@ -6644,67 +6404,7 @@ const RAW_VENUES = {
     x: 37.0, y: 63.0,
   },
 
-  // ── PIZZA4YOU · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'pizza4you-1120': {
-    id: 'pizza4you-1120',
-    name: 'Pizza4You',
-    tagline_de: 'Pizza in Wien-Meidling',
-    tagline_en: 'Pizza in Wien-Meidling',
-    district: 12,
-    districtName: 'Meidling',
-    address: 'Schönbrunner Straße 218, 1120 Wien',
-    phone: '+43 664 3912718',
-    website: null,
-    status: 'self',
-    categories: ['Imbiss', 'Pizza'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 335, a: '#721D40', b: '#310C1C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 37.1, y: 66.6,
-  },
 
-  // ── BLUE MARLIN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'blue-marlin-1130': {
-    id: 'blue-marlin-1130',
-    name: 'Blue Marlin',
-    tagline_de: 'Restaurant in Wien-Hietzing',
-    tagline_en: 'Restaurant in Wien-Hietzing',
-    district: 13,
-    districtName: 'Hietzing',
-    address: 'Hietzinger Hauptstraße 16, 1130 Wien',
-    phone: '+43 660 3500365',
-    website: 'blue-marlin.eatbu.com',
-    status: 'self',
-    categories: ['Restaurant'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 35, a: '#724F1D', b: '#31220C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 23.3, y: 64.7,
-  },
 
   // ── PIZZERIA LA CASA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'pizzeria-la-casa-1140': {
@@ -6892,36 +6592,6 @@ const RAW_VENUES = {
     x: 27.3, y: 41.6,
   },
 
-  // ── ETAP RESTAURANT · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'etap-restaurant-1160': {
-    id: 'etap-restaurant-1160',
-    name: 'Etap Restaurant',
-    tagline_de: 'Türkische Küche in Wien-Ottakring',
-    tagline_en: 'Turkish food in Wien-Ottakring',
-    district: 16,
-    districtName: 'Ottakring',
-    address: 'Neulerchenfelder Straße 13, 1160 Wien',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Restaurant', 'Türkisch'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 66, a: '#6A721D', b: '#2D310C' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 25.6, y: 36.0,
-  },
 
   // ── LIMAN · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'liman-1160': {
@@ -7202,36 +6872,6 @@ const RAW_VENUES = {
     x: 49.8, y: 17.0,
   },
 
-  // ── CASA BLANCA · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
-  'casa-blanca-1200': {
-    id: 'casa-blanca-1200',
-    name: 'Casa Blanca',
-    tagline_de: 'Pizza in Wien-Brigittenau',
-    tagline_en: 'Pizza in Wien-Brigittenau',
-    district: 20,
-    districtName: 'Brigittenau',
-    address: 'Wallensteinstraße 51, 1200 Wien',
-    phone: null,
-    website: null,
-    status: 'self',
-    categories: ['Restaurant', 'Pizza'],
-    price: '',
-    rating: 0,
-    reviews: 0,
-    gallery: [
-      { hue: 239, a: '#1D1E72', b: '#0C0D31' },
-    ],
-    tags: [],
-    hours: [],
-    amenities: {},
-    menu: [],
-    reviews_list: [],
-    verification_log: [
-      { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
-    ],
-    similar: [],
-    x: 53.1, y: 22.1,
-  },
 
   // ── DAS GÖXL · neu 2026-11-15 (Quellen: docs/research/venues-2026-11b, Stufe B) ──
   'das-goxl-1200': {
