@@ -1753,7 +1753,6 @@ const RAW_VENUES = {
   // ── JASMIN AL SHAM · neu 2026-11 ──
   'jasmin-al-sham-1190': {
     id: 'jasmin-al-sham-1190',
-    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Jasmin al Sham',
     tagline_de: 'Syrische Küche in Döbling',
     tagline_en: 'Syrian cuisine in Döbling',
@@ -2883,7 +2882,6 @@ const RAW_VENUES = {
   // ── QUICKY'S BURGERS & MORE · neu 2026-11-15 ──
   'quicky-s-burgers-more-1090': {
     id: 'quicky-s-burgers-more-1090',
-    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Quicky\'s Burgers & More',
     tagline_de: 'Burger in Wien-Alsergrund',
     tagline_en: 'Burgers in Wien-Alsergrund',
