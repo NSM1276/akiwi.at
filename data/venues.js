@@ -946,8 +946,10 @@ const RAW_VENUES = {
     tagline_en: 'Oriental cuisine in Donau Zentrum shopping center',
     district: 22,
     districtName: 'Donaustadt',
-    address: 'Wagramer Straße 94 (Donauzentrum), 1220 Wien',
-    phone: '+43 1 600 50 10 1220',
+    // 2026-11-18: Adresse laut tuerkis.at/standorte; dort keine Telefonnummer für
+    // diesen Standort, die alte (+43 1 600 50 10 1220) war nicht nachvollziehbar.
+    address: 'Donauzentrum, EG Top 137b, 1220 Wien',
+    phone: null,
     website: 'tuerkis.at',
     status: 'self',
     categories: ['Restaurant', 'Kebab'],
