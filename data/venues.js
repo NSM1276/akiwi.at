@@ -381,6 +381,7 @@ const RAW_VENUES = {
   // ── DAMLA CAFE-KONDITOREI-BÄCKEREI 1120 ───────────────────────────────────────
   'damla': {
     id: 'damla',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Damla Cafe-Konditorei-Bäckerei',
     tagline_de: 'Restaurant, Konditorei & Bäckerei unter einem Dach',
     tagline_en: 'Restaurant, pastry shop & bakery under one roof',
@@ -528,6 +529,7 @@ const RAW_VENUES = {
   // ── AVA PERSISCHES RESTAURANT 1120 ────────────────────────────────────────────
   'ava-persisch-1120': {
     id: 'ava-persisch-1120',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'AVA Persisches Restaurant',
     tagline_de: 'Authentische persische Küche mit Safran-Reis und Grill-Spezialitäten',
     tagline_en: 'Authentic Persian cuisine with saffron rice and grill specialties',
@@ -614,6 +616,7 @@ const RAW_VENUES = {
   // ── MOTELLI RESTAURANT 1120 ───────────────────────────────────────────────────
   'motelli-1120': {
     id: 'motelli-1120',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Pizzeria Motelli',
     tagline_de: 'Mediterrane & italienische Küche mit hausgemachter Pizza und Pasta',
     tagline_en: 'Mediterranean & Italian cuisine with homemade pizza and pasta',
@@ -1026,7 +1029,8 @@ const RAW_VENUES = {
     phone: '+43 5 99616 115',
     email: 'office@kent.at',
     website: 'kentrestaurant.at/rudolfsheim-fuenfhaus',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://kentrestaurant.at' },
     categories: ['Restaurant', 'Türkisch'],
     price: '€€',
     rating: 4.0,
@@ -1125,6 +1129,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Fleisch- (halal)“ (Website)', event_en: 'Halal per the venue: "Fleisch- (halal)" (Website)' },
     ],
     similar: [
       { id: 'kent-1160', name: 'Kent Ottakring', district: 16, status: 'self', cat: 'Restaurant', distance_km: 2.1, rating: 4.0, hue: 15 },
@@ -1143,7 +1148,8 @@ const RAW_VENUES = {
     phone: '+43 1 405 91 73',
     email: 'ottakring@kent.at',
     website: 'kentrestaurant.at/ottakring',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://kentrestaurant.at' },
     categories: ['Restaurant', 'Türkisch'],
     price: '€€',
     rating: 4.0,
@@ -1242,6 +1248,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Fleisch- (halal)“ (Website)', event_en: 'Halal per the venue: "Fleisch- (halal)" (Website)' },
     ],
     similar: [
       { id: 'kent-1150', name: 'Kent Rudolfsheim', district: 15, status: 'self', cat: 'Restaurant', distance_km: 2.1, rating: 4.0, hue: 15 },
@@ -1261,7 +1268,8 @@ const RAW_VENUES = {
     phone: '+43 5 99616 120',
     email: 'brigittenau@kent.at',
     website: 'kentrestaurant.at/brigittenau',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://kentrestaurant.at' },
     categories: ['Restaurant', 'Türkisch'],
     price: '€€',
     rating: 4.0,
@@ -1360,6 +1368,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-05-03', actor_de: 'Akiwi-Team', actor_en: 'Akiwi Team', event_de: 'Aus öffentlichen Quellen übernommen', event_en: 'Taken from public sources' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Fleisch- (halal)“ (Website)', event_en: 'Halal per the venue: "Fleisch- (halal)" (Website)' },
     ],
     similar: [
       { id: 'kent-1160', name: 'Kent Ottakring', district: 16, status: 'self', cat: 'Restaurant', distance_km: 3.5, rating: 4.0, hue: 15 },
@@ -1443,6 +1452,7 @@ const RAW_VENUES = {
 
   'pars-hauptrestaurant': {
     id: 'pars-hauptrestaurant',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Pars Restaurant',
     alcohol: true,
     tagline_de: 'Traditionelle persische Küche in der Josefstadt',
@@ -1522,6 +1532,7 @@ const RAW_VENUES = {
 
   'cafenil-1070': {
     id: 'cafenil-1070',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Cafe Nil',
     tagline_de: 'Wiener Café mit orientalischem Frühstück',
     tagline_en: 'Viennese café with oriental breakfast',
@@ -1579,6 +1590,7 @@ const RAW_VENUES = {
   // ── RESTAURANT FERHATOVIC · neu 2026-11 ──
   'ferhatovic-1120': {
     id: 'ferhatovic-1120',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Restaurant Ferhatovic',
     tagline_de: 'Bosnische Grill-Küche in Meidling',
     tagline_en: 'Bosnian grill cuisine in Meidling',
@@ -1618,7 +1630,8 @@ const RAW_VENUES = {
     address: 'Billrothstraße 18/3, 1190 Wien',
     phone: '+43 1 9419092',
     website: 'maman-paz.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/persisches_mamanpaz/' },
     categories: ['Restaurant', 'Persisch'],
     price: '€€',
     rating: 0,
@@ -1633,6 +1646,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Persisches Maman Küche (Halal)“ (Instagram)', event_en: 'Halal per the venue: "Persisches Maman Küche (Halal)" (Instagram)' },
     ],
     similar: [],
     x: 48.0, y: 19.1,
@@ -1649,7 +1663,8 @@ const RAW_VENUES = {
     address: 'Thaliastraße 18, 1160 Wien',
     phone: null,
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/chickenpluswien/' },
     categories: ['Imbiss', 'Burger'],
     price: '€€',
     rating: 0,
@@ -1664,6 +1679,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „ALLES HALAL ! (حلال)“ (Instagram)', event_en: 'Halal per the venue: "ALLES HALAL ! (حلال)" (Instagram)' },
     ],
     similar: [],
     x: 26.5, y: 39.0,
@@ -1672,6 +1688,7 @@ const RAW_VENUES = {
   // ── DER WIENER DEEWAN · neu 2026-11 ──
   'wiener-deewan-1090': {
     id: 'wiener-deewan-1090',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Der Wiener Deewan',
     tagline_de: 'Pakistanisches Curry-Buffet am Alsergrund',
     tagline_en: 'Pakistani curry buffet in Alsergrund',
@@ -1711,7 +1728,8 @@ const RAW_VENUES = {
     address: 'Alser Straße 21, 1080 Wien',
     phone: '+43 1 9560688',
     website: 'asala-halal-food.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://asala-halal-food.at' },
     categories: ['Imbiss', 'Orientalisch'],
     price: '€',
     rating: 0,
@@ -1726,6 +1744,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Asala & Basta Halal Food“ (Website)', event_en: 'Halal per the venue: "Asala & Basta Halal Food" (Website)' },
     ],
     similar: [],
     x: 47.1, y: 42.5,
@@ -1734,6 +1753,7 @@ const RAW_VENUES = {
   // ── JASMIN AL SHAM · neu 2026-11 ──
   'jasmin-al-sham-1190': {
     id: 'jasmin-al-sham-1190',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Jasmin al Sham',
     tagline_de: 'Syrische Küche in Döbling',
     tagline_en: 'Syrian cuisine in Döbling',
@@ -1778,6 +1798,7 @@ const RAW_VENUES = {
   // ── DER LEOPOLDSTÄDTER DEEWAN · neu 2026-11 ──
   'leopoldstaedter-deewan-1020': {
     id: 'leopoldstaedter-deewan-1020',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Der Leopoldstädter Deewan',
     tagline_de: 'Pakistanische Curry-Küche in der Leopoldstadt',
     tagline_en: 'Pakistani curry kitchen in Leopoldstadt',
@@ -1848,7 +1869,8 @@ const RAW_VENUES = {
     address: 'Favoritenstraße 95, 1100 Wien',
     phone: null,
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/locochicken/' },
     categories: ['Imbiss', 'Burger'],
     price: '€',
     rating: 0,
@@ -1863,6 +1885,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Halal 🍗“ (Instagram)', event_en: 'Halal per the venue: "Halal 🍗" (Instagram)' },
     ],
     similar: [],
     x: 52.3, y: 72.4,
@@ -1871,6 +1894,7 @@ const RAW_VENUES = {
   // ── ELITE KEBAP HOUSE · neu 2026-11 ──
   'elite-kebap-1100': {
     id: 'elite-kebap-1100',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Elite Kebap House',
     tagline_de: 'Kebab und Falafel in Favoriten',
     tagline_en: 'Kebab and falafel in Favoriten',
@@ -1902,6 +1926,7 @@ const RAW_VENUES = {
   // ── ĆEVAPI DRINA GRILL · neu 2026-11 ──
   'drina-cevapi-1100': {
     id: 'drina-cevapi-1100',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Ćevapi Drina Grill',
     tagline_de: 'Ćevapi und Burek in Favoriten',
     tagline_en: 'Ćevapi and burek in Favoriten',
@@ -1934,6 +1959,7 @@ const RAW_VENUES = {
   // ── LEZZET KEBAP · neu 2026-11 ──
   'lezzet-kebap-1200': {
     id: 'lezzet-kebap-1200',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Lezzet Kebap',
     tagline_de: 'Türkischer Grill, Kebab und Pide in der Brigittenau',
     tagline_en: 'Turkish grill, kebab and pide in Brigittenau',
@@ -1965,6 +1991,7 @@ const RAW_VENUES = {
   // ── ARIA PERSISCHES RESTAURANT · neu 2026-11 ──
   'aria-persisches-restaurant-graz': {
     id: 'aria-persisches-restaurant-graz',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Aria Persisches Restaurant',
     tagline_de: 'Persische und afghanische Küche in Graz',
     tagline_en: 'Persian and Afghan cuisine in Graz',
@@ -2004,7 +2031,8 @@ const RAW_VENUES = {
     address: 'Landstraße 115, 4020 Linz',
     phone: '+43 688 64218890',
     website: 'burgerliebe.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://burgerliebe.at' },
     categories: ['Imbiss', 'Burger'],
     price: '€€',
     rating: 0,
@@ -2019,6 +2047,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „halal, selbstgemacht und liebevoll zubereitet“ (Website)', event_en: 'Halal per the venue: "halal, selbstgemacht und liebevoll zubereitet" (Website)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2027,6 +2056,7 @@ const RAW_VENUES = {
   // ── ALARABE RESTAURANT · neu 2026-11 ──
   'alarabe-linz': {
     id: 'alarabe-linz',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Alarabe Restaurant',
     tagline_de: 'Arabische Küche in Linz',
     tagline_en: 'Arabic cuisine in Linz',
@@ -2058,6 +2088,7 @@ const RAW_VENUES = {
   // ── POMMES BOUTIQUE ITZLING · neu 2026-11 ──
   'pommes-boutique-salzburg': {
     id: 'pommes-boutique-salzburg',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Pommes Boutique Itzling',
     tagline_de: 'Pommes und Burger in Salzburg-Itzling',
     tagline_en: 'Fries and burgers in Salzburg-Itzling',
@@ -2089,6 +2120,7 @@ const RAW_VENUES = {
   // ── INDIAN PALACE · neu 2026-11 ──
   'indian-palace-salzburg': {
     id: 'indian-palace-salzburg',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Indian Palace',
     tagline_de: 'Indische Küche am Salzburger Franz-Josef-Kai',
     tagline_en: 'Indian cuisine on Franz-Josef-Kai, Salzburg',
@@ -2120,6 +2152,7 @@ const RAW_VENUES = {
   // ── STERN PIZZA · neu 2026-11 ──
   'stern-pizza-salzburg': {
     id: 'stern-pizza-salzburg',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Stern Pizza',
     tagline_de: 'Pizza in Salzburg',
     tagline_en: 'Pizza in Salzburg',
@@ -2151,6 +2184,7 @@ const RAW_VENUES = {
   // ── AFGHAN RESTAURANT AZADI · neu 2026-11 ──
   'azadi-innsbruck': {
     id: 'azadi-innsbruck',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Afghan Restaurant Azadi',
     tagline_de: 'Afghanische Küche in den Innsbrucker Viaduktbögen',
     tagline_en: 'Afghan cuisine in the Innsbruck Viaduktbögen',
@@ -2182,6 +2216,7 @@ const RAW_VENUES = {
   // ── RESTAURANT SAFRAN · neu 2026-11 ──
   'safran-innsbruck': {
     id: 'safran-innsbruck',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Restaurant Safran',
     tagline_de: 'Persische Küche in Innsbruck',
     tagline_en: 'Persian cuisine in Innsbruck',
@@ -2221,7 +2256,8 @@ const RAW_VENUES = {
     address: 'Kardinalplatz 8, 9020 Klagenfurt am Wörthersee',
     phone: '+43 676 9020841',
     website: 'topburger.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://topburger.at' },
     categories: ['Imbiss', 'Burger'],
     price: '€€',
     rating: 0,
@@ -2236,6 +2272,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-12', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „100 % HALAL Fleisch“ (Website)', event_en: 'Halal per the venue: "100 % HALAL Fleisch" (Website)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2244,6 +2281,7 @@ const RAW_VENUES = {
   // ── ROYAL FOODS · neu 2026-11 ──
   'royal-foods-villach': {
     id: 'royal-foods-villach',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Royal Foods',
     tagline_de: 'Arabisches Grillrestaurant in Villach',
     tagline_en: 'Arabic grill restaurant in Villach',
@@ -2283,7 +2321,8 @@ const RAW_VENUES = {
     address: 'Triester Straße 211, 8073 Feldkirchen bei Graz',
     phone: '+43 316 291511',
     website: 'www.hot-kebap-pizza.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://www.hot-kebap-pizza.at' },
     categories: ['Imbiss', 'Kebab', 'Pizza'],
     price: '',
     rating: 0,
@@ -2298,6 +2337,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Hot Kebap Grill Pizzeria mit Halal Fleisch“ (Website)', event_en: 'Halal per the venue: "Hot Kebap Grill Pizzeria mit Halal Fleisch" (Website)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2314,7 +2354,8 @@ const RAW_VENUES = {
     address: 'Lazarettgürtel 55, Top 95 (Citypark, Panoramageschoss), 8020 Graz',
     phone: '+43 660 3497725',
     website: 'www.dermangrillhaus.com',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://www.dermangrillhaus.com' },
     categories: ['Imbiss', 'Kebab', 'Türkisch'],
     price: '',
     rating: 0,
@@ -2329,6 +2370,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Ihr Halal-Genuss in Graz“ (Website)', event_en: 'Halal per the venue: "Ihr Halal-Genuss in Graz" (Website)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2337,6 +2379,7 @@ const RAW_VENUES = {
   // ── ELIT RESTAURANT · neu 2026-11-15 ──
   'elit-restaurant-graz': {
     id: 'elit-restaurant-graz',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Elit Restaurant',
     tagline_de: 'Kebab und Pizza in Graz',
     tagline_en: 'Kebab and pizza in Graz',
@@ -2368,6 +2411,7 @@ const RAW_VENUES = {
   // ── HAPPY CHICKEN · neu 2026-11-15 ──
   'happy-chicken-kufstein': {
     id: 'happy-chicken-kufstein',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Happy Chicken',
     tagline_de: 'Burger in Kufstein',
     tagline_en: 'Burgers in Kufstein',
@@ -2399,6 +2443,7 @@ const RAW_VENUES = {
   // ── THE DESI AFFAIR · neu 2026-11-15 ──
   'the-desi-affair-linz': {
     id: 'the-desi-affair-linz',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'The Desi Affair',
     tagline_de: 'Indische Küche in Linz',
     tagline_en: 'Indian food in Linz',
@@ -2438,7 +2483,8 @@ const RAW_VENUES = {
     address: 'Rilkestraße 1, 4020 Linz',
     phone: '+43 676 7355563',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de-at/aut/linz/restaurant/urban-imbiss' },
     categories: ['Imbiss', 'Kebab'],
     price: '',
     rating: 0,
@@ -2453,6 +2499,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Lecker • Frisch • 100% Halal“ (Wolt)', event_en: 'Halal per the venue: "Lecker • Frisch • 100% Halal" (Wolt)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2461,6 +2508,7 @@ const RAW_VENUES = {
   // ── KEBAP UND PIZZA EXPRESS · neu 2026-11-15 ──
   'kebap-und-pizza-express-modling': {
     id: 'kebap-und-pizza-express-modling',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Kebap und Pizza Express',
     tagline_de: 'Kebab und Burger in Mödling',
     tagline_en: 'Kebab and burgers in Mödling',
@@ -2500,7 +2548,8 @@ const RAW_VENUES = {
     address: 'Ignaz-Harrer-Straße 48, 5020 Salzburg',
     phone: '+43 660 7866379',
     website: 'papabistro.com',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://papabistro.com' },
     categories: ['Imbiss', 'Burger', 'Pizza'],
     price: '',
     rating: 0,
@@ -2515,6 +2564,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „100% Halal Restaurant“ (Website)', event_en: 'Halal per the venue: "100% Halal Restaurant" (Website)' },
     ],
     similar: [],
     x: null, y: null,
@@ -2523,6 +2573,7 @@ const RAW_VENUES = {
   // ── HANEDAN RESTAURANT & CAFE · neu 2026-11-15 ──
   'hanedan-restaurant-cafe-traiskirchen': {
     id: 'hanedan-restaurant-cafe-traiskirchen',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Hanedan Restaurant & Cafe',
     tagline_de: 'Burger und türkische Küche in Traiskirchen',
     tagline_en: 'Burgers and Turkish food in Traiskirchen',
@@ -2554,6 +2605,7 @@ const RAW_VENUES = {
   // ── PIZZA PICCOLA · neu 2026-11-15 ──
   'pizza-piccola-villach': {
     id: 'pizza-piccola-villach',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Pizza Piccola',
     tagline_de: 'Pizza und italienische Küche in Villach',
     tagline_en: 'Pizza and Italian food in Villach',
@@ -2585,6 +2637,7 @@ const RAW_VENUES = {
   // ── WELSER DÖNER PIZZA & BURGER · neu 2026-11-15 ──
   'welser-doner-pizza-burger': {
     id: 'welser-doner-pizza-burger',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Welser Döner Pizza & Burger',
     tagline_de: 'Kebab und Burger in Wels',
     tagline_en: 'Kebab and burgers in Wels',
@@ -2616,6 +2669,7 @@ const RAW_VENUES = {
   // ── GEFLÜGEL & FISCH OASE · neu 2026-11-15 ──
   'geflugel-fisch-oase-1020': {
     id: 'geflugel-fisch-oase-1020',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Geflügel & Fisch Oase',
     tagline_de: 'Imbiss in Wien-Leopoldstadt',
     tagline_en: 'Snack bar in Wien-Leopoldstadt',
@@ -2647,6 +2701,7 @@ const RAW_VENUES = {
   // ── CHINGU DAK · neu 2026-11-15 ──
   'chingu-dak-1050': {
     id: 'chingu-dak-1050',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Chingu Dak',
     tagline_de: 'Asiatische Küche in Wien-Margareten',
     tagline_en: 'Asian food in Wien-Margareten',
@@ -2678,6 +2733,7 @@ const RAW_VENUES = {
   // ── KEBAP ART · neu 2026-11-15 ──
   'kebap-art-1050': {
     id: 'kebap-art-1050',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Kebap Art',
     tagline_de: 'Kebab und Pizza in Wien-Margareten',
     tagline_en: 'Kebab and pizza in Wien-Margareten',
@@ -2768,7 +2824,8 @@ const RAW_VENUES = {
     address: 'Reinprechtsdorfer Straße 9, 1050 Wien',
     phone: '+43 6701951795',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/kezza-kebap-pizza' },
     categories: ['Imbiss', 'Kebab', 'Burger'],
     price: '',
     rating: 0,
@@ -2783,6 +2840,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „100% Halal Rindfleisch“ (Lieferando)', event_en: 'Halal per the venue: "100% Halal Rindfleisch" (Lieferando)' },
     ],
     similar: [],
     x: 45.8, y: 51.4,
@@ -2799,7 +2857,8 @@ const RAW_VENUES = {
     address: 'Pilgrambrücke (Stand), 1050 Wien',
     phone: '+43 6507274327',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/en/aut/vienna/restaurant/knig-kebab-schnitzel-hot-dog-helal' },
     categories: ['Imbiss', 'Kebab', 'Türkisch'],
     price: '',
     rating: 0,
@@ -2814,6 +2873,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „König Kebab, Schnitzel & Hot Dog (HELAL)“ (Wolt)', event_en: 'Halal per the venue: "König Kebab, Schnitzel & Hot Dog (HELAL)" (Wolt)' },
     ],
     similar: [],
     x: 46.2, y: 55.6,
@@ -3014,7 +3074,8 @@ const RAW_VENUES = {
     address: 'Quellenstraße 115, 1100 Wien',
     phone: '+43 6601100292',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/schnitzelstube' },
     categories: ['Imbiss', 'Burger', 'Orientalisch'],
     price: '',
     rating: 0,
@@ -3029,6 +3090,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „100% halal and fresh daily“ (Wolt)', event_en: 'Halal per the venue: "100% halal and fresh daily" (Wolt)' },
     ],
     similar: [],
     x: 51.7, y: 66.7,
@@ -3112,6 +3174,7 @@ const RAW_VENUES = {
   // ── LA SMASH BURGER UND PIZZERIA · neu 2026-11-15 ──
   'la-smash-burger-und-pizzeria-1120': {
     id: 'la-smash-burger-und-pizzeria-1120',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'La Smash Burger und Pizzeria',
     tagline_de: 'Burger und Pizza in Wien-Meidling',
     tagline_en: 'Burgers and pizza in Wien-Meidling',
@@ -3143,6 +3206,7 @@ const RAW_VENUES = {
   // ── PIZZA PANZO · neu 2026-11-15 ──
   'pizza-panzo-1120': {
     id: 'pizza-panzo-1120',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Pizza Panzo',
     tagline_de: 'Pizza und persische Küche in Wien-Meidling',
     tagline_en: 'Pizza and Persian food in Wien-Meidling',
@@ -3182,7 +3246,8 @@ const RAW_VENUES = {
     address: 'Märzstraße 132, 1140 Wien',
     phone: '+436609393036',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/city-pizza-burger-vienna' },
     categories: ['Imbiss', 'Burger', 'Pizza'],
     price: '',
     rating: 0,
@@ -3197,6 +3262,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Your Halal Haven for Pizza and Burger Cravings“ (Wolt)', event_en: 'Halal per the venue: "Your Halal Haven for Pizza and Burger Cravings" (Wolt)' },
     ],
     similar: [],
     x: 19.8, y: 44.7,
@@ -3214,7 +3280,8 @@ const RAW_VENUES = {
     address: 'Märzstraße 48, 1150 Wien',
     phone: '+4366493311149',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/hendl' },
     categories: ['Imbiss'],
     price: '',
     rating: 0,
@@ -3229,6 +3296,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „100% Halal! 100% Chicken! 100% Passion!“ (Wolt)', event_en: 'Halal per the venue: "100% Halal! 100% Chicken! 100% Passion!" (Wolt)' },
     ],
     similar: [],
     x: 33.2, y: 45.2,
@@ -3237,6 +3305,7 @@ const RAW_VENUES = {
   // ── JAKOB TANDOORI HAUS · neu 2026-11-15 ──
   'jakob-tandoori-haus-1150': {
     id: 'jakob-tandoori-haus-1150',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Jakob Tandoori Haus',
     tagline_de: 'Kebab und Pizza in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Kebab and pizza in Wien-Rudolfsheim-Fünfhaus',
@@ -3268,6 +3337,7 @@ const RAW_VENUES = {
   // ── NAMASTE WIEN · neu 2026-11-15 ──
   'namaste-wien-1150': {
     id: 'namaste-wien-1150',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Namaste Wien',
     tagline_de: 'Pizza und indische Küche in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Pizza and Indian food in Wien-Rudolfsheim-Fünfhaus',
@@ -3299,6 +3369,7 @@ const RAW_VENUES = {
   // ── PIZZA POPEYE · neu 2026-11-15 ──
   'pizza-popeye-1150': {
     id: 'pizza-popeye-1150',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Pizza Popeye',
     tagline_de: 'Kebab und Burger in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Kebab and burgers in Wien-Rudolfsheim-Fünfhaus',
@@ -3338,7 +3409,8 @@ const RAW_VENUES = {
     address: 'Schwendergasse 33/1, 1150 Wien',
     phone: '+436765221194',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/burek-pita-pizza' },
     categories: ['Imbiss', 'Pizza', 'Bosnisch'],
     price: '',
     rating: 0,
@@ -3353,6 +3425,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Alle Speisen sind Halal“ (Lieferando)', event_en: 'Halal per the venue: "Alle Speisen sind Halal" (Lieferando)' },
     ],
     similar: [],
     x: 35.3, y: 42.7,
@@ -3369,7 +3442,8 @@ const RAW_VENUES = {
     address: 'Stiegergasse 5/1, 1150 Wien',
     phone: '+4368181590408',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/style-pizza-burger-wien' },
     categories: ['Restaurant', 'Burger', 'Pizza'],
     price: '',
     rating: 0,
@@ -3384,6 +3458,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Alle Burger werden halal zubereitet“ (Wolt)', event_en: 'Halal per the venue: "Alle Burger werden halal zubereitet" (Wolt)' },
     ],
     similar: [],
     x: 31.1, y: 51.1,
@@ -3465,6 +3540,7 @@ const RAW_VENUES = {
   // ── HİRA BAR & GRILL · neu 2026-11-15 ──
   'hira-bar-grill-1170': {
     id: 'hira-bar-grill-1170',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'HİRA Bar & Grill',
     tagline_de: 'Burger und türkische Küche in Wien-Hernals',
     tagline_en: 'Burgers and Turkish food in Wien-Hernals',
@@ -3504,7 +3580,8 @@ const RAW_VENUES = {
     address: 'Hernalser Hauptstraße 131, 1170 Wien',
     phone: '+4313979192',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/la-gusta-halal' },
     categories: ['Imbiss', 'Kebab', 'Pizza'],
     price: '',
     rating: 0,
@@ -3519,6 +3596,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „La Gusta Halal“ (Wolt)', event_en: 'Halal per the venue: "La Gusta Halal" (Wolt)' },
     ],
     similar: [],
     x: 32.0, y: 27.0,
@@ -3527,6 +3605,7 @@ const RAW_VENUES = {
   // ── NAUGHTY! FRENCH TACOS · neu 2026-11-15 ──
   'naughty-french-tacos-1190': {
     id: 'naughty-french-tacos-1190',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Naughty! French Tacos',
     tagline_de: 'Imbiss in Wien-Döbling',
     tagline_en: 'Snack bar in Wien-Döbling',
@@ -3558,6 +3637,7 @@ const RAW_VENUES = {
   // ── BOLLYWOOD PIZZA · neu 2026-11-15 ──
   'bollywood-pizza-1200': {
     id: 'bollywood-pizza-1200',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'Bollywood Pizza',
     tagline_de: 'Pizza und indische Küche in Wien-Brigittenau',
     tagline_en: 'Pizza and Indian food in Wien-Brigittenau',
@@ -3589,6 +3669,7 @@ const RAW_VENUES = {
   // ── HÜHNERMEISTER ALLERHEILIGENPLATZ · neu 2026-11-15 ──
   'huhnermeister-allerheiligenplatz-1200': {
     id: 'huhnermeister-allerheiligenplatz-1200',
+    hidden: true, // 2026-11-17: Halal nur bei einzelnen Gerichten, nicht für das Lokal
     name: 'HühnerMeister Allerheiligenplatz',
     tagline_de: 'Imbiss in Wien-Brigittenau',
     tagline_en: 'Snack bar in Wien-Brigittenau',
@@ -3628,7 +3709,8 @@ const RAW_VENUES = {
     address: 'Prager Straße 38/1, 1210 Wien',
     phone: '+43 15895347',
     website: 'keyf-vienna.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://keyf-vienna.at' },
     categories: ['Restaurant', 'Kebab', 'Burger'],
     price: '',
     rating: 0,
@@ -3643,6 +3725,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Halal – Zertifizierte Zutaten“ (Website)', event_en: 'Halal per the venue: "Halal – Zertifizierte Zutaten" (Website)' },
     ],
     similar: [],
     x: 59.7, y: 9.6,
@@ -3659,7 +3742,8 @@ const RAW_VENUES = {
     address: 'Erzherzog-Karl-Straße 134, 1220 Wien',
     phone: '+43 6509595123',
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/morvarid-food-house' },
     categories: ['Restaurant', 'Kebab', 'Pizza'],
     price: '',
     rating: 0,
@@ -3674,6 +3758,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Pizza, Kebab, Schnitzel – Your delight, your home, all Halal“ (Wolt)', event_en: 'Halal per the venue: "Pizza, Kebab, Schnitzel – Your delight, your home, all Halal" (Wolt)' },
     ],
     similar: [],
     x: 72.3, y: 30.4,
@@ -3690,7 +3775,8 @@ const RAW_VENUES = {
     address: 'Adlergasse 9, 2700 Wiener Neustadt',
     phone: null,
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/arena-pizza-adlergasse' },
     categories: ['Imbiss', 'Kebab', 'Burger'],
     price: '',
     rating: 0,
@@ -3705,6 +3791,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „( Salami, Schinken, Speck etc. Halal )“ (Lieferando)', event_en: 'Halal per the venue: "( Salami, Schinken, Speck etc. Halal )" (Lieferando)' },
     ],
     similar: [],
     x: null, y: null,
@@ -3721,7 +3808,8 @@ const RAW_VENUES = {
     address: 'Schwechater Straße 59, 2322 Zwölfaxing',
     phone: null,
     website: null,
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/sados-pizza-schwechat' },
     categories: ['Imbiss', 'Pizza'],
     price: '',
     rating: 0,
@@ -3736,6 +3824,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal: „Familienpizza: alle Fleischprodukte sind Halal.“ (Lieferando)', event_en: 'Halal per the venue: "Familienpizza: alle Fleischprodukte sind Halal." (Lieferando)' },
     ],
     similar: [],
     x: null, y: null,
@@ -5365,6 +5454,7 @@ const RAW_VENUES = {
   // ── STEAK DÖNER · neu 2026-11-15 ──
   'steak-doner-1020': {
     id: 'steak-doner-1020',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Steak Döner',
     tagline_de: 'Kebab und türkische Küche in Wien-Leopoldstadt',
     tagline_en: 'Kebab and Turkish food in Wien-Leopoldstadt',
@@ -5627,6 +5717,7 @@ const RAW_VENUES = {
   // ── CUCCU GRILL-STEAK DÖNER · neu 2026-11-15 ──
   'cuccu-grill-steak-doner-1040': {
     id: 'cuccu-grill-steak-doner-1040',
+    hidden: true, // 2026-11-17: Lokal schreibt nirgends selbst „halal“ (Website/Instagram geprüft)
     name: 'Cuccu Grill-Steak Döner',
     tagline_de: 'Kebab in Wien-Wieden',
     tagline_en: 'Kebab in Wien-Wieden',
