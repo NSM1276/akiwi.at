@@ -39,9 +39,15 @@ function hide(v) {
   };
 }
 
+// `hidden: true` keeps a record in venues.js but off the site: the halal claim
+// rests only on a third party (a Wolt/Lieferando tag, OpenStreetMap, Zabihah),
+// or the venue does not fit the catalog. Remove the flag once the venue itself
+// says it is halal (then status 'claimed' + halal_source) or Akiwi has checked it.
+export const isHidden = (v) => v.hidden === true;
+
 export function publicVenues(raw) {
   return Object.fromEntries(
-    Object.entries(raw).map(([id, v]) => [id,
+    Object.entries(raw).filter(([, v]) => !isHidden(v)).map(([id, v]) => [id,
       isOnboarded(v) ? v : isChecked(v) ? { ...v, ...ratingsOff } : hide(v)]),
   );
 }
@@ -49,9 +55,12 @@ export function publicVenues(raw) {
 /** A chain's own price level and tags show only once one of its branches is onboarded or checked. */
 export function publicChains(raw, venues) {
   return Object.fromEntries(
-    Object.entries(raw).map(([id, c]) => {
-      const live = c.venueIds.some((vid) => venues[vid] && (isOnboarded(venues[vid]) || isChecked(venues[vid])));
-      return [id, live ? c : { ...c, price: '', tags: [] }];
-    }),
+    Object.entries(raw)
+      .map(([id, c]) => [id, { ...c, venueIds: c.venueIds.filter((vid) => venues[vid]) }])
+      .filter(([, c]) => c.venueIds.length > 0)
+      .map(([id, c]) => {
+        const live = c.venueIds.some((vid) => isOnboarded(venues[vid]) || isChecked(venues[vid]));
+        return [id, live ? c : { ...c, price: '', tags: [] }];
+      }),
   );
 }

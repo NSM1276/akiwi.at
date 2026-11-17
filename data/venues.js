@@ -24,6 +24,11 @@ import { publicVenues } from './public';
 //   Shown on the page and used by the 'Ohne Alkohol' filter under the same rules as hours and menu.
 //   A chain's status is derived from its branches (lowest status wins).
 //
+// HIDDEN: hidden: true keeps the record here but off the site (see data/public.js).
+//   Used when halal rests only on a third party (Lieferando/Wolt tag, OSM, Zabihah)
+//   or the venue does not fit the catalog (pastry shops). Remove the flag once the
+//   venue itself says it is halal (status 'claimed' + halal_source) or Akiwi checked it.
+//
 // Rating/reviews: only shown when reviews > 0. Leave rating: 0, reviews: 0
 // for a new venue.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -3739,6 +3744,7 @@ const RAW_VENUES = {
   // ── STADT KEBAP · neu 2026-11-15 ──
   'stadt-kebap-bregenz': {
     id: 'stadt-kebap-bregenz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Stadt Kebap',
     tagline_de: 'Kebab und türkische Küche in Bregenz',
     tagline_en: 'Kebab and Turkish food in Bregenz',
@@ -3770,6 +3776,7 @@ const RAW_VENUES = {
   // ── LINDEN BÄCKEREI · neu 2026-11-15 ──
   'linden-backerei-dornbirn': {
     id: 'linden-backerei-dornbirn',
+    hidden: true, // 2026-11-17: Konditorei/Bäckerei — passt nicht in den Katalog
     name: 'Linden Bäckerei',
     tagline_de: 'Café in Dornbirn',
     tagline_en: 'Café in Dornbirn',
@@ -3801,6 +3808,7 @@ const RAW_VENUES = {
   // ── FELD CHICKEN · neu 2026-11-15 ──
   'feld-chicken-feldkirch': {
     id: 'feld-chicken-feldkirch',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Feld Chicken',
     tagline_de: 'Burger in Feldkirch',
     tagline_en: 'Burgers in Feldkirch',
@@ -3832,6 +3840,7 @@ const RAW_VENUES = {
   // ── ASPENDOS - GRAMATNEUSIEDL · neu 2026-11-15 ──
   'aspendos-gramatneusiedl': {
     id: 'aspendos-gramatneusiedl',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'ASPENDOS - Gramatneusiedl',
     tagline_de: 'Kebab und Pizza in Gramatneusiedl',
     tagline_en: 'Kebab and pizza in Gramatneusiedl',
@@ -3863,6 +3872,7 @@ const RAW_VENUES = {
   // ── BEST FOOD GRILL ANNENSTRASSE · neu 2026-11-15 ──
   'best-food-grill-annenstrasse-graz': {
     id: 'best-food-grill-annenstrasse-graz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Best Food Grill Annenstraße',
     tagline_de: 'Kebab und Burger in Graz',
     tagline_en: 'Kebab and burgers in Graz',
@@ -3894,6 +3904,7 @@ const RAW_VENUES = {
   // ── BEST FOOD GRILL HAUPTBAHNHOF · neu 2026-11-15 ──
   'best-food-grill-hauptbahnhof-graz': {
     id: 'best-food-grill-hauptbahnhof-graz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Best Food Grill Hauptbahnhof',
     tagline_de: 'Kebab und Burger in Graz',
     tagline_en: 'Kebab and burgers in Graz',
@@ -3925,6 +3936,7 @@ const RAW_VENUES = {
   // ── BURGER MEISTER · neu 2026-11-15 ──
   'burger-meister-graz': {
     id: 'burger-meister-graz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Burger Meister',
     tagline_de: 'Burger in Graz',
     tagline_en: 'Burgers in Graz',
@@ -3957,6 +3969,7 @@ const RAW_VENUES = {
   // ── MY KEBAB · neu 2026-11-15 ──
   'my-kebab-graz': {
     id: 'my-kebab-graz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'My Kebab',
     tagline_de: 'Kebab in Graz',
     tagline_en: 'Kebab in Graz',
@@ -3988,6 +4001,7 @@ const RAW_VENUES = {
   // ── DOGAN'S BISTRO 2 YE & DOY · neu 2026-11-15 ──
   'dogan-s-bistro-2-ye-doy-hohenems': {
     id: 'dogan-s-bistro-2-ye-doy-hohenems',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Dogan\'s Bistro 2 Ye & Doy',
     tagline_de: 'Kebab und türkische Küche in Hohenems',
     tagline_en: 'Kebab and Turkish food in Hohenems',
@@ -4019,6 +4033,7 @@ const RAW_VENUES = {
   // ── GRENZ BISTRO · neu 2026-11-15 ──
   'grenz-bistro-horbranz': {
     id: 'grenz-bistro-horbranz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Grenz Bistro',
     tagline_de: 'Kebab in Hörbranz',
     tagline_en: 'Kebab in Hörbranz',
@@ -4051,6 +4066,7 @@ const RAW_VENUES = {
   // ── AZADI ORIENTAL TANDOOR RESTAURANT · neu 2026-11-15 ──
   'azadi-oriental-tandoor-restaurant-innsbruck': {
     id: 'azadi-oriental-tandoor-restaurant-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Azadi Oriental Tandoor Restaurant',
     tagline_de: 'Indische und persische Küche in Innsbruck',
     tagline_en: 'Indian food and Persian food in Innsbruck',
@@ -4082,6 +4098,7 @@ const RAW_VENUES = {
   // ── BOLLYWOOD TANDOORI · neu 2026-11-15 ──
   'bollywood-tandoori-innsbruck': {
     id: 'bollywood-tandoori-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Bollywood Tandoori',
     tagline_de: 'Indische Küche in Innsbruck',
     tagline_en: 'Indian food in Innsbruck',
@@ -4113,6 +4130,7 @@ const RAW_VENUES = {
   // ── CHILI RESTAURANT · neu 2026-11-15 ──
   'chili-restaurant-innsbruck': {
     id: 'chili-restaurant-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Chili Restaurant',
     tagline_de: 'Kebab und Pizza in Innsbruck',
     tagline_en: 'Kebab and pizza in Innsbruck',
@@ -4144,6 +4162,7 @@ const RAW_VENUES = {
   // ── DERMAN INNSBRUCK · neu 2026-11-15 ──
   'derman-innsbruck': {
     id: 'derman-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Derman Innsbruck',
     tagline_de: 'Kebab und Burger in Innsbruck',
     tagline_en: 'Kebab and burgers in Innsbruck',
@@ -4175,6 +4194,7 @@ const RAW_VENUES = {
   // ── KADI - LAZ UNS ESSEN · neu 2026-11-15 ──
   'kadi-laz-uns-essen-innsbruck': {
     id: 'kadi-laz-uns-essen-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Kadi - Laz uns Essen',
     tagline_de: 'Pizza und türkische Küche in Innsbruck',
     tagline_en: 'Pizza and Turkish food in Innsbruck',
@@ -4206,6 +4226,7 @@ const RAW_VENUES = {
   // ── RISTORANTE GARDA · neu 2026-11-15 ──
   'ristorante-garda-innsbruck': {
     id: 'ristorante-garda-innsbruck',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Ristorante Garda',
     tagline_de: 'Pizza und italienische Küche in Innsbruck',
     tagline_en: 'Pizza and Italian food in Innsbruck',
@@ -4237,6 +4258,7 @@ const RAW_VENUES = {
   // ── TANDOORI DELIGHT KLAGENFURT · neu 2026-11-15 ──
   'tandoori-delight-klagenfurt': {
     id: 'tandoori-delight-klagenfurt',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Tandoori Delight Klagenfurt',
     tagline_de: 'Indische und orientalische Küche in Klagenfurt am Wörthersee',
     tagline_en: 'Indian food and Middle Eastern food in Klagenfurt am Wörthersee',
@@ -4268,6 +4290,7 @@ const RAW_VENUES = {
   // ── DÜRNE’S PIZZA UND GRILL · neu 2026-11-15 ──
   'durne-s-pizza-und-grill-koblach': {
     id: 'durne-s-pizza-und-grill-koblach',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Dürne’s Pizza und Grill',
     tagline_de: 'Kebab und Pizza in Koblach',
     tagline_en: 'Kebab and pizza in Koblach',
@@ -4299,6 +4322,7 @@ const RAW_VENUES = {
   // ── MONTANA KEBAP · neu 2026-11-15 ──
   'montana-kebap-leoben': {
     id: 'montana-kebap-leoben',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Montana Kebap',
     tagline_de: 'Kebab und türkische Küche in Leoben',
     tagline_en: 'Kebab and Turkish food in Leoben',
@@ -4330,6 +4354,7 @@ const RAW_VENUES = {
   // ── BIG JOE FALAFEL · neu 2026-11-15 ──
   'big-joe-falafel-linz': {
     id: 'big-joe-falafel-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Big Joe Falafel',
     tagline_de: 'Orientalische Küche in Linz',
     tagline_en: 'Middle Eastern food in Linz',
@@ -4361,6 +4386,7 @@ const RAW_VENUES = {
   // ── DÖNERIUM · neu 2026-11-15 ──
   'donerium-linz': {
     id: 'donerium-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'DÖNERIUM',
     tagline_de: 'Kebab in Linz',
     tagline_en: 'Kebab in Linz',
@@ -4392,6 +4418,7 @@ const RAW_VENUES = {
   // ── HALFETTO PIZZA-KEBAP-BURGER · neu 2026-11-15 ──
   'halfetto-pizza-kebap-burger-linz': {
     id: 'halfetto-pizza-kebap-burger-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Halfetto Pizza-Kebap-Burger',
     tagline_de: 'Kebab und Burger in Linz',
     tagline_en: 'Kebab and burgers in Linz',
@@ -4423,6 +4450,7 @@ const RAW_VENUES = {
   // ── PIZZA-SERVICE SOLO · neu 2026-11-15 ──
   'pizza-service-solo-linz': {
     id: 'pizza-service-solo-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizza-Service Solo',
     tagline_de: 'Kebab und Pizza in Linz',
     tagline_en: 'Kebab and pizza in Linz',
@@ -4454,6 +4482,7 @@ const RAW_VENUES = {
   // ── PRIMO BURGER · neu 2026-11-15 ──
   'primo-burger-linz': {
     id: 'primo-burger-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Primo Burger',
     tagline_de: 'Burger in Linz',
     tagline_en: 'Burgers in Linz',
@@ -4485,6 +4514,7 @@ const RAW_VENUES = {
   // ── RESTAURANT AYAM ZAMAN · neu 2026-11-15 ──
   'restaurant-ayam-zaman-linz': {
     id: 'restaurant-ayam-zaman-linz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Restaurant Ayam Zaman',
     tagline_de: 'Orientalische Küche in Linz',
     tagline_en: 'Middle Eastern food in Linz',
@@ -4517,6 +4547,7 @@ const RAW_VENUES = {
   // ── CITY KEBAP · neu 2026-11-15 ──
   'city-kebap-salzburg': {
     id: 'city-kebap-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'City Kebap',
     tagline_de: 'Kebab und türkische Küche in Salzburg',
     tagline_en: 'Kebab and Turkish food in Salzburg',
@@ -4548,6 +4579,7 @@ const RAW_VENUES = {
   // ── HANA'S RASOI · neu 2026-11-15 ──
   'hana-s-rasoi-salzburg': {
     id: 'hana-s-rasoi-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Hana\'s Rasoi',
     tagline_de: 'Indische Küche in Salzburg',
     tagline_en: 'Indian food in Salzburg',
@@ -4579,6 +4611,7 @@ const RAW_VENUES = {
   // ── MAHARAJA INDIAN RESTAURANT · neu 2026-11-15 ──
   'maharaja-indian-restaurant-salzburg': {
     id: 'maharaja-indian-restaurant-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Maharaja Indian Restaurant',
     tagline_de: 'Indische Küche in Salzburg',
     tagline_en: 'Indian food in Salzburg',
@@ -4610,6 +4643,7 @@ const RAW_VENUES = {
   // ── OSSIS SPEZIALITÄTEN · neu 2026-11-15 ──
   'ossis-spezialitaten-salzburg': {
     id: 'ossis-spezialitaten-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Ossis Spezialitäten',
     tagline_de: 'Kebab und Pizza in Salzburg',
     tagline_en: 'Kebab and pizza in Salzburg',
@@ -4643,6 +4677,7 @@ const RAW_VENUES = {
   // ── TAJ MAHAL · neu 2026-11-15 ──
   'taj-mahal-salzburg': {
     id: 'taj-mahal-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Taj Mahal',
     tagline_de: 'Indische Küche in Salzburg',
     tagline_en: 'Indian food in Salzburg',
@@ -4674,6 +4709,7 @@ const RAW_VENUES = {
   // ── TASTY TANTUNI · neu 2026-11-15 ──
   'tasty-tantuni-salzburg': {
     id: 'tasty-tantuni-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Tasty Tantuni',
     tagline_de: 'Kebab und türkische Küche in Salzburg',
     tagline_en: 'Kebab and Turkish food in Salzburg',
@@ -4705,6 +4741,7 @@ const RAW_VENUES = {
   // ── UNCLE FALAFEL · neu 2026-11-15 ──
   'uncle-falafel-salzburg': {
     id: 'uncle-falafel-salzburg',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Uncle Falafel',
     tagline_de: 'Orientalische Küche in Salzburg',
     tagline_en: 'Middle Eastern food in Salzburg',
@@ -4736,6 +4773,7 @@ const RAW_VENUES = {
   // ── RIALTO PIZZERIA JACKSON · neu 2026-11-15 ──
   'rialto-pizzeria-jackson-schwechat': {
     id: 'rialto-pizzeria-jackson-schwechat',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Rialto Pizzeria JACKSON',
     tagline_de: 'Pizza in Schwechat',
     tagline_en: 'Pizza in Schwechat',
@@ -4767,6 +4805,7 @@ const RAW_VENUES = {
   // ── ANTIOCHIA · neu 2026-11-15 ──
   'antiochia-ternitz': {
     id: 'antiochia-ternitz',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Antiochia',
     tagline_de: 'Kebab und Pizza in Ternitz',
     tagline_en: 'Kebab and pizza in Ternitz',
@@ -4799,6 +4838,7 @@ const RAW_VENUES = {
   // ── DELI KING · neu 2026-11-15 ──
   'deli-king-vosendorf': {
     id: 'deli-king-vosendorf',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Deli King',
     tagline_de: 'Indische Küche in Vösendorf',
     tagline_en: 'Indian food in Vösendorf',
@@ -4830,6 +4870,7 @@ const RAW_VENUES = {
   // ── SOLO · neu 2026-11-15 ──
   'solo-wels': {
     id: 'solo-wels',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Solo',
     tagline_de: 'Pizza in Wels',
     tagline_en: 'Pizza in Wels',
@@ -4937,6 +4978,7 @@ const RAW_VENUES = {
   // ── CHAIHONA · neu 2026-11-15 ──
   'chaihona-1010': {
     id: 'chaihona-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Chaihona',
     tagline_de: 'Restaurant in Wien-Innere Stadt',
     tagline_en: 'Restaurant in Wien-Innere Stadt',
@@ -4968,6 +5010,7 @@ const RAW_VENUES = {
   // ── HAMAMA · neu 2026-11-15 ──
   'hamama-1010': {
     id: 'hamama-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Hamama',
     tagline_de: 'Orientalische Küche in Wien-Innere Stadt',
     tagline_en: 'Middle Eastern food in Wien-Innere Stadt',
@@ -4999,6 +5042,7 @@ const RAW_VENUES = {
   // ── INDIA GATE · neu 2026-11-15 ──
   'india-gate-1010': {
     id: 'india-gate-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'India Gate',
     tagline_de: 'Pizza und indische Küche in Wien-Innere Stadt',
     tagline_en: 'Pizza and Indian food in Wien-Innere Stadt',
@@ -5030,6 +5074,7 @@ const RAW_VENUES = {
   // ── INDIEN VILLAGE · neu 2026-11-15 ──
   'indien-village-1010': {
     id: 'indien-village-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Indien Village',
     tagline_de: 'Indische Küche in Wien-Innere Stadt',
     tagline_en: 'Indian food in Wien-Innere Stadt',
@@ -5062,6 +5107,7 @@ const RAW_VENUES = {
   // ── LORD OF S · neu 2026-11-15 ──
   'lord-of-s-1010': {
     id: 'lord-of-s-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Lord of S',
     tagline_de: 'Orientalische Küche in Wien-Innere Stadt',
     tagline_en: 'Middle Eastern food in Wien-Innere Stadt',
@@ -5093,6 +5139,7 @@ const RAW_VENUES = {
   // ── NIRVANA – THE INDIAN RESTAURANT · neu 2026-11-15 ──
   'nirvana-the-indian-restaurant-1010': {
     id: 'nirvana-the-indian-restaurant-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Nirvana – The Indian Restaurant',
     tagline_de: 'Indische Küche in Wien-Innere Stadt',
     tagline_en: 'Indian food in Wien-Innere Stadt',
@@ -5124,6 +5171,7 @@ const RAW_VENUES = {
   // ── O'TACOS KÄRNTNER STRASSE · neu 2026-11-15 ──
   'o-tacos-karntner-strasse-1010': {
     id: 'o-tacos-karntner-strasse-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Kärntner Straße',
     tagline_de: 'Imbiss in Wien-Innere Stadt',
     tagline_en: 'Snack bar in Wien-Innere Stadt',
@@ -5155,6 +5203,7 @@ const RAW_VENUES = {
   // ── O'TACOS KOHLMARKT · neu 2026-11-15 ──
   'o-tacos-kohlmarkt-1010': {
     id: 'o-tacos-kohlmarkt-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Kohlmarkt',
     tagline_de: 'Imbiss in Wien-Innere Stadt',
     tagline_en: 'Snack bar in Wien-Innere Stadt',
@@ -5186,6 +5235,7 @@ const RAW_VENUES = {
   // ── O'TACOS ROTENTURMSTRASSE · neu 2026-11-15 ──
   'o-tacos-rotenturmstrasse-1010': {
     id: 'o-tacos-rotenturmstrasse-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Rotenturmstraße',
     tagline_de: 'Imbiss in Wien-Innere Stadt',
     tagline_en: 'Snack bar in Wien-Innere Stadt',
@@ -5218,6 +5268,7 @@ const RAW_VENUES = {
   // ── RESTAURANT KOH-I-NOOR · neu 2026-11-15 ──
   'restaurant-koh-i-noor-1010': {
     id: 'restaurant-koh-i-noor-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Restaurant Koh-i-noor',
     tagline_de: 'Indische Küche in Wien-Innere Stadt',
     tagline_en: 'Indian food in Wien-Innere Stadt',
@@ -5249,6 +5300,7 @@ const RAW_VENUES = {
   // ── SCHESCH BESCH · neu 2026-11-15 ──
   'schesch-besch-1010': {
     id: 'schesch-besch-1010',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Schesch Besch',
     tagline_de: 'Orientalische Küche in Wien-Innere Stadt',
     tagline_en: 'Middle Eastern food in Wien-Innere Stadt',
@@ -5280,6 +5332,7 @@ const RAW_VENUES = {
   // ── AE CIGKÖFTECI - VEGANHOME · neu 2026-11-15 ──
   'ae-cigkofteci-veganhome-1020': {
     id: 'ae-cigkofteci-veganhome-1020',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'AE Cigköfteci - Veganhome',
     tagline_de: 'Türkische Küche in Wien-Leopoldstadt',
     tagline_en: 'Turkish food in Wien-Leopoldstadt',
@@ -5381,6 +5434,7 @@ const RAW_VENUES = {
   // ── TÜRKIS PRATERSTERN · neu 2026-11-15 ──
   'turkis-praterstern': {
     id: 'turkis-praterstern',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Türkis Praterstern',
     tagline_de: 'Türkische Küche in Wien-Leopoldstadt',
     tagline_en: 'Turkish food in Wien-Leopoldstadt',
@@ -5412,6 +5466,7 @@ const RAW_VENUES = {
   // ── GRILL STORY · neu 2026-11-15 ──
   'grill-story-1030': {
     id: 'grill-story-1030',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Grill Story',
     tagline_de: 'Burger und balkanküche in Wien-Landstraße',
     tagline_en: 'Burgers and Balkan food in Wien-Landstraße',
@@ -5443,6 +5498,7 @@ const RAW_VENUES = {
   // ── HAYAT PIZZA KEBAP · neu 2026-11-15 ──
   'hayat-pizza-kebap-1030': {
     id: 'hayat-pizza-kebap-1030',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Hayat Pizza Kebap',
     tagline_de: 'Kebab und Pizza in Wien-Landstraße',
     tagline_en: 'Kebab and pizza in Wien-Landstraße',
@@ -5474,6 +5530,7 @@ const RAW_VENUES = {
   // ── KÖNIG · neu 2026-11-15 ──
   'konig-1030': {
     id: 'konig-1030',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'KÖNIG',
     tagline_de: 'Kebab und Pizza in Wien-Landstraße',
     tagline_en: 'Kebab and pizza in Wien-Landstraße',
@@ -5512,8 +5569,9 @@ const RAW_VENUES = {
     districtName: 'Landstraße',
     address: 'Haidingergasse 25, 1030 Wien',
     phone: '+43 68181228575',
-    website: null,
-    status: 'self',
+    website: 'diddi-burger.at',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/diddi.burger/' },
     categories: ['Imbiss', 'Burger'],
     price: '',
     rating: 0,
@@ -5528,6 +5586,7 @@ const RAW_VENUES = {
     reviews_list: [],
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
+      { date: '2026-11-17', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Instagram-Profil des Lokals gesehen: „حلال“ (Halal) in der Bio', event_en: 'Saw the venue\'s Instagram profile: "حلال" (halal) in the bio' },
     ],
     similar: [],
     x: 58.3, y: 46.0,
@@ -5536,6 +5595,7 @@ const RAW_VENUES = {
   // ── VULCANO · neu 2026-11-15 ──
   'vulcano-1030': {
     id: 'vulcano-1030',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Vulcano',
     tagline_de: 'Pizza und italienische Küche in Wien-Landstraße',
     tagline_en: 'Pizza and Italian food in Wien-Landstraße',
@@ -5641,6 +5701,7 @@ const RAW_VENUES = {
   // ── JARITA'S INDIAN KITCHEN · neu 2026-11-15 ──
   'jarita-s-indian-kitchen-1040': {
     id: 'jarita-s-indian-kitchen-1040',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Jarita\'s Indian Kitchen',
     tagline_de: 'Indische Küche in Wien-Wieden',
     tagline_en: 'Indian food in Wien-Wieden',
@@ -5672,6 +5733,7 @@ const RAW_VENUES = {
   // ── O'TACOS NASCHMARKT · neu 2026-11-15 ──
   'o-tacos-naschmarkt-1040': {
     id: 'o-tacos-naschmarkt-1040',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Naschmarkt',
     tagline_de: 'Imbiss in Wien-Wieden',
     tagline_en: 'Snack bar in Wien-Wieden',
@@ -5704,6 +5766,7 @@ const RAW_VENUES = {
   // ── TOMOCHAN RAMEN · neu 2026-11-15 ──
   'tomochan-ramen-1040': {
     id: 'tomochan-ramen-1040',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Tomochan Ramen',
     tagline_de: 'Asiatische Küche in Wien-Wieden',
     tagline_en: 'Asian food in Wien-Wieden',
@@ -5735,6 +5798,7 @@ const RAW_VENUES = {
   // ── APADANA · neu 2026-11-15 ──
   'apadana-1050': {
     id: 'apadana-1050',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Apadana',
     tagline_de: 'Persische Küche in Wien-Margareten',
     tagline_en: 'Persian food in Wien-Margareten',
@@ -5766,6 +5830,7 @@ const RAW_VENUES = {
   // ── CHICKEN KING 1050 · neu 2026-11-15 ──
   'chicken-king-1050': {
     id: 'chicken-king-1050',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Chicken King 1050',
     tagline_de: 'Imbiss in Wien-Margareten',
     tagline_en: 'Snack bar in Wien-Margareten',
@@ -5797,6 +5862,7 @@ const RAW_VENUES = {
   // ── HANA · neu 2026-11-15 ──
   'hana-1060': {
     id: 'hana-1060',
+    hidden: true, // 2026-11-17: Konditorei/Bäckerei — passt nicht in den Katalog
     name: 'HANA',
     tagline_de: 'Orientalische Küche in Wien-Mariahilf',
     tagline_en: 'Middle Eastern food in Wien-Mariahilf',
@@ -5828,6 +5894,7 @@ const RAW_VENUES = {
   // ── O'TACOS MARIAHILFER STRASSE 34 · neu 2026-11-15 ──
   'o-tacos-mariahilfer-strasse-34-1070': {
     id: 'o-tacos-mariahilfer-strasse-34-1070',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Mariahilfer Straße 34',
     tagline_de: 'Imbiss in Wien-Neubau',
     tagline_en: 'Snack bar in Wien-Neubau',
@@ -5859,6 +5926,7 @@ const RAW_VENUES = {
   // ── O'TACOS MARIAHILFER STRASSE 84 · neu 2026-11-15 ──
   'o-tacos-mariahilfer-strasse-84-1070': {
     id: 'o-tacos-mariahilfer-strasse-84-1070',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Mariahilfer Straße 84',
     tagline_de: 'Imbiss in Wien-Neubau',
     tagline_en: 'Snack bar in Wien-Neubau',
@@ -5890,6 +5958,7 @@ const RAW_VENUES = {
   // ── DON CHICKOTE · neu 2026-11-15 ──
   'don-chickote-1090': {
     id: 'don-chickote-1090',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Don Chickote',
     tagline_de: 'Imbiss in Wien-Alsergrund',
     tagline_en: 'Snack bar in Wien-Alsergrund',
@@ -5921,6 +5990,7 @@ const RAW_VENUES = {
   // ── NINO · neu 2026-11-15 ──
   'nino-1090': {
     id: 'nino-1090',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Nino',
     tagline_de: 'Kebab und orientalische Küche in Wien-Alsergrund',
     tagline_en: 'Kebab and Middle Eastern food in Wien-Alsergrund',
@@ -5952,6 +6022,7 @@ const RAW_VENUES = {
   // ── RESTAURANT HATAM · neu 2026-11-15 ──
   'restaurant-hatam-1090': {
     id: 'restaurant-hatam-1090',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Restaurant Hatam',
     tagline_de: 'Persische Küche in Wien-Alsergrund',
     tagline_en: 'Persian food in Wien-Alsergrund',
@@ -5983,6 +6054,7 @@ const RAW_VENUES = {
   // ── ULI'S KEBAB UND PIZZA · neu 2026-11-15 ──
   'uli-s-kebab-und-pizza-1090': {
     id: 'uli-s-kebab-und-pizza-1090',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Uli\'s Kebab und Pizza',
     tagline_de: 'Kebab und Pizza in Wien-Alsergrund',
     tagline_en: 'Kebab and pizza in Wien-Alsergrund',
@@ -6014,6 +6086,7 @@ const RAW_VENUES = {
   // ── BAB AL YEMEN · neu 2026-11-15 ──
   'bab-al-yemen-1100': {
     id: 'bab-al-yemen-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Bab Al Yemen',
     tagline_de: 'Orientalische Küche in Wien-Favoriten',
     tagline_en: 'Middle Eastern food in Wien-Favoriten',
@@ -6045,6 +6118,7 @@ const RAW_VENUES = {
   // ── CAFÉ GRILL PIZZERIA MEMO · neu 2026-11-15 ──
   'cafe-grill-pizzeria-memo-1100': {
     id: 'cafe-grill-pizzeria-memo-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Café Grill Pizzeria Memo',
     tagline_de: 'Pizza und türkische Küche in Wien-Favoriten',
     tagline_en: 'Pizza and Turkish food in Wien-Favoriten',
@@ -6151,6 +6225,7 @@ const RAW_VENUES = {
   // ── DÖNER'CI · neu 2026-11-15 ──
   'doner-ci-1100': {
     id: 'doner-ci-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Döner\'ci',
     tagline_de: 'Kebab und Burger in Wien-Favoriten',
     tagline_en: 'Kebab and burgers in Wien-Favoriten',
@@ -6182,6 +6257,7 @@ const RAW_VENUES = {
   // ── FERHAT DÖNER · neu 2026-11-15 ──
   'ferhat-doner-1100': {
     id: 'ferhat-doner-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Ferhat Döner',
     tagline_de: 'Kebab und türkische Küche in Wien-Favoriten',
     tagline_en: 'Kebab and Turkish food in Wien-Favoriten',
@@ -6213,6 +6289,7 @@ const RAW_VENUES = {
   // ── KÖFTECI · neu 2026-11-15 ──
   'kofteci-1100': {
     id: 'kofteci-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Köfteci',
     tagline_de: 'Kebab und türkische Küche in Wien-Favoriten',
     tagline_en: 'Kebab and Turkish food in Wien-Favoriten',
@@ -6244,6 +6321,7 @@ const RAW_VENUES = {
   // ── MENSA 4 YOU · neu 2026-11-15 ──
   'mensa-4-you-1100': {
     id: 'mensa-4-you-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Mensa 4 You',
     tagline_de: 'Kebab in Wien-Favoriten',
     tagline_en: 'Kebab in Wien-Favoriten',
@@ -6275,6 +6353,7 @@ const RAW_VENUES = {
   // ── O'TACOS HAUPTBAHNHOF · neu 2026-11-15 ──
   'o-tacos-hauptbahnhof-1100': {
     id: 'o-tacos-hauptbahnhof-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Hauptbahnhof',
     tagline_de: 'Imbiss in Wien-Favoriten',
     tagline_en: 'Snack bar in Wien-Favoriten',
@@ -6397,6 +6476,7 @@ const RAW_VENUES = {
   // ── RHULO ÇIĞKÖFTE GUDRUNSTRASSE · neu 2026-11-15 ──
   'rhulo-cigkofte-gudrunstrasse-1100': {
     id: 'rhulo-cigkofte-gudrunstrasse-1100',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Rhulo Çiğköfte Gudrunstraße',
     tagline_de: 'Türkische Küche in Wien-Favoriten',
     tagline_en: 'Turkish food in Wien-Favoriten',
@@ -6428,6 +6508,7 @@ const RAW_VENUES = {
   // ── PIZZERIA CAPRESE · neu 2026-11-15 ──
   'pizzeria-caprese-1110': {
     id: 'pizzeria-caprese-1110',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizzeria Caprese',
     tagline_de: 'Pizza und italienische Küche in Wien-Simmering',
     tagline_en: 'Pizza and Italian food in Wien-Simmering',
@@ -6459,6 +6540,7 @@ const RAW_VENUES = {
   // ── DON MATLI · neu 2026-11-15 ──
   'don-matli-1120': {
     id: 'don-matli-1120',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Don Matli',
     tagline_de: 'Kebab und Pizza in Wien-Meidling',
     tagline_en: 'Kebab and pizza in Wien-Meidling',
@@ -6490,6 +6572,7 @@ const RAW_VENUES = {
   // ── HATAY KITCHEN · neu 2026-11-15 ──
   'hatay-kitchen-1120': {
     id: 'hatay-kitchen-1120',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Hatay Kitchen',
     tagline_de: 'Kebab und Pizza in Wien-Meidling',
     tagline_en: 'Kebab and pizza in Wien-Meidling',
@@ -6523,6 +6606,7 @@ const RAW_VENUES = {
   // ── PIZZERIA LA CASA · neu 2026-11-15 ──
   'pizzeria-la-casa-1140': {
     id: 'pizzeria-la-casa-1140',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizzeria La Casa',
     tagline_de: 'Pizza in Wien-Penzing',
     tagline_en: 'Pizza in Wien-Penzing',
@@ -6554,6 +6638,7 @@ const RAW_VENUES = {
   // ── ASIA HAUS RESTAURANT HUI CHUN YUAN · neu 2026-11-15 ──
   'asia-haus-restaurant-hui-chun-yuan-1150': {
     id: 'asia-haus-restaurant-hui-chun-yuan-1150',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Asia Haus Restaurant Hui Chun Yuan',
     tagline_de: 'Asiatische Küche in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Asian food in Wien-Rudolfsheim-Fünfhaus',
@@ -6585,6 +6670,7 @@ const RAW_VENUES = {
   // ── BELLISSIMA · neu 2026-11-15 ──
   'bellissima-1150': {
     id: 'bellissima-1150',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Bellissima',
     tagline_de: 'Burger und Pizza in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Burgers and pizza in Wien-Rudolfsheim-Fünfhaus',
@@ -6616,6 +6702,7 @@ const RAW_VENUES = {
   // ── ROYAL INDISCHES RESTAURANT · neu 2026-11-15 ──
   'royal-indisches-restaurant-1150': {
     id: 'royal-indisches-restaurant-1150',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Royal Indisches Restaurant',
     tagline_de: 'Indische Küche in Wien-Rudolfsheim-Fünfhaus',
     tagline_en: 'Indian food in Wien-Rudolfsheim-Fünfhaus',
@@ -6647,6 +6734,7 @@ const RAW_VENUES = {
   // ── AL DAMAS RESTAURANT · neu 2026-11-15 ──
   'al-damas-restaurant-1160': {
     id: 'al-damas-restaurant-1160',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Al Damas Restaurant',
     tagline_de: 'Orientalische Küche in Wien-Ottakring',
     tagline_en: 'Middle Eastern food in Wien-Ottakring',
@@ -6678,6 +6766,7 @@ const RAW_VENUES = {
   // ── DOLCE LAGO · neu 2026-11-15 ──
   'dolce-lago-1160': {
     id: 'dolce-lago-1160',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Dolce Lago',
     tagline_de: 'Restaurant in Wien-Ottakring',
     tagline_en: 'Restaurant in Wien-Ottakring',
@@ -6710,6 +6799,7 @@ const RAW_VENUES = {
   // ── LIMAN · neu 2026-11-15 ──
   'liman-1160': {
     id: 'liman-1160',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Liman',
     tagline_de: 'Türkische Küche in Wien-Ottakring',
     tagline_en: 'Turkish food in Wien-Ottakring',
@@ -6741,6 +6831,7 @@ const RAW_VENUES = {
   // ── PIZZA IMBISS · neu 2026-11-15 ──
   'pizza-imbiss-1160': {
     id: 'pizza-imbiss-1160',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizza Imbiss',
     tagline_de: 'Burger und Pizza in Wien-Ottakring',
     tagline_en: 'Burgers and pizza in Wien-Ottakring',
@@ -6772,6 +6863,7 @@ const RAW_VENUES = {
   // ── PIZZERIA BEN VENUTO · neu 2026-11-15 ──
   'pizzeria-ben-venuto-1160': {
     id: 'pizzeria-ben-venuto-1160',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizzeria Ben Venuto',
     tagline_de: 'Pizza und italienische Küche in Wien-Ottakring',
     tagline_en: 'Pizza and Italian food in Wien-Ottakring',
@@ -6803,6 +6895,7 @@ const RAW_VENUES = {
   // ── HÜHNERPARADIES · neu 2026-11-15 ──
   'huhnerparadies-1170': {
     id: 'huhnerparadies-1170',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Hühnerparadies',
     tagline_de: 'Imbiss in Wien-Hernals',
     tagline_en: 'Snack bar in Wien-Hernals',
@@ -6834,6 +6927,7 @@ const RAW_VENUES = {
   // ── PIZZA MEISTER · neu 2026-11-15 ──
   'pizza-meister-1170': {
     id: 'pizza-meister-1170',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Pizza Meister',
     tagline_de: 'Burger und Pizza in Wien-Hernals',
     tagline_en: 'Burgers and pizza in Wien-Hernals',
@@ -6865,6 +6959,7 @@ const RAW_VENUES = {
   // ── C'EST BON – ORIENTALISCHE SPEZIALITÄTEN · neu 2026-11-15 ──
   'c-est-bon-orientalische-spezialitaten-1180': {
     id: 'c-est-bon-orientalische-spezialitaten-1180',
+    hidden: true, // 2026-11-17: Konditorei/Bäckerei — passt nicht in den Katalog
     name: 'C\'est Bon – Orientalische Spezialitäten',
     tagline_de: 'Orientalische Küche in Wien-Währing',
     tagline_en: 'Middle Eastern food in Wien-Währing',
@@ -6896,6 +6991,7 @@ const RAW_VENUES = {
   // ── O'TACOS WÄHRINGER STRASSE · neu 2026-11-15 ──
   'o-tacos-wahringer-strasse-1180': {
     id: 'o-tacos-wahringer-strasse-1180',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Währinger Straße',
     tagline_de: 'Imbiss in Wien-Währing',
     tagline_en: 'Snack bar in Wien-Währing',
@@ -6927,6 +7023,7 @@ const RAW_VENUES = {
   // ── TERMEH – PERSISCHE KÜCHE · neu 2026-11-15 ──
   'termeh-persische-kuche-1190': {
     id: 'termeh-persische-kuche-1190',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Termeh – Persische Küche',
     tagline_de: 'Persische Küche in Wien-Döbling',
     tagline_en: 'Persian food in Wien-Döbling',
@@ -7026,6 +7123,7 @@ const RAW_VENUES = {
   // ── DAS GÖXL · neu 2026-11-15 ──
   'das-goxl-1200': {
     id: 'das-goxl-1200',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Das Göxl',
     tagline_de: 'Imbiss in Wien-Brigittenau',
     tagline_en: 'Snack bar in Wien-Brigittenau',
@@ -7057,6 +7155,7 @@ const RAW_VENUES = {
   // ── LA ESNO PIZZERIA & RESTAURANT · neu 2026-11-15 ──
   'la-esno-pizzeria-restaurant-1200': {
     id: 'la-esno-pizzeria-restaurant-1200',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'La Esno Pizzeria & Restaurant',
     tagline_de: 'Burger und Pizza in Wien-Brigittenau',
     tagline_en: 'Burgers and pizza in Wien-Brigittenau',
@@ -7088,6 +7187,7 @@ const RAW_VENUES = {
   // ── DAS HAUS DES KEBAPS · neu 2026-11-15 ──
   'das-haus-des-kebaps-1210': {
     id: 'das-haus-des-kebaps-1210',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Das Haus des Kebaps',
     tagline_de: 'Kebab und Burger in Wien-Floridsdorf',
     tagline_en: 'Kebab and burgers in Wien-Floridsdorf',
@@ -7119,6 +7219,7 @@ const RAW_VENUES = {
   // ── MALAK AL-AQSA · neu 2026-11-15 ──
   'malak-al-aqsa-1210': {
     id: 'malak-al-aqsa-1210',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Malak Al-Aqsa',
     tagline_de: 'Orientalische Küche in Wien-Floridsdorf',
     tagline_en: 'Middle Eastern food in Wien-Floridsdorf',
@@ -7150,6 +7251,7 @@ const RAW_VENUES = {
   // ── NEFIS · neu 2026-11-15 ──
   'nefis-1210': {
     id: 'nefis-1210',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Nefis',
     tagline_de: 'Kebab und Pizza in Wien-Floridsdorf',
     tagline_en: 'Kebab and pizza in Wien-Floridsdorf',
@@ -7181,6 +7283,7 @@ const RAW_VENUES = {
   // ── TYBAH · neu 2026-11-15 ──
   'tybah-1210': {
     id: 'tybah-1210',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Tybah',
     tagline_de: 'Burger und Pizza in Wien-Floridsdorf',
     tagline_en: 'Burgers and pizza in Wien-Floridsdorf',
@@ -7212,6 +7315,7 @@ const RAW_VENUES = {
   // ── O'TACOS DONAUZENTRUM · neu 2026-11-15 ──
   'o-tacos-donauzentrum-1220': {
     id: 'o-tacos-donauzentrum-1220',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'O\'Tacos Donauzentrum',
     tagline_de: 'Imbiss in Wien-Donaustadt',
     tagline_en: 'Snack bar in Wien-Donaustadt',
@@ -7244,6 +7348,7 @@ const RAW_VENUES = {
   // ── SOLO ITALIANO / ZUM HUNGRIGEN SPATZ · neu 2026-11-15 ──
   'solo-italiano-zum-hungrigen-spatz-1220': {
     id: 'solo-italiano-zum-hungrigen-spatz-1220',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Solo Italiano / Zum Hungrigen Spatz',
     tagline_de: 'Burger und Pizza in Wien-Donaustadt',
     tagline_en: 'Burgers and pizza in Wien-Donaustadt',
@@ -7275,6 +7380,7 @@ const RAW_VENUES = {
   // ── MURO'S SMASH BURGER & HOT DOG · neu 2026-11-15 ──
   'muro-s-smash-burger-hot-dog-1230': {
     id: 'muro-s-smash-burger-hot-dog-1230',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Muro\'s Smash Burger & Hot Dog',
     tagline_de: 'Kebab und Burger in Wien-Liesing',
     tagline_en: 'Kebab and burgers in Wien-Liesing',
@@ -7306,6 +7412,7 @@ const RAW_VENUES = {
   // ── ANTONIO'S BASMATI · neu 2026-11-15 ──
   'antonio-s-basmati-zell-am-see': {
     id: 'antonio-s-basmati-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Antonio\'s Basmati',
     tagline_de: 'Pizza und indische Küche in Zell am See',
     tagline_en: 'Pizza and Indian food in Zell am See',
@@ -7337,6 +7444,7 @@ const RAW_VENUES = {
   // ── ISTANBUL RESTAURANT · neu 2026-11-15 ──
   'istanbul-restaurant-zell-am-see': {
     id: 'istanbul-restaurant-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Istanbul Restaurant',
     tagline_de: 'Kebab und türkische Küche in Zell am See',
     tagline_en: 'Kebab and Turkish food in Zell am See',
@@ -7368,6 +7476,7 @@ const RAW_VENUES = {
   // ── RESTAURANT AL KHALIJ · neu 2026-11-15 ──
   'restaurant-al-khalij-zell-am-see': {
     id: 'restaurant-al-khalij-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Restaurant Al Khalij',
     tagline_de: 'Orientalische Küche in Zell am See',
     tagline_en: 'Middle Eastern food in Zell am See',
@@ -7399,6 +7508,7 @@ const RAW_VENUES = {
   // ── RESTAURANT ALI BABA · neu 2026-11-15 ──
   'restaurant-ali-baba-zell-am-see': {
     id: 'restaurant-ali-baba-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Restaurant Ali Baba',
     tagline_de: 'Orientalische Küche in Zell am See',
     tagline_en: 'Middle Eastern food in Zell am See',
@@ -7430,6 +7540,7 @@ const RAW_VENUES = {
   // ── SHIRAZ RESTAURANT · neu 2026-11-15 ──
   'shiraz-restaurant-zell-am-see': {
     id: 'shiraz-restaurant-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Shiraz Restaurant',
     tagline_de: 'Kebab und Pizza in Zell am See',
     tagline_en: 'Kebab and pizza in Zell am See',
@@ -7461,6 +7572,7 @@ const RAW_VENUES = {
   // ── ZUM CÄSAR · neu 2026-11-15 ──
   'zum-casar-zell-am-see': {
     id: 'zum-casar-zell-am-see',
+    hidden: true, // 2026-11-17: Halal nur laut Drittquelle (Lieferando/Wolt/OSM/Zabihah), nicht vom Lokal selbst
     name: 'Zum Cäsar',
     tagline_de: 'Pizza und orientalische Küche in Zell am See',
     tagline_en: 'Pizza and Middle Eastern food in Zell am See',
