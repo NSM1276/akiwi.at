@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Crumbs } from '@/components/atoms';
 import { useLang } from '@/components/LangProvider';
 import { IMPRESSUM as I } from '@/data/legal-copy';
+import EmailButtons from '@/components/EmailButtons';
 
 function Section({ title, children }) {
   return (
@@ -38,8 +39,13 @@ export default function ImpressumContent() {
         </Section>
 
         <Section title={de ? 'Kontakt' : 'Contact'}>
-          <p style={{ margin: 0 }}>{de ? 'E-Mail: ' : 'Email: '}<a href={`mailto:${I.email}`} style={link}>{I.email}</a></p>
           <p style={{ margin: 0 }}>{de ? 'Tel: ' : 'Phone: '}<a href={telHref} style={link}>{I.phone}</a></p>
+          <p style={{ margin: '10px 0 0' }}>{de ? 'E-Mail:' : 'Email:'}</p>
+          <EmailButtons
+            write={de ? 'E-Mail schreiben' : 'Write an email'}
+            copy={de ? 'E-Mail-Adresse kopieren' : 'Copy email address'}
+            copied={de ? 'Kopiert' : 'Copied'}
+          />
         </Section>
 
         <Section title={de ? 'Unternehmensgegenstand' : 'Business purpose'}>

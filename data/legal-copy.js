@@ -9,7 +9,9 @@ export const IMPRESSUM = {
   company: 'Nasim Nuridinov e.U.',
   street: 'Tscherttegasse 39',
   postalCity: '1120 Wien, Österreich',
-  email: 'office@oriz.at',
+  // Akiwi's mailbox (owner, 2026-11-17). Stored in parts and joined only on
+  // click (components/EmailButtons.jsx), so it is never shown as plain text.
+  email: { user: 'akiwi.at.team', domain: 'gmail.com' },
   phone: '+43 677 64292055',
   purpose: 'Webdesign & Webentwicklung',
   uid: 'ATU80802758',

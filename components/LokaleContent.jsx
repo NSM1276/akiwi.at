@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLang } from '@/components/LangProvider';
 import { LOKALE_COPY, LOKALE_LANGS, CONTACT } from '@/data/lokale-copy';
+import EmailButtons from '@/components/EmailButtons';
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -61,12 +62,23 @@ export default function LokaleContent() {
         </div>
 
         <div className="ak-lokale-pair">
+          <a className="ak-btn" href={CONTACT.instagram} target="_blank" rel="noopener">{c.instagram}</a>
           <a className="ak-btn" href={CONTACT.tel}>{c.call}</a>
-          <Link className="ak-btn" href="/">{c.visit} →</Link>
         </div>
+        <EmailButtons write={c.emailWrite} copy={c.emailCopy} copied={c.emailCopied} subject={c.emailSubject} />
         <p className="ak-data" style={{ margin: '10px 0 0', textAlign: 'center' }}>{CONTACT.phone}</p>
 
         <div className="ak-pattern" style={{ height: 44, margin: '32px 0 8px', border: 'var(--line) solid var(--ink)' }} aria-hidden="true" />
+
+        <section className="ak-lokale-section">
+          <h2 className="ak-h3">{c.statusTitle}</h2>
+          <p>{c.statusLead}</p>
+          <ul className="ak-lokale-plans">
+            {c.statuses.map((s) => (
+              <li key={s.label}><strong>{s.label}:</strong> {s.body}</li>
+            ))}
+          </ul>
+        </section>
 
         {c.sections.map((s) => (
           <section key={s.title} className="ak-lokale-section">
@@ -83,6 +95,9 @@ export default function LokaleContent() {
         </section>
 
         <div style={{ marginTop: 24 }}>{whatsapp}</div>
+        <div style={{ marginTop: 12, textAlign: 'center' }}>
+          <Link className="ak-btn" href="/">{c.visit} →</Link>
+        </div>
         <p className="ak-muted" style={{ margin: '14px 0 0', fontSize: 13, textAlign: 'center' }}>{c.note}</p>
       </main>
 
