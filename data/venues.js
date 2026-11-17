@@ -38,6 +38,7 @@ const RAW_VENUES = {
   // ── ALATURKA ERDBERGSTRAßE 1030 ───────────────────────────────────────────────
   'alaturka-1030': {
     id: 'alaturka-1030',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Alaturka Erdbergstraße',
     tagline_de: 'Türkische Spezialitäten — Döner, Pide, Pizza',
     tagline_en: 'Turkish specialties — Döner, Pide, Pizza',
@@ -94,6 +95,7 @@ const RAW_VENUES = {
   // ── ALATURKA AM SCHÖPFWERK 1120 ───────────────────────────────────────────────
   'alaturka-1120': {
     id: 'alaturka-1120',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Alaturka Am Schöpfwerk',
     tagline_de: 'Türkische Spezialitäten bei der U6 Schöpfwerk',
     tagline_en: 'Turkish specialties at U6 Schöpfwerk',
@@ -148,6 +150,7 @@ const RAW_VENUES = {
   // ── ALATURKA MAHÜ 1150 ────────────────────────────────────────────────────────
   'alaturka-1150': {
     id: 'alaturka-1150',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Alaturka MaHü',
     tagline_de: 'Türkisch & Italienisch nahe Westbahnhof',
     tagline_en: 'Turkish & Italian near Westbahnhof',
@@ -202,6 +205,7 @@ const RAW_VENUES = {
   // ── ALATURKA ALTERLAA 1230 ────────────────────────────────────────────────────
   'alaturka-1230': {
     id: 'alaturka-1230',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Alaturka Alterlaa',
     tagline_de: 'Erste Alaturka-Filiale seit 2004 — bei der U6 Alterlaa',
     tagline_en: 'First Alaturka location since 2004 — at U6 Alterlaa',
@@ -256,6 +260,7 @@ const RAW_VENUES = {
   // ── ALATURKA WIENER NEUSTADT 2700 ─────────────────────────────────────────────
   'alaturka-2700': {
     id: 'alaturka-2700',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Alaturka Wiener Neustadt',
     tagline_de: 'Türkische Spezialitäten in Niederösterreich',
     tagline_en: 'Turkish specialties in Lower Austria',
@@ -713,6 +718,7 @@ const RAW_VENUES = {
 
   'turkis-city': {
     id: 'turkis-city',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Türkis Goldschmiedgasse',
     tagline_de: 'Orientalische Grill-Küche im Herzen Wiens',
     tagline_en: 'Oriental grill cuisine in the heart of Vienna',
@@ -789,6 +795,7 @@ const RAW_VENUES = {
 
   'turkis-neubau': {
     id: 'turkis-neubau',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Türkis Mariahilfer Straße',
     tagline_de: 'Orientalische Küche auf der Mariahilfer Straße',
     tagline_en: 'Oriental cuisine on Mariahilfer Straße',
@@ -865,6 +872,7 @@ const RAW_VENUES = {
 
   'turkis-westbahnhof': {
     id: 'turkis-westbahnhof',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Türkis To Go Westbahnhof',
     tagline_de: 'Schnelle orientalische Küche beim Westbahnhof',
     tagline_en: 'Quick oriental cuisine at Westbahnhof',
@@ -941,6 +949,7 @@ const RAW_VENUES = {
 
   'turkis-donau': {
     id: 'turkis-donau',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Türkis Donau Zentrum',
     tagline_de: 'Orientalische Küche im Donau Zentrum Einkaufszentrum',
     tagline_en: 'Oriental cuisine in Donau Zentrum shopping center',
@@ -1383,6 +1392,7 @@ const RAW_VENUES = {
 
   'turkis-voesendorf': {
     id: 'turkis-voesendorf',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Türkis Vösendorf (SCS)',
     tagline_de: 'Döner, Kebab und orientalische Spezialitäten in der SCS',
     tagline_en: 'Döner, kebab and oriental specialties at SCS',
@@ -1830,6 +1840,7 @@ const RAW_VENUES = {
   // ── RHULO ÇIĞKÖFTE · neu 2026-11 ──
   'rhulo-cigkoefte-1020': {
     id: 'rhulo-cigkoefte-1020',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Rhulo Çiğköfte',
     tagline_de: 'Vegane Çiğ Köfte in der Leopoldstadt',
     tagline_en: 'Vegan çiğ köfte in Leopoldstadt',
@@ -2882,6 +2893,7 @@ const RAW_VENUES = {
   // ── QUICKY'S BURGERS & MORE · neu 2026-11-15 ──
   'quicky-s-burgers-more-1090': {
     id: 'quicky-s-burgers-more-1090',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Quicky\'s Burgers & More',
     tagline_de: 'Burger in Wien-Alsergrund',
     tagline_en: 'Burgers in Wien-Alsergrund',
@@ -4991,6 +5003,7 @@ const RAW_VENUES = {
   // ── AL ZAYTOUNA · neu 2026-11-15 ──
   'al-zaytouna-1010': {
     id: 'al-zaytouna-1010',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Al Zaytouna',
     tagline_de: 'Orientalische Küche in Wien-Innere Stadt',
     tagline_en: 'Middle Eastern food in Wien-Innere Stadt',
@@ -6241,6 +6254,7 @@ const RAW_VENUES = {
   // ── DAMAK RESTAURANT · neu 2026-11-15 ──
   'damak-restaurant-1100': {
     id: 'damak-restaurant-1100',
+    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Damak Restaurant',
     tagline_de: 'Türkische Küche in Wien-Favoriten',
     tagline_en: 'Turkish food in Wien-Favoriten',
