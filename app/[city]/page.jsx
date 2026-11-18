@@ -1,5 +1,6 @@
 import { OG_VERSION } from '@/components/ogCard';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedCity } from '@/data/moved';
 import { getCitySlugs, getCityPage, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }) {
 export default async function CityPage({ params }) {
   const { city } = await params;
   const page = getCityPage(city);
-  if (!page) notFound();
+  if (!page) { const to = movedCity(city); if (to) permanentRedirect(to); notFound(); }
 
   const breadcrumb = [{ href: '/', label: 'Home' }];
 

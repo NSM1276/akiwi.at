@@ -1,4 +1,5 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedChain } from '@/data/moved';
 import { CHAINS } from '@/data/chains';
 import { VENUES } from '@/data/venues';
 import { chainStatus } from '@/data/listing';
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }) {
 export default async function ChainPage({ params }) {
   const { id } = await params;
   const chain = CHAINS[id];
-  if (!chain) notFound();
+  if (!chain) { const to = movedChain(id); if (to) permanentRedirect(to); notFound(); }
 
   const venues = chainVenues(chain);
 

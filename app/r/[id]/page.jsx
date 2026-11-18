@@ -1,4 +1,5 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedVenue } from '@/data/moved';
 import { VENUES } from '@/data/venues';
 import { venueJsonLd, breadcrumbJsonLd } from '@/data/jsonld';
 import { breadcrumbFor, dishesOf } from '@/data/landing';
@@ -35,7 +36,7 @@ function chainOf(id) {
 export default async function RestaurantDetailPage({ params }) {
   const { id } = await params;
   const venue = VENUES[id];
-  if (!venue) notFound();
+  if (!venue) { const to = movedVenue(id); if (to) permanentRedirect(to); notFound(); }
 
   // "Similar" entries only carry an id + distance; everything else is read
   // from the current venue record so it can never go stale.

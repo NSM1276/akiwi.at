@@ -7739,6 +7739,8 @@ const RAW_VENUES = {
 };
 
 // Number of venues — used for the live counter on the homepage.
+// Raw records, hidden ones included: only for server code that needs them (data/moved.js).
+export { RAW_VENUES };
 export const VENUES = publicVenues(RAW_VENUES);
 export const VENUE_COUNT = Object.keys(VENUES).length;
 

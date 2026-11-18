@@ -1,5 +1,6 @@
 import { OG_VERSION } from '@/components/ogCard';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedListing } from '@/data/moved';
 import { getCategorySlugs, getCategoryPage, placeOf, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }) {
 export default async function CategoryPage({ params }) {
   const { slug } = await params;
   const page = getCategoryPage(slug);
-  if (!page) notFound();
+  if (!page) { const to = movedListing(slug); if (to) permanentRedirect(to); notFound(); }
 
   const breadcrumb = [{ href: '/', label: 'Home' }];
 

@@ -1,5 +1,6 @@
 import { OG_VERSION } from '@/components/ogCard';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedListing } from '@/data/moved';
 import { getDishSlugs, getDishPage, placeOf, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import { formatEuro } from '@/data/dishes';
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }) {
 export default async function DishPage({ params }) {
   const { slug } = await params;
   const page = getDishPage(slug);
-  if (!page) notFound();
+  if (!page) { const to = movedListing(slug); if (to) permanentRedirect(to); notFound(); }
 
   const place = placeOf(page.cities, page.venues.length);
   const breadcrumb = [{ href: '/', label: 'Home' }];

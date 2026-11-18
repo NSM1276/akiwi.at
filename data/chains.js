@@ -74,4 +74,5 @@ const RAW_CHAINS = {
 
 };
 
+export { RAW_CHAINS };
 export const CHAINS = publicChains(RAW_CHAINS, VENUES);

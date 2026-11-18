@@ -1,5 +1,6 @@
 import { OG_VERSION } from '@/components/ogCard';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
+import { movedDistrict } from '@/data/moved';
 import { getDistrictSlugs, getDistrictPage } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
@@ -35,7 +36,7 @@ export default async function DistrictPage({ params }) {
   const { city, district } = await params;
   if (city !== 'wien') notFound();
   const page = getDistrictPage(district);
-  if (!page) notFound();
+  if (!page) { const to = movedDistrict(city, district); if (to) permanentRedirect(to); notFound(); }
 
   const breadcrumb = [{ href: '/', label: 'Home' }, { href: '/wien', label: 'Wien' }];
 
