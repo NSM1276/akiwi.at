@@ -2000,6 +2000,7 @@ const RAW_VENUES = {
 
   'turkis-voesendorf': {
     id: 'turkis-voesendorf',
+    hidden: true, // 2026-11-18: nicht in der Öffnungszeiten-Liste auf tuerkis.at, Westfield SCS „Geschlossen“ – vermutlich geschlossen
     name: 'Türkis Vösendorf (SCS)',
     tagline_de: 'Döner, Kebab und orientalische Spezialitäten in der SCS',
     tagline_en: 'Döner, kebab and oriental specialties at SCS',
@@ -3952,6 +3953,7 @@ const RAW_VENUES = {
   // ── KEZZA KEBAP & PIZZA · neu 2026-11-15 ──
   'kezza-kebap-pizza-1050': {
     id: 'kezza-kebap-pizza-1050',
+    hidden: true, // 2026-11-18: keine eigenen Kanäle, Lokal schreibt nirgends selbst „halal“ (nur Lieferando/foodora)
     name: 'KEZZA Kebap & Pizza',
     tagline_de: 'Kebab und Burger in Wien-Margareten',
     tagline_en: 'Kebab and burgers in Wien-Margareten',
