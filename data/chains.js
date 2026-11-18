@@ -54,7 +54,7 @@ const RAW_CHAINS = {
     img: ['#A0522D', '#CD853F'],
     accentHue: 15,
     primaryId: 'kent-1150',
-    venueIds: ['kent-1150', 'kent-1160', 'kent-1200'],
+    venueIds: ['kent-1150', 'kent-1160', 'kent-1200', 'kent-1140'],
   },
 
   'otacos': {
