@@ -2891,7 +2891,7 @@ const RAW_VENUES = {
     districtName: 'Alsergrund',
     address: 'Spitalgasse 25, 1090 Wien',
     phone: '+43 14025887',
-    website: 'quickys.at',
+    website: null, // 2026-11-18: quickys.at existiert nicht (DNS), steht aber im Instagram-Profil
     status: 'self',
     categories: ['Imbiss', 'Burger'],
     price: '',
@@ -3075,9 +3075,9 @@ const RAW_VENUES = {
     districtName: 'Favoriten',
     address: 'Quellenstraße 115, 1100 Wien',
     phone: '+43 6601100292',
-    website: null,
+    website: 'schnitzelstube.at',
     status: 'claimed',
-    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/schnitzelstube' },
+    halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/schnitzelstube' }, // eigener Text dort: „100% halal“; Website schreibt nur „Hühnerfleisch ist halal“
     categories: ['Imbiss', 'Burger', 'Orientalisch'],
     price: '',
     rating: 0,
