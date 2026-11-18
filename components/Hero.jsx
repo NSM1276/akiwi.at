@@ -28,8 +28,8 @@ export default function Hero({ lang, query, setQuery, venueCount, cityCount, dis
 
           <p className="ak-lead" style={{ marginTop: 14 }}>
             {de
-              ? 'Restaurants, Imbisse und Cafés — mit Adresse und ehrlichem Halal-Status.'
-              : 'Restaurants, takeaways and cafés — with addresses and an honest halal status.'}
+              ? 'Restaurants und Imbisse — mit Adresse und ehrlichem Halal-Status.'
+              : 'Restaurants and takeaways — with addresses and an honest halal status.'}
           </p>
 
           <form

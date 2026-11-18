@@ -5,7 +5,7 @@ export function generateImageMetadata() {
   return [{ id: OG_VERSION, size: OG_SIZE, contentType: 'image/png', alt: 'Akiwi.at — Halal essen in Wien & Österreich' }];
 }
 
-const SUB = 'Restaurants, Imbisse und Cafés — mit Adresse und Halal-Status';
+const SUB = 'Restaurants und Imbisse — mit Adresse und Halal-Status';
 
 // The share preview for WhatsApp, Instagram and social links, in the site's colours.
 // Everything sits in the centred column of OgFrame so Instagram's square crop keeps it.
