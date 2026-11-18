@@ -577,3 +577,35 @@ body:has(.ak-bottom-bar) { padding-bottom: 64px; }
 .ak-lokale-plans { list-style: none; margin: 10px 0 0; padding: 0; }
 .ak-lokale-plans li { position: relative; padding: 6px 0 6px 20px; font-size: 15px; line-height: 1.45; }
 .ak-lokale-plans li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--green); }
+
+/* ---------- /eintrag/[id]: the owner's own form ---------- */
+.ak-form-block { margin: 0; padding: 20px 0 4px; border: 0; border-top: 1px solid var(--rule-soft); min-width: 0; }
+.ak-form-block legend { padding: 0; margin-bottom: 12px; }
+.ak-field { display: block; margin-bottom: 14px; }
+.ak-field-label { display: block; margin-bottom: 5px; font-size: 13px; font-weight: 700; }
+.ak-field-hint { display: block; margin-top: 5px; font-size: 13px; color: var(--ink-2); }
+.ak-field-error { margin: 6px 0 0; font-size: 14px; font-weight: 600; color: var(--pomegranate); }
+.ak-input {
+  display: block; width: 100%; min-height: 46px; padding: 10px 12px;
+  border: var(--line) solid var(--ink); border-radius: 0; background: var(--paper); color: var(--ink);
+  font: inherit; font-size: 16px; /* 16px stops iOS from zooming in */
+}
+.ak-input::placeholder { color: var(--ink-3); }
+textarea.ak-input { resize: vertical; }
+.ak-input--time { display: inline-block; width: auto; min-width: 0; padding: 8px; font-family: var(--font-data); }
+.ak-hours-edit { background: var(--paper); border: var(--line) solid var(--ink); }
+.ak-hours-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 10px 12px; }
+.ak-hours-row + .ak-hours-row { border-top: 1px solid var(--rule-soft); }
+.ak-hours-day { flex: 1 1 auto; font-weight: 700; font-size: 15px; }
+.ak-hours-slot { display: flex; flex: 1 0 100%; align-items: center; gap: 6px; }
+.ak-check { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: 15px; line-height: 1.4; cursor: pointer; }
+.ak-check input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--green); }
+.ak-check--sm { padding: 0; font-size: 14px; align-items: center; }
+.ak-check--sm input { width: 20px; height: 20px; }
+.ak-check--consent { margin-top: 4px; padding: 12px; background: var(--paper); border: var(--line) solid var(--ink); }
+.ak-check--consent.is-error { border-color: var(--pomegranate); background: var(--pomegranate-tint); }
+@media (min-width: 560px) {
+  .ak-hours-day { flex: 0 0 110px; }
+  .ak-hours-slot { flex: 0 0 auto; }
+  .ak-hours-row .ak-check--sm { order: 2; }
+}
