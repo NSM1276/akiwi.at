@@ -15,6 +15,7 @@ export default function Header({ lang, setLang }) {
     { key: 'home', label: c.navHome, href: '/', active: pathname === '/' },
     { key: 'search', label: c.navSearch, href: '/search', active: pathname === '/search' },
     { key: 'wien', label: 'Wien', href: '/wien', active: pathname?.startsWith('/wien') },
+    { key: 'ratgeber', label: 'Ratgeber', href: '/ratgeber', active: pathname?.startsWith('/ratgeber') },
   ];
 
   return (

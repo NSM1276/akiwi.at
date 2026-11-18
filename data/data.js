@@ -34,13 +34,14 @@ export const COPY = {
     followUs: 'Folgen Sie uns',
     // Datenschutz und Eintragen kommen dazu, sobald diese Seiten existieren.
     footerSections: {
-      product: ['Home', 'Suche', 'Für Lokale'],
+      product: ['Home', 'Suche', 'Ratgeber', 'Für Lokale'],
       legal: ['Impressum'],
     },
     footerSectionTitles: { product: 'Navigation', legal: 'Rechtliches' },
     footerLinks: {
       'Home': '/',
       'Suche': '/search',
+      'Ratgeber': '/ratgeber',
       'Für Lokale': '/lokale',
       'Impressum': '/impressum',
     },
@@ -69,13 +70,14 @@ export const COPY = {
     footerBlurb: 'The honest halal-friendly guide to Austria. Transparent, independent, ad-free.',
     followUs: 'Follow us',
     footerSections: {
-      product: ['Home', 'Search', 'For venues'],
+      product: ['Home', 'Search', 'Guide', 'For venues'],
       legal: ['Imprint'],
     },
     footerSectionTitles: { product: 'Navigation', legal: 'Legal' },
     footerLinks: {
       'Home': '/',
       'Search': '/search',
+      'Guide': '/ratgeber',
       'For venues': '/lokale',
       'Imprint': '/impressum',
     },

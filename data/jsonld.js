@@ -142,3 +142,19 @@ export function itemListJsonLd(name, venues) {
     })),
   };
 }
+
+/** A Ratgeber article (data/ratgeber.js). dateModified = the article's "Stand". */
+export function articleJsonLd(article) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    inLanguage: 'de-AT',
+    datePublished: article.stand,
+    dateModified: article.stand,
+    mainEntityOfPage: `${BASE}/ratgeber/${article.slug}`,
+    author: { '@id': `${BASE}/#organization` },
+    publisher: { '@id': `${BASE}/#organization` },
+  };
+}

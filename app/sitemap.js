@@ -1,5 +1,6 @@
 import { VENUES } from '@/data/venues';
 import { CHAINS } from '@/data/chains';
+import { RATGEBER } from '@/data/ratgeber';
 import { listCities, listDistricts, listCategories, listDishes } from '@/data/landing';
 
 const BASE = 'https://www.akiwi.at';
@@ -14,6 +15,8 @@ export default function sitemap() {
     page('/search', 0.8),
     page('/lokale', 0.5),
     page('/impressum', 0.3),
+    page('/ratgeber', 0.6),
+    ...RATGEBER.map((a) => page(`/ratgeber/${a.slug}`, 0.6)),
     // Landing pages — the entry points for "halal <city>", "halal <dish>" etc.
     ...listCities().map((c) => page(c.href, 0.9)),
     ...listDistricts().map((d) => page(d.href, 0.8)),
