@@ -13,9 +13,16 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const v = VENUES[id];
+  if (!v) return { title: 'Nicht gefunden', robots: { index: false, follow: false } };
+  // What the owner sees in the WhatsApp / Instagram link preview.
+  const title = `Ihr Eintrag: ${v.name}`;
+  const description = 'Prüfen und korrigieren Sie Ihre Angaben auf Akiwi. Kostenlos, Antwort per WhatsApp.';
   return {
-    title: v ? `Ihr Eintrag: ${v.name}` : 'Nicht gefunden',
+    title,
+    description,
     robots: { index: false, follow: false },
+    openGraph: { title: `${title} | Akiwi.at`, description, url: `/eintrag/${id}`, siteName: 'Akiwi.at', locale: 'de_AT', type: 'website' },
+    twitter: { title: `${title} | Akiwi.at`, description },
   };
 }
 
