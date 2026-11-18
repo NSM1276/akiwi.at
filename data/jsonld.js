@@ -87,7 +87,7 @@ export function siteJsonLd() {
       alternateName: ['Akiwi', 'Akiwi – Halal in Österreich'],
       url: `${BASE}/`,
       logo: `${BASE}/assets/logo.svg`,
-      description: 'Unabhängiger Halal-Guide für Österreich: Restaurants, Imbisse und Cafés mit klar gekennzeichnetem Halal-Status.',
+      description: 'Unabhängiger Halal-Guide für Österreich: Restaurants und Imbisse mit klar gekennzeichnetem Halal-Status.',
       // The same brand on the platforms, so search engines and AI systems join the profiles to the site.
       sameAs: SOCIAL.map((s) => s.href),
     },
