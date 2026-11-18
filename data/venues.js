@@ -6052,6 +6052,106 @@ const RAW_VENUES = {
     x: 51.0, y: 48.0,
   },
 
+  // ── TAT SCHNITZEL · neu 2026-11-18 ──
+  'tat-schnitzel-1210': {
+    id: 'tat-schnitzel-1210',
+    name: 'Tat Schnitzel',
+    tagline_de: 'Schnitzel-Imbiss in Floridsdorf',
+    tagline_en: 'Schnitzel takeaway in Floridsdorf',
+    district: 21,
+    districtName: 'Floridsdorf',
+    address: 'Prager Straße 57, 1210 Wien',
+    phone: null,
+    website: null,
+    instagram: 'tatschnitzel',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/tatschnitzel/' },
+    categories: ['Imbiss'],
+    price: '',
+    rating: 0,
+    reviews: 0,
+    gallery: [
+      { hue: 119, a: '#1E721D', b: '#0D310C' },
+    ],
+    tags: [],
+    hours: [],
+    amenities: {},
+    menu: [],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal (Instagram-Profil): „100% HALAL“', event_en: 'Halal per the venue (Instagram bio): "100% HALAL"' },
+    ],
+    similar: [],
+    x: 50.0, y: 30.0,
+  },
+
+  // ── TRIO BURGER 23 · neu 2026-11-18 ──
+  'trio-burger-23-1230': {
+    id: 'trio-burger-23-1230',
+    name: 'Trio Burger 23',
+    tagline_de: 'Burger in Liesing',
+    tagline_en: 'Burgers in Liesing',
+    district: 23,
+    districtName: 'Liesing',
+    address: 'Ziedlergasse 7, 1230 Wien',
+    phone: '+43 6602868781',
+    website: null,
+    instagram: 'trioburger23',
+    status: 'claimed',
+    halal_source: { label: 'Instagram', url: 'https://www.instagram.com/trioburger23/' },
+    categories: ['Burger'],
+    price: '',
+    rating: 0,
+    reviews: 0,
+    gallery: [
+      { hue: 119, a: '#1E721D', b: '#0D310C' },
+    ],
+    tags: [],
+    hours: [],
+    amenities: {},
+    menu: [],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal (Instagram-Profil): „Halal“', event_en: 'Halal per the venue (Instagram bio): "Halal"' },
+    ],
+    similar: [],
+    x: 45.0, y: 75.0,
+  },
+
+  // ── ORIENTALA · neu 2026-11-18 ──
+  // Schreibt selbst nicht „halal“, bietet aber jedes Jahr Iftar an
+  // (Instagram „ALL YOU CAN EAT IFTAR“). Iftar = starkes Signal (Inhaber 2026-11-18) → self.
+  'orientala-1220': {
+    id: 'orientala-1220',
+    name: 'Orientala',
+    tagline_de: 'Orientalische Küche in der Donaustadt',
+    tagline_en: 'Oriental cuisine in Donaustadt',
+    district: 22,
+    districtName: 'Donaustadt',
+    address: 'Stadlauer Straße 12, 1220 Wien',
+    phone: null,
+    website: null,
+    instagram: 'orientala.wien',
+    status: 'self',
+    categories: ['Restaurant'],
+    price: '',
+    rating: 0,
+    reviews: 0,
+    gallery: [
+      { hue: 119, a: '#1E721D', b: '#0D310C' },
+    ],
+    tags: [],
+    hours: [],
+    amenities: {},
+    menu: [],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Iftar-Buffet im Ramadan laut eigenem Instagram-Profil; keine eigene Halal-Angabe', event_en: 'Iftar buffet during Ramadan per its own Instagram; no halal statement of its own' },
+    ],
+    similar: [],
+    x: 62.0, y: 40.0,
+  },
+
   // ── ARENA PIZZA · neu 2026-11-15 ──
   'arena-pizza-wiener-neustadt': {
     id: 'arena-pizza-wiener-neustadt',
