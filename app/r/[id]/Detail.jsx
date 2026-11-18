@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import Hours from '@/components/Hours';
 import { Menu, Reviews, Verification, SimilarList, MiniMap, Amenities } from '@/components/detail-sections';
 import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
+import { GLYPH } from '@/components/SocialLinks';
 
 export default function Detail({ venue, breadcrumb, about, facts, dishes, chain }) {
   const v = venue;
@@ -17,6 +18,7 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
   const de = lang === 'de';
   const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(v.address)}`;
   const website = v.website ? (v.website.startsWith('http') ? v.website : `https://${v.website}`) : null;
+  const instagram = v.instagram ? `https://www.instagram.com/${v.instagram}/` : null;
 
   // Details held back until the venue is onboarded (data/public.js) get no section.
   const hasHours = (v.hours || []).length > 0;
@@ -60,14 +62,24 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
             </div>
 
             <div className="ak-venue-actions">
+              <a href={directions} target="_blank" rel="noopener" className="ak-btn ak-btn--green">
+                <Icon.pin size={15} /> {c.actions.directions}
+              </a>
               {v.phone && (
                 <a href={`tel:${v.phone}`} className="ak-btn">
                   <Icon.phone size={15} /> {c.actions.call}
                 </a>
               )}
-              <a href={directions} target="_blank" rel="noopener" className="ak-btn ak-btn--green">
-                <Icon.pin size={15} /> {c.actions.directions}
-              </a>
+              {v.order && (
+                <a href={v.order.url} target="_blank" rel="noopener" className="ak-btn">
+                  {c.actions.order} <span className="ak-btn-note">{v.order.label}</span>
+                </a>
+              )}
+              {instagram && (
+                <a href={instagram} target="_blank" rel="noopener" className="ak-btn">
+                  {GLYPH.instagram} {c.actions.instagram}
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -155,6 +167,19 @@ export default function Detail({ venue, breadcrumb, about, facts, dishes, chain 
               <section id="verification" className="ak-section">
                 <h2 className="ak-section-h">{c.verifiedHistory}</h2>
                 <Verification venue={v} lang={lang} />
+              </section>
+
+              <section className="ak-section ak-owner" aria-labelledby="owner-h">
+                <h2 id="owner-h" className="ak-section-h">{c.owner.title}</h2>
+                <p style={{ margin: '0 0 10px', fontSize: 15 }}>{c.owner.lead}</p>
+                <ul className="ak-lokale-plans">
+                  {v.status !== 'verified' && <li>{c.owner.certificate}</li>}
+                  {!hasMenu && <li>{c.owner.menu}</li>}
+                  {!hasHours && <li>{c.owner.hours}</li>}
+                  <li>{c.owner.photos}</li>
+                </ul>
+                <p className="ak-muted" style={{ margin: '10px 0 14px', fontSize: 14 }}>{c.owner.fix}</p>
+                <Link href="/lokale" className="ak-btn">{c.owner.cta} <Icon.arrow size={12} /></Link>
               </section>
 
               {v.similar?.length > 0 && (

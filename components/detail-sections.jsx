@@ -1,30 +1,73 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { DETAIL_COPY } from '@/data/detail-copy';
 import { Icon, StatusBadge, District } from './atoms';
 
+// Items shown per category before "Alle … anzeigen".
+const MENU_PEEK = 5;
+
+// Lowest price in a category, for "ab € 6,90". Prices are strings like "6,90" or "6,90 / 8,90".
+function lowestPrice(items) {
+  const nums = items
+    .flatMap((it) => String(it.price || '').match(/\d+(?:[.,]\d{1,2})?/g) || [])
+    .map((p) => Number(p.replace(',', '.')))
+    .filter((n) => n > 0);
+  if (!nums.length) return null;
+  return Math.min(...nums).toFixed(2).replace('.', ',');
+}
+
+function MenuCategory({ cat, index, c, de }) {
+  const [open, setOpen] = useState(false);
+  const from = lowestPrice(cat.items);
+  // Fold only when it hides at least 3 items; hiding one or two is just an extra tap.
+  const more = cat.items.length - MENU_PEEK >= 3 ? cat.items.length - MENU_PEEK : 0;
+  const items = open || !more ? cat.items : cat.items.slice(0, MENU_PEEK);
+  return (
+    <div id={`menu-${index}`} className="ak-menu-cat">
+      <h3 className="ak-menu-cat-h">
+        <span>{de ? cat.cat_de : cat.cat_en}</span>
+        {from && <span className="ak-price ak-muted">{c.menuFrom} € {from}</span>}
+      </h3>
+      <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+        {items.map((it, i) => (
+          <li key={i} className="ak-menu-row">
+            <span style={{ fontSize: 15, fontWeight: 500 }}>
+              {de ? it.name_de : it.name_en}
+              {it.tag === 'V' && <span className="ak-veg">{c.veg}</span>}
+              {it.tag === 'H' && <span className="ak-veg">{c.halalTag}</span>}
+            </span>
+            {it.price && <span className="ak-price">€ {it.price}</span>}
+          </li>
+        ))}
+      </ul>
+      {more > 0 && (
+        <button type="button" className="ak-btn ak-btn--sm" style={{ marginTop: 10 }} aria-expanded={open} onClick={() => setOpen(!open)}>
+          {open ? c.menuLess : c.menuAll(cat.items.length)}
+        </button>
+      )}
+    </div>
+  );
+}
+
 export function Menu({ venue, lang }) {
   const c = DETAIL_COPY[lang];
   const de = lang === 'de';
+  const cats = venue.menu.filter((cat) => (cat.items || []).length > 0);
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      {venue.menu.map((cat) => (
-        <div key={cat.cat_de}>
-          <h3 className="ak-subh">{de ? cat.cat_de : cat.cat_en}</h3>
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {cat.items.map((it, i) => (
-              <li key={i} className="ak-menu-row">
-                <span style={{ fontSize: 15, fontWeight: 500 }}>
-                  {de ? it.name_de : it.name_en}
-                  {it.tag === 'V' && <span className="ak-veg">{c.veg}</span>}
-                  {it.tag === 'H' && <span className="ak-veg">{c.halalTag}</span>}
-                </span>
-                {it.price && <span className="ak-price">€ {it.price}</span>}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <div>
+      {cats.length > 1 && (
+        <nav className="ak-chips ak-chips--scroll" style={{ marginBottom: 18 }} aria-label={c.sections.menu}>
+          {cats.map((cat, i) => (
+            <a key={cat.cat_de} href={`#menu-${i}`} className="ak-chip">
+              {de ? cat.cat_de : cat.cat_en} <span className="ak-count">{cat.items.length}</span>
+            </a>
+          ))}
+        </nav>
+      )}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+        {cats.map((cat, i) => <MenuCategory key={cat.cat_de} cat={cat} index={i} c={c} de={de} />)}
+      </div>
     </div>
   );
 }

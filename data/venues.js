@@ -46,6 +46,7 @@ const RAW_VENUES = {
     address: 'Erdbergstraße 93, 1030 Wien',
     phone: '+43 699 10327337',
     website: 'alaturka-doener.at',
+    instagram: 'alaturkawien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'unknown',
     categories: ['Kebab', 'Pizza'],
     price: '€',
@@ -102,6 +103,7 @@ const RAW_VENUES = {
     address: 'Am Schöpfwerk (bei der U6-Station), 1120 Wien',
     phone: '+43 699 10452687',
     website: 'alaturka-doener.at',
+    instagram: 'alaturkawien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'unknown',
     categories: ['Kebab', 'Pizza'],
     price: '€',
@@ -156,6 +158,7 @@ const RAW_VENUES = {
     address: 'Mariahilfer Straße 134, 1150 Wien',
     phone: '+43 678 1314354',
     website: 'alaturka-doener.at',
+    instagram: 'alaturkawien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'unknown',
     categories: ['Kebab', 'Pizza'],
     price: '€',
@@ -210,6 +213,7 @@ const RAW_VENUES = {
     address: 'Anton-Baumgartner-Straße 121, 1230 Wien',
     phone: '+43 699 19671499',
     website: 'alaturka-doener.at',
+    instagram: 'alaturkawien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'unknown',
     categories: ['Kebab', 'Pizza'],
     price: '€',
@@ -264,6 +268,7 @@ const RAW_VENUES = {
     address: 'Stadionstraße 5, 2700 Wiener Neustadt',
     phone: '+43 2622 83542',
     website: 'alaturka-doener.at',
+    instagram: 'alaturkawien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'unknown',
     categories: ['Kebab', 'Pizza'],
     price: '€',
@@ -317,6 +322,7 @@ const RAW_VENUES = {
     address: 'Khleslplatz 5, 1120 Wien',
     phone: '+43 699 1100 27 27',
     website: 'antepevi-grillhaus.at',
+    instagram: 'antepevi_grill', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://antepevi-grillhaus.at/speisekarte' },
     checked: { date: '2026-11-16', sources: [
@@ -457,6 +463,7 @@ const RAW_VENUES = {
     address: 'Meidlinger Hauptstraße 30, 1120 Wien',
     phone: '+43 1 7200047',
     website: 'burgallio.at/de/meidling',
+    instagram: 'burgallio', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/burgallio/' },
     checked: { date: '2026-11-16', sources: [
@@ -721,6 +728,7 @@ const RAW_VENUES = {
     address: 'Goldschmiedgasse 4, 1010 Wien',
     phone: '+43 699 13176474',
     website: 'tuerkis.at',
+    instagram: 'turkisorientalfood', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Restaurant', 'Kebab'],
     price: '€€',
@@ -797,6 +805,7 @@ const RAW_VENUES = {
     address: 'Mariahilfer Straße 22-24, 1070 Wien',
     phone: '+43 699 18881835',
     website: 'tuerkis.at',
+    instagram: 'turkisorientalfood', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Restaurant', 'Kebab'],
     price: '€€',
@@ -873,6 +882,7 @@ const RAW_VENUES = {
     address: 'Europaplatz 2 (BahnhofCity Wien West), 1150 Wien',
     phone: null,
     website: 'tuerkis.at',
+    instagram: 'turkisorientalfood', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Restaurant', 'Kebab'],
     price: '€€',
@@ -951,6 +961,7 @@ const RAW_VENUES = {
     address: 'Donauzentrum, EG Top 137b, 1220 Wien',
     phone: null,
     website: 'tuerkis.at',
+    instagram: 'turkisorientalfood', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Restaurant', 'Kebab'],
     price: '€€',
@@ -1393,6 +1404,7 @@ const RAW_VENUES = {
     address: 'Shopping City Süd, Top 44, 2334 Vösendorf',
     phone: '+43 670 07745648',
     website: 'tuerkis.at',
+    instagram: 'turkisorientalfood', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Imbiss', 'Orientalisch'],
     price: '€',
@@ -1632,6 +1644,7 @@ const RAW_VENUES = {
     address: 'Billrothstraße 18/3, 1190 Wien',
     phone: '+43 1 9419092',
     website: 'maman-paz.at',
+    instagram: 'persisches_mamanpaz', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/persisches_mamanpaz/' },
     categories: ['Restaurant', 'Persisch'],
@@ -1665,6 +1678,7 @@ const RAW_VENUES = {
     address: 'Thaliastraße 18, 1160 Wien',
     phone: null,
     website: null,
+    instagram: 'chickenpluswien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/chickenpluswien/' },
     categories: ['Imbiss', 'Burger'],
@@ -1763,6 +1777,7 @@ const RAW_VENUES = {
     address: 'Heiligenstädter Straße 9, 1190 Wien',
     phone: '+43 1 8902170',
     website: 'jasminalsham.wien',
+    instagram: 'restaurantjasminalsham', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     checked: { date: '2026-11-16', sources: [
       { label: 'Website', url: 'https://jasminalsham.wien/' },
@@ -1871,6 +1886,7 @@ const RAW_VENUES = {
     address: 'Favoritenstraße 95, 1100 Wien',
     phone: null,
     website: null,
+    instagram: 'locochicken', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/locochicken/' },
     categories: ['Imbiss', 'Burger'],
@@ -2033,6 +2049,7 @@ const RAW_VENUES = {
     address: 'Landstraße 115, 4020 Linz',
     phone: '+43 688 64218890',
     website: 'burgerliebe.at',
+    instagram: 'burgerliebe_linz', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://burgerliebe.at' },
     categories: ['Imbiss', 'Burger'],
@@ -2356,6 +2373,7 @@ const RAW_VENUES = {
     address: 'Lazarettgürtel 55, Top 95 (Citypark, Panoramageschoss), 8020 Graz',
     phone: '+43 660 3497725',
     website: 'www.dermangrillhaus.com',
+    instagram: 'dermangrillhaus.graz', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://www.dermangrillhaus.com' },
     categories: ['Imbiss', 'Kebab', 'Türkisch'],
@@ -2485,6 +2503,7 @@ const RAW_VENUES = {
     address: 'Rilkestraße 1, 4020 Linz',
     phone: '+43 676 7355563',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/de-at/aut/linz/restaurant/urban-imbiss' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de-at/aut/linz/restaurant/urban-imbiss' },
     categories: ['Imbiss', 'Kebab'],
@@ -2550,6 +2569,7 @@ const RAW_VENUES = {
     address: 'Ignaz-Harrer-Straße 48, 5020 Salzburg',
     phone: '+43 660 7866379',
     website: 'papabistro.com',
+    instagram: 'papa_bistro_at', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://papabistro.com' },
     categories: ['Imbiss', 'Burger', 'Pizza'],
@@ -2826,6 +2846,7 @@ const RAW_VENUES = {
     address: 'Reinprechtsdorfer Straße 9, 1050 Wien',
     phone: '+43 6701951795',
     website: null,
+    order: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/kezza-kebap-pizza' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/kezza-kebap-pizza' },
     categories: ['Imbiss', 'Kebab', 'Burger'],
@@ -2859,6 +2880,7 @@ const RAW_VENUES = {
     address: 'Pilgrambrücke (Stand), 1050 Wien',
     phone: '+43 6507274327',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/en/aut/vienna/restaurant/knig-kebab-schnitzel-hot-dog-helal' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/en/aut/vienna/restaurant/knig-kebab-schnitzel-hot-dog-helal' },
     categories: ['Imbiss', 'Kebab', 'Türkisch'],
@@ -2892,6 +2914,7 @@ const RAW_VENUES = {
     address: 'Spitalgasse 25, 1090 Wien',
     phone: '+43 14025887',
     website: null, // 2026-11-18: quickys.at existiert nicht (DNS), steht aber im Instagram-Profil
+    instagram: 'quicky.s', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'self',
     categories: ['Imbiss', 'Burger'],
     price: '',
@@ -2999,6 +3022,7 @@ const RAW_VENUES = {
     address: 'Leibnizgasse 13/3, 1100 Wien',
     phone: '+43 6609714522',
     website: 'www.munchy.at',
+    instagram: 'munchyvienna', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://www.munchy.at/speisekarte.html' },
     checked: { date: '2026-11-16', sources: [
@@ -3076,6 +3100,7 @@ const RAW_VENUES = {
     address: 'Quellenstraße 115, 1100 Wien',
     phone: '+43 6601100292',
     website: 'schnitzelstube.at',
+    instagram: 'schnitzelstubewien', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/schnitzelstube' }, // eigener Text dort: „100% halal“; Website schreibt nur „Hühnerfleisch ist halal“
     categories: ['Imbiss', 'Burger', 'Orientalisch'],
@@ -3109,6 +3134,7 @@ const RAW_VENUES = {
     address: 'Etrichstraße 40/2/10A, 1110 Wien',
     phone: '+43 19258149',
     website: 'cardanokebapizza.at',
+    instagram: 'cardanokebapizza', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://cardanokebapizza.at/' },
     checked: { date: '2026-11-17', sources: [
@@ -3248,6 +3274,7 @@ const RAW_VENUES = {
     address: 'Märzstraße 132, 1140 Wien',
     phone: '+436609393036',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/city-pizza-burger-vienna' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/city-pizza-burger-vienna' },
     categories: ['Imbiss', 'Burger', 'Pizza'],
@@ -3282,6 +3309,7 @@ const RAW_VENUES = {
     address: 'Märzstraße 48, 1150 Wien',
     phone: '+4366493311149',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/hendl' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/hendl' },
     categories: ['Imbiss'],
@@ -3411,6 +3439,7 @@ const RAW_VENUES = {
     address: 'Schwendergasse 33/1, 1150 Wien',
     phone: '+436765221194',
     website: null,
+    order: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/burek-pita-pizza' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/burek-pita-pizza' },
     categories: ['Imbiss', 'Pizza', 'Bosnisch'],
@@ -3444,6 +3473,7 @@ const RAW_VENUES = {
     address: 'Stiegergasse 5/1, 1150 Wien',
     phone: '+4368181590408',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/style-pizza-burger-wien' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/style-pizza-burger-wien' },
     categories: ['Restaurant', 'Burger', 'Pizza'],
@@ -3477,6 +3507,7 @@ const RAW_VENUES = {
     address: 'Friedmanngasse 14/1-3, 1160 Wien',
     phone: '+43 1 4098167',
     website: 'lokantaci.at',
+    instagram: 'oase_lokanta', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://lokantaci.at/' },
     checked: { date: '2026-11-17', sources: [
@@ -3582,6 +3613,8 @@ const RAW_VENUES = {
     address: 'Hernalser Hauptstraße 131, 1170 Wien',
     phone: '+4313979192',
     website: null,
+    instagram: 'lagusta17', // 2026-11-18 Profil geöffnet, Adresse stimmt
+    order: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/la-gusta-halal' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/la-gusta-halal' },
     categories: ['Imbiss', 'Kebab', 'Pizza'],
@@ -3711,6 +3744,7 @@ const RAW_VENUES = {
     address: 'Prager Straße 38/1, 1210 Wien',
     phone: '+43 15895347',
     website: 'keyf-vienna.at',
+    instagram: 'keyf_vienna', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://keyf-vienna.at' },
     categories: ['Restaurant', 'Kebab', 'Burger'],
@@ -3744,6 +3778,7 @@ const RAW_VENUES = {
     address: 'Erzherzog-Karl-Straße 134, 1220 Wien',
     phone: '+43 6509595123',
     website: null,
+    order: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/morvarid-food-house' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Wolt', url: 'https://wolt.com/de/aut/vienna/restaurant/morvarid-food-house' },
     categories: ['Restaurant', 'Kebab', 'Pizza'],
@@ -3777,6 +3812,7 @@ const RAW_VENUES = {
     address: 'Adlergasse 9, 2700 Wiener Neustadt',
     phone: null,
     website: null,
+    order: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/arena-pizza-adlergasse' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/arena-pizza-adlergasse' },
     categories: ['Imbiss', 'Kebab', 'Burger'],
@@ -3810,6 +3846,7 @@ const RAW_VENUES = {
     address: 'Schwechater Straße 59, 2322 Zwölfaxing',
     phone: null,
     website: null,
+    order: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/sados-pizza-schwechat' }, // eigene Lieferseite, keine eigene Website
     status: 'claimed',
     halal_source: { label: 'Lieferando', url: 'https://www.lieferando.at/speisekarte/sados-pizza-schwechat' },
     categories: ['Imbiss', 'Pizza'],
@@ -5663,6 +5700,7 @@ const RAW_VENUES = {
     address: 'Haidingergasse 25, 1030 Wien',
     phone: '+43 68181228575',
     website: 'diddi-burger.at',
+    instagram: 'diddi.burger', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/diddi.burger/' },
     categories: ['Imbiss', 'Burger'],
@@ -6488,6 +6526,7 @@ const RAW_VENUES = {
     address: 'Waldgasse 56/1, 1100 Wien',
     phone: '+43 6767211986',
     website: 'reenarasoi.at',
+    instagram: 'reenarasoi_vienna', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Instagram', url: 'https://www.instagram.com/reenarasoi_vienna/' },
     checked: { date: '2026-11-16', sources: [
@@ -7158,6 +7197,7 @@ const RAW_VENUES = {
     address: 'Döblinger Hauptstraße 11, 1190 Wien',
     phone: '+43 1 8904304',
     website: 'urbanpizza.at',
+    instagram: 'urbanbrospizza', // 2026-11-18 Profil geöffnet, Adresse stimmt
     status: 'claimed',
     halal_source: { label: 'Website', url: 'https://urbanpizza.at/speisekarte/' },
     checked: { date: '2026-11-17', sources: [

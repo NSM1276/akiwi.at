@@ -471,6 +471,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   padding: 10px 0; border-bottom: 1px dashed var(--rule-soft);
 }
 .ak-menu-row:last-child { border-bottom: 0; }
+.ak-menu-cat { scroll-margin-top: calc(var(--header-h) + 64px); }
+.ak-menu-cat-h {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  margin: 0 0 4px; padding-bottom: 6px; border-bottom: var(--line) solid var(--ink);
+  font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.ak-menu-cat-h .ak-price { font-size: 13px; text-transform: none; letter-spacing: 0; }
+.ak-btn-note { font-family: var(--font-data); font-weight: 500; font-size: 11px; text-transform: none; opacity: 0.7; }
+.ak-owner { background: var(--paper); border: var(--line) solid var(--ink); padding: 16px; }
 .ak-price { font-family: var(--font-data); font-weight: 500; font-size: 14px; color: var(--ink); white-space: nowrap; }
 .ak-veg {
   font-family: var(--font-data); font-size: 10px; font-weight: 500; text-transform: uppercase;

@@ -1,7 +1,8 @@
 import { SOCIAL } from '@/data/social';
 
 // Simple glyphs, one colour, so they follow the surrounding text colour.
-const GLYPH = {
+// Also used on venue pages for the venue's own Instagram button.
+export const GLYPH = {
   instagram: (
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
       <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
