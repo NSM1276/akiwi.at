@@ -6152,6 +6152,72 @@ const RAW_VENUES = {
     x: 62.0, y: 40.0,
   },
 
+  // ── XXXL GRILL · neu 2026-11-18 ──
+  'xxxl-grill-1170': {
+    id: 'xxxl-grill-1170',
+    name: 'XxXL Grill Restaurant',
+    tagline_de: 'Balkan-Grill vom Holzkohlegrill in Hernals',
+    tagline_en: 'Balkan charcoal grill in Hernals',
+    district: 17,
+    districtName: 'Hernals',
+    address: 'Wurlitzergasse 87, 1170 Wien',
+    phone: '+43 14808996',
+    website: 'restaurant-xxxl.at',
+    instagram: 'x.x.x.l_grill_restaurant',
+    status: 'claimed',
+    halal_source: { label: 'Website', url: 'https://www.restaurant-xxxl.at/speisen' },
+    categories: ['Restaurant', 'Bosnisch'],
+    price: '',
+    rating: 0,
+    reviews: 0,
+    gallery: [
+      { hue: 119, a: '#1E721D', b: '#0D310C' },
+    ],
+    tags: [],
+    hours: [],
+    amenities: {},
+    menu: [],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Halal laut Lokal (Website): „Alle Speisen sind Halal“; Iftar-Story im eigenen Instagram', event_en: 'Halal per the venue (Website): "Alle Speisen sind Halal"; iftar story on its own Instagram' },
+    ],
+    similar: [],
+    x: 40.0, y: 40.0,
+  },
+
+  // ── ASAL VIENNA · neu 2026-11-18 ──
+  // Schreibt selbst nicht „halal“, bietet aber Iftar-Buffet an (eigenes Instagram) → self.
+  'asal-vienna-1100': {
+    id: 'asal-vienna-1100',
+    name: 'Asal Vienna',
+    tagline_de: 'Afghanische Küche und Buffet am Keplerplatz',
+    tagline_en: 'Afghan food and buffet on Keplerplatz',
+    district: 10,
+    districtName: 'Favoriten',
+    address: 'Keplerplatz 8, 1100 Wien',
+    phone: '+43 6505306168',
+    website: null,
+    instagram: 'asal.vienna',
+    status: 'self',
+    categories: ['Restaurant', 'Afghanisch'],
+    price: '',
+    rating: 0,
+    reviews: 0,
+    gallery: [
+      { hue: 119, a: '#1E721D', b: '#0D310C' },
+    ],
+    tags: [],
+    hours: [],
+    amenities: {},
+    menu: [],
+    reviews_list: [],
+    verification_log: [
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Iftar-Buffet im Ramadan laut eigenem Instagram („ASAL IFTAR BUFFET“); keine eigene Halal-Angabe', event_en: 'Iftar buffet during Ramadan per its own Instagram ("ASAL IFTAR BUFFET"); no halal statement of its own' },
+    ],
+    similar: [],
+    x: 52.0, y: 70.0,
+  },
+
   // ── ARENA PIZZA · neu 2026-11-15 ──
   'arena-pizza-wiener-neustadt': {
     id: 'arena-pizza-wiener-neustadt',
@@ -9129,7 +9195,6 @@ const RAW_VENUES = {
   // ── DAMAK RESTAURANT · neu 2026-11-15 ──
   'damak-restaurant-1100': {
     id: 'damak-restaurant-1100',
-    hidden: true, // 2026-11-17: Lokal schreibt nicht klar selbst „halal“ (nur Hashtags, Metadaten oder einzelne Produkte) — Entscheidung Inhaber
     name: 'Damak Restaurant',
     tagline_de: 'Türkische Küche in Wien-Favoriten',
     tagline_en: 'Turkish food in Wien-Favoriten',
@@ -9138,7 +9203,8 @@ const RAW_VENUES = {
     address: 'Leibnizgasse 15, 1100 Wien',
     phone: '+4312360222',
     website: 'www.damak.at',
-    status: 'self',
+    status: 'claimed',
+    halal_source: { label: 'Website (Ramadan-Seite 2026, Archiv)', url: 'https://web.archive.org/web/20260208022031/https://www.damak.at/ramadan-menue-2026-wien/' },
     checked: { date: '2026-11-16', sources: [
       { label: 'Website', url: 'https://www.damak.at/' },
       { label: 'Speisekarte', url: 'https://www.damak.at/speisekarte' },
@@ -9197,6 +9263,7 @@ const RAW_VENUES = {
     verification_log: [
       { date: '2026-11-15', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Aus öffentlichen Quellen übernommen — Halal laut öffentlichen Angaben, noch nicht geprüft', event_en: 'Taken from public sources — halal per public information, not yet checked' },
       { date: '2026-11-16', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Öffnungszeiten und Speisekarte mit den eigenen Kanälen des Lokals abgeglichen', event_en: 'Opening hours and menu compared with the venue\'s own channels' },
+      { date: '2026-11-18', actor_de: 'Akiwi-Team', actor_en: 'Akiwi team', event_de: 'Wieder aufgenommen: eigene Ramadan-Seite „Ramadan Menü & Iftar 2026 in Wien“ – „Mahlzeiten mit Halal-Fleisch“', event_en: 'Listed again: own Ramadan page "Ramadan Menü & Iftar 2026 in Wien" – "Mahlzeiten mit Halal-Fleisch"' },
     ],
     similar: [],
     x: 50.2, y: 74.3,
