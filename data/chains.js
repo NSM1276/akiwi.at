@@ -72,6 +72,21 @@ const RAW_CHAINS = {
     venueIds: ['o-tacos-karntner-strasse-1010', 'o-tacos-kohlmarkt-1010', 'o-tacos-rotenturmstrasse-1010', 'o-tacos-naschmarkt-1040', 'o-tacos-mariahilfer-strasse-34-1070', 'o-tacos-mariahilfer-strasse-84-1070', 'o-tacos-hauptbahnhof-1100', 'o-tacos-wahringer-strasse-1180', 'o-tacos-donauzentrum-1220'],
   },
 
+  'zushi-market': {
+    id: 'zushi-market',
+    name: 'Zushi Market',
+    tagline_de: 'Sushi, Bowls und Asia-Buffet in Einkaufszentren',
+    tagline_en: 'Sushi, bowls and Asian buffet in shopping centres',
+    website: 'zushi-market.at',
+    categories: ['Restaurant', 'Asiatisch'],
+    tags: [],
+    price: '',
+    img: ['#1E721D', '#0D310C'],
+    accentHue: 119,
+    primaryId: 'zushi-market-millennium-city-1200',
+    venueIds: ['zushi-market-schottengasse-1010', 'zushi-market-favoriten-1100', 'zushi-market-zentrum-simmering-1110', 'zushi-market-auhof-1140', 'zushi-market-lugner-city-1150', 'zushi-market-millennium-city-1200', 'zushi-market-donau-city-1220', 'zushi-market-donauzentrum-1220'],
+  },
+
 };
 
 export { RAW_CHAINS };
