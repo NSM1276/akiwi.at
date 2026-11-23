@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { COPY } from '@/data/data';
 import { Icon } from './atoms';
+import { Sticker } from './Pictures';
+import { stickerForHref } from '@/data/images';
 
 export default function Hero({ lang, query, setQuery, venueCount, cityCount, districts, dishes }) {
   const c = COPY[lang];
@@ -65,6 +67,7 @@ export default function Hero({ lang, query, setQuery, venueCount, cityCount, dis
             <div className="ak-chips ak-chips--scroll" style={{ marginTop: 12 }}>
               {dishes.slice(0, 6).map((d) => (
                 <Link key={d.href} href={d.href} className="ak-chip">
+                  <Sticker src={stickerForHref(d.href)} />
                   {d.name} <span className="ak-count">{d.count}</span>
                 </Link>
               ))}

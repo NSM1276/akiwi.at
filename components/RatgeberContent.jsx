@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Crumbs } from '@/components/atoms';
+import { Sticker } from '@/components/Pictures';
+import { UI } from '@/data/images';
 import { useLang } from '@/components/LangProvider';
 import { formatStand } from '@/data/ratgeber';
 
@@ -64,6 +66,7 @@ export function RatgeberList({ articles }) {
       <Header lang={lang} setLang={setLang} />
       <main className="ak-wrap ak-main" style={{ maxWidth: 820 }}>
         <Crumbs trail={[{ href: '/', label: 'Home' }]} current="Ratgeber" />
+        <Sticker src={UI.guide} size={72} className="ak-page-icon" />
         <h1 className="ak-h1">Ratgeber</h1>
         <p className="ak-lead" style={{ margin: '10px 0 24px' }}>
           Antworten rund um Halal-Essen in Österreich – mit Quelle und Datum bei jeder Angabe.

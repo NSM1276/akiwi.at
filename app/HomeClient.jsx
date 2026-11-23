@@ -9,6 +9,8 @@ import RestaurantCard from '@/components/RestaurantCard';
 import ViennaMap from '@/components/Map';
 import BrowseLinks from '@/components/BrowseLinks';
 import Footer from '@/components/Footer';
+import { Sticker } from '@/components/Pictures';
+import { UI } from '@/data/images';
 
 export default function HomeClient({ restaurants, venueCount, facets, browse }) {
   const [lang, setLang] = useLang();
@@ -56,6 +58,7 @@ export default function HomeClient({ restaurants, venueCount, facets, browse }) 
         <section className="ak-wrap" style={{ paddingTop: 20 }}>
           {filtered.length === 0 ? (
             <div className="ak-card" style={{ padding: '48px 20px', textAlign: 'center' }}>
+              <Sticker src={UI.emptyPlate} size={96} className="ak-empty-img" />
               <div className="ak-h3">{c.emptyTitle}</div>
               <p className="ak-lead" style={{ margin: '8px auto 16px', fontSize: 14 }}>{c.emptyBody}</p>
               <button type="button" onClick={resetFilters} className="ak-btn ak-btn--ink">{c.reset}</button>

@@ -4,6 +4,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { SEARCH_COPY } from '@/data/search-data';
 import { Icon } from '@/components/atoms';
+import { Sticker } from '@/components/Pictures';
+import { UI } from '@/data/images';
 
 export function SearchHero({ lang, query, setQuery, where, setWhere }) {
   const c = SEARCH_COPY[lang];
@@ -143,6 +145,7 @@ export function EmptyState({ lang, onReset }) {
   const c = SEARCH_COPY[lang];
   return (
     <div className="ak-card" style={{ padding: '40px 20px', textAlign: 'center' }}>
+      <Sticker src={UI.emptyPlate} size={96} className="ak-empty-img" />
       <h3 className="ak-h3">{c.emptyTitle}</h3>
       <p className="ak-muted" style={{ margin: '8px 0 14px', fontSize: 14 }}>{c.emptyBody}</p>
       <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 18px', display: 'inline-flex', flexDirection: 'column', gap: 6, textAlign: 'left', fontSize: 13 }} className="ak-muted">

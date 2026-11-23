@@ -4,6 +4,7 @@ import { movedListing } from '@/data/moved';
 import { getCategorySlugs, getCategoryPage, placeOf, sampleNames } from '@/data/landing';
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import Landing from '@/components/Landing';
+import { categoryPhoto } from '@/data/images';
 
 export function generateStaticParams() {
   return getCategorySlugs().map((slug) => ({ slug }));
@@ -58,6 +59,7 @@ export default async function CategoryPage({ params }) {
         cities={page.cities}
         place={placeOf(page.cities, page.stats.total)}
         breadcrumb={breadcrumb}
+        photo={categoryPhoto(slug)}
         searchHref={`/search?q=${encodeURIComponent(page.name)}`}
       />
     </>

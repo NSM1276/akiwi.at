@@ -3,6 +3,8 @@
 
 import { SEARCH_COPY } from '@/data/search-data';
 import { Icon, StatusBadge } from '@/components/atoms';
+import { Sticker } from '@/components/Pictures';
+import { TAG_STICKER } from '@/data/images';
 
 export default function SearchResultCard({ r, lang, onHover, hovered, dense, openNow }) {
   const c = SEARCH_COPY[lang];
@@ -41,7 +43,7 @@ export default function SearchResultCard({ r, lang, onHover, hovered, dense, ope
           </div>
           {!dense && r.amenities.length > 0 && (
             <div className="ak-tags" style={{ marginTop: 8 }}>
-              {r.amenities.map((a) => <span key={a} className="ak-tag">{c.amenityLabels[a]}</span>)}
+              {r.amenities.map((a) => <span key={a} className="ak-tag"><Sticker src={TAG_STICKER[a]} size={16} />{c.amenityLabels[a]}</span>)}
             </div>
           )}
         </div>

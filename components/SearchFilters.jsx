@@ -4,6 +4,8 @@
 
 import { SEARCH_COPY } from '@/data/search-data';
 import { StatusDot } from '@/components/atoms';
+import { Sticker } from '@/components/Pictures';
+import { UI, TAG_STICKER } from '@/data/images';
 
 export default function SearchFilters({ lang, filters, setFilters, facets, totalCount, visibleCount }) {
   const c = SEARCH_COPY[lang];
@@ -42,6 +44,7 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
       {facets.hours && (
         <FilterGroup title={c.filters.openNow}>
           <CheckRow on={!!filters.openNow} onClick={() => setBool('openNow')}>
+            <Sticker src={UI.openNow} size={28} className="ak-filter-icon" />
             <span>{c.openNowOnly}</span>
           </CheckRow>
         </FilterGroup>
@@ -103,6 +106,7 @@ export default function SearchFilters({ lang, filters, setFilters, facets, total
         <FilterGroup title={c.filters.amenities} last>
           {facets.amenities.map((a) => (
             <CheckRow key={a} on={(filters.amenities || []).includes(a)} onClick={() => toggle('amenities', a)}>
+              <Sticker src={TAG_STICKER[a]} size={28} className="ak-filter-icon" />
               <span>{c.amenityLabels[a]}</span>
             </CheckRow>
           ))}

@@ -4,6 +4,8 @@
 
 import Link from 'next/link';
 import { useLang } from '@/components/LangProvider';
+import { Sticker } from '@/components/Pictures';
+import { stickerForHref } from '@/data/images';
 
 export default function BrowseLinks({ cities, districts, categories, dishes = [] }) {
   const [lang] = useLang();
@@ -32,6 +34,7 @@ export default function BrowseLinks({ cities, districts, categories, dishes = []
             <div className="ak-chips">
               {g.items.map((item) => (
                 <Link key={item.href} href={item.href} className="ak-chip">
+                  <Sticker src={stickerForHref(item.href)} />
                   {item.badge && <span className="ak-district" style={{ minWidth: 24, height: 20, fontSize: 13, margin: '-2px 0 -2px -4px' }}>{item.badge}</span>}
                   {item.label}
                   <span className="ak-count">{item.count}</span>

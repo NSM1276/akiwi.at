@@ -3,11 +3,14 @@
 // Everything it shows comes from data/landing.js; no copy is invented here.
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLang } from '@/components/LangProvider';
 import { StatusBadge, District, Crumbs, Icon } from '@/components/atoms';
 import { formatEuro, parsePrice } from '@/data/dishes';
+import { STATUS_ICON, stickerForHref } from '@/data/images';
+import { AiPhoto, Sticker } from '@/components/Pictures';
 
 const AUSTRIA = { de: 'Österreich', en: 'Austria' };
 
@@ -69,7 +72,7 @@ const STATUS_TEXT = {
 export default function Landing({
   kind, name, venues, stats, related, relatedKind,
   cities = [], districtCount = 0, breadcrumb, searchHref,
-  place = AUSTRIA, prices = null,
+  place = AUSTRIA, prices = null, photo = null,
 }) {
   const [lang, setLang] = useLang();
   const de = lang === 'de';
@@ -87,6 +90,8 @@ export default function Landing({
       <main className="ak-wrap ak-main">
         <Crumbs trail={breadcrumb} current={name} />
 
+        {photo && <AiPhoto src={photo} alt={name} lang={lang} />}
+
         <h1 className="ak-h1">{heading(kind, name, lang, place)}</h1>
         <p className="ak-lead" style={{ marginTop: 12 }}>
           {intro(kind, name, stats, districtCount, cities.length, lang, place, prices)}
@@ -96,6 +101,7 @@ export default function Landing({
           <div className="ak-chips ak-chips--scroll" style={{ marginTop: 16 }}>
             {stats.topCategories.map((c) => (
               <Link key={c.name} href={c.href} className="ak-chip">
+                <Sticker src={stickerForHref(c.href)} />
                 {c.name} <span className="ak-count">{c.count}</span>
               </Link>
             ))}
@@ -165,6 +171,7 @@ export default function Landing({
             <div className="ak-chips">
               {related.map((r) => (
                 <Link key={r.href} href={r.href} className="ak-chip">
+                  <Sticker src={stickerForHref(r.href)} />
                   {r.label} <span className="ak-count">{r.count}</span>
                 </Link>
               ))}
@@ -176,9 +183,12 @@ export default function Landing({
           <h2 className="ak-subh">{de ? 'Was der Halal-Status bedeutet' : 'What the halal status means'}</h2>
           <dl style={{ margin: 0, display: 'grid', gap: 12 }}>
             {['verified', 'claimed', 'self', 'unknown'].filter((s) => (s !== 'verified' && s !== 'claimed') || stats[s]).map((s) => (
-              <div key={s}>
-                <dt><StatusBadge status={s} lang={lang} compact /></dt>
-                <dd className="ak-muted" style={{ margin: '4px 0 0', fontSize: 13, lineHeight: 1.5 }}>{STATUS_TEXT[s][lang]}</dd>
+              <div key={s} className="ak-legend-row">
+                <dt>
+                  <Image src={STATUS_ICON[s]} alt="" width={36} height={36} unoptimized className="ak-legend-icon" />
+                  <StatusBadge status={s} lang={lang} compact />
+                </dt>
+                <dd className="ak-muted">{STATUS_TEXT[s][lang]}</dd>
               </div>
             ))}
           </dl>

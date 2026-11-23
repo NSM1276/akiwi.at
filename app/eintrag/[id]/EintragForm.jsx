@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useLang } from '@/components/LangProvider';
+import { Sticker } from '@/components/Pictures';
+import { UI } from '@/data/images';
 import { EINTRAG_COPY, EINTRAG_LANGS } from '@/data/eintrag-copy';
 import { CONTACT } from '@/data/lokale-copy';
 
@@ -93,6 +95,7 @@ export default function EintragForm({ venue }) {
           </div>
         </div>
 
+        <Sticker src={UI.addVenue} size={72} className="ak-page-icon" />
         <h1 className="ak-h1">{venue.name}</h1>
         <p className="ak-lead" style={{ margin: '12px 0 6px' }}>{c.lead}</p>
         <p className="ak-data ak-muted" style={{ margin: '0 0 8px' }}>{c.free}</p>

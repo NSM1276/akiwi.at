@@ -5,6 +5,7 @@ import { getDishSlugs, getDishPage, placeOf, sampleNames } from '@/data/landing'
 import { breadcrumbJsonLd, itemListJsonLd } from '@/data/jsonld';
 import { formatEuro } from '@/data/dishes';
 import Landing from '@/components/Landing';
+import { dishPhoto } from '@/data/images';
 
 export function generateStaticParams() {
   return getDishSlugs().map((slug) => ({ slug }));
@@ -63,6 +64,7 @@ export default async function DishPage({ params }) {
         place={place}
         prices={{ min: page.priceMin, max: page.priceMax }}
         breadcrumb={breadcrumb}
+        photo={dishPhoto(slug)}
         searchHref={`/search?q=${encodeURIComponent(page.name)}`}
       />
     </>
