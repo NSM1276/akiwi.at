@@ -5,7 +5,8 @@
 // sign-off. The controller's name, address and contact come from legal-copy.js
 // (shown in components/DatenschutzContent.jsx), not from here.
 //
-// Keep it true to what the site does: no cookies, no visitor statistics, fonts
+// Keep it true to what the site does: no cookies, a cookieless visit counter
+// (counted by the same namax script, see 'besuche'), fonts
 // self-hosted (next/font), the language choice in localStorage ('akiwi.lang',
 // components/LangProvider.jsx), the request form loaded from www.namax.at
 // (app/layout.jsx). Retention 90 / 180 days is the namax side's rule.
@@ -20,7 +21,7 @@ export const DATENSCHUTZ = {
       id: 'kurz',
       title: 'Kurz gesagt',
       body: [
-        'Akiwi.at setzt keine Cookies und führt keine Besucherstatistik. Schriftarten werden von unserem eigenen Server geladen, nicht von Dritten. Auf Ihrem Gerät speichern wir nur die gewählte Sprache (Deutsch oder Englisch), damit die Seite sie sich merkt.',
+        'Akiwi.at setzt keine Cookies. Besuche zählen wir nur als Zahl pro Tag, ohne zu wissen, wer Sie sind (siehe unten). Schriftarten werden von unserem eigenen Server geladen, nicht von Dritten. Auf Ihrem Gerät speichern wir nur die gewählte Sprache (Deutsch oder Englisch), damit die Seite sie sich merkt.',
         'Personenbezogene Daten erhalten wir nur, wenn Sie uns selbst schreiben: über das Anfrageformular, per E-Mail, Telefon oder Instagram.',
       ],
     },
@@ -29,6 +30,15 @@ export const DATENSCHUTZ = {
       title: 'Hosting und Server-Logs',
       body: [
         'Die Website wird bei Vercel Inc. (USA) gehostet. Beim Aufruf verarbeitet der Hosting-Anbieter technisch notwendige Daten wie IP-Adresse, Zeitpunkt, aufgerufene Seite und Browser-Typ, um die Seite auszuliefern und den Betrieb abzusichern. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Für die Übermittlung in die USA stützt sich der Anbieter auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln.',
+      ],
+    },
+    {
+      id: 'besuche',
+      title: 'Besuchszähler',
+      body: [
+        'Um zu wissen, ob Akiwi genutzt wird, zählen wir Besuche. Ein Besuch zählt nur, wenn Sie eine Seite wirklich ansehen: nach 3 Sekunden mit Scrollen oder Tippen oder nach 15 Sekunden auf der Seite, einmal pro Laden der Seite. Wenn Sie innerhalb von Akiwi.at weiterklicken, zählt das nicht als neuer Besuch.',
+        'Gespeichert werden nur der Tag, die Seite, auf der Sie angekommen sind (die Adresse ohne Zusätze), und grob, woher Sie kamen: Google, eine andere Suchmaschine, ein soziales Netzwerk, namax.at, direkt oder anderes. Wir setzen dafür keine Cookies, speichern keine IP-Adresse und nichts auf Ihrem Gerät; einzelne Personen lassen sich daraus nicht erkennen.',
+        'Gezählt wird über dasselbe Skript von www.namax.at wie beim Anfrageformular. Die Zahlen liegen bei unserem Hosting-Anbieter Vercel Inc. (USA) und unserem Datenbankanbieter Neon (USA), und nur wir sehen sie. Rechtsgrundlage ist unser berechtigtes Interesse zu wissen, ob und wie die Website genutzt wird (Art. 6 Abs. 1 lit. f DSGVO).',
       ],
     },
     {
