@@ -7,12 +7,6 @@ import { useLang } from '@/components/LangProvider';
 import { LOKALE_COPY, LOKALE_LANGS, CONTACT } from '@/data/lokale-copy';
 import EmailButtons from '@/components/EmailButtons';
 
-const WhatsAppIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 0 1 12 3.800zm-3.200 4c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.300s1 2.700 1.200 2.900c.1.2 2 3.200 5 4.400 2.400 1 2.900.8 3.500.7.500 0 1.700-.7 1.900-1.300.200-.700.200-1.200.200-1.300l-.500-.300-1.800-.900c-.200-.100-.400-.100-.600.100l-.800 1c-.100.200-.300.200-.500.100-1.500-.700-2.500-1.400-3.400-3-.200-.300 0-.500.200-.700l.500-.600.200-.400v-.500l-.900-2c-.100-.400-.300-.400-.500-.400z" />
-  </svg>
-);
-
 export default function LokaleContent() {
   const [siteLang, setSiteLang] = useLang();
   // Turkish exists on this page only; DE/EN follow (and set) the site language.
@@ -25,10 +19,9 @@ export default function LokaleContent() {
     if (next !== 'tr') setSiteLang(next);
   };
 
-  const whatsapp = (
-    <a className="ak-btn ak-btn--green ak-btn--block ak-lokale-cta" href={CONTACT.whatsapp(c.whatsappText)} target="_blank" rel="noopener">
-      <WhatsAppIcon />{c.whatsapp}
-    </a>
+  // Opens the shared request form (www.namax.at/js/contact.js, see app/layout.jsx).
+  const request = (
+    <button type="button" className="ak-btn ak-btn--green ak-btn--block ak-lokale-cta" data-contact="lokale" data-role="owner">{c.write}</button>
   );
 
   return (
@@ -57,7 +50,7 @@ export default function LokaleContent() {
         </ol>
 
         <div style={{ marginTop: 16 }}>
-          {whatsapp}
+          {request}
           <p className="ak-muted" style={{ margin: '8px 0 0', fontSize: 13, textAlign: 'center' }}>{c.reply}</p>
         </div>
 
@@ -94,7 +87,7 @@ export default function LokaleContent() {
           </ul>
         </section>
 
-        <div style={{ marginTop: 24 }}>{whatsapp}</div>
+        <div style={{ marginTop: 24 }}>{request}</div>
         <div style={{ marginTop: 12, textAlign: 'center' }}>
           <Link className="ak-btn" href="/">{c.visit} →</Link>
         </div>

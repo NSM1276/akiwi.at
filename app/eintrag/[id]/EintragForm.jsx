@@ -7,7 +7,6 @@ import { useLang } from '@/components/LangProvider';
 import { Sticker } from '@/components/Pictures';
 import { UI } from '@/data/images';
 import { EINTRAG_COPY, EINTRAG_LANGS } from '@/data/eintrag-copy';
-import { CONTACT } from '@/data/lokale-copy';
 
 const FIELDS = ['name', 'address', 'phone', 'website', 'instagram'];
 const DAY_SHORT = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
@@ -72,12 +71,17 @@ export default function EintragForm({ venue }) {
     return lines.join('\n');
   }
 
+  // With consent the submit button carries data-contact: the namax form script
+  // catches the click and opens the request form with buildMessage() as text,
+  // so the form submit never fires. Without consent there are no attributes and
+  // submit only shows the consent error.
   function send(e) {
     e.preventDefault();
     setTried(true);
-    if (!consent) return;
-    window.open(CONTACT.whatsapp(buildMessage()), '_blank', 'noopener');
   }
+  const contact = consent
+    ? { 'data-contact': 'eintrag', 'data-role': 'owner', 'data-wish': 'fix', 'data-topic': venue.name, 'data-text': buildMessage() }
+    : {};
 
   return (
     <>
@@ -182,7 +186,7 @@ export default function EintragForm({ venue }) {
             {tried && !consent && <p role="alert" className="ak-field-error">{c.needConsent}</p>}
           </fieldset>
 
-          <button type="submit" className="ak-btn ak-btn--green ak-btn--block ak-lokale-cta">{c.send}</button>
+          <button type="submit" className="ak-btn ak-btn--green ak-btn--block ak-lokale-cta" {...contact}>{c.send}</button>
           <p className="ak-muted" style={{ margin: '10px 0 0', fontSize: 13, textAlign: 'center' }}>{c.after}</p>
         </form>
 

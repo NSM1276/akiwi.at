@@ -4,10 +4,12 @@
 // A personal page per venue. Nasim sends the link only to an owner he is
 // already talking to (owner, 2026-11-18); the page is noindex and not in the
 // sitemap. The owner checks what we show, corrects it and presses "Senden":
-// that opens WhatsApp with a ready message to Akiwi. Nothing is stored or sent
-// by the site itself. Photos (certificate, menu, venue) go in the same chat.
+// that opens the shared request form (www.namax.at/js/contact.js) with the
+// corrections as ready text; the owner adds a phone number and picks call or
+// WhatsApp, the request lands in Nasim's list on namax. Photos (certificate,
+// menu, venue) Nasim asks for afterwards on WhatsApp.
 //
-// The WhatsApp message itself is always German with fixed labels, so it reads
+// The ready text itself is always German with fixed labels, so it reads
 // the same whatever language the owner used (see buildMessage in the form).
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -16,7 +18,7 @@ export const EINTRAG_LANGS = ['de', 'tr', 'en'];
 export const EINTRAG_COPY = {
   de: {
     kicker: 'Ihr Eintrag auf Akiwi',
-    lead: 'So steht Ihr Lokal bei uns. Bitte prüfen und korrigieren Sie, was nicht stimmt. Mit „Senden“ öffnet sich WhatsApp mit einer fertigen Nachricht an Akiwi. Fotos schicken Sie im selben Chat mit.',
+    lead: 'So steht Ihr Lokal bei uns. Bitte prüfen und korrigieren Sie, was nicht stimmt. Mit „Senden“ geben Sie uns Ihre Telefonnummer, und wir melden uns per Anruf oder WhatsApp. Fotos können Sie uns dann schicken.',
     free: 'Kostenlos. Wir verkaufen nichts.',
     basics: 'Kontakt und Adresse',
     fields: { name: 'Name des Lokals', address: 'Adresse', phone: 'Telefon', website: 'Website', instagram: 'Instagram' },
@@ -42,14 +44,14 @@ export const EINTRAG_COPY = {
     notePlaceholder: 'z. B. Feiertage, Mittagspause, Lieferung …',
     sender: 'Ihr Name (optional)',
     consent: 'Ich bin Inhaber/in oder Betreiber/in dieses Lokals und erlaube Akiwi, diese Angaben zu zeigen.',
-    send: 'Mit WhatsApp senden',
+    send: 'Senden',
     needConsent: 'Bitte bestätigen Sie zuerst, dass Sie das Lokal führen.',
-    after: 'WhatsApp öffnet sich mit der Nachricht. Senden Sie sie ab und hängen Sie die Fotos an. Wir übernehmen die Angaben und melden uns.',
+    after: 'Danach geben Sie Ihre Telefonnummer an und wählen Anruf oder WhatsApp. Wir übernehmen die Angaben und melden uns. Fotos schicken Sie uns dann per WhatsApp.',
     view: 'Eintrag ansehen',
   },
   tr: {
     kicker: 'Akiwi’deki kaydınız',
-    lead: 'İşletmeniz bizde böyle görünüyor. Lütfen kontrol edin, yanlış olanı düzeltin. „Gönder“e basınca WhatsApp, Akiwi’ye hazır bir mesajla açılır. Fotoğrafları aynı sohbete ekleyin.',
+    lead: 'İşletmeniz bizde böyle görünüyor. Lütfen kontrol edin, yanlış olanı düzeltin. „Gönder“e basınca telefon numaranızı yazarsınız, biz de sizi arar veya WhatsApp’tan yazarız. Fotoğrafları sonra gönderebilirsiniz.',
     free: 'Ücretsiz. Hiçbir şey satmıyoruz.',
     basics: 'İletişim ve adres',
     fields: { name: 'İşletme adı', address: 'Adres', phone: 'Telefon', website: 'Web sitesi', instagram: 'Instagram' },
@@ -75,14 +77,14 @@ export const EINTRAG_COPY = {
     notePlaceholder: 'ör. tatil günleri, öğle arası, teslimat …',
     sender: 'Adınız (isteğe bağlı)',
     consent: 'Bu işletmenin sahibi veya işletmecisiyim ve Akiwi’nin bu bilgileri göstermesine izin veriyorum.',
-    send: 'WhatsApp ile gönder',
+    send: 'Gönder',
     needConsent: 'Lütfen önce işletmeyi yönettiğinizi onaylayın.',
-    after: 'WhatsApp mesajla açılır. Mesajı gönderin ve fotoğrafları ekleyin. Bilgileri biz aktarırız ve size dönüş yaparız.',
+    after: 'Ardından telefon numaranızı yazıp arama veya WhatsApp’ı seçersiniz. Bilgileri biz aktarırız ve size dönüş yaparız. Fotoğrafları sonra WhatsApp’tan gönderirsiniz.',
     view: 'Kaydı görüntüle',
   },
   en: {
     kicker: 'Your listing on Akiwi',
-    lead: 'This is how your venue appears on Akiwi. Please check it and correct what is wrong. “Send” opens WhatsApp with a ready message to Akiwi. Add photos in the same chat.',
+    lead: 'This is how your venue appears on Akiwi. Please check it and correct what is wrong. “Send” asks for your phone number, and we get back to you by call or WhatsApp. You can send photos then.',
     free: 'Free. We don’t sell anything.',
     basics: 'Contact and address',
     fields: { name: 'Venue name', address: 'Address', phone: 'Phone', website: 'Website', instagram: 'Instagram' },
@@ -108,9 +110,9 @@ export const EINTRAG_COPY = {
     notePlaceholder: 'e.g. holidays, lunch break, delivery …',
     sender: 'Your name (optional)',
     consent: 'I own or run this venue and allow Akiwi to show this information.',
-    send: 'Send with WhatsApp',
+    send: 'Send',
     needConsent: 'Please confirm first that you run this venue.',
-    after: 'WhatsApp opens with the message. Send it and attach the photos. We take over the information and get back to you.',
+    after: 'Next you enter your phone number and choose call or WhatsApp. We take over the information and get back to you. Send us the photos on WhatsApp then.',
     view: 'View listing',
   },
 };

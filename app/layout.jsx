@@ -46,6 +46,8 @@ export default function RootLayout({ children }) {
     <html lang="de" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
         <LangProvider>{children}</LangProvider>
+        {/* Shared request form of Nasim's sites (namax.at): any [data-contact] button opens it, requests land in Nasim's list. */}
+        <script src="https://www.namax.at/js/contact.js?v=2" defer />
       </body>
     </html>
   );

@@ -5,7 +5,8 @@
 // card, or from a link in our Instagram message. It says who we are (an
 // independent guide that works for guests and collects proof), what the halal
 // statuses mean, how a venue gets "Verifiziert" (send a photo of the
-// certificate), and how to reach us: WhatsApp, Instagram Direct, email, phone.
+// certificate), and how to reach us: the request form (www.namax.at/js/contact.js, loaded in
+// app/layout.jsx), Instagram Direct, email, phone.
 //
 // Never promise a visit here: whether we come by is agreed in a personal chat
 // (owner, 2026-11-17). "plans" are plans, not promises: keep the wording that way.
@@ -21,7 +22,6 @@ export const CONTACT = {
   name: 'Nasim',
   phone: IMPRESSUM.phone,
   tel: `tel:+${digits}`,
-  whatsapp: (text) => `https://wa.me/${digits}?text=${encodeURIComponent(text)}`,
   instagram: 'https://ig.me/m/akiwi.at',
 };
 
@@ -38,8 +38,7 @@ export const LOKALE_COPY = {
       'Sie schicken uns ein Foto Ihres Halal-Zertifikats. Dann steht Ihr Lokal bei uns als „Verifiziert“.',
       'Fotos von Lokal und Speisen können Sie uns gern mitschicken.',
     ],
-    whatsapp: 'Auf WhatsApp schreiben',
-    whatsappText: 'Hallo Akiwi! Ich melde mich wegen meines Lokals: ',
+    write: 'Anfrage senden',
     reply: 'Nasim antwortet meist am selben Tag.',
     instagram: 'Instagram Direct',
     call: 'Anrufen',
@@ -88,8 +87,7 @@ export const LOKALE_COPY = {
       'Helal sertifikanızın fotoğrafını bize gönderirsiniz. İşletmeniz bizde „Verifiziert“ (doğrulandı) olarak görünür.',
       'İsterseniz işletmenizin ve yemeklerinizin fotoğraflarını da gönderebilirsiniz.',
     ],
-    whatsapp: 'WhatsApp’tan yazın',
-    whatsappText: 'Merhaba Akiwi! İşletmem için yazıyorum: ',
+    write: 'Talep gönderin',
     reply: 'Nasim genellikle aynı gün cevap verir.',
     instagram: 'Instagram Direct',
     call: 'Arayın',
@@ -138,8 +136,7 @@ export const LOKALE_COPY = {
       'You send us a photo of your halal certificate. Your venue is then shown as “Verified”.',
       'You are welcome to send photos of your venue and food as well.',
     ],
-    whatsapp: 'Message us on WhatsApp',
-    whatsappText: 'Hello Akiwi! I’m writing about my venue: ',
+    write: 'Send a request',
     reply: 'Nasim usually replies the same day.',
     instagram: 'Instagram Direct',
     call: 'Call',

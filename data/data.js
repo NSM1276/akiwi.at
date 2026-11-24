@@ -35,7 +35,7 @@ export const COPY = {
     // Datenschutz und Eintragen kommen dazu, sobald diese Seiten existieren.
     footerSections: {
       product: ['Home', 'Suche', 'Ratgeber', 'Für Lokale'],
-      legal: ['Impressum'],
+      legal: ['Impressum', 'Datenschutz'],
     },
     footerSectionTitles: { product: 'Navigation', legal: 'Rechtliches' },
     footerLinks: {
@@ -44,6 +44,7 @@ export const COPY = {
       'Ratgeber': '/ratgeber',
       'Für Lokale': '/lokale',
       'Impressum': '/impressum',
+      'Datenschutz': '/datenschutz',
     },
     footerMadeWith: 'Gemacht in Wien',
     copyright: '© 2026 Akiwi.at — Alle Rechte vorbehalten.',
@@ -71,7 +72,7 @@ export const COPY = {
     followUs: 'Follow us',
     footerSections: {
       product: ['Home', 'Search', 'Guide', 'For venues'],
-      legal: ['Imprint'],
+      legal: ['Imprint', 'Privacy'],
     },
     footerSectionTitles: { product: 'Navigation', legal: 'Legal' },
     footerLinks: {
@@ -80,6 +81,7 @@ export const COPY = {
       'Guide': '/ratgeber',
       'For venues': '/lokale',
       'Imprint': '/impressum',
+      'Privacy': '/datenschutz',
     },
     footerMadeWith: 'Made in Vienna',
     copyright: '© 2026 Akiwi.at — All rights reserved.',

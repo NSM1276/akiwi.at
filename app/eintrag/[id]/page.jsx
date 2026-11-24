@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   if (!v) return { title: 'Nicht gefunden', robots: { index: false, follow: false } };
   // What the owner sees in the WhatsApp / Instagram link preview.
   const title = `Ihr Eintrag: ${v.name}`;
-  const description = 'Prüfen und korrigieren Sie Ihre Angaben auf Akiwi. Kostenlos, Antwort per WhatsApp.';
+  const description = 'Prüfen und korrigieren Sie Ihre Angaben auf Akiwi. Kostenlos, wir melden uns per Anruf oder WhatsApp.';
   return {
     title,
     description,
